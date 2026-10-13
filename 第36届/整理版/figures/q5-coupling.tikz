@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=1.25]
+\draw[dashed] (-3.3,0)--(4.8,0);
+\draw[thick,fill=blue!4] (0,0) circle(1.5);
+\foreach \h in {.33,-.33}{
+\draw[arr,blue] (-3.2,\h)--(-1.464,\h);
+\draw[thick,blue] (-1.464,\h)--(1.496,{.33333*\h})--(2.25,0);
+}
+\draw[thick] (2.25,-.6) rectangle(4.6,.6);
+\draw[thick] (2.25,-.24)--(4.6,-.24); \draw[thick] (2.25,.24)--(4.6,.24);
+\node[fill=white,inner sep=1pt] at(3.7,0) {$n_1=1.46$};
+\node at(3.7,.43) {$n_2=1.45$};
+\node at(0,.65) {$n=1.50$};
+\fill (0,0) circle(1.5pt) node[below] {$C$};
+\node[below] at(1.5,0) {$O$};\node[below] at(2.25,-.65) {光纤端面};
+\draw[<->] (-1.5,1.95)--(1.5,1.95) node[midway,above] {$D$};
+\draw[<->] (-2.8,-.33)--(-2.8,.33) node[midway,left] {$d_b$};
+\end{tikzpicture}

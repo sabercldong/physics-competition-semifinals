@@ -1,0 +1,156 @@
+{
+  "exam": 36,
+  "status": "已完成",
+  "stage": "三版交付验收完成",
+  "completed_at": "2026-10-13T10:09:25+08:00",
+  "questions": 7,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "total_points": 320,
+  "variants": 28,
+  "figures": 23,
+  "physics_checks": 56,
+  "pdfs": [
+    {
+      "name": "第36届_学生详解版.pdf",
+      "pages": 61,
+      "body_pages": 60,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "152cc12c2e3941a6adfed687802ff03c6368f0d8612c3b29e85afbce7dcfd1a1",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        19,
+        27,
+        34,
+        41,
+        49
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_教师备课版.pdf",
+      "pages": 78,
+      "body_pages": 77,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "bdefa916f2f1d697d28da70dfbb6a32a6bc48e4b5b60b2c156ec461f8ede0d54",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        12,
+        24,
+        35,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_试题版.pdf",
+      "pages": 8,
+      "body_pages": 7,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "8df6df971aef044d4eeb7cceeff613d60ea4fbfe2450776463ab7e9cf21e44e1",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "b9e706c4881bcc4ed28472b93d8f00ee9df6080344a75e9b8e0cdaf93471abd9"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "b49d2a6e67031507e9580e2e7ea7322eceb2ce213936a169c136b5e1af13577f"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "f59e6714c2e8ab887d4843e5fed5040802453afd8278fa1190562aa27b031f50"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "50897ab645bf1e5d1a9229fa231a4f126dd32c0f86b4daebac734ad1feede5fe"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "75c222bec2a93c222ad90e433311f4990b0081b43f6b23694fbe6c98e8667fc6"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "6156ebeecfb4df6d145f8ae6f374f2e0177f3fc4559463c33ad8c60dfcf186c8"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "f21c3197d0a3ffe00f8da61cd8fbbe45ad23194050d4b31569c3f87954d5cb10"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/第36届复赛试题及参考答案.pdf",
+      "pages": 40,
+      "bytes": 941094,
+      "sha256": "1324e16f60bdd527b3d34d4790759617dc122c28de85b424cd017dfa15b78230"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": 35
+}

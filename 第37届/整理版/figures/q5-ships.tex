@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\draw[arr] (-.5,0)--(5,0) node[right] {$x$};
+\draw[arr] (0,0)--(0,4.2) node[above] {$y$};
+\node[left] at (0,3.4) {甲};\draw[arr,blue] (0,3.4)--(0,2.5);
+\node[left] at (0,1.4) {乙};\draw[arr] (0,1.4)--(0,.6);
+\draw[dashed] (3.7,0)--(3.7,4);
+\node[right] at (3.7,1.4) {丙};\draw[arr,red] (3.7,1.4)--(3.7,2.4);
+\draw[<->] (0,-.6)--(3.7,-.6) node[midway,below] {$d$};
+\node at (1.8,5.2) {$v_\text{甲}=-2c/3,\ v_\text{乙}=-c/3,\ v_\text{丙}=2c/3$};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=.9]
+\fill[gray!15](0,0)circle(1.45);
+\node at(0,-.75){等离子体 $\Phi$};
+\draw[->,thick](-3,1.4)--(-.4,.4)node[midway,above=7pt,fill=white,inner sep=2pt]{一次离子 $q_1,K_1$};
+\fill(-.4,.4)circle(2pt);
+\draw[->,thick](-.4,.4)--(3,1.1)node[midway,above=7pt,fill=white,inner sep=2pt]{二次离子 $q_2$};
+\draw[very thick](3,.4)--(3.2,1.6);
+\node[right]at(3.2,1){能量分析器 $K_2$};
+\node[below]at(-.4,.4){测量位置};
+\node at(.6,-.1){$\otimes\,B$};
+\end{tikzpicture}

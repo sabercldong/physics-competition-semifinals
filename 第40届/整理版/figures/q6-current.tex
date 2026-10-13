@@ -1,0 +1,27 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) circle(1.8);
+\draw[arr] (0,-2.3)--(0,2.7) node[above] {$\boldsymbol B_e$};
+\draw[dashed] (-1.8,0) arc(180:360:1.8 and .45);
+\draw[thick] (-1.8,0) arc(180:0:1.8 and .45);
+\draw[arr] (1.42,.29)--(1.05,.37);
+\node[right] at (2.0,.2) {$K_\phi=-\dfrac{3B_e}{2\mu_0}\sin\theta$};
+\draw[arr,very thick] (0,.65)--(0,-.65);
+\node[left] at (-.1,-.6) {$\boldsymbol m$};
+\node at (0,-2.8) {感应磁矩与外场反向；球内总场为零};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

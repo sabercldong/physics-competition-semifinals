@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=1]
+\draw[rounded corners,thick] (-1,-.8) rectangle(.3,.8);
+\node at (-.35,1.25) {X射线管};
+\node at (-.35,-1.2) {电子轰击阳极};
+\draw[arr,thick] (.3,0)--(3.5,0) node[midway,above] {入射光子};
+\draw[thick] (3.5,-.65)--(3.5,.65);
+\node at (3.5,-1.05) {材料靶};
+\draw[arr] (3.5,0)--(6.3,-1.0) node[right] {X射线光谱仪};
+\draw[arr] (3.5,0)--(5.5,1.35) node[right] {电子能谱仪};
+\draw[dashed] (3.5,0)--(6.2,0);
+\draw (4.3,0) arc(0:-19.65:.8);
+\node at (4.65,-.26) {$\theta$};
+\end{tikzpicture}

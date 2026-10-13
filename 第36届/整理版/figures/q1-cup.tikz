@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=.9]
+\draw[thick] (0,3)--(0,0)--(2,0)--(2,3);
+\fill[blue!12] (.02,.02) rectangle(1.98,1.3);
+\draw[blue] (0,1.3)--(2,1.3); \node[right] at (2.1,1.3) {$h$};
+\draw[very thick] (0,0)--(2,0); \node[below] at (1,-.2) {杯底$m/5$};
+\draw[<->] (-.45,0)--(-.45,3) node[midway,left] {$H$};
+\fill[red] (1,.65) circle(2pt) node[right] {$h/2$};
+\node at (1,3.55) {杯壁$4m/5$};
+\begin{scope}[shift={(4.4,.2)},xscale=3,yscale=4]
+\draw[arr] (0,0)--(1.15,0) node[right] {$h/H$};
+\draw[arr] (0,0)--(0,.65) node[above] {$Y/H$};
+\draw[thick,blue,domain=0:1,samples=100] plot(\x,{(.4+\x*\x)/(1+2*\x)});
+\draw[gray,dashed] (0,0)--(.58,.58);
+\fill[red] (.306226,.306226) circle(.65pt);
+\node[above right] at (.32,.31) {$Y=h_*$};
+\draw[dashed] (.306226,0)--(.306226,.306226);
+\node[below] at (.306226,0) {$h_*/H$};
+\end{scope}
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.9]
+\fill[gray!15](0,0)circle(2.5);\fill[white](0,0)circle(2.1);\fill[blue!15](0,0)circle(.55);
+\draw[thick](0,0)circle(2.5);\draw[thick](0,0)circle(2.1);\draw[thick](0,0)circle(.55);
+\draw[arr](0,0)--(.39,.39)node[above]{$r$};
+\draw[arr](0,0)--(-1.82,1.05)node[midway,above]{$R_1$};
+\draw[arr](0,0)--(2.16,-1.25)node[midway,below]{$R_2$};
+\node at(0,-.25){$T_0$};\node at(-2.9,0){$T_1$};\node at(2.9,0){$T_2$};
+\node at(0,3.2){真空层：辐射；球壳：导热；外界$T_b$};
+\end{tikzpicture}
+\end{document}

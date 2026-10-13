@@ -1,0 +1,20 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[dashed](-2,-1.5)rectangle(2,1.5);
+\draw[->](-2.7,0)--(3.1,0)node[right]{$x$};\draw[->](0,-2)--(0,2.3)node[above]{$y$};
+\node[below left]at(0,0){$O$};\fill(.55,.55)circle(2pt)node[right]{$P(x,y)$};
+\foreach \x/\y/\sign in {-2/1.5/+,-2/-1.5/-,2/1.5/-,2/-1.5/+}{
+\draw[fill=white,thick](\x,\y)circle(.13);
+\if\sign+\fill(\x,\y)circle(1.5pt);\else\draw(\x-.08,\y-.08)--(\x+.08,\y+.08);\draw(\x-.08,\y+.08)--(\x+.08,\y-.08);\fi}
+\draw[<->](-2,-2.4)--(2,-2.4)node[midway,below]{$a$};
+\draw[<->](2.5,-1.5)--(2.5,1.5);\node[right]at(2.5,.55){$b$};
+\node[above left]at(-2,1.5){$+I$};\node[below left]at(-2,-1.5){$-I$};
+\node[above right]at(2,1.5){$-I$};\node[below right]at(2,-1.5){$+I$};
+\end{tikzpicture}
+
+\end{document}

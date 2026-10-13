@@ -1,0 +1,512 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=22mm,right=22mm,top=22mm,bottom=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx,xcolor,booktabs,longtable,array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\usepackage{setspace,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setstretch{1.24}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.35em}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+\setcounter{secnumdepth}{-1}
+\ctexset{section={format=\Large\bfseries,beforeskip=1em,afterskip=.7em},
+subsection={format=\large\bfseries,beforeskip=.8em,afterskip=.4em},
+subsubsection={format=\normalsize\bfseries,beforeskip=.7em,afterskip=.3em}}
+\allowdisplaybreaks[2]
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\newsavebox{\diagrambox}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage}
+\setlength{\headheight}{16pt}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{27mm}
+\begin{center}
+{\LARGE\bfseries 第43届全国中学生物理竞赛\par}
+\vspace{8mm}
+{\LARGE\bfseries 复赛理论试题\par}
+\vspace{17mm}
+{\Large 试题版\par}
+\end{center}
+\vfill
+\end{titlepage}
+\setcounter{page}{1}
+本卷共7题，总分320分。考试时间：9:00---12:00。所有需要评阅的解答均须写在答题纸上。
+
+\section{第 1
+题　非线性正四面体电阻网络}\label{ux7b2c-1-ux9898-ux975eux7ebfux6027ux6b63ux56dbux9762ux4f53ux7535ux963bux7f51ux7edc}
+
+如图1-1，六个非线性电阻连成正四面体网络，顶点为
+\(A,B,C,D\)，导线电阻忽略不计。连接 \(i,j\) 两顶点的电阻满足
+\(I=c_{ij}V^3\)，其中 \(V\) 为沿电流方向的电压降，\(c_{ij}>0\)。已知
+
+\[
+c_{AB}=\frac{\kappa}{9},\quad c_{AC}=c_{DB}=16\kappa,\quad
+c_{AD}=c_{CB}=\kappa,\quad c_{CD}=8\kappa.
+\]
+
+在 \(A,B\) 两点间施加恒定电压 \(V_0>0\)，总电流由 \(A\) 流入、由 \(B\)
+流出。求总电流 \(I_{\text{总}}\) 和端口等效电阻
+\(R_{\rm eq}\)。本题45分。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}[x=1.1cm,y=1.1cm]
+\coordinate (A) at (0,3); \coordinate (B) at (3,0);
+\coordinate (C) at (-3,0); \coordinate (D) at (0,1);
+\draw[thick] (A)--node[fill=white,sloped,above] {$16\kappa$}(C)
+ --node[fill=white,below] {$\kappa$}(B)
+ --node[fill=white,sloped,above] {$\kappa/9$}(A);
+\draw[thick,dashed] (A)--node[fill=white,right] {$\kappa$}(D);
+\draw[thick,dashed] (C)--node[fill=white,sloped,above] {$8\kappa$}(D)
+ --node[fill=white,sloped,above] {$16\kappa$}(B);
+\foreach \p/\pos in {A/above,B/right,C/left,D/below}
+ {\fill (\p) circle (1.5pt); \node[\pos] at (\p) {$\p$};}
+\draw (A)--(4.1,3)--(4.1,1.7);
+\draw (B)--(4.1,0)--(4.1,1.3);
+\draw[thick] (3.85,1.7)--(4.35,1.7);
+\draw[thick] (3.97,1.3)--(4.23,1.3);
+\node[right] at (4.35,1.5) {$V_0$};
+\node at (0,-.75) {$I_{ij}=c_{ij}(V_i-V_j)^3$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图1-1　正四面体的六条支路及其非线性系数；线段在投影中的交叉处不连接。\par}
+\endgroup\end{minipage}
+\end{center}
+
+\clearpage
+
+\section{第 2
+题　弹簧腿机器人的一次支撑过程}\label{ux7b2c-2-ux9898-ux5f39ux7c27ux817fux673aux5668ux4ebaux7684ux4e00ux6b21ux652fux6491ux8fc7ux7a0b}
+
+机器人在刚性水平地面上跑步，可简化为质量为 \(m\) 的质点与一根劲度系数为
+\(k\)
+的轻质直弹簧腿相连。整个运动始终在同一竖直平面内，每次着地时腿与地面的夹角均为
+\(\alpha_0\)，它小于但接近
+\(90^\circ\)。从着地到离地，腿与地面的接触点不动，腿可伸缩但不弯曲，长度变化量远小于自由长度
+\(l_0\)。腿同时绕接触点转动，与地面的夹角始终接近 \(90^\circ\)。
+
+某次刚着地时，腿长为 \(l_0\)，绕接触点顺时针转动的角速度大小为
+\(\omega\)。以地面为重力势能零点，系统机械能为 \(E\)，并以刚着地时为
+\(t=0\)。求：
+
+（1）支撑过程中腿长随时间的变化关系，以及刚离地的时刻 \(t'\)；
+
+（2）腿转过的角度 \(\Delta\varphi\)，须保留到非零结果。
+
+已知重力加速度为
+\(g\)，\(\omega^2>g/l_0\)。接触点无摩擦力矩，忽略空气阻力。腿与地面夹角的正弦可近似取1，但角度的时间变化率不可忽略；计算只保留弹簧腿相对形变量的一阶小量。本题45分。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\draw[thick] (-1,0)--(5,0); \node[below] at (4.6,0) {地面};
+\coordinate (O) at (0,0); \coordinate (P) at (.75,3.5);
+\draw[thick,decorate,decoration={zigzag,segment length=5pt,amplitude=2pt}] (O)--(P);
+\fill (O) circle (2pt) node[below] {$O$};
+\fill (P) circle (4pt) node[above] {$m$};
+\draw[arr] (O)--(3,0) node[below] {$x$};
+\draw[arr] (0,0)--(0,4.1) node[left] {竖直};
+\draw[arr] (P)--(.75,2.55) node[right] {$mg$};
+\draw[arr] (P)--(1.8,3.27) node[right] {$r\dot\varphi\,\hat{\boldsymbol e}_\varphi$};
+\draw[arr] (.3,3.65)--(.07,2.58) node[left] {$\dot r\,\hat{\boldsymbol e}_r$};
+\draw[<->] (-.9,.1)--(-.15,3.6) node[midway,left] {$r$};
+\draw[arr] (1.1,0) arc(0:78:1.1) node[midway,right] {$\varphi$};
+\draw[arr] (.1,3.1) arc(100:60:1.2);
+\node[right] at (1.4,3.9) {顺时针};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图2-1　触地后的极坐标、径向速度与顺时针转动方向。\par}
+\endgroup\end{minipage}
+\end{center}
+
+\clearpage
+
+\section{第 3
+题　磁偶极子在平面介质上方的镜像与稳定取向}\label{ux7b2c-3-ux9898-ux78c1ux5076ux6781ux5b50ux5728ux5e73ux9762ux4ecbux8d28ux4e0aux65b9ux7684ux955cux50cfux4e0eux7a33ux5b9aux53d6ux5411}
+
+一大小可忽略的磁偶极子固定在 \((0,0,h)\)，\(h>0\)，其磁矩限制在 \(xz\)
+平面内：
+
+\[
+\boldsymbol m=m(\sin\theta\,\hat{\boldsymbol x}+\cos\theta\,\hat{\boldsymbol z}),
+\qquad m>0.
+\]
+
+磁矩大小恒定，\(\theta\) 为磁矩方向与 \(z\) 轴正方向的夹角。\(z>0\)
+为真空，\(z<0\)
+为超导体或介质。真空区域的磁场可等效为该磁偶极子与一个镜像磁偶极子的场的叠加。已知真空中磁偶极子的场为
+
+\[
+\boldsymbol B(\boldsymbol r)=\frac{\mu_0}{4\pi r^3}
+\left[3(\boldsymbol m\cdot\hat{\boldsymbol r})\hat{\boldsymbol r}
+-\boldsymbol m\right],
+\]
+
+其中 \(\boldsymbol r\) 从偶极子指向场点，\(\mu_0\) 为真空磁导率。
+
+（1.1）下半空间为理想超导体，其内部磁感应强度为零，求镜像磁矩
+\(\boldsymbol m_{\rm S}\)。
+
+（1.2）下半空间为磁导率 \(\mu\to\infty\) 的理想软磁体，求镜像磁矩
+\(\boldsymbol m_{\rm I}\)。
+
+（2）求两种情况下真实偶极子受到的力矩
+\(\boldsymbol\tau_{\rm S}\)、\(\boldsymbol\tau_{\rm I}\)。
+
+（3）若真实偶极子可在 \(xz\)
+平面内转动，并受微弱阻尼，分别求最终可能的稳定取向。本题45分。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\fill[gray!12] (-3,-1) rectangle (3,0);
+\draw[thick] (-3,0)--(3,0);
+\draw[arr] (0,-1.3)--(0,3.4) node[above] {$z$};
+\draw[arr] (-3.3,0)--(3.4,0) node[right] {$x$};
+\coordinate (P) at (0,2);
+\fill (P) circle (2pt);
+\draw[arr,thick] (P)--(1.1,3.1) node[right] {$\boldsymbol m$};
+\draw[dashed] (P)--(0,3.1);
+\draw[arr] (0,2.65) arc(90:45:.65) node[midway,above] {$\theta$};
+\draw[<->] (-.6,0)--(-.6,2) node[midway,left] {$h$};
+\node at (2,1) {真空 $\mu_0$};
+\node at (0,-.6) {超导体或软磁体};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图3-1　真实偶极子与平面边界，磁矩分解为切向分量和法向分量。\par}
+\endgroup\end{minipage}
+\end{center}
+
+\clearpage
+
+\section{第 4
+题　电动力绳索的发电、轨道下降与姿态平衡}\label{ux7b2c-4-ux9898-ux7535ux52a8ux529bux7ef3ux7d22ux7684ux53d1ux7535ux8f68ux9053ux4e0bux964dux4e0eux59ffux6001ux5e73ux8861}
+
+质量 \(m_1=450\,\mathrm{kg}\)
+的卫星在地球赤道上空沿圆轨道飞行，初始离地高度
+\(h_0=400\,\mathrm{km}\)。卫星悬挂均匀、轻质、长直的刚性导电绳索，绳索在轨道平面内，长度
+\(L=5.00\,\mathrm{km}\)，总电阻
+\(R_{\rm t}=200\,\Omega\)，外包轻质绝缘材料。下端接有质量
+\(m_2=50.0\,\mathrm{kg}\)
+的等离子体接触器。卫星与接触器可和电离层交换电子；闭合连接处的轻质开关后，绳索与等离子体构成闭合回路。其余部分的电阻和感抗忽略。
+
+当地磁场视为均匀，大小
+\(B=3.00\times10^{-5}\,\mathrm T\)，垂直于轨道平面。图4-1中磁场指向纸内、飞行方向向右。忽略等离子体及大气阻力。取
+\(G=6.67\times10^{-11}\,\mathrm{N\,m^2/kg^2}\)、\(M_{\rm E}=5.97\times10^{24}\,\mathrm{kg}\)、\(R_{\rm E}=6.37\times10^6\,\mathrm m\)。\(r_0=R_{\rm E}+h_0\)，且
+\(L/r_0\ll1\)。把卫星、绳索和接触器视为一个系统。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\fill[gray!14] (-2.8,-1.5) rectangle (3.5,-.8);
+\draw[thick] (-2.8,-.8)--(3.5,-.8);
+\node at (.5,-1.17) {地球表面（局部示意）};
+\draw[thick] (0,0)--(0,3);
+\fill (0,0) circle(3pt) node[left] {接触器 $m_2$};
+\fill (0,3) circle(4pt) node[left] {卫星 $m_1$};
+\draw[arr,thick] (.12,.5)--(.12,2.4) node[midway,right] {$I$};
+\draw[arr] (0,3)--(2.2,3) node[above] {$v_0$};
+\draw[arr] (-1,1)--(-1,2.4) node[left] {$\hat{\boldsymbol r}$};
+\draw[<->] (.8,0)--(.8,3) node[midway,right] {$L$};
+\foreach \x in {-2,2.8}\foreach \y in {.2,1.4,2.6}
+ \node at (\x,\y) {$\otimes$};
+\node at (3.2,3.5) {$\boldsymbol B$};
+\node at (.8,-2) {$+\hat{\boldsymbol z}$ 指向纸内};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图4-1　径向绳索、飞行方向、磁场与闭合回路中的常规电流。\par}
+\endgroup\end{minipage}
+\end{center}
+
+（1）绳索各处速度均取卫星速度。
+
+（1.1）求开关断开时圆轨道速度 \(v_0\) 与角速度 \(\Omega_0\)。
+
+（1.2）绳索恰好沿径向时闭合开关，求感应电流 \(I\) 与电功率 \(P\)。
+
+（1.3）假设每圈高度变化远小于轨道半径，求刚闭合时
+\(dh/dt\)，并用初始变化率与初始周期估算一圈后的 \(\Delta h\)。
+
+（2）绳索在轨道平面内相对径向向飞行方向偏转
+\(\theta\)，\(0\le\theta<90^\circ\)，接触器仍比卫星更靠近地心。原题指定在``随轨道转动的参考系（随系统质心作轨道运动，但不相对地心参考系转动）''中讨论。
+
+（2.1）开关未闭合时，准确到 \(L/r_0\)
+一阶，求两端各自所受重力与离心力的合力，验证合力之和近似为零；证明小偏角时在
+\(\theta=0\) 附近简谐摆动，求 \(\omega_1\)。
+
+（2.2）闭合开关后，仍取轨道半径 \(r_0\)，求绳索洛伦兹力的切向分量
+\(F_\phi(\theta)\) 与径向分量 \(F_r(\theta)\)，径向以向外为正。
+
+（2.3）求洛伦兹力对系统质心的力矩、新平衡偏角
+\(\theta_{\rm eq}\)、稳定性及其附近的小摆动角频率
+\(\omega_2\)。本题50分。
+
+\clearpage
+
+\section{第 5
+题　浮木的稳心、横摇与升沉振动}\label{ux7b2c-5-ux9898-ux6d6eux6728ux7684ux7a33ux5fc3ux6a2aux6447ux4e0eux5347ux6c89ux632fux52a8}
+
+一均匀长方体木块，横截面宽 \(2a\)、高 \(2b\)，长度 \(L\) 远大于
+\(a,b\)，密度 \(\rho\)。它浮在密度 \(\rho_0>\rho\)
+的液体中，重力加速度为
+\(g\)。木块顶面的任何部分始终未没入液面，底面的任何部分始终未浮出液面。只考虑重力和竖直向上的浮力，液面始终水平，木块长度方向始终水平。忽略液体黏滞阻力及转动引起液体流动的附加转动惯量。
+
+（1）平衡时浸深为 \(h\)。求 \(h\)，以及浮心 \(B\) 到重心 \(G\)
+的距离。浮心是浸没部分的几何中心。
+
+（2）取固定于木块的随体坐标系 \(Gxy\)，原点在重心，\(x\) 沿宽度、\(y\)
+沿高度。\(x\) 轴与水平液面夹微小顺时针角 \(\theta\)，新浮心为 \(B'\)。
+
+（2.1）假设浮力等于重力，求随体坐标系中的液面方程。
+
+（2.2）在 \(\theta\) 的一阶近似下，求 \(x_{B'},y_{B'}\)。
+
+（2.3）过 \(B'\) 的竖直线与 \(y\) 轴交于稳心
+\(M\)。证明平衡浮心到稳心的距离为 \(a^2/(3h)\)，求 \(y_M\)，并求 \(a/b\)
+与 \(\rho/\rho_0\) 满足什么条件时平衡稳定。
+
+（3.1）浮力等于重力时，写出微小转动的运动方程，证明 \(y_M>0\)
+时为简谐振动，求 \(\omega_\theta\)，讨论 \(y_M\to0^+\) 的趋势。
+
+（3.2）只作上下微小平动时，导出运动方程和角频率
+\(\omega_{\rm v}\)，比较两频率。本题45分。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\fill[blue!7] (-3.3,-2) rectangle (3.3,.25);
+\fill[gray!15] (-2,-1.5) rectangle (2,1.5);
+\fill[blue!12] (-2,-1.5) rectangle (2,.25);
+\draw[thick] (-2,-1.5) rectangle (2,1.5);
+\draw[blue!65!black] (-3.3,.25)--(3.3,.25) node[right] {液面};
+\fill (0,0) circle(2pt) node[right] {$G$};
+\fill (0,-.625) circle(2pt) node[right] {$B$};
+\draw[<->] (-2,1.85)--(2,1.85) node[midway,above] {$2a$};
+\draw[<->] (-2.4,-1.5)--(-2.4,1.5) node[midway,left] {$2b$};
+\draw[<->] (2.45,-1.5)--(2.45,.25) node[midway,right] {$h$};
+\draw[arr] (0,-.6)--(0,1) node[left] {$F_b$};
+\draw[arr] (.35,0)--(.35,-1.1) node[right] {$mg$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图5-1　平衡浸深、重心和浮心的位置。\par}
+\endgroup\end{minipage}
+\end{center}
+
+\clearpage
+
+\section{第 6
+题　等离子体振荡、德拜屏蔽与电磁波传播}\label{ux7b2c-6-ux9898-ux7b49ux79bbux5b50ux4f53ux632fux8361ux5fb7ux62dcux5c4fux853dux4e0eux7535ux78c1ux6ce2ux4f20ux64ad}
+
+均匀等离子体由数密度均为 \(n_0\)
+的自由电子和带一个元电荷的正离子组成，未扰动时电中性。电子电荷为
+\(-e\)、质量为
+\(m_{\rm e}\)，\(e>0\)。正离子质量远大于电子，可视为固定的均匀背景。真空介电常量为
+\(\varepsilon_0\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\fill[blue!5] (0,-1.2) rectangle (6,1.2);
+\fill[red!15] (0,-1.2) rectangle (.55,1.2);
+\fill[blue!18] (6,-1.2) rectangle (6.55,1.2);
+\draw[dashed] (0,-1.4)--(0,1.5) (6,-1.4)--(6,1.5);
+\draw[thick] (.55,-1.2) rectangle (6.55,1.2);
+\foreach \y in {-.7,0,.7} {
+ \node at (.27,\y) {$+$}; \node at (6.27,\y) {$-$};}
+\draw[arr,thick] (1,0)--(5.4,0) node[midway,above] {$E_x=n_0e\xi/\varepsilon_0$};
+\draw[<->] (0,-1.6)--(.55,-1.6) node[midway,below] {$\xi$};
+\draw[<->] (6,-1.6)--(6.55,-1.6) node[midway,below] {$\xi$};
+\draw[<->] (0,1.7)--(6,1.7) node[midway,above] {$L$};
+\draw[arr] (6.8,0)--(8,0) node[right] {$x$};
+\node at (3,-2.4) {正离子固定；电子层右移 $\xi>0$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6-1　电子层右移后，左侧剩余正电荷、右侧出现负电荷，电场向右。\par}
+\endgroup\end{minipage}
+\end{center}
+
+（1）沿 \(x\) 取厚度 \(L\) 的电子层，其横向尺度远大于
+\(L\)。该层整体位移为 \(\xi\)，\(|\xi|\ll L\)，两侧出现厚度 \(|\xi|\)
+的净正、负电荷薄层。求两薄层之间的电场，并写出其中电子集体位移的方程，求振荡角频率
+\(\omega_{\rm p}\)。
+
+（2）在等离子体原点放入点电荷 \(Q\)，电子重新分布，产生球对称静电势
+\(\varphi(r)\)。电子满足
+
+\[
+n(r)=n_0\exp\frac{e\varphi(r)}{k_{\rm B}T},\qquad
+|e\varphi|\ll k_{\rm B}T,
+\]
+
+其中 \(k_{\rm B}\) 为玻尔兹曼常量、\(T\) 为绝对温度。
+
+（2.1）求一阶近似下 \(\delta n=n-n_0\) 与净电荷密度 \(\rho_q(r)\)。
+
+（2.2）已知 \(r>0\) 时满足
+
+\[
+\frac1r\frac{d^2(r\varphi)}{dr^2}=\frac{\varphi}{\lambda_{\rm D}^2},
+\qquad \lambda_{\rm D}=\sqrt{-\frac{\varepsilon_0\varphi}{\rho_q}}.
+\]
+
+求德拜长度 \(\lambda_{\rm D}\)。
+
+（2.3）求 \(\varphi(r)\)，讨论 \(r\ll\lambda_{\rm D}\) 和
+\(r\gg\lambda_{\rm D}\) 的特点。提示：通解为
+
+\[
+\varphi=\frac{Ae^{-r/\lambda_{\rm D}}+Be^{r/\lambda_{\rm D}}}{r},
+\]
+
+近原点匹配 \(\varphi\sim Q/(4\pi\varepsilon_0r)\)，远处电势趋于零。
+
+（3）角频率 \(\omega\)、波数 \(k\) 的外部电磁波电场为
+\(\boldsymbol E=\boldsymbol E_0e^{-i\omega t+ikx}\)。忽略碰撞，电子位移为
+\(\boldsymbol\eta(t)\)，极化强度
+\(\boldsymbol P=-n_0e\boldsymbol\eta=\varepsilon_0[\varepsilon(\omega)-1]\boldsymbol E\)。
+
+（3.1）在给定位置取
+\(\boldsymbol\eta=\boldsymbol\eta_0e^{-i\omega t}\)，求位移幅和相对介电函数，用
+\(\omega_{\rm p}\) 表示后者。
+
+（3.2）利用
+\(k^2c^2=\varepsilon(\omega)\omega^2\)，求色散关系与可传播角频率范围。
+
+（3.3）取太阳风的量级
+\(n_0\sim10^7\,\mathrm{m^{-3}}\)、\(e\sim10^{-19}\,\mathrm C\)、\(m_{\rm e}\sim10^{-30}\,\mathrm{kg}\)、\(\varepsilon_0\sim10^{-11}\,\mathrm{F/m}\)、\(c\sim10^8\,\mathrm{m/s}\)，估算可传播频率，与
+\(f_{\rm vis}\sim10^{14}\,\mathrm{Hz}\)
+比较，判断对可见光是否透明，并从电子响应解释。本题45分。
+
+\bigskip
+
+\section{第 7
+题　一维光子晶体的相干反射与缺级}\label{ux7b2c-7-ux9898-ux4e00ux7ef4ux5149ux5b50ux6676ux4f53ux7684ux76f8ux5e72ux53cdux5c04ux4e0eux7f3aux7ea7}
+
+折射率呈周期空间分布的材料称为光子晶体。假设所有介质均为线性、非磁性，折射率为实数。真空光速为
+\(c\)，单色电场写为 \(\operatorname{Re}[E(x)e^{-i\omega t}]\)，真空波数
+\(k=\omega/c\)。
+
+（1）单界面位于 \(x=0\)，左侧折射率 \(n_1\)，右侧
+\(n_2\)。光从左侧正入射，界面处 \(E\) 和 \(dE/dx\)
+连续。定义电场幅反射系数 \(r=E_r/E_i\)、透射系数 \(t=E_t/E_i\)，求
+\(r,t\)。
+
+（2）晶体第一界面位于 \(x=0\)，每个周期先是折射率 \(n_2\)、厚度 \(d_2\)
+的层，再是折射率 \(n_1\)、厚度 \(d_1\) 的层，共 \(N\)
+个完整周期。晶体外两侧折射率均为 \(n_1\)。光从左侧沿 \(+x\)
+正入射。\(N\gg1\) 时，反射幅的模随频率出现主极大。
+
+（2.1）\(\delta n=n_1-n_2\) 为小量。求总反射系数 \(r_{\rm tot}\)
+的模，保留对折射率差的一阶项；求第 \(m\) 个可能主极大的角频率
+\(\omega_m\)，\(m=1,2,\ldots\)；求主极大不能实现的缺级条件。若
+\(\omega_m\) 缺级，令 \(\omega=\omega_m+\epsilon\)，求模的首个非零近似。
+
+（2.2）定义等效波矢大小 \(\bar k=\bar n k\)，其中
+
+\[
+\bar n=\frac{n_1d_1+n_2d_2}{d_1+d_2}.
+\]
+
+在 \(\omega_m\) 处，求从向前等效波矢 \(\bar k\) 到向后 \(-\bar k\)
+的变化与空间周期 \(d_1+d_2\) 的关系，说明物理含义。本题45分。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\fill[gray!10] (-2,1.9) rectangle (0,4);
+\fill[blue!12] (0,1.9) rectangle (2,4);
+\draw[thick] (0,1.9)--(0,4);
+\draw[arr] (-1.8,3.5)--(-.25,3.5) node[midway,above] {$E_i$};
+\draw[arr] (-.25,2.7)--(-1.8,2.7) node[midway,above] {$E_r$};
+\draw[arr] (.2,3.3)--(1.8,3.3) node[midway,above] {$E_t$};
+\node at (-1,2.2) {$n_1$}; \node at (1,2.2) {$n_2$};
+\node at (0,1.5) {$x=0$};
+\fill[gray!10] (-2,-1.3) rectangle (0,.6);
+\fill[gray!10] (6.4,-1.3) rectangle (7.5,.6);
+\node at (-1,-.8) {$n_1$}; \node at (7,-.6) {$n_1$};
+\foreach \p in {0,1,2,3} {
+ \fill[blue!16] (1.6*\p,-1.3) rectangle (1.6*\p+.65,.6);
+ \fill[gray!10] (1.6*\p+.65,-1.3) rectangle (1.6*\p+1.6,.6);
+ \draw (1.6*\p,-1.3)--(1.6*\p,.6);
+ \node at (1.6*\p+.325,-.6) {$n_2$};
+ \node at (1.6*\p+1.12,-.6) {$n_1$};}
+\draw[arr] (-2,-.3)--(-.2,-.3) node[midway,above] {入射};
+\draw[arr] (-2,-1.3)--(8,-1.3) node[right] {$x$};
+\draw[<->] (0,.9)--(.65,.9) node[midway,above] {$d_2$};
+\draw[<->] (.65,.9)--(1.6,.9) node[midway,above] {$d_1$};
+\draw[<->] (0,-1.9)--(6.4,-1.9) node[midway,below] {$N$ 个完整周期（示意）};
+\node[below] at (0,-1.3) {$0$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.29\textheight
+\resizebox{!}{.29\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图7-1　单界面的入射、反射和透射，以及晶体的层序与完整周期。\par}
+\endgroup\end{minipage}
+\end{center}
+
+\end{document}

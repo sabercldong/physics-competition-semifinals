@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=.8]
+\draw[arr](-1,0)--(7,0)node[right]{$x$};\draw[arr](0,-1)--(0,4.3)node[above]{$y$};
+\draw[very thick](0,0)--(0,3.5);\fill(0,2.1)circle(2pt)node[left]{$C(0)=s$};\node[above]at(0,3.5){$B$};
+\draw[arr,red](0,2.1)--(1.5,2.1)node[above]{$s\omega_*$};
+\draw[blue,dashed,domain=0:5,samples=40]plot(\x,{2.1-.045351*\x*\x});
+\draw[very thick](.563,1.051)--(3.825,2.319);\fill(2.52,1.812)circle(2pt)node[below right]{$C(t)$};
+\draw[arr](2.8,2.8)arc(115:30:.6);
+\node at(3.1,5.0){质心平抛，杆相对质心匀速转动};
+\end{tikzpicture}

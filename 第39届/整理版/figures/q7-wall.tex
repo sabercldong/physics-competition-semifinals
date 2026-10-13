@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.95]
+\draw[very thick] (4,-2)--(4,2);
+\draw[arr] (-.6,0)--(5.5,0) node[right] {$x$};
+\draw[arr,blue] (.7,-1.5)--(4,.5); \draw[arr,blue] (4,.5)--(.7,2.5);
+\draw[dashed] (4,.5)--(1.5,.5);
+\node at (1.7,-1.9) {$p_x=p\cos\theta$};
+\node at (2.5,3.1) {$\Delta p_{\rm wall}=2p\cos\theta$};
+\node at (4.8,1.5) {$dS$};
+\node at (2,-2.3) {撞壁通量还有一因子$c\cos\theta$};
+\end{tikzpicture}
+
+\end{document}

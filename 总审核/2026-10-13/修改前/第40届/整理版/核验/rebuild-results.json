@@ -1,0 +1,27 @@
+{
+  "all_passed": true,
+  "isolated_directory": "/var/folders/1v/t1yfjxmd0mjd4q8wrjxhfkhw0000gn/T/codex-40-rebuild-5rf_gg7n",
+  "results": [
+    {
+      "pdf": "第40届_学生详解版.pdf",
+      "pages": 57,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第40届_教师备课版.pdf",
+      "pages": 72,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第40届_试题版.pdf",
+      "pages": 9,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    }
+  ]
+}

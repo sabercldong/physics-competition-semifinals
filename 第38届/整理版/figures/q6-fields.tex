@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=2.4,yscale=1.4]
+\draw[arr] (0,0)--(3.4,0) node[right] {$r/r_1$};
+\draw[arr] (0,-1.5)--(0,1.4);
+\draw[thick,blue] (0,0)--(1,0);
+\draw[thick,blue,domain=1:2,samples=60] plot(\x,{1/\x});
+\draw[thick,blue] (2,0)--(3.1,0);
+\draw[thick,red] (0,0)--(1,0)--(1,-1)--(2,-1)--(2,0)--(3.1,0);
+\node[blue] at (1.65,1.2) {$E_r$归一化};\node[red] at (1.6,-1.5) {$B_z$归一化};
+\node[above] at (1,.08) {$1$};\node[above] at (2,.08) {$2$};
+\node at (1.6,-2.05) {示例$r_2=2r_1$；红线沿$-z$};
+\end{tikzpicture}
+
+\end{document}

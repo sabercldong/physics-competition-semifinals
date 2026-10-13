@@ -1,0 +1,18 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.9]
+\draw[fill=gray!10] (0,-.8) rectangle(6,.8);
+\draw[arr,blue,thick] (-1,0)--(6.5,0) node[right] {原子$v$};
+\draw[arr,red,thick] (7,.4)--(.3,.4) node[left] {激光};
+\draw[arr] (0,-1.5)--(6.7,-1.5) node[right] {$z$};
+\node[below] at (0,-1.5) {$0$};\node[below] at (6,-1.5) {$s$};
+\node at (3,1.4) {$f_0(B)=f_0(0)+\beta B,\ \beta<0$};
+\node at (3,-2.4) {速度下降，磁场增加，跃迁频率下降};
+\end{tikzpicture}
+
+\end{document}

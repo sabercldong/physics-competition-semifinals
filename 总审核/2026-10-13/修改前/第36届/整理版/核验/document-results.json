@@ -1,0 +1,232 @@
+{
+  "structure": [
+    {
+      "question": "question-01",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "b9e706c4881bcc4ed28472b93d8f00ee9df6080344a75e9b8e0cdaf93471abd9"
+    },
+    {
+      "question": "question-02",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "b49d2a6e67031507e9580e2e7ea7322eceb2ce213936a169c136b5e1af13577f"
+    },
+    {
+      "question": "question-03",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "f59e6714c2e8ab887d4843e5fed5040802453afd8278fa1190562aa27b031f50"
+    },
+    {
+      "question": "question-04",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "50897ab645bf1e5d1a9229fa231a4f126dd32c0f86b4daebac734ad1feede5fe"
+    },
+    {
+      "question": "question-05",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "75c222bec2a93c222ad90e433311f4990b0081b43f6b23694fbe6c98e8667fc6"
+    },
+    {
+      "question": "question-06",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "6156ebeecfb4df6d145f8ae6f374f2e0177f3fc4559463c33ad8c60dfcf186c8"
+    },
+    {
+      "question": "question-07",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "f21c3197d0a3ffe00f8da61cd8fbbe45ad23194050d4b31569c3f87954d5cb10"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第36届_学生详解版.pdf",
+      "pages": 61,
+      "body_pages": 60,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "152cc12c2e3941a6adfed687802ff03c6368f0d8612c3b29e85afbce7dcfd1a1",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        19,
+        27,
+        34,
+        41,
+        49
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_教师备课版.pdf",
+      "pages": 78,
+      "body_pages": 77,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "bdefa916f2f1d697d28da70dfbb6a32a6bc48e4b5b60b2c156ec461f8ede0d54",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        12,
+        24,
+        35,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_试题版.pdf",
+      "pages": 8,
+      "body_pages": 7,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "8df6df971aef044d4eeb7cceeff613d60ea4fbfe2450776463ab7e9cf21e44e1",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "figures": [
+    {
+      "name": "q1-cup.tikz",
+      "sha256": "b49b9ccee87f0e7c1c2b581805a69148a7ba8e5896c027c6e78ab906e26178fc",
+      "vector_pdf_sha256": "526316a590859dc2c716e42cf40d97297a847b4caf9743d7dde644e05a005521"
+    },
+    {
+      "name": "q1-stool.tikz",
+      "sha256": "8a3488fe5d3dcceecdffbd08b080fc1def06840922c1ec196aada5b4643a1936",
+      "vector_pdf_sha256": "10844701c8294722a3ef5f6f106d333ac9245713438fd9ac31e369d43abc9bad"
+    },
+    {
+      "name": "q1-support.tikz",
+      "sha256": "cca4a491b17214d085142e49e06d3190e23b7a217f99c79a0126700a107ba45e",
+      "vector_pdf_sha256": "bdd2fb2b116a22aa77455994b8a995dc0e4090ec38943a0c513ef35e29d48fb2"
+    },
+    {
+      "name": "q2-cart.tikz",
+      "sha256": "bf509f0fbfa192bc6436839c82d9f020cd64661242f679095121202acf8a4d37",
+      "vector_pdf_sha256": "a4d5d87897ca5f3c56801cff1fcf47ff71a33fbf122ee74202611925697b502d"
+    },
+    {
+      "name": "q2-forces.tikz",
+      "sha256": "96c670a11a0dcef8db3dd296d95b50c62b90bf3586332559d707316922e5d4bb",
+      "vector_pdf_sha256": "835b780c8ea8c784ef38f0ba446e4c9de5ef02202f3278a23eb7cde8d8c39171"
+    },
+    {
+      "name": "q2-stages.tikz",
+      "sha256": "c110832b4ca1133aa1fb13be9305f7f9f6bf9dd19464de7c3e212c0f3c65b70d",
+      "vector_pdf_sha256": "d36b9d93e2ba5d371c571207b9f4ad252b6f0c5861ecec2b8712a0f0aec9e2bb"
+    },
+    {
+      "name": "q3-energy.tikz",
+      "sha256": "5962fe41a8578d415f5623b7f880d322532b0e788d34a0faf3459663e033c68c",
+      "vector_pdf_sha256": "bed0b62cbd953c500022503bfbc88dd9355b536b25e07149e6f7bbc899229525"
+    },
+    {
+      "name": "q3-field.tikz",
+      "sha256": "0ae66a262878985b299bbde55b7095422124f8810875dcf3f2459973705afa11",
+      "vector_pdf_sha256": "6149d4c335f080d4cd9189b24f910d1ce9595c1e3e43bd885eef389d9934c6d6"
+    },
+    {
+      "name": "q3-rails.tikz",
+      "sha256": "a7cf73aa061c46010efb0b007ca3c9ff455428e341fdb97a544200f4377f5e8f",
+      "vector_pdf_sha256": "b2f5a950c7b0dd78feb271bb693265b8321900842db211a1196d4f81fd9f983f"
+    },
+    {
+      "name": "q4-oscillator.tikz",
+      "sha256": "b6b5e52c0b6d9d6b5890f4cb0fd544265a9f3d05bea793dc243a1717ed08604d",
+      "vector_pdf_sha256": "6463129f13c1e57236df527f99dda5086be94e8dea13a9f3473437cdbf4df024"
+    },
+    {
+      "name": "q4-resonator.tikz",
+      "sha256": "27612396b661831805bd11920845084495147fd71897efc295ffdcdad04a5c7d",
+      "vector_pdf_sha256": "83458dfced487176f8a3add4c70ee0735919f82ae1c5b6319c4d7429311c2fb7"
+    },
+    {
+      "name": "q4-response.tikz",
+      "sha256": "dce0e56faa9e0ba87fee49caa8a866f6587965fa471830c62e3fe01441c950c5",
+      "vector_pdf_sha256": "e64f916e61ce724e322d3094c5574a1c9857953ce9d7817fef59e8583abc8925"
+    },
+    {
+      "name": "q5-acceptance.tikz",
+      "sha256": "c2fdbcd0a477ee6ec9832e14921de247314fbeba97b736755a726bc1289f6923",
+      "vector_pdf_sha256": "de005f9c390bd3a1d8d8cf0a0a450b488f7db439cc5f8762c221666d4feb3614"
+    },
+    {
+      "name": "q5-coupling.tikz",
+      "sha256": "31eaca263a7e01c692ef17b166460869176b124b81cc709c3af7e71eecbb1ca6",
+      "vector_pdf_sha256": "95d49e939fed99fb7e7d861ac93bacdb7cbfd2d9374f808975a43fce9659e0b2"
+    },
+    {
+      "name": "q5-focus.tikz",
+      "sha256": "7d4d9208212d6df582f31463f1884fa9932fb00cb86eb36e49a8669246bc6e2e",
+      "vector_pdf_sha256": "0148594c6f4570ccb78525e8f390a11a1bcc12d8a978e2ec622ec81182e1cb14"
+    },
+    {
+      "name": "q6-decay.tikz",
+      "sha256": "45665699dd8fb19e043fc4413d256868d987d70ffa98e3473fb5b900d1e00e24",
+      "vector_pdf_sha256": "04b6ac6d2c7b993ed3da82fb36bf84650aef5aaaa093ef61f368dd43333f93f3"
+    },
+    {
+      "name": "q6-range.tikz",
+      "sha256": "10ff718d1e9c85c88682abbe815a5360071038dd3b8fcb5bacfd74c18ea7b986",
+      "vector_pdf_sha256": "377a26d532a7e7c26434722860af9bfc41480c5bb929a424c6dee53d0230be3c"
+    },
+    {
+      "name": "q6-survival.tikz",
+      "sha256": "f7a2e1ae8cc1f0141b65fc4f3e19fb2c5fc5ae06ba2f2db24f77d89e16ed622b",
+      "vector_pdf_sha256": "4ba27edf9b9fa6b855bb083ed78e7be9ac7a818295fff379636d61c883a842c6"
+    },
+    {
+      "name": "q7-balloon.tikz",
+      "sha256": "785389b40089b1eb94f9daa7c3c7c91df26759975da8e0f783524a873ac7aca8",
+      "vector_pdf_sha256": "e4909e836ca2fbdeaa3fcc52276e489ba191708e2f97b9ae389cfeac04f52a3b"
+    },
+    {
+      "name": "q7-channel.tikz",
+      "sha256": "671357767c13089c323f7e1366423a98a705d32d8d3730945eab7ed04084edd6",
+      "vector_pdf_sha256": "91bf9784586f42734b0a5a0a7a0ab1bd60cb860cbdadfb292c30a651507892ef"
+    },
+    {
+      "name": "q7-cloud.tikz",
+      "sha256": "9dd2e1aef93b532feea0c0489d8efc7fb7215d8296aa1453ac60073aa83f660c",
+      "vector_pdf_sha256": "e1e8d3477c48c92fd4845763483258be7bae4e23a86a1cae05ae1110b12887f2"
+    },
+    {
+      "name": "q7-images.tikz",
+      "sha256": "5cb4a147b6294a66d92e9cf492619ffa6597f8f39d39b56b754e429e85c53020",
+      "vector_pdf_sha256": "d90516bd6a573845b714d573968124ee18527c804fb13bce32b8dfb6a5497afc"
+    },
+    {
+      "name": "q7-ring.tikz",
+      "sha256": "1aee84d611eeeab4ea62b273f59783c030870141c1a76d8aa9cd585215d196bc",
+      "vector_pdf_sha256": "5d0e75ab61341b84df5dd3907b7125137c52acb7f3283f282c9832fde2b6c353"
+    }
+  ],
+  "core_identical": true
+}

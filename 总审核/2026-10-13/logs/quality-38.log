@@ -1,0 +1,75 @@
+{
+  "pdfs": [
+    {
+      "name": "第38届_学生详解版.pdf",
+      "pages": 62,
+      "body_pages": 61,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "eb19455535cc5a285484e9f8196f78efa9883f46eb2e1d78fb3fb4295a7117c6",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        46,
+        54
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_教师备课版.pdf",
+      "pages": 75,
+      "body_pages": 74,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "8f34f2a29da8cee348d208be4bb11ed86f9f1e34bc05fefeb385c724842fab92",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        10,
+        19,
+        28,
+        37,
+        45,
+        56,
+        65
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "d9102ddd8c106c2925b70f0907033a786ee43b1323f17f5725e8ba443aabeb77",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "figures": 22,
+  "core_identical": true
+}

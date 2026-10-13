@@ -1,0 +1,16 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[thick](0,0)ellipse(2 and .8);\fill(-1.2,-.64)circle(3pt)node[below]{电子};
+\draw[dashed](0,0)--(1.5,.53)node[midway,above]{$R$};
+\draw[->,very thick](0,-1.2)--(0,1.8)node[above]{$\Phi$};
+\draw[->](1.45,-.55)arc(-30:45:1.65 and .65);
+\node[right]at(2,.3){正向绕环};
+\node[below]at(.7,-1.5){$x=R\theta$};
+\end{tikzpicture}
+
+\end{document}

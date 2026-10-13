@@ -1,0 +1,3969 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=22mm,right=22mm,top=22mm,bottom=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx,xcolor,booktabs,longtable,array,calc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\usepackage{setspace,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setstretch{1.24}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.35em}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+\setcounter{secnumdepth}{-1}
+\ctexset{section={format=\Large\bfseries,beforeskip=1em,afterskip=.7em},
+subsection={format=\large\bfseries,beforeskip=.8em,afterskip=.4em},
+subsubsection={format=\normalsize\bfseries,beforeskip=.7em,afterskip=.3em}}
+\allowdisplaybreaks[2]
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\newsavebox{\diagrambox}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage}
+\setlength{\headheight}{16pt}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{27mm}
+\begin{center}
+{\LARGE\bfseries 第38届全国中学生物理竞赛\par}
+\vspace{8mm}
+{\LARGE\bfseries 复赛理论试题\par}
+\vspace{17mm}
+{\Large 教师备课版\par}
+\end{center}
+\vfill
+\end{titlepage}
+\setcounter{page}{1}
+\section{第 1
+题　精确会聚的非球面透镜（40分）}\label{ux7b2c-1-ux9898-ux7cbeux786eux4f1aux805aux7684ux975eux7403ux9762ux900fux955c40ux5206}
+
+（1）宽束平行光正入射到折射率\(n\)的平凸透镜左侧平面，经过凸面后会聚于主轴上的\(F\)。凸面顶点\(O\)到\(F\)的距离为\(r_0\)。求凸面的极坐标方程及直角坐标标准形式。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\draw[arr] (-2,0)--(5,0) node[right] {主轴};
+\draw[fill=blue!6] (-1.2,-1.5)--(-1.2,1.5)--(-.489,1.5)
+--plot[domain=1.5:-1.5,samples=81] ({4-(2.4+sqrt(2.56+\x*\x/1.25))},\x)--cycle;
+\foreach \h in {-1.3,0,1.3}{
+\pgfmathsetmacro{\sx}{4-(2.4+sqrt(2.56+\h*\h/1.25))}
+\draw[arr,blue] (-2,\h)--(\sx,\h);
+\draw[arr,blue] (\sx,\h)--(4,0);}
+\fill (4,0) circle(1.5pt) node[below] {$F$};
+\fill (0,0) circle(1.5pt) node[below] {$O$};
+\draw[<->] (0,-2)--(4,-2) node[midway,below] {$r_0$};
+\node at (-.85,.55) {$n$};
+\node at (1.8,2.2) {平行光到同一焦点的等光程};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图1a　平行入射与精确会聚\par}\endgroup\end{minipage}\end{center}
+
+（2）在上述系统中共轴插入折射率\(n'\)的平凹透镜，其平面在凹面右侧，凹面顶点\(O'\)在\(O,F\)之间，到\(F\)的距离\(r'_0<r_0\)。使原来会聚到\(F\)的光经凹面折射后，平行向右射出。
+
+（i）求凹面的极坐标方程及直角坐标标准形式。
+
+（ii）会聚光线与主轴的夹角最大为\(\theta_{\max}\)，求入射与出射平行圆光束横截面半径之比。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.95]
+\draw[arr] (-2,0)--(5.5,0) node[right] {主轴};
+\draw[thick,blue,domain=-1.4:1.4,samples=81] plot({4-(2.4+sqrt(2.56+\x*\x/1.25))},\x);
+\draw[thick,red,domain=-.6:.6,samples=81] plot({4-(.964286+sqrt(.287+ \x*\x/2.24))},\x);
+\draw[thick,red] (3.5,-.6)--(3.5,.6);
+\foreach \h in {-1.3,0,1.3}{
+\pgfmathsetmacro{\xx}{4-(2.4+sqrt(2.56+\h*\h/1.25))}
+\pgfmathsetmacro{\rad}{sqrt((4-\xx)^2+\h*\h)}
+\pgfmathsetmacro{\cs}{(4-\xx)/\rad}
+\pgfmathsetmacro{\rp}{1.2/(1.8*\cs-1)}
+\pgfmathsetmacro{\xp}{4-\rp*\cs}
+\pgfmathsetmacro{\yp}{\rp*\h/\rad}
+\draw[arr] (-2,\h)--(\xx,\h)--(\xp,\yp)--(5.25,\yp);
+\draw[dashed] (\xp,\yp)--(4,0);}
+\fill (4,0) circle(1.5pt) node[below] {$F$};
+\node[below] at (0,0) {$O$};\node[below] at (2.5,-.7) {$O'$};
+\node at (-.6,1.9) {凸面$n$};\node at (3,1.3) {凹面$n'$};
+\node at (1.8,-2.1) {同一入射光线：$y=r\sin\theta,\quad y'=r'\sin\theta$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图1b　插入凹面后形成平行出射光束\par}\endgroup\end{minipage}\end{center}
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d}
+
+这是由规定光线功能反求折射面形状的题，属于精确几何光学的设计问题。题目没有给``薄透镜''或``近轴''条件，因此不能从薄透镜公式或球面折射公式直接求曲率半径。所求曲面要让整个口径内的平行光都到达同一焦点，而不仅是近轴光。
+
+最方便的工具是等光程。入射波前是平面，理想焦点处的会聚波前具有球面结构。连接平面波前与焦点的所有实际光路具有相同光程，由此可以直接得到凸面各点的位置。
+
+第二个折射面将会聚球面波转换为平面波。利用同一焦点\(F\)建立极坐标，它的方程与第一个曲面具有相同结构。最后用同一最外侧光线的两个交点高度，得到口径比。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9}
+
+\subsubsection{1.
+光程与等相位}\label{ux5149ux7a0bux4e0eux7b49ux76f8ux4f4d}
+
+介质中长度\(s\)的光程为\(ns\)。同一入射平面波前上的两点等相位；如果光无像差地到达同一个像点，其光程差为零。界面透射的固定相位不影响本题几何比较。
+
+对任意曲面点\(M\)，在左侧平面选与\(M\)同高度的入射点\(N\)，在主轴选入射点\(P\)。将\(M\)向主轴作垂足\(H\)。正入射平面后光线不偏折，所以透镜内部\(NM\)平行主轴，且\(NM=PH\)。
+
+轴上参考光路是\(PO+OF\)，离轴光路是\(NM+MF\)。等光程给
+
+\[
+n\,NM+MF=n\,PO+OF.
+\]
+
+由\(PO=PH+HO\)，可消去公共透镜内部长度，得到\(MF=n\,HO+OF\)。初始平面的具体位置因此不会出现在最终方程中。
+
+\subsubsection{2. 坐标约定}\label{ux5750ux6807ux7ea6ux5b9a}
+
+以\(F\)为极点，从\(F\)指向\(O\)的射线为极轴。记\(FM=r\)，与极轴夹角\(\theta\)。直角坐标也以\(F\)为原点，\(x\)轴指向\(O\)，\(y\)轴取垂直于主轴方向，故
+
+\[
+x=r\cos\theta,\qquad y=r\sin\theta,\qquad
+HO=x-r_0.
+\]
+
+该\(x\)正方向与光的总体传播方向相反。定义坐标后，不能把\(OF=r_0\)误写成顶点坐标为\(-r_0\)。
+
+\subsubsection{3.
+平方后的分支筛选}\label{ux5e73ux65b9ux540eux7684ux5206ux652fux7b5bux9009}
+
+若方程含\(\sqrt{x^2+y^2}\)，平方会丢失右边必须非负的条件。得到圆锥曲线标准式之后，仍须回代未平方式，并选通过实际顶点的分支。
+
+本题折射率通常取\(n>1,n'>1\)。对\(n=1\)的界面没有折射会聚能力；用\(n\to1\)极限讨论形状时，不能把退化极限当成可工作的有限透镜。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf}
+
+轴外入射光在透镜中比轴上光走的路更短，离开曲面后到焦点的空气段更长。由于透镜光程按\(n\)加权，曲面的厚度分布恰好补偿这两部分差异。
+
+离轴点距焦点\(r\)大于\(r_0\)，且在本坐标下\(x>r_0\)，因此凸面只有靠近焦点的顶点最突出。将截面绕主轴旋转，就形成精确会聚的旋转双曲面。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.85]
+\draw[arr] (0,0)--(6,0) node[right] {$x$};
+\draw[arr] (0,-2.2)--(0,2.2) node[above] {$y$};
+\draw[dashed] (2.4,-2.2)--(2.4,2.2);
+\draw[dashed] (.5,-2.125)--(4.3,2.125);
+\draw[dashed] (.5,2.125)--(4.3,-2.125);
+\draw[very thick,blue,domain=-1.9:1.9,samples=90] plot({2.4+sqrt(2.56+\x*\x/1.25)},\x);
+\draw[thin,gray,domain=-1.9:1.9,samples=90] plot({2.4-sqrt(2.56+\x*\x/1.25)},\x);
+\fill (4,0) circle(2pt) node[below right] {$O:r_0$};
+\node[below left] at (0,0) {$F$};\node at (3.5,2.6) {蓝色右支满足未平方方程};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图1c　双曲线的物理分支\par}\endgroup\end{minipage}\end{center}
+
+第二透镜截取还没到达\(F\)的会聚光。光在空气中原来要继续走到\(F\)，现在先在凹面折射为平行光，再通过右侧平面正入射出射。平行出射说明同一右侧垂直主轴平面上的光程相同。
+
+最外侧光线从第一曲面点\(M\)到第二曲面点\(M'\)，两点和\(F\)共线，所以它们的极角相同。这一共线关系是口径比的依据；两曲面的顶点距离之比只有在折射率相同或近轴极限下才直接等于口径比。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3}
+
+第一问将\(MF=r\)、\(HO=r\cos\theta-r_0\)代入等光程：
+
+\[
+r=n(r\cos\theta-r_0)+r_0.
+\]
+
+这已经是所求极坐标形状的线性方程。先求\(r(\theta)\)，再用\(r=\sqrt{x^2+y^2}\)转为直角坐标。
+
+第二问可借第一问等光程关系消去两曲面之间的空气段，也可把凹面前的会聚波单独视为以\(F\)为中心的球面波。两条路线应给出相同\(r'(\theta)\)。
+
+最后用\(y_{\max}=r(\theta_{\max})\sin\theta_{\max}\)和\(y'_{\max}=r'(\theta_{\max})\sin\theta_{\max}\)取比。不要先把\(\sin\theta_{\max}\)近似成\(\theta_{\max}\)，本题要求精确几何关系。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790}
+
+\subsubsection{（1）凸面的极坐标方程}\label{ux51f8ux9762ux7684ux6781ux5750ux6807ux65b9ux7a0b}
+
+由等光程式，
+
+\[
+(1-n\cos\theta)r=(1-n)r_0.
+\]
+
+因此
+
+\[
+\boxed{
+r(\theta)=\frac{(1-n)r_0}{1-n\cos\theta}
+=\frac{(n-1)r_0}{n\cos\theta-1}}.
+\]
+
+在\(\theta=0\)时\(r=r_0\)，符合顶点距离。对\(n>1\)，要有正有限\(r\)，
+
+\[
+n\cos\theta>1,\qquad
+|\theta|<\arccos(1/n).
+\]
+
+达到该角度边界时\(r\)趋于无穷，不能用一个有限口径透镜实现超过此边界的所求曲面。实际透镜还受到厚度、口径和与其他元件相交等几何限制。
+
+\subsubsection{直角坐标方程的推导}\label{ux76f4ux89d2ux5750ux6807ux65b9ux7a0bux7684ux63a8ux5bfc}
+
+等光程式在直角坐标中为
+
+\[
+\sqrt{x^2+y^2}=nx-(n-1)r_0.
+\]
+
+右边必须非负。平方并移项：
+
+\[
+(n^2-1)x^2-2n(n-1)r_0x
++(n-1)^2r_0^2-y^2=0.
+\]
+
+配方时先除以\(n^2-1\)：
+
+\[
+x^2-\frac{2n}{n+1}r_0x
+-\frac{y^2}{n^2-1}
++\frac{n-1}{n+1}r_0^2=0.
+\]
+
+于是
+
+\[
+\left(x-\frac{n}{n+1}r_0\right)^2
+-\frac{y^2}{n^2-1}
+=\frac{r_0^2}{(n+1)^2}.
+\]
+
+标准形式为
+
+\[
+\boxed{
+\frac{\left(x-\dfrac{n}{n+1}r_0\right)^2}
+{\left(\dfrac{r_0}{n+1}\right)^2}
+-\frac{y^2}{\dfrac{n^2-1}{(n+1)^2}r_0^2}=1}.
+\]
+
+截面是双曲线，旋转后为双曲面。中心\(x_c=nr_0/(n+1)\)，半实轴\(a=r_0/(n+1)\)，半虚轴\(b=r_0\sqrt{n^2-1}/(n+1)\)。
+
+\subsubsection{选择实际曲面}\label{ux9009ux62e9ux5b9eux9645ux66f2ux9762}
+
+两个轴上顶点为\(x_c\pm a\)：
+
+\[
+x_+=r_0,\qquad x_-=\frac{n-1}{n+1}r_0.
+\]
+
+本题实际顶点是\(x=r_0\)，故取右支：
+
+\[
+\boxed{
+x(y)=\frac{n}{n+1}r_0
++\sqrt{\left(\frac{r_0}{n+1}\right)^2
++\frac{y^2}{n^2-1}}}.
+\]
+
+左支轴上顶点代入未平方式，右边为负，不合\(r\geq0\)。所以不能把标准双曲线两支都当成透镜表面。
+
+标准双曲线的几何焦点也不能与光学焦点混同。其焦半距为\(\sqrt{a^2+b^2}=nr_0/(n+1)\)，左侧几何焦点恰为本坐标原点\(F\)；光程方程还包含折射率的加权关系，曲面设计的物理依据仍是折射等光程。
+
+\subsubsection{（2）（i）凹面的等光程}\label{iux51f9ux9762ux7684ux7b49ux5149ux7a0b}
+
+以\(F\)继续作极点，设同一会聚光线在凹面的交点距\(F\)为\(r'\)。选右侧一张垂直于主轴的共同出射波前；为了书写方便，可以把平凹透镜的右平面沿主轴延长到通过\(F\)的平面，延长的相同介质光程不会影响比较。
+
+光从第一曲面\(M\)走到凹面\(M'\)，空气路长\(r-r'\)；在第二透镜中平行走到共同平面，长度\(r'\cos\theta\)。轴上对应空气段\(r_0-r'_0\)，第二介质段\(r'_0\)。
+
+全光路等光程给
+
+\[
+(r-r')+n'r'\cos\theta
+=n(r\cos\theta-r_0)+(r_0-r'_0)+n'r'_0.
+\]
+
+利用第一问\(r=n(r\cos\theta-r_0)+r_0\)消去\(r\)，得到
+
+\[
+-r'+n'r'\cos\theta=-r'_0+n'r'_0.
+\]
+
+因此
+
+\[
+\boxed{
+r'(\theta)=\frac{(n'-1)r'_0}{n'\cos\theta-1}}.
+\]
+
+这个推导中的``延长透镜''是共同出射光程的辅助构造，并不要求实际透镜必须延长到\(F\)。任意实际右平面只会给所有光线增加相同的常数项。
+
+\subsubsection{凹面标准式与分支}\label{ux51f9ux9762ux6807ux51c6ux5f0fux4e0eux5206ux652f}
+
+等价未平方式
+
+\[
+\sqrt{x^2+y^2}=n'x-(n'-1)r'_0.
+\]
+
+与前一问同样配方，得到
+
+\[
+\boxed{
+\frac{\left(x-\dfrac{n'}{n'+1}r'_0\right)^2}
+{\left(\dfrac{r'_0}{n'+1}\right)^2}
+-\frac{y^2}{\dfrac{n'^2-1}{(n'+1)^2}{r'_0}^2}=1}.
+\]
+
+取通过\(x=r'_0\)的右支，截面仍是双曲线。它在实际光路中的介质填充侧与第一透镜相反：第一透镜介质在曲面左侧，第二透镜介质在凹面右侧。因此相同类型的数学曲线可以分别表现为凸面与凹面。
+
+同样要求\(n'\cos\theta>1\)。在口径内还须\(r'(\theta)<r(\theta)\)，保证光先过凸面、再过凹面。顶点处\(r'_0<r_0\)仅保证轴上次序；折射率不同时，不能据此自动断言整个口径内都不交叉。
+
+\subsubsection{（2）（ii）圆光束的口径比}\label{iiux5706ux5149ux675fux7684ux53e3ux5f84ux6bd4}
+
+轴对称系统中，入射圆束半径等于最外侧光线在凸面的高度，
+
+\[
+R_{\rm in}=r(\theta_{\max})\sin\theta_{\max}.
+\]
+
+出射圆束半径等于同一光线在凹面的高度，
+
+\[
+R_{\rm out}=r'(\theta_{\max})\sin\theta_{\max}.
+\]
+
+对\(\theta_{\max}>0\)约去共同正弦：
+
+\[
+\boxed{
+\frac{R_{\rm in}}{R_{\rm out}}
+=\frac{(n-1)(n'\cos\theta_{\max}-1)}
+{(n'-1)(n\cos\theta_{\max}-1)}
+\frac{r_0}{r'_0}}.
+\]
+
+也可将两处负号同时反转，得到参考解答的\((1-n)\)与\((1-n\cos\theta)\)形式，两者完全等价。
+
+从极坐标方程看，\(r\)随\(|\theta|\)增加而增加，\(\sin|\theta|\)也增加，故在允许角域内最外侧光线确实对应\(\theta_{\max}\)。因此，口径比应由边缘光线对应的最大角求出。
+
+\subsubsection{特殊情况与近轴检查}\label{ux7279ux6b8aux60c5ux51b5ux4e0eux8fd1ux8f74ux68c0ux67e5}
+
+若\(n'=n\)，所有角度的\(r/r'\)都等于\(r_0/r'_0\)，两曲面相对于\(F\)成严格相似形，故
+
+\[
+\frac{R_{\rm in}}{R_{\rm out}}=\frac{r_0}{r'_0}.
+\]
+
+若\(n'\neq n\)，只有在\(\theta_{\max}\to0\)时口径比趋于这一简单比值。展开可得
+
+\[
+\frac{R_{\rm in}}{R_{\rm out}}
+=\frac{r_0}{r'_0}
+\left[1+\frac{\theta_{\max}^2}{2}
+\left(\frac n{n-1}-\frac{n'}{n'-1}\right)
++O(\theta_{\max}^4)\right].
+\]
+
+主轴附近的曲面形状也可展开。由右支式，
+
+\[
+x-r_0=\frac{y^2}{2(n-1)r_0}+O(y^4).
+\]
+
+因此顶点曲率半径的大小为\((n-1)r_0\)。这与近轴单面折射焦距关系相符，但整曲面需要高阶项才能消除大口径球差。用顶点球面替代完整双曲面，只能近轴近似会聚。
+
+\subsubsection{用斯涅尔定律复核等光程}\label{ux7528ux65afux6d85ux5c14ux5b9aux5f8bux590dux6838ux7b49ux5149ux7a0b}
+
+等光程函数对曲面位置求变分，其沿切线的导数为零。这意味着入、出光线在界面切向的光学动量相等：
+
+\[
+n\sin i=\sin t
+\]
+
+对于第一透镜成立；第二透镜则为\(\sin i'=n'\sin t'\)。这说明等光程不是绕过折射定律的独立假设，而是把所有光线满足折射规律并到达规定波前的条件集中到一个几何方程中。
+
+实际核验可以逐点取法线，与入射平行方向和出射指向\(F\)方向计算夹角。若某条绘制光线不满足这一关系，通常是图的曲面分支或坐标方向有误。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf}
+
+把焦点放在极点后，``空气路长\(r\)''和``介质长度变化\(r\cos\theta-r_0\)''都变成简单量，方程立即线性。这是坐标选择带来的简化，并非公式记忆。
+
+数学标准式包含两支，但物理光程式只接受一支。标准式、实际分支、介质填充侧是三个不同信息，都说明清楚才能确定透镜。
+
+两曲面有相同功能关系的结构，不等于它们一定几何相似。相似要求折射率相同；否则口径比随最外侧角度变化。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9}
+
+套薄透镜公式只能得到近轴焦距，不能得到无球差表面。把\(F\)到\(M\)的距离当成\(MF\cos\theta\)，会将空气光程误换成轴向投影。
+
+平方后接受左支，会得到负的未平方右边。以\(O\)为原点推导却写成以\(F\)为原点的标准式，会把中心平移量写错。
+
+第二透镜的等光程需取共同出射波前，不能比较两条在不同轴向位置停止的路径。口径比中的\(\theta_{\max}\)属于同一会聚光线，而不是两个独立转角。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae}
+
+先让学生画\(N,M,H,O,F\)，只写\(nNM+MF=nPO+OF\)。引导他们消去相同的入射段，再选择焦点极坐标。配方可单独板书，把保留符号条件和分支筛选放在标准式之后。
+
+第二问先不给最终形状，要求在同一右侧波前比较两路光程。最后讨论\(n'=n\)与\(n'\neq n\)，让学生判断什么时候能直接用顶点距离比。
+
+课堂检查可用三步：轴上是否\(r=r_0\)；右支是否满足未平方式；逐点法线是否满足折射定律。三种检查针对不同错误，不能只对照最后的曲线名称。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3}
+
+\subsubsection{变式1　相同材料的缩束器}\label{ux53d8ux5f0f1-ux76f8ux540cux6750ux6599ux7684ux7f29ux675fux5668}
+
+取\(n=n'=1.50,r_0=100\) mm、\(r'_0=25.0\)
+mm，\(\theta_{\max}=10^\circ\)。求入、出圆束半径。
+
+\textbf{解答：}\(r=0.5r_0/(1.5\cos10^\circ-1)\simeq104.8\)
+mm，入射半径\(r\sin10^\circ\simeq18.2\) mm。\(r'=r/4\)，出射半径约4.55
+mm。两口径比严格为4，不依赖角度。轴上距离比4与全口径比一致的依据是折射率相同。
+
+\subsubsection{变式2　折射率不同的口径比}\label{ux53d8ux5f0f2-ux6298ux5c04ux7387ux4e0dux540cux7684ux53e3ux5f84ux6bd4}
+
+取\(n=1.50,n'=1.80,r'_0=r_0/2\)，\(\theta_{\max}=20^\circ\)，求口径比，并判断两曲面的沿光线次序。
+
+\textbf{解答：}代精确比值，
+
+\[
+k=2\frac{0.5(1.8\cos20^\circ-1)}
+{0.8(1.5\cos20^\circ-1)}
+\simeq2.11.
+\]
+
+\(n\cos20^\circ>1\)、\(n'\cos20^\circ>1\)，且\(r/r'=k>1\)，最外侧光线先到凸面。对本组参数，\(r/r'\)从轴上2随角度增加，因此全口径内均保持正确次序。
+
+\subsubsection{变式3　给定口径求凸面边缘厚度差}\label{ux53d8ux5f0f3-ux7ed9ux5b9aux53e3ux5f84ux6c42ux51f8ux9762ux8fb9ux7f18ux539aux5ea6ux5dee}
+
+折射率\(n=1.50\)、\(r_0=100\) mm，入射半径\(R_{\rm in}=20.0\)
+mm。求边缘相对顶点的轴向退后量，并与抛物近似比较。
+
+\textbf{解答：}用右支式，
+
+\[
+x-r_0=-40+\sqrt{40^2+\frac{20^2}{1.25}}
+\simeq3.82\ \mathrm{mm}.
+\]
+
+近轴近似\(y^2/[2(n-1)r_0]=4.00\) mm，偏大约0.18
+mm。这里``退后''指沿\(x\)正向、与传播方向相反。光学功能由完整曲面保证，近似厚度差不能替代精确设计。
+
+\subsubsection{变式4　有限口径的角度界限}\label{ux53d8ux5f0f4-ux6709ux9650ux53e3ux5f84ux7684ux89d2ux5ea6ux754cux9650}
+
+折射率\(n=1.60\)，要求光会聚后最大夹角为\(60^\circ\)，能否用本题平凸单折射面实现？
+
+\textbf{解答：}需要\(n\cos\theta_{\max}>1\)，而\(1.60\cos60^\circ=0.80<1\)，极坐标式给负\(r\)，没有所需物理分支。允许上界为\(\arccos(1/1.60)\simeq51.3^\circ\)，且上界对应无限尺寸，有限透镜必须严格小于该角。该结论来自规定波前与介质折射关系，不能通过把负\(r\)取绝对值挽救。
+
+\clearpage
+
+\section{第 2
+题　气体加热与水银溢出（40分）}\label{ux7b2c-2-ux9898-ux6c14ux4f53ux52a0ux70edux4e0eux6c34ux94f6ux6ea2ux51fa40ux5206}
+
+一端开口的薄壁玻璃管竖直放置、开口向上，总长\(l=75.0\)
+cm，横截面积\(S=10.0\)
+cm²。管内水银封闭一段理想气体，二者之间有薄而轻的绝热光滑活塞。初始气柱和水银柱高度均\(h=25.0\)
+cm。
+
+气体初温\(T_0=400\)
+K，定体摩尔热容\(C_V=5R/2\)，\(R=8.31\,\mathrm{J/(mol\cdot K)}\)。水银密度\(\rho=13.6\times10^3\,\mathrm{kg/m^3}\)，大气压\(p_0=75.0\)
+cmHg，\(g=9.80\,\mathrm{m/s^2}\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\foreach \xx/\hg/\hh/\lab in {0/1.5/1.5/初态,3/3/1.5/A末,6/4.5/0/B末}{
+\begin{scope}[shift={(\xx,0)}]
+\draw[thick] (0,4.5)--(0,0)--(1.4,0)--(1.4,4.5);
+\fill[blue!6] (.02,.02) rectangle(1.38,\hg);
+\ifdim\hh pt>0pt\fill[gray!35] (.02,\hg) rectangle(1.38,{\hg+\hh});\fi
+\draw[very thick] (0,\hg)--(1.4,\hg);
+\node at (.7,.6) {气体};\node at (.7,-.55) {\lab};
+\end{scope}}
+\node at (3.7,5.1) {全过程管口外压力为$p_0$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图2a　初态及两个过程的终态\par}\endgroup\end{minipage}\end{center}
+
+（1）过程A：缓慢加热，使水银上液面恰好到达管口，求气体对外做功。
+
+（2）过程B：继续缓慢加热，直至水银恰好全部流出、活塞与管口平齐。通过计算说明过程B能否缓慢稳定发生，并求气体吸热量。
+
+忽略玻璃管、水银的热膨胀，数值保留三位有效数字。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-1}
+
+本题是随外负载变化的准静态热力学。水银尚未溢出时，柱高不变，气体承受恒定压力；溢出后，管内水银越来越少，气体承受的压力随活塞高度下降。必须在管口首次接触水银液面的时刻切换模型。
+
+全过程气体质量不变，水银则在第二阶段流出。热力学第一定律应以封闭气体为系统，吸热等于内能增加与边界功之和。不能因为水银流走就把气体误当成质量变化的开放系统。
+
+稳定性需要在热状态和负载曲线之间判断。参考解答先求水银剩余柱高随温度的单调变化；本稿进一步用压力扰动说明，在水银仍有有限高度时，所取支路确实具有恢复趋势。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-1}
+
+\subsubsection{1. 压力和单位}\label{ux538bux529bux548cux5355ux4f4d}
+
+静止水银柱产生的附加压强为\(\rho g x\)，其中\(x\)为柱高。cmHg是压强单位，不是玻璃管长度：
+
+\[
+p_0=\rho g(0.750\,\mathrm m)=3\rho gh.
+\]
+
+初始气体压强
+
+\[
+p_1=p_0+\rho gh=4\rho gh.
+\]
+
+面积\(10.0\) cm²等于\(1.00\times10^{-3}\)
+m²，初始体积\(Sh=2.50\times10^{-4}\)
+m³。面积换算不能只把cm换成m而漏掉平方。
+
+\subsubsection{2.
+准静态边界功}\label{ux51c6ux9759ux6001ux8fb9ux754cux529f}
+
+薄、轻、光滑活塞使气体压强与外负载压强在准静态阶段相等：
+
+\[
+p=p_{\rm ext},\qquad
+W=\int p\,dV.
+\]
+
+压力随着过程变化时必须积分。气体温度虽然在变，也不影响用实际边界压强计算功。
+
+\subsubsection{3.
+理想气体内能}\label{ux7406ux60f3ux6c14ux4f53ux5185ux80fd}
+
+设封闭气体摩尔数为\(\nu\)，则
+
+\[
+pV=\nu RT,\qquad
+U=\nu C_VT+\text{常数}.
+\]
+
+\(\nu\)由初态确定，后续过程始终相同。采用气体对外做功为正的约定，
+
+\[
+Q=\Delta U+W.
+\]
+
+\subsubsection{4.
+几何状态变量}\label{ux51e0ux4f55ux72b6ux6001ux53d8ux91cf}
+
+过程B中水银上表面固定在管口，剩余柱高记\(x\)，活塞高度记\(y\)，故
+
+\[
+y=l-x=3h-x,\qquad V=Sy.
+\]
+
+\(x\)从\(h\)减到0，\(y\)从\(2h\)增到\(3h\)。明确谁增、谁减，可避免功积分上下限反号。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-1}
+
+过程A中水银整体上移，质量和柱高都不变。它始终对气体施加\(\rho gh\)附加压强，气体因此等压膨胀。气柱高度从\(h\)增至\(2h\)，水银上液面从\(2h\)到\(3h\)。
+
+过程B中水银上表面已经到达管口。活塞再上移，就把部分水银推出。柱高\(x\)下降，气体压强\(p_0+\rho gx\)也下降，但体积继续增大。两者共同决定温度变化，不能从``体积增大''单独断言温度增大或减小。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=2,yscale=.8]
+\draw[arr] (.6,0)--(3.5,0) node[right] {$V/(Sh)$};
+\draw[arr] (.7,0)--(.7,5) node[above] {$p/(\rho gh)$};
+\draw[very thick,blue,arr] (1,4)--(2,4);
+\draw[very thick,red,arr] (2,4)--(3,3);
+\foreach \x/\y/\lab in {1/4/初态,2/4/A末,3/3/B末}{
+\fill (\x,\y) circle(1.7pt);\node[above] at (\x,\y) {\lab};
+\draw[dashed] (\x,0)--(\x,\y);\node[below] at (\x,0) {$\x$};}
+\node at (2.1,-.9) {曲线下的面积是气体边界功};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图2b　气体在p-V平面中的两个阶段\par}\endgroup\end{minipage}\end{center}
+
+过程A是水平线，过程B是向右下的直线。功分别对应两段曲线下的面积，第二阶段的气体压力均大于或等于\(p_0\)，气体仍对外做正功。
+
+水银全部排出时，活塞恰到管口，本题过程随即终止。继续加热会进入新的几何和负载阶段，原来的``上表面固定管口、剩余水银柱高\(x\)''关系不能延拓到\(x<0\)。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-1}
+
+先用\(l=3h\)建立三个状态：
+
+\[
+\begin{array}{c|c|c}
+\text{状态}&V&p\\ \hline
+\text{初态}&Sh&4\rho gh\\
+A\text{末态}&2Sh&4\rho gh\\
+B\text{末态}&3Sh&3\rho gh
+\end{array}
+\]
+
+初态确定\(\nu\)。A中\(p\)恒定，直接算\(p\Delta V\)；B中写\(p=(3h+x)\rho g\)、\(V=(3h-x)S\)，代入\(pV=\nu RT\)求\(x(T)\)。
+
+求B的功时，可按\(x\)积分，也可按\(y\)积分。写\(dV=-Sdx=Sdy\)后再设积分限，能让符号一目了然。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-1}
+
+\subsubsection{（1）过程A的状态与功}\label{ux8fc7ux7a0baux7684ux72b6ux6001ux4e0eux529f}
+
+初始压强
+
+\[
+p_1=4\rho gh
+=4(13.6\times10^3)(9.80)(0.250)
+=1.3328\times10^5\,\mathrm{Pa}.
+\]
+
+水银尚未溢出，柱高保持\(h\)，所以\(p_2=p_1\)。A末气体高度\(l-h=2h\)，体积从\(Sh\)到\(2Sh\)。
+
+理想气体方程给
+
+\[
+\frac{T_2}{T_0}=\frac{V_2}{V_1}=2,
+\qquad T_2=800\,\mathrm K.
+\]
+
+功
+
+\[
+W_A=p_1(V_2-V_1)=4\rho gSh^2.
+\]
+
+代数值
+
+\[
+W_A=4(13.6\times10^3)(9.80)
+(1.00\times10^{-3})(0.250)^2,
+\]
+
+故
+
+\[
+\boxed{W_A=33.3\,\mathrm J}.
+\]
+
+只乘气体压强\(p_0\)会遗漏抬升水银的功；只计算水银势能会遗漏推动大气的功。
+
+\subsubsection{过程A的机械能检查}\label{ux8fc7ux7a0baux7684ux673aux68b0ux80fdux68c0ux67e5}
+
+水银质量\(\rho Sh\)，整体上移\(h\)，重力势能增加\(\rho gSh^2\)。克服大气的功\(p_0Sh=3\rho gSh^2\)。两者相加仍是\(4\rho gSh^2\)。
+
+准静态下水银动能可忽略，活塞无质量也不储存动能。两种方法中相同的功对应相同的能量流向，不是两项额外功的重复相加。
+
+\subsubsection{（2）过程B的温度---柱高关系}\label{ux8fc7ux7a0bbux7684ux6e29ux5ea6ux67f1ux9ad8ux5173ux7cfb}
+
+余下水银柱高为\(x\)时，
+
+\[
+p=\rho g(3h+x),\qquad
+V=S(3h-x).
+\]
+
+气体摩尔数由初态给出：
+
+\[
+\nu R=\frac{p_1V_1}{T_0}
+=\frac{4\rho gSh^2}{T_0}.
+\]
+
+代入\(pV=\nu RT\)：
+
+\[
+\rho gS(3h+x)(3h-x)
+=\frac{4\rho gSh^2}{T_0}T.
+\]
+
+约去共同因子，
+
+\[
+9h^2-x^2=4h^2\frac T{T_0}.
+\]
+
+选取非负剩余柱高：
+
+\[
+\boxed{x(T)=h\sqrt{9-4T/T_0}}.
+\]
+
+负的平方根表示不存在的负柱高，必须舍去。起点\(T=2T_0\)给\(x=h\)，终点\(x=0\)给
+
+\[
+\boxed{T_3=\frac94T_0=900\,\mathrm K}.
+\]
+
+\subsubsection{加热支路的单调性}\label{ux52a0ux70edux652fux8defux7684ux5355ux8c03ux6027}
+
+在\(2T_0\leq T\leq9T_0/4\)范围内，根号非负。内部\(x>0\)时
+
+\[
+\frac{dx}{dT}=-\frac{2h^2}{T_0x}<0.
+\]
+
+所以加热使剩余柱高单调减少，活塞单调上升。温度---高度关系也可写成
+
+\[
+\frac T{T_0}
+=\frac{(6h-y)y}{4h^2},
+\qquad 2h\leq y\leq3h.
+\]
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=3.2,yscale=3.5]
+\draw[arr] (1.9,1.95)--(3.15,1.95) node[right] {$y/h$};
+\draw[arr] (1.9,1.95)--(1.9,2.36) node[above] {$T/T_0$};
+\draw[thick,blue,domain=2:3,samples=70] plot(\x,{(6-\x)*\x/4});
+\draw[dashed] (2,1.95)--(2,2); \draw[dashed] (3,1.95)--(3,2.25)--(1.9,2.25);
+\node[below] at (2,1.95) {$2$};\node[below] at (3,1.95) {$3$};
+\node[left] at (1.9,2.25) {$9/4$};
+\node at (2.5,1.73) {$y=l-x$；管口排尽处温度斜率趋零};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图2c　有水银阶段的温度支路\par}\endgroup\end{minipage}\end{center}
+
+该段温度随\(y\)增大，末端达到最大值。只要按准静态方式逐步加热，状态支路连续连接A末与B末，因此在题设理想化下，B可以缓慢完成。
+
+\subsubsection{小扰动的恢复性核对}\label{ux5c0fux6270ux52a8ux7684ux6062ux590dux6027ux6838ux5bf9}
+
+仅证明\(x(T)\)有实根还不能一般性地保证平衡稳定。考虑给定瞬时温度下，活塞高度\(y\)发生小变化。气体压力为
+
+\[
+p_{\rm gas}(y)=\frac{\nu RT}{Sy},
+\]
+
+外负载为
+
+\[
+p_{\rm ext}(y)=p_0+\rho g(l-y)=\rho g(6h-y).
+\]
+
+向上的净力\(F=S(p_{\rm gas}-p_{\rm ext})\)。在平衡点
+
+\[
+\frac{dF}{dy}
+=S\left(-\frac p y+\rho g\right)
+=-\frac{2\rho gSx}{y}<0
+\quad(x>0).
+\]
+
+活塞略向上，净力指向下，因此有溢出的向上扰动受恢复作用。若向下扰动不伴随流出水银回流，暂时剩余水银质量固定、外压不变，气体压缩同样产生向上的恢复力；不必假定已流出的水银自动回到管内。水银尚未排尽的内部支路因此有恢复性。若快速扰动近似绝热，气体压力斜率变为\(-\gamma p/y\)，\(\gamma=7/5>1\)，恢复性更强。
+
+在\(x\to0\)末端，等温线性恢复系数趋零，\(dy/dT\)变大，说明不能用固定的有限加热速率仍声称任意接近末端都严格准静态。理想过程可逐步降低加热速率，并在水银恰排尽时终止。末端不应被延拓为原负载模型下的\(x<0\)平衡。
+
+由以上关系，在原题所规定的过程和终点范围内，
+
+\[
+\boxed{\text{过程B可以缓慢稳定地发生，直至规定终点}}.
+\]
+
+\subsubsection{过程B的功：按剩余柱高积分}\label{ux8fc7ux7a0bbux7684ux529fux6309ux5269ux4f59ux67f1ux9ad8ux79efux5206}
+
+\(dV=-Sdx\)，\(x\)从\(h\)降到0：
+
+\[
+\begin{aligned}
+W_B
+&=\int_h^0\rho g(3h+x)(-Sdx)\\
+&=\rho gS\int_0^h(3h+x)\,dx\\
+&=\frac72\rho gSh^2.
+\end{aligned}
+\]
+
+数值为
+
+\[
+\boxed{W_B=29.2\,\mathrm J}.
+\]
+
+由于\(p\)线性下降，亦可用平均压强乘体积增量：
+
+\[
+W_B=\frac{p_2+p_3}{2}(V_3-V_2)
+=\frac{4\rho gh+3\rho gh}{2}Sh.
+\]
+
+这条平均压强公式仅因本段\(p(V)\)是直线才成立；不是任何变压过程都能如此计算。
+
+\subsubsection{流出水银的势能账目}\label{ux6d41ux51faux6c34ux94f6ux7684ux52bfux80fdux8d26ux76ee}
+
+B开始时所有水银在\(2h\)至\(3h\)之间，平均高度\(5h/2\)。结束时，水银刚从管口流出；按边界功的准静态账目，可把它收集于管口高度\(3h\)，平均抬升\(h/2\)。于是水银势能增加
+
+\[
+\Delta U_{\rm Hg}=\rho Sh\,g\frac h2.
+\]
+
+克服大气的功\(p_0Sh=3\rho gSh^2\)，两者之和为\(\tfrac72\rho gSh^2\)。如果流出的水银随后落入低处容器，它释放的额外重力势能属于流出后的过程，不改变气体在管口排出水银所做的边界功。
+
+\subsubsection{摩尔数与内能增加}\label{ux6469ux5c14ux6570ux4e0eux5185ux80fdux589eux52a0}
+
+初态确定
+
+\[
+\nu=\frac{4\rho gSh^2}{RT_0}
+\simeq1.0024\times10^{-2}\,\mathrm{mol}.
+\]
+
+按三位有效数字为\(1.00\times10^{-2}\)
+mol，但后续内部计算保留未舍入值。B温升\(T_3-T_2=T_0/4=100\) K，故
+
+\[
+\begin{aligned}
+\Delta U_B
+&=\nu\frac52R\left(\frac{T_0}{4}\right)\\
+&=\frac52\rho gSh^2.
+\end{aligned}
+\]
+
+因此
+
+\[
+\boxed{\Delta U_B=20.8\,\mathrm J}.
+\]
+
+温度上升100
+K，内能增加为正；压力下降并不意味着内能下降。理想气体内能仅取决于温度，不能将压强变化单独作为热量方向的判断依据。
+
+\subsubsection{吸热量与完整结果}\label{ux5438ux70edux91cfux4e0eux5b8cux6574ux7ed3ux679c}
+
+第一定律
+
+\[
+Q_B=\Delta U_B+W_B
+=\left(\frac52+\frac72\right)\rho gSh^2
+=6\rho gSh^2.
+\]
+
+最终
+
+\[
+\boxed{Q_B=50.0\,\mathrm J}.
+\]
+
+全过程的状态链为
+
+\[
+(Sh,4\rho gh,400\,\mathrm K)
+\longrightarrow
+(2Sh,4\rho gh,800\,\mathrm K)
+\longrightarrow
+(3Sh,3\rho gh,900\,\mathrm K).
+\]
+
+功为两段均正，内能增加为两段均正，热量也均正。用这条状态链核对各项可防止把A的温升或功重复计入B。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-1}
+
+水银溢出改变的是外部负载，不改变封闭气体的摩尔数。系统边界与环境中物质流动应分开判断。
+
+这里大气等效水银高度恰好等于管长\(l\)，使\(pV\)成为\(9h^2-x^2\)。这不是普遍的``溢出气体必稳定''定理；改变大气压，温度支路的顶点可能提前落入过程中。
+
+状态方程的根与机械恢复性是不同检查。将参考答案的单调根关系与压力斜率结合，能说明本题结论成立的范围，并识别末端线性恢复变弱的特殊性。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-1}
+
+把过程B当成等压膨胀，会高估功；把B当成气体摩尔数随水银排出减少，会使所列气体状态方程与封闭系统的条件不符。把气柱高度误设成\(x\)而不是\(l-x\)，会让气体体积随加热错误减少。
+
+按\(x\)积分时\(dV=-Sdx\)不可漏。将\(C_V\)写成\(3R/2\)会把原题给定的热容丢掉。数值中\(p_0=75\)
+cmHg需转换为0.750 m水银柱压强，面积需转换平方单位。
+
+末端\(x=0\)表示过程终止，负根或\(x<0\)不是新的物理解。稳定性讨论也不应把只适用于有水银的压力式用于排尽后的活塞运动。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-1}
+
+先画三幅状态图，让学生标出初始水银上表面高度\(2h\)，A末管口高度\(3h\)，再建立状态表。之后分别用p-V面积和水银势能求功，互相检查。
+
+B的热量计算按``求终温---求摩尔数---求内能---求边界功---相加''顺序讲。稳定性安排在\(x(T)\)之后，用小扰动压力斜率说明为什么有根还需进一步检查。
+
+课堂练习可改变大气等效水银高度，观察温度支路顶点如何移动。要求学生每次指出仍适用的几何区间，比机械替换数值更能检验模型理解。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-1}
+
+\subsubsection{变式1　过程A的热量与全程热量}\label{ux53d8ux5f0f1-ux8fc7ux7a0baux7684ux70edux91cfux4e0eux5168ux7a0bux70edux91cf}
+
+求原题过程A吸热，以及从初态到水银排尽的总热量。
+
+\textbf{解答：}A温升\(T_0\)，\(\Delta U_A=\nu(5R/2)T_0=(5/2)W_A=83.3\)
+J，所以\(Q_A=116.6\) J，三位有效数字117 J。全程总热量\(Q_A+Q_B=166.6\)
+J，三位有效数字167 J。
+
+也可直接用全程温升500 K得\(\Delta U=104.1\)
+J，再加总功\(33.32+29.155=62.475\) J，仍为166.6
+J。应先按未舍入量相加，再给三位有效数字。
+
+\subsubsection{变式2　仅改变气体热容}\label{ux53d8ux5f0f2-ux4ec5ux6539ux53d8ux6c14ux4f53ux70edux5bb9}
+
+若气体改为\(C_V=3R/2\)，其他初态参数相同，求B的终温、功与吸热。
+
+\textbf{解答：}终温由状态方程与负载确定，仍900
+K；功由p-V路径确定，仍29.2 J。只有内能变化改变：
+
+\[
+\Delta U_B=\frac32\rho gSh^2=12.5\,\mathrm J.
+\]
+
+\(Q_B=5\rho gSh^2=41.7\)
+J。热容改变热量，不改变给定准静态机械负载下的状态曲线。
+
+\subsubsection{变式3　较低大气压的加热支路}\label{ux53d8ux5f0f3-ux8f83ux4f4eux5927ux6c14ux538bux7684ux52a0ux70edux652fux8def}
+
+保留\(l=3h\)及初始两柱高度\(h\)，但\(p_0=2\rho gh\)。B能否靠持续加热沿稳定准静态支路排尽水银？
+
+\textbf{解答：}初态\(\nu RT_0=3\rho gSh^2\)，B中\(p=\rho g(5h-y)\)，故\(T/T_0=(5h-y)y/(3h^2)\)。在\(y=2h\)开始时仍\(T=2T_0\)，但温度于\(y=5h/2\)达到最大\(25T_0/12\)，然后下降。
+
+持续加热不能越过此转折继续沿同一稳定支路到\(y=3h\)。等温扰动刚度也在顶点变号；这与原题顶点恰在规定终点的情形不同。不能只因\(x\)的二次方程有某个实根就断言B始终稳定。
+
+\subsubsection{变式4　过程B的气体熵变}\label{ux53d8ux5f0f4-ux8fc7ux7a0bbux7684ux6c14ux4f53ux71b5ux53d8}
+
+求原题B中气体熵变，不要求判断热源的具体温度。
+
+\textbf{解答：}理想气体的状态熵差
+
+\[
+\Delta S_B=\nu C_V\ln\frac{T_3}{T_2}
++\nu R\ln\frac{V_3}{V_2}.
+\]
+
+所以
+
+\[
+\Delta S_B=\nu R
+\left[\frac52\ln\frac98+\ln\frac32\right]
+\simeq5.83\times10^{-2}\,\mathrm{J/K}.
+\]
+
+它为正，与气体吸热和膨胀相容。熵差是状态量，不需要知道实际加热装置；若想计算环境熵变或总熵产生，则还需热源温度，不能用\(Q_B/T_2\)替代气体的状态熵差。
+
+\clearpage
+
+\section{第 3
+题　超球在两块硬板之间的三次反跳（40分）}\label{ux7b2c-3-ux9898-ux8d85ux7403ux5728ux4e24ux5757ux786cux677fux4e4bux95f4ux7684ux4e09ux6b21ux53cdux8df340ux5206}
+
+半径\(r\)的均质超球向上、下两块固定平行硬板之间发射，先碰下板、再碰上板、再碰下板，共三次后几乎返回原处。不计重力。\(x\)轴水平向右，\(y\)轴竖直向下，\(z\)正向按右手规则确定，即指向纸内。
+
+开始时球心水平速度\(v_{0x}\)，\(z\)方向速度为零；绕平行于\(z\)轴的过球心轴的初始角速度记为有向\(\omega_{0z}\)，原图所示方向对应\(\omega_{0z}\geq0\)，且\(r\omega_{0z}<v_{0x}\)。均质球转动惯量\(J=2mr^2/5\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=1.2]
+\draw[very thick] (-.8,-.15)--(4,-.15);\draw[very thick] (-.8,2.15)--(4,2.15);
+\draw[arr,blue] (0,1.6)--(1.5,0);
+\draw[arr,blue] (1.5,0)--(2.509,2);
+\draw[arr,blue] (2.509,2)--(1.5,0);
+\draw[arr,red,dashed] (1.5,0)--(0,1.6);
+\draw[thick] (0,1.6) circle(.15);
+\node[above] at (2.65,2.1) {碰撞2};
+\node[below] at (1.5,-.1) {碰撞1、3};
+\draw[arr] (4.5,1.6)--(5.4,1.6) node[right] {$x$};
+\draw[arr] (4.5,1.6)--(4.5,.65) node[below] {$y$};
+\node at (1.7,2.8) {示意取$r\omega_0/v_0=5/26$，三碰后反向};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图3a　下板、上板、下板的反跳次序\par}\endgroup\end{minipage}\end{center}
+
+求（1）第一次碰后球心水平速度\(v_1\)及自转角速度\(\omega_1\)；（2）第二次碰后\(v_2,\omega_2\)；（3）第三次碰后\(v_3,\omega_3\)。
+
+原题提示：超球为硬质橡皮球，其与硬板的反跳可视为完全弹性。接触点不滑动，静摩擦力和正压力分别产生切向、法向弹性形变；两类形变相互独立，相应弹力均为保守力。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-2}
+
+本题研究同一粗糙弹性球在相反接触位置上的连续碰撞。球心的法向速度每次反号；水平运动与自转之间交换能量。上板和下板摩擦力即使同向，关于球心的力矩也会反号，这是三次结果的关键。
+
+原题已经说明切向形变是弹性的，并与法向形变独立。因此碰撞后不必满足纯滚动\(v=r\omega\)。分离时切向接触点速度可以反向，储存的形变能已经返还；把``无滑动''理解成碰后立即粘着，会破坏完全弹性条件。
+
+解法分两步：建立下板和上板的一次碰撞关系，再按实际顺序相乘。由于不计重力，飞行段速度、自转都恒定，没有额外加速度增量。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-2}
+
+\subsubsection{1. 有向角速度}\label{ux6709ux5411ux89d2ux901fux5ea6}
+
+在\(x\)右、\(y\)下的坐标中，\(z\)正向指向纸内，正的\(\omega_z\)在纸面看为顺时针。定义
+
+\[
+v=v_x,\qquad b=r\omega_z,\qquad \kappa=\frac{J}{mr^2}=\frac25.
+\]
+
+将\(r\omega\)作为速度变量，可使矩阵元素无量纲。球的切向与自转动能为
+
+\[
+K_t=\frac12m(v^2+\kappa b^2).
+\]
+
+上接触点和下接触点的切向速度分别为
+
+\[
+u_{\text{上}}=v+b,\qquad u_{\text{下}}=v-b.
+\]
+
+同一\(\omega\)对两个接触点产生相反的水平速度，不能用同一表达式。
+
+\subsubsection{2.
+线冲量和角冲量}\label{ux7ebfux51b2ux91cfux548cux89d2ux51b2ux91cf}
+
+设有向水平冲量为\(J_x=m(v_f-v_i)\)。下板接触点在球心的\(+y\)侧，角冲量为\(-rJ_x\)；上板接触点在\(-y\)侧，角冲量为\(+rJ_x\)。
+
+所以
+
+\[
+\begin{array}{ll}
+\text{下板：}&v_f-v_i=-\kappa(b_f-b_i),\\
+\text{上板：}&v_f-v_i=+\kappa(b_f-b_i).
+\end{array}
+\]
+
+这两式就是摩擦作用点改变造成的符号差异。
+
+\subsubsection{3.
+独立的两种弹性能量}\label{ux72ecux7acbux7684ux4e24ux79cdux5f39ux6027ux80fdux91cf}
+
+法向形变无损且与切向形变独立，所以
+
+\[
+v_{yf}=-v_{yi},\qquad |v_{yf}|=|v_{yi}|.
+\]
+
+切向形变和自转交换能量：
+
+\[
+v_f^2+\kappa b_f^2=v_i^2+\kappa b_i^2.
+\]
+
+固定硬板的冲量可以改变球的动量，但碰撞恢复后球的总动能不变。不能把``硬板固定''理解成冲量为零。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-2}
+
+第一次碰下板时\(u_{\text{下,0}}=v_0-b_0>0\)，球底有向右运动趋势，摩擦冲量向左，使水平速度下降并增加正自转。
+
+第二次接触上板时，球顶的自转速度沿正\(x\)，与水平平动相加。即使第一次球底速度已经反向，球顶仍可向右；上板的摩擦继续向左，却使自转向负方向改变。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\foreach \xx/\up/\lab in {0/0/下板,5/1/上板}{
+\begin{scope}[shift={(\xx,0)}]
+\draw[thick] (0,0) circle(.8);
+\ifnum\up=0
+\draw[thick] (-1.7,-.8)--(1.7,-.8);
+\draw[arr] (0,-.8)--(-1.4,-.8);\node at (0,-1.5) {$u_-=v-r\omega$};
+\else
+\draw[thick] (-1.7,.8)--(1.7,.8);
+\draw[arr] (0,.8)--(-1.4,.8);\node at (0,-1.5) {$u_+=v+r\omega$};
+\fi
+\draw[arr] (.2,0)--(1.4,0) node[right] {$v$};
+\node at (0,1.7) {\lab};
+\end{scope}}
+\node at (2.5,-2.2) {同样的切向冲量，上、下接触的角冲量符号相反};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图3b　上、下接触点及不同角冲量\par}\endgroup\end{minipage}\end{center}
+
+第三次回到下板，再使用第一次的算子，但输入已经是第二次后的状态。不能把第三次碰撞当成第一次的独立重复，或者直接把\(v_3\)写成\(v_1\)。
+
+三次后水平速度通常接近初始速度的反向，自转也可能反向；``几乎返回''描述的是整个运动结果，并非要求每个中间速度为初始速度的绝对值。后面的变式给出恰好返回所需初始自转比。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-2}
+
+先用\(v_0=v_{0x}\)、\(b_0=r\omega_{0z}\)简化符号。下板联立
+
+\[
+v_f-v_i=-\frac25(b_f-b_i),\quad
+v_f^2+\frac25b_f^2=v_i^2+\frac25b_i^2.
+\]
+
+上板将第一式右边负号换正，能量式不变。得到两个一次映射后，依次写
+
+\[
+\boldsymbol q_1=D\boldsymbol q_0,\quad
+\boldsymbol q_2=UD\boldsymbol q_0,\quad
+\boldsymbol q_3=DUD\boldsymbol q_0,
+\qquad
+\boldsymbol q=\begin{pmatrix}v\\b\end{pmatrix}.
+\]
+
+这种记号让接触顺序保持明确，也便于独立检查每次能量是否不变。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-2}
+
+\subsubsection{（1）下板一次碰撞的推导}\label{ux4e0bux677fux4e00ux6b21ux78b0ux649eux7684ux63a8ux5bfc}
+
+冲量关系
+
+\[
+v_1-v_0=-\frac25(b_1-b_0).
+\]
+
+切向弹性条件可分解：
+
+\[
+(v_1-v_0)(v_1+v_0)
++\frac25(b_1-b_0)(b_1+b_0)=0.
+\]
+
+在有切向冲量时，消去差量得到
+
+\[
+v_1+v_0=b_1+b_0.
+\]
+
+亦即
+
+\[
+u_{{\text{下}},1}=-u_{{\text{下}},0}.
+\]
+
+联立两式，
+
+\[
+\boxed{v_1=\frac37v_{0x}+\frac47r\omega_{0z}},
+\]
+
+\[
+\boxed{\omega_1=\frac{10}{7r}v_{0x}-\frac37\omega_{0z}}.
+\]
+
+初始\(r\omega_{0z}<v_{0x}\)时，第一次切向冲量
+
+\[
+J_{x,1}=-\frac47m(v_0-b_0)<0,
+\]
+
+方向与球底向右运动趋势相反。角速度增量\(\omega_1-\omega_0=10(v_0-b_0)/(7r)>0\)。
+
+法向速度反号：\(v_{1y}=-v_{0y}\)。题目只要求水平分量和自转，但写清法向关系能说明球确实离开下板并进入下一飞行段。
+
+\subsubsection{零切向冲量分支的说明}\label{ux96f6ux5207ux5411ux51b2ux91cfux5206ux652fux7684ux8bf4ux660e}
+
+能量与角冲量联立还允许\(v_f=v_i,b_f=b_i\)，对应水平冲量零。对于本题第一次\(u_{\text{下,0}}>0\)且切向弹性接触充分，应取接触速度反号的非平凡分支。
+
+如果某次本来接触速度为零，则两个分支重合，粗糙弹性映射也给出零切向冲量。不能把代数上的平凡解笼统说成``只适用于光滑球''，零接触速度时粗糙球也可能无切向冲量。
+
+\subsubsection{（2）上板的符号变化}\label{ux4e0aux677fux7684ux7b26ux53f7ux53d8ux5316}
+
+球从下板飞向上板，不计重力，碰前水平速度和自转仍为\(v_1,b_1\)。上接触的角冲量反号：
+
+\[
+v_2-v_1=\frac25(b_2-b_1).
+\]
+
+与弹性能量联立，在非平凡分支有
+
+\[
+v_2+v_1=-(b_2+b_1),
+\qquad
+u_{{\text{上}},2}=-u_{{\text{上}},1}.
+\]
+
+因此
+
+\[
+\begin{aligned}
+v_2&=\frac37v_1-\frac47b_1,\\
+b_2&=-\frac{10}{7}v_1-\frac37b_1.
+\end{aligned}
+\]
+
+代第一次结果：
+
+\[
+v_2=\frac37\left(\frac37v_0+\frac47b_0\right)
+-\frac47\left(\frac{10}{7}v_0-\frac37b_0\right).
+\]
+
+整理
+
+\[
+\boxed{v_2=-\frac{31}{49}v_{0x}
++\frac{24}{49}r\omega_{0z}},
+\]
+
+\[
+\boxed{\omega_2=-\frac{60}{49r}v_{0x}
+-\frac{31}{49}\omega_{0z}}.
+\]
+
+由于\(0\leq b_0<v_0\)，\(v_2<(-31+24)v_0/49<0\)，所以第二次碰后球心水平运动向左，自转也为负。这是返程开始的动力学原因。
+
+法向速度再次反号，\(v_{2y}=v_{0y}\)，球向下板运动。
+
+\subsubsection{（3）第三次下板碰撞}\label{ux7b2cux4e09ux6b21ux4e0bux677fux78b0ux649e}
+
+下板映射不变：
+
+\[
+v_3=\frac37v_2+\frac47b_2,\qquad
+b_3=\frac{10}{7}v_2-\frac37b_2.
+\]
+
+代入第二次结果，
+
+\[
+\begin{aligned}
+v_3
+&=\frac{3(-31v_0+24b_0)+4(-60v_0-31b_0)}{343}\\
+&=\frac{-333v_0-52b_0}{343},
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+b_3
+&=\frac{10(-31v_0+24b_0)-3(-60v_0-31b_0)}{343}\\
+&=\frac{-130v_0+333b_0}{343}.
+\end{aligned}
+\]
+
+所以
+
+\[
+\boxed{v_3=-\frac{333}{343}v_{0x}
+-\frac{52}{343}r\omega_{0z}},
+\]
+
+\[
+\boxed{\omega_3=-\frac{130}{343r}v_{0x}
++\frac{333}{343}\omega_{0z}}.
+\]
+
+法向分量\(v_{3y}=-v_{0y}\)，再次向上运动。\(v_3\)在给定初始范围内始终负，而\(\omega_3\)可正、可零、可负；其符号分界为
+
+\[
+\frac{r\omega_{0z}}{v_{0x}}=\frac{130}{333}.
+\]
+
+因此不能将第三次角速度一概写成其正的大小，必须保留有向结果。
+
+\subsubsection{矩阵复核与能量不变量}\label{ux77e9ux9635ux590dux6838ux4e0eux80fdux91cfux4e0dux53d8ux91cf}
+
+下板、上板分别对应
+
+\[
+D=\frac17\begin{pmatrix}3&4\\10&-3\end{pmatrix},
+\quad
+U=\frac17\begin{pmatrix}3&-4\\-10&-3\end{pmatrix}.
+\]
+
+两次组合
+
+\[
+UD=\frac1{49}\begin{pmatrix}-31&24\\-60&-31\end{pmatrix},
+\]
+
+三次组合
+
+\[
+DUD=\frac1{343}
+\begin{pmatrix}-333&-52\\-130&333\end{pmatrix}.
+\]
+
+每个单次映射均满足
+
+\[
+D^{\mathsf T}WD=W,\qquad
+U^{\mathsf T}WU=W,\quad
+W=\begin{pmatrix}1&0\\0&2/5\end{pmatrix}.
+\]
+
+所以每次以及整体都保持\(v^2+(2/5)b^2\)，与弹性能量相符。普通的\(v^2+b^2\)不是正确的不变量。
+
+单次\(D^2=U^2=\mathbf1\)，但\(UD\neq\mathbf1\)。同一板连续作用两次的映射会抵消，上、下两板各一次的映射却不抵消。实际飞行决定碰撞次序，不能随意交换矩阵顺序。
+
+\subsubsection{三个切向冲量的方向}\label{ux4e09ux4e2aux5207ux5411ux51b2ux91cfux7684ux65b9ux5411}
+
+利用\(v_j-v_{j-1}\)，
+
+\[
+\begin{aligned}
+J_{x,1}&=-\frac{4m}{7}(v_0-b_0),\\
+J_{x,2}&=-\frac{4m}{49}(13v_0+b_0),\\
+J_{x,3}&=-\frac{4m}{343}(29v_0+55b_0).
+\end{aligned}
+\]
+
+在原题范围内三者都负，因此球心水平速度逐次降低。第一次和第三次作用于球底，角冲量为正；第二次作用于球顶，角冲量为负。这一方向表能独立检验上板映射的两个负号。
+
+总水平冲量
+
+\[
+J_x=m(v_3-v_0)
+=-\frac{m}{343}(676v_0+52b_0).
+\]
+
+它等于逐次冲量之和。竖直冲量在三次中交替反向，法向速度大小始终为\(|v_{0y}|\)，法向动能没有参与水平---自转能量交换。
+
+\subsubsection{``几乎返回''的定量解释}\label{ux51e0ux4e4eux8fd4ux56deux7684ux5b9aux91cfux89e3ux91ca}
+
+无初始自转时\(v_3=-(333/343)v_0\simeq-0.971v_0\)，水平速度确实接近反向原速，但自转不再为零。若初始自转适当，两种状态可以完全反向，见变式2。
+
+三次之后的速度接近反向并不单独保证空间轨迹完全重合。完整返回还涉及中间水平位移与飞行时间；原题只要求速度和自转，无需把``几乎返回''强行作为额外方程。
+
+半径\(r\)决定同一\(b\)对应的角速度大小，均质实心球的系数\(\kappa=2/5\)决定能量分配。改变质量\(m\)会改变冲量绝对值，却不改变给定初速度条件下的速度映射。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-2}
+
+碰撞面从球底换到球顶，改变的是角冲量符号；切向冲量仍可指向左侧。把摩擦方向和转矩方向分别判断，能避免第二次碰撞的错误。
+
+加权动能守恒使单次映射像一个反射，但两次不同接触的组合像旋转。水平速度和自转不断交换，并不意味着每两次回到初始状态。
+
+原题对弹性形变作了明确假设。接触区在压缩中暂时停住、切向形变储能，恢复后分离速度反号；不能用刚性粘着模型替代这条无损接触规律。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-2}
+
+第二次仍使用下板矩阵，会得到\(v_2=v_0,\omega_2=\omega_0\)的错误两周期。只说``摩擦向左''就沿用同一力矩符号，忽略了接触点位于球心哪一侧。
+
+把\(\omega_3\)取绝对值会丢掉自转反向信息。将切向平动动能独立守恒，会漏掉球自转；将法向动能混入切向方程又会增加不必要未知量。
+
+飞行段不受重力，所以速度恒定。不能把斜面连续弹跳问题的重力增量带入本题。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-2}
+
+先在两圆示意图中标出球底、球顶的接触速度，再用叉乘方向检查角冲量。只完整推一次下板映射，要求学生自行推上板而非只抄负号。
+
+代数运算每次都保留\(v,b\)两个变量，最后再除以\(r\)得到角速度。写出能量不变量可检查分母7、49、343的连乘是否正确。
+
+课堂可取\(\omega_0=0\)追踪三次平动和自转变化，再求恰好反向所需初始自转。通过中间水平位移解释``速度反向''与``轨迹返回''的差别。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-2}
+
+\subsubsection{变式1　无初始自转}\label{ux53d8ux5f0f1-ux65e0ux521dux59cbux81eaux8f6c}
+
+设\(\omega_0=0\)，写三次碰后状态及切向能量分配。
+
+\textbf{解答：}
+
+\[
+\begin{array}{c|c|c}
+j&v_j/v_0&r\omega_j/v_0\\ \hline
+1&3/7&10/7\\
+2&-31/49&-60/49\\
+3&-333/343&-130/343
+\end{array}
+\]
+
+第一次平动能占\(9/49\)，转动能占\(40/49\)。第三次平动能占\(333^2/343^2\)，转动能占\((2/5)130^2/343^2\)，二者之和为1。球心几乎反向原速，自转携带余下能量。
+
+\subsubsection{变式2　恰好反向并返回起点}\label{ux53d8ux5f0f2-ux6070ux597dux53cdux5411ux5e76ux8fd4ux56deux8d77ux70b9}
+
+求使\(v_3=-v_0,\omega_3=-\omega_0\)的初始自转比，并验证无重力时三碰后返回初始高度可恰好到达原点。
+
+\textbf{解答：}\(v_3=-v_0\)给\(333v_0+52b_0=343v_0\)，所以
+
+\[
+\frac{b_0}{v_0}=\frac5{26}.
+\]
+
+代入\(b_3\)得\(b_3=-b_0\)。此时\(v_1=-v_2\)。初始点到下板的飞行时间记\(t_0\)，两板间完整飞行时间\(T\)；第三次碰后回到初始高度又需\(t_0\)。水平位移
+
+\[
+\Delta x=(v_0+v_3)t_0+(v_1+v_2)T=0.
+\]
+
+因此返回时全部速度和自转反向，确实到达初始位置。该比值满足\(0<b_0<v_0\)，在原题允许范围内。
+
+\subsubsection{变式3　更多次碰撞的两碰组合}\label{ux53d8ux5f0f3-ux66f4ux591aux6b21ux78b0ux649eux7684ux4e24ux78b0ux7ec4ux5408}
+
+求第\(2j\)次碰后的状态，仍从下板开始、两板交替。
+
+\textbf{解答：}令\(\widetilde b=\sqrt{2/5}\,b\)，两碰组合保持\(v^2+\widetilde b^2\)，对应角\(\psi\)满足
+
+\[
+\cos\psi=-\frac{31}{49},\qquad
+\sin\psi=\frac{12\sqrt{10}}{49}.
+\]
+
+于是
+
+\[
+v_{2j}=v_0\cos j\psi+\sqrt{\frac25}\,b_0\sin j\psi,
+\]
+
+\[
+b_{2j}=b_0\cos j\psi-\sqrt{\frac52}\,v_0\sin j\psi.
+\]
+
+奇数次再左乘\(D\)。\(j=1\)恢复第二次结果；取加权坐标的目的在于把能量椭圆变成圆，不能在未加权的\((v,b)\)平面直接把矩阵当普通旋转。
+
+\subsubsection{变式4　冲量级粗糙度要求}\label{ux53d8ux5f0f4-ux51b2ux91cfux7ea7ux7c97ux7cd9ux5ea6ux8981ux6c42}
+
+设法向速度大小为\(V_y>0\)，碰撞总冲量满足\(|J_x|\leq\mu J_y\)。求原题三次映射能成立的冲量级必要条件。
+
+\textbf{解答：}每次\(J_y\)的大小均\(2mV_y\)。三个所需比值为
+
+\[
+\frac{2(v_0-b_0)}{7V_y},\quad
+\frac{2(13v_0+b_0)}{49V_y},\quad
+\frac{2(29v_0+55b_0)}{343V_y}.
+\]
+
+在\(0\leq b_0<v_0\)时，第二个比值大于第一个和第三个，故
+
+\[
+\mu\geq\frac{2(13v_0+b_0)}{49V_y}.
+\]
+
+这是总冲量层面的必要条件。瞬时接触是否始终不滑，还需法向和切向弹性历程符合摩擦限制；仅有总冲量之比，还不足以证明接触全程不滑动。原题直接给出无滑动的弹性形变假设，免去这一接触细节。
+
+\clearpage
+
+\section{第 4
+题　两个小磁针的指向与位置平衡（40分）}\label{ux7b2c-4-ux9898-ux4e24ux4e2aux5c0fux78c1ux9488ux7684ux6307ux5411ux4e0eux4f4dux7f6eux5e73ux886140ux5206}
+
+小永磁针可视为半径很小的电流环，磁矩大小\(\mu=IS\)，\(S=\pi R^2\)，方向垂直环面并按电流右手规则确定。两小磁针A、B的磁矩大小均保持\(\mu\)，质量均\(m\)。
+
+取竖直向下为\(z\)轴，水平向右为\(x\)轴。A固定在原点\(O\)，磁矩沿\(+x\)；B在A正下方。真空磁导率\(\mu_0\)，重力加速度\(g\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=1]
+\draw[arr] (0,3.5)--(0,-1);
+\node[right] at (.2,-1) {$z$向下};
+\draw[arr] (0,3)--(2.2,3) node[right] {$x$};
+\draw[arr,very thick,blue] (0,3)--(1.45,3) node[above] {$\boldsymbol\mu_A$};
+\fill (0,.3) circle(2pt);
+\draw[arr,very thick,red] (0,.3)--(-1.45,.3) node[left] {$\boldsymbol\mu_B$};
+\draw[arr] (.6,.3)--(.6,1.5) node[right] {$F_{\rm mag}$};
+\draw[arr] (.1,.3)--(.1,-.7) node[right] {$mg$};
+\node at (3.3,.3) {$\theta=\pi$};
+\node at (1.2,-1.8) {稳定指向与$\boldsymbol\mu_A$反平行};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图4a　两磁矩及竖直方向受力\par}\endgroup\end{minipage}\end{center}
+
+（1）B的位置为\((0,0,z)\)，\(z\gg R\)，磁矩与\(x\)轴成\(\theta\)，求相互作用势能。
+
+（2）固定\(z\)，求B稳定指向与\(x\)轴的夹角\(\theta_{\text{稳}}\)。稳定指向指小角度偏离后有回到原指向的趋势。
+
+（3）允许\(z\)变化，但B的磁矩保持\(\theta=\theta_{\text{稳}}\)。求受力平衡位置并说明其竖直位置是否稳定。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-3}
+
+这是磁偶极场、势能与不同自由度的稳定性题。A的磁矩水平，而B在竖直轴上，B处于A的磁偶极赤道面，磁场方向与A的磁矩相反。把这里误当作磁矩轴线上的场，会把磁场大小算错两倍，并把指向判断颠倒。
+
+第二问只允许角度改变，第三问只允许竖直位置改变。角度稳定与位置稳定是两种不同判据；一个方向的势能极小不能证明全部自由度稳定。
+
+有效方法是先求A在B处的磁场，再用\(U_{\rm mag}=-\boldsymbol\mu_B\cdot\boldsymbol B_A\)。之后加入重力势能，分别对\(\theta\)和\(z\)求导，保持向下的正方向不变。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-3}
+
+\subsubsection{1.
+远处磁偶极场}\label{ux8fdcux5904ux78c1ux5076ux6781ux573a}
+
+小电流环在距离远大于自身尺度处可视作点磁偶极，磁场
+
+\[
+\boldsymbol B(\boldsymbol r)
+=\frac{\mu_0}{4\pi r^3}
+\left[3(\boldsymbol\mu_A\cdot\hat{\boldsymbol r})
+\hat{\boldsymbol r}-\boldsymbol\mu_A\right].
+\]
+
+本题\(\hat{\boldsymbol r}=\hat{\boldsymbol z}\)，\(\boldsymbol\mu_A=\mu\hat{\boldsymbol x}\)，二者点积为零，所以
+
+\[
+\boldsymbol B_A(0,0,z)
+=-\frac{\mu_0\mu}{4\pi z^3}\hat{\boldsymbol x}.
+\]
+
+赤道面系数为\(1/(4\pi)\)，轴线上系数则为\(1/(2\pi)\)。先画磁矩与位置矢量的夹角，再选场表达式，能避免误用。
+
+\subsubsection{2.
+磁矩势能与力矩}\label{ux78c1ux77e9ux52bfux80fdux4e0eux529bux77e9}
+
+保持磁矩大小不变时，
+
+\[
+U_{\rm mag}=-\boldsymbol\mu_B\cdot\boldsymbol B_A,
+\qquad
+\boldsymbol\tau=\boldsymbol\mu_B\times\boldsymbol B_A.
+\]
+
+若\(\theta\)作广义角坐标，力矩分量\(Q_\theta=-\partial U/\partial\theta\)。力矩的正方向须与\(\theta\)增大的方向一致，不能只用力矩大小代替有向表达式。
+
+\subsubsection{3.
+向下坐标的重力势能}\label{ux5411ux4e0bux5750ux6807ux7684ux91cdux529bux52bfux80fd}
+
+本题\(z\)向下，故
+
+\[
+U_g=-mgz+\text{常数}.
+\]
+
+因此重力广义力\(-\partial U_g/\partial z=+mg\)，符合向下。通常向上坐标的\(+mgz\)不可直接搬到这里。
+
+\subsubsection{4. 稳定性判据}\label{ux7a33ux5b9aux6027ux5224ux636e}
+
+固定其他坐标，某坐标\(q\)平衡要求\(U_q=0\)。\(U_{qq}>0\)表示该方向势能极小，\(U_{qq}<0\)为极大。若有多个自由度，需检查全部允许扰动，必要时用势能的二阶矩阵，而不是只计算一个二阶导数。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-3}
+
+B处的场沿\(-x\)，磁针稳定指向与局部场平行，因而与A的磁矩反平行。两磁矩虽反平行，但它们相互作用在本几何下是吸引：B受到向上的磁力，重力向下。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=1,yscale=1.3]
+\draw[arr] (0,0)--(6.8,0) node[right] {$\theta$};
+\draw[arr] (0,-1.4)--(0,1.5) node[above] {$U_{\rm mag}/(C/z^3)$};
+\draw[thick,blue,domain=0:6.283,samples=100] plot(\x,{cos(\x r)});
+\node[below] at (3.1416,-1) {$\pi$稳定};
+\node[above] at (1.4,1.2) {$0$不稳定};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图4b　固定高度时的角势能\par}\endgroup\end{minipage}\end{center}
+
+在\(\theta=0\)，B磁矩与局部场反向，磁势能最高，微小偏角会继续增大；在\(\theta=\pi\)，B与局部场同向，势能最低，偏离后有恢复力矩。
+
+当B保持稳定指向而上下移动，磁吸引大小随\(z^{-4}\)变化。若B稍向上，吸引增大，继续拉向A；若稍向下，吸引减小，重力使其继续下落。两力可以相等，但平衡不是恢复性的。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=2.4,yscale=1.4]
+\draw[arr] (.55,-2.2)--(2.7,-2.2) node[right] {$z/z_e$};
+\draw[arr] (.55,-2.2)--(.55,-1) node[above] {$U/(mgz_e)$};
+\draw[thick,blue,domain=.65:2.2,samples=90] plot(\x,{-1/(3*\x*\x*\x)-\x});
+\draw[dashed] (1,-2.2)--(1,-1.333);
+\node[above] at (1,-1.3) {极大值};\node[below] at (1,-2.2) {$1$};
+\node at (1.5,-2.75) {向上偏离会被吸上，向下偏离会下落};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图4c　保持稳定指向时的竖直势能\par}\endgroup\end{minipage}\end{center}
+
+图中最高点是受力平衡。它不是势阱，说明``磁力等于重力''只是平衡条件，还必须比较偏离后的力。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-3}
+
+令
+
+\[
+C=\frac{\mu_0\mu^2}{4\pi}>0.
+\]
+
+把完整势能统一写为
+
+\[
+U(z,\theta)=\frac{C\cos\theta}{z^3}-mgz.
+\]
+
+第一问只需其中磁相互作用项；第二问固定\(z\)看\(\theta\)导数；第三问先代入\(\theta=\pi\)再看\(z\)导数。每一步保留物理限制，不把\(z,\theta\)同时当自由变量又只检查其中一个方向。
+
+最后检查求出的平衡距离是否满足\(z\gg R\)。若不满足，小环的偶极近似失效，不能仍把公式称为该磁针的准确平衡位置。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-3}
+
+\subsubsection{（1）赤道面磁场与势能}\label{ux8d64ux9053ux9762ux78c1ux573aux4e0eux52bfux80fd}
+
+位置矢量与A磁矩垂直，故磁场沿\(-x\)。B磁矩沿\(x\)分量为\(\mu\cos\theta\)，所以
+
+\[
+\boldsymbol\mu_B\cdot\boldsymbol B_A
+=-\frac{\mu_0\mu^2}{4\pi z^3}\cos\theta.
+\]
+
+相互作用势能
+
+\[
+\boxed{U_{\rm mag}=\frac{\mu_0\mu^2}{4\pi z^3}\cos\theta}.
+\]
+
+以两磁矩垂直即\(\theta=\pi/2\)时为磁势能零点，这个表达式也满足\(U_{\rm mag}\to0\)于\(z\to\infty\)。
+
+若\(\theta=0\)，磁能为正；\(\theta=\pi\)，为负。不能从``磁矩反平行''一句话直接判断吸引或排斥，必须结合相对位置；沿磁矩轴线的几何会给不同结论。
+
+\subsubsection{从毕奥---萨伐尔积分独立推导场}\label{ux4eceux6bd5ux5965ux8428ux4f10ux5c14ux79efux5206ux72ecux7acbux63a8ux5bfcux573a}
+
+为避免记忆场公式时混淆轴线和赤道面，将A环放在\(yz\)平面，取角参数\(\varphi\)，使电流元与位置矢量的组合给
+
+\[
+dB_x=\frac{\mu_0IR}{4\pi}
+\frac{R+z\cos\varphi}
+{(z^2+2zR\cos\varphi+R^2)^{3/2}}\,d\varphi.
+\]
+
+令\(\epsilon=R/z\ll1\)，分母倒数展开到所需阶：
+
+\[
+\frac1{(z^2+2zR\cos\varphi+R^2)^{3/2}}
+=\frac1{z^3}
+\left[1-3\frac Rz\cos\varphi+O(\epsilon^2)\right].
+\]
+
+乘上分子并积分。必须保留\(z\cos\varphi\)与一阶分母修正的乘积，因为它也贡献\(R\)量级：
+
+\[
+B_x=\frac{\mu_0IR}{4\pi z^3}
+\int_0^{2\pi}(R+z\cos\varphi-3R\cos^2\varphi)\,d\varphi+\cdots.
+\]
+
+利用\(\int\cos\varphi\,d\varphi=0\)、\(\int\cos^2\varphi\,d\varphi=\pi\)，
+
+\[
+B_x=\frac{\mu_0IR}{4\pi z^3}(2\pi R-3\pi R)
+=-\frac{\mu_0I\pi R^2}{4\pi z^3}.
+\]
+
+因\(\mu=I\pi R^2\)，恢复\(B_x=-\mu_0\mu/(4\pi z^3)\)。若只保留分母首项，反而会得到错误的正方向；展开时需按整个被积式的最终阶数判断。
+
+\subsubsection{（2）固定高度的角平衡}\label{ux56faux5b9aux9ad8ux5ea6ux7684ux89d2ux5e73ux8861}
+
+重力不依赖\(\theta\)，所以
+
+\[
+\frac{\partial U}{\partial\theta}
+=-\frac C{z^3}\sin\theta,
+\qquad
+Q_\theta=+\frac C{z^3}\sin\theta.
+\]
+
+平衡指向为\(\theta=0,\pi\)模\(2\pi\)。当\(0<\theta<\pi\)时，\(Q_\theta>0\)，推动角度增大、趋向\(\pi\)。这与``磁矩趋向局部磁场方向''一致。
+
+二阶角导数
+
+\[
+U_{\theta\theta}=-\frac C{z^3}\cos\theta.
+\]
+
+因此
+
+\[
+U_{\theta\theta}(0)=-\frac C{z^3}<0,
+\quad
+U_{\theta\theta}(\pi)=+\frac C{z^3}>0.
+\]
+
+结论
+
+\[
+\boxed{\theta_{\text{稳}}=\pi}.
+\]
+
+参考解答某处将力矩方向文字写成``使\(\theta\)减小''，但它列出的势能和最终稳定角均要求这里在\(0<\theta<\pi\)时\(\theta\)增大。教学稿以有向势能导数和矢量力矩统一方向。
+
+\subsubsection{小角偏离的恢复作用}\label{ux5c0fux89d2ux504fux79bbux7684ux6062ux590dux4f5cux7528}
+
+令\(\theta=\pi+\delta\theta\)，则
+
+\[
+Q_\theta\simeq-\frac C{z^3}\delta\theta.
+\]
+
+若B绕相应轴的转动惯量为\(J_B\)，角运动方程
+
+\[
+J_B\delta\ddot\theta=-\frac C{z^3}\delta\theta.
+\]
+
+因此固定位置时的小角振动频率为\(\sqrt{C/(J_Bz^3)}\)。原题未给\(J_B\)，不需要数值计算；此式仅说明恢复力矩如何产生稳定指向。
+
+\subsubsection{（3）固定稳定指向的竖直平衡}\label{ux56faux5b9aux7a33ux5b9aux6307ux5411ux7684ux7ad6ux76f4ux5e73ux8861}
+
+代\(\theta=\pi\)：
+
+\[
+U(z)=-\frac C{z^3}-mgz.
+\]
+
+向下的总广义力
+
+\[
+F_z=-\frac{dU}{dz}
+=mg-\frac{3C}{z^4}.
+\]
+
+第二项负，代表向上的磁吸引。平衡\(F_z=0\)给
+
+\[
+z_e^4=\frac{3C}{mg},
+\]
+
+所以
+
+\[
+\boxed{z_e=\left(\frac{3\mu_0\mu^2}{4\pi mg}\right)^{1/4}}.
+\]
+
+这是正距离唯一根。四次方程形式上的负根不在B位于A下方的几何范围内，不能保留。
+
+量纲检验：\(C/z^3\)为能量，\(C/(mg)\)为长度四次方，开四次根为长度。\(\mu\)增大使平衡距离增大，\(m\)增大使距离减小，也符合磁吸引与重力比较。
+
+\subsubsection{竖直位置稳定性}\label{ux7ad6ux76f4ux4f4dux7f6eux7a33ux5b9aux6027}
+
+二阶导数
+
+\[
+\frac{d^2U}{dz^2}=-\frac{12C}{z^5}<0.
+\]
+
+在\(z_e\)为势能极大，因此
+
+\[
+\boxed{\text{该竖直受力平衡不稳定}}.
+\]
+
+用力的斜率也能看到：
+
+\[
+\frac{dF_z}{dz}=\frac{12C}{z^5}>0.
+\]
+
+若\(z=z_e+\delta z\)，\(\delta z>0\)表示向下偏离，\(F_z>0\)使继续向下；若\(\delta z<0\)，\(F_z<0\)使继续向上。这个结论不依赖势能零点。
+
+\subsubsection{不稳定增长的时间尺度}\label{ux4e0dux7a33ux5b9aux589eux957fux7684ux65f6ux95f4ux5c3aux5ea6}
+
+利用\(3C=mgz_e^4\)，
+
+\[
+F_z(z_e+\delta z)\simeq\frac{4mg}{z_e}\delta z.
+\]
+
+所以
+
+\[
+\delta\ddot z=\frac{4g}{z_e}\delta z.
+\]
+
+微扰一般包含指数增长项，增长率
+
+\[
+\Gamma=2\sqrt{\frac g{z_e}}.
+\]
+
+它与稳定小振动的正弦形式不同。初始扰动恰好沿衰减解是一种特殊初值，不会使该势能极大点变成稳定平衡。
+
+\subsubsection{两个自由度共同看}\label{ux4e24ux4e2aux81eaux7531ux5ea6ux5171ux540cux770b}
+
+在\((z_e,\pi)\)处，混合二阶导数
+
+\[
+U_{z\theta}=\frac{3C}{z_e^4}\sin\pi=0.
+\]
+
+二阶势能展开为
+
+\[
+\Delta U\simeq
+\frac12\frac C{z_e^3}(\delta\theta)^2
+-\frac12\frac{12C}{z_e^5}(\delta z)^2.
+\]
+
+角方向上升，竖直方向下降，是势能鞍点。即使磁针很快转到稳定指向，仍不能由此获得稳定悬浮。
+
+\subsubsection{近似范围与特殊情况}\label{ux8fd1ux4f3cux8303ux56f4ux4e0eux7279ux6b8aux60c5ux51b5}
+
+所得\(z_e\)必须远大于磁针或电流环尺度\(R\)，才能使用偶极场。若算得\(z_e\)与\(R\)同量级，需要用有限环场重新求力；本题明确给\(z\gg R\)，结果应在该假设下理解。
+
+若强制B保持\(\theta=0\)，则\(F_z=mg+3C/z^4\)，磁力和重力都向下，没有正距离平衡。这个检查再次说明稳定指向的选择不能省略。
+
+若去掉重力\(m g=0\)，稳定指向的B始终被吸向A，没有有限距离力平衡。若\(\mu=0\)则只受重力。两种极限均与四次根公式的退化趋势一致。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-3}
+
+磁针稳定指向的是局部磁场，未必与另一个磁针的磁矩平行。相对位置决定场方向，本题赤道面恰与源磁矩反向。
+
+角度和高度的稳定性需要分别检查。稳定指向提供了能量最低的角支路，但沿这条支路的高度势能仍有极大值。
+
+毕奥---萨伐尔展开中看似``一阶''的分母修正，与分子的大项相乘后贡献主导结果。对乘积或积分作近似，必须按最终贡献阶数筛选，而不是逐个因子各自丢掉所有小项。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-3}
+
+把B放在磁矩轴线上，会得到系数和方向都错误的场。用\(U=+\boldsymbol\mu\cdot\boldsymbol B\)会反转稳定指向。
+
+\(z\)向下，所以重力势能为\(-mgz\)。对力矩只写大小\(C\sin\theta/z^3\)却说方向趋向0，会与稳定角\(\pi\)矛盾。
+
+只求磁力等于重力就宣布稳定悬浮，会漏掉\(F'_z>0\)。平方、四次方结果也需筛选正距离并核对\(z\gg R\)。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-3}
+
+先画源磁矩、位置矢量和局部磁场三支箭头，明确赤道几何，再写势能。第二问只在黑板上改变\(\theta\)，第三问固定\(\theta=\pi\)只改变\(z\)，避免混淆自由度。
+
+用``向下移动一点后磁吸引怎样变化''在计算前预测不稳定，再用曲率和线性运动方程验证。最后写二阶势能展开，让学生识别鞍点。
+
+可让学生核对参考解答中的力矩方向：分别由\(U\)的导数、叉乘和最低能量取向判断，再比较结果。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-3}
+
+\subsubsection{变式1　两针磁矩不同}\label{ux53d8ux5f0f1-ux4e24ux9488ux78c1ux77e9ux4e0dux540c}
+
+A、B磁矩大小为\(\mu_A,\mu_B\)，B质量\(m_B\)，求稳定指向下的平衡距离和稳定性。
+
+\textbf{解答：}将\(C\)改成\(\mu_0\mu_A\mu_B/(4\pi)\)，稳定指向仍反平行A，平衡距离
+
+\[
+z_e=\left(\frac{3\mu_0\mu_A\mu_B}{4\pi m_Bg}\right)^{1/4}.
+\]
+
+竖直曲率\(-12C/z_e^5<0\)，仍不稳定。质量和磁矩不相同改变位置，不改变本几何中曲率符号。
+
+\subsubsection{变式2　高度导轨与角振动}\label{ux53d8ux5f0f2-ux9ad8ux5ea6ux5bfcux8f68ux4e0eux89d2ux632fux52a8}
+
+用刚性导轨把B固定在距离\(z\)，允许绕转动惯量\(J_B\)的水平轴改变\(\theta\)，求稳定角附近的小振动周期。
+
+\textbf{解答：}\(\theta=\pi+\varepsilon\)，力矩\(-C\varepsilon/z^3\)，故
+
+\[
+\Omega_\theta=\sqrt{\frac C{J_Bz^3}},\qquad
+T_\theta=2\pi\sqrt{\frac{J_Bz^3}{C}}.
+\]
+
+距离加倍，周期增为\(2^{3/2}\)倍。导轨消除了竖直不稳定自由度，所以这一角振动可以稳定，不能与自由高度的情形混同。
+
+\subsubsection{变式3　用弹簧稳定竖直位置}\label{ux53d8ux5f0f3-ux7528ux5f39ux7c27ux7a33ux5b9aux7ad6ux76f4ux4f4dux7f6e}
+
+保持B稳定指向，在原平衡距离\(z_e\)加一根自然位置为\(z_e\)、劲度\(k\)的竖直弹簧。求小竖直扰动稳定条件和频率。
+
+\textbf{解答：}弹簧在\(z_e\)无力，不改变平衡。总势能增加\(k(z-z_e)^2/2\)，曲率
+
+\[
+U''_{\text{总}}=k-\frac{12C}{z_e^5}
+=k-\frac{4mg}{z_e}.
+\]
+
+稳定要求\(k>4mg/z_e\)，频率\(\Omega_z=\sqrt{k/m-4g/z_e}\)。等号时二阶项零，但磁势能三阶导数\(60C/z_e^6\)非零，仍不是稳定极小值，不能把等号包括在稳定范围内。
+
+\subsubsection{变式4　叠加均匀水平磁场}\label{ux53d8ux5f0f4-ux53e0ux52a0ux5747ux5300ux6c34ux5e73ux78c1ux573a}
+
+叠加沿\(+x\)的恒定均匀场\(B_0>0\)。B是否仍可在原\(z_e\)保持反平行A的稳定指向？
+
+\textbf{解答：}局部总场
+
+\[
+B_x=B_0-\frac{\mu_0\mu_A}{4\pi z^3}.
+\]
+
+反平行A的稳定指向需要\(B_x<0\)，故\(z<z_{\rm flip}=[\mu_0\mu_A/(4\pi B_0)]^{1/3}\)。若\(z_e<z_{\rm flip}\)，角指向仍稳定，但均匀场只增加与\(z\)无关的势能项，不改变竖直力与不稳定性。
+
+若\(z_e>z_{\rm flip}\)，稳定指向转为沿\(+x\)，磁力与重力同向，不再存在该稳定指向的力平衡。等号处局部场为零，没有角恢复力矩，必须另作退化讨论。
+
+\clearpage
+
+\section{第 5
+题　塞曼减速中的激光与磁场（40分）}\label{ux7b2c-5-ux9898-ux585eux66fcux51cfux901fux4e2dux7684ux6fc0ux5149ux4e0eux78c1ux573a40ux5206}
+
+激光与准直原子束反向传播。一个散射过程可视作原子吸收激光光子，随后向各方向同性地自发射出同能量光子。单位时间每个原子散射的光子数为散射速率\(\Gamma\)。原子跃迁与激光共振时散射率最大，减速最有效。
+
+原子减速后，多普勒移频改变，固定激光可能不再共振。塞曼减速装置利用随位置变化的磁场改变跃迁频率，补偿多普勒变化，使原子持续共振直至接近静止。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\draw[fill=gray!10] (0,-.8) rectangle(6,.8);
+\draw[arr,blue,thick] (-1,0)--(6.5,0) node[right] {原子$v$};
+\draw[arr,red,thick] (7,.4)--(.3,.4) node[left] {激光};
+\draw[arr] (0,-1.5)--(6.7,-1.5) node[right] {$z$};
+\node[below] at (0,-1.5) {$0$};\node[below] at (6,-1.5) {$s$};
+\node at (3,1.4) {$f_0(B)=f_0(0)+\beta B,\ \beta<0$};
+\node at (3,-2.4) {速度下降，磁场增加，跃迁频率下降};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图5a　原子与激光的反向传播及减速区\par}\endgroup\end{minipage}\end{center}
+
+（1）\(^{40}\mathrm K\)原子气体加热到\(350^\circ\)C，准直后按只有一个方向自由度近似，求方均根速率\(v_0\)。
+
+（2）共振散射率\(\Gamma=5.00\times10^6\,\mathrm{s^{-1}}\)，激光波长670
+nm，求减速加速度大小\(a\)及从\(v_0\)减到静止的距离。
+
+（3）不计磁场，激光频率应比静止原子的共振频率低多少，才能与迎向激光的速率\(v_0\)原子共振？
+
+（4）跃迁频率\(f_0(B)=f_0(0)+\beta B\)，\(\beta=-1.00\times10^{10}\,\mathrm{Hz/T}\)。原子在准直出口\(z=0\)以\(v_0\)迎向激光，且\(B(0)=0\)。求保持共振减速的\(B(z)\)。
+
+已知\(h=6.626\times10^{-34}\) J·s，\(k_B=1.38\times10^{-23}\)
+J/K，\(1\,\mathrm u=1.66\times10^{-27}\) kg。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-4}
+
+本题把热运动、光子动量、多普勒效应和塞曼移频连接为一条设计链。先确定代表性初速，再确定共振时的平均减速力，用运动学得到\(v(z)\)，最后根据共振条件反求磁场剖面。
+
+先约定方向：原子沿\(+z\)，激光光子沿\(-z\)；迎光运动使原子看到的频率变高，因此实验室激光要红失谐。原子变慢后看到的多普勒增频减小，跃迁频率也要降低；题给\(\beta<0\)意味着应增大正的磁场强度。
+
+计算采用题设模型：平均自发辐射各向同性、共振散射率保持常量、运动近似一维、\(v\ll c\)。它给出平均运动，不代表每个随机散射原子的轨迹完全相同。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-4}
+
+\subsubsection{1. 一维热运动}\label{ux4e00ux7ef4ux70edux8fd0ux52a8}
+
+一个平动自由度平均动能为\(k_BT/2\)。所以准直后的题设方均根速率满足
+
+\[
+\frac12m\langle v^2\rangle=\frac12k_BT,
+\qquad v_{\rm rms}=\sqrt{\frac{k_BT}{m}}.
+\]
+
+三维未准直气体的速率方均根为\(\sqrt{3k_BT/m}\)，不能用于这里。准直后的束仍存在速度分布，本题选择\(v_0=v_{\rm rms}\)作为后续代表性原子的初速。
+
+\subsubsection{2.
+一个散射周期的平均动量}\label{ux4e00ux4e2aux6563ux5c04ux5468ux671fux7684ux5e73ux5747ux52a8ux91cf}
+
+激光光子动量大小\(p_\gamma=h/\lambda\)，吸收使原子轴向动量减少\(p_\gamma\)。自发光子向各方向同性发射，平均轴向发射动量为零，因而平均反冲也为零。
+
+所以每个周期平均原子动量变化为\(-h/\lambda\)，并非\(-2h/\lambda\)。镜面反射或完全定向再发射才可能出现两倍动量；本题的自发辐射不同。
+
+\subsubsection{3.
+低速多普勒移频}\label{ux4f4eux901fux591aux666eux52d2ux79fbux9891}
+
+原子沿\(+z\)、激光沿\(-z\)，原子参考系中的频率
+
+\[
+f_{\rm atom}=f_{\rm lab}\sqrt{\frac{1+v/c}{1-v/c}}
+\simeq f_{\rm lab}\left(1+\frac vc\right).
+\]
+
+共振要求\(f_{\rm atom}=f_0(B)\)。一阶近似可写
+
+\[
+f_0(B)-f_{\rm lab}\simeq\frac v\lambda.
+\]
+
+由于失谐远小于光学频率，右边使用题给激光波长与用静止共振波长的差异为更高阶，不影响本题结果。
+
+\subsubsection{4.
+共振减速的空间运动学}\label{ux5171ux632fux51cfux901fux7684ux7a7aux95f4ux8fd0ux52a8ux5b66}
+
+恒定平均减速度\(a>0\)时，
+
+\[
+\frac{dv}{dt}=-a,\qquad
+v\frac{dv}{dz}=-a,
+\qquad v^2(z)=v_0^2-2az.
+\]
+
+实际前向运动取非负根\(v=\sqrt{v_0^2-2az}\)。负根不表示原子在同一减速阶段已经反向。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-4}
+
+共振吸收反向激光光子，平均动量连续减少；自发辐射虽然平均轴向动量为零，仍有随机反冲，因此可以造成速度涨落。题目先忽略这一涨落，求平均制动轨迹。
+
+固定激光频率下，原子速度下降，原子看到的频率也下降。为了继续共振，跃迁频率\(f_0(B)\)必须同步下降。题给\(\beta<0\)，磁场因此从0逐渐增大，不能取负的``磁感应强度大小''作为答案。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=5,yscale=3]
+\draw[arr] (0,0)--(1.15,0) node[right] {$z/s$};
+\draw[arr] (0,0)--(0,1.2);
+\draw[thick,blue,domain=0:1,samples=100] plot(\x,{sqrt(1-\x)});
+\draw[thick,red,domain=0:1,samples=100] plot(\x,{1-sqrt(1-\x)});
+\node[blue] at (.36,1.02) {$v/v_0$};\node[red] at (.65,.82) {$B/B_f$};
+\node at (.5,-.42) {理想末端场梯度趋大，实际截断于非零小速度};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图5b　平均速度与所需磁场的归一化剖面\par}\endgroup\end{minipage}\end{center}
+
+速度曲线随\(z\)下降，磁场曲线上升，且两者相加的归一化值为1。越接近停止，速度对位置变化越敏感，对应理想场梯度越来越大。这是设计剖面在末端需要仔细处理的原因。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-4}
+
+第一问用绝对温度和单个原子质量，不使用摩尔质量。第二问用\(\Gamma\)乘每周期动量变化，再除以\(m\)。
+
+第三问写出迎光多普勒蓝移，再反推实验室的红失谐。第四问把入口共振和任意位置共振相减，固定激光频率自动消掉：
+
+\[
+\beta B(z)=\frac{v(z)-v_0}{\lambda}.
+\]
+
+这个差分式同时保留\(B(0)=0\)和\(\beta\)符号。先得到它，再代\(v(z)\)，比直接凭``补偿''措辞猜磁场方向可靠。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-4}
+
+\subsubsection{（1）准直原子的方均根速率}\label{ux51c6ux76f4ux539fux5b50ux7684ux65b9ux5747ux6839ux901fux7387}
+
+单个\(^{40}\mathrm K\)原子质量
+
+\[
+m=40(1.66\times10^{-27})
+=6.64\times10^{-26}\,\mathrm{kg}.
+\]
+
+按题给精度取绝对温度\(T=350+273=623\) K。由能量均分
+
+\[
+v_0=\sqrt{\frac{(1.38\times10^{-23})(623)}
+{6.64\times10^{-26}}}
+\simeq359.832\,\mathrm{m/s}.
+\]
+
+所以
+
+\[
+\boxed{v_0\simeq360\,\mathrm{m/s}}.
+\]
+
+采用273.15转换温标只会产生远小于所报精度的变化。内部计算尽量保留未舍入速率，后续距离与移频再统一舍入。
+
+\subsubsection{（2）平均散射力和减速度}\label{ux5e73ux5747ux6563ux5c04ux529bux548cux51cfux901fux5ea6}
+
+\(dt\)内平均散射数\(dN=\Gamma dt\)，吸收反向光子的总轴向冲量
+
+\[
+dp_z=-\Gamma dt\,\frac h\lambda.
+\]
+
+因此
+
+\[
+F_z=\frac{dp_z}{dt}=-\frac{\Gamma h}{\lambda},
+\qquad
+\boxed{a=\frac{\Gamma h}{m\lambda}}.
+\]
+
+代数值
+
+\[
+a=\frac{(5.00\times10^6)(6.626\times10^{-34})}
+{(6.64\times10^{-26})(670\times10^{-9})}
+\simeq7.44695\times10^4\,\mathrm{m/s^2}.
+\]
+
+所以
+
+\[
+\boxed{a\simeq7.45\times10^4\,\mathrm{m/s^2}},
+\qquad \ddot z=-a.
+\]
+
+这里\(a\)是减速度的正大小。若直接写\(\ddot z=+a\)，将得到速度随\(z\)增大的错误轨迹。
+
+\subsubsection{停止距离}\label{ux505cux6b62ux8dddux79bb}
+
+设停止位置为\(s\)，\(v^2(s)=0\)：
+
+\[
+\boxed{s=\frac{v_0^2}{2a}}.
+\]
+
+用未舍入数值得
+
+\[
+s\simeq0.869342\,\mathrm m\approx0.87\,\mathrm m.
+\]
+
+也可先消去\(m\)：
+
+\[
+s=\frac{k_BT/m}{2\Gamma h/(m\lambda)}
+=\frac{k_BT\lambda}{2\Gamma h}.
+\]
+
+在题设一维热初速模型下，单个原子的质量恰相消。较重原子的初速低，但给定散射率下减速度也低，两者在停止距离中抵消。
+
+\subsubsection{平均力与能量的区别}\label{ux5e73ux5747ux529bux4e0eux80fdux91cfux7684ux533aux522b}
+
+散射力的机械功率为\(F_zv=-\Gamma h v/\lambda\)，表示原子平均机械能下降。不能把\(\Gamma hc/\lambda\)全部当成原子的机械减速功率，它主要是吸收与再发射的光能流量。
+
+各向同性自发光子的平均动量零，也不意味着每次反冲零。原题求的是平均减速，真实有限样本的随机反冲会给速度方差；这与平均力的推导不矛盾。
+
+\subsubsection{（3）入口所需红失谐}\label{ux5165ux53e3ux6240ux9700ux7ea2ux5931ux8c10}
+
+无磁场的静止共振频率记\(f_0(0)\)。迎光运动时原子看到的激光频率升高，故实验室激光应低于\(f_0(0)\)。共振条件一阶给
+
+\[
+f_0(0)-f_{\rm lab}=\frac{v_0}{\lambda}.
+\]
+
+因此
+
+\[
+\boxed{\Delta f\simeq5.37\times10^8\,\mathrm{Hz}
+=537\,\mathrm{MHz}}.
+\]
+
+\(\Delta f\)是降低的正数。固定实验室频率应取\(f_{\rm lab}=f_0(0)-\Delta f\)，不能把正的537
+MHz加到\(f_0\)。
+
+数量级上，光学频率\(c/\lambda\)约\(4.48\times10^{14}\)
+Hz，失谐占比约\(v_0/c\sim1.2\times10^{-6}\)，所以非相对论一阶多普勒近似足够。
+
+\subsubsection{（4）共振条件消去固定激光频率}\label{ux5171ux632fux6761ux4ef6ux6d88ux53bbux56faux5b9aux6fc0ux5149ux9891ux7387}
+
+入口\(B(0)=0\)，故
+
+\[
+f_0(0)=f_{\rm lab}+\frac{v_0}{\lambda}.
+\]
+
+在位置\(z\)，
+
+\[
+f_0(0)+\beta B(z)
+=f_{\rm lab}+\frac{v(z)}{\lambda}.
+\]
+
+两式相减：
+
+\[
+\beta B(z)=\frac{v(z)-v_0}{\lambda}.
+\]
+
+代\(v(z)=\sqrt{v_0^2-2az}\)，
+
+\[
+\boxed{
+B(z)=\frac{\sqrt{v_0^2-2az}-v_0}{\beta\lambda}
+=-\frac{v_0}{\beta\lambda}
+\left[1-\sqrt{1-\frac{2az}{v_0^2}}\right]}.
+\]
+
+由于分子非正、\(\beta<0\)，所需\(B\geq0\)。在入口\(B=0\)，末端达到
+
+\[
+\boxed{B_f=-\frac{v_0}{\beta\lambda}
+\simeq0.0537\,\mathrm T}.
+\]
+
+\subsubsection{数值剖面与定义域}\label{ux6570ux503cux5256ux9762ux4e0eux5b9aux4e49ux57df}
+
+用\(s=v_0^2/(2a)\)写成最清楚的形式：
+
+\[
+\boxed{
+B(z)=B_f\left[1-\sqrt{1-z/s}\right],
+\quad0\leq z\leq s}.
+\]
+
+数值近似为
+
+\[
+B(z)\simeq0.0537
+\left[1-\sqrt{1-1.15\,z/(\mathrm m)}\right]\mathrm T.
+\]
+
+表达式中\(z\)必须以米计。将0.0537
+T和1.15分别舍入后，不能再以它们定义一个与精确\(s\)完全一致的末端；实际计算边界最好用解析\(s\)。
+
+参考解答的公式有分子前负号，最终数值场为正。扫描和文字层若漏掉这个负号，会与\(\beta<0\)及共振频率下降的物理方向矛盾，应由入口差分式核对。
+
+\subsubsection{场梯度与末端限制}\label{ux573aux68afux5ea6ux4e0eux672bux7aefux9650ux5236}
+
+对精确剖面求导：
+
+\[
+B'(z)=-\frac{a}{\beta\lambda\sqrt{v_0^2-2az}}>0.
+\]
+
+入口梯度约
+
+\[
+B'(0)=\frac{a}{|\beta|\lambda v_0}
+\simeq3.09\times10^{-2}\,\mathrm{T/m}.
+\]
+
+当\(v\to0\)时，理想剖面梯度趋于无穷。这不是场强无限大；场强仍趋向有限\(B_f\)，只有空间变化率发散。题面说减到``接近静止''，可以在非零小速度处截断模型，避免把无限梯度当作实际线圈必须精确实现的条件。
+
+\par\noindent\begin{minipage}{\linewidth}
+\subsubsection{时间、散射数与动量检查}\label{ux65f6ux95f4ux6563ux5c04ux6570ux4e0eux52a8ux91cfux68c0ux67e5}
+
+停止时间
+
+\[
+t_s=\frac{v_0}{a}\simeq4.83\times10^{-3}\,\mathrm s.
+\]
+
+散射总数
+
+\[
+N=\Gamma t_s=\frac{m v_0\lambda}{h}
+\simeq2.42\times10^4.
+\]
+
+乘每周期动量\(h/\lambda\)，恰好得到\(m v_0\)，验证动量收支。单光子反冲速度
+
+\[
+v_{\rm rec}=\frac{h}{m\lambda}
+\simeq1.49\times10^{-2}\,\mathrm{m/s},
+\]
+
+远小于初速，所以平均连续力近似有合理的次数尺度。接近极低终速时，随机反冲与速度分布更难忽略，但它们不属于原题的平均运动计算。
+
+\end{minipage}\par
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-4}
+
+本题最有效的符号检查是把入口与任意位置的共振条件相减。固定激光消去后，\(\beta B=(v-v_0)/\lambda\)直接决定正磁场方向。
+
+自发发射平均动量零与反冲涨落非零是不同统计量。平均减速力只有一次\(h/\lambda\)，不意味着单次散射对原子完全没有随机扰动。
+
+停止距离在一维热初速条件下不显含质量，最终场强却随初速变化而显含质量。相同题给散射率下，哪些参数能约掉，需要在不同目标中分别判断。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-4}
+
+用350而不是623作绝对温度，会低估速率。使用三维方均根速率会把停止距离放大三倍。把原子质量写成40
+kg或40 mol的质量，是单位体系混淆。
+
+将一次散射动量写成\(2h/\lambda\)，误把自发光子的各向同性平均当成定向反射。多普勒蓝移对应实验室红失谐，不能只记``频率变高''就给激光加频。
+
+\(\beta<0\)时场应增大为正，分子顺序或负号错误会给相反方向。根号要求\(z\leq s\)，超过停止点不能继续按原来迎光方向恒减速的公式计算。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-4}
+
+先画原子与光子的传播方向，逐步记录一个周期的吸收和发射动量。再按一维热运动求\(v_0\)，用``单光子踢一下---每秒踢\(\Gamma\)次''建立平均力。
+
+在共振部分，板书两行入口和任意位置条件，让学生相减自行判断\(B\)符号。最后将\(v/v_0\)和\(B/B_f\)画在同一图上，说明温度、力学与光谱关系如何连接。
+
+建议用入口、末端和量纲三个检查替代直接记忆数值剖面。末端梯度的讨论用于识别模型边界，不必引入题外材料参数。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-4}
+
+\subsubsection{变式1　散射时间与次数}\label{ux53d8ux5f0f1-ux6563ux5c04ux65f6ux95f4ux4e0eux6b21ux6570}
+
+用题给参数，求减速到\(v_f=100\) m/s的时间、散射数与距离。
+
+\textbf{解答：}\(\Delta t=(v_0-v_f)/a\simeq3.49\)
+ms，\(N=\Gamma\Delta t\simeq1.74\times10^4\)。距离
+
+\[
+s_f=\frac{v_0^2-v_f^2}{2a}\simeq0.802\,\mathrm m.
+\]
+
+三种计算分别来自速度、动量和能量，散射数乘\(h/\lambda\)应等于\(m(v_0-v_f)\)。
+
+\subsubsection{变式2　有限终速的截断磁场}\label{ux53d8ux5f0f2-ux6709ux9650ux7ec8ux901fux7684ux622aux65adux78c1ux573a}
+
+要求末端速度20.0 m/s，求终点距离、场强与末端梯度。
+
+\textbf{解答：}\(s_f=(v_0^2-20^2)/(2a)\simeq0.867\)
+m，\(B_{\rm end}=(20-v_0)/(\beta\lambda)\simeq0.0507\) T，末端梯度
+
+\[
+B'(s_f)=\frac{a}{|\beta|\lambda(20.0)}
+\simeq0.556\,\mathrm{T/m}.
+\]
+
+它有限而比入口梯度大。停止前保留有限终速，既使端点场强略小于完全停止场，也保持有限的空间梯度。
+
+\subsubsection{变式3　磁场梯度上限}\label{ux53d8ux5f0f3-ux78c1ux573aux68afux5ea6ux4e0aux9650}
+
+若只能实现\(B'(z)\leq0.100\)
+T/m，而散射率保持题给值，求能够保持理想剖面到达的最小终速。
+
+\textbf{解答：}\(B'=a/(|\beta|\lambda v)\)，所以
+
+\[
+v_{\min}=\frac{a}{|\beta|\lambda(0.100)}
+\simeq111\,\mathrm{m/s}.
+\]
+
+对应截断距离约0.786 m，场强约0.0371
+T。入口梯度小于上限，限制来自后段；如果上限低于入口梯度，原模型从入口就无法维持指定散射率。
+
+\subsubsection{变式4　提高共振散射率}\label{ux53d8ux5f0f4-ux63d0ux9ad8ux5171ux632fux6563ux5c04ux7387}
+
+将\(\Gamma\)加倍、温度和其他参数不变，求初速、停止距离、停止场强、停止时间和散射总数的变化。
+
+\textbf{解答：}\(v_0\)不变，\(a\)加倍，所以\(s\)与\(t_s\)均减半；停止所需频率补偿仍为\(v_0/\lambda\)，\(B_f\)不变。总散射数\(N=\Gamma t_s\)也不变，因为所需总动量变化仍为\(mv_0\)。
+
+相同终速处场梯度加倍。这表明更短减速管并非只提高散射率就没有代价，所需磁场空间变化也更快；该结论直接来自题设方程。
+
+\clearpage
+
+\section{第 6
+题　带电同轴圆筒的场与感应转动（40分）}\label{ux7b2c-6-ux9898-ux5e26ux7535ux540cux8f74ux5706ux7b52ux7684ux573aux4e0eux611fux5e94ux8f6cux52a840ux5206}
+
+真空中有两个同轴无限长、均匀带电的薄壁圆筒，半径\(r_1<r_2\)。沿轴单位长度内、外筒质量均\(m\)，电荷分别\(q,-q\)，\(q>0\)。两筒可绕共同中心轴自由旋转。真空介电常量\(\varepsilon_0\)，磁导率\(\mu_0\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\draw[thick] (0,0) ellipse(2 and .6);\draw[thick] (0,4) ellipse(2 and .6);
+\draw[thick] (-2,0)--(-2,4);\draw[thick] (2,0)--(2,4);
+\draw[dashed] (0,0) ellipse(1 and .3);\draw[thick] (0,4) ellipse(1 and .3);
+\draw[dashed] (-1,0)--(-1,4);\draw[dashed] (1,0)--(1,4);
+\draw[dashed] (0,-.8)--(0,5);
+\node at (0,2.8) {$+q,\ m$};\node at (1.6,2) {$-q,\ m$};
+\draw[arr] (0,4)--(1,4) node[midway,above] {$r_1$};
+\draw[arr] (0,4.8)--(2,4.8) node[midway,above] {$r_2$};
+\node at (0,-1.4) {质量和电荷均按单位轴长计};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6a　单位长度的质量、电荷及同轴几何\par}\endgroup\end{minipage}\end{center}
+
+（1）求距轴\(r\)处的电场。
+
+（2）两筒同向、同角速度\(\omega\)旋转，求磁场分布。
+
+（3）在内筒处\(r=r_1\)从静止释放质量\(\mu\)、电荷\(Q\)的点粒子，\(Q\)与\(q\)同号。求其能在两筒电磁场下到达\(r=r_2\)的\(\omega\)条件。
+
+（4）初始两筒静止，只对外筒施加外力矩使它转动。当外筒达到角速度\(\Omega\)时，求（i）内筒角速度\(\omega\)；（ii）单位轴长的外加力矩总冲量矩\(J\)，外力矩不包括感应电场力矩；（iii）两筒单位轴长的总机械角动量\(L\)。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-5}
+
+本题连接四个层次：高斯定理求静电场，旋转面电荷等效电流求磁场，洛伦兹力与能量决定粒子轨迹，变化磁通通过感应电场耦合两筒转动。
+
+前两问两筒同角速度，第三问使用该静态场。第四问外筒受驱动、内筒响应，角速度一般不同，不能继续使用前两问``轴内磁场为零''的特殊结论。
+
+第三问磁力不做功，却能把径向运动转成切向运动，使粒子提前转向。电场做正功不代表粒子一定到达外筒；必须检查径向动能。第四问机械角动量本身不等于外力矩冲量，因为电磁场也携带角动量。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-5}
+
+\subsubsection{1.
+单位长度和面电流}\label{ux5355ux4f4dux957fux5ea6ux548cux9762ux7535ux6d41}
+
+\(m\)是质量每单位轴长，不是某个无限圆筒的有限总质量；\(q\)也是电荷每单位轴长。第（3）问\(\mu\)是一个粒子的质量，二者量纲不同。
+
+半径\(r_i\)筒的面电荷密度为\(\sigma_i=q_i/(2\pi r_i)\)，旋转速度\(\omega_i r_i\)，因此环向面电流
+
+\[
+K_{\varphi,i}=\sigma_i\omega_i r_i
+=\frac{q_i\omega_i}{2\pi}.
+\]
+
+它的量纲为A/m，等效长螺线管面电流。半径在该表达式中抵消，但磁通仍依赖圆筒横截面积。
+
+\subsubsection{2.
+电场与磁场的不同积分面}\label{ux7535ux573aux4e0eux78c1ux573aux7684ux4e0dux540cux79efux5206ux9762}
+
+径向电场用同轴高斯柱面，侧面积\(2\pi r\ell\)。轴向磁场用跨过电流面的安培回路，得到电流筒内部均匀场、外部零场。两筒的场分别叠加。
+
+取\(+z\)轴方向及绕它的正转向。正内筒转动在内部产生\(+z\)场，负外筒同向转动产生\(-z\)场。环隙只处于外电流筒内部，磁场因此沿\(-z\)。
+
+\subsubsection{3.
+磁力与轨道角动量}\label{ux78c1ux529bux4e0eux8f68ux9053ux89d2ux52a8ux91cf}
+
+环隙中电场径向，电力关于轴的力矩为零。磁力有切向分量，改变粒子机械角动量\(l=\mu r^2\dot\varphi\)。
+
+尽管\(l\)变化，磁力始终与速度垂直，不做功，粒子总动能只由径向电场功决定。能量必须分为径向与切向两部分：
+
+\[
+K=\frac12\mu\dot r^2+\frac{l^2}{2\mu r^2}.
+\]
+
+\subsubsection{4.
+法拉第定律与力矩}\label{ux6cd5ux62c9ux7b2cux5b9aux5f8bux4e0eux529bux77e9}
+
+轴对称变化磁通产生环向电场：
+
+\[
+2\pi rE_\varphi(r)=-\frac{d\Phi(r)}{dt}.
+\]
+
+筒的电荷乘该电场再乘\(r\)，得到单位长度的感应力矩。内筒取穿过\(r_1\)圆面的磁通，外筒取整个\(r_2\)圆面的磁通；两个面积不能互换。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-5}
+
+静电场只存在两筒之间，方向向外。两筒同角速度时，轴内的正、负电流场恰相消，环隙留下负外筒产生的轴向场。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=2.4,yscale=1.4]
+\draw[arr] (0,0)--(3.4,0) node[right] {$r/r_1$};
+\draw[arr] (0,-1.5)--(0,1.4);
+\draw[thick,blue] (0,0)--(1,0);
+\draw[thick,blue,domain=1:2,samples=60] plot(\x,{1/\x});
+\draw[thick,blue] (2,0)--(3.1,0);
+\draw[thick,red] (0,0)--(1,0)--(1,-1)--(2,-1)--(2,0)--(3.1,0);
+\node[blue] at (1.65,1.2) {$E_r$归一化};\node[red] at (1.6,-1.5) {$B_z$归一化};
+\node[above] at (1,.08) {$1$};\node[above] at (2,.08) {$2$};
+\node at (1.6,-2.05) {示例$r_2=2r_1$；红线沿$-z$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6b　同角速度时的场分布\par}\endgroup\end{minipage}\end{center}
+
+正粒子从内侧外表面释放，初速零，起初磁力零，电场使它向外加速。随后径向速度与负\(z\)场相互作用，产生正环向速度。角动量增长会消耗可用总动能中的径向份额，强磁场可使它在到达外筒前径向转向。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=4,yscale=3]
+\draw[arr] (.95,0)--(2.45,0) node[right] {$u=r/r_1$};
+\draw[arr] (1,-.35)--(1,.65) node[above] {$K_r/K_*$};
+\begin{scope}\clip (1,-.35) rectangle(2.35,.65);
+\foreach \eta/\col in {.1/blue,.308065/black,.5/red}{
+\draw[thick,\col,domain=1:2.35,samples=100] plot(\x,{ln(\x)-\eta*(\x*\x-1)^2/(\x*\x)});}
+\end{scope}
+\draw[dashed] (2,-.35)--(2,.6);\node[below] at (2,-.35) {$r_2/r_1=2$};
+\node[blue] at (2.2,.55) {可达};\node[red] at (1.3,-.28) {提前转向};
+\node at (1.7,-.85) {径向动能非负的连通区决定可达性};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6c　径向动能及可达区域\par}\endgroup\end{minipage}\end{center}
+
+外筒从静止转动时，变化磁场在内筒处产生感应环向电场，带动正内筒同向旋转。感应耦合增加驱动外筒所需的有效转动惯量；最终外力矩冲量一部分进入两筒机械角动量，另一部分进入场角动量。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-5}
+
+电场先按\(r<r_1\)、\(r_1<r<r_2\)、\(r>r_2\)分区。磁场也分区，但要区分同角速度和不同角速度两种状态。
+
+粒子运动先求角动量\(l(r)\)，再求电场功\(K(r)\)，最后由
+
+\[
+K_r(r)=K(r)-\frac{l(r)^2}{2\mu r^2}\geq0
+\]
+
+筛选可达区域。要把外筒处的不等式用作充分条件，还需证明途中没有先出现不可达区。
+
+感应转动可定义
+
+\[
+c_m=\frac{\mu_0q^2}{4\pi},
+\qquad \alpha=\frac{c_m}{m+c_m}.
+\]
+
+\(c_m\)与线质量\(m\)量纲相同。先求\(\omega=\alpha\Omega\)，再求外筒所受感应冲量矩和外加冲量矩，最后与场角动量核对。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-5}
+
+\subsubsection{（1）静电场}\label{ux9759ux7535ux573a}
+
+取轴长\(\ell\)的高斯柱面。环隙包围内筒电荷\(q\ell\)：
+
+\[
+E_r(2\pi r\ell)=\frac{q\ell}{\varepsilon_0}.
+\]
+
+内侧没有包围电荷，外侧包围净电荷\(q\ell-q\ell=0\)。所以
+
+\[
+\boxed{
+\boldsymbol E(r)=
+\begin{cases}
+0,&r<r_1,\\
+\dfrac{q}{2\pi\varepsilon_0r}\hat{\boldsymbol r},
+&r_1<r<r_2,\\
+0,&r>r_2.
+\end{cases}}
+\]
+
+薄带电面处电场有跃变，题中的分段式指各区域极限；粒子在\(r_1\)释放按进入环隙的一侧理解。无需把它的自身电场加入所给外场。
+
+\subsubsection{（2）同角速度的磁场}\label{ux540cux89d2ux901fux5ea6ux7684ux78c1ux573a}
+
+内筒面电流\(q\omega/(2\pi)\)，外筒面电流\(-q\omega/(2\pi)\)。在内筒内部，两者磁场相反且同大；环隙中只有外筒场；外部两者各为零。因此
+
+\[
+\boxed{
+\boldsymbol B(r)=
+\begin{cases}
+0,&r<r_1,\\
+-\dfrac{\mu_0q\omega}{2\pi}\hat{\boldsymbol z},
+&r_1<r<r_2,\\
+0,&r>r_2.
+\end{cases}}
+\]
+
+令\(b=\mu_0q\omega/(2\pi)\)为有向系数，环隙\(\boldsymbol B=-b\hat{\boldsymbol z}\)。若\(\omega>0\)则\(b>0\)；后续到达条件依赖\(\omega^2\)，旋转反向不会改变径向可达距离。
+
+\subsubsection{（3）角动量随半径变化}\label{ux89d2ux52a8ux91cfux968fux534aux5f84ux53d8ux5316}
+
+粒子径向速度\(\dot r\)，磁力切向分量\(Qb\dot r\)，关于轴力矩\(Qb r\dot r\)。因此
+
+\[
+\frac{dl}{dt}=Qb r\dot r,
+\qquad dl=Qb r\,dr.
+\]
+
+从\(r_1\)静止释放，\(l(r_1)=0\)，积分得
+
+\[
+\boxed{l(r)=\frac12Qb(r^2-r_1^2)}.
+\]
+
+这里\(l\)是机械角动量，因磁力矩而不守恒。若选轴对称矢势，机械角动量加上电磁项形成守恒的正则角动量，可得到同一结果。
+
+\subsubsection{电场功与总动能}\label{ux7535ux573aux529fux4e0eux603bux52a8ux80fd}
+
+磁力不做功，电场力功元
+
+\[
+dK=QE_r\,dr=\frac{qQ}{2\pi\varepsilon_0r}\,dr.
+\]
+
+积分
+
+\[
+\boxed{K(r)=\frac{qQ}{2\pi\varepsilon_0}\ln\frac r{r_1}}.
+\]
+
+因为\(qQ>0\)，对\(r>r_1\)该能量为正。径向动能为
+
+\[
+K_r(r)=\frac{qQ}{2\pi\varepsilon_0}\ln\frac r{r_1}
+-\frac{Q^2b^2(r^2-r_1^2)^2}{8\mu r^2}.
+\]
+
+第二项是已经分配到环向运动的动能，不是磁力所做的负功。
+
+\subsubsection{外筒处的到达条件}\label{ux5916ux7b52ux5904ux7684ux5230ux8fbeux6761ux4ef6}
+
+要求\(K_r(r_2)\geq0\)：
+
+\[
+\frac{Q^2b^2(r_2^2-r_1^2)^2}{8\mu r_2^2}
+\leq\frac{qQ}{2\pi\varepsilon_0}\ln\frac{r_2}{r_1}.
+\]
+
+代\(b=\mu_0q\omega/(2\pi)\)并约去正因子：
+
+\[
+\boxed{
+\omega^2\leq
+\frac{16\pi\mu r_2^2}
+{\varepsilon_0\mu_0^2qQ(r_2^2-r_1^2)^2}
+\ln\frac{r_2}{r_1}}.
+\]
+
+对应\(\lvert\omega\rvert\)不超过右边平方根。等号时粒子恰到外筒，径向速度为零，但切向速度一般不为零；不是总速度为零。
+
+\subsubsection{为什么检查外筒就足够}\label{ux4e3aux4ec0ux4e48ux68c0ux67e5ux5916ux7b52ux5c31ux8db3ux591f}
+
+令\(u=r/r_1>1\)。同一不等式对任意中间半径都要求\(\omega^2\)不超过与
+
+\[
+H(u)=\frac{u^2\ln u}{(u^2-1)^2}
+\]
+
+成正比的阈值。求导：
+
+\[
+H'(u)=\frac{u[(u^2-1)-2(u^2+1)\ln u]}
+{(u^2-1)^3}.
+\]
+
+令\(t=\ln u>0\)，\((u^2-1)/(u^2+1)=\tanh t<t<2t\)，所以分子严格负，\(H\)严格下降。
+
+因此外筒\(r_2\)处阈值最小；若该处满足，所有\(r_1<r<r_2\)都满足，途中没有更早的径向禁止区。这个单调性把端点必要条件提升为本题运动的充分条件。
+
+任意有限\(\omega\)下，刚释放时电场先产生径向加速度，粒子开始向外。磁场很强时虽仍开始向外，却会在很短距离后转向。这与上面的阈值结构相容。
+
+\subsubsection{（4）（i）不同角速度的磁场和磁通}\label{iux4e0dux540cux89d2ux901fux5ea6ux7684ux78c1ux573aux548cux78c1ux901a}
+
+此时内筒角速度\(\omega(t)\)、外筒\(\Omega(t)\)不同。分区轴向场为
+
+\[
+B_z(r)=
+\begin{cases}
+\dfrac{\mu_0q}{2\pi}(\omega-\Omega),&r<r_1,\\
+-\dfrac{\mu_0q}{2\pi}\Omega,&r_1<r<r_2,\\
+0,&r>r_2.
+\end{cases}
+\]
+
+按原题参考解答的圆筒场模型，使用每一瞬间的轴对称场和法拉第感应关系，忽略传播延迟与端部效应。不能把同角速度情况下的内部零场搬来，否则内筒就不会受到正确的感应力矩。
+
+穿过\(r_1\)圆面的磁通
+
+\[
+\Phi_1=\frac{\mu_0q r_1^2}{2}(\omega-\Omega).
+\]
+
+法拉第定律给
+
+\[
+E_{\varphi,1}
+=-\frac{\mu_0q r_1}{4\pi}(\dot\omega-\dot\Omega).
+\]
+
+单位长度内筒转动惯量\(m r_1^2\)，受感应力矩\(q r_1E_{\varphi,1}\)，所以
+
+\[
+m r_1^2\dot\omega
+=-c_m r_1^2(\dot\omega-\dot\Omega).
+\]
+
+于是
+
+\[
+(m+c_m)\dot\omega=c_m\dot\Omega.
+\]
+
+初始两角速度均零，积分得
+
+\[
+\boxed{\omega=\frac{c_m}{m+c_m}\Omega
+=\frac{\mu_0q^2}{4\pi m+\mu_0q^2}\Omega}.
+\]
+
+\(0<\alpha<1\)，内筒与外筒同向，但角速度较小。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) circle(1.3);\draw[thick] (0,0) circle(2.2);
+\draw[arr] (1.55,1.55) arc(45:125:2.2);
+\draw[arr] (.92,.92) arc(45:125:1.3);
+\node at (2.8,1.2) {$\Omega$外筒};
+\node at (0,.4) {$\omega$内筒};
+\node at (0,-2.9) {磁通变化产生感应力矩，两筒同向转动};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6d　外筒驱动与内筒感应响应\par}\endgroup\end{minipage}\end{center}
+
+\subsubsection{（4）（ii）外筒感应冲量矩}\label{iiux5916ux7b52ux611fux5e94ux51b2ux91cfux77e9}
+
+穿过\(r_2\)圆面的总磁通，包含内部与环隙两区：
+
+\[
+\Phi_2=\frac{\mu_0q}{2}
+(r_1^2\omega-r_2^2\Omega).
+\]
+
+因此
+
+\[
+E_{\varphi,2}=-\frac{\mu_0q}{4\pi r_2}
+(r_1^2\dot\omega-r_2^2\dot\Omega).
+\]
+
+外筒电荷为\(-q\)，感应力矩
+
+\[
+\tau_{\rm ind,2}=(-q)r_2E_{\varphi,2}
+=c_m(r_1^2\dot\omega-r_2^2\dot\Omega).
+\]
+
+从静止到终态积分：
+
+\[
+J_{\rm ind,2}=c_m(r_1^2\omega-r_2^2\Omega).
+\]
+
+外筒机械角动量变化为\(m r_2^2\Omega\)，所以外加力矩的冲量矩
+
+\[
+J=m r_2^2\Omega-J_{\rm ind,2}.
+\]
+
+代\(\omega=\alpha\Omega\)：
+
+\[
+\boxed{
+J=\left[(m+c_m)r_2^2
+-\frac{c_m^2}{m+c_m}r_1^2\right]\Omega}.
+\]
+
+方括号大于零，因为\(r_2>r_1\)且\(m>0\)。它是外筒驱动过程的有效转动惯量每单位轴长，包含自身机械惯量和电磁耦合。
+
+\subsubsection{（4）（iii）两筒机械角动量}\label{iiiux4e24ux7b52ux673aux68b0ux89d2ux52a8ux91cf}
+
+按单位长度求和：
+
+\[
+L=m r_1^2\omega+m r_2^2\Omega.
+\]
+
+因此
+
+\[
+\boxed{
+L=m\left[r_2^2+\frac{c_m}{m+c_m}r_1^2\right]\Omega}.
+\]
+
+它一般小于\(J\)。二者差为
+
+\[
+\boxed{J-L=c_m(r_2^2-r_1^2)\Omega}.
+\]
+
+不能以``外力矩冲量必等于两筒机械角动量''强行把差消掉；电磁场也是角动量载体。
+
+\subsubsection{场角动量的独立核对}\label{ux573aux89d2ux52a8ux91cfux7684ux72ecux7acbux6838ux5bf9}
+
+环隙中电场径向向外，磁场为\(-\mu_0q\Omega\hat z/(2\pi)\)，场动量密度
+
+\[
+\boldsymbol g_{\rm em}=\varepsilon_0\boldsymbol E\times\boldsymbol B
+=\frac{\mu_0q^2\Omega}{4\pi^2r}\hat{\boldsymbol\varphi}.
+\]
+
+轴向角动量密度\(r g_{{\rm em},\varphi}\)，单位轴长体积元\(2\pi r\,dr\)，所以
+
+\[
+\begin{aligned}
+L_{\rm em}
+&=\int_{r_1}^{r_2}
+\frac{\mu_0q^2\Omega}{4\pi^2}\,2\pi r\,dr\\
+&=\frac{\mu_0q^2}{4\pi}(r_2^2-r_1^2)\Omega.
+\end{aligned}
+\]
+
+恰好等于\(J-L\)，因而
+
+\[
+\boxed{J=L+L_{\rm em}}.
+\]
+
+内部与外部电场为零，故这些区域即使存在轴向磁场，也不贡献本题的\(\boldsymbol E\times\boldsymbol B\)角动量。
+
+\subsubsection{能量与有效惯量的第二种核对}\label{ux80fdux91cfux4e0eux6709ux6548ux60efux91cfux7684ux7b2cux4e8cux79cdux6838ux5bf9}
+
+磁场能按两个区域积分，每单位长度为
+
+\[
+W_B=\frac{c_m}{2}
+\left[r_1^2(\omega-\Omega)^2
++(r_2^2-r_1^2)\Omega^2\right].
+\]
+
+加两筒机械转动能：
+
+\[
+E=\frac12(m+c_m)r_1^2\omega^2
+-c_mr_1^2\omega\Omega
++\frac12(m+c_m)r_2^2\Omega^2.
+\]
+
+代\(\omega=\alpha\Omega\)，得到
+
+\[
+E=\frac12I_{\rm eff}\Omega^2,\quad
+I_{\rm eff}=(m+c_m)r_2^2-\frac{c_m^2}{m+c_m}r_1^2.
+\]
+
+它与\(J/\Omega\)一致。静电场能在固定半径、电荷分布下不变，故只需比较磁能和机械能的增加。
+
+\subsubsection{极限检查}\label{ux6781ux9650ux68c0ux67e5}
+
+\(q\to0\)时\(c_m\to0\)，内筒不被带动，\(J=L=m r_2^2\Omega\)，恢复没有电磁耦合的外筒。
+
+同角速度场的符号与粒子角动量符号必须配合：正粒子向外、负\(z\)场，磁力沿正环向。反转两筒旋转方向只反转粒子环向运动，径向到达判据仍相同。
+
+所有结果都按单位轴长计。将\(m,q\)误当成有限总量，会让\(c_m\)与\(m\)量纲不一致，这是最直接的错误提示。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-5}
+
+磁力不做功却影响径向可达性，因为它改变能量在径向和切向之间的分配。总动能正与径向动能非负是不同条件。
+
+外筒处不等式成为充分条件，依赖于阈值函数严格下降。一般势垒问题不能只检查终点，必须排除中途禁止区。
+
+内外转动耦合有``电磁惯量''\(c_m\)，但机械角动量并非全部角动量。感应力矩、场角动量积分和能量有效惯量三种方法相互闭合，构成有力的独立验证。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-5}
+
+面电流是\(\sigma\omega r=q\omega/(2\pi)\)，漏掉\(r\)或把\(q\)当面电荷密度会得到错误半径依赖。轴内零磁场只适用于同角速度，不适用于外筒单独驱动。
+
+粒子角动量有磁力矩，不能设\(l=0\)。磁力不做功不表示它对轨迹无影响。外筒处径向速度为零的等号仍表示可以接触外筒。
+
+外筒电荷负号和法拉第负号容易互相遗漏。两个磁通积分必须使用正确面积，外筒磁通不只是环隙面积乘一个内部场。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-5}
+
+先画三分区的E、B图，让学生逐区叠加。粒子部分先求\(l(r)\)和\(K(r)\)，最后再引入径向能量，不必一开始求完整轨道。
+
+第四问画两张磁通圆面，分别标\(r_1^2\)和\(r_2^2\)，再写法拉第定律。用\(c_m\)简化代数之后，要求学生解释其与线质量同量纲。
+
+最后同时验证\(J-L=L_{\rm em}\)与\(E=I_{\rm eff}\Omega^2/2\)。要求学生说明每一项对应场还是物体，并据此核对能量与角动量的转移。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-5}
+
+\subsubsection{变式1　两筒独立给定角速度}\label{ux53d8ux5f0f1-ux4e24ux7b52ux72ecux7acbux7ed9ux5b9aux89d2ux901fux5ea6}
+
+内筒\(\omega_1\)、外筒\(\omega_2\)为恒定但不相等，求磁场。
+
+\textbf{解答：}分别叠加两电流筒，
+
+\[
+B_z=\frac{\mu_0q}{2\pi}
+\begin{cases}
+\omega_1-\omega_2,&r<r_1,\\
+-\omega_2,&r_1<r<r_2,\\
+0,&r>r_2.
+\end{cases}
+\]
+
+环隙场只由外筒角速度决定，粒子的环隙运动因此使用\(\omega_2\)。内筒转速改变轴内场，但在本题环隙并不改变磁场。
+
+\subsubsection{变式2　归一化径向势垒}\label{ux53d8ux5f0f2-ux5f52ux4e00ux5316ux5f84ux5411ux52bfux5792}
+
+设\(r_2=2r_1\)，\(K_*=qQ/(2\pi\varepsilon_0)\)，定义\(\eta=Q^2b^2r_1^2/(8\mu K_*)\)。求到达条件，并判断\(\eta=0.20\)和0.50。
+
+\textbf{解答：}
+
+\[
+\frac{K_r}{K_*}=\ln u-\eta\frac{(u^2-1)^2}{u^2}.
+\]
+
+在\(u=2\)要求\(\ln2-(9/4)\eta\geq0\)，故\(\eta\leq4\ln2/9\simeq0.308\)。0.20可达，0.50不可达。由阈值函数单调性，后者在外筒前已有径向转向；不能因总动能\(K_*\ln2>0\)而判可达。
+
+\subsubsection{变式3　电磁惯量等于线质量}\label{ux53d8ux5f0f3-ux7535ux78c1ux60efux91cfux7b49ux4e8eux7ebfux8d28ux91cf}
+
+设\(c_m=m,r_2=2r_1\)，外筒从静止驱动到\(\Omega\)。求\(\omega,J,L,L_{\rm em}\)及总能量增加。
+
+\textbf{解答：}\(\alpha=1/2\)，所以\(\omega=\Omega/2\)。有效惯量\(I_{\rm eff}=2m(4r_1^2)-(m/2)r_1^2=(15/2)m r_1^2\)，
+
+\[
+J=\frac{15}{2}mr_1^2\Omega,\quad
+L=\frac92mr_1^2\Omega,\quad
+L_{\rm em}=3mr_1^2\Omega.
+\]
+
+三者满足\(J=L+L_{\rm em}\)。能量增加\(E=(15/4)m r_1^2\Omega^2\)，须同时计磁场能，不能只求两筒机械动能。
+
+\subsubsection{变式4　改为只驱动内筒}\label{ux53d8ux5f0f4-ux6539ux4e3aux53eaux9a71ux52a8ux5185ux7b52}
+
+两筒初始静止，只对内筒施加外力矩。它达到\(\omega\)时，外筒自由响应的\(\Omega\)和所需内筒外加冲量矩为何？
+
+\textbf{解答：}外筒无外力矩，故
+
+\[
+m r_2^2\dot\Omega
+=c_m(r_1^2\dot\omega-r_2^2\dot\Omega).
+\]
+
+积分得\(\Omega=\alpha(r_1/r_2)^2\omega\)，仍同向，且比外筒驱动情形更弱。内筒的外加冲量矩为
+
+\[
+J_1=(m+c_m)r_1^2\omega-c_mr_1^2\Omega
+=r_1^2\left[(m+c_m)-\frac{c_m^2}{m+c_m}
+\frac{r_1^2}{r_2^2}\right]\omega.
+\]
+
+两种驱动方向的耦合不对称来自磁通面积不同；不能只把\(\omega,\Omega\)和\(r_1,r_2\)机械互换而忽略电流筒场的空间分区。
+
+\clearpage
+
+\section{第 7
+题　汽车爬坡的牵引、转动与载荷（40分）}\label{ux7b2c-7-ux9898-ux6c7dux8f66ux722cux5761ux7684ux7275ux5f15ux8f6cux52a8ux4e0eux8f7dux837740ux5206}
+
+简化汽车的前轮、后轮分别视为半径\(r\)、质量\(m\)的均质圆柱，两前轮合并为一个物体，两后轮也合并为一个物体。轴距\(L\)。刚性车身质量\(M\)，质心在前、后轮轴的中点正上方，距轮轴平面\(h\)。
+
+轮与地面摩擦系数\(\mu\)，最大静摩擦等于滑动摩擦；忽略空气阻力和轮轴摩擦力矩。均质圆柱转动惯量\(J_w=mr^2/2\)，重力加速度\(g\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.8,rotate=15]
+\draw[thick] (-1,0)--(8,0);
+\draw[thick] (1,.7) circle(.7);\draw[thick] (6,.7) circle(.7);
+\draw[thick,fill=gray!8] (.3,1.4) rectangle(6.7,2.5);
+\fill (3.5,1.85) circle(2pt) node[above] {$M$};
+\draw[dashed] (1,.7)--(6,.7);
+\draw[<->] (1,3)--(6,3) node[midway,above] {$L$};
+\draw[<->] (3.5,.7)--(3.5,1.85) node[midway,right] {$h$};
+\node at (1,.7) {$m$};\node at (6,.7) {$m$};
+\draw[arr] (7,1.7)--(8.4,1.7) node[right] {$a$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图7a　车身高度h从轮轴平面量起\par}\endgroup\end{minipage}\end{center}
+
+（1）汽车在倾角\(\theta\)坡面上无滑动地向上加速，加速度\(a\)，前、后轮法向力均大于零。求\(N_{\text{前}},N_{\text{后}}\)及不使前轮离地的最大安全加速度\(a_{\text{安全}}\)。
+
+（2）车身发动机给后轮瞬时力矩\(\tau_{\text{轮}}\)，摩擦足以维持无滑动，求加速度。
+
+（3）传动效率100\%，电机转速是车轮转速的\(r_i\)倍。A型车参数：\(M=1.8\times10^3\)
+kg，\(h=0.1\) m，\(r=0.40\) m，\(L=2.9\)
+m，电机最大转矩\(\tau=4.0\times10^2\)
+N·m，\(r_i=10\)，轮质量可忽略，\(g=9.8\,\mathrm{m/s^2}\)。求水平和\(30^\circ\)上坡最大加速度、所需最小摩擦系数，数值保留两位有效数字。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-6}
+
+本题同时包含质心平动、车轮转动、车身力矩平衡与静摩擦约束。驱动轮需要向前的地面摩擦，无驱动前轮在向前加速时需要向后的摩擦，以获得正确的滚动角加速度。
+
+参考解答在车身力矩平衡中只计轮轴合力，省略了驱动装置对车身的反作用力矩。若按这一隐含简化，会得到其载荷分配和摩擦数字；若发动机与传动安装在题设车身上，则作用反作用必须计入。
+
+下文先按完整车载驱动系统给出守恒自洽的结果，再单列参考解答的简化约定作对照。两种模型的轮子转动与加速度公式相同，法向载荷和摩擦阈值不同。忽略轮轴摩擦力矩不等于忽略发动机的驱动反作用力矩。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-6}
+
+\subsubsection{1.
+坡面坐标与摩擦方向}\label{ux5761ux9762ux5750ux6807ux4e0eux6469ux64e6ux65b9ux5411}
+
+\(x\)沿坡面向上，\(y\)垂直坡面向外，逆时针角速度取正。汽车向上滚动时车轮顺时针，故
+
+\[
+\omega_w=-\frac vr,\qquad
+\alpha_w=-\frac ar.
+\]
+
+前轮没有驱动力矩，地面摩擦必须产生负角加速度。因此加速时前轮摩擦沿坡面下方；后轮的驱动力矩顺时针，它需要向上的摩擦传递牵引。
+
+\subsubsection{2.
+三种质量作用}\label{ux4e09ux79cdux8d28ux91cfux4f5cux7528}
+
+平动质量是\(M+2m\)。两轮的转动能折算为额外质量
+
+\[
+2\frac{J_w}{r^2}=m.
+\]
+
+所以动力学中的等效惯性质量为\(M+3m\)。法向总载荷却是\((M+2m)g\cos\theta\)，不能把转动等效质量加入重量。
+
+车身质心距地面为\(h+r\)，整车质心距地面为
+
+\[
+H=r+\frac{Mh}{M+2m}.
+\]
+
+题面\(h\)从轮轴平面量起，不能直接把\(h\)当成距地面高度。
+
+\subsubsection{3.
+传动转矩与功率}\label{ux4f20ux52a8ux8f6cux77e9ux4e0eux529fux7387}
+
+理想传动满足功率守恒：
+
+\[
+\tau\omega_{\rm motor}=\tau_{\text{轮}}\omega_{\rm wheel}.
+\]
+
+由\(\omega_{\rm motor}=r_i\omega_{\rm wheel}\)，
+
+\[
+\tau_{\text{轮}}=r_i\tau.
+\]
+
+低档提高轮上转矩，但同一电机转速下车速降低。静止瞬间仍可用转矩传递关系，不能因两端功率都为零就把转矩设零。
+
+\subsubsection{4. 静摩擦约束}\label{ux9759ux6469ux64e6ux7ea6ux675f}
+
+无滑动要求各轮
+
+\[
+|f_{\text{前}}|\leq\mu N_{\text{前}},\qquad
+|f_{\text{后}}|\leq\mu N_{\text{后}}.
+\]
+
+法向力必须先大于零。不接触地面的车轮不能继续提供滚动约束，摩擦系数再大也不能补偿负的法向力。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-6}
+
+加速或上坡使地面对整车的合切向力为正。该力作用在质心下方，产生使车头抬起的力矩，载荷向后轮转移。
+
+完整系统中，车轮不断获得顺时针角动量。整车外力矩除了维持车身不俯仰，还要提供车轮角动量变化；在车身单独受力图上，表现为发动机／传动对车身的反向力矩。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.85]
+\draw[thick] (0,1.4) rectangle(6,2.1);
+\fill (3,1.75) circle(1.5pt); \node[above] at (3,2.2) {车身质心};
+\draw[arr] (3,1.75)--(3,.1) node[below] {$Mg$};
+\draw[arr] (.7,.3)--(.7,1.4) node[above] {$F_{y,\text{后}}$};
+\draw[arr] (5.3,.3)--(5.3,1.4) node[above] {$F_{y,\text{前}}$};
+\draw[arr] (.7,1.4)--(2,1.4); \node[below] at (1.4,1.2) {$F_x$};
+\draw[arr,red] (5.5,2.75) arc(45:145:.65);
+\node[red] at (4.7,3.5) {驱动反作用$+\tau_{\text{轮}}$};
+\node at (3,-.7) {参考约定省略红色力矩；完整车身受力保留它};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图7b　车身受力及驱动反作用力矩\par}\endgroup\end{minipage}\end{center}
+
+图中红色项为完整车载驱动模型必须保留的\(+\tau_{\text{轮}}\)。参考解答的简化力矩图省略它。这个区别在轮质量趋零时仍存在：转动惯量可忽略，并不意味着有限驱动力矩的反作用消失。
+
+轮上转矩提供的有效牵引尺度是\(\tau_{\text{轮}}/r\)，但后轮摩擦一般不完全等于它，因为一部分转矩用于后轮自身角加速。前轮也需要获得自转，进一步增加总惯性需求。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-6}
+
+总切向摩擦记\(F=f_{\text{前}}+f_{\text{后}}\)。整车平动：
+
+\[
+F=(M+2m)(a+g\sin\theta).
+\]
+
+整车法向：
+
+\[
+N_{\text{前}}+N_{\text{后}}=(M+2m)g\cos\theta.
+\]
+
+再对整车质心写角动量方程。车身保持平行坡面，不产生俯仰角加速度，但两轮转动角动量变化为\(2J_w(-a/r)=-mra\)，所以
+
+\[
+\frac L2(N_{\text{前}}-N_{\text{后}})+HF=-mra.
+\]
+
+该方法不必在第一问预先知道每个轮轴力或发动机结构，直接保留了车轮自转的角动量。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-6}
+
+\subsubsection{（1）完整系统的法向载荷}\label{ux5b8cux6574ux7cfbux7edfux7684ux6cd5ux5411ux8f7dux8377}
+
+由法向总力与整车质心力矩，
+
+\[
+N_{\text{前}}=\frac{M+2m}{2}g\cos\theta-\frac{HF+mra}{L},
+\]
+
+\[
+N_{\text{后}}=\frac{M+2m}{2}g\cos\theta+\frac{HF+mra}{L}.
+\]
+
+代\(H=r+Mh/(M+2m)\)和\(F=(M+2m)(a+g\sin\theta)\)，整理得
+
+\[
+\boxed{
+\begin{aligned}
+N_{\text{前}}
+={}&\frac{M+2m}{2}g\cos\theta\\
+&-\frac{Mh(a+g\sin\theta)
++r[(M+3m)a+(M+2m)g\sin\theta]}L,
+\end{aligned}}
+\]
+
+\[
+\boxed{
+\begin{aligned}
+N_{\text{后}}
+={}&\frac{M+2m}{2}g\cos\theta\\
+&+\frac{Mh(a+g\sin\theta)
++r[(M+3m)a+(M+2m)g\sin\theta]}L.
+\end{aligned}}
+\]
+
+两法向力相加恢复总法向重量。对于向上加速，后一载荷转移项为正，后轮载荷增大、前轮减小。
+
+\subsubsection{前轮离地的加速度边界}\label{ux524dux8f6eux79bbux5730ux7684ux52a0ux901fux5ea6ux8fb9ux754c}
+
+令\(N_{\text{前}}=0\)，得
+
+\[
+\boxed{
+a_{\text{安全}}=
+\frac{(M+2m)Lg\cos\theta/2
+-[Mh+(M+2m)r]g\sin\theta}
+{Mh+(M+3m)r}}.
+\]
+
+接触要求\(a<a_{\text{安全}}\)，临界等号仅表示刚失去正的前轮支持。若该表达式非正，在当前坡度和参数下，正向加速的前轮接触条件已不能满足，不能把负阈值当成可用正加速度。
+
+当\(m\to0\)，
+
+\[
+\boxed{
+a_{\text{安全}}=\frac{Lg\cos\theta}{2(h+r)}-g\sin\theta}.
+\]
+
+这里出现\(h+r\)，正是质心距地面的高度，符合将轮质量忽略后的整车视作质点与不俯仰车架的极限。
+
+\subsubsection{车身单独受力的交叉核验}\label{ux8f66ux8eabux5355ux72ecux53d7ux529bux7684ux4ea4ux53c9ux6838ux9a8c}
+
+前、后轮轴提供的法向分量分别为\(N_{\text{前}}-mg\cos\theta\)、\(N_{\text{后}}-mg\cos\theta\)。两轮轴合切向力给车身
+
+\[
+F_{x,\text{车身}}=M(a+g\sin\theta).
+\]
+
+车身绕质心无俯仰角加速。在车载驱动模型中，力矩方程为
+
+\[
+\frac L2(N_{\text{前}}-N_{\text{后}})
++Mh(a+g\sin\theta)+\tau_{\text{轮}}=0.
+\]
+
+下一问给\(\tau_{\text{轮}}=r[(M+3m)a+(M+2m)g\sin\theta]\)，代入便恢复前面的整车角动量结果。这说明附加项并非任意修正，而是两种系统选择的一致要求。
+
+\subsubsection{（2）前轮摩擦与自转}\label{ux524dux8f6eux6469ux64e6ux4e0eux81eaux8f6c}
+
+前轮绕轴转动：
+
+\[
+f_{\text{前}}r=J_w\alpha_w
+=-\frac12mr^2\frac ar.
+\]
+
+故
+
+\[
+\boxed{f_{\text{前}}=-\frac m2a}.
+\]
+
+它向坡面下方。由整车平动，
+
+\[
+\boxed{
+f_{\text{后}}=(M+2m)(a+g\sin\theta)+\frac m2a}.
+\]
+
+后轮摩擦向坡面上方，除推动车身和两轮平动外，还须克服前轮为了加速自转而产生的反向摩擦。
+
+\subsubsection{后轮转动与加速度}\label{ux540eux8f6eux8f6cux52a8ux4e0eux52a0ux901fux5ea6}
+
+后轮驱动力矩顺时针，按逆时针为正：
+
+\[
+f_{\text{后}}r-\tau_{\text{轮}}
+=J_w\alpha_w=-\frac12mra.
+\]
+
+代后轮摩擦，
+
+\[
+\frac{\tau_{\text{轮}}}r=(M+3m)a+(M+2m)g\sin\theta.
+\]
+
+所以
+
+\[
+\boxed{
+a=\frac{\tau_{\text{轮}}/r-(M+2m)g\sin\theta}
+{M+3m}}.
+\]
+
+这与参考解答相同。两轮转动各增加\(m/2\)的惯性质量，共\(m\)。若将分母写成\(M+2m\)，就是把车轮自转能漏掉。
+
+\subsubsection{能量方法的复核}\label{ux80fdux91cfux65b9ux6cd5ux7684ux590dux6838}
+
+整车机械动能
+
+\[
+K=\frac12(M+2m)v^2
++2\frac12J_w(v/r)^2
+=\frac12(M+3m)v^2.
+\]
+
+驱动机械功率\(\tau_{\text{轮}}v/r\)，上坡重力势能变化率\((M+2m)g v\sin\theta\)。无滑动时，静止地面接触点的摩擦不耗散能量，所以
+
+\[
+\tau_{\text{轮}}\frac vr
+=\frac{dK}{dt}+(M+2m)g v\sin\theta.
+\]
+
+对\(v>0\)约去\(v\)即得到同一加速度式，\(v=0\)时由连续极限或转动方程给出。这个功率式不能用于证明法向载荷，因为载荷取决于力矩与高度。
+
+\subsubsection{（3）A型车的加速度}\label{aux578bux8f66ux7684ux52a0ux901fux5ea6}
+
+理想传动\(\tau_{\text{轮}}=r_i\tau=4.0\times10^3\) N·m，轮质量忽略，所以
+
+\[
+a=\frac{r_i\tau}{Mr}-g\sin\theta.
+\]
+
+平地
+
+\[
+a(0)=\frac{4000}{1800(0.40)}
+=5.55556\,\mathrm{m/s^2},
+\]
+
+上坡
+
+\[
+a(30^\circ)=5.55556-9.8\sin30^\circ
+=0.655556\,\mathrm{m/s^2}.
+\]
+
+按两位有效数字
+
+\[
+\boxed{a(0)=5.6\,\mathrm{m/s^2},\qquad
+a(30^\circ)=0.66\,\mathrm{m/s^2}}.
+\]
+
+此时后轮牵引力在两种坡度均为
+
+\[
+f_{\text{后}}=M(a+g\sin\theta)
+=\frac{\tau_{\text{轮}}}r=1.00\times10^4\,\mathrm N.
+\]
+
+前轮摩擦在\(m\to0\)极限趋零，因此摩擦限制来自后轮。
+
+\subsubsection{完整动力学下的摩擦阈值}\label{ux5b8cux6574ux52a8ux529bux5b66ux4e0bux7684ux6469ux64e6ux9608ux503c}
+
+轮质量忽略时
+
+\[
+N_{\text{后}}=\frac12Mg\cos\theta
++\frac{M(h+r)}L(a+g\sin\theta).
+\]
+
+平地后轮载荷约\(1.0544\times10^4\) N，上坡约\(9.3625\times10^3\) N。于是
+
+\[
+\mu_{\min}(0)=\frac{10000}{10544.14}\simeq0.9484,
+\]
+
+\[
+\mu_{\min}(30^\circ)=\frac{10000}{9362.48}\simeq1.0681.
+\]
+
+两位有效数字结果
+
+\[
+\boxed{
+\mu_{\min}(0)=0.95,\qquad
+\mu_{\min}(30^\circ)=1.1}
+\quad\text{（完整车载驱动模型）}.
+\]
+
+对应安全加速度约28.4和19.7
+\(\mathrm{m/s^2}\)，均高于本题所求加速度，前轮支持仍为正。摩擦系数大于1在理想题设中并非代数错误，它只表示所需牵引较强。
+
+\subsubsection{参考解答的简化载荷约定}\label{ux53c2ux8003ux89e3ux7b54ux7684ux7b80ux5316ux8f7dux8377ux7ea6ux5b9a}
+
+若在车身力矩式中省略\(\tau_{\text{轮}}\)，得到参考解答采用的
+
+\[
+\boxed{
+N_{\text{前}}^{\text{简}}
+=\left(\frac M2+m\right)g\cos\theta
+-\frac{Mh}L(a+g\sin\theta)},
+\]
+
+\[
+\boxed{
+N_{\text{后}}^{\text{简}}
+=\left(\frac M2+m\right)g\cos\theta
++\frac{Mh}L(a+g\sin\theta)}.
+\]
+
+相应前轮离地边界
+
+\[
+a_{\text{安全}}^{\text{简}}
+=\frac{(M+2m)L}{2Mh}g\cos\theta-g\sin\theta.
+\]
+
+按这套简化约定，A型车后轮载荷约9164.8 N与7983.2
+N，最小摩擦系数约1.09与1.25；若严格按题面两位有效数字，分别为1.1与1.3。
+
+这些数值与参考解答相对应，但不能同时声称保留了完整车载电机的反作用力矩。题面未明确声明省略该项，因此两模型区别需说明。加速度公式两者相同，不意味着载荷、接触安全边界和摩擦条件也相同。
+
+\subsubsection{物理极限的检查}\label{ux7269ux7406ux6781ux9650ux7684ux68c0ux67e5}
+
+在\(m\to0\)且\(a=0,\theta=0\)时，两轮各承担\(Mg/2\)，两模型一致。只要有非零驱动转矩，完整系统即有额外载荷转移；差异不会因轮惯量趋零而自动消失。
+
+若将车身高度\(h\)取零，完整系统质心仍在离地\(r\)处，有有限加速载荷转移。参考简化则给零转移，暴露其省略力矩与题设高度定义的限制。
+
+因此，平动、功率、角动量和作用反作用应分别检查，不能只凭加速度与参考答案相同就断言整个受力模型正确。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-6}
+
+自由滚动前轮的摩擦向后，驱动后轮向前。静摩擦的方向由所需自转加速度决定，并非始终``阻碍物体整体运动''。
+
+\(M+3m\)是平动加轮转动的惯性质量，\(M+2m\)是总重量质量；两者作用不同。载荷还涉及几何高度，不能由能量方程单独求出。
+
+两种结果的差异来自是否计入驱动反作用力矩，不能归因于数值舍入。整车角动量方程与车身单独受力能独立指出差异。教学时应让学生知道参考简化的来源，并看到完整守恒结果。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-6}
+
+把\(h\)当成离地高度，漏加车轮半径；把前轮摩擦画成向前，导致轮转动惯量项符号错误。把轮上转矩当成电机转矩，会少乘传动比。
+
+忽略轴承摩擦不等于无驱动力矩。电机、传动固定在车身时，给车轮的转矩必有反作用；若采用省略约定，须明确它并与完整模型区分。
+
+摩擦阈值必须除以后轮实际载荷，不能用整车总重量。前轮已离地时，原来的双轮滚动模型不能继续使用。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-6}
+
+先讲前、后轮的转动方程，得到摩擦方向与\(M+3m\)。然后分别画整车外力图和车身图，保留驱动反作用力矩，用两种系统求同一法向载荷。
+
+参考解答的省略项可做模型审查练习。要求学生用\(m\to0,h\to0\)两种极限检查，解释为何质心仍有离地高度。
+
+数值计算先保留\(5.55556\)和\(0.655556\)，再求法向力和摩擦阈值，最后统一舍入。不要在中途把加速度取5.6后再宣称三位精度。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-6}
+
+\subsubsection{变式1　轮质量忽略的牵引极限}\label{ux53d8ux5f0f1-ux8f6eux8d28ux91cfux5ffdux7565ux7684ux7275ux5f15ux6781ux9650}
+
+平地，已知\(\mu\)，车身离地高度\(H=h+r\)，求后驱、双轮接触时摩擦允许的最大加速度。
+
+\textbf{解答：}\(f=Ma\)，后轮载荷\(N_{\text{后}}=Mg/2+HMa/L\)。若\(\mu H<L\)，
+
+\[
+a\leq\frac{\mu g}{2(1-\mu H/L)}.
+\]
+
+还需\(a<Lg/(2H)\)保证前轮接触，且受电机可用转矩限制。两个机械边界相等于\(\mu=L/(2H)\)；更大的摩擦不能使前轮离地后的双轮模型继续成立。
+
+\subsubsection{变式2　传动比的摩擦限制}\label{ux53d8ux5f0f2-ux4f20ux52a8ux6bd4ux7684ux6469ux64e6ux9650ux5236}
+
+A型车在平地、\(\mu=1.00\)，电机输出400
+N·m，完整模型下最大允许传动比为何？
+
+\textbf{解答：}\(H=0.50\) m，摩擦允许牵引
+
+\[
+f_{\max}=\frac{\mu Mg}{2(1-\mu H/L)}
+\simeq1.066\times10^4\,\mathrm N.
+\]
+
+\(f=r_i\tau/r\)，故\(r_i\leq f_{\max}r/\tau\simeq10.7\)。该状态尚未到前轮离地边界。增大传动比提高转矩，也增大所需摩擦，不能无条件提高加速度。
+
+\subsubsection{变式3　有限轮质量}\label{ux53d8ux5f0f3-ux6709ux9650ux8f6eux8d28ux91cf}
+
+保持A型车参数，但每组前、后轮质量均50 kg。平地轮上转矩4000
+N·m，求加速度与两轮摩擦。
+
+\textbf{解答：}\(a=(4000/0.40)/(1800+150)\simeq5.13\,\mathrm{m/s^2}\)。前轮摩擦\(f_{\text{前}}=-(50/2)a\simeq-128\)
+N；后轮摩擦\(1900a+25a\simeq9.87\times10^3\) N。
+
+两摩擦之和为\(1900a\)，轮上转矩满足\(f_{\text{后}}r+(m/2)ar=4000\)
+N·m。法向力仍须用完整载荷式，而不能将\(m\)只加到平动分母。
+
+\subsubsection{变式4　提高车身质心}\label{ux53d8ux5f0f4-ux63d0ux9ad8ux8f66ux8eabux8d28ux5fc3}
+
+轮质量忽略，保持平地驱动转矩与其他A型车参数，若\(h\)从0.10 m提高到0.50
+m，加速度、后轮摩擦需求和前轮安全边界如何变化？
+
+\textbf{解答：}加速度仍5.56 \(\mathrm{m/s^2}\)，牵引仍10000
+N；后轮载荷增至约11923 N，最小摩擦系数降至约0.839。离地质心高度从0.50
+m增至0.90 m，安全加速度从约28.4降至15.8 \(\mathrm{m/s^2}\)。
+
+更高质心增加后轮载荷，有利于后驱牵引，但更容易抬起前轮，两种趋势并存。不能只看摩擦阈值下降就认为接触安全也提高。
+
+\clearpage
+
+\section{第 8
+题　直流电机驱动的加速与能量效率（40分）}\label{ux7b2c-8-ux9898-ux76f4ux6d41ux7535ux673aux9a71ux52a8ux7684ux52a0ux901fux4e0eux80fdux91cfux6548ux738740ux5206}
+
+简化电动车的前、后轮各视为半径\(r\)、质量\(m\)的均质圆柱，车身质量\(M\)，质心位于两轮轴中点正上方，轴距\(L\)。忽略空气阻力、轴承摩擦力矩，车轮惯量\(J_w=mr^2/2\)。
+
+（1）简化永磁直流电机的线圈导线始终垂直切割匀强磁场\(B\)，有效切割导线总长\(l\)，转动轨迹半径\(r_{\text{线圈}}\)，线圈电阻\(R_{\text{线圈}}\)、自感可忽略。电池开路电压\(V\)、内阻\(R_{\text{内}}\)。无电机机械摩擦，求输出转矩\(\tau(\omega)\)、最大转矩\(\tau_{\max}\)、零功率空载最大转速\(\omega_{\max}\)及最大输出功率\(P_{\max}\)；用后三个量表示转矩曲线。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) rectangle(6,2);
+\draw[fill=white] (.7,-.3) rectangle(1.9,.3);\node at (1.3,0) {$R_\Sigma$};
+\draw[fill=white] (3,-.3) circle(.5);\node at (3,0) {$\mathcal E$};
+\draw[fill=white] (4.5,-.3) rectangle(5.5,.3);\node at (5,0) {$V$};
+\draw[arr] (1,2)--(2.5,2) node[midway,above] {$I$};
+\node at (3,1.2) {$\mathcal E=K\omega,\quad\tau=KI$};
+\node at (3,-1.1) {反电动势抵消部分电源电压};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图8a　电源、总电阻与反电动势\par}\endgroup\end{minipage}\end{center}
+
+（2）平地从\(t=0\)静止启动，车轮无滑动。已知\(a=(\tau_{\text{轮}}/r)/(M+3m)\)，传动效率100\%，电机转速为车轮的\(r_i\)倍，求\(v(t)\)。
+
+（3）A型车\(M=1.8\times10^3\) kg，\(r=0.40\) m，\(L=2.9\)
+m，\(\tau_{\max}=4.0\times10^2\)
+N·m，\(r_i=10\)，轮质量忽略。电机\(P_{\max}=2.0\times10^2\)
+kW。求从静止加速到\(v_f=100\)
+km/h的时间、耗电池能量（kWh）及转化为机械能的效率。结果保留两位有效数字。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-7}
+
+本题是电机电路与机械加速的耦合。转速上升产生越来越大的反电动势，电流和转矩下降，所以汽车加速度不是常数。最大输出功率也不是所有时刻的实际功率。
+
+电路自感被忽略，电流可随转速即时调整；机械惯量则保留，速度随时间连续变化。先建立电流---转速关系，再通过转矩和传动比写车速微分方程。
+
+最后计算能量必须用电池实际功率\(VI\)积分。电机机械输出功率是\(\tau\omega\)，电池输入与机械输出之差耗散在电池内阻和线圈电阻中。忽略机械摩擦不代表电能全部成为机械能。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-7}
+
+\subsubsection{1.
+转矩常数与反电动势常数}\label{ux8f6cux77e9ux5e38ux6570ux4e0eux53cdux7535ux52a8ux52bfux5e38ux6570}
+
+定义
+
+\[
+\mathcal K=B r_{\text{线圈}}l.
+\]
+
+有效导线受安培力形成的转矩
+
+\[
+\tau=\mathcal K I.
+\]
+
+旋转切割磁场产生反电动势
+
+\[
+\mathcal E=\mathcal K\omega.
+\]
+
+两个关系使用同一\(\mathcal K\)，满足机电转换的功率关系：\(\mathcal EI=\tau\omega\)。这里\(\mathcal E\)方向阻碍电源电流，故电路中相减。
+
+\subsubsection{2. 瞬时电路}\label{ux77acux65f6ux7535ux8def}
+
+总电阻
+
+\[
+R_\Sigma=R_{\text{内}}+R_{\text{线圈}}.
+\]
+
+忽略自感，电路满足
+
+\[
+V=IR_\Sigma+\mathcal E,
+\qquad I=\frac{V-\mathcal K\omega}{R_\Sigma}.
+\]
+
+在正常电动区\(0\leq\omega\leq V/\mathcal K\)，电流非负。超过空载转速的情况可能进入发电区，原题从静止加速的轨迹不涉及这一分支。
+
+\subsubsection{3.
+传动与等效质量}\label{ux4f20ux52a8ux4e0eux7b49ux6548ux8d28ux91cf}
+
+无滑动车轮角速度大小\(v/r\)，电机转速
+
+\[
+\omega=r_i\frac vr,\qquad
+\tau_{\text{轮}}=r_i\tau.
+\]
+
+车轮平动与转动的总动能为
+
+\[
+K_{\text{车}}=\frac12(M+3m)v^2.
+\]
+
+令\(M_e=M+3m\)，使运动方程更简洁。它是惯性质量，不是实际重量质量。
+
+\subsubsection{4.
+输入、输出与热耗}\label{ux8f93ux5165ux8f93ux51faux4e0eux70edux8017}
+
+电池供能功率\(P_{\rm bat}=VI\)，机电转换功率\(P_{\rm mech}=\mathcal EI\)，电阻耗散\(I^2R_\Sigma\)。三者满足
+
+\[
+VI=\mathcal EI+I^2R_\Sigma.
+\]
+
+电池开路电压用于计算其供能；若只用电池端电压乘电流，会漏计电池内阻的热耗。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-7}
+
+静止时反电动势零，电流和转矩最大，但机械输出功率\(\tau\omega\)为零；这时输入电功率全部转成电阻热。随着转速增加，反电动势提高，电流、转矩下降，机械功率先升后降。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=5,yscale=3]
+\draw[arr] (0,0)--(1.2,0) node[right] {$\omega/\omega_{\max}$};
+\draw[arr] (0,0)--(0,1.2);
+\draw[thick,blue] (0,1)--(1,0);
+\draw[thick,red,domain=0:1,samples=90] plot(\x,{4*\x*(1-\x)});
+\node[blue] at (.28,1.14) {$\tau/\tau_{\max}$};
+\node[red] at (.85,1.14) {$P/P_{\max}$};
+\draw[dashed] (.5,0)--(.5,1);\node[below] at (.5,0) {$1/2$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图8b　转矩与功率的不同曲线\par}\endgroup\end{minipage}\end{center}
+
+最大机械功率出现在半空载转速，不在最大转矩点，也不在最大转速点。到空载转速时电流趋零、转矩趋零，无法继续产生正加速。
+
+固定传动比下，转矩随车速线性下降，汽车速度呈指数趋近极限；极限车速是渐近值，在理想模型中不能在有限时间恰好到达。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[xscale=1.6,yscale=3]
+\draw[arr] (0,0)--(4.4,0) node[right] {$t/(v_{\max}/a_{\max})$};
+\draw[arr] (0,0)--(0,1.25) node[above] {$v/v_{\max}$};
+\draw[thick,blue,domain=0:4,samples=90] plot(\x,{1-exp(-\x)});
+\draw[dashed] (0,1)--(4.1,1);
+\node at (2,1.2) {$v=v_{\max}(1-e^{-t/t_c})$};
+\node at (2,-.42) {达到极限车速需要无限长时间};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.38\textheight
+\resizebox{!}{.38\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图8c　恒定传动比下的指数加速\par}\endgroup\end{minipage}\end{center}
+
+空气阻力和机械损耗在题设中均忽略，所以这里的极限车速来自电路反电动势。真实车辆的其他限制不需要带入这个计算。
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-7}
+
+第一问由\(I=(V-\mathcal K\omega)/R_\Sigma\)求转矩，再求\(\tau\omega\)的最大值。将转矩曲线写成\(\tau_{\max}(1-\omega/\omega_{\max})\)。
+
+第二问代\(\omega=r_iv/r\)、\(\tau_{\text{轮}}=r_i\tau\)，得到
+
+\[
+\frac{dv}{dt}=a_{\max}\left(1-\frac v{v_{\max}}\right).
+\]
+
+这是关于\(v\)的一阶线性方程。初值\(v(0)=0\)确定唯一解。
+
+第三问先由\(\tau_{\max}\omega_{\max}=4P_{\max}\)求空载转速，再算\(v_{\max}\)、\(a_{\max}\)。保持未舍入值，最后求时间、输入能量和效率。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-7}
+
+\subsubsection{（1）转矩---转速关系}\label{ux8f6cux77e9ux8f6cux901fux5173ux7cfb}
+
+电流
+
+\[
+I(\omega)=\frac{V-\mathcal K\omega}{R_\Sigma}.
+\]
+
+于是
+
+\[
+\boxed{\tau(\omega)=\frac{\mathcal K V}{R_\Sigma}
+-\frac{\mathcal K^2}{R_\Sigma}\omega}.
+\]
+
+转矩随转速线性下降。堵转\(\omega=0\)时电流最大，转矩
+
+\[
+\boxed{\tau_{\max}=\frac{\mathcal K V}{R_\Sigma}}.
+\]
+
+反电动势等于开路电压时\(I=0\)，无负载最大转速
+
+\[
+\boxed{\omega_{\max}=\frac V{\mathcal K}}.
+\]
+
+由于机械摩擦忽略，这个``最大转速''也就是零转矩、零机械功率的空载极限。
+
+\subsubsection{最大机械功率}\label{ux6700ux5927ux673aux68b0ux529fux7387}
+
+机械输出功率
+
+\[
+P(\omega)=\tau\omega
+=\frac{\mathcal K}{R_\Sigma}
+(V\omega-\mathcal K\omega^2).
+\]
+
+对\(\omega\)求导：
+
+\[
+\frac{dP}{d\omega}
+=\frac{\mathcal K}{R_\Sigma}(V-2\mathcal K\omega).
+\]
+
+最大值在\(\omega=V/(2\mathcal K)=\omega_{\max}/2\)，得到
+
+\[
+\boxed{P_{\max}=\frac{V^2}{4R_\Sigma}
+=\frac{\tau_{\max}\omega_{\max}}4}.
+\]
+
+因此
+
+\[
+\boxed{
+\tau(\omega)=\tau_{\max}
+\left(1-\frac\omega{\omega_{\max}}\right)
+=\frac{4P_{\max}}{\omega_{\max}}
+\left(1-\frac\omega{\omega_{\max}}\right)}.
+\]
+
+三个参数\(P_{\max},\tau_{\max},\omega_{\max}\)并非独立，有上述乘积关系。若任意给三个互不一致的数，则不符合本题线性电机模型。
+
+\subsubsection{最大功率点的效率}\label{ux6700ux5927ux529fux7387ux70b9ux7684ux6548ux7387}
+
+在半空载转速，\(\mathcal E=V/2\)，电流\(V/(2R_\Sigma)\)，电池输入功率\(V^2/(2R_\Sigma)=2P_{\max}\)。电阻热和机械输出各为\(P_{\max}\)，瞬时机电效率为50\%。
+
+这不是``电机在所有时刻效率50\%''。瞬时效率一般为
+
+\[
+\eta_{\rm inst}=\frac{\mathcal EI}{VI}
+=\frac{\mathcal E}{V}
+=\frac\omega{\omega_{\max}},
+\]
+
+在电流非零的电动区成立。它从低速的低效率随速度提高，但到空载极限时输出功率也趋零。
+
+\subsubsection{（2）车速微分方程}\label{ux8f66ux901fux5faeux5206ux65b9ux7a0b}
+
+电机转速与车速关系\(\omega=r_iv/r\)，代入转矩：
+
+\[
+\tau=\tau_{\max}
+\left(1-\frac{r_iv}{r\omega_{\max}}\right).
+\]
+
+轮上转矩\(r_i\tau\)，由题给\(a=\tau_{\text{轮}}/(M_er)\)，
+
+\[
+\frac{dv}{dt}
+=\frac{\tau_{\max}r_i}{M_er}
+\left(1-\frac{r_iv}{r\omega_{\max}}\right).
+\]
+
+定义
+
+\[
+\boxed{a_{\max}=\frac{\tau_{\max}r_i}{M_er}},
+\qquad
+\boxed{v_{\max}=\frac{r\omega_{\max}}{r_i}}.
+\]
+
+于是
+
+\[
+\frac{dv}{dt}=a_{\max}\left(1-\frac v{v_{\max}}\right).
+\]
+
+初始\(a(0)=a_{\max}\)，随着\(v\)提高逐渐下降。
+
+\subsubsection{初值解}\label{ux521dux503cux89e3}
+
+分离变量：
+
+\[
+\frac{dv}{1-v/v_{\max}}=a_{\max}dt.
+\]
+
+从0到\(v\)、从0到\(t\)积分：
+
+\[
+-v_{\max}\ln\left(1-\frac v{v_{\max}}\right)
+=a_{\max}t.
+\]
+
+因此
+
+\[
+\boxed{
+v(t)=v_{\max}
+\left[1-\exp\left(-\frac{a_{\max}}{v_{\max}}t\right)\right]}.
+\]
+
+时间常数\(t_c=v_{\max}/a_{\max}\)。同时
+
+\[
+a(t)=a_{\max}e^{-t/t_c},\quad
+I(t)=\frac V{R_\Sigma}e^{-t/t_c}.
+\]
+
+速度从0单调增加且始终小于\(v_{\max}\)，初值和空载极限均正确。若目标速度不小于\(v_{\max}\)，则不能在有限时间达到。
+
+\subsubsection{（3）A型车的特征量}\label{aux578bux8f66ux7684ux7279ux5f81ux91cf}
+
+\(P_{\max}=2.0\times10^5\) W，\(\tau_{\max}=400\) N·m，故
+
+\[
+\omega_{\max}=\frac{4P_{\max}}{\tau_{\max}}
+=2.0\times10^3\,\mathrm{rad/s}.
+\]
+
+轮质量忽略，\(M_e=M=1800\) kg：
+
+\[
+v_{\max}=\frac{0.40(2000)}{10}
+=80.0\,\mathrm{m/s},
+\]
+
+\[
+a_{\max}=\frac{400(10)}{1800(0.40)}
+=\frac{50}{9}\,\mathrm{m/s^2}.
+\]
+
+于是\(t_c=80/(50/9)=14.4\) s。目标\(v_f=100/3.6=250/9\) m/s，小于80
+m/s，可以有限时间达到。
+
+\subsubsection{加速时间}\label{ux52a0ux901fux65f6ux95f4}
+
+由初值解反求
+
+\[
+t_f=-\frac{v_{\max}}{a_{\max}}
+\ln\left(1-\frac{v_f}{v_{\max}}\right).
+\]
+
+代精确比例\(v_f/v_{\max}=25/72\)，
+
+\[
+t_f=14.4\ln\frac{72}{47}\simeq6.14\,\mathrm s.
+\]
+
+两位有效数字
+
+\[
+\boxed{t_f=6.1\,\mathrm s}.
+\]
+
+若错误地用恒定最大加速度，则得到\(v_f/a_{\max}=5.0\)
+s，它只是忽略转矩下降的偏小估计。
+
+\subsubsection{电池功率与积分}\label{ux7535ux6c60ux529fux7387ux4e0eux79efux5206}
+
+电池输入功率
+
+\[
+P_{\rm bat}=VI=\frac{V^2}{R_\Sigma}
+\left(1-\frac v{v_{\max}}\right)
+=4P_{\max}e^{-t/t_c}.
+\]
+
+因此
+
+\[
+\begin{aligned}
+\Delta E_{\rm bat}
+&=\int_0^{t_f}4P_{\max}e^{-t/t_c}\,dt\\
+&=4P_{\max}t_c(1-e^{-t_f/t_c})\\
+&=4P_{\max}\frac{v_f}{a_{\max}}.
+\end{aligned}
+\]
+
+利用\(4P_{\max}=\tau_{\max}\omega_{\max}\)及特征量，还可写
+
+\[
+\boxed{\Delta E_{\rm bat}=M_ev_{\max}v_f}.
+\]
+
+这个式子由真实电池功率积分得到，不是把机械动能除以预设固定效率。
+
+\subsubsection{数值电池能量}\label{ux6570ux503cux7535ux6c60ux80fdux91cf}
+
+\[
+\Delta E_{\rm bat}
+=4(2.0\times10^5)\frac{250/9}{50/9}
+=4.00\times10^6\,\mathrm J.
+\]
+
+\(1\,\mathrm{kWh}=3.60\times10^6\) J，故
+
+\[
+\boxed{\Delta E_{\rm bat}\simeq1.1\,\mathrm{kWh}}.
+\]
+
+电池初始输入功率为\(4P_{\max}=800\)
+kW，之后随电流下降。这解释为什么不能用``最大机械输出200 kW乘6.1
+s''估算耗电。
+
+\subsubsection{机械能与累计效率}\label{ux673aux68b0ux80fdux4e0eux7d2fux8ba1ux6548ux7387}
+
+车的平动和轮转动能增加
+
+\[
+\Delta E_{\rm mech}=\frac12M_ev_f^2.
+\]
+
+本题轮质量忽略，
+
+\[
+\Delta E_{\rm mech}
+=\frac12(1800)\left(\frac{250}{9}\right)^2
+\simeq6.94\times10^5\,\mathrm J.
+\]
+
+累计效率
+
+\[
+\eta=\frac{\Delta E_{\rm mech}}{\Delta E_{\rm bat}}
+=\frac{\tfrac12M_ev_f^2}{M_ev_{\max}v_f}
+=\frac{v_f}{2v_{\max}}.
+\]
+
+故
+
+\[
+\boxed{\eta=\frac{25}{144}\simeq17\%}.
+\]
+
+按未舍入\(a_{\max}=50/9\)计算，实际为17.361\%。参考解答也允许由提前舍入5.6导致的18\%，本稿保留精确中间值并在末尾给两位有效数字。
+
+\subsubsection{热耗的独立积分}\label{ux70edux8017ux7684ux72ecux7acbux79efux5206}
+
+电阻热功率
+
+\[
+P_{\rm heat}=I^2R_\Sigma
+=4P_{\max}e^{-2t/t_c}.
+\]
+
+积分
+
+\[
+Q_\Sigma=2P_{\max}t_c(1-e^{-2t_f/t_c}).
+\]
+
+令\(x=v_f/v_{\max}=1-e^{-t_f/t_c}\)，得到
+
+\[
+Q_\Sigma=M_ev_{\max}v_f-\frac12M_ev_f^2.
+\]
+
+所以\(Q_\Sigma+\Delta E_{\rm mech}=\Delta E_{\rm bat}\)，数值热耗约\(3.31\times10^6\)
+J。热耗包括电池内阻和线圈电阻，无机械摩擦仍可有很大的电阻损失。
+
+\subsubsection{瞬时与累计效率的区别}\label{ux77acux65f6ux4e0eux7d2fux8ba1ux6548ux7387ux7684ux533aux522b}
+
+到\(v_f\)瞬间，\(\eta_{\rm inst}=v_f/v_{\max}\simeq34.7\%\)；从静止到\(v_f\)累计效率只有其一半，因为早期速度更低、反电动势更小、电流却更大。
+
+若形式上让\(v_f\to v_{\max}\)，加速时间趋于无穷，但电池输入能量趋于有限\(M_ev_{\max}^2\)，机械能趋于其一半。指数电流衰减使无穷长时间的积分仍收敛，二者并不矛盾。
+
+\subsubsection{无滑动假设的自洽性}\label{ux65e0ux6ed1ux52a8ux5047ux8bbeux7684ux81eaux6d3dux6027}
+
+本题直接给无滑动条件，因此速度方程不再求摩擦系数。若另行检查，平地驱动牵引随速度下降，而载荷转移也逐渐减弱；在同一模型中，最严格的牵引和前轮接触条件一般出现在启动瞬间。
+
+与第7题一样，法向载荷涉及驱动反作用力矩，但它不改变当前无滑动条件下的\(M+3m\)加速式。不同载荷约定会影响是否能够实现无滑动，不能改变已经假定无滑动时的机电运动解。
+
+\subsection{六、关键洞察}\label{ux516dux5173ux952eux6d1eux5bdf-7}
+
+转矩最大、机械功率最大和转速最大是三个不同工作点。停转时强电流并不产生机械功率；空载高速时效率比值可高但输出趋零。
+
+固定传动比使\(a_{\max}v_{\max}=4P_{\max}/M_e\)保持不变。更大传动比增加初始加速度，却降低极限车速，是后续固定档位优化的基础。
+
+累计能量用电池功率积分，得到\(\eta=v_f/(2v_{\max})\)，完全不需要预设固定效率，也不必分别知道电压、电阻与磁场。它们已通过\(P_{\max},\tau_{\max}\)组合进入模型。
+
+\subsection{七、易错点}\label{ux4e03ux6613ux9519ux70b9-7}
+
+把\(\tau_{\max}\)当成全程恒定转矩，会把时间算成5.0
+s。把\(P_{\max}\)当成全程电池输入功率，会低估耗电并破坏能量平衡。
+
+漏乘传动比或把电机转速写成\(v/(rr_i)\)，会反转档位效果。轮子转动能需要使用\(M+3m\)，不能只在运动方程中计入却在机械能中漏掉。
+
+瞬时效率与累计效率不同。先将加速度舍入为5.6再求百分比，可能跨过17\%与18\%的舍入边界，应保持中间值。
+
+\subsection{八、课堂讲解建议}\label{ux516bux8bfeux5802ux8bb2ux89e3ux5efaux8bae-7}
+
+先画转矩直线和功率抛物线，在同一图上标堵转、半速、空载三点。再从电路功率恒等式分出机械输出和热耗，解释低速损失。
+
+求\(v(t)\)时先定义\(a_{\max},v_{\max},t_c\)，再分离变量，避免带一串电路常数积分。数字部分只在最后代A型车参数。
+
+让学生用热耗积分重新核对能量，并比较目标时刻效率与整个过程效率。这个检查比记住``耗电约1.1
+kWh''更能判断模型是否正确。
+
+\subsection{九、变式训练}\label{ux4e5dux53d8ux5f0fux8badux7ec3-7}
+
+\subsubsection{变式1　半空载车速的功率}\label{ux53d8ux5f0f1-ux534aux7a7aux8f7dux8f66ux901fux7684ux529fux7387}
+
+汽车达到\(v=v_{\max}/2\)时，求瞬时电池功率、机械功率、热耗功率及从静止到该速率的累计效率。
+
+\textbf{解答：}\(\omega=\omega_{\max}/2\)，\(I=V/(2R_\Sigma)\)，所以\(P_{\rm bat}=2P_{\max}\)，\(P_{\rm mech}=P_{\max}\)，\(P_{\rm heat}=P_{\max}\)。瞬时效率50\%，累计效率\(v/(2v_{\max})=25\%\)。两个效率不同来自早期的低速高电流阶段。
+
+\subsubsection{变式2　传动比加倍}\label{ux53d8ux5f0f2-ux4f20ux52a8ux6bd4ux52a0ux500d}
+
+电机和车体参数不变，把\(r_i\)从10改为20，仍假定无滑动，求达到100
+km/h的时间与电池能量。
+
+\textbf{解答：}\(a_{\max}\)加倍为\(100/9\) m/s²，\(v_{\max}\)减半为40
+m/s，时间常数为3.60 s。
+
+\[
+t_f=-3.60\ln\left(1-\frac{250/9}{40}\right)
+\simeq4.27\,\mathrm s.
+\]
+
+耗电\(M v_{\max}v_f=2.00\times10^6\) J，约0.556
+kWh，累计效率\(v_f/(2v_{\max})\simeq34.7\%\)。更大传动比不是任意都可用，须目标速率低于极限并满足启动摩擦与接触条件。
+
+\subsubsection{变式3　增加恒定阻力}\label{ux53d8ux5f0f3-ux589eux52a0ux6052ux5b9aux963bux529b}
+
+平地增加大小恒定的阻力\(F_0\)，沿运动反向，\(0<F_0<M_ea_{\max}\)。求静止启动的\(v(t)\)。
+
+\textbf{解答：}
+
+\[
+\frac{dv}{dt}=a_{\max}\left(1-\frac v{v_{\max}}\right)
+-\frac{F_0}{M_e}.
+\]
+
+令\(\delta=F_0/(M_ea_{\max})\)，最终速度\(v_\infty=v_{\max}(1-\delta)\)，时间常数仍\(t_c=v_{\max}/a_{\max}\)，因此
+
+\[
+v(t)=v_\infty(1-e^{-t/t_c}).
+\]
+
+电池电流不再趋于零，而趋于\(V\delta/R_\Sigma\)，维持恒速仍需供能。电池能量积分为\(4P_{\max}[\delta t+(1-\delta)t_c(1-e^{-t/t_c})]\)，须再扣阻力功，不能沿用无阻力的有限极限能量结论。
+
+\subsubsection{变式4　固定传动比的最短加速时间}\label{ux53d8ux5f0f4-ux56faux5b9aux4f20ux52a8ux6bd4ux7684ux6700ux77edux52a0ux901fux65f6ux95f4}
+
+在理想无滑动条件下，保持同一电机和车辆参数，自由选择恒定\(r_i\)，使到达给定\(v_f\)的时间最短。
+
+\textbf{解答：}令\(x=v_f/v_{\max}\in(0,1)\)。因\(a_{\max}v_{\max}=4P_{\max}/M_e\)，
+
+\[
+t_f=\frac{M_ev_f^2}{4P_{\max}}
+\frac{-\ln(1-x)}{x^2}.
+\]
+
+求导的驻点条件
+
+\[
+\frac{x}{1-x}+2\ln(1-x)=0.
+\]
+
+除退化边界\(x=0\)外，唯一内部根\(x_*\simeq0.7153\)。两端时间均发散，该根给最小值。A型车到100
+km/h时\(r_i=x_*r\omega_{\max}/v_f\simeq20.6\)，最短时间约4.27 s。
+
+该变式只在传动比恒定、无摩擦滑动和无接触丢失的理想范围优化；若增加这些约束，应先筛选可行传动比，再比较时间。
+
+\end{document}

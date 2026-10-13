@@ -1,0 +1,18 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](-.5,0)--(7,0)node[right]{$\delta$};
+\draw[->](0,-2)--(0,1.7)node[above]{$V$};
+\draw[blue,thick]plot[domain=0:6.8,samples=130](\x,{-cos(\x*180/pi)-.12*\x});
+\fill(.12,-1.007)circle(2pt);
+\node[below]at(1,-1.4){势阱底};
+\node[above]at(3,1){势垒顶};
+\node at(4.5,-2.2){恒定偏置产生倾斜};
+\end{tikzpicture}
+
+\end{document}

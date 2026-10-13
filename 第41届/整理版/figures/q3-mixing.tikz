@@ -1,0 +1,16 @@
+
+\begin{tikzpicture}
+\draw[thick](0,0)rectangle(2.5,2.8);
+\fill[orange!20](.02,.02)rectangle(2.48,1.4);
+\fill[blue!15](.02,1.4)rectangle(2.48,2.78);
+\draw[dashed](0,1.4)--(2.5,1.4);
+\node at(1.25,.75){剩余石油 $V$};\node at(1.25,2.05){注入水 $V$};
+\draw[->,thick](-1.2,2.2)--(-.1,2.2)node[midway,above]{$t_w$};
+\draw[->,thick](2.6,2.2)--(4,2.2)node[midway,above]{抽出油 $V$};
+\node[below]at(1.25,0){区域总体积 $2V$ 不变};
+\begin{scope}[xshift=5.2cm]
+\draw[thick](0,0)rectangle(2.5,2.8);\fill[green!15](.02,.02)rectangle(2.48,2.78);
+\node at(1.25,1.8){均匀混合};\node at(1.25,1.1){末态 $T_f,\ p_f$};
+\node[below]at(1.25,0){体积相等，热容量不同};
+\end{scope}
+\end{tikzpicture}

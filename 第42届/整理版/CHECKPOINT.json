@@ -1,0 +1,180 @@
+{
+  "status": "已完成",
+  "stage": "第42届完成总审核及文字润色",
+  "completed_at": "2026-10-11T23:50:04+08:00",
+  "questions": 7,
+  "total_points": 320,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "variants": 28,
+  "figures": 21,
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛参考解答.pdf",
+      "pages": 27,
+      "sha256": "69a900024b46b94329d0419cfd3bf7b1bc84309bab512e2004b0b7d05feb905d",
+      "text_chars": 82675
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛理论试题.pdf",
+      "pages": 5,
+      "sha256": "47f3895287424f58f96f3c91416928329f3e3b283e11f79d44d0d57e5a38565c",
+      "text_chars": 5
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第42届_学生详解版.pdf",
+      "pages": 59,
+      "body_pages": 58,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "68be63297ef1b505d6a63610aea6a7d01b027e2e142f8c39e7ca09828f912e79",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        28,
+        36,
+        44,
+        52
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_教师备课版.pdf",
+      "pages": 73,
+      "body_pages": 72,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "a5897e583910137bc4315371f560d6790deb1b4b13c47401b7952154f608ea92",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        13,
+        24,
+        34,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_试题版.pdf",
+      "pages": 10,
+      "body_pages": 9,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "ab75f18e73e35d3c7b9820f6cd19f0eeacd1f9580f0dc947446a2c843108d611",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "minimum_body_pages": {
+    "学生详解版": 56,
+    "教师备课版": 71
+  },
+  "independent_calculation_checks": 30,
+  "checks": {
+    "originals_unchanged": true,
+    "physics": true,
+    "structure": true,
+    "core_identical": true,
+    "body_page_minima": true,
+    "simple_cover_and_no_headers": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true,
+    "editorial_invariants": true
+  },
+  "pending_items": [],
+  "exam": 42,
+  "physics_checks": 30,
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "1fbd6a3ba35e21ed7526b3ac5b2cddda2d2d45b17dd0e3b4d8999d3aaa19359a"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "d87ef0e5d1fef96c84f5fb321769e8f84631f7a5b38337bffbd7c9183d1091c1"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "726a31ad2bc076ff1fd4aec6e29dbd85b37c0f1926d562deba768672a65f038a"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "d40b1014e53710c1265b6b0c33f5e5e2fa862709c5e6b6e28568bc2493161f46"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "7c7467a3a47d815a479253adb3e51dc6d86b960b71740e5463024bef7acd6e0f"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "c34d2aea4c1e6c48ca730bf2f0ff214e192d2c1425059bab560483906e55bed3"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "070a13e890b5fc79b0522774d27e2075fe319b0fe0e0023d6f09fa3ece6ffa9d"
+    }
+  ],
+  "collection_audit": {
+    "completed_at": "2026-10-13T11:55:03+08:00",
+    "report": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/总审核/2026-10-13/审核报告.md",
+    "prose_edits": 10,
+    "physics_checks": 30,
+    "changed_pages_reviewed": 16,
+    "pixel_identical_pages": 126,
+    "skill": "/Users/dongxingxi/.codex/skills/humanizer-zh/SKILL.md"
+  }
+}

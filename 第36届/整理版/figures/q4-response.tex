@@ -1,0 +1,24 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=2.1,yscale=2]
+\draw[arr] (0,0)--(1.9,0) node[right] {$S/S_*$};
+\draw[arr] (0,0)--(0,1.6) node[above] {$f/f_*$};
+\draw[thick,blue,domain=.03:1.6,samples=90] plot(\x,{sqrt(\x)});
+\fill[red] (.36,.6) circle(1pt); \fill[red] (1,1) circle(1pt);
+\draw[dashed] (.36,0)--(.36,.6)--(0,.6);
+\node[below] at(.36,0) {$0.36$};\node[left] at(0,.6) {$0.60$};
+\begin{scope}[shift={(3.3,0)}]
+\draw[arr] (.2,0)--(2.1,0) node[right] {$\omega/\omega_0$};
+\draw[arr] (.2,0)--(.2,1.3) node[above] {吸收功率};
+\draw[thick,red,domain=.25:1.95,samples=180] plot(\x,{.09*\x*\x/((1-\x*\x)^2+.09*\x*\x)});
+\draw[dashed] (1,0)--(1,1);
+\node[below] at(1,0) {$1$};
+\end{scope}
+\end{tikzpicture}
+
+\end{document}

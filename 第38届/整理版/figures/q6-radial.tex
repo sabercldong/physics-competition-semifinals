@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=4,yscale=3]
+\draw[arr] (.95,0)--(2.45,0) node[right] {$u=r/r_1$};
+\draw[arr] (1,-.35)--(1,.65) node[above] {$K_r/K_*$};
+\begin{scope}\clip (1,-.35) rectangle(2.35,.65);
+\foreach \eta/\col in {.1/blue,.308065/black,.5/red}{
+\draw[thick,\col,domain=1:2.35,samples=100] plot(\x,{ln(\x)-\eta*(\x*\x-1)^2/(\x*\x)});}
+\end{scope}
+\draw[dashed] (2,-.35)--(2,.6);\node[below] at (2,-.35) {$r_2/r_1=2$};
+\node[blue] at (2.2,.55) {可达};\node[red] at (1.3,-.28) {提前转向};
+\node at (1.7,-.85) {径向动能非负的连通区决定可达性};
+\end{tikzpicture}
+
+\end{document}

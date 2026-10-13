@@ -1,0 +1,675 @@
+{
+  "all_passed": true,
+  "questions": [
+    {
+      "path": "第35届/整理版/drafts/question-01.md",
+      "sha256": "f9deb0297f7cd1478238e66359e46559809c54732e01668b6b4ed9e43144ff1f",
+      "formulas": 129,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-02.md",
+      "sha256": "129d8cbd5b01d7848c8ff5951d6e02747d18b972c5997fdc8fe5871021ec584a",
+      "formulas": 156,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-03.md",
+      "sha256": "441677e591c15cb2cd208e3d9b3da3024b3ab20677b35d57e817cefd4baf9310",
+      "formulas": 155,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-04.md",
+      "sha256": "178170ce91a1493d1431216cfa792c1a9e37645c8d58c4fc6f8dd65ae8b46782",
+      "formulas": 154,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-05.md",
+      "sha256": "596505611ea1232ead2bab40a854bd692681ed2a8589fb60721e50bbac710c89",
+      "formulas": 113,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-06.md",
+      "sha256": "111357254178d679c9203955ce46b732a23dac1f53e90e3b58f802edb92334ee",
+      "formulas": 136,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-07.md",
+      "sha256": "53383fa2bd8c74d24b9f783d3255bdccf6871c837a00fe9e8aea68a15f33326a",
+      "formulas": 112,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第35届/整理版/drafts/question-08.md",
+      "sha256": "f55752f46b8b8be3bedf08acb44c55b662b5f7c7cc4ad2440e8f0285e6739892",
+      "formulas": 104,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-01.md",
+      "sha256": "52870b8d040dfe5bc872c1145994fd34597da2b7075bcc426d69cc000285aeb0",
+      "formulas": 195,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-02.md",
+      "sha256": "54f83fe94ab1f0c70d84f682f2f47cdd9551d0a07d8222d44e73d2f6e4d4da72",
+      "formulas": 207,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-03.md",
+      "sha256": "f8ddd9eb6826f2ceecad2b88b317a85f4560d756595e4136d530419ef836f900",
+      "formulas": 164,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-04.md",
+      "sha256": "b5c1793612fc5086fc5cc56ab78449eb35573699c33ea8dcbfa85d3988f9a79e",
+      "formulas": 167,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-05.md",
+      "sha256": "fe300d9028a0b22b25fda3d297a128dbaca8acb2b1a7e93314faec1a4d273298",
+      "formulas": 144,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-06.md",
+      "sha256": "b34409210a2cd745abbd981f64e65a8d696913f2078d73396f3f158d34db560b",
+      "formulas": 208,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第36届/整理版/drafts/question-07.md",
+      "sha256": "efedaf9955ca8c66f596f032e064aa3132d107459677c8c1db5b5f476dcb00ac",
+      "formulas": 231,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-01.md",
+      "sha256": "549bb3af36b930993594bebd03bc87e43969e965f71704384d7c12788a38fdd0",
+      "formulas": 158,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-02.md",
+      "sha256": "59f69dab1d28c432002ab490899b7c0f87d1eb872fb743cd29da7ccd4212688c",
+      "formulas": 154,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-03.md",
+      "sha256": "d31c77b9f75c81e2799411815b02a668ff92d98d15fefd1d20cea80054bde340",
+      "formulas": 187,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-04.md",
+      "sha256": "38b4f89896ab209cd61cc078570efcce4ae983dc9f56dff5d1c84ad186e2ca14",
+      "formulas": 116,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-05.md",
+      "sha256": "f75099074e628bee55c13df692b1752ff80240bb553b38c0a3d56209485d5cf8",
+      "formulas": 215,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-06.md",
+      "sha256": "a582467077081aac1d5fc33e58560a8796eb018b9d528b288c43bcf63b2272e6",
+      "formulas": 192,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-07.md",
+      "sha256": "32230d7655aa233203a224c3b67b4530d02984818b9eaf5bd56fdb8edc0df011",
+      "formulas": 188,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第37届/整理版/drafts/question-08.md",
+      "sha256": "6109b63c6d4db6e50495bd960d5d59626acc7810a2d62ab970f2a0eb73cf0339",
+      "formulas": 194,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-01.md",
+      "sha256": "0e04ef01cc00402eec5ccbea827c37bb9250f62149e851618e8129382f7abab3",
+      "formulas": 173,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-02.md",
+      "sha256": "09ab2ece5ae6c81537facf95b5d48481bce777f739e127b16231b4ab361d97f9",
+      "formulas": 158,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-03.md",
+      "sha256": "dcbe57fbe12b3dadc6950341f3566192cdce86fd7c455ab36b730a35157d8174",
+      "formulas": 129,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-04.md",
+      "sha256": "0f8b346f43e978f4cc9671a0f3d1274de4e6b5d8fa9cc6636623605244312c3c",
+      "formulas": 172,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-05.md",
+      "sha256": "3fc68fd0dfe5d4fa3f2060a044d3c42136dad4a573a31735ff8880f6b3a95718",
+      "formulas": 137,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-06.md",
+      "sha256": "29b92f1b90cee130e1c5350074904d27804d2d4039511798b77b53f951e41e3c",
+      "formulas": 180,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-07.md",
+      "sha256": "d52458e2ef7b2350f4c893dd8aa772e84faf599297c4ce84522fb429b478a3fd",
+      "formulas": 129,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第38届/整理版/drafts/question-08.md",
+      "sha256": "30442ba6071469965c86c677e61d056b6f31b73441854155952cc63b06f42e31",
+      "formulas": 173,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-01.md",
+      "sha256": "d9eb97ec0efc49702974fe83b61b698813f09a8f92bcd6de6598a9c22869e24b",
+      "formulas": 148,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-02.md",
+      "sha256": "17bc0cc0715622c136cb2fe70d23559f0eb1017113650f1f429619f02b902858",
+      "formulas": 144,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-03.md",
+      "sha256": "a4476e02c6fcf6a6702f04092d42fe8a3c222dcbb74c16b2bd79af74b0b0ee8d",
+      "formulas": 187,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-04.md",
+      "sha256": "b5cde1ee3aef5d3f18754d4a546a4d797e81a884a979a1f4a80da4f22ba06154",
+      "formulas": 246,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-05.md",
+      "sha256": "ee007d2f2f82ce12545e2d0a37f44fe1361203a87268c4110949437aa3f3200c",
+      "formulas": 195,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-06.md",
+      "sha256": "614d533d7097b9bb0041940285759bbf61a42c8fbf944a8cfc8db36a9c7226a1",
+      "formulas": 200,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第39届/整理版/drafts/question-07.md",
+      "sha256": "32463cc155dc0157908efda6d2efa021830225362a237d24dc5490916074f8f0",
+      "formulas": 253,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-01.md",
+      "sha256": "39e520693525e96e490528df9b019621600ee80dd71e91dacae59027f21d5f03",
+      "formulas": 165,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-02.md",
+      "sha256": "20fff14cbe97451ff28ea433702368a68e01c106ee1a5ef8e0c89e413151757d",
+      "formulas": 186,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-03.md",
+      "sha256": "e6d51d3460a3a53189df63ccc68b5427c46c76cdb2eb4f4d7ce7e739bbf41f1e",
+      "formulas": 169,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-04.md",
+      "sha256": "673e66ac4d1480fb2e54bf8529f91fb1c34f4685740809c8da1dfdc40514dca3",
+      "formulas": 197,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-05.md",
+      "sha256": "a03441d8f05e59558eafcabf85aeed1d24179167cabfe8202d09a29e22d4d460",
+      "formulas": 169,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-06.md",
+      "sha256": "4caff5f34617e0ff15b22f09a61e17139dc445215e371521a611e8d39fbac63b",
+      "formulas": 143,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-07.md",
+      "sha256": "36dd5acb4a686ce44d499ebcf2fccf842b7d386a31caf2aff7c46af72792263a",
+      "formulas": 115,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第40届/整理版/drafts/question-08.md",
+      "sha256": "47252d777aaafe2e37751237c0371015186e969cb9f1cd1a675c563fc7867f44",
+      "formulas": 139,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-01.md",
+      "sha256": "703ff4ffe99e545301fc799f6924ffb136e8fbf18b5fbdaeb3cabe8c8ad57fa6",
+      "formulas": 187,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-02.md",
+      "sha256": "328c71c0a5a5d3afdb85aa3fc42ef27cb5df7c194ffdace9bad214e509630f24",
+      "formulas": 268,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-03.md",
+      "sha256": "64cfd212fb4af1ca0f1d72bcff740e0c8d0403107e959141c7262cb962e01ac7",
+      "formulas": 184,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-04.md",
+      "sha256": "c7b67454c4f0831e8024bde4fcd6652272165d530c13ee93bf32bc9627184585",
+      "formulas": 141,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-05.md",
+      "sha256": "88c50ea7af1bfd5b8b6404df8a17e67be658827e6da7e1148bf1a75c904bb504",
+      "formulas": 184,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-06.md",
+      "sha256": "97fa177d887944aaba5ebf753cafc2d4fa3fe164abd2a815ee5b5a4384cd970e",
+      "formulas": 209,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第41届/整理版/drafts/question-07.md",
+      "sha256": "86bd3c3494e02c4b00ee0069b595f53cdbf606f75f2f5bf7d5877376ddd55b7c",
+      "formulas": 281,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-01.md",
+      "sha256": "1fbd6a3ba35e21ed7526b3ac5b2cddda2d2d45b17dd0e3b4d8999d3aaa19359a",
+      "formulas": 221,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-02.md",
+      "sha256": "d87ef0e5d1fef96c84f5fb321769e8f84631f7a5b38337bffbd7c9183d1091c1",
+      "formulas": 222,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-03.md",
+      "sha256": "726a31ad2bc076ff1fd4aec6e29dbd85b37c0f1926d562deba768672a65f038a",
+      "formulas": 208,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-04.md",
+      "sha256": "d40b1014e53710c1265b6b0c33f5e5e2fa862709c5e6b6e28568bc2493161f46",
+      "formulas": 202,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-05.md",
+      "sha256": "7c7467a3a47d815a479253adb3e51dc6d86b960b71740e5463024bef7acd6e0f",
+      "formulas": 196,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-06.md",
+      "sha256": "c34d2aea4c1e6c48ca730bf2f0ff214e192d2c1425059bab560483906e55bed3",
+      "formulas": 243,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第42届/整理版/drafts/question-07.md",
+      "sha256": "070a13e890b5fc79b0522774d27e2075fe319b0fe0e0023d6f09fa3ece6ffa9d",
+      "formulas": 219,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-01.md",
+      "sha256": "8b2dc0a5047daa1a49f32cbb7208604c9e57694e522ca2c6b78fb94ea461013f",
+      "formulas": 194,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-02.md",
+      "sha256": "d9dc1fc8f7a08d229b0cdbd779d9fe985161acb51e8183d531d4f53f2b6e3d57",
+      "formulas": 217,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-03.md",
+      "sha256": "144f11881aa178ef1724a5cfd36f35d07ff2292754982e3b0d4d88cef08c35bb",
+      "formulas": 193,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-04.md",
+      "sha256": "46ae8c540d82d39a77a076eff7d89a89f65a07b9bb9a211e73a2f327a419558d",
+      "formulas": 207,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-05.md",
+      "sha256": "785cdc13ee8bf2fc5f18446d68e16d9de3d950889fb4f199d4f848031de7bb4a",
+      "formulas": 203,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-06.md",
+      "sha256": "114fc411a49ca4adaf2e755617fbc13a325b44cedbb69c1efa79e688bc3bde98",
+      "formulas": 222,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    },
+    {
+      "path": "第43届/整理版/drafts/question-07.md",
+      "sha256": "87ca66750bea3c36d126b270f90fb0357288e5cbd4685d032166b048b804ed12",
+      "formulas": 217,
+      "math_unchanged": true,
+      "problem_unchanged": true,
+      "figures_unchanged": true,
+      "variants": 4
+    }
+  ],
+  "original_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛试题及参考答案.pdf",
+      "sha256": "08bbc87980b46aa2c96a43828b68f096a769b4dc87caff5afc913b16d873db78",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛参考解答.pdf",
+      "sha256": "6d622000fafa9c736e136ffd96a0f984a92c551381bac8b29ca48038c2b896cf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/第36届复赛试题及参考答案.pdf",
+      "sha256": "1324e16f60bdd527b3d34d4790759617dc122c28de85b424cd017dfa15b78230",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/第37届复赛试题及参考答案.pdf",
+      "sha256": "6854aead0d0fec608a0d3e96c9f05a9f03e4697c92c47eddfe85264fa2504520",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/第38届复赛试题及参考答案.pdf",
+      "sha256": "172bc253deaa2ac91b4be83c0b6e8bd82fb40c916df80593c0b78425441aeb0a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/第39届复赛试题及参考答案.pdf",
+      "sha256": "4cc94a015a89062a5ccfd505b16ef6ab5ae045e886a2745a57c762a043524178",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/第40届复赛试题及参考答案.pdf",
+      "sha256": "72a7e8ef8261539dd66b577d9eb6d4ae869ce910a7b8de3664d5eec7af2a70e2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛参考解答.pdf",
+      "sha256": "14d621cc9a7aa29cb22fabcef574ba6fd5bd797755d62e62e1e7fa2fd3b903a9",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛理论试题.pdf",
+      "sha256": "7f5d6a3c62a74bc0c75a80d62920e78613986131dbe76b41ae7210129c65d3f5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛参考解答.pdf",
+      "sha256": "69a900024b46b94329d0419cfd3bf7b1bc84309bab512e2004b0b7d05feb905d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛理论试题.pdf",
+      "sha256": "47f3895287424f58f96f3c91416928329f3e3b283e11f79d44d0d57e5a38565c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/第43届复赛理论试题.pdf",
+      "sha256": "2dfa4e25c932f852ddaf6902c6ffdfec67118af20eb5ec7a6783d53ddc149383",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/第43届复赛试题解答与评分标准.pdf",
+      "sha256": "29df633e1a992264ca6bfbc42639d6d5b607f5976003626aaf507ea4a48f63bd",
+      "unchanged": true
+    }
+  ]
+}

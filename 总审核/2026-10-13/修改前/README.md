@@ -1,0 +1,39 @@
+# 第35—43届全国中学生物理竞赛复赛试卷与答案
+
+已收齐第35—43届共9届的理论试题及答案，共13个PDF文件，按届次存放。
+
+第35—40届的试题与参考答案为合并PDF；第35届另附参考解答。第41—43届的试题与答案分别存放，第43届答案含评分标准。
+
+| 届次 | 年份 | 资料 |
+| --- | --- | --- |
+| 第35届 | 2018年 | [参考解答（28页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛参考解答.pdf)、[试题及参考答案（38页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛试题及参考答案.pdf) |
+| 第36届 | 2019年 | [试题及参考答案（40页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/第36届复赛试题及参考答案.pdf) |
+| 第37届 | 2020年 | [试题及参考答案（21页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/第37届复赛试题及参考答案.pdf) |
+| 第38届 | 2021年 | [试题及参考答案（20页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/第38届复赛试题及参考答案.pdf) |
+| 第39届 | 2022年 | [试题及参考答案（29页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/第39届复赛试题及参考答案.pdf) |
+| 第40届 | 2023年 | [试题及参考答案（23页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/第40届复赛试题及参考答案.pdf) |
+| 第41届 | 2024年 | [参考解答（19页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛参考解答.pdf)、[理论试题（5页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛理论试题.pdf) |
+| 第42届 | 2025年 | [参考解答（27页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛参考解答.pdf)、[理论试题（5页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛理论试题.pdf) |
+| 第43届 | 2026年 | [理论试题（5页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/第43届复赛理论试题.pdf)、[试题解答与评分标准（21页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/第43届复赛试题解答与评分标准.pdf) |
+
+资料来源：第35—42届来自本机“下载/35-42届复赛试题”；第43届来自本机WPS文件缓存。复制时仅规范了副本名称，原文件保留。
+
+全部副本均已与原文件进行SHA-256校验，内容一致。具体原文件路径、页数和校验值见[复制来源清单.csv](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/复制来源清单.csv)。
+
+第43届已按“质心模拟题”项目方法完成教学整理：[试题版（8页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/output/第43届_试题版.pdf)、[学生详解版（60页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/output/第43届_学生详解版.pdf)、[教师备课版（74页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/output/第43届_教师备课版.pdf)。页数均含1页封面；学生正文59页、教师正文73页，达到用户指定的第101套56／71页正文标准。封面简洁，无页眉。7题配有16张TikZ图，教师版含28道带解答变式；[工程说明及核验入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/README.md)保存了可编辑源稿和复核记录。
+
+第42届已按“质心模拟题”项目方法完成教学整理：[试题版（10页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/整理版/output/第42届_试题版.pdf)、[学生详解版（59页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/整理版/output/第42届_学生详解版.pdf)、[教师备课版（73页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/整理版/output/第42届_教师备课版.pdf)。各含1页封面；学生正文58页、教师正文72页，达到第101套56／71页正文标准。简洁封面、无页眉；7题配21张TikZ图，教师版含28道带解答变式，30项独立数值检查通过。[工程说明及核验入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/整理版/README.md)。
+
+第41届已按“质心模拟题”项目方法完成教学整理：[试题版（9页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/output/第41届_试题版.pdf)、[学生详解版（62页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/output/第41届_学生详解版.pdf)、[教师备课版（74页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/output/第41届_教师备课版.pdf)。各含1页封面；学生正文61页、教师正文73页，达到第101套56／71页正文标准。简洁封面、无页眉；7题配17张TikZ图，教师版含28道带完整解答的变式，52项独立计算检查通过。[工程说明及核验入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/README.md)。
+
+第40届已完成教学整理：[试题版（9页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/output/第40届_试题版.pdf)、[学生详解版（57页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/output/第40届_学生详解版.pdf)、[教师备课版（72页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/output/第40届_教师备课版.pdf)。学生正文56页、教师正文71页；简洁封面、无页眉，18幅TikZ图、32道完整解答变式，32项独立检查和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/README.md)。
+
+第39届已完成教学整理：[试题版（8页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/output/第39届_试题版.pdf)、[学生详解版（58页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/output/第39届_学生详解版.pdf)、[教师备课版（73页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/output/第39届_教师备课版.pdf)。学生正文57页、教师正文72页；18幅TikZ图、28道完整解答变式，36项计算、139页审读、内置编译和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/README.md)。
+
+第38届已完成教学整理：[试题版（9页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/output/第38届_试题版.pdf)、[学生详解版（62页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/output/第38届_学生详解版.pdf)、[教师备课版（75页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/output/第38届_教师备课版.pdf)。学生正文61页、教师正文74页；22幅TikZ图、32道完整解答变式，48项计算、146页审读、内置编译和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/README.md)。
+
+第37届已完成教学整理：[试题版（9页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/output/第37届_试题版.pdf)、[学生详解版（68页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/output/第37届_学生详解版.pdf)、[教师备课版（84页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/output/第37届_教师备课版.pdf)。学生正文67页、教师正文83页；24幅TikZ图、32道完整解答变式，48项计算、161页审读、内置编译和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/README.md)。
+
+第36届已完成教学整理：[试题版（8页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/整理版/output/第36届_试题版.pdf)、[学生详解版（61页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/整理版/output/第36届_学生详解版.pdf)、[教师备课版（78页）](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/整理版/output/第36届_教师备课版.pdf)。学生正文60页、教师正文77页；23幅TikZ图、28道完整解答变式，56项计算、147页审读、内置编译和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/整理版/README.md)。
+
+第35届已完成教学整理：试题10页、学生57页（正文56页）、教师74页（正文73页）；8题、32变式、23幅可编辑示意图及2幅原测量照片。64项计算、141页审读、三版内置编译和独立重建通过。[工程与验收入口](/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/README.md)。

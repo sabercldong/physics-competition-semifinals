@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/latex/第41届_学生详解版.tex",
+      "kind": "success",
+      "sha256": "791a7ff9a3cc0f948e9ea3258ee84fb9a6080d0d525af5518b9b9c11afc16e16",
+      "message": "The current source compiled successfully with the desktop editor compiler."
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/latex/第41届_教师备课版.tex",
+      "kind": "success",
+      "sha256": "43b7ca48e7aa773a0a8b71f63eb45c8c304262fe393423ec9ba9b074d114db2d",
+      "message": "The current source compiled successfully with the desktop editor compiler."
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/latex/第41届_试题版.tex",
+      "kind": "success",
+      "sha256": "971e1141105fdba7e6bbadeeb44d5bd8fcdcccac651d208059de8b19ca2b60e1",
+      "message": "The current source compiled successfully with the desktop editor compiler."
+    }
+  ]
+}

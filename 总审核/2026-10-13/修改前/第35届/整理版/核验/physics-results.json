@@ -1,0 +1,366 @@
+{
+  "all_passed": true,
+  "check_count": 64,
+  "checks": [
+    {
+      "check": "1.1 转折点代入有效势能量",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.2 落地径向速度的阈值因式",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.3 题给原函数导数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.4 径向释放时间的数值积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.5 二维Newton落地事件与偏近点角",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.6 两倍半径零速释放变式",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.7 擦地半周期极限",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1.8 落地角反演",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.1 右行分段ODE、端点及速度峰",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.2 左行分段ODE及端点",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.3 ODE端点序列",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.4 数值累计路程与全程耗散",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.5 静摩擦带边界取整",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.6 按过零定义计数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.7 不等静动摩擦变式",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2.8 原点初速度转折点能量",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.1 裸杆打击中心冲量关系",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.2 组合质心及质心惯量",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.3 嵌入碰撞动能及水平动量",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.4 转动能量的角度系数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.5 质心加速度与轴反力",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.6 释放时位置速度及质心平抛",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.7 两杆端距离不变",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3.8 固定O高度及顶部临界时间",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.1 四导线复场精确求和",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.2 线性梯度来自精确场",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.3 中心无源区域散度旋度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.4 二次势刚度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.5 固定半径轴向最低势垒",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.6 鞍点半径、场强及轴向曲率",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.7 轴向极大横向极小的鞍点",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4.8 偏置场展开",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.1 完整旋转通解代入实验室ODE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.2 初速度变换",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.3 两个圆模代入复ODE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.4 模频乘积与差",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.5 磁场不做功的机械能导数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.6 非零角动量积分常数守恒",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.7 旋转系圆模的非零常数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5.8 弱场二阶展开及普通频率",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.1 外表面净辐射及温度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.2 导热积分与温差",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.3 漫辐射球壳视角因子积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.4 含自照的辐射度线性方程",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.5 两表面净流相等",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.6 完整反射链的吸收概率",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.7 灰体交换极限及参考漏项差异",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6.8 涂黑与加倍导热变式",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.1 单缝几何与小角度极限",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.2 弹簧三尺度计算",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.3 DNA尺度计算",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.4 螺旋反算角度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.5 半径与螺距的角度误差",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.6 缺失阶次的线性拟合",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.7 照片标定及等比例缩放",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7.8 DNA小角度修正和弹簧角度敏感性",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.1 发射吸收自洽能量方程",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.2 反冲频差的一阶精度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.3 线宽与反冲数量级",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.4 两自由核窗口无交叠",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.5 精确多普勒窗口边界",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.6 未知频移的速度补偿",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.7 单色源窗口为两窗口的一半",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8.8 自由核反冲差的迎向补偿",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "script_sha256": "750014893281325a1883be0609f991fbd82814510eb613506649a105aee30c9b",
+  "source_sha256": {
+    "question-01.md": "ffcb6ccb0f8f9447ec9003469738ffc2bff1136d56175a59dc3f2dbb1d0a70ab",
+    "question-02.md": "1d591b1e9d93f4e2df7a7bd88777e6c19a331ea0c115f35f25c138767d5a170d",
+    "question-03.md": "8bc4383cdc912a62f4a87254a8257b7fe9dca57220a55fefc5edd47a22a6153d",
+    "question-04.md": "af0eeddba3a227c45c35006f14076254c0ade34a66622b7a21d0e1c71b25a3bf",
+    "question-05.md": "eefe9d16433ff7c63a5a6c145ff5466cff427b4e3a6259caa9e42b1b71ef5f1c",
+    "question-06.md": "c1aac4cdb5333d57800716fff0ae6e95524b006e934e8838e1b62ad280f063b7",
+    "question-07.md": "6c5ee2141665d5c9a295fb0a972ce8feefd32228fb4350b7259e92e2f3024c81",
+    "question-08.md": "0d1bea6c972ee4752c15eab5f4e62df2dcf16d3641bf07a98fc42b30c7431430"
+  },
+  "assumptions": [
+    "中心力点质点、地球外球对称场",
+    "最大静摩擦等于动摩擦",
+    "均匀重力自由刚体",
+    "无限长导线、平面逃逸",
+    "经典线性束缚电子",
+    "各向同性漫辐射及漫反射灰体",
+    "题设螺旋衍射估算模型、参考代表读数",
+    "题设有限线宽窗口及无反冲晶体"
+  ],
+  "numeric": {
+    "T2": 88.64720275009682,
+    "T1": 127.55174439478236,
+    "T0": 216.90622060352314,
+    "reference_T0": 227.360940716,
+    "radiosities": [
+      103.62410248434816,
+      16.08888378380573
+    ],
+    "spring_mm": [
+      0.3365316455696203,
+      1.6190501489636746,
+      0.961674233772792
+    ],
+    "DNA_nm": [
+      3.8651152871672494,
+      0.6831957358126165
+    ]
+  }
+}

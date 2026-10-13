@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=1]
+\draw[arr] (-3,0)--(3,0) node[right] {$x$};
+\draw[arr] (0,-3)--(0,1.8) node[above] {$z$};
+\draw[dashed] (0,0) circle(2.2);
+\draw[very thick,blue] (2.2,0) arc(0:-180:2.2);
+\draw[arr,blue] (1.91,-1.1)--(1.69,-1.38);
+\draw[arr,blue] (-1.1,-1.91)--(-1.4,-1.69);
+\fill (2.2,0) circle(2pt) node[above] {静止释放};
+\fill (-2.2,0) circle(2pt) node[above] {转向点};
+\fill (0,-2.2) circle(2pt) node[below right] {速率最大};
+\draw[<->] (0,0)--(-1.56,-1.56) node[midway,left] {$r_0$};
+\node[above left] at (0,0) {$O$};
+\end{tikzpicture}

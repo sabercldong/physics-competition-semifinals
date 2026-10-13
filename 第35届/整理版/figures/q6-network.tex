@@ -1,0 +1,15 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.85]
+\draw[arr](0,0)--(10,0)node[right]{$Q/\sigma$};
+\foreach \x/\lab in {0/T_0^4,3/{J_0/\sigma},6/{J_1/\sigma},9/T_1^4}{\fill(\x,0)circle(2pt);\node[above]at(\x,0){$\lab$};}
+\foreach \x/\lab in {1.5/{(1-e)/(eA_0)},4.5/{1/A_0},7.5/{(1-E)/(EA_1)}}
+{\draw[thick,fill=white](\x-.55,-.2)rectangle(\x+.55,.2);\node[below]at(\x,-.5){$\lab$};}
+\node at(4.5,1.4){辐射电阻串联；流量为$Q/\sigma$};
+\end{tikzpicture}
+\end{document}

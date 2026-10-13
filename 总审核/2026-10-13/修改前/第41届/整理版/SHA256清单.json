@@ -1,0 +1,661 @@
+{
+  "created_at": "2026-10-12",
+  "scope": "原始资料、逐题主稿、图源及图文件、构建脚本、三版成品、核验证据和工程说明；不含本清单、build中间产物、preview。",
+  "files": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 2728,
+      "sha256": "d9f23a786f8d1bd0fd8d061349f50b2c153a855b475c0a567221bbe814f36d76"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4139,
+      "sha256": "487aebf7cacf4ac9734f399f1a64025e53b51a576a4d6936d8604c41d6793afb"
+    },
+    {
+      "path": "drafts/question-01.md",
+      "bytes": 15892,
+      "sha256": "2cb95816e4176f09a20d501e15a3dfaee2d77100d7220d6f3daca8c912eb5788"
+    },
+    {
+      "path": "drafts/question-02.md",
+      "bytes": 19083,
+      "sha256": "14d85366f3b22750eb3439c2722bcfab4afd9b85f60061e341d8d5687f4cc407"
+    },
+    {
+      "path": "drafts/question-03.md",
+      "bytes": 15890,
+      "sha256": "f67fa8a38deaf688b8d2ebca688ff5cf96575fae101c7740768b26cc78fbee45"
+    },
+    {
+      "path": "drafts/question-04.md",
+      "bytes": 14128,
+      "sha256": "c17d01cfd6d5bfadf2ba67200426c08d55aa7b2987d43d14f59d20dbafb116f9"
+    },
+    {
+      "path": "drafts/question-05.md",
+      "bytes": 14391,
+      "sha256": "3fab78107f44d45f13dc997004b68d6381183268cedaa3f58ff23d575ed99291"
+    },
+    {
+      "path": "drafts/question-06.md",
+      "bytes": 15118,
+      "sha256": "a97c3c9eda8467042dde97d03ba58b44d34f8a3548678ddd3a88d7153c821cac"
+    },
+    {
+      "path": "drafts/question-07.md",
+      "bytes": 18441,
+      "sha256": "3da6f83f9d4c81948fbf1243ce813ec4242341862eaa3e55ba1bb3dc30311ec5"
+    },
+    {
+      "path": "figures/q1-building.pdf",
+      "bytes": 4611,
+      "sha256": "a1701dfd24bdf4827f01df3029cf99d70f8ece394f52c89a5eb2f653528c9786"
+    },
+    {
+      "path": "figures/q1-building.png",
+      "bytes": 10976,
+      "sha256": "b96ff9d7198d8f7d2dd864f67337bd94144a187be7e4df6a106972f092c59b73"
+    },
+    {
+      "path": "figures/q1-building.tex",
+      "bytes": 889,
+      "sha256": "e1020b59032052ebc780859cd9a3b54dd5db62c5f247ef4bff0bdccca60eae08"
+    },
+    {
+      "path": "figures/q1-building.tikz",
+      "bytes": 690,
+      "sha256": "1e08b578f7f4f53687bdfb188b55a36e06818883e8423b912f0816ddac802d9d"
+    },
+    {
+      "path": "figures/q1-response.pdf",
+      "bytes": 13355,
+      "sha256": "0bb7a00f80e4625ef582530cdd0c853b096ded66ba2f13fe87dbb916890cb451"
+    },
+    {
+      "path": "figures/q1-response.png",
+      "bytes": 32839,
+      "sha256": "089ea5c6e16799e339de3630a3d7a2ad4f3ed575376add3221a205f52a9af782"
+    },
+    {
+      "path": "figures/q1-response.tex",
+      "bytes": 852,
+      "sha256": "c695ba149e8cb473a342f1b85785264a846e243734fa87173363c718809d912c"
+    },
+    {
+      "path": "figures/q1-response.tikz",
+      "bytes": 653,
+      "sha256": "7db7f7cf0347ffce77003dcd3165083c9f97936143ac792465c19fb945b7d7d0"
+    },
+    {
+      "path": "figures/q2-collision.pdf",
+      "bytes": 7959,
+      "sha256": "232a380c18deb65403e808076938834ca0c76a5ac0e7dd8edb1cffe1555eb1d6"
+    },
+    {
+      "path": "figures/q2-collision.png",
+      "bytes": 19720,
+      "sha256": "6190ce1f51878108a3e30066ac61d4781cffaa580dad315dc457f32757e9bd32"
+    },
+    {
+      "path": "figures/q2-collision.tex",
+      "bytes": 913,
+      "sha256": "b126e45e2d7a13d10272264b7b28511200a6fcc5a47f5ed73294556617802ac7"
+    },
+    {
+      "path": "figures/q2-collision.tikz",
+      "bytes": 714,
+      "sha256": "a04ceea3ebe21d22d0dca15dfcceaef6e703c51c5acf393ad5eeb513664a1a7b"
+    },
+    {
+      "path": "figures/q2-impact.pdf",
+      "bytes": 6982,
+      "sha256": "6902efcadb47172368241476872e7383b741da480b11f63557b2dd817f0d7338"
+    },
+    {
+      "path": "figures/q2-impact.png",
+      "bytes": 12397,
+      "sha256": "a006de37f3625db2bf7d934bdeb6926715c4ac79a1c887b3a7c9784b24a98aaf"
+    },
+    {
+      "path": "figures/q2-impact.tex",
+      "bytes": 688,
+      "sha256": "8a52db43cb5d4aa91189592552be1afee6abfc8b160757096771a5a86acefd7b"
+    },
+    {
+      "path": "figures/q2-impact.tikz",
+      "bytes": 489,
+      "sha256": "33301a57e56ad3deffc46c1e5c089ec5b115a4360b80efe97db82b8f592fc60c"
+    },
+    {
+      "path": "figures/q2-spin.pdf",
+      "bytes": 12180,
+      "sha256": "79729b4a3dcca2c3a6786f2a9a2f4984a83d93e04f37d89f7a8084cd150460a6"
+    },
+    {
+      "path": "figures/q2-spin.png",
+      "bytes": 27677,
+      "sha256": "e37715615a5326e29e09d43f64b313b3d899f3645fc30e02f853e6afa9bb8243"
+    },
+    {
+      "path": "figures/q2-spin.tex",
+      "bytes": 1056,
+      "sha256": "0d6e07f6bfbf0c4a0121ccf46ee969237a087509674506e23706d88f68c50d62"
+    },
+    {
+      "path": "figures/q2-spin.tikz",
+      "bytes": 857,
+      "sha256": "3d98cbfbe77172c812045ee9ba46a9c9c0fc2074066ee214d6f918b38ae05282"
+    },
+    {
+      "path": "figures/q2-trajectory.pdf",
+      "bytes": 14709,
+      "sha256": "d938656b6ad0e84a54b890a5318147ef61a751349937654e2f22dcb8f0dbc759"
+    },
+    {
+      "path": "figures/q2-trajectory.png",
+      "bytes": 25276,
+      "sha256": "7d82a2db687e71effa1cc5d3223cf9f2a3506ebe7a8d13c6bc4ca2d28556ba5a"
+    },
+    {
+      "path": "figures/q2-trajectory.tex",
+      "bytes": 811,
+      "sha256": "dbedebe6bdaca8be0a9102ee4af41a8cd56f2f4ebcda50dc411a615671565def"
+    },
+    {
+      "path": "figures/q2-trajectory.tikz",
+      "bytes": 612,
+      "sha256": "33c458b20c67cdd2849e07267588ac4898c941b3417185b5e3b15bcc932def67"
+    },
+    {
+      "path": "figures/q3-bonds.pdf",
+      "bytes": 12478,
+      "sha256": "69d20066de4456e491b563748190c88d7ce48b0890b116a9070cf84f657cf52f"
+    },
+    {
+      "path": "figures/q3-bonds.png",
+      "bytes": 32295,
+      "sha256": "9453b86a6d0782ada0b8ef56ff43d702282451f72975a6acb6f1be6586451a11"
+    },
+    {
+      "path": "figures/q3-bonds.tex",
+      "bytes": 880,
+      "sha256": "34b0507603b79044a4e5254a681ab377a71f4bee72062bce8e92883de3d8e620"
+    },
+    {
+      "path": "figures/q3-bonds.tikz",
+      "bytes": 681,
+      "sha256": "4a263d1c9a0de9965369ab8ad26f93d81b92aa27e272f09b7faf129d24a37390"
+    },
+    {
+      "path": "figures/q3-mixing.pdf",
+      "bytes": 15997,
+      "sha256": "e78c8eb838f57be8ec0a394de9ca7b7acd77408c33b925db3e5d2dbc6f4d0ab3"
+    },
+    {
+      "path": "figures/q3-mixing.png",
+      "bytes": 35105,
+      "sha256": "a8d2cc88903fe5792103b01a604446d25ca3393f02eada0c230da6b99da039e0"
+    },
+    {
+      "path": "figures/q3-mixing.tex",
+      "bytes": 907,
+      "sha256": "29178dc146f1684fc8f9a14fd0513c1ce0407bd331bc6be3fc46dbde9bf19851"
+    },
+    {
+      "path": "figures/q3-mixing.tikz",
+      "bytes": 708,
+      "sha256": "f2b5100634da1d1c780e0b3be99191414873c8e638472b6cdba9d8b44cf88f99"
+    },
+    {
+      "path": "figures/q4-resolution.pdf",
+      "bytes": 9523,
+      "sha256": "7bf2dfe0ae7b259ee3c7e4b5e7ff17f8d9f9f95dd9037df53b7ac1868cc3fd05"
+    },
+    {
+      "path": "figures/q4-resolution.png",
+      "bytes": 25156,
+      "sha256": "849b69089bfebb3fcc819cb318b263ca2c682ab52ce09a60e2f12798afc3ef63"
+    },
+    {
+      "path": "figures/q4-resolution.tex",
+      "bytes": 675,
+      "sha256": "31d83fa7f55880f3295a292740c27147c8d2d9d22a20b45cd729109f5bb0505b"
+    },
+    {
+      "path": "figures/q4-resolution.tikz",
+      "bytes": 476,
+      "sha256": "354bab2e5c37d93418489b712c2ea0ca65251a379831dfc16d1e530cfd0a6015"
+    },
+    {
+      "path": "figures/q4-scattering.pdf",
+      "bytes": 7312,
+      "sha256": "b159b32d270799770ccb5e5191ed2fa15270c9d04e91356658282a26725be6a1"
+    },
+    {
+      "path": "figures/q4-scattering.png",
+      "bytes": 17454,
+      "sha256": "b37a380a908d35659e073318d6b49410a5c65b0ad10b861ae397ff2c4d80cab4"
+    },
+    {
+      "path": "figures/q4-scattering.tex",
+      "bytes": 645,
+      "sha256": "39907acb3d3f46f1b2fcbcd614750588263187a503d8dff2f751825808fcebe4"
+    },
+    {
+      "path": "figures/q4-scattering.tikz",
+      "bytes": 446,
+      "sha256": "06c70727e3c66c5853c7a69124e087d0faaaf45cd3f4f720a95d47b7f7d398f5"
+    },
+    {
+      "path": "figures/q5-trap.pdf",
+      "bytes": 8840,
+      "sha256": "c1e6f8f62194271bcaf6291ea9a89c414f2b6d85000856d5873ca008c76ba730"
+    },
+    {
+      "path": "figures/q5-trap.png",
+      "bytes": 21638,
+      "sha256": "bbcfddb1fbef3d557c443fd7657d4d0c19098fee57152382439ef7cc1505ef7c"
+    },
+    {
+      "path": "figures/q5-trap.tex",
+      "bytes": 804,
+      "sha256": "3b3f9df2b8f864ccbd502e36bfe6fe99100c0d178c5dc258ace9e49c14ee47a5"
+    },
+    {
+      "path": "figures/q5-trap.tikz",
+      "bytes": 605,
+      "sha256": "02889e317769048d9daec5ddce2226641d9e95f0a844d9cdb5359c53b2d0b44b"
+    },
+    {
+      "path": "figures/q5-wires.pdf",
+      "bytes": 5719,
+      "sha256": "f2e4be99650b01dd4bea7712b2a796e997429896b98c7ade39b2e3cc74d07a83"
+    },
+    {
+      "path": "figures/q5-wires.png",
+      "bytes": 15289,
+      "sha256": "172a3e7a73fb817d6ce71d668c0890e052658d9d3dc43f3664f3d6cea25d3f41"
+    },
+    {
+      "path": "figures/q5-wires.tex",
+      "bytes": 924,
+      "sha256": "c2b3284cdec63f0b79938f3e4805cf68a38090b4b6b204d9907707cccd31ae85"
+    },
+    {
+      "path": "figures/q5-wires.tikz",
+      "bytes": 725,
+      "sha256": "f58ac9f1493b69a460dbf7e03e54fd9f8613f67a600b37c62f0ade496b980c6a"
+    },
+    {
+      "path": "figures/q6-orbit.pdf",
+      "bytes": 11138,
+      "sha256": "2c63d954508da42bbdc40b02a9b817c8a1605f8664122d186a0d987d3238798d"
+    },
+    {
+      "path": "figures/q6-orbit.png",
+      "bytes": 29030,
+      "sha256": "e1e12b9c5ad3823b8b568c802a99887a8904ef3385a8482ff4755539030bd249"
+    },
+    {
+      "path": "figures/q6-orbit.tex",
+      "bytes": 756,
+      "sha256": "d5dbbbf988b9bf602050ebbe3aac3e525d8a8bf8b0badd1aec1a52c94f8c8001"
+    },
+    {
+      "path": "figures/q6-orbit.tikz",
+      "bytes": 557,
+      "sha256": "71a8582e8eb2e62ca7692af065d92c24add6ad3ac112754869f11d4caba2e45f"
+    },
+    {
+      "path": "figures/q6-scatter.pdf",
+      "bytes": 5949,
+      "sha256": "e56e427dec881ac14fbb8e3f6b27f10639eb8c4ccc9712d5962d8ffb2aefd4b8"
+    },
+    {
+      "path": "figures/q6-scatter.png",
+      "bytes": 11046,
+      "sha256": "090f4cbd5cce309ec8c46c3ce17834acc51ca4584bd325b14d26ca62e1b69ad9"
+    },
+    {
+      "path": "figures/q6-scatter.tex",
+      "bytes": 684,
+      "sha256": "8ea0a6d2b7f9c269c885600adee3993814bc3d7eba24ed8225f715747309141e"
+    },
+    {
+      "path": "figures/q6-scatter.tikz",
+      "bytes": 485,
+      "sha256": "dd02b1c4c712d308334117eba4ee80390e294d57a8fb610e229a4271f74d6a71"
+    },
+    {
+      "path": "figures/q7-branches.pdf",
+      "bytes": 15491,
+      "sha256": "e5671f210f93accc07dcef20d82b9f14ed2e5c6d9eb04e53dc1724109695b4ca"
+    },
+    {
+      "path": "figures/q7-branches.png",
+      "bytes": 36082,
+      "sha256": "ad2ceab18244cd8f012e2e03e312337f34a0cb3de489bc709df0acaf5e231a8f"
+    },
+    {
+      "path": "figures/q7-branches.tex",
+      "bytes": 791,
+      "sha256": "66850a5ea572d823bc7ef21a2b169075ad82499780519baec09c1346c9569e72"
+    },
+    {
+      "path": "figures/q7-branches.tikz",
+      "bytes": 592,
+      "sha256": "4ea338edaa9af6587ad6ea48b9b0d1cd28c350be8f36101584172a8286315246"
+    },
+    {
+      "path": "figures/q7-pairing.pdf",
+      "bytes": 8857,
+      "sha256": "6f56f1295ad9f951f08be707ec3baa79e6a351da2ef89bcd50112dc52be429f8"
+    },
+    {
+      "path": "figures/q7-pairing.png",
+      "bytes": 16328,
+      "sha256": "515afa0349a88982539a3643a0ec021837418053314fba6534755e957e2d8776"
+    },
+    {
+      "path": "figures/q7-pairing.tex",
+      "bytes": 786,
+      "sha256": "6bd8d15cb5846557a5182b43e41cb7443a15b9d75eba88ef23c5122dad504a4b"
+    },
+    {
+      "path": "figures/q7-pairing.tikz",
+      "bytes": 587,
+      "sha256": "f8ac363ba2c842df03eae755d34d890252fd6a8d90e79748af1078253a83b94d"
+    },
+    {
+      "path": "figures/q7-ring.pdf",
+      "bytes": 6519,
+      "sha256": "df450064b4c3377e120a324baa68615e35a1b87a948175458fb461ef7cb208a2"
+    },
+    {
+      "path": "figures/q7-ring.png",
+      "bytes": 16317,
+      "sha256": "37f40b418fec922153b3ce76c4bd0d13321ec00ada1069a8f89969d57fbe4429"
+    },
+    {
+      "path": "figures/q7-ring.tex",
+      "bytes": 553,
+      "sha256": "f5f005ac4dd2e4f55c48fd549ae6e739fdd5f7608e6da0878361ecdd37cf94b6"
+    },
+    {
+      "path": "figures/q7-ring.tikz",
+      "bytes": 354,
+      "sha256": "76cc2c198698838086477e94eff87d7b2552f644b484289fe138123daf899efd"
+    },
+    {
+      "path": "latex/template.tex",
+      "bytes": 1501,
+      "sha256": "eb120c8e848cca8acd77af832d72cb7926e4af903461570e3e5501e5f0540084"
+    },
+    {
+      "path": "latex/第41届_学生详解版.tex",
+      "bytes": 119646,
+      "sha256": "791a7ff9a3cc0f948e9ea3258ee84fb9a6080d0d525af5518b9b9c11afc16e16"
+    },
+    {
+      "path": "latex/第41届_教师备课版.tex",
+      "bytes": 147985,
+      "sha256": "43b7ca48e7aa773a0a8b71f63eb45c8c304262fe393423ec9ba9b074d114db2d"
+    },
+    {
+      "path": "latex/第41届_试题版.tex",
+      "bytes": 22840,
+      "sha256": "971e1141105fdba7e6bbadeeb44d5bd8fcdcccac651d208059de8b19ca2b60e1"
+    },
+    {
+      "path": "output/第41届_学生详解版.md",
+      "bytes": 89269,
+      "sha256": "6626b82c29377c3c30c127a1775c281c50d109d80cf82e42626275d09651d85b"
+    },
+    {
+      "path": "output/第41届_学生详解版.pdf",
+      "bytes": 661106,
+      "sha256": "b163c996f50520335958b2765b6aa32c4c7e108bcab97ad5fc75996d7b0746ce"
+    },
+    {
+      "path": "output/第41届_教师备课版.md",
+      "bytes": 113027,
+      "sha256": "6f4c6cdb0e5f0efa6d7104f7aa36157655a6a2cb032c99aa10196dccd693f3b5"
+    },
+    {
+      "path": "output/第41届_教师备课版.pdf",
+      "bytes": 736901,
+      "sha256": "601f3a4a8abadfdb7b35b9bb7a5f98b272e2943e9ee9ad91efb504405456206c"
+    },
+    {
+      "path": "output/第41届_试题版.md",
+      "bytes": 12608,
+      "sha256": "29934673033ee76ad10e26b045387ccfecd11418bed3aaec8f85680b96761c56"
+    },
+    {
+      "path": "output/第41届_试题版.pdf",
+      "bytes": 282355,
+      "sha256": "df7e4815a3d8b1b10a92a48a36fc7afde877e0825c0c9d35a873e43e94a7ab6b"
+    },
+    {
+      "path": "scripts/build_all.py",
+      "bytes": 6405,
+      "sha256": "d2c637202aec42b008e4e6a48da7bc5d4d43d9c9d959a4429f11f87ac06916fa"
+    },
+    {
+      "path": "scripts/check_rebuild.py",
+      "bytes": 1941,
+      "sha256": "c14eec17800ee63b69686a01e6bde1312498bf77d42acd88975dca240da78e03"
+    },
+    {
+      "path": "scripts/make_figures.py",
+      "bytes": 11288,
+      "sha256": "a738ab1ba6f27945e623f28ec78f4b3f0ec96edcd2c3d2c875f6aae706fab392"
+    },
+    {
+      "path": "scripts/quality_check.py",
+      "bytes": 4892,
+      "sha256": "4a51021394b5b18ce2811ac6af5ca869a2c0b74f35bce69b75e62c6038bec1e1"
+    },
+    {
+      "path": "scripts/verify_physics.py",
+      "bytes": 11581,
+      "sha256": "1f3ac380be033dd63d7e402b1d33be7c59b5b480ee3e9128b084e06507a3061f"
+    },
+    {
+      "path": "sources/原卷-01.png",
+      "bytes": 4907382,
+      "sha256": "277e1a596c42bc118e9db3475be088b5dffd18054a5bbd1b374931869c8efe6e"
+    },
+    {
+      "path": "sources/原卷-02.png",
+      "bytes": 5333115,
+      "sha256": "ef658b29bbe8ee43393565783f26fac2b6c9c5639b0be99868706dfdef845e8e"
+    },
+    {
+      "path": "sources/原卷-03.png",
+      "bytes": 5930758,
+      "sha256": "086358270dbc82fdf013266f530c46c688b6131f23bba78327a9a3c8de45224a"
+    },
+    {
+      "path": "sources/原卷-04.png",
+      "bytes": 4075858,
+      "sha256": "d9d52b35ba7d8a53af05fdfe732f4711825219980db7024722dac7bb84411185"
+    },
+    {
+      "path": "sources/原卷-05.png",
+      "bytes": 2288591,
+      "sha256": "bde8b914e62bd49f68b7357537be5529c6329e86f2e1c740e75f4cc4c68c53e2"
+    },
+    {
+      "path": "sources/原始资料清单.json",
+      "bytes": 423,
+      "sha256": "47c80c1f7a23f54bd577cd52db8a8a4774017b4ca5f960f430552aa165bb38e9"
+    },
+    {
+      "path": "sources/参考解答.txt",
+      "bytes": 102219,
+      "sha256": "2ef47e014c4f0f2d413efa81656541bc90bbf4d113f403d88e7fbd19ca0ddc51"
+    },
+    {
+      "path": "sources/理论试题.txt",
+      "bytes": 300,
+      "sha256": "f6121efa77a20d08328a4e9b598d6fbc916813d8cf6d0600b65aaed11180a808"
+    },
+    {
+      "path": "sources/答案-01.png",
+      "bytes": 288595,
+      "sha256": "590f99a2021c2f1446c4e25fe7e333d8d03329f9dd1156ae9ada33ee244781ad"
+    },
+    {
+      "path": "sources/答案-02.png",
+      "bytes": 215469,
+      "sha256": "8b0c028fa1e00669777ae2b1d633e51cd0a02b88795830a8b32fd4dd080cbeed"
+    },
+    {
+      "path": "sources/答案-03.png",
+      "bytes": 315374,
+      "sha256": "1fb77675b4d78f2c72aff20be810002f651d1805e76190c3458b0cf9d2ef6722"
+    },
+    {
+      "path": "sources/答案-04.png",
+      "bytes": 248148,
+      "sha256": "b112c11f9542412cd8bc2f4ed98f14adb3abadf555a76c0decfc20b84eccb466"
+    },
+    {
+      "path": "sources/答案-05.png",
+      "bytes": 278284,
+      "sha256": "0ce3336887fb70842795089858d69a7c23822128aa42bc8c21c45e8b2bd0c9c5"
+    },
+    {
+      "path": "sources/答案-06.png",
+      "bytes": 166245,
+      "sha256": "58bafdf50c75bc270776cd633ef4894736615526ccfa6e147bbc1921e2ee2e0e"
+    },
+    {
+      "path": "sources/答案-07.png",
+      "bytes": 268548,
+      "sha256": "fb5431968e27027e9f4e0187fcbef53f07fae565414826c10ce341b0b885a101"
+    },
+    {
+      "path": "sources/答案-08.png",
+      "bytes": 301164,
+      "sha256": "30bfd30d46af5c6f39b062812276937413014617c1f4fd0fabc867e17820f960"
+    },
+    {
+      "path": "sources/答案-09.png",
+      "bytes": 176997,
+      "sha256": "6dc54559aab7c525ba972b28ec484d36f7f4113eb461ef5656a68fa953bc5281"
+    },
+    {
+      "path": "sources/答案-10.png",
+      "bytes": 303957,
+      "sha256": "39b903cd4cba78fd4c70e65a55012c62300cc2148873953026689ce609aa3832"
+    },
+    {
+      "path": "sources/答案-11.png",
+      "bytes": 196951,
+      "sha256": "4ad5b7648d367563073e3d318625dde6b7a0764de43e521f20805b933486300d"
+    },
+    {
+      "path": "sources/答案-12.png",
+      "bytes": 236883,
+      "sha256": "fa9d9af065fb0b34155f841503ab25d4768c48e80e85978d5cd0c607593d82f9"
+    },
+    {
+      "path": "sources/答案-13.png",
+      "bytes": 248032,
+      "sha256": "f55b17cc6ffcd0b27c11ed5f6209b48a13aa89e83a590c01fd680f90698120c6"
+    },
+    {
+      "path": "sources/答案-14.png",
+      "bytes": 121481,
+      "sha256": "a628fba82b28dd426a87e4b412e2dc158e4ba822c5faa7443c3e4bbade722461"
+    },
+    {
+      "path": "sources/答案-15.png",
+      "bytes": 193523,
+      "sha256": "9fb797f12edf0ca34d29904142375e62f9d2e063de6ea1fe482a511b3c55d107"
+    },
+    {
+      "path": "sources/答案-16.png",
+      "bytes": 182544,
+      "sha256": "184726438e89efdf55022685007d6931a2020fe33fb2e8b91917ae02465827b2"
+    },
+    {
+      "path": "sources/答案-17.png",
+      "bytes": 178475,
+      "sha256": "9ba8d47a2d5d8461dbd689ff5dd5690021b62097dd5ef9b4ae43abe6c27ecf26"
+    },
+    {
+      "path": "sources/答案-18.png",
+      "bytes": 274247,
+      "sha256": "7425eda21dd67e77ea0b3eb3960f9257965cbe66f748ad18ff64191ba6c417b9"
+    },
+    {
+      "path": "sources/答案-19.png",
+      "bytes": 253061,
+      "sha256": "ed005f9fc419cd38968c14de63c55f690504077a23c11f38bbb0abee02ab2cf9"
+    },
+    {
+      "path": "核验/document-results.json",
+      "bytes": 6609,
+      "sha256": "7916057189d18beb04142314be0ab9220fc60664b0dce065dd4318f2ddf93024"
+    },
+    {
+      "path": "核验/native-compile-results.json",
+      "bytes": 1045,
+      "sha256": "32ee3144744dfbbe2b26b12f7312eb44dee5f585d60bc9a666d0de1d8c5412a3"
+    },
+    {
+      "path": "核验/physics-results.json",
+      "bytes": 16614,
+      "sha256": "4ea4e227e67d56fd75bdfd28da7969ecfae5a7de9ce1b88e0e6ab110224c1839"
+    },
+    {
+      "path": "核验/rebuild-results.json",
+      "bytes": 687,
+      "sha256": "0cd21c7ee48423eccc686679478667a2ef617167eeee0af041ae42f10d249bba"
+    },
+    {
+      "path": "核验/visual-review.json",
+      "bytes": 2236,
+      "sha256": "ebb4488c42ba3bd681569a1ec76163176dc3d98b6a43683663de25f178e79209"
+    },
+    {
+      "path": "核验/原卷与答案核对.md",
+      "bytes": 4682,
+      "sha256": "731eeebc817fb3a91fd648d2ea2e9652bc71f02230eaf47cc1f3e4c70fa5cb79"
+    },
+    {
+      "path": "核验/页数与版式说明.md",
+      "bytes": 2235,
+      "sha256": "83e21af78bc8196bcdcc5674e266574848252171e950fae20d3781d32d1f4604"
+    },
+    {
+      "path": "核验/验收报告.md",
+      "bytes": 4115,
+      "sha256": "a429122acce0ef757818759a2a225c6424fa5d6428c8339c67a1b898b3a7de2a"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛参考解答.pdf",
+      "bytes": 1048778,
+      "sha256": "14d621cc9a7aa29cb22fabcef574ba6fd5bd797755d62e62e1e7fa2fd3b903a9"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/第41届复赛理论试题.pdf",
+      "bytes": 2962294,
+      "sha256": "7f5d6a3c62a74bc0c75a80d62920e78613986131dbe76b41ae7210129c65d3f5"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/README.md",
+      "bytes": 5045,
+      "sha256": "643a191521afba983bb932bfa32ba6f983a0490c54c5bb1f47e144b965c0a7de"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/质心模拟题处理流程_学习笔记.md",
+      "bytes": 7916,
+      "sha256": "6c070cff598d79660de671cc42aa290ece0dac752802d5a9e5df0dcba3748547"
+    }
+  ]
+}

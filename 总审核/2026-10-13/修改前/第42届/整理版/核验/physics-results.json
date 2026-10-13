@@ -1,0 +1,301 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "Q1 Gaussian density from initial position/velocity quadrature",
+      "computed": 0.36866833836427615,
+      "expected": 0.3686683383642757,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q1 downward-only flux from velocity-domain quadrature",
+      "computed": 0.6472019393576501,
+      "expected": 0.647201939357649,
+      "max_abs_error": 1.1102230246251565e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q1 signed net flux from complete velocity-domain quadrature",
+      "computed": 0.6472019393576498,
+      "expected": 0.647201939357649,
+      "max_abs_error": 7.771561172376096e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q1 density and flux peak direct optimization",
+      "computed": [
+        1.3862176475760895,
+        1.385652659831274
+      ],
+      "expected": [
+        1.3862176454336053,
+        1.3856526589154512
+      ],
+      "max_abs_error": 2.1424841900596903e-09,
+      "tolerance": 4e-08,
+      "passed": true
+    },
+    {
+      "name": "Q1 strong-trap integrated arrival flux equals total particle number",
+      "computed": 1.00000000000002,
+      "expected": 1.0,
+      "max_abs_error": 1.9984014443252818e-14,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "Q2 second-order focus first and second derivatives",
+      "computed": [
+        -1.6000090141687906e-07,
+        4.440892098500626e-07
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "max_abs_error": 4.440892098500626e-07,
+      "tolerance": 1.5e-06,
+      "passed": true
+    },
+    {
+      "name": "Q2 residual displacement leading cubic",
+      "computed": -1.600004750912376e-08,
+      "expected": -1.6e-08,
+      "max_abs_error": 4.750912375939545e-14,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Q2 independent ballistic intersection with inclined detector",
+      "computed": 1.1276524304533302,
+      "expected": 1.12765243045333,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q2 nonuniform slit asymmetry integral and inversion",
+      "computed": [
+        -0.09863999999999996,
+        0.2400000000000002
+      ],
+      "expected": [
+        -0.09864,
+        0.24
+      ],
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q3 single-device four-terminal result with all contacts nonzero",
+      "computed": 2.0000000000000018,
+      "expected": 2.0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q3 open series complete port-network solve",
+      "computed": 4.003599999999986,
+      "expected": 4.0036,
+      "max_abs_error": 1.3322676295501878e-14,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "Q3 compensated series complete port-network solve",
+      "computed": [
+        4.000003593172977,
+        0.0008982932428378892
+      ],
+      "expected": [
+        4.000003593172972,
+        0.0008982932428386068
+      ],
+      "max_abs_error": 5.329070518200751e-15,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "Q3 triple parallel complete port-network currents and voltage",
+      "computed": [
+        -0.010667349377026993,
+        -0.0008318575202268209,
+        1.0000415928760114
+      ],
+      "expected": [
+        -0.010667349377026797,
+        -0.0008318575202268602,
+        1.0000415928760114
+      ],
+      "max_abs_error": 1.960237527853792e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "Q4 lab-time Lorentz ODE vs parametric momentum and trajectory",
+      "computed": 6.6844307866631425e-12,
+      "expected": 0.0,
+      "max_abs_error": 6.6844307866631425e-12,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "Q4 light-front invariant over entire integrated orbit",
+      "computed": 7.771561172376096e-15,
+      "expected": 0.0,
+      "max_abs_error": 7.771561172376096e-15,
+      "tolerance": 3e-10,
+      "passed": true
+    },
+    {
+      "name": "Q4 direct injection-angle optimization",
+      "computed": [
+        0.25946681705991537,
+        7.097331120862241
+      ],
+      "expected": [
+        0.259466814799213,
+        7.0973311208622425
+      ],
+      "max_abs_error": 2.2607023475451626e-09,
+      "tolerance": 4e-08,
+      "passed": true
+    },
+    {
+      "name": "Q4 nonlinear radiation loss over one optical period",
+      "computed": 0.6053433413307509,
+      "expected": 0.6053433413307506,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true,
+      "details": {
+        "chi": 0.6519550670230545,
+        "fractional_loss": -0.3946566586692493
+      }
+    },
+    {
+      "name": "Q5 Josephson integrated current over width",
+      "computed": 0.539609166782091,
+      "expected": 0.5396091667820908,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q5 sine-Gordon fluxon via finite-difference second derivative",
+      "computed": 1.3177523111584932e-07,
+      "expected": 0.0,
+      "max_abs_error": 1.3177523111584932e-07,
+      "tolerance": 3e-07,
+      "passed": true
+    },
+    {
+      "name": "Q5 tilted-well barrier from stationary-point energies",
+      "computed": 0.9761409015510227,
+      "expected": 0.976140901551023,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q5 RCSJ small-oscillation period from independent nonlinear ODE",
+      "computed": 6.51875395413788,
+      "expected": 6.518753954154556,
+      "max_abs_error": 1.667554982986985e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "Q5 junction propagation speed ratio",
+      "computed": 0.0553001263609331,
+      "expected": 0.0553,
+      "max_abs_error": 1.26360933098979e-07,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "Q6 fixed-angular-momentum effective-potential curvature",
+      "computed": 2.9162929491923153,
+      "expected": 2.916292652707274,
+      "max_abs_error": 2.9648504140666887e-07,
+      "tolerance": 6e-07,
+      "passed": true
+    },
+    {
+      "name": "Q6 free-rotor tilt period from nonlinear ODE",
+      "computed": 3.6792925114264876,
+      "expected": 3.679292511354591,
+      "max_abs_error": 7.189671080709559e-11,
+      "tolerance": 3e-07,
+      "passed": true
+    },
+    {
+      "name": "Q6 post-impact conservation of effective energy",
+      "computed": 3.3306690738754696e-16,
+      "expected": 0.0,
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q6 added shaft-inertia variant via numerical curvature",
+      "computed": 1.5408000074236738,
+      "expected": 1.5408000421973949,
+      "max_abs_error": 3.477372101379217e-08,
+      "tolerance": 4e-07,
+      "passed": true
+    },
+    {
+      "name": "Q7 full Fermat ray ODE vs analytic Cartesian solution",
+      "computed": 4.884981308350689e-15,
+      "expected": 0.0,
+      "max_abs_error": 4.884981308350689e-15,
+      "tolerance": 4e-10,
+      "passed": true
+    },
+    {
+      "name": "Q7 both Fermat invariants along numerical ray",
+      "computed": [
+        1.1102230246251565e-15,
+        8.187894806610529e-16
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "max_abs_error": 1.1102230246251565e-15,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "Q7 first-integral radial extrema vs ellipse matrix eigenvalues",
+      "computed": [
+        0.06286920833136705,
+        0.2842814986838615
+      ],
+      "expected": [
+        0.06286920833136696,
+        0.28428149868386193
+      ],
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Q7 period-averaged travel time independent quadrature",
+      "computed": 5.014486362546977e-09,
+      "expected": 5.014486362546977e-09,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-20,
+      "passed": true
+    }
+  ],
+  "script_sha256": "f0774c3ece570c7591ce93eb30d3d82c3cbb8a06069d7a7ec6e5d7791786aba6",
+  "scope": "Specified numerical parameters; source contains analytic derivations. Numerical agreement is not a universal proof."
+}

@@ -1,0 +1,26 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}
+\foreach \x/\title in {0/碰前定轴,4.8/碰后解锁,9.6/首次纯滚动}{
+\begin{scope}[shift={(\x,0)}]
+\node at (0,2.9) {\title};
+\draw (0,1) circle(.8); \draw[thick] (-1.8,.35)--(.7,1.3);
+\draw[thick] (-2,.2)--(1,.2);
+\fill (0,1) circle(1.8pt);
+\end{scope}}
+\node at(0,-.35) {$\omega_f>0,\quad v_O=0$};
+\node at(4.8,-.35) {$v=v_0,\quad\omega_w=0$};
+\node at(9.6,-.35) {$v=v_1=r\omega_w$};
+\draw[arr] (1.7,1.4)--(2.8,1.4) node[midway,above] {碰撞};
+\draw[arr] (6.5,1.4)--(7.6,1.4) node[midway,above] {滑动};
+\draw[arr,blue] (4.8,1)--(5.9,1);
+\draw[arr,blue] (9.6,1)--(10.7,1);
+\node[red] at (7.3,-1.15) {$u=v-r\omega_w\searrow0$};
+\end{tikzpicture}
+
+\end{document}

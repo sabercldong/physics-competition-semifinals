@@ -1,0 +1,17 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=1.15,yscale=1.7]
+\draw[arr] (.5,-1.1)--(6.5,-1.1) node[right] {$r$};
+\draw[arr] (.7,-1.2)--(.7,1.2) node[above] {$U_{\rm eff}/m$};
+\draw[blue,thick,domain=.75:6,samples=100] plot(\x,{1.5/(\x*\x)-2/\x});
+\draw[red] (.8,-.4)--(6,-.4) node[right] {$\varepsilon$};
+\draw[dashed] (1.2,-1.05)--(1.2,.25) node[above] {$R$};
+\draw[dashed] (4.08,-1.05)--(4.08,-.4) node[above] {$r_0$};
+\node at(3.8,.8) {$U_{\rm eff}/m=j^2/(2r^2)-GM/r$};
+\end{tikzpicture}
+\end{document}

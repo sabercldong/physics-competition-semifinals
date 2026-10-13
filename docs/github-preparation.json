@@ -1,0 +1,22 @@
+{
+  "prepared_at": "2026-10-13T12:02:07+08:00",
+  "repository": "sabercldong/physics-competition-semifinals",
+  "visibility": "private",
+  "changes": {
+    "README.md": {
+      "before_sha256": "047f76a5199ecc7fb2b79b0ef692df112ad0b3bfbb3af80f53ce4a3b48daced6",
+      "after_sha256": "acbcf4ec83de7b3b2e1824a20c0931e7105367954ba8d7ac52dc7ef039310a30"
+    },
+    "refreshed_manifests": [
+      "第41届/整理版/SHA256清单.json",
+      "第42届/整理版/SHA256清单.json",
+      "第43届/整理版/SHA256清单.json"
+    ],
+    "docs/审核报告.md": {
+      "derived_from": "总审核/2026-10-13/审核报告.md",
+      "source_sha256": "8c3aae95578c52ce9cd1f9145be13b12d89ba506ac1a7b1d043458a21394d3da",
+      "method": "仅将项目内文件链接改为相对路径；原审核报告不改动"
+    }
+  },
+  "preserved": "原题主稿、生成的LaTeX、27份PDF和总审核证据文件保持原样"
+}

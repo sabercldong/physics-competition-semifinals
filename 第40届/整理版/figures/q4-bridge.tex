@@ -1,0 +1,39 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=.75]
+\draw[thick] (-.8,0)--(9.5,0);
+\begin{scope}[rotate=45]
+\draw[thick,fill=gray!12] (0,0)--(7.5,0)--(7.5,.414214)--(0,.414214)--cycle;
+\end{scope}
+\begin{scope}[shift={(8.778175,0)},rotate=135]
+\draw[thick,fill=gray!12] (0,-.414214)--(7.5,-.414214)--(7.5,0)--(0,0)--cycle;
+\end{scope}
+\draw[thick,fill=white] (.639088,3.474874)--(8.139088,3.474874)--(8.139088,3.889088)--(.639088,3.889088)--cycle;
+\draw[thick,fill=white] (2.389088,3.267767) circle(.207107);
+\draw[thick,fill=white] (6.389088,3.267767) circle(.207107);
+\draw[thick,fill=white] (4.389088,4.096194) circle(.207107);
+\node[font=\scriptsize] at (2.389088,3.267767) {$A$};
+\node[font=\scriptsize] at (6.389088,3.267767) {$A'$};
+\node[font=\scriptsize] at (4.389088,4.096194) {$B$};
+\node[left] at (.639088,3.681981) {$C$};
+\node[left] at (.35,.65) {$D$};
+\node[right] at (8.4,.65) {$D'$};
+\draw (1,0) arc(0:45:1); \node at (1.12,.35) {$\theta$};
+\draw[<->,dashed] (-.6,.6)--(2.228427,3.428427) node[midway,left] {$a$};
+\draw[<->,dashed] (-1,1)--(3.242641,5.242641) node[midway,left] {$b$};
+\node at (4.4,-.7) {侧视投影：相交长杆不发生接触};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

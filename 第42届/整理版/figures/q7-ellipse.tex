@@ -1,0 +1,19 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](-2.8,0)--(2.8,0)node[right]{$x$};
+\draw[->](0,-1.8)--(0,1.8)node[above]{$y$};
+\draw[blue,thick,rotate=25](0,0)ellipse(2.3 and 1);
+\draw[dashed](0,0)--(2.084,.971)node[right]{$\rho_{\max}$};
+\draw[dashed](0,0)--(-.4226,.9063)node[above]{$\rho_{\min}$};
+\draw[->,red](1.3,.45)--(1.8,1.1);
+\node[anchor=west]at(2.35,.5){切线方向示意};
+\node at(-1.7,-1.5){横截面投影为椭圆};
+\end{tikzpicture}
+
+\end{document}

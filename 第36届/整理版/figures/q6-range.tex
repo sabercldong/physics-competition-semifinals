@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=3.1,yscale=3.2]
+\draw[arr] (-1.1,.52)--(1.3,.52) node[right] {$\cos\vartheta_*$};
+\draw[arr] (-1.1,.52)--(-1.1,1.18) node[above] {$E_\mu/E_{\max}$};
+\draw[thick,blue,domain=-1:1] plot(\x,{(1+.26188772*\x)/1.26188772});
+\fill[red] (-1,.584953) circle(.65pt);\fill[red] (1,1) circle(.65pt);
+\node[below] at(-1,.52) {$-1$};\node[below] at(1,.52) {$1$};
+\node at(-.45,.86) {$u_{\min}=0.939713c$};
+\node[above right] at(.7,1.08) {$u_{\max}=0.979791c$};
+\node at(.1,.27) {固定质量：能量越大，速率越大};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,28 @@
+{
+  "status": "已完成",
+  "completed_at": "2026-10-13T11:55:03+08:00",
+  "exams": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+  ],
+  "questions": 67,
+  "variants": 268,
+  "pdfs": 27,
+  "pages": 1301,
+  "prose_edits": 106,
+  "physics_checks": 392,
+  "native_compiles": 27,
+  "isolated_rebuilds": 9,
+  "changed_pages_visually_reviewed": 158,
+  "pixel_identical_pages": 1143,
+  "pending_items": [],
+  "report_sha256": "8c3aae95578c52ce9cd1f9145be13b12d89ba506ac1a7b1d043458a21394d3da",
+  "bundle_sha256": "a6479c7bf3812732322bf1440244dc06e9d0418f7459901e583ccab1286dd8fe"
+}

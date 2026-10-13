@@ -1,0 +1,117 @@
+{
+  "status": "已完成",
+  "stage": "三版、正文页数与简洁版式验收完成",
+  "completed_at": "2026-10-11T23:50:04+08:00",
+  "questions": 7,
+  "total_points": 320,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "variants": 28,
+  "figures": 21,
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛参考解答.pdf",
+      "pages": 27,
+      "sha256": "69a900024b46b94329d0419cfd3bf7b1bc84309bab512e2004b0b7d05feb905d",
+      "text_chars": 82675
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第42届/第42届复赛理论试题.pdf",
+      "pages": 5,
+      "sha256": "47f3895287424f58f96f3c91416928329f3e3b283e11f79d44d0d57e5a38565c",
+      "text_chars": 5
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第42届_学生详解版.pdf",
+      "pages": 59,
+      "body_pages": 58,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "b285e7a93df429e8d9e5f0c5416a3ba932da280b125bf4575e0a41aa84abacca",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        28,
+        36,
+        44,
+        52
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_教师备课版.pdf",
+      "pages": 73,
+      "body_pages": 72,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "1941dcf6ea48fa21ed2d5c85b90150175ccdf13cb00619d9106f3e0f22bb7eab",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        13,
+        24,
+        34,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_试题版.pdf",
+      "pages": 10,
+      "body_pages": 9,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "77f5baf6d7a18ac5e8ab3b9736294da7bd7889fe426d07902883aee3731b7161",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "minimum_body_pages": {
+    "学生详解版": 56,
+    "教师备课版": 71
+  },
+  "independent_calculation_checks": 30,
+  "checks": {
+    "originals_unchanged": true,
+    "physics": true,
+    "structure": true,
+    "core_identical": true,
+    "body_page_minima": true,
+    "simple_cover_and_no_headers": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "pending_items": []
+}

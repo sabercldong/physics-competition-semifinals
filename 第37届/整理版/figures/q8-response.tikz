@@ -1,0 +1,10 @@
+\begin{tikzpicture}[xscale=3,yscale=3]
+\draw[arr] (.15,0)--(2.2,0) node[right] {$\omega/\omega_0$};
+\draw[arr] (.15,0)--(.15,1.15) node[above] {$|V_c/V|$};
+\draw[thick,blue,domain=.2:2,samples=150] plot(\x,{1/sqrt(1+25*\x*\x)});
+\draw[thick,red,domain=.2:2,samples=250] plot(\x,{1/sqrt(1.01^2+25*(\x-1/\x)^2)});
+\draw[dashed] (1,0)--(1,1); \node[below] at (1,0) {$1$};
+\node[blue] at (.62,1.25) {无补偿};
+\node[red] at (1.5,1.25) {谐振补偿};
+\node at (1.2,-.42) {峰值受损耗限制，恢复只在调谐频带内};
+\end{tikzpicture}

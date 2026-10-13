@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=.85]
+\draw[arr](-5,0)--(5,0)node[right]{$x$};
+\fill[green!15](-.7,-.3)rectangle(.7,.3);
+\node[below]at(-.7,-.3){$-b$};\node[below]at(.7,-.3){$b$};
+\foreach \x/\s in {-4/A_0,2.6/A_0-2b,-1.2/4b-A_0}{\fill(\x,0)circle(2pt);}
+\draw[arr,blue](-4,.8)--(2.6,.8)node[midway,above]{右行：$x_1=-2b-x_0$};
+\draw[arr,red](2.6,1.7)--(-1.2,1.7)node[midway,above]{左行：$x_2=2b-x_1$};
+\node at(0,-1.1){停在静摩擦带内时，不能直接续用转折点递推};
+\end{tikzpicture}

@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "verified_at": "2026-10-13T11:55:03+08:00",
+  "results": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/latex/第37届_学生详解版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "c77fd6edd9352f00b6ddc87e11ca7866955060b3432a8807d5f9f5fbfae41805"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/latex/第37届_教师备课版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "3f5dbc70425b4d053735361e0212f73804fa235685837159df4d14cc2c650efa"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/整理版/latex/第37届_试题版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "bbb2f0947909ea174fddfa9f0a30d77f38fbcca57f2243e417c23bd236a91eaf"
+    }
+  ]
+}

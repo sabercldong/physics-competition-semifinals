@@ -1,0 +1,23 @@
+[
+  {
+    "pdf": "第35届_学生详解版.pdf",
+    "pages": 57,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第35届_教师备课版.pdf",
+    "pages": 74,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第35届_试题版.pdf",
+    "pages": 10,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  }
+]

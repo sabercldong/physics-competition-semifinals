@@ -1,0 +1,26 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\begin{document}
+\small
+
+\begin{tikzpicture}
+\fill[gray!14] (-2.8,-1.5) rectangle (3.5,-.8);
+\draw[thick] (-2.8,-.8)--(3.5,-.8);
+\node at (.5,-1.17) {地球表面（局部示意）};
+\draw[thick] (0,0)--(0,3);
+\fill (0,0) circle(3pt) node[left] {接触器 $m_2$};
+\fill (0,3) circle(4pt) node[left] {卫星 $m_1$};
+\draw[arr,thick] (.12,.5)--(.12,2.4) node[midway,right] {$I$};
+\draw[arr] (0,3)--(2.2,3) node[above] {$v_0$};
+\draw[arr] (-1,1)--(-1,2.4) node[left] {$\hat{\boldsymbol r}$};
+\draw[<->] (.8,0)--(.8,3) node[midway,right] {$L$};
+\foreach \x in {-2,2.8}\foreach \y in {.2,1.4,2.6}
+ \node at (\x,\y) {$\otimes$};
+\node at (3.2,3.5) {$\boldsymbol B$};
+\node at (.8,-2) {$+\hat{\boldsymbol z}$ 指向纸内};
+\end{tikzpicture}
+\end{document}

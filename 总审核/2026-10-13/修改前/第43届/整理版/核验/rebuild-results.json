@@ -1,0 +1,27 @@
+{
+  "all_passed": true,
+  "isolated_directory": "/var/folders/1v/t1yfjxmd0mjd4q8wrjxhfkhw0000gn/T/codex-43-rebuild-oavs23ys",
+  "results": [
+    {
+      "pdf": "第43届_学生详解版.pdf",
+      "pages": 60,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第43届_教师备课版.pdf",
+      "pages": 74,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第43届_试题版.pdf",
+      "pages": 8,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1.15]
+\draw[thick] (-1.8,0)--(2,0); \draw[thick] (0,1) circle(1);
+\draw[arr,red,very thick] (0,0)--(1.3,0) node[right] {$f=\mu mg$};
+\draw[arr] (0,1)--(0,.65); \node[left] at (-.1,.82) {$mg$};
+\draw[arr] (0,0)--(0,.4); \node[right] at (.1,.2) {$N$};
+\draw[arr,blue] (0,1)--(1.4,1) node[right] {$v$增大};
+\node at (0,2.6) {$\omega$减小，$v-R\omega$趋零};
+\end{tikzpicture}
+
+\end{document}

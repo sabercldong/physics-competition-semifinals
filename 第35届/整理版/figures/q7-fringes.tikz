@@ -1,0 +1,7 @@
+\begin{tikzpicture}[xscale=1.1,yscale=2]
+\draw[arr](-3.4,0)--(3.7,0)node[right]{$X$};
+\draw[blue,thick,domain=-3:3,samples=190]plot(\x,{exp(-.21*\x*\x)*(cos(360*\x))^2});
+\draw[red,dashed,domain=-3:3,samples=100]plot(\x,{exp(-.21*\x*\x)});
+\draw[<->](0,-.22)--(.5,-.22)node[midway,below]{短周期};
+\node at(0,1.35){包络示意；实测时沿垂直细丝的方向取点};
+\end{tikzpicture}

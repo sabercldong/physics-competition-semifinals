@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\coordinate(A)at(0,0);\coordinate(B)at(5,0);
+\draw[->](-1,0)--(A)node[midway,above]{$I$};
+\draw(A)--(0,1.4)--(5,1.4)--(B);
+\node[draw,fill=white]at(2.5,1.4){$R$};
+\draw(A)--(B); \node[draw,fill=white]at(2.5,0){$J:\ I_0\sin\delta$};
+\draw(A)--(0,-1.4)--(5,-1.4)--(B);
+\node[draw,fill=white]at(2.5,-1.4){$C$};
+\draw[->](B)--(6,0);
+\draw[<->](.4,-2)--(4.6,-2)node[midway,below]{$U=\hbar\dot\delta/(2e)$};
+\end{tikzpicture}

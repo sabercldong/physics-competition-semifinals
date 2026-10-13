@@ -1,0 +1,236 @@
+{
+  "structure": [
+    {
+      "question": "question-01",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "0e04ef01cc00402eec5ccbea827c37bb9250f62149e851618e8129382f7abab3"
+    },
+    {
+      "question": "question-02",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "09ab2ece5ae6c81537facf95b5d48481bce777f739e127b16231b4ab361d97f9"
+    },
+    {
+      "question": "question-03",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "dcbe57fbe12b3dadc6950341f3566192cdce86fd7c455ab36b730a35157d8174"
+    },
+    {
+      "question": "question-04",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "0f8b346f43e978f4cc9671a0f3d1274de4e6b5d8fa9cc6636623605244312c3c"
+    },
+    {
+      "question": "question-05",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "3fc68fd0dfe5d4fa3f2060a044d3c42136dad4a573a31735ff8880f6b3a95718"
+    },
+    {
+      "question": "question-06",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "29b92f1b90cee130e1c5350074904d27804d2d4039511798b77b53f951e41e3c"
+    },
+    {
+      "question": "question-07",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "d52458e2ef7b2350f4c893dd8aa772e84faf599297c4ce84522fb429b478a3fd"
+    },
+    {
+      "question": "question-08",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "30442ba6071469965c86c677e61d056b6f31b73441854155952cc63b06f42e31"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第38届_学生详解版.pdf",
+      "pages": 62,
+      "body_pages": 61,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "eb19455535cc5a285484e9f8196f78efa9883f46eb2e1d78fb3fb4295a7117c6",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        46,
+        54
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_教师备课版.pdf",
+      "pages": 75,
+      "body_pages": 74,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "8f34f2a29da8cee348d208be4bb11ed86f9f1e34bc05fefeb385c724842fab92",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        10,
+        19,
+        28,
+        37,
+        45,
+        56,
+        65
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "d9102ddd8c106c2925b70f0907033a786ee43b1323f17f5725e8ba443aabeb77",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "figures": [
+    {
+      "name": "q1-branch.tikz",
+      "sha256": "3b3a2bcf10675a3d3666b1c093927fc31ece384d5e12eed0bc802d4b8074e03d",
+      "vector_pdf_sha256": "f3168f94ac25a0074d88db1bc1c96450b970d904b255d8eaeba3fd596599b8dc"
+    },
+    {
+      "name": "q1-lens.tikz",
+      "sha256": "fb09e68b40dbe7dfce48bcfdfb0d47a459d1c848b40a57d448b4d4b73fdfb963",
+      "vector_pdf_sha256": "efb90d812ba004e4018044880bb5ce41419849448c76b1b0b9e3d99c1b3d80c0"
+    },
+    {
+      "name": "q1-pair.tikz",
+      "sha256": "0144f0d44ff28d86fe0d177b0392e28c1c9a99a00267f22ea5936844704116c5",
+      "vector_pdf_sha256": "ee58f82df73499f74b3edb1777c44ce830f9620dfbbec4b0b04ad39b338b8724"
+    },
+    {
+      "name": "q2-pv.tikz",
+      "sha256": "6363f0f7e9934f802c1c0f2172796532793067a27af821dba46a002959f28dcd",
+      "vector_pdf_sha256": "9b77f1fe6ffa66557400f2c4dc90c39ceecc2563472aba3e054aefc5388da89d"
+    },
+    {
+      "name": "q2-temperature.tikz",
+      "sha256": "50ad934b197321d49e408427f3c40ad0781876ef760e35c64725a6e105357e1e",
+      "vector_pdf_sha256": "a6b02134572549b7f891d1767f950e601adb91692d5b19c97e36031153964283"
+    },
+    {
+      "name": "q2-tube.tikz",
+      "sha256": "bd70b38c6c1af3383a461283ebb2305a5243c35012ed63b054e6954be5777fe0",
+      "vector_pdf_sha256": "74a5bfc1558e713ecc3c24396e5eeb3ebbc2d8c9cd43b883272f5a27177558b3"
+    },
+    {
+      "name": "q3-bounces.tikz",
+      "sha256": "ad63510270673ceef9dad3a74b4f1259b03cffa2dc589b3b323c1744af829c4f",
+      "vector_pdf_sha256": "e332b81476b27abc0ba074a92086fa43e45dd577fc5c8dfa341e74006ad5ffb8"
+    },
+    {
+      "name": "q3-contact.tikz",
+      "sha256": "5254181c4097b47d3e20fab8e4baf4b429f9155955eb8580f6445e1d84f28b93",
+      "vector_pdf_sha256": "d4d0979af2080e1a70b42f2ca6ad3267db71d27bf931e495191faba3dea9a682"
+    },
+    {
+      "name": "q4-angle.tikz",
+      "sha256": "2cde146922d2c44b230561327129f2913943f3de4670fdc104f7045d797d46d0",
+      "vector_pdf_sha256": "a9c10f8a837ca02f37afdf1d8552f4a157d98887fe84528d112ffda3cd78a283"
+    },
+    {
+      "name": "q4-dipoles.tikz",
+      "sha256": "9ab15c7409a33595da25e55f2f2fb16890d6d0ff38798420b5ddf9c27f101744",
+      "vector_pdf_sha256": "e1e7e232b4a04459e976ac959b34cd2d1fa940a7e602a6f50406b7fd77a7bf43"
+    },
+    {
+      "name": "q4-height.tikz",
+      "sha256": "b72be8bc3d456475fce3db8bdd1e54498a751577643e99ca1a3901504ab1f678",
+      "vector_pdf_sha256": "27e77a4d91d113a4487272e2bb486a209c51339efe8c22502e8f965dd548a050"
+    },
+    {
+      "name": "q5-profiles.tikz",
+      "sha256": "5fdc035f121fef39a5b00976df79be70fe9e6eb3100bd1e6291ea409cd974e7a",
+      "vector_pdf_sha256": "d8379bf84c913814b851e5b812bf7b754e251b2a3f85606680b10b91d446ee40"
+    },
+    {
+      "name": "q5-slower.tikz",
+      "sha256": "8e0fb5c73a25e45107ea29615d7d1500653cb55dc0352b6f14413b72c0d5ad51",
+      "vector_pdf_sha256": "53d7a2139681734624730057754501c7dc786729db56d93a2cd4233633b79248"
+    },
+    {
+      "name": "q6-cylinders.tikz",
+      "sha256": "674ef50e39f777db085b27097ed8eb866b5557aad30fa1bc09cce637d506b12b",
+      "vector_pdf_sha256": "ec1dc4a89948263a3db01b483f2b05cbfe2a20f9a166f1cbcc2b86331d51994b"
+    },
+    {
+      "name": "q6-fields.tikz",
+      "sha256": "ec58f6097b6c41816fd98c62c85c1e2ca835971ac2b0f28d85a3450a29f6d70c",
+      "vector_pdf_sha256": "2a4ade78a54472f859cfb3177f923ca918f42d28bb4b4d9c019e18a88b8a6b1f"
+    },
+    {
+      "name": "q6-induction.tikz",
+      "sha256": "870defc78cfab2717d7a61d323d0a0b6ca35f5e13149811ab44afd1ed67a28b8",
+      "vector_pdf_sha256": "199f71593b92cae20a8e314d7be213ec663bd2a127c6ad567ff89efe48e91ef9"
+    },
+    {
+      "name": "q6-radial.tikz",
+      "sha256": "875adbb7026fc873ce4c803ff07afa367679469a521e62d85c443148de20ca45",
+      "vector_pdf_sha256": "5a8a67f3df068a700c2d136e8424da74c52258778344c8c597c2e70ee110c823"
+    },
+    {
+      "name": "q7-car.tikz",
+      "sha256": "4c4627b276a6f0e74dc41b26bb39fcc43a6b3506f00e068cfdf938ed4296f770",
+      "vector_pdf_sha256": "2777b14c740621c73ad5b3bd50caa901e375c7014686cf23e9ab2a4a0e82ae63"
+    },
+    {
+      "name": "q7-forces.tikz",
+      "sha256": "b0e1afbea28868009190285288d0e344331c678d9801ebe7403d53d647f00189",
+      "vector_pdf_sha256": "c012ee6d4f6bfa17d42dcb6c5cd65947f92e44303225fee10cb564719146b6e5"
+    },
+    {
+      "name": "q8-curves.tikz",
+      "sha256": "f8d8246f4c757141077b03756ac3ed3f19280f7565bc4128745e32bc4300fd6f",
+      "vector_pdf_sha256": "7aeb2bb3415cbfeeffdb35b2be8f3a7ad1e84b210ce4525f31bf1115914e362d"
+    },
+    {
+      "name": "q8-motor.tikz",
+      "sha256": "858a706b965c815fd0b8ab736195912df307e6e10a63d7e479d8ae6e5a606284",
+      "vector_pdf_sha256": "7faa2dc644ba40607d66bbee1be995535d8402e06b6dd250085667e4aff5b305"
+    },
+    {
+      "name": "q8-speed.tikz",
+      "sha256": "0cd02c08ced5377613d999664eee089872b1553937ec0069caa88bf8c3d062a4",
+      "vector_pdf_sha256": "b3c852162a0b8a79793048a076b52efeba6583ea1663b217fcaa3e3bd5d044ba"
+    }
+  ],
+  "core_identical": true
+}

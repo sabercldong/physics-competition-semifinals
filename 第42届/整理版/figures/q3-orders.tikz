@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+\draw[->](0,0)--(6,0);
+\foreach \x/\t in {0.5/主回路,2.2/一次补偿,4/二次补偿}
+ \node[draw,rounded corners,fill=white]at(\x,0){\t};
+\node at(.5,1){$O(\epsilon)$};
+\node at(2.2,1){$O(\epsilon^2)$};
+\node at(4,1){$O(\epsilon^3)$};
+\node at(2.6,-.8){误差阶来自小电流与小接触压降的乘积};
+\end{tikzpicture}

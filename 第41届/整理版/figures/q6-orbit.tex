@@ -1,0 +1,18 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\fill(0,0)circle(2pt)node[below left]{$O$};
+\draw[->](0,0)--(3,0)node[right]{最近点轴};
+\draw[blue,thick]plot[domain=-110:110,samples=100]({1.2*cos(\x)/(1+2*cos(\x))},{1.2*sin(\x)/(1+2*cos(\x))});
+\draw[dashed](0,0)--(-1.5,2.60);\draw[dashed](0,0)--(-1.5,-2.60);
+\draw[->,red](-1.1,-2.2)--(-.6,-1.4)node[right]{入射速度};
+\draw[->,red](-.6,1.4)--(-1.1,2.2)node[left]{出射速度};
+\draw(.7,0)arc(0:120:.7);\node[above]at(.13,.8){$\theta_{\max}$};
+\node[right]at(1.1,-1.6){$\Delta\varphi=2\theta_{\max}-\pi$};
+\end{tikzpicture}
+
+\end{document}

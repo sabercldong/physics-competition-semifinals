@@ -1,0 +1,11 @@
+\begin{tikzpicture}[x=1.7cm,y=1.2cm]
+\draw[arr] (-.15,0)--(3.7,0) node[right] {$ck/\omega_{\rm p}$};
+\draw[arr] (0,-.15)--(0,4) node[above] {$\omega/\omega_{\rm p}$};
+\draw[dashed,gray] (0,0)--(3.3,3.3) node[right] {真空};
+\draw[blue!65!black,thick,domain=0:3.3,samples=90] plot(\x,{sqrt(1+\x*\x)});
+\fill (0,1) circle(1.8pt) node[left] {$1$};
+\draw[dashed] (1,0)--(1,1.4142)--(0,1.4142);
+\node[left] at (0,1.4142) {$\sqrt2$};
+\node[below] at (1,0) {$1$};
+\node at (2.4,1.1) {$\omega^2=\omega_{\rm p}^2+c^2k^2$};
+\end{tikzpicture}

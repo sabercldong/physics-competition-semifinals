@@ -1,0 +1,389 @@
+{
+  "all_passed": true,
+  "check_count": 36,
+  "checks": [
+    {
+      "check": "1A_光程前向亮纹与周期计数",
+      "passed": true,
+      "evidence": [
+        146.0,
+        126.99999999999997
+      ]
+    },
+    {
+      "check": "1B_末态逐级亮纹数",
+      "passed": true,
+      "evidence": {
+        "span": 16.000000000000007,
+        "fringes": 17
+      }
+    },
+    {
+      "check": "1C_精确折射率和近似舍入",
+      "passed": true,
+      "evidence": {
+        "exact": 1.409314915669973,
+        "approx": 1.4079661397157888
+      }
+    },
+    {
+      "check": "1D_几何波前路径与根号公式",
+      "passed": true,
+      "evidence": {
+        "geometric": 0.002005084480204243
+      }
+    },
+    {
+      "check": "1E_变式厚度与计数灵敏度",
+      "passed": true,
+      "evidence": {
+        "thickness_mm": 1.9919440322628883,
+        "sensitivity": 0.08262608887444267
+      }
+    },
+    {
+      "check": "2A_应力压缩力与有效刚度",
+      "passed": true,
+      "evidence": "k - 2*k*(-l + l0)/l"
+    },
+    {
+      "check": "2B_恒流阈值与非零三次项",
+      "passed": true,
+      "evidence": {
+        "peak": "4*l0**3/27",
+        "force_second": "3*A*I**2/l**4"
+      }
+    },
+    {
+      "check": "2C_弱电流展开与指定分支",
+      "passed": true,
+      "evidence": "O(eta**3)"
+    },
+    {
+      "check": "2D_固定磁通链能量曲率",
+      "passed": true,
+      "evidence": "A*Ip**2*l/(2*l0**2)"
+    },
+    {
+      "check": "2E_有限电阻能量耗散恒等式",
+      "passed": true,
+      "evidence": "固定电感归一化电路dI/dt=-I/L，dW/dt=-I²"
+    },
+    {
+      "check": "3A_三十次冲量迭代与闭式",
+      "passed": true,
+      "evidence": {
+        "last": [
+          29.35714285714288,
+          29.35714285714288,
+          -27.00857142857145
+        ],
+        "flights": 30
+      }
+    },
+    {
+      "check": "3B_弹性矩阵能量与二周期",
+      "passed": true,
+      "evidence": "Matrix([[3/7, 4/7], [10/7, -3/7]])"
+    },
+    {
+      "check": "3C_奇偶摩擦冲量与必要粗糙度",
+      "passed": true,
+      "evidence": "奇数次非零，偶数次为零；|Jx|/Jy=4tanθ/7"
+    },
+    {
+      "check": "3D_粘着模型的能量损失",
+      "passed": true,
+      "evidence": "kap*(b**2 - 2*b*v + v**2)/(2*(kap + 1))"
+    },
+    {
+      "check": "3E_一般切向恢复系数",
+      "passed": true,
+      "evidence": -0.35518503815467517
+    },
+    {
+      "check": "4A_质元积分与广义力矩",
+      "passed": true,
+      "evidence": "R**2*m + 2*R*a*m*sin(theta) + 4*a**2*m*sin(theta)**2/3"
+    },
+    {
+      "check": "4B_各象限根数和曲率符号",
+      "passed": true,
+      "evidence": [
+        {
+          "A": 0.7,
+          "B": 0.6,
+          "degrees": [
+            131.69133669816802,
+            340.1083462410228
+          ],
+          "curvature": [
+            1.1938269913918667,
+            -1.6824122309904876
+          ]
+        },
+        {
+          "A": 3.0,
+          "B": 0.6,
+          "degrees": [
+            106.01687713129878,
+            197.9301647747234,
+            244.65523015006127,
+            351.39772794391644
+          ],
+          "curvature": [
+            3.3958360559201424,
+            -1.6646243989452079,
+            1.7863815780048657,
+            -3.9442599016464692
+          ]
+        },
+        {
+          "A": 4.0,
+          "B": 2.0,
+          "degrees": [
+            99.54892454724914,
+            336.85149244474934
+          ],
+          "curvature": [
+            5.918023128389462,
+            -4.469400728412202
+          ]
+        }
+      ]
+    },
+    {
+      "check": "4C_相切重根与非零三阶导数",
+      "passed": true,
+      "evidence": {
+        "theta_degrees": 226.10322462320678,
+        "third": 4.496663651067632
+      }
+    },
+    {
+      "check": "4D_数值变式角度与临界转速",
+      "passed": true,
+      "evidence": {
+        "critical_ratio": 3.2073777400839347
+      }
+    },
+    {
+      "check": "4E_中心铰点退化的四阶稳定项",
+      "passed": true,
+      "evidence": "eps**4/8"
+    },
+    {
+      "check": "4F_临界附近角度与频率标度",
+      "passed": true,
+      "evidence": {
+        "f_second": -6.485311218569226,
+        "angle_exponent": 0.5,
+        "frequency_exponent": 0.25
+      }
+    },
+    {
+      "check": "5A_线性加载ODE与初值",
+      "passed": true,
+      "evidence": "alpha*t - alpha*sin(t) + 1"
+    },
+    {
+      "check": "5B_十四组首次断裂ODE事件",
+      "passed": true,
+      "evidence": [
+        {
+          "ell": 2.0,
+          "beta": 0.5,
+          "first": 1
+        },
+        {
+          "ell": 2.0,
+          "beta": 1.0,
+          "first": 1
+        },
+        {
+          "ell": 2.0,
+          "beta": 1.02,
+          "first": 1
+        },
+        {
+          "ell": 2.0,
+          "beta": 1.2,
+          "first": 2
+        },
+        {
+          "ell": 2.0,
+          "beta": 2.0,
+          "first": 2
+        },
+        {
+          "ell": 2.0,
+          "beta": 4.0,
+          "first": 2
+        },
+        {
+          "ell": 2.0,
+          "beta": 10.0,
+          "first": 2
+        },
+        {
+          "ell": 10.0,
+          "beta": 0.5,
+          "first": 1
+        },
+        {
+          "ell": 10.0,
+          "beta": 1.0,
+          "first": 1
+        },
+        {
+          "ell": 10.0,
+          "beta": 1.02,
+          "first": 1
+        },
+        {
+          "ell": 10.0,
+          "beta": 1.2,
+          "first": 2
+        },
+        {
+          "ell": 10.0,
+          "beta": 2.0,
+          "first": 1
+        },
+        {
+          "ell": 10.0,
+          "beta": 4.0,
+          "first": 2
+        },
+        {
+          "ell": 10.0,
+          "beta": 10.0,
+          "first": 2
+        }
+      ]
+    },
+    {
+      "check": "5C_具体阈值与等号同时断",
+      "passed": true,
+      "evidence": {
+        "z": 1.8954942670339805,
+        "beta": 1.0551337636750266
+      }
+    },
+    {
+      "check": "5D_不同劲度与下端功率能量账目",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "check": "5E_阶跃加载与初始连续性",
+      "passed": true,
+      "evidence": "最大上弹簧长度=1+2F，下弹簧长度=F"
+    },
+    {
+      "check": "6A_电场密度耦合BVP独立解",
+      "passed": true,
+      "evidence": {
+        "max_error": 4.558853294867049e-14
+      }
+    },
+    {
+      "check": "6B_表面跃变与整体电中性",
+      "passed": true,
+      "evidence": {
+        "integral_density": 0.09000000000002013,
+        "voltage": 0.028062272118090117
+      }
+    },
+    {
+      "check": "6C_Seebeck系数与端差相消",
+      "passed": true,
+      "evidence": "1/(-sqrt(T0)/(c*e*rho) + e/kB)"
+    },
+    {
+      "check": "6D_非线性温度密度关系",
+      "passed": true,
+      "evidence": "(aT + sqrt(nr)*(-aT + sqrt(tr))/sqrt(n))**2"
+    },
+    {
+      "check": "6E_奇偶边界变式",
+      "passed": true,
+      "evidence": "奇模总电荷0，偶模端差0"
+    },
+    {
+      "check": "7A_能量分布归一化与矩",
+      "passed": true,
+      "evidence": [
+        1.0,
+        3.0,
+        12.0
+      ]
+    },
+    {
+      "check": "7B_法向动量通量半球积分",
+      "passed": true,
+      "evidence": 0.3333333333333333
+    },
+    {
+      "check": "7C_绝热火球半径压强与熵",
+      "passed": true,
+      "evidence": {
+        "radius_fm": 8,
+        "volume_ratio": 18.96296296296296,
+        "pressure_ratio": 0.019775390625000003
+      }
+    },
+    {
+      "check": "7D_维度及幂律色散积分变式",
+      "passed": true,
+      "evidence": [
+        {
+          "dimension": 3,
+          "power": 1,
+          "mean_energy": 3.0,
+          "pressure_over_nkT": 1.0000000000000002
+        },
+        {
+          "dimension": 3,
+          "power": 2,
+          "mean_energy": 1.4999999999999962,
+          "pressure_over_nkT": 0.9999999999999973
+        },
+        {
+          "dimension": 2,
+          "power": 1,
+          "mean_energy": 2.0000000000000004,
+          "pressure_over_nkT": 1.0000000000000002
+        },
+        {
+          "dimension": 4,
+          "power": 1,
+          "mean_energy": 4.0,
+          "pressure_over_nkT": 1.0
+        },
+        {
+          "dimension": 3,
+          "power": 1.5,
+          "mean_energy": 2.0000000000009854,
+          "pressure_over_nkT": 1.0000000000004927
+        }
+      ]
+    },
+    {
+      "check": "7E_混合热容与等温功",
+      "passed": true,
+      "evidence": "固定比例Cv=1.5(1+f)R；等温功=RTlnq"
+    }
+  ],
+  "method": "符号积分和高阶展开、数值积分、冲量独立迭代、ODE断裂事件、耦合边值解；不把参考答案当作计算输入。",
+  "source_sha256": {
+    "question-01.md": "c888ecf2d88f5a8ec8addd0fb323aa6e4a0fc57438ce50ac2ed9212a99343251",
+    "question-02.md": "d1adece451b9d3abda5f15d818044c8cf3c5e5237f1ffbdd3d0531a35863ded5",
+    "question-03.md": "258d24842031dbdb0dcd673ce1209a81077e88e595ddfbb05c92df540a9b7d85",
+    "question-04.md": "0df248e94b00160a68b45366a51999d06c05fe1f28b5d3a6a1ee7333207974d1",
+    "question-05.md": "a4de802674632c2a02447260352c1bf6d4a55c606a4e25bdc5969e922352a857",
+    "question-06.md": "a089ca30e16fca06b2626845da65d460f2ca7f72cfe4588f40d4b305a08afc0c",
+    "question-07.md": "4a23962a55657c56f96ab4dc5100d1be44b29ea630ad6ebc3351c09a5d4e2a25"
+  },
+  "script_sha256": "6010e6e42cd1b60222d8ab54b4a0ea7b3992059a5bfbc108841f0f04b8077a37"
+}

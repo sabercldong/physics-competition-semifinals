@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=1.6,yscale=3]
+\draw[arr] (0,0)--(4.4,0) node[right] {$t/(v_{\max}/a_{\max})$};
+\draw[arr] (0,0)--(0,1.25) node[above] {$v/v_{\max}$};
+\draw[thick,blue,domain=0:4,samples=90] plot(\x,{1-exp(-\x)});
+\draw[dashed] (0,1)--(4.1,1);
+\node at (2,1.2) {$v=v_{\max}(1-e^{-t/t_c})$};
+\node at (2,-.42) {达到极限车速需要无限长时间};
+\end{tikzpicture}

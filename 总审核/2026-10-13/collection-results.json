@@ -1,0 +1,732 @@
+{
+  "all_passed": true,
+  "completed_at": "2026-10-13T11:55:03+08:00",
+  "exams": [
+    {
+      "exam": 35,
+      "questions": 8,
+      "variants": 32,
+      "figures": 25,
+      "physics_checks": 64,
+      "prose_edits": 20,
+      "changed_pages": 28,
+      "unchanged_pages": 113,
+      "pdfs": [
+        {
+          "name": "第35届_学生详解版.pdf",
+          "pages": 57,
+          "body_pages": 56,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "162fb9cc7cf3277d2179522a58f984b748263a6308bd301591c4006aaf54f765",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            16,
+            23,
+            30,
+            37,
+            44,
+            51
+          ],
+          "short_body_pdf_pages": [],
+          "measurement_photo_pdf_pages": [
+            44,
+            45
+          ]
+        },
+        {
+          "name": "第35届_教师备课版.pdf",
+          "pages": 74,
+          "body_pages": 73,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "0276badb71c5a10c9f517e27a805b0a363873d976bb74ffcaa94514831de5219",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            20,
+            30,
+            39,
+            48,
+            57,
+            66
+          ],
+          "short_body_pdf_pages": [],
+          "measurement_photo_pdf_pages": [
+            57,
+            58
+          ]
+        },
+        {
+          "name": "第35届_试题版.pdf",
+          "pages": 10,
+          "body_pages": 9,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "e655d3d9f2b9d9bdd39617cb2af0377d9fa1c8e7447b5ff4f2f212bce90334d3",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "short_body_pdf_pages": [],
+          "measurement_photo_pdf_pages": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "exam": 36,
+      "questions": 7,
+      "variants": 28,
+      "figures": 23,
+      "physics_checks": 56,
+      "prose_edits": 14,
+      "changed_pages": 14,
+      "unchanged_pages": 133,
+      "pdfs": [
+        {
+          "name": "第36届_学生详解版.pdf",
+          "pages": 61,
+          "body_pages": 60,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "b2c7753ff57b2170976d3cca1ee190c608d86ced0eccf63dd10cfe3ddeac33da",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            19,
+            27,
+            34,
+            41,
+            49
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第36届_教师备课版.pdf",
+          "pages": 78,
+          "body_pages": 77,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "fa0a4159136093fa2fea6c81deb010ba4c51a1955151115a4c8118bd12050aed",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            12,
+            24,
+            35,
+            44,
+            54,
+            64
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第36届_试题版.pdf",
+          "pages": 8,
+          "body_pages": 7,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "8a8faea838f0d67bfee370ea599bd868384e61c3a7b94ebd833f7cbab3c84f10",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 37,
+      "questions": 8,
+      "variants": 32,
+      "figures": 24,
+      "physics_checks": 48,
+      "prose_edits": 10,
+      "changed_pages": 15,
+      "unchanged_pages": 146,
+      "pdfs": [
+        {
+          "name": "第37届_学生详解版.pdf",
+          "pages": 68,
+          "body_pages": 67,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "26b5400ae089beab9f1d6293696fe39f1cb193fcbd527019cd860ac0414066b2",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            17,
+            26,
+            32,
+            41,
+            50,
+            59
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第37届_教师备课版.pdf",
+          "pages": 84,
+          "body_pages": 83,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "06d8b9f1b1cf7575738835325517c04436f18f8ec75b8633621d99b21d9922a7",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            21,
+            32,
+            40,
+            51,
+            62,
+            73
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第37届_试题版.pdf",
+          "pages": 9,
+          "body_pages": 8,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "a90aac2517a1b2c6d6c1c14a5b06ff772f9e9b4002767d8e36a8e4f7bfa93133",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 38,
+      "questions": 8,
+      "variants": 32,
+      "figures": 22,
+      "physics_checks": 48,
+      "prose_edits": 9,
+      "changed_pages": 14,
+      "unchanged_pages": 132,
+      "pdfs": [
+        {
+          "name": "第38届_学生详解版.pdf",
+          "pages": 62,
+          "body_pages": 61,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "eb19455535cc5a285484e9f8196f78efa9883f46eb2e1d78fb3fb4295a7117c6",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            16,
+            23,
+            30,
+            37,
+            46,
+            54
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第38届_教师备课版.pdf",
+          "pages": 75,
+          "body_pages": 74,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "8f34f2a29da8cee348d208be4bb11ed86f9f1e34bc05fefeb385c724842fab92",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            10,
+            19,
+            28,
+            37,
+            45,
+            56,
+            65
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第38届_试题版.pdf",
+          "pages": 9,
+          "body_pages": 8,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "d9102ddd8c106c2925b70f0907033a786ee43b1323f17f5725e8ba443aabeb77",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 39,
+      "questions": 7,
+      "variants": 28,
+      "figures": 18,
+      "physics_checks": 36,
+      "prose_edits": 15,
+      "changed_pages": 19,
+      "unchanged_pages": 120,
+      "pdfs": [
+        {
+          "name": "第39届_学生详解版.pdf",
+          "pages": 58,
+          "body_pages": 57,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "8fe9ec8c28059b1e72a07a91fe4170fe8559f4c6e9828223e4d1baedc7f5cd2c",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            16,
+            24,
+            34,
+            42,
+            51
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第39届_教师备课版.pdf",
+          "pages": 73,
+          "body_pages": 72,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "596dc97a05375418cfa76d875d25b740b62a61b15b3ae13cf6e3aceb9337716d",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            20,
+            30,
+            42,
+            52,
+            63
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第39届_试题版.pdf",
+          "pages": 8,
+          "body_pages": 7,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "f0701260bd4b8d6d69403038ee3734ad3bc99495babac64e94c8ff03206166d1",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 40,
+      "questions": 8,
+      "variants": 32,
+      "figures": 18,
+      "physics_checks": 32,
+      "prose_edits": 10,
+      "changed_pages": 12,
+      "unchanged_pages": 126,
+      "pdfs": [
+        {
+          "name": "第40届_学生详解版.pdf",
+          "pages": 57,
+          "body_pages": 56,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "35258cf9af814458fd781fc4db462eb259d263fd08adb3a06d06e937f33d56ce",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            8,
+            16,
+            23,
+            30,
+            37,
+            44,
+            51
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第40届_教师备课版.pdf",
+          "pages": 72,
+          "body_pages": 71,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "54ca77b864638b2787ebe031458fb22a99c02385d6ff54ef61d0fd0af0ff1170",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            21,
+            30,
+            39,
+            48,
+            56,
+            64
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第40届_试题版.pdf",
+          "pages": 9,
+          "body_pages": 8,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "09c0527a48800e2a0558641e33e12917757878775c168f6f58c0992ed28babe0",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 41,
+      "questions": 7,
+      "variants": 28,
+      "figures": 17,
+      "physics_checks": 52,
+      "prose_edits": 8,
+      "changed_pages": 13,
+      "unchanged_pages": 132,
+      "pdfs": [
+        {
+          "name": "第41届_学生详解版.pdf",
+          "pages": 62,
+          "body_pages": 61,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "4055067ecd870efd79660a6888e7f5e8aa4f77d90a1435940479800363d29e8f",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            10,
+            21,
+            29,
+            36,
+            44,
+            53
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第41届_教师备课版.pdf",
+          "pages": 74,
+          "body_pages": 73,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "02bb39856e2c3e71cd8e2f3c625d79145f9de71dade79c5195a75270c8f57b58",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            12,
+            24,
+            34,
+            43,
+            52,
+            63
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第41届_试题版.pdf",
+          "pages": 9,
+          "body_pages": 8,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "8d57aa33274297bd2ac2801b1ecd87c5da99b8fa8ae0caa702b2c9c68e513055",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 42,
+      "questions": 7,
+      "variants": 28,
+      "figures": 21,
+      "physics_checks": 30,
+      "prose_edits": 10,
+      "changed_pages": 16,
+      "unchanged_pages": 126,
+      "pdfs": [
+        {
+          "name": "第42届_学生详解版.pdf",
+          "pages": 59,
+          "body_pages": 58,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "68be63297ef1b505d6a63610aea6a7d01b027e2e142f8c39e7ca09828f912e79",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            20,
+            28,
+            36,
+            44,
+            52
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第42届_教师备课版.pdf",
+          "pages": 73,
+          "body_pages": 72,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "a5897e583910137bc4315371f560d6790deb1b4b13c47401b7952154f608ea92",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            13,
+            24,
+            34,
+            44,
+            54,
+            64
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第42届_试题版.pdf",
+          "pages": 10,
+          "body_pages": 9,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "ab75f18e73e35d3c7b9820f6cd19f0eeacd1f9580f0dc947446a2c843108d611",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    },
+    {
+      "exam": 43,
+      "questions": 7,
+      "variants": 28,
+      "figures": 16,
+      "physics_checks": 26,
+      "prose_edits": 10,
+      "changed_pages": 27,
+      "unchanged_pages": 115,
+      "pdfs": [
+        {
+          "name": "第43届_学生详解版.pdf",
+          "pages": 60,
+          "body_pages": 59,
+          "required_body_pages": 56,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "64ceff4d4046ea659f4b4e20f1963f9efebf8a037dec371030dc307455134224",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            9,
+            17,
+            24,
+            34,
+            43,
+            53
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第43届_教师备课版.pdf",
+          "pages": 74,
+          "body_pages": 73,
+          "required_body_pages": 71,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "4b285968bf5026bfc876a56496d0c51760303a58a974f49b5f68c64599fce28c",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            11,
+            21,
+            30,
+            42,
+            53,
+            65
+          ],
+          "short_body_pdf_pages": []
+        },
+        {
+          "name": "第43届_试题版.pdf",
+          "pages": 8,
+          "body_pages": 7,
+          "required_body_pages": null,
+          "simple_cover": true,
+          "page_headers": false,
+          "sha256": "e387974ce682d9c656770a0bcf57a26f76c8dbd357a7f43dd2286515a2fc6ae4",
+          "qpdf": "passed",
+          "missing_glyphs": 0,
+          "overfull_boxes": 0,
+          "question_start_pdf_pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "short_body_pdf_pages": []
+        }
+      ]
+    }
+  ]
+}

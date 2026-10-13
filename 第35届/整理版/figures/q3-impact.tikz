@@ -1,0 +1,7 @@
+\begin{tikzpicture}[scale=.9]
+\draw[arr](0,0)--(3.2,0)node[right]{$x$};\draw[arr](0,-3.5)--(0,1)node[above]{$y$};
+\draw[very thick](0,0)--(0,-3);\node[above left]at(0,0){$O=A$};
+\fill(0,-2)circle(3pt)node[left]{$D,\ OD=2l/3$};\node[left]at(0,-3){$B$};
+\draw[arr,red](2,-2)--(.2,-2)node[midway,above]{$v_0$};
+\fill(2,-2)circle(3pt)node[right]{$m$};\node[left]at(0,-1){$M,l$};
+\end{tikzpicture}

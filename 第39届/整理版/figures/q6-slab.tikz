@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=.9]
+\draw[fill=blue!6] (0,-1.8) rectangle(6,1.8);
+\draw[very thick] (0,-1.8)--(0,1.8); \draw[very thick] (6,-1.8)--(6,1.8);
+\node[above] at (0,1.8) {$\sigma_-$}; \node[above] at (6,1.8) {$\sigma_+$};
+\node at (3,.8) {$n=n_0+\delta n,\quad T=T_0+\delta T$};
+\node at (3,-.1) {背景电荷密度$+en_0$};
+\draw[arr] (-2,-2.5)--(8,-2.5) node[right] {$x$};
+\node[below] at (0,-2.5) {$-L$}; \node[below] at (6,-2.5) {$L$};
+\node at (-1.2,0) {$E=0$}; \node at (7.2,0) {$E=0$};
+\node at (3,-1.1) {$E'=-e\delta n/\varepsilon_0$};
+\end{tikzpicture}

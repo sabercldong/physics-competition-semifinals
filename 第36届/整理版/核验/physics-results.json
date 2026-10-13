@@ -1,0 +1,241 @@
+{
+  "all_passed": true,
+  "check_count": 56,
+  "checks": [
+    {
+      "check": "1-1 杯壁与水层积分一阶矩",
+      "passed": true
+    },
+    {
+      "check": "1-2 求导驻点及正曲率",
+      "passed": true
+    },
+    {
+      "check": "1-3 100组水深正根、杯内及端点筛选",
+      "passed": true
+    },
+    {
+      "check": "1-4 新增质量的质心微分恒等式",
+      "passed": true
+    },
+    {
+      "check": "1-5 完整三脚节点力矩解",
+      "passed": true
+    },
+    {
+      "check": "1-6 改变底重比例的新增水层方程",
+      "passed": true
+    },
+    {
+      "check": "2-1 杆与板分布积分惯量",
+      "passed": true
+    },
+    {
+      "check": "2-2 势能与定轴动能独立求角速度",
+      "passed": true
+    },
+    {
+      "check": "2-3 碰撞线动量与角冲量、法向接触",
+      "passed": true
+    },
+    {
+      "check": "2-4 滑动完整六方程",
+      "passed": true
+    },
+    {
+      "check": "2-5 接触滑速ODE首次事件",
+      "passed": true
+    },
+    {
+      "check": "2-6 滑动摩擦功积分与平动转动能差",
+      "passed": true
+    },
+    {
+      "check": "2-7 纯滚动完整七方程",
+      "passed": true
+    },
+    {
+      "check": "2-8 纯滚动停止ODE与能量闭合",
+      "passed": true
+    },
+    {
+      "check": "2-9 静摩擦裕度及阈值分支",
+      "passed": true
+    },
+    {
+      "check": "2-10 实心圆盘变式的首次无滑动",
+      "passed": true
+    },
+    {
+      "check": "3-1 毕奥萨伐尔半无限端点场",
+      "passed": true
+    },
+    {
+      "check": "3-2 弹丸横向磁力积分",
+      "passed": true
+    },
+    {
+      "check": "3-3 长回路磁通积分与力的一致性",
+      "passed": true
+    },
+    {
+      "check": "3-4 斜轨Newton运动与机械能",
+      "passed": true
+    },
+    {
+      "check": "3-5 源功及焦耳热时间积分",
+      "passed": true
+    },
+    {
+      "check": "3-6 源功的动能势能磁能闭合",
+      "passed": true
+    },
+    {
+      "check": "3-7 可变电流功率恒等式",
+      "passed": true
+    },
+    {
+      "check": "3-8 水平数值及无损效率",
+      "passed": true
+    },
+    {
+      "check": "4-1 气体密度与绝热声速",
+      "passed": true
+    },
+    {
+      "check": "4-2 精确绝热压力的一阶回复力",
+      "passed": true
+    },
+    {
+      "check": "4-3 声学振子ODE周期及几何频率",
+      "passed": true
+    },
+    {
+      "check": "4-4 压缩做功积分的二阶弹簧能",
+      "passed": true
+    },
+    {
+      "check": "4-5 两个频率反求面积及端部惯性",
+      "passed": true
+    },
+    {
+      "check": "4-6 阻尼吸收功率峰的独立极值",
+      "passed": true
+    },
+    {
+      "check": "5-1 两次Snell与全反射临界",
+      "passed": true
+    },
+    {
+      "check": "5-2 双曲面完整光线矩阵及行列式",
+      "passed": true
+    },
+    {
+      "check": "5-3 虚物折射与矩阵后焦距",
+      "passed": true
+    },
+    {
+      "check": "5-4 精确向量Snell光路与球面角几何",
+      "passed": true
+    },
+    {
+      "check": "5-5 精确光线的近轴极限",
+      "passed": true
+    },
+    {
+      "check": "5-6 精确接受角束径边界",
+      "passed": true
+    },
+    {
+      "check": "5-7 理想离焦位置容差",
+      "passed": true
+    },
+    {
+      "check": "5-8 反求包层及焦点分支",
+      "passed": true
+    },
+    {
+      "check": "6-1 非线性两体能量守恒求动量",
+      "passed": true
+    },
+    {
+      "check": "6-2 μ子质量壳与母系速率",
+      "passed": true
+    },
+    {
+      "check": "6-3 301个角度的完整四动量守恒",
+      "passed": true
+    },
+    {
+      "check": "6-4 全角度速率端点筛选",
+      "passed": true
+    },
+    {
+      "check": "6-5 二维速度与能量动量变换一致",
+      "passed": true
+    },
+    {
+      "check": "6-6 衰变ODE与半衰期概率",
+      "passed": true
+    },
+    {
+      "check": "6-7 长度收缩固有时间及半衰高度",
+      "passed": true
+    },
+    {
+      "check": "6-8 发射角极值变式",
+      "passed": true
+    },
+    {
+      "check": "7-1 场能体积积分与电容储能",
+      "passed": true
+    },
+    {
+      "check": "7-2 四个真实镜像电荷的地表向量场",
+      "passed": true
+    },
+    {
+      "check": "7-3 均匀圆盘加镜像的圆环场积分",
+      "passed": true
+    },
+    {
+      "check": "7-4 圆盘远场回到点电荷偶极场",
+      "passed": true
+    },
+    {
+      "check": "7-5 负电密度的高斯积分及核心边界",
+      "passed": true
+    },
+    {
+      "check": "7-6 通道总量反求直径",
+      "passed": true
+    },
+    {
+      "check": "7-7 球面波交线的独立时间差分",
+      "passed": true
+    },
+    {
+      "check": "7-8 有限波包环宽与局部扩张近似",
+      "passed": true
+    },
+    {
+      "check": "7-9 大气静力ODE与变温积分",
+      "passed": true
+    },
+    {
+      "check": "7-10 浮力质量闭合及等压同温变式",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "question-01.md": "52870b8d040dfe5bc872c1145994fd34597da2b7075bcc426d69cc000285aeb0",
+    "question-02.md": "54f83fe94ab1f0c70d84f682f2f47cdd9551d0a07d8222d44e73d2f6e4d4da72",
+    "question-03.md": "f8ddd9eb6826f2ceecad2b88b317a85f4560d756595e4136d530419ef836f900",
+    "question-04.md": "b5c1793612fc5086fc5cc56ab78449eb35573699c33ea8dcbfa85d3988f9a79e",
+    "question-05.md": "fe300d9028a0b22b25fda3d297a128dbaca8acb2b1a7e93314faec1a4d273298",
+    "question-06.md": "b34409210a2cd745abbd981f64e65a8d696913f2078d73396f3f158d34db560b",
+    "question-07.md": "efedaf9955ca8c66f596f032e064aa3132d107459677c8c1db5b5f476dcb00ac"
+  },
+  "script_sha256": "e1b620a28b62b04f69ac365b12cc1347fe978101e61ae3aba70e4787af63a4c2",
+  "methods": "质量一阶矩、完整Newton与冲量系统、ODE事件、毕奥萨伐尔及源功积分、压缩能、向量Snell、四动量、衰变ODE、镜像圆环积分和大气ODE"
+}

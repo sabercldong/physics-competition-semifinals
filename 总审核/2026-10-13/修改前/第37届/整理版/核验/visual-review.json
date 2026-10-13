@@ -1,0 +1,349 @@
+{
+  "recorded_at": "2026-10-13T08:58:51+08:00",
+  "method": "逐页渲染的六页总览覆盖全部页面；关键长公式及图文页再作单页放大。全部24幅图逐幅审读，最后一次图稿修正为第2题摩擦力与重力箭头，已放大复读。",
+  "all_passed": true,
+  "total_pdf_pages_reviewed": 161,
+  "figure_count_reviewed": 24,
+  "figures": [
+    {
+      "name": "q1-chambers.png",
+      "sha256": "6f30a93eeb5cb76364601c2c6d097f22b8b170cc0e93f16d164fd62b5dcf5396"
+    },
+    {
+      "name": "q1-force.png",
+      "sha256": "cdc246a5e6358f4d4c82b130614a7b249f9c2f96ef0b9cd9210d44228fed951d"
+    },
+    {
+      "name": "q2-cycloid.png",
+      "sha256": "4effc0c66b631ae28db4f1673cedaa5b351dec97c9f183bc9db6fdaefed2d64e"
+    },
+    {
+      "name": "q2-friction.png",
+      "sha256": "a22af99e28253d76a81e840b7e61b4aefc3e29736879ea67f9abd89ed93814c9"
+    },
+    {
+      "name": "q2-impact.png",
+      "sha256": "ee813b299b9fe3e345774dbb779ff18280af75ac821521ffa31f092129cd8f3b"
+    },
+    {
+      "name": "q3-bias.png",
+      "sha256": "98195873147c94891ec82509f292fbd094f6490dd3737015958e5476aacd6507"
+    },
+    {
+      "name": "q3-circuit.png",
+      "sha256": "2e5a3962300111110f69e0b8195a44df8858e8914b5f6da526a59410f7aea611"
+    },
+    {
+      "name": "q3-responses.png",
+      "sha256": "758f463163839ece94e22d35e87e89ee172c22872d6ce1e594f1cc884c1a4c72"
+    },
+    {
+      "name": "q3-roots.png",
+      "sha256": "05d26221bc5a8781a8f2f061d0fdc7bae84be682a9fb29f45cadbc5141be76d4"
+    },
+    {
+      "name": "q4-orbit.png",
+      "sha256": "09af10475b5c17992c668c581403c0066ece05354ac177f20f9aa6baf8e86d30"
+    },
+    {
+      "name": "q4-threshold.png",
+      "sha256": "01f84abf3563a1679cf00644c640e2bceacbb9c2baa54a48a47c7d06028d8737"
+    },
+    {
+      "name": "q5-light.png",
+      "sha256": "4393c48cd6b449ae1bbb7f468ced0ddc9a8199635d19ed860d65b2fba116a789"
+    },
+    {
+      "name": "q5-parcel.png",
+      "sha256": "c95950e0499f21729a17286bacc51ddc7c3626f0437edc3a6499e76136637851"
+    },
+    {
+      "name": "q5-ships.png",
+      "sha256": "49fcce54fe0aa7bd0320f83104e1dd62968a46a6a71ac66d984011ce51ea8f5d"
+    },
+    {
+      "name": "q6-cone.png",
+      "sha256": "4a4edc729cda8e0aa9f2b36c7a12d6921e3b7ca6907daab1c73991648bc45408"
+    },
+    {
+      "name": "q6-guide.png",
+      "sha256": "3d4250f399f9be27469b9808370193a895ab60963a09c49af7772f86fd0a6d6f"
+    },
+    {
+      "name": "q6-resonance.png",
+      "sha256": "cf90a156f72687b10ff33beb4b9de08ad1dd9c7e101069fa57170e8f466be348"
+    },
+    {
+      "name": "q6-ring.png",
+      "sha256": "ea13544358d8e306d5a7a435e646f49a0a90522925b1bdbd7e857bdeda8e353a"
+    },
+    {
+      "name": "q7-binary.png",
+      "sha256": "c062ff3fc7f0a7c1c74852dff0ba56462a593dc7b1e74cfdd6ce7de020aca754"
+    },
+    {
+      "name": "q7-evolution.png",
+      "sha256": "d51efa57fb1c4c6e8372175623286d0d4b139da6fb2ed11d43e721cee586d629"
+    },
+    {
+      "name": "q8-circuit.png",
+      "sha256": "a44c71bd369b8c5349ba339318bfdc0bf8474413f934e88799e7094900255681"
+    },
+    {
+      "name": "q8-optics.png",
+      "sha256": "06730601b8df5e0dea89070fe627b66579df6afb4ca8752902f19bf3248f81ae"
+    },
+    {
+      "name": "q8-response.png",
+      "sha256": "298bcf11fbd321716c7e74f721c03ab8d6a50eb7fd7bc797136af5015d310cc3"
+    },
+    {
+      "name": "q8-transfer.png",
+      "sha256": "4e6220e48850f12044cc832a35c55ec2793b7719ef702e469a18a4b5b91b2a11"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第37届_学生详解版.pdf",
+      "sha256": "3562f79f0fe2a75d2b021362560c9871af317c5dc87b84f85b18d38adc3fad51",
+      "pages": 68,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "overview_contact_sheets": [
+        "preview/第37届_学生详解版/contact-001.jpg",
+        "preview/第37届_学生详解版/contact-007.jpg",
+        "preview/第37届_学生详解版/contact-013.jpg",
+        "preview/第37届_学生详解版/contact-019.jpg",
+        "preview/第37届_学生详解版/contact-025.jpg",
+        "preview/第37届_学生详解版/contact-031.jpg",
+        "preview/第37届_学生详解版/contact-037.jpg",
+        "preview/第37届_学生详解版/contact-043.jpg",
+        "preview/第37届_学生详解版/contact-049.jpg",
+        "preview/第37届_学生详解版/contact-055.jpg",
+        "preview/第37届_学生详解版/contact-061.jpg",
+        "preview/第37届_学生详解版/contact-067.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        18,
+        39,
+        48,
+        56,
+        67
+      ],
+      "result": "题面、公式、图稿、标题及页码无裁切或挤叠；题尾自然留白，不作空段补页。"
+    },
+    {
+      "name": "第37届_教师备课版.pdf",
+      "sha256": "9057cdacf6c8fe7ff4209073fc71475d80b2383ab6cac9e3cfb8459d65221420",
+      "pages": 84,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "overview_contact_sheets": [
+        "preview/第37届_教师备课版/contact-001.jpg",
+        "preview/第37届_教师备课版/contact-007.jpg",
+        "preview/第37届_教师备课版/contact-013.jpg",
+        "preview/第37届_教师备课版/contact-019.jpg",
+        "preview/第37届_教师备课版/contact-025.jpg",
+        "preview/第37届_教师备课版/contact-031.jpg",
+        "preview/第37届_教师备课版/contact-037.jpg",
+        "preview/第37届_教师备课版/contact-043.jpg",
+        "preview/第37届_教师备课版/contact-049.jpg",
+        "preview/第37届_教师备课版/contact-055.jpg",
+        "preview/第37届_教师备课版/contact-061.jpg",
+        "preview/第37届_教师备课版/contact-067.jpg",
+        "preview/第37届_教师备课版/contact-073.jpg",
+        "preview/第37届_教师备课版/contact-079.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        10,
+        83,
+        84
+      ],
+      "result": "题面、公式、图稿、标题及页码无裁切或挤叠；题尾自然留白，不作空段补页。"
+    },
+    {
+      "name": "第37届_试题版.pdf",
+      "sha256": "68d7b1991db51d886dcadfdf5d5485bb213a2aaf7467162107d35788143bed10",
+      "pages": 9,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "overview_contact_sheets": [
+        "preview/第37届_试题版/contact-001.jpg",
+        "preview/第37届_试题版/contact-007.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        9
+      ],
+      "result": "题面、公式、图稿、标题及页码无裁切或挤叠；题尾自然留白，不作空段补页。"
+    }
+  ],
+  "resolved_visual_issues": [
+    "第3题电流/RFC标注挤叠、工作区间标注与增长曲线边界已修正。",
+    "第4题阈值末态动量改为水平，避免方向歧义。",
+    "第5题坐标标签、第6题入射角及共振峰间隔、第7题间距标记、第8题主轴插图均已调整。",
+    "第2题受力图重力与支持力箭头重叠已修正并单图复读。",
+    "编号与单位缺字已修正；台球加速度、反质子可行性及两道短变式按完整逻辑块分页，避免孤立尾行。"
+  ],
+  "unresolved_visual_issues": []
+}

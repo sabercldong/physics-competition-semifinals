@@ -1,0 +1,223 @@
+{
+  "all_passed": true,
+  "check_count": 32,
+  "checks": [
+    {
+      "check": "单透镜正向成像与两位置焦距反演",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "两透镜矩阵与主平面分解",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "透镜矩阵行列式及无焦组合",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "临界活塞完整压强力的三次展开",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "等温自由能势与完整动力学一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "非中央平衡的完整求根与导数频率",
+      "passed": true,
+      "detail": [
+        [
+          0.2,
+          1.3375287054531453,
+          4.332528188384612
+        ],
+        [
+          0.7,
+          0.752254315550603,
+          0.7187952440995687
+        ],
+        [
+          0.95,
+          0.29741169273566914,
+          0.10249688117359501
+        ],
+        [
+          0.99,
+          0.13238094411808177,
+          0.020096201841579342
+        ]
+      ]
+    },
+    {
+      "check": "近平衡分支及低温频率的渐近系数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "完整活塞方程积分的自由能第一积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "临界四次振子周期积分",
+      "passed": true,
+      "detail": {
+        "integral": 1.311028777146293,
+        "period_coefficient": 7.4162987092068064
+      }
+    },
+    {
+      "check": "球楔块纯滚动：地面系完整受力与摩擦阈值",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "球楔块滑动：地面系解、接触速度与耗散",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "编木桥八个静力学方程的完整线性求解",
+      "passed": true,
+      "detail": {
+        "N1_over_mg": 10.42723955986624,
+        "f_over_mg": 4.733317606182953,
+        "N5_over_mg": 10.5,
+        "f5_over_mg": 2.1939219536832857,
+        "mu": 0.4539377444056413,
+        "mu_prime": 0.20894494796983673
+      }
+    },
+    {
+      "check": "编木桥中央附加载荷的完整重算",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "编木桥圆柱接触几何与图稿坐标",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "偶极子二维完整场积分：初角0.4000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "偶极子二维完整场积分：初角1.5708",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "偶极子二维完整场积分：初角2.0000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "绕轴圆轨道：场投影、根筛选与向心速度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "定半径半圆轨道的非小振幅周期积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "球面电流独立积分给出磁矩",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "毕奥萨伐尔线积分复核轴上场",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "感应磁矩平均力由外场梯度推出",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "平均力竖直稳定性与最优高度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "趋肤层焦耳热的角积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "有限壳层体积与功率修正",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "大气静力学与绝热过程的联合积分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "声速温度比与临界角",
+      "passed": true,
+      "detail": {
+        "speed_ratio": 1.0983078268463868,
+        "critical_angle_degrees": 65.57336926321302
+      }
+    },
+    {
+      "check": "球面地平线距离的精确量级",
+      "passed": true,
+      "detail": {
+        "same_layer_km": 714.1988518613006,
+        "mixed_layer_bound_km": 862.3122523711515
+      }
+    },
+    {
+      "check": "球面上下界面持续全反射的可行区间",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "X射线阈值、截止与有效核电荷数",
+      "passed": true,
+      "detail": {
+        "Z_effective": 41.338490206814505,
+        "Z": 42,
+        "lambda0_nm": 0.07110091743119266
+      }
+    },
+    {
+      "check": "相对论散射：直接求解能量动量与波长位移",
+      "passed": true,
+      "detail": {
+        "maximum_absolute_shift_error": 1.1103793440270238e-09
+      }
+    },
+    {
+      "check": "135度散射的峰位与电子能量",
+      "passed": true,
+      "detail": {
+        "lambda1_nm": 0.07524235848235122,
+        "electron_kinetic_eV": 959.9211586269812
+      }
+    }
+  ],
+  "script_sha256": "e2b77032a88899deef99aa60477c437f98b3f4850f5bd05f963ee47e9b159d85",
+  "source_sha256": {
+    "question-01.md": "ee2aca33d6d85beb6a36b46f835554031d7a4285aa9eae92003b875073671d59",
+    "question-02.md": "8e36d58433a8a302fe56b223ef3bc66a59f01804a39a159b5e425871bcf68d1a",
+    "question-03.md": "e07a7f6647d75daad9856588c57c2dd1653457d0e6374586ffff15065594de93",
+    "question-04.md": "1a7892a7fbcd5bb412c4564e4ad549e3b0d032542078e10a31cd4d3a7b89a7ea",
+    "question-05.md": "a91f0e258ac4cea60a11c4480be3dca2296ed3bfec8e816b0d0c5595c5c31835",
+    "question-06.md": "48a81cf7145592623b01b4693df525aff623a94db618c4504eabeb0189c3b97d",
+    "question-07.md": "328fcb2fa4978931571742c87cf7e8e065ec3bedbfee9af5211ea582dc3555e7",
+    "question-08.md": "fa1ceff4e22c3ae7646be1b3dc55048263a24d77770eb2d30ac0c305327ddb38"
+  }
+}

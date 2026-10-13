@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.85]
+\draw[arr] (0,0)--(6,0) node[right] {$x$};
+\draw[arr] (0,-2.2)--(0,2.2) node[above] {$y$};
+\draw[dashed] (2.4,-2.2)--(2.4,2.2);
+\draw[dashed] (.5,-2.125)--(4.3,2.125);
+\draw[dashed] (.5,2.125)--(4.3,-2.125);
+\draw[very thick,blue,domain=-1.9:1.9,samples=90] plot({2.4+sqrt(2.56+\x*\x/1.25)},\x);
+\draw[thin,gray,domain=-1.9:1.9,samples=90] plot({2.4-sqrt(2.56+\x*\x/1.25)},\x);
+\fill (4,0) circle(2pt) node[below right] {$O:r_0$};
+\node[below left] at (0,0) {$F$};\node at (3.5,2.6) {蓝色右支满足未平方方程};
+\end{tikzpicture}
+
+\end{document}

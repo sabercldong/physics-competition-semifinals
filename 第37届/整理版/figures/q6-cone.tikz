@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=1]
+\draw[fill=blue!5] (0,-.6) rectangle(4,.6);
+\draw[dashed] (-2.4,0)--(4.4,0);
+\draw[blue,thick] (-2,-.9)--(0,0)--(-2,.9);
+\draw[blue,dashed] (-2,-.9)--(-2,.9);
+\draw[arr,red] (-2,-.45)--(0,0)--(2,.45);
+\node at (-1.4,.45) {$i_{\max}$};
+\node at (2,.95) {芯内导光};
+\node at (1,-1.3) {$n_0|\sin i|\leq\sqrt{n_1^2-n_2^2}$};
+\end{tikzpicture}

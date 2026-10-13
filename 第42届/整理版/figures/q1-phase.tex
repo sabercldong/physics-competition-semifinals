@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](-2,0)--(2.5,0)node[right]{$z_0$};
+\draw[->](0,-1.5)--(0,1.8)node[above]{$v_{z0}$};
+\draw[blue,thick] (0,0)ellipse(1.6 and .9);
+\draw[red,thick](-1.4,1.2)--(1.8,-.8);
+\node[red,right] at(1.6,-.6){$z_0+t v_{z0}=h-\frac12gt^2$};
+\node[blue,above]at(-1.1,.8){初始高斯等密度线};
+\end{tikzpicture}
+
+\end{document}

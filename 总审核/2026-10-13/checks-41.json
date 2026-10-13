@@ -1,0 +1,20 @@
+{
+  "exam": 41,
+  "steps": [
+    {
+      "name": "build",
+      "exit": 0,
+      "seconds": 29.1
+    },
+    {
+      "name": "physics",
+      "exit": 0,
+      "seconds": 8.1
+    },
+    {
+      "name": "quality",
+      "exit": 0,
+      "seconds": 7.2
+    }
+  ]
+}

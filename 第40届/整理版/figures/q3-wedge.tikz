@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=1]
+\draw[thick] (-.5,0)--(6.4,0);
+\draw[thick,fill=gray!10] (0,0)--(5,0)--(5,2.6)--cycle;
+\draw[thick] (3.58,2.4) circle(.48);
+\fill (3.58,2.4) circle(1.5pt);
+\node[above] at (3.58,2.95) {$m,\ r$};
+\node at (3.8,.7) {$M$};
+\draw (1,0) arc(0:27.47:1);
+\node at (1.15,.28) {$\theta$};
+\draw[arr] (2.4,1.6)--(1.2,.976) node[left] {$v_c$};
+\draw[arr] (4.2,.45)--(5.6,.45) node[right] {$v_0$};
+\node at (2.8,-.55) {球向左下运动，楔块向右};
+\end{tikzpicture}

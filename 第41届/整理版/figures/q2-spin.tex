@@ -1,0 +1,28 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[thick](-1.6,0)--(1.6,0);
+\draw[thick](0,1)circle(1);
+\fill(0,1)circle(2pt);
+\draw[->,thick](-1.4,1.4)--(-.25,1.4)node[midway,above]{$\mathcal J$};
+\draw[dashed](-.92,1.4)--(.2,1.4);
+\draw[<->](-1.55,0)--(-1.55,1.4)node[midway,left]{$h$};
+\draw[<->](.1,0)--(.1,1)node[midway,right]{$R$};
+\draw[->,thick](.4,1)--(1.8,1)node[right]{$v_0$};
+\draw[->](.5,1.65)arc(52:-30:.82);
+\node[right]at(.85,2){$\omega_x<0$};
+\node[below]at(0,0){$C$};
+\node[below]at(0,-.5){竖直大圆截面};
+\begin{scope}[xshift=5cm]
+\draw[thick](-1.3,0)--(1.6,0);\draw(0,1)circle(1);
+\draw[->,blue,thick](0,1)--(1.5,1)node[right]{$\boldsymbol v$};
+\draw[->,red,thick](0,0)--(-1.2,0)node[left]{$\boldsymbol\omega\times\boldsymbol R_C$};
+\node[below]at(0,-.5){$\boldsymbol u=\boldsymbol v+\boldsymbol\omega\times\boldsymbol R_C$};
+\end{scope}
+\end{tikzpicture}
+
+\end{document}

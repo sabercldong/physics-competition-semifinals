@@ -1,0 +1,7 @@
+mpmath
+numpy
+Pillow
+pypdf
+pypdfium2
+scipy
+sympy

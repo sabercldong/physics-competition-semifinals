@@ -1,0 +1,198 @@
+{
+  "checks": [
+    {
+      "check": "Q1 full KCL Newton + branch power",
+      "passed": true,
+      "values": {
+        "solutions": [
+          [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          [
+            0.6666666666666666,
+            0.3333333333333333
+          ]
+        ],
+        "input_current": 1.0000000000000004,
+        "branch_power": 1.0000000000000002
+      }
+    },
+    {
+      "check": "Q2 unexpanded ODE vs first-order stance",
+      "passed": true,
+      "values": {
+        "predicted_time": 0.004313830976978143,
+        "ODE_time": 0.004313830966918236,
+        "predicted_angle": 0.01725585395062003,
+        "ODE_angle": 0.017255853925173963,
+        "max_relative_compression": 2.3413862441201694e-05
+      }
+    },
+    {
+      "check": "Q2 angular quadrature",
+      "passed": true,
+      "values": {
+        "integral": -6.625533843245333e-08,
+        "angle": 0.017255853950620032
+      }
+    },
+    {
+      "check": "Q3 boundary fields, ideal and finite permeability",
+      "passed": true,
+      "values": {
+        "SC_normal_max": 0.0,
+        "iron_tangent_max": 0.0,
+        "finite_mu_boundary_max": 4.440892098500626e-16
+      }
+    },
+    {
+      "check": "Q3 direct torque vs induced energy derivative",
+      "passed": true,
+      "values": {
+        "torque": 0.028204891562121276,
+        "energy_derivative": 0.02820489156465933
+      }
+    },
+    {
+      "check": "Q4 numerical data + line-force torque + exact gravitational gradient",
+      "passed": true,
+      "values": {
+        "v0": 7669.300384647591,
+        "Omega0": 0.0011328360981754197,
+        "P0": 6617.043943870014,
+        "hdot": -3.0464999999999995,
+        "one_orbit_dh": -16897.16991641849,
+        "theta_eq_degrees": 23.478823169651136,
+        "omega2": 0.0017996798444875118,
+        "line_torque": 1582.7262751970911,
+        "tidal_torque_exact": -1584.3623130825113,
+        "tidal_torque_first_order": -1582.726275197091
+      }
+    },
+    {
+      "check": "Q5 submerged-area centroid quadrature",
+      "passed": true,
+      "values": {
+        "area": 6.600000000000001,
+        "x_B": 0.06478473107723128,
+        "y_B": -0.6724030682706614,
+        "M_theta": 0.13567773981015807
+      }
+    },
+    {
+      "check": "Q5 stability and frequency ratio",
+      "passed": true,
+      "values": {
+        "y_M": 0.13308080808080813,
+        "frequency_squared_ratio": 0.10540000000000005
+      }
+    },
+    {
+      "check": "Q6 screened charge integral and radial differential equation",
+      "passed": true,
+      "values": {
+        "induced_charge_over_Q": -0.9999999999999984,
+        "ODE_residual_max": 7.1962517056434194e-09
+      }
+    },
+    {
+      "check": "Q6 cutoff and high-frequency response",
+      "passed": true,
+      "values": {
+        "omega_p": 99999.99999999999,
+        "f_p": 15915.494309189531,
+        "visible_epsilon_deviation": 2.533029591058444e-20
+      }
+    },
+    {
+      "check": "Q7 exact transfer matrix vs weak single-path reflection",
+      "passed": true,
+      "values": {
+        "exact_abs_r": 0.00012824317601059474,
+        "first_order_abs_r": 0.00012824317671420268,
+        "complex_difference": 7.037557171958944e-13,
+        "energy_sum": 0.9999999999999973
+      }
+    },
+    {
+      "check": "Q7 missing-order absolute detuning",
+      "passed": true,
+      "values": {
+        "two_sides": [
+          1.9999333681730396e-10,
+          1.9999333348538543e-10
+        ],
+        "linear_prediction": 1.9999333355552613e-10
+      }
+    },
+    {
+      "check": "Q7 exact slab alternative calculation",
+      "passed": true,
+      "values": {
+        "complex_difference": 4.336808689942018e-19,
+        "energy_sum": 1.0000000000000002
+      }
+    },
+    {
+      "check": "Variants Q1: open topology and fifth-power network",
+      "passed": true,
+      "values": {
+        "open_voltage": [
+          0.7158963465833499,
+          0.2841036534166501
+        ],
+        "open_current": 0.8449157179894431,
+        "p5_voltage": [
+          0.6666666666666687,
+          0.33333333333333126
+        ],
+        "p5_current": 0.5061728395061666
+      }
+    },
+    {
+      "check": "Variants Q3: fixed-image gradient gives vertical force",
+      "passed": true,
+      "values": {
+        "direct_gradient": 0.10275453335428786,
+        "energy_force": 0.10275453334764229
+      }
+    },
+    {
+      "check": "Variants Q5: critical restoring torque from centroid integration",
+      "passed": true,
+      "values": {
+        "torque_over_mg": -2.00000403217937e-09,
+        "cubic_prediction": -1.9999999999999997e-09
+      }
+    },
+    {
+      "check": "Variants Q6: two mobile species charge susceptibility",
+      "passed": true,
+      "values": {
+        "numerical_derivative": -0.8333333333387927,
+        "linear_prediction": -0.8333333333333333
+      }
+    },
+    {
+      "check": "Variants Q7: nearest interference zeros",
+      "passed": true,
+      "values": {
+        "finite_path_sum_abs": [
+          9.189344503871607e-19,
+          5.299364207542628e-19
+        ]
+      }
+    }
+  ],
+  "all_passed": true,
+  "script_sha256": "e557f52341e0ed579de30fe23af2cabb76400f1b865252de794e06c375e640c9"
+}

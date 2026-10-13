@@ -1,0 +1,39 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=.88]
+\draw[thick] (0,0) rectangle(5,.35);
+\node at (2.5,.65) {$C$};
+\draw[arr] (.55,-.5)--(.55,.1) node[above] {$N_1$};
+\draw[arr] (4.45,-.5)--(4.45,.1) node[above] {$N_1$};
+\draw[arr] (2.3,.35)--(2.3,-1.2) node[below] {$N_3$};
+\draw[arr] (2.8,.1)--(2.8,-.8) node[right] {$Mg$};
+\draw[arr] (.55,0)--(-.6,0) node[left] {$f_1$};
+\draw[arr] (4.45,0)--(5.7,0) node[right] {$f_1$};
+\begin{scope}[shift={(7,-1.0)}]
+\draw[thick] (0,0)--(3.3,3.3)--(3.55,3.05)--(.25,-.25)--cycle;
+\node at (3.8,2.2) {$D$};
+\draw[arr] (.15,-.2)--(.15,1.0) node[above left] {$N_5$};
+\draw[arr] (.15,-.2)--(1.3,-.2);
+\node[below] at (.8,-.35) {$f_5$};
+\draw[arr] (1.3,1.1)--(2.4,0) node[below right] {$N_2$};
+\draw[arr] (1.1,1.3)--(.3,.5);
+\node[left] at (0,.45) {$f_2$};
+\draw[arr] (2.7,2.7)--(1.9,3.5) node[above] {$N_4$};
+\draw[arr] (1.75,1.6)--(1.75,.1);
+\node[below] at (1.8,-.12) {$Mg$};
+\end{scope}
+\end{tikzpicture}
+
+\end{center}
+\end{document}

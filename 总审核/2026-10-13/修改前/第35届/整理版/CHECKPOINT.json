@@ -1,0 +1,185 @@
+{
+  "exam": 35,
+  "status": "已完成",
+  "completed_at": "2026-10-13T11:24:27+08:00",
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 25,
+  "editable_schematics": 23,
+  "measurement_photos": 2,
+  "physics_checks": 64,
+  "pdfs": [
+    {
+      "name": "第35届_学生详解版.pdf",
+      "pages": 57,
+      "body_pages": 56,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "70e6599aada0a923afad70939b9e7304267112f105fe892c463ca354e880ecc1",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "name": "第35届_教师备课版.pdf",
+      "pages": 74,
+      "body_pages": 73,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "e277313de9231a279dd0485450b0d672f485fc2bfdec866c17d59e72288d6d7f",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        30,
+        39,
+        48,
+        57,
+        66
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        57,
+        58
+      ]
+    },
+    {
+      "name": "第35届_试题版.pdf",
+      "pages": 10,
+      "body_pages": 9,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "995689026f5a9bb908673ba5a16fb82a991b6707806cb26dc6d656b4dba9d246",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        8,
+        9
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛试题及参考答案.pdf",
+      "pages": 38,
+      "sha256": "08bbc87980b46aa2c96a43828b68f096a769b4dc87caff5afc913b16d873db78"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛参考解答.pdf",
+      "pages": 28,
+      "sha256": "6d622000fafa9c736e136ffd96a0f984a92c551381bac8b29ca48038c2b896cf"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": null,
+  "next_status": "已收集第35—43届整理工程齐备；第41—43届为既有工程，本次不重新认证。",
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "ffcb6ccb0f8f9447ec9003469738ffc2bff1136d56175a59dc3f2dbb1d0a70ab"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "1d591b1e9d93f4e2df7a7bd88777e6c19a331ea0c115f35f25c138767d5a170d"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "8bc4383cdc912a62f4a87254a8257b7fe9dca57220a55fefc5edd47a22a6153d"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "af0eeddba3a227c45c35006f14076254c0ade34a66622b7a21d0e1c71b25a3bf"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "eefe9d16433ff7c63a5a6c145ff5466cff427b4e3a6259caa9e42b1b71ef5f1c"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "c1aac4cdb5333d57800716fff0ae6e95524b006e934e8838e1b62ad280f063b7"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "6c5ee2141665d5c9a295fb0a972ce8feefd32228fb4350b7259e92e2f3024c81"
+    },
+    {
+      "question": 8,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "0d1bea6c972ee4752c15eab5f4e62df2dcf16d3641bf07a98fc42b30c7431430"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  }
+}

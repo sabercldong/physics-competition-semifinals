@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+\draw[->](-2.6,0)--(.7,0)node[right]{$kx$};
+\draw[->](0,0)--(0,5)node[above]{$kz$};
+\draw[blue,thick]plot[domain=0:720,samples=180]({1.1*(cos(\x)-1)},{1.21/4*(\x*pi/180-sin(2*\x)/2)});
+\node at(-2.1,4.6){初静止电子};
+\node at(-2.1,4.1){相位参数 $\psi=\omega t-kz$};
+\end{tikzpicture}

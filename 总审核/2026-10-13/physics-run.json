@@ -1,0 +1,47 @@
+[
+  {
+    "exam": 35,
+    "exit": 0,
+    "tail": "64 independent checks passed\n"
+  },
+  {
+    "exam": 36,
+    "exit": 0,
+    "tail": "{\"checks\": 56, \"all_passed\": true}\n"
+  },
+  {
+    "exam": 37,
+    "exit": 0,
+    "tail": "{\"all_passed\": true, \"checks\": 48, \"B_min\": 3.254186110057572, \"phase_model_resonator_slope\": \"m/(pi n^2)\"}\n"
+  },
+  {
+    "exam": 38,
+    "exit": 0,
+    "tail": "{\"all_passed\": true, \"checks\": 48, \"motor_time\": 6.141866649206351, \"vehicle_full_mu\": [0.9483942703904767, 1.0680928420586946]}\n"
+  },
+  {
+    "exam": 39,
+    "exit": 0,
+    "tail": "{\"all_passed\": true, \"checks\": 36, \"refractive_index\": 1.409314915669973}\n"
+  },
+  {
+    "exam": 40,
+    "exit": 0,
+    "tail": "}\n    },\n    {\n      \"check\": \"135度散射的峰位与电子能量\",\n      \"passed\": true,\n      \"detail\": {\n        \"lambda1_nm\": 0.07524235848235122,\n        \"electron_kinetic_eV\": 959.9211586269812\n      }\n    }\n  ]\n}\n"
+  },
+  {
+    "exam": 41,
+    "exit": 0,
+    "tail": "{\"all_passed\": true, \"check_count\": 52, \"table\": [33.74898859588859, 33.22787153293803, 31.87040493653601, 33.09108711779279, 30.75912773156443], \"Tf\": 328.6112949773926, \"tw\": 34.08271656654111}\n"
+  },
+  {
+    "exam": 42,
+    "exit": 0,
+    "tail": "{\n  \"all_passed\": true,\n  \"checks\": 30,\n  \"Q4_chi\": 0.6519550670230545,\n  \"Q4_loss\": -0.3946566586692493\n}\n"
+  },
+  {
+    "exam": 43,
+    "exit": 0,
+    "tail": "ixed-image gradient gives vertical force\nVariants Q5: critical restoring torque from centroid integration\nVariants Q6: two mobile species charge susceptibility\nVariants Q7: nearest interference zeros\n"
+  }
+]

@@ -1,0 +1,3131 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=22mm,right=22mm,top=22mm,bottom=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx,xcolor,booktabs,longtable,array,calc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\usepackage{setspace,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setstretch{1.24}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.35em}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+\setcounter{secnumdepth}{-1}
+\ctexset{section={format=\Large\bfseries,beforeskip=1em,afterskip=.7em},
+subsection={format=\large\bfseries,beforeskip=.8em,afterskip=.4em},
+subsubsection={format=\normalsize\bfseries,beforeskip=.7em,afterskip=.3em}}
+\allowdisplaybreaks[2]
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\newsavebox{\diagrambox}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage}
+\setlength{\headheight}{16pt}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{27mm}
+\begin{center}
+{\LARGE\bfseries 第41届全国中学生物理竞赛\par}
+\vspace{8mm}
+{\LARGE\bfseries 复赛理论试题\par}
+\vspace{17mm}
+{\Large 学生详解版\par}
+\end{center}
+\vfill
+\end{titlepage}
+\setcounter{page}{1}
+\section{第 1
+题　高层建筑的摆式减振器（45分）}\label{ux7b2c-1-ux9898-ux9ad8ux5c42ux5efaux7b51ux7684ux6446ux5f0fux51cfux632fux566845ux5206}
+
+高层建筑在风的作用下会发生晃动。在特定条件下，晃动幅度会变得较大。
+
+（1）为减小晃动，在建筑物上安装摆式减振器。摆的悬点固定在大楼上，摆锤质量为
+\(m\)，刚性摆臂长为 \(l\)，摆臂质量可忽略。大楼视为质量为 \(M\)
+的刚体，其水平回复力等效为劲度系数为 \(k\) 的弹簧；整个系统总质量为
+\(M+m\)。风的水平强迫力向左为正，随时间变化为
+
+\[F(t)=H\cos\omega t,\]
+
+其中 \(H\)、\(\omega\) 为常量，重力加速度为
+\(g\)。本问只考虑摆和振子的微小振动。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}[scale=.92]
+\draw[thick](-3,-1.2)--(2,-1.2);
+\draw[thick](-3,-1.2)--(-3,1);
+\draw[decorate,decoration={zigzag,segment length=4mm,amplitude=2mm}](-3,-.3)--(-.9,-.3);
+\node[above]at(-2,.05){$k$};
+\draw[fill=gray!12](-.9,-1.1)rectangle(1.1,.5);
+\node at(.1,-.3){$M$};
+\draw[thick](.1,.5)--(.1,2.5);
+\fill(.1,2.5)circle(2pt);
+\draw[dashed](.1,2.5)--(.1,.8);
+\draw[thick](.1,2.5)--(-.7,1.05);
+\filldraw[fill=white](-.7,1.05)circle(.16)node[left=6pt]{$m$};
+\node[left]at(-.38,1.9){$l$};
+\draw(.1,1.9)arc(-90:-119:.6);
+\node at(-.06,1.63){$\theta$};
+\draw[->,thick](2,.05)--(1.15,.05)node[midway,above]{$F$};
+\draw[->](-.1,-1.8)--(-1.5,-1.8)node[left]{$+x$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 建筑物与摆式减振器；位移和摆角向左为正\par}
+\endgroup\end{minipage}
+\end{center}
+
+（1.1）求大楼在强迫力作用下产生的稳定振动的振幅。
+
+（1.2）指出没有减振器时，什么风频率使大楼受迫振幅最大；针对此频率，减振器满足什么条件才能最大限度减小大楼的受迫振动？
+
+（2）风频率为第（1.2）问所得频率的 \(\sqrt{0.99}\)
+倍。求没有减振器时大楼的受迫振幅。若摆长 \(l\)
+满足第（1.2）问的条件，要使振幅降到无减振器时的 \(1\%\)，求 \(m/M\)。
+
+（3）实际装置将摆锤浸没在固定于大楼的油池中。油的质量可忽略，或已包含在
+\(M\) 中。油相对大楼静止，摆锤相对油的速度为 \(\boldsymbol v'\)
+时受到阻力 \(\boldsymbol f=-\gamma\boldsymbol v'\)，\(\gamma\)
+为常量。写出含阻尼力的系统运动方程组，列式时不作小振幅近似，无需求解。定性说明阻尼力为何不可缺少。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d}
+
+两个自由度的受迫振动与动力吸振。大楼的位移和摆的相对位移相互耦合；摆的存在改变了整套系统的固有频率，并可在某个驱动频率产生反共振。第（3）问进一步要求在有限摆角下正确处理相对速度、阻力反作用和能量耗散。
+
+``稳定振动''在无阻尼部分按题意理解为与外力同频的特解。没有阻尼时，自由振动一般不会自行消失；在真正的共振频率上也不存在有限振幅的同频特解。求出的带符号响应系数需要取绝对值，才是实际振幅。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9}
+
+悬点平动的单摆运动；小量阶数与线性化；牛顿定律和系统动量方程；同频特解与相位；反共振和共振的区别；粘性阻尼的相对速度；能量损失率。
+
+对 \(\theta\)
+作小量展开时，\(\sin\theta\simeq\theta\)、\(\cos\theta\simeq1\)，而
+\(\dot\theta^2\)、\(\ddot x\theta\)
+等为二阶量。不能一面使用小振动方程，一面保留同阶的某个乘积却忽略另一个。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf}
+
+若大楼向左加速，悬点系中摆锤受到向右的惯性力。摆锤的相对振动又通过摆臂给建筑物一个水平反作用。精确调谐时，大楼可以近乎静止，外力主要由摆的反作用抵消。
+
+无阻尼摆没有把能量变成热，它是储能并交换能量的附加振子。安装后原来单一的共振峰分裂为两个峰，中间出现大楼响应为零的频率。阻尼使峰值有限，并使风停止后振动衰减。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](0,0)--(6,0)node[right]{$\omega/\Omega$};
+\draw[->](0,0)--(0,2.8)node[above]{$A$};
+\draw[blue,thick](.2,.6)..controls(1.0,.7)and(1.5,1.4)..(1.75,2.6);
+\draw[blue,thick](1.95,2.6)..controls(2.15,.4)and(2.55,.15)..(3,0);
+\draw[blue,thick](3,0)..controls(3.4,.1)and(3.7,.5)..(4.05,2.6);
+\draw[blue,thick](4.25,2.6)..controls(4.6,.6)and(5,.4)..(5.7,.2);
+\foreach \x/\lab in {1.85/{\omega_-/\Omega},3/{1},4.15/{\omega_+/\Omega}}{\draw[dashed](\x,0)--(\x,2.8);\node[below]at(\x,0){$\lab$};}
+\node at(3,3.2){无阻尼响应示意，峰处发散};
+\node[below]at(3,-.65){$\omega_0=\Omega$ 为调谐反共振点};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 耦合系统的两个固有频率与反共振频率\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3}
+
+取大楼位移 \(x\) 向左为正，摆相对铅垂向下方向的偏角 \(\theta\)
+向左为正，记
+\(y=l\theta\)。先写摆锤的绝对位置，分别列摆锤和大楼方程，再取线性近似。令
+\(x=X\cos\omega t\)、\(y=Y\cos\omega t\)，解两个代数方程。
+
+第（2）问最好把频率和质量无量纲化，避免把``振幅减小到
+\(1\%\)''误读成``减小
+\(1\%\)''。第（3）问回到未线性化的坐标，阻尼只能依赖
+\(\boldsymbol v'\)，不能使用摆锤对地速度。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790}
+
+\subsubsection{1　绝对坐标与摆锤受力}\label{ux7eddux5bf9ux5750ux6807ux4e0eux6446ux9524ux53d7ux529b}
+
+竖直坐标 \(z\)
+向下为正。悬点高度不变，把悬点的竖直坐标取为零，则摆锤位置为
+
+\[x_m=x+l\sin\theta,\qquad z_m=l\cos\theta.\]
+
+一次和二次微分分别给出
+
+\[\dot x_m=\dot x+l\dot\theta\cos\theta,
+\qquad \dot z_m=-l\dot\theta\sin\theta,\]
+
+\[\ddot x_m=\ddot x+l\ddot\theta\cos\theta-l\dot\theta^2\sin\theta,\]
+
+\[\ddot z_m=-l\ddot\theta\sin\theta-l\dot\theta^2\cos\theta.\]
+
+设摆臂沿朝向悬点的力大小为 \(T\)。没有油阻力时，牛顿方程为
+
+\[m(\ddot x+l\ddot\theta\cos\theta-l\dot\theta^2\sin\theta)
+=-T\sin\theta,\]
+
+\[m(-l\ddot\theta\sin\theta-l\dot\theta^2\cos\theta)
+=mg-T\cos\theta.\]
+
+在小振动的一阶精度内，竖直方程的惯性项均是二阶量，因此
+
+\[T=mg+O(\theta^2).\]
+
+代入水平式、除以 \(m\)，得到
+
+\[\boxed{\ddot x+l\ddot\theta+g\theta=0.}\]
+
+用相对水平位移 \(y=l\theta\) 和 \(\omega_0^2=g/l\) 表示，即
+
+\[\boxed{\ddot x+\ddot y+\omega_0^2y=0.}\]
+
+注意 \(\ddot x\)
+是悬点加速度。若把这一项遗漏，就把本题错误地变成了悬点不动的单摆。
+
+\subsubsection{2　大楼方程与系统方程的相互检查}\label{ux5927ux697cux65b9ux7a0bux4e0eux7cfbux7edfux65b9ux7a0bux7684ux76f8ux4e92ux68c0ux67e5}
+
+摆锤通过摆臂拉大楼向左，水平反作用为 \(T\sin\theta\)。大楼方程为
+
+\[M\ddot x=-kx+T\sin\theta+H\cos\omega t.\]
+
+线性化并用 \(y=l\theta\)，有
+
+\[\boxed{M\ddot x+kx-m\omega_0^2y=H\cos\omega t.}\]
+
+也可把摆锤和大楼看成整体。它们的总水平动量在线性精度内为
+
+\[P_x=(M+m)\dot x+m\dot y.\]
+
+摆臂内力相消，故
+
+\[\boxed{(M+m)\ddot x+m\ddot y+kx=H\cos\omega t.}\]
+
+利用摆方程
+\(\ddot y=-\ddot x-\omega_0^2y\)，这一式立即还原为大楼方程。整体方程里出现
+\(M+m\)，单独大楼方程里出现
+\(M\)，两者没有矛盾；相对运动项不能随意删去。
+
+\subsubsection{3　求同频响应}\label{ux6c42ux540cux9891ux54cdux5e94}
+
+令带符号响应系数为 \(X,Y\)：
+
+\[x=X\cos\omega t,\qquad y=Y\cos\omega t.\]
+
+将它们代入两个线性方程，得到
+
+\[-\omega^2X+(\omega_0^2-\omega^2)Y=0,\]
+
+\[ (k-M\omega^2)X-m\omega_0^2Y=H.\]
+
+当 \(\omega\ne\omega_0\) 时，从第一式有
+
+\[Y=\frac{\omega^2}{\omega_0^2-\omega^2}X.\]
+
+代入第二式并通分，定义
+
+\[D(\omega)=(\omega_0^2-\omega^2)(k-M\omega^2)
+-m\omega_0^2\omega^2,\]
+
+便有
+
+\[\boxed{X=\frac{(\omega_0^2-\omega^2)H}{D(\omega)},
+\qquad Y=\frac{\omega^2H}{D(\omega)}.}\]
+
+实际振幅为
+
+\[\boxed{A=|X|
+=\frac{H|\omega_0^2-\omega^2|}{|D(\omega)|}.}\]
+
+这里取 \(H>0\)；若外力系数也带符号，分子应使用 \(|H|\)。\(X>0\)
+表示大楼与外力同相，\(X<0\) 表示反相。不能将负值报告成负振幅。
+
+在 \(\omega=\omega_0\) 处，先前的中间消元除数为零，但原代数方程仍有解：
+
+\[X=0,\qquad Y=-\frac{H}{m\omega_0^2},\qquad m>0.\]
+
+因此最终表达式可连续使用。这是反共振：大楼不动，摆保持有限的反相振动。摆角振幅为
+
+\[\Theta=\frac{|Y|}{l}=\frac{H}{mg}.\]
+
+要让小角近似自洽，必须另有 \(H/(mg)\ll1\)。仅仅得到
+\(X=0\)，不能保证摆锤小幅运动。
+
+\subsubsection{4　无减振器的共振与摆长调谐}\label{ux65e0ux51cfux632fux5668ux7684ux5171ux632fux4e0eux6446ux957fux8c03ux8c10}
+
+没有摆时取 \(m=0\)，大楼方程单独给出
+
+\[X_{\rm bare}=\frac{H}{k-M\omega^2}.\]
+
+其固有频率为
+
+\[\boxed{\Omega=\sqrt{\frac{k}{M}}.}\]
+
+当 \(\omega\to\Omega\)
+时，无阻尼同频响应的振幅趋于无穷。在恰好共振时，运动含随时间增长的项，而不是具有有限最大值的稳定正弦振动。
+
+现在使风频率固定为 \(\Omega\)，安装摆后代入 \(k-M\Omega^2=0\)，有
+
+\[X(\Omega)
+=\frac{(\Omega^2-\omega_0^2)H}{m\omega_0^2\Omega^2}
+=\frac{H(kl-Mg)}{mgk}.\]
+
+其大小最小的调谐条件是
+
+\[\boxed{\omega_0=\Omega,
+\qquad l=\frac{Mg}{k}.}\]
+
+若摆长不能精确调谐，增大 \(m\)
+也会减小上述响应，但不能对任意风频率都保证无限制改善。精确调谐所得零振幅针对指定频率，离开这个频率后仍须使用完整的
+\(D(\omega)\)。
+
+\subsubsection{5　频率偏离调谐值时的质量要求}\label{ux9891ux7387ux504fux79bbux8c03ux8c10ux503cux65f6ux7684ux8d28ux91cfux8981ux6c42}
+
+题给 \(\omega^2=0.99k/M=0.99\Omega^2\)。无摆时
+
+\[\boxed{A_{\rm bare}=\frac{H}{k-0.99k}=\frac{100H}{k}.}\]
+
+调谐摆满足 \(\omega_0^2=\Omega^2\)。令
+
+\[s=\frac{\omega^2}{\Omega^2}=0.99,
+\qquad \eta=\frac mM.\]
+
+将分母提取因子 \(k\Omega^2\)，得到
+
+\[D=k\Omega^2[(1-s)^2-\eta s].\]
+
+于是
+
+\[X=\frac Hk\frac{1-s}{(1-s)^2-\eta s},\]
+
+\[\frac{A}{A_{\rm bare}}
+=\frac{(1-s)^2}{|(1-s)^2-\eta s|}.\]
+
+要求 \(A/A_{\rm bare}=0.01\)，故
+
+\[|0.0001-0.99\eta|=0.01.\]
+
+有两个代数分支。若 \(0.0001-0.99\eta=0.01\)，则
+\(\eta<0\)，不是可用的摆锤质量；另一分支给出
+
+\[0.0001-0.99\eta=-0.01,\]
+
+\[\boxed{\frac mM=\frac{0.0101}{0.99}
+=\frac{101}{9900}\simeq0.01020.}\]
+
+这一质量约为大楼质量的 \(1.02\%\)。代回有 \(X=-H/k\)，实际振幅
+\(H/k\)，正是 \(100H/k\) 的百分之一；负号表明响应已经进入反相分支。
+
+如果只要求``不超过百分之一''，则同样在正质量支上得到
+\(m/M\ge101/9900\)，但仍须满足摆幅和装置尺寸等模型条件。
+
+\subsubsection{6　安装摆后为何仍可能共振}\label{ux5b89ux88c5ux6446ux540eux4e3aux4f55ux4ecdux53efux80fdux5171ux632f}
+
+取外力为零，同频运动的非零解要求 \(D=0\)。在调谐情形写成
+
+\[s^2-(2+\eta)s+1=0.\]
+
+两个固有频率平方对应
+
+\[\boxed{s_\pm=
+\frac{2+\eta\pm\sqrt{\eta^2+4\eta}}2,
+\qquad \omega_\pm=\Omega\sqrt{s_\pm}.}\]
+
+因 \(s_-s_+=1\)，且 \(s_-<1<s_+\)，反共振频率 \(\Omega\)
+位于两个共振频率之间。摆的作用是重塑频率响应，并没有消灭无阻尼系统的全部共振。
+
+对 \(\eta=101/9900\)，计算得
+\(\omega_-/\Omega\simeq0.9508\)、\(\omega_+/\Omega\simeq1.0518\)。题给风频率约为
+\(0.9950\Omega\)，处在两个共振峰之间。
+
+\subsubsection{7　有限摆角下的油阻力}\label{ux6709ux9650ux6446ux89d2ux4e0bux7684ux6cb9ux963bux529b}
+
+油随大楼平动，因而摆锤相对油的速度为
+
+\[\boldsymbol v'
+=l\dot\theta\cos\theta\,\boldsymbol e_x
+-l\dot\theta\sin\theta\,\boldsymbol e_z.\]
+
+相应阻力分量为
+
+\[f_x=-\gamma l\dot\theta\cos\theta,
+\qquad f_z=\gamma l\dot\theta\sin\theta.\]
+
+使用第1节的精确加速度，摆锤两方向方程为
+
+\[m(\ddot x+l\ddot\theta\cos\theta-l\dot\theta^2\sin\theta)
+=-T\sin\theta-\gamma l\dot\theta\cos\theta,\]
+
+\[m(-l\ddot\theta\sin\theta-l\dot\theta^2\cos\theta)
+=mg-T\cos\theta+\gamma l\dot\theta\sin\theta.\]
+
+摆锤对油的反作用最终传给大楼，不能遗漏它。大楼精确方程为
+
+\[\boxed{M\ddot x=-kx+T\sin\theta
++\gamma l\dot\theta\cos\theta+H\cos\omega t.}\]
+
+上面三个方程配合未知量 \(x,\theta,T\)，就是一组完整答案。也可消去
+\(T\)，写成更紧凑的两自由度方程：
+
+\[\boxed{ml^2\ddot\theta+ml\ddot x\cos\theta
++mgl\sin\theta+\gamma l^2\dot\theta=0,}\]
+
+\[\boxed{(M+m)\ddot x
++ml(\ddot\theta\cos\theta-\dot\theta^2\sin\theta)
++kx=H\cos\omega t.}\]
+
+第二式是全系统的水平动量方程，因此摆臂力和油阻力均作为内力相消。两种形式应给出一致运动。
+
+\subsubsection{8　用能量说明阻尼的必要性}\label{ux7528ux80fdux91cfux8bf4ux660eux963bux5c3cux7684ux5fc5ux8981ux6027}
+
+以最低摆位为重力势能零点，总机械能为
+
+\[\begin{aligned}
+E={}&\frac12(M+m)\dot x^2
++ml\dot x\dot\theta\cos\theta
++\frac12ml^2\dot\theta^2\\
+&+\frac12kx^2+mgl(1-\cos\theta).
+\end{aligned}\]
+
+阻力作用于摆锤和大楼的总功率是
+
+\[\boldsymbol f\cdot\boldsymbol v_m
+-\boldsymbol f\cdot\boldsymbol v_{\rm oil}
+=\boldsymbol f\cdot\boldsymbol v'
+=-\gamma l^2\dot\theta^2.\]
+
+因此
+
+\[\boxed{\frac{dE}{dt}
+=H\cos\omega t\,\dot x-\gamma l^2\dot\theta^2.}\]
+
+风停后 \(H=0\)，有
+\(dE/dt\le0\)。油阻力把相对摆动的机械能转为热，使自由振动逐步衰减。受迫运动时，它也限制两个耦合共振峰，并缓和精确调谐对频率漂移的敏感性。
+
+\subsubsection{9　量纲、静态极限与结果汇总}\label{ux91cfux7eb2ux9759ux6001ux6781ux9650ux4e0eux7ed3ux679cux6c47ux603b}
+
+\(D\) 的量纲为质量乘以时间的负四次方，\(H(\omega_0^2-\omega^2)/D\)
+的量纲为长度，符合位移。\(\omega\to0\) 时
+\(X\to H/k\)、\(Y\to0\)，对应大楼准静态形变和竖直单摆。取 \(m\to0\)
+且避开可约分的奇点，恢复单自由度响应。
+
+本题主要结果是大楼振幅 \(|X|\)，调谐摆长 \(Mg/k\)，第（2）问质量比
+\(101/9900\)，以及第（3）问有限摆角运动方程。零响应和有限摆幅必须同时检查，只有质量为正的代数支可用。
+
+\clearpage
+
+\section{第 2
+题　台球碰撞、滑动与30°经验规则（50分）}\label{ux7b2c-2-ux9898-ux53f0ux7403ux78b0ux649eux6ed1ux52a8ux4e0e30ux7ecfux9a8cux89c4ux521950ux5206}
+
+台球 \(Q\) 撞击静止的目标球 \(T\)。两球质量均为 \(m\)、半径均为
+\(R\)，质量分布均匀。碰撞前 \(Q\) 球质心速度为
+\(\boldsymbol v_0=v_0\boldsymbol e_y\)，转动角速度为
+\(\boldsymbol\omega_0\)。碰撞时间极短，两球之间没有摩擦，碰撞完全弹性；球与桌面为点接触。取桌面内右手直角坐标系，\(z\)
+轴竖直向上，\(x\) 向右，\(y\) 为入射方向。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}[scale=.9]
+\draw[->](-1.5,0)--(3.2,0)node[right]{$x$};
+\draw[->](0,-2)--(0,3.5)node[above]{$y$};
+\draw[thick](0,0)circle(.5)node[below right=10pt]{$Q$};
+\draw[thick](-.5,.866)circle(.5)node[left=14pt]{$T$};
+\draw[dashed](-1.5,2.6)--(.55,-.95);
+\draw[->,very thick](-.5,.866)--(-1.5,2.598)node[left]{$\boldsymbol v_T$};
+\draw[->,very thick](0,0)--(2.25,1.30)node[right]{$\boldsymbol v_{Q0}$};
+\draw[->,blue,thick](0,-1.65)--(0,-.6)node[left,midway]{$v_0$};
+\draw(0,1.8)arc(90:120:1.8);\node at(-.45,2.02){$\phi$};
+\draw(0,.95)arc(90:30:.95);\node at(.7,.85){$\theta$};
+\draw(-.15,.2598)--(.1098,.4098)--(.2598,.15);
+\node[below]at(1.25,-.7){$\boldsymbol n\perp\boldsymbol t$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 等质量台球碰撞；角度均相对入射方向标记\par}
+\endgroup\end{minipage}
+\end{center}
+
+（1）碰撞后瞬间，\(T\) 球和 \(Q\) 球的运动方向与 \(y\) 轴的夹角分别为
+\(\phi\)、\(\theta\)，如图。求两球运动方向夹角，以及 \(Q\) 球的质心速度
+\(\boldsymbol v_Q\) 和转动角速度 \(\boldsymbol\omega\)，用
+\(\phi,v_0,\boldsymbol\omega_0\) 等表示。
+
+（2）碰撞后，\(Q\) 球在桌面摩擦力作用下经过 \(\Delta t\)
+才达到无滑滚动。已知动摩擦系数 \(\mu\)、重力加速度 \(g\)，以及
+\(\phi,v_0,\omega_{0x},\omega_{0y}\)。用这些量及 \(m,R\) 表示下列结果：
+
+（2.1）碰撞后的任意时刻，球上与桌面接触的点称为该时刻的 \(C\)
+点。求碰撞后瞬间该点对桌面的速度 \(\boldsymbol v_{C0}\) 的 \(x,y\)
+分量。
+
+（2.2）求达到纯滚的时间 \(\Delta t\)。
+
+（2.3）以碰撞后瞬间球心位置为桌面内原点，求纯滚前球心轨迹
+\(x(t),y(t)\)。
+
+（2.4）定性指出纯滚后球心轨迹形状，并给出最终速度与 \(y\) 轴夹角
+\(\theta_f\) 的正切。
+
+（3）击球者在开球时给静止 \(Q\) 球一个沿 \(+y\) 的水平冲量
+\(\mathcal J\)。作用点在过球心的竖直大圆面内，距桌面高度为
+\(h\)。求使球立即无滑滚动的特定 \(h\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[thick](-1.6,0)--(1.6,0);
+\draw[thick](0,1)circle(1);\fill(0,1)circle(2pt);
+\draw[->,thick](-1.4,1.4)--(-.25,1.4);
+\node[left]at(-1.4,1.4){$\mathcal J$};
+\draw[dashed](-.92,1.4)--(.2,1.4);
+\draw[<->](-1.55,0)--(-1.55,1.4)node[midway,left]{$h$};
+\draw[<->](.1,0)--(.1,1)node[midway,right]{$R$};
+\draw[->,thick](.4,1)--(1.8,1)node[right]{$v_0$};
+\draw[->](.5,1.65)arc(52:-30:.82);
+\node[right]at(.85,2){$\omega_{0x}<0$};
+\node[below]at(0,0){$C$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 水平冲量的作用高度与球心位置\par}
+\endgroup\end{minipage}
+\end{center}
+
+（4）探讨台球手熟悉的30°经验规则。在第（3）问选定高度的条件下，\(Q\)
+球以纯滚状态撞击 \(T\) 球，\(T\) 球沿角度 \(\phi\) 飞出。
+
+（4.1）求碰撞后至纯滚前球心的 \(x(t),y(t)\)。
+
+（4.2）求最终夹角 \(\theta_f\) 的正切。
+
+（4.3）\(\theta_f\) 在 \(\phi=\phi_m\) 处取极大值
+\(\theta_{fm}\)。求它们，并计算
+\(\phi_m\pm5^\circ\)、\(\phi_m\pm10^\circ\) 时的
+\(\theta_f\)，完成下表。
+
+{\def\LTcaptype{table} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\phi\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\phi_m=\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\phi_m+5^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\phi_m+10^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\phi_m-5^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\phi_m-10^\circ\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\theta_f\) & & & & & \\
+\end{longtable}
+}
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-1}
+
+瞬时中心碰撞与随后刚体滑动的分段问题。碰撞阶段忽略桌面摩擦冲量，用两球动量与能量守恒；滑动阶段摩擦方向由接触点速度决定，用平动、转动两个方程；纯滚以后接触点相对速度为零，球心作匀速直线运动。
+
+对于一般自旋，球心速度、角速度和接触点滑动方向是三个不同对象。可先求接触点滑动速度的变化，再由摩擦方向积分求球心轨迹。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-1}
+
+等质量光滑球的弹性斜碰；冲量和冲量矩；均匀球转动惯量
+\(I=2mR^2/5\)；刚体点速度
+\(\boldsymbol v_C=\boldsymbol v+\boldsymbol\omega\times\boldsymbol R_C\)；库仑摩擦；向量三重积；分段轨迹连续性；方向角的象限与极值。
+
+这里每一时刻的 \(C\)
+是该时刻位于球底的材料点。连续变化的接触位置不是同一颗固定的表面微粒。计算接触点瞬时速度时，球心到接触位置的空间矢量一直为
+\(-R\boldsymbol e_z\)。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-1}
+
+两球接触力沿连心线，通过各自球心，所以不能改变角速度。\(Q\)
+球在连心线方向的速度分量传给 \(T\) 球，保留垂直连心线方向的分量。
+
+碰撞之后，旧的自旋和新的平动通常不再匹配。桌面摩擦一方面改变球心速度，一方面改变横向角速度，使接触点滑动逐渐归零。对于碰撞前纯滚的
+\(Q\) 球，摩擦恰好沿 \(T\) 球飞出方向，因此 \(Q\)
+的速度被拉回到接近原来的方向。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](0,0)--(3.8,0)node[right]{$x$};
+\draw[->](0,0)--(0,4)node[above]{$y$};
+\draw[blue,thick]plot[domain=0:.247436,samples=50]({15*(.433013*\x-.25*\x*\x)},{15*(.25*\x+.433013*\x*\x)});
+\draw[red,thick](1.3776,1.3255)--(2.72,3.34);
+\fill(1.3776,1.3255)circle(2pt)node[right=8pt]{纯滚起点};
+\draw[->,blue](0,0)--(.9,.52)node[right]{$\boldsymbol v_{Q0}$};
+\draw[->,red](1.3776,1.3255)--(1.99,2.245)node[right]{$\boldsymbol v_f$};
+\node[blue]at(2.5,.7){滑动段};
+\node[red]at(1.4,3.5){纯滚直线};
+\node[below]at(1.8,-.55){示例：纯滚入射，$\phi=30^\circ$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 碰撞后的球心曲线连接纯滚后的直线\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-1}
+
+先用沿 \(T\) 球出射方向的单位矢量 \(\boldsymbol n\) 和垂直它的单位矢量
+\(\boldsymbol t\) 解碰撞，再变回题给 \(x,y\) 坐标。令初始接触滑动速度为
+\(\boldsymbol u_0\)。在滑动阶段联立
+\(m\dot{\boldsymbol v}=\boldsymbol f\) 和
+\(I\dot{\boldsymbol\omega}=\boldsymbol R_C\times\boldsymbol f\)，对
+\(\boldsymbol u\) 求导。
+
+证明 \(\boldsymbol u\)
+方向保持不变后，球心加速度就是恒向量，轨迹与末速度都可直接积分。第（4）问再代入纯滚初值，而不是从头猜摩擦方向。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-1}
+
+\subsubsection{1　碰撞方向与速度分解}\label{ux78b0ux649eux65b9ux5411ux4e0eux901fux5ea6ux5206ux89e3}
+
+取非退化碰撞 \(0<\phi<\pi/2\)。连心线沿 \(T\) 球出射方向，定义
+
+\[\boldsymbol n=-\sin\phi\,\boldsymbol e_x+\cos\phi\,\boldsymbol e_y,\]
+
+\[\boldsymbol t=\cos\phi\,\boldsymbol e_x+\sin\phi\,\boldsymbol e_y.\]
+
+两者正交，入射速度分解为
+
+\[v_0\boldsymbol e_y
+=v_0\cos\phi\,\boldsymbol n+v_0\sin\phi\,\boldsymbol t.\]
+
+碰撞没有切向冲量，\(Q\) 的切向分量不变，\(T\)
+的切向速度仍为零。设碰撞后沿 \(\boldsymbol n\) 的速度分别为
+\(q\)、\(t\)，动量和能量方程为
+
+\[q+t=v_0\cos\phi,\]
+
+\[q^2+t^2=v_0^2\cos^2\phi.\]
+
+平方第一式后与第二式相减，得 \(2qt=0\)。\(t=0\)
+对应没有有效碰撞的支；实际分离碰撞取
+
+\[q=0,\qquad t=v_0\cos\phi.\]
+
+于是
+
+\[\boxed{\boldsymbol v_{T}=v_0\cos\phi\,\boldsymbol n,
+\qquad\boldsymbol v_{Q0}=v_0\sin\phi\,\boldsymbol t.}\]
+
+两速度内积为零，因此
+
+\[\boxed{\theta+\phi=90^\circ.}\]
+
+在 \(x,y\) 坐标中，\(Q\) 球碰撞后的初速度为
+
+\[\boxed{v_{Qx0}=v_0\sin\phi\cos\phi,
+\qquad v_{Qy0}=v_0\sin^2\phi.}\]
+
+碰撞冲量通过球心，桌面摩擦冲量可忽略，所以
+
+\[\boxed{\boldsymbol\omega(0^+)=\boldsymbol\omega_0.}\]
+
+球的转动能在碰撞瞬间不变，正因如此，能量方程才可化为上述质心速度的平方和。若两球之间有摩擦，这种简化就不成立。
+
+\subsubsection{2　用整体动量检查直角结论}\label{ux7528ux6574ux4f53ux52a8ux91cfux68c0ux67e5ux76f4ux89d2ux7ed3ux8bba}
+
+原坐标中还可直接写
+
+\[\boldsymbol v_{Q0}+\boldsymbol v_T=v_0\boldsymbol e_y,\]
+
+\[v_{Q0}^2+v_T^2=v_0^2.\]
+
+第一式平方后与第二式相减，得到
+
+\[2\boldsymbol v_{Q0}\cdot\boldsymbol v_T=0.\]
+
+此解法说明直角是等质量、目标球静止、弹性且无切向冲量共同作用的结果。正碰
+\(\phi=0\) 时 \(Q\) 瞬时停下，其飞出方向无法定义；掠碰极限
+\(\phi\to90^\circ\) 时 \(T\) 的速度趋零，其方向也成为退化量。
+
+\subsubsection{3　接触点滑动速度}\label{ux63a5ux89e6ux70b9ux6ed1ux52a8ux901fux5ea6}
+
+图中区分质心的平动与自旋引起的球底速度。二者相加才得到桌面摩擦所反对的相对滑动。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[thick](-1.6,0)--(1.6,0);
+\draw[thick](0,1)circle(1);
+\fill(0,1)circle(2pt);
+\draw[->,thick](-1.4,1.4)--(-.25,1.4)node[midway,above]{$\mathcal J$};
+\draw[dashed](-.92,1.4)--(.2,1.4);
+\draw[<->](-1.55,0)--(-1.55,1.4)node[midway,left]{$h$};
+\draw[<->](.1,0)--(.1,1)node[midway,right]{$R$};
+\draw[->,thick](.4,1)--(1.8,1)node[right]{$v_0$};
+\draw[->](.5,1.65)arc(52:-30:.82);
+\node[right]at(.85,2){$\omega_x<0$};
+\node[below]at(0,0){$C$};
+\node[below]at(0,-.5){竖直大圆截面};
+\begin{scope}[xshift=5cm]
+\draw[thick](-1.3,0)--(1.6,0);\draw(0,1)circle(1);
+\draw[->,blue,thick](0,1)--(1.5,1)node[right]{$\boldsymbol v$};
+\draw[->,red,thick](0,0)--(-1.2,0)node[left]{$\boldsymbol\omega\times\boldsymbol R_C$};
+\node[below]at(0,-.5){$\boldsymbol u=\boldsymbol v+\boldsymbol\omega\times\boldsymbol R_C$};
+\end{scope}
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 水平冲量与接触点速度的合成；右图为运动学示意\par}
+\endgroup\end{minipage}
+\end{center}
+
+球心到桌面接触点的矢量为
+
+\[\boldsymbol R_C=-R\boldsymbol e_z.\]
+
+一般角速度写为
+\(\boldsymbol\omega=\omega_x\boldsymbol e_x+\omega_y\boldsymbol e_y+\omega_z\boldsymbol e_z\)。叉乘得到
+
+\[\boldsymbol\omega\times\boldsymbol R_C
+=-R\omega_y\boldsymbol e_x+R\omega_x\boldsymbol e_y.\]
+
+所以记 \(\boldsymbol u=\boldsymbol v_C\)，有
+
+\[\boxed{\boldsymbol u
+=(v_x-R\omega_y)\boldsymbol e_x
++(v_y+R\omega_x)\boldsymbol e_y.}\]
+
+初值为
+
+\[\boxed{u_{0x}=v_0\sin\phi\cos\phi-R\omega_{0y},}\]
+
+\[\boxed{u_{0y}=v_0\sin^2\phi+R\omega_{0x}.}\]
+
+设
+
+\[U_0=|\boldsymbol u_0|
+=\sqrt{(v_0\sin\phi\cos\phi-R\omega_{0y})^2
++(v_0\sin^2\phi+R\omega_{0x})^2}.\]
+
+绕竖直轴的自旋 \(\omega_{0z}\)
+不进入接触点滑动速度。点接触模型中桌面摩擦对竖直轴也无力矩，因此它不影响本题平面轨迹。实际球的有限接触斑可能产生扭转阻力，属于题设以外的修正。
+
+\subsubsection{4　滑动速度方向为什么不变}\label{ux6ed1ux52a8ux901fux5ea6ux65b9ux5411ux4e3aux4ec0ux4e48ux4e0dux53d8}
+
+只要 \(U=|\boldsymbol u|>0\)，库仑动摩擦为
+
+\[\boldsymbol f=-\mu mg\frac{\boldsymbol u}{U}.\]
+
+平动与转动方程分别为
+
+\[\dot{\boldsymbol v}=-\mu g\widehat{\boldsymbol u},\]
+
+\[\dot{\boldsymbol\omega}
+=\frac1I\boldsymbol R_C\times(-\mu mg\widehat{\boldsymbol u}).\]
+
+对
+\(\boldsymbol u=\boldsymbol v+\boldsymbol\omega\times\boldsymbol R_C\)
+求导。此处 \(\boldsymbol R_C\) 是固定的空间矢量，因此
+
+\[\dot{\boldsymbol u}
+=\dot{\boldsymbol v}+\dot{\boldsymbol\omega}\times\boldsymbol R_C.\]
+
+因为 \(\widehat{\boldsymbol u}\) 水平且与 \(\boldsymbol R_C\)
+垂直，向量恒等式给出
+
+\[ (\boldsymbol R_C\times\widehat{\boldsymbol u})\times\boldsymbol R_C
+=R^2\widehat{\boldsymbol u}.\]
+
+代回，并用 \(I=2mR^2/5\)，得到
+
+\[\boxed{\dot{\boldsymbol u}
+=-\left(1+\frac{mR^2}{I}\right)\mu g\widehat{\boldsymbol u}
+=-\frac72\mu g\widehat{\boldsymbol u}.}\]
+
+其导数只有沿自身的分量，没有横向分量。若写
+\(\boldsymbol u=U\widehat{\boldsymbol u}\)，有
+
+\[\dot U=-\frac72\mu g,
+\qquad \frac{d\widehat{\boldsymbol u}}{dt}=0.\]
+
+因此滑动速度的方向直到归零都不变，大小线性下降：
+
+\[\boldsymbol u(t)
+=\left(U_0-\frac72\mu gt\right)\frac{\boldsymbol u_0}{U_0}.\]
+
+达到纯滚的时间为
+
+\[\boxed{\Delta t=\frac{2U_0}{7\mu g}.}\]
+
+本式适用于 \(U_0>0\)、\(\mu>0\)。若 \(U_0=0\)，碰撞后已经纯滚，应直接取
+\(\Delta t=0\)，不能继续使用含 \(1/U_0\) 的方向公式；若 \(\mu=0\) 而
+\(U_0>0\)，滑动不会自行停止。
+
+\subsubsection{5　滑动阶段的球心轨迹}\label{ux6ed1ux52a8ux9636ux6bb5ux7684ux7403ux5fc3ux8f68ux8ff9}
+
+因摩擦方向不变，球心加速度为常向量
+
+\[\boldsymbol a=-\mu g\frac{\boldsymbol u_0}{U_0}.\]
+
+以球心在碰撞后的投影位置为原点，积分得到
+
+\[\boldsymbol v(t)=\boldsymbol v_{Q0}
+-\mu gt\frac{\boldsymbol u_0}{U_0},\]
+
+\[\boxed{\boldsymbol r(t)=\boldsymbol v_{Q0}t
+-\frac12\mu gt^2\frac{\boldsymbol u_0}{U_0},
+\quad0\le t\le\Delta t.}\]
+
+即
+
+\[\boxed{x(t)=v_0\sin\phi\cos\phi\,t
+-\frac{\mu g,u_{0x}}{2U_0}t^2,}\]
+
+\[\boxed{y(t)=v_0\sin^2\phi\,t
+-\frac{\mu g,u_{0y}}{2U_0}t^2.}\]
+
+一般情形是抛物线的一段；当初速度与加速度共线时退化为直线。所谓``匀减速''严格说是接触滑动速率均匀减小，球心速率未必一直减小。摩擦可以在某个方向加速质心，同时减少较多的转动能。
+
+\subsubsection{6　转动演化与最终纯滚状态}\label{ux8f6cux52a8ux6f14ux5316ux4e0eux6700ux7ec8ux7eafux6edaux72b6ux6001}
+
+摩擦分量记为 \(f_x,f_y\)，关于球心的力矩为
+
+\[\boldsymbol\tau=R f_y\boldsymbol e_x-R f_x\boldsymbol e_y.\]
+
+所以
+
+\[\dot\omega_x=\frac{R f_y}{I},
+\qquad\dot\omega_y=-\frac{R f_x}{I},
+\qquad\dot\omega_z=0.\]
+
+积分到 \(\Delta t\)，用 \(\mu g\Delta t=2U_0/7\)，得到
+
+\[\omega_{xf}=\omega_{0x}-\frac{5u_{0y}}{7R},
+\qquad\omega_{yf}=\omega_{0y}+\frac{5u_{0x}}{7R}.\]
+
+球心最终速度为
+
+\[\boxed{\boldsymbol v_f=\boldsymbol v_{Q0}-\frac27\boldsymbol u_0.}\]
+
+展开成分量，
+
+\[\boxed{v_{fx}=\frac57v_0\sin\phi\cos\phi
++\frac27R\omega_{0y},}\]
+
+\[\boxed{v_{fy}=\frac57v_0\sin^2\phi
+-\frac27R\omega_{0x}.}\]
+
+将这些量代入接触点速度，分别有
+
+\[v_{fx}-R\omega_{yf}=0,
+\qquad v_{fy}+R\omega_{xf}=0,\]
+
+确实满足无滑条件。理想水平桌面上没有其他水平力，维持纯滚不需要非零静摩擦，故之后球心作匀速直线运动：
+
+\[\boxed{\boldsymbol r(t)=\boldsymbol r(\Delta t)
++\boldsymbol v_f(t-\Delta t),\quad t\ge\Delta t.}\]
+
+轨迹的位置和切向速度在连接点都连续，但加速度从恒向量跳变为零。最终方向的正切是
+
+\[\boxed{\tan\theta_f=
+\frac{v_{fx}}{v_{fy}}
+=\frac{5v_0\sin\phi\cos\phi+2R\omega_{0y}}
+{5v_0\sin^2\phi-2R\omega_{0x}}.}\]
+
+一般初始自旋下应使用 \(\operatorname{atan2}(v_{fx},v_{fy})\)
+判断方向象限；若分母为零，方向可能是
+\(\pm90^\circ\)；若两分量都为零，则球停止，方向没有定义。
+
+\subsubsection{7　能量损失提供独立检查}\label{ux80fdux91cfux635fux5931ux63d0ux4f9bux72ecux7acbux68c0ux67e5}
+
+滑动时，摩擦对平动和转动的总功率为
+
+\[\dot E=\boldsymbol f\cdot\boldsymbol v
++\boldsymbol\tau\cdot\boldsymbol\omega
+=\boldsymbol f\cdot\boldsymbol u
+=-\mu mgU.\]
+
+虽然质心可能加速，总机械能始终下降。积分整个滑动过程：
+
+\[\Delta E_{\rm loss}
+=\mu mg\int_0^{\Delta t}
+\left(U_0-\frac72\mu gt\right)dt,\]
+
+\[\boxed{\Delta E_{\rm loss}=\frac{mU_0^2}{7}.}\]
+
+这个损失与 \(\mu\)
+无关：摩擦较大时耗散功率较大，但滑动时间相应较短。末速度和末角速度同样与
+\(\mu\) 无关；达到末状态的时间、位置和轨迹长度则依赖 \(\mu\)。
+
+\subsubsection{8　水平击球的最佳高度}\label{ux6c34ux5e73ux51fbux7403ux7684ux6700ux4f73ux9ad8ux5ea6}
+
+原来球静止，水平冲量大小为
+\(\mathcal J\)。忽略极短击球过程中的桌面冲量，有
+
+\[\mathcal J=mv_0.\]
+
+作用点相对球心的竖直坐标为 \(h-R\)。由右手规则，沿 \(+y\)
+的冲量在球心以上产生沿 \(-x\) 的角冲量：
+
+\[I\omega_{0x}=-(h-R)\mathcal J.\]
+
+立即沿 \(+y\) 纯滚要求
+
+\[v_0+R\omega_{0x}=0,
+\qquad\omega_{0y}=0.\]
+
+代入 \(\omega_{0x}=-v_0/R\) 和均匀球转动惯量，得
+
+\[h-R=\frac I{mR}=\frac25R,\]
+
+\[\boxed{h=\frac75R.}\]
+
+击打位置位于球心上方
+\(2R/5\)。冲量的大小决定速度，高度决定平动与自旋的比例。这两个量不应混为一谈。
+
+\subsubsection{9　纯滚入射时的碰后滑动方向}\label{ux7eafux6edaux5165ux5c04ux65f6ux7684ux78b0ux540eux6ed1ux52a8ux65b9ux5411}
+
+第（3）问给出的入射初始角速度为
+
+\[\boldsymbol\omega_0=-\frac{v_0}{R}\boldsymbol e_x.\]
+
+因此碰撞后的滑动速度为
+
+\[\boldsymbol u_0
+=v_0\sin\phi\cos\phi\boldsymbol e_x
+-v_0\cos^2\phi\boldsymbol e_y
+=-v_0\cos\phi\,\boldsymbol n.\]
+
+对 \(0\le\phi<90^\circ\)，有
+
+\[U_0=v_0\cos\phi,
+\qquad\widehat{\boldsymbol u}_0=-\boldsymbol n.\]
+
+摩擦方向为 \(+\boldsymbol n\)，即沿目标球出射方向。其 \(x\)
+分量向左，\(y\) 分量向前，故
+
+\[\boxed{x(t)=v_0\sin\phi\cos\phi\,t
+-\frac12\mu g\sin\phi\,t^2,}\]
+
+\[\boxed{y(t)=v_0\sin^2\phi\,t
++\frac12\mu g\cos\phi\,t^2,}\]
+
+\[0\le t\le\frac{2v_0\cos\phi}{7\mu g}.\]
+
+这特别显示球心的 \(y\)
+方向速度会增大。它来自初始自旋能的转换，与摩擦耗散总能量并不冲突。
+
+\subsubsection{10　最终偏角与极值}\label{ux6700ux7ec8ux504fux89d2ux4e0eux6781ux503c}
+
+代入纯滚初值，最终速度为
+
+\[v_{fx}=\frac57v_0\sin\phi\cos\phi,
+\qquad v_{fy}=\frac{v_0}{7}(5\sin^2\phi+2).\]
+
+因 \(v_{fy}>0\)，方向角无象限歧义：
+
+\[\boxed{\tan\theta_f
+=\frac{5\sin\phi\cos\phi}{5\sin^2\phi+2}
+=\frac{\sin2\phi}{9/5-\cos2\phi}.}\]
+
+令 \(q=2\phi\)，\(c=9/5\)。因为反正切单调，\(\theta_f\) 的极值等同于
+\(f(q)=\sin q/(c-\cos q)\) 的极值。微分得
+
+\[\frac{df}{dq}
+=\frac{\cos q(c-\cos q)-\sin^2q}{(c-\cos q)^2}
+=\frac{c\cos q-1}{(c-\cos q)^2}.\]
+
+在 \(0<q<\pi\) 内，分母为正，分子单调由正变负，所以这是唯一的极大值：
+
+\[\boxed{\cos2\phi_m=\frac59,
+\qquad\phi_m=\frac12\arccos\frac59\simeq28.13^\circ.}\]
+
+此时 \(\sin2\phi_m=\sqrt{56}/9\)，代入得
+
+\[\tan\theta_{fm}=\frac5{\sqrt{56}},\]
+
+\[\boxed{\theta_{fm}\simeq33.75^\circ.}\]
+
+按未提前舍入的 \(\phi_m\) 代入各角度，结果为：
+
+{\def\LTcaptype{table} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\phi\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(28.13^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(33.13^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(38.13^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(23.13^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(18.13^\circ\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\theta_f\) & \(33.75^\circ\) & \(33.23^\circ\) & \(31.87^\circ\) &
+\(33.09^\circ\) & \(30.76^\circ\) \\
+\end{longtable}
+}
+
+不同舍入位数可能使末位略有差异。表格反映经验规则的含义：在一段不窄的碰撞角范围内，最终偏角集中在30°附近，而不是严格恒等于30°。
+
+\noindent\begin{minipage}{\linewidth}
+\subsubsection{11　端点与一个数值过程}\label{ux7aefux70b9ux4e0eux4e00ux4e2aux6570ux503cux8fc7ux7a0b}
+
+正碰 \(\phi=0\) 时，\(Q\)
+碰撞后质心瞬时静止，但仍保留入射自旋；随后桌面摩擦使它重新向前运动，最终
+\(v_{fy}=2v_0/7\)。掠碰极限 \(\phi\to90^\circ\) 时，\(Q\)
+基本未受冲量，初态已接近纯滚，\(U_0\to0\)、\(\Delta t\to0\)、\(\boldsymbol v_f\to v_0\boldsymbol e_y\)。
+
+例如取
+\(v_0=1.0\,\mathrm{m/s}\)、\(\mu=0.20\)、\(g=10\,\mathrm{m/s^2}\)、\(\phi=30^\circ\)。碰后有
+
+\[\boldsymbol v_{Q0}=(0.4330,0.2500)\,\mathrm{m/s},
+\qquad U_0=0.8660\,\mathrm{m/s},\]
+
+\[\Delta t=0.1237\,\mathrm s,
+\qquad\boldsymbol a=(-1.000,1.732)\,\mathrm{m/s^2}.\]
+
+最终速度和转入纯滚的位置分别为
+
+\[\boldsymbol v_f=(0.3093,0.4643)\,\mathrm{m/s},\]
+
+\[\boldsymbol r_f=(0.0459,0.0442)\,\mathrm m.\]
+
+方向角约为
+\(33.69^\circ\)。位置可从轨迹公式检查，之后沿最终速度方向直线运动。
+
+
+\end{minipage}
+
+\clearpage
+
+\section{第 3
+题　注水温度与表面张力的微观模型（45分）}\label{ux7b2c-3-ux9898-ux6ce8ux6c34ux6e29ux5ea6ux4e0eux8868ux9762ux5f20ux529bux7684ux5faeux89c2ux6a21ux578b45ux5206}
+
+液体与其他介质（包括其蒸气）的分界面称为液体表面，表面张力系数是表征液体性质的重要特征量。
+
+（1）某油井内未抽出的石油为油气混合物，温度为
+\(100^\circ\mathrm C\)。其密度是混有表面活性物质的水（下称``水''）的
+\(80\%\)，比热容是这种水的
+\(60\%\)。记这一状态为参考状态。石油和水的混合物表面张力系数与温度、压强近似满足
+
+\[\frac\sigma{10^{-3}\,\mathrm{N/m}}
+=60+0.065\frac T{\mathrm K}
+-24.0\frac p{\mathrm{bar}}
++3.15\frac{p^2}{\mathrm{bar}^2}.\]
+
+混合物的等体压强系数为常量
+
+\[\beta=7.28\times10^{-3}\,\mathrm{bar/K}.\]
+
+参考状态下混合物的压强与绝对温度成正比，比例系数为
+\(\beta\)。某固定岩层区域中原来的石油都处于参考状态，抽出其一半，同时注入等体积的水，使区域内混合物总体积始终不变。未抽出的石油与注入水均匀混合，混合物体积等于两种液体体积之和。抽油较快，抽出的石油与注入的水之间的热交换可以忽略。求为了使区域内最终混合物的表面张力系数最小，注入水应取的摄氏温度。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[thick](0,0)rectangle(2.5,2.8);
+\fill[orange!20](.02,.02)rectangle(2.48,1.4);
+\fill[blue!15](.02,1.4)rectangle(2.48,2.78);
+\draw[dashed](0,1.4)--(2.5,1.4);
+\node at(1.25,.75){剩余石油 $V$};\node at(1.25,2.05){注入水 $V$};
+\draw[->,thick](-1.2,2.2)--(-.1,2.2)node[midway,above]{$t_w$};
+\draw[->,thick](2.6,2.2)--(4,2.2)node[midway,above]{抽出油 $V$};
+\node[below]at(1.25,0){区域总体积 $2V$ 不变};
+\begin{scope}[xshift=5.2cm]
+\draw[thick](0,0)rectangle(2.5,2.8);\fill[green!15](.02,.02)rectangle(2.48,2.78);
+\node at(1.25,1.8){均匀混合};\node at(1.25,1.1){末态 $T_f,\ p_f$};
+\node[below]at(1.25,0){体积相等，热容量不同};
+\end{scope}
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 等体抽油注水与混合热量交换\par}
+\endgroup\end{minipage}
+\end{center}
+
+（2）假设表面张力全部归结为表面层粒子与内部粒子的邻近粒子数不同，而两者粒子间距相同。表面层每粒子的邻近粒子数是内部的
+\(\zeta\) 倍，\(0<\zeta<1\)。液体摩尔质量为 \(\mu\)、摩尔汽化热为
+\(L_m\)、质量密度为 \(\rho\)，阿伏加德罗常量为
+\(N_A\)。导出这个模型中表面张力系数 \(\sigma\) 的表达式。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-2}
+
+约束下的物性优化与简化微观模型。宏观部分必须先沿等体路径把 \(p\) 消成
+\(T\)，再对温度求极值；极值决定混合末温，能量平衡随后决定注入水温。微观部分通过少掉的相互作用键估算表面能，再用摩尔汽化热消去未知键能。
+
+两部分使用的模型层次不同：第一问用经验物性公式，第二问用粒子模型解释能量来源。不能把第二问的粗略模型当作经验式全部温压依赖的精确推导。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-2}
+
+定容过程
+\(dp=\beta dT\)；摄氏与开尔文温标转换；复合函数极值；两种液体的显热交换；密度、比热与等体积质量；相互作用键双计数；单位面积表面能；粒子数密度的三分之二次方。
+
+表面张力系数可写成 \(\mathrm{N/m}\)，也可写成
+\(\mathrm{J/m^2}\)。前者强调边界力，后者强调增加界面的能量代价；二者量纲相同。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-2}
+
+抽出一半石油并注入等体积水后，参加混合的石油和水体积相等，但质量并不相等。石油的热容量为水的
+\(0.8\times0.6=0.48\) 倍，故末温更靠近水温。
+
+表面粒子邻居较少，少获得一些结合能，所以把内部粒子移到表面需要正功。增加表面的粒子数与面积成正比；每粒子少掉的结合能乘以单位面积粒子数，就得到
+\(\sigma\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\foreach \x in {0,1,2,3,4}{\foreach \y in {0,1,2}{\fill[blue](\x,\y)circle(3pt);}}
+\foreach \x in {0,1,2,3}{\foreach \y in {0,1,2}{\draw[gray](\x,\y)--(\x+1,\y);}}
+\foreach \x in {0,1,2,3,4}{\foreach \y in {0,1}{\draw[gray](\x,\y)--(\x,\y+1);}}
+\draw[dashed](-.3,2.35)--(4.3,2.35)node[right]{表面};
+\draw[red,thick](2,2)circle(.22);\draw[red,thick](2,1)circle(.22);
+\draw[->](4.7,1.9)--(2.3,2);\node[right]at(4.7,1.9){表面：$\zeta n$};
+\draw[->](4.7,.65)--(2.3,1);\node[right]at(4.7,.65){内部：$n$};
+\draw[<->](0,-.4)--(1,-.4)node[midway,below]{$D$};
+\node[below]at(2.3,-1){邻接示意；实际邻近数不由此二维网格确定};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 表面粒子和内部粒子的邻近键；图中线只表示模型连接\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-2}
+
+设原区域体积为 \(2V\)，抽出的石油为 \(V\)，剩下石油和注入水各为
+\(V\)。等体过程积分后，利用参考状态 \(p_i=\beta T_i\)
+消去积分常数。保留题给系数的有效精度，求二次函数极小值。
+
+微观模型中用 \(\varepsilon_b>0\)
+表示一条键的结合能大小，避免负相互作用势能带来的符号混乱。内部每粒子平均分得
+\(n\varepsilon_b/2\)
+的结合能；除以二的原因是每条键连接两粒子。令粒子平均间距 \(D\)，用
+\(D^3=\mu/(\rho N_A)\)。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-2}
+
+\subsubsection{1　确定真正的等体路径}\label{ux786eux5b9aux771fux6b63ux7684ux7b49ux4f53ux8defux5f84}
+
+题中 \(\beta=(\partial p/\partial T)_V\) 为常量，因此沿总体积不变的过程
+
+\[dp=\beta\,dT.\]
+
+从参考状态 \(T_i,p_i\) 积分到任意状态 \(T,p\)，有
+
+\[p-p_i=\beta(T-T_i).\]
+
+参考状态给出 \(p_i=\beta T_i\)，于是
+
+\[\boxed{p=\beta T.}\]
+
+这里 \(T\) 必须使用绝对温度。不能把 \(p=\beta t\) 中的 \(t\)
+当摄氏温度，否则参考状态的压强、整条过程路径和极值都会改变。
+
+初始参考温度为
+
+\[T_i=373.15\,\mathrm K,\]
+
+对应压强约
+\(2.717\,\mathrm{bar}\)。混合时温度下降，压强也沿这条直线下降。抽油过程中总体积不变的条件决定了我们必须沿这条路径求极值，而不是在固定压强下对经验公式求导。
+
+\subsubsection{2　用无量纲数值形式代入物性式}\label{ux7528ux65e0ux91cfux7eb2ux6570ux503cux5f62ux5f0fux4ee3ux5165ux7269ux6027ux5f0f}
+
+定义
+\(\tau=T/\mathrm K\)、\(\pi_p=p/\mathrm{bar}\)、\(S=\sigma/(10^{-3}\,\mathrm{N/m})\)。于是
+
+\[\pi_p=0.00728\tau,\]
+
+\[S=60+0.065\tau-24(0.00728\tau)
++3.15(0.00728\tau)^2.\]
+
+展开可得
+
+\[\boxed{S(\tau)=60-0.10972\tau
++0.00016694496\tau^2.}\]
+
+把温度写成数值
+\(\tau\)，是为了明确系数里的单位已被除去。若直接使用有单位的
+\(T\)，一次系数的量纲应为 \(\mathrm{K^{-1}}\)，二次系数应为
+\(\mathrm{K^{-2}}\)。
+
+\subsubsection{3　极值求解和可行性}\label{ux6781ux503cux6c42ux89e3ux548cux53efux884cux6027}
+
+对二次函数求导：
+
+\[\frac{dS}{d\tau}=-0.10972+0.00033388992\tau,\]
+
+\[\frac{d^2S}{d\tau^2}=0.00033388992>0.\]
+
+二阶导数为正，所以导数为零给出唯一的极小值：
+
+\[\boxed{T_f=
+\frac{0.10972}{0.00033388992}\,\mathrm K
+\simeq328.61\,\mathrm K.}\]
+
+转换为摄氏温度，
+
+\[\boxed{t_f=T_f-273.15\,\mathrm K
+\simeq55.46^\circ\mathrm C.}\]
+
+极值压强为
+
+\[p_f=\beta T_f\simeq2.392\,\mathrm{bar},\]
+
+相应最小表面张力约
+
+\[\sigma_{\min}\simeq41.97\times10^{-3}\,\mathrm{N/m}>0.\]
+
+题给系数是经验近似量。若先把一次系数舍入成 \(-0.110\)、二次系数舍入成
+\(167\times10^{-6}\)，会得到
+\(T_f\simeq329\,\mathrm K\)、\(t_f\simeq56^\circ\mathrm C\)，与参考答案的精度一致。下面保持原系数再计算水温，以避免两次舍入叠加。
+
+\subsubsection{4　另一条极值路线：链式求导}\label{ux53e6ux4e00ux6761ux6781ux503cux8defux7ebfux94feux5f0fux6c42ux5bfc}
+
+不用先展开，也能沿等体路径求导：
+
+\[\frac{dS}{d\tau}
+=\frac{\partial S}{\partial\tau}
++\frac{\partial S}{\partial\pi_p}
+\frac{d\pi_p}{d\tau}.\]
+
+代入各项，
+
+\[\frac{dS}{d\tau}
+=0.065+[-24+6.30\pi_p](0.00728).\]
+
+令其为零，再用
+\(\pi_p=0.00728\tau\)，与展开二次函数所得结果一致。这也显示：直接只取
+\(\partial S/\partial T=0.065\)，会错误地认为没有极小值，因为遗漏了压强随温度变化的贡献。
+
+\subsubsection{5　热量守恒中的体积与质量}\label{ux70edux91cfux5b88ux6052ux4e2dux7684ux4f53ux79efux4e0eux8d28ux91cf}
+
+设注入水体积为 \(V\)，剩余石油体积也为 \(V\)，它们的质量分别为
+
+\[m_o=\rho_oV=0.8\rho_wV,
+\qquad m_w=\rho_wV.\]
+
+比热关系为 \(c_o=0.6c_w\)，所以两者热容量之比为
+
+\[\frac{m_oc_o}{m_wc_w}=0.8\times0.6=0.48.\]
+
+只有剩下的石油与注入水参加最后的热量平衡。已抽出石油的质量不能再放进放热项。按题设近似忽略其他热交换，石油放热等于水吸热：
+
+\[m_oc_o(100-t_f)=m_wc_w(t_f-t_w).\]
+
+温差用摄氏度或开尔文表示数值相同。约去公共因子，得到
+
+\[0.48(100-t_f)=t_f-t_w,\]
+
+\[\boxed{t_w=1.48t_f-48.}\]
+
+代入保留原系数所得末温，得
+
+\[\boxed{t_w\simeq34.08^\circ\mathrm C.}\]
+
+若采用参考答案舍入的 \(t_f\simeq56^\circ\mathrm C\)，则
+\(t_w\simeq34.88^\circ\mathrm C\)，报告为约
+\(35^\circ\mathrm C\)。两种结果的差别来自中间系数和温度的舍入。按原题数据直接计算，推荐写约
+\(34^\circ\mathrm C\)，并注明常用近似为约 \(35^\circ\mathrm C\)。
+
+末温应位于水温和原石油温度之间，这里
+\(34.08<55.46<100\)，符合能量流向。用水温反代加权平均：
+
+\[t_f=\frac{0.48\times100+t_w}{1.48},\]
+
+可恢复同一末温。
+
+\subsubsection{6　表面张力最小对温度误差的敏感性}\label{ux8868ux9762ux5f20ux529bux6700ux5c0fux5bf9ux6e29ux5ea6ux8befux5deeux7684ux654fux611fux6027}
+
+把二次函数配方，可写成
+
+\[S(\tau)=S_{\min}
++0.00016694496(\tau-\tau_f)^2.\]
+
+由此知道，在极小值附近，末温误差对表面张力的影响是二阶的。若 \(T_f\)
+偏差为 \(5\,\mathrm K\)，则
+
+\[\Delta\sigma
+=10^{-3}\times0.00016694496\times25\,\mathrm{N/m}
+\simeq4.17\times10^{-6}\,\mathrm{N/m}.\]
+
+水温误差传给末温的系数为
+
+\[\frac{dt_f}{dt_w}=\frac1{1.48}\simeq0.676.\]
+
+这解释了为什么在题给经验模型的精度下，约34°与约35°的注入温度不会导致显著不同的表面张力。这里的目标只是最小化题给
+\(\sigma\)；真实油井产量还取决于黏度、渗透率等，题目已把它们排除在求解模型之外。
+
+\subsubsection{7　相互作用键的计数}\label{ux76f8ux4e92ux4f5cux7528ux952eux7684ux8ba1ux6570}
+
+设内部每粒子有 \(n\) 个邻近粒子，每条相互作用键的势能为
+\(-\varepsilon_b\)，其中 \(\varepsilon_b>0\)。若内部共有 \(N\)
+个粒子，邻接计数为 \(nN\)，但每条键被两端各数一次，实际键数是
+
+\[N_{\rm bond}=\frac{nN}{2}.\]
+
+于是每粒子平均相互作用势能为
+
+\[u_{\rm bulk}=-\frac{n\varepsilon_b}{2}.\]
+
+表面层每粒子平均邻近数为 \(\zeta n\)，按同一分摊规则有
+
+\[u_{\rm surf}=-\frac{\zeta n\varepsilon_b}{2}.\]
+
+表面层相对内部的能量提高量为
+
+\[\boxed{\Delta u=u_{\rm surf}-u_{\rm bulk}
+=\frac{(1-\zeta)n\varepsilon_b}{2}>0.}\]
+
+正号反映表面形成需要能量。若把一条吸引键的有符号势能 \(-\varepsilon_b\)
+直接写进正的表面能公式，就容易错出负的表面张力。
+
+\subsubsection{8　从每粒子能量到单位面积能量}\label{ux4eceux6bcfux7c92ux5b50ux80fdux91cfux5230ux5355ux4f4dux9762ux79efux80fdux91cf}
+
+在面积 \(\Delta A\) 的表面层内，设有 \(N_s\)
+个粒子。模型把增加表面的能量写为
+
+\[\Delta W=N_s\Delta u.\]
+
+定义平均粒子间距 \(D\)，取每表面粒子的平均占地面积为 \(D^2\)，即
+
+\[\frac{N_s}{\Delta A}=\frac1{D^2}.\]
+
+由表面张力的能量定义，
+
+\[\sigma=\frac{\Delta W}{\Delta A},\]
+
+所以
+
+\[\boxed{\sigma=\frac{(1-\zeta)n\varepsilon_b}{2D^2}.}\]
+
+这里 \(\Delta A\)
+是新增界面的面积。若某装置形成两个面积相同的表面，总表面积增加为
+\(2\Delta A\)，做功也应按两个表面计入；不能在本题单表面模型中凭空加入另一因子二。
+
+\subsubsection{9　用摩尔汽化热消去键能}\label{ux7528ux6469ux5c14ux6c7dux5316ux70edux6d88ux53bbux952eux80fd}
+
+本题简化模型把汽化所需能量全部归结为消除液体的相互作用结合能。对一摩尔粒子，液体中的总结合能大小为
+
+\[\frac12N_An\varepsilon_b.\]
+
+忽略其他汽化功与动能变化，因而
+
+\[\boxed{L_m=\frac12N_An\varepsilon_b.}\]
+
+不要对一个粒子写 \(n\varepsilon_b\) 后再乘
+\(N_A\)：若同时把所有粒子汽化，同一条键会因此被计算两次。摩尔汽化热是整摩尔总体变化，应沿用整体系的键计数。
+
+消去 \(n\varepsilon_b/2\)，得到
+
+\[\boxed{\sigma=\frac{(1-\zeta)L_m}{N_AD^2}.}\]
+
+真实液体的摩尔汽化热含有更复杂的热力学贡献，真实表面张力也属于表面自由能。在本问已指定的邻接模型内，上式是所求的能量近似；其适用边界应与模型假设一起理解。
+
+\subsubsection{10　从摩尔体积求粒子间距}\label{ux4eceux6469ux5c14ux4f53ux79efux6c42ux7c92ux5b50ux95f4ux8ddd}
+
+每摩尔液体体积为
+
+\[V_m=\frac\mu\rho.\]
+
+在题给均匀间距近似下，每粒子平均体积为 \(D^3\)，故
+
+\[N_AD^3=\frac\mu\rho,\]
+
+\[D^2=\left(\frac\mu{\rho N_A}\right)^{2/3}.\]
+
+代入表面张力，得到
+
+\[\boxed{\sigma=
+\frac{(1-\zeta)L_m}{N_A}
+\left(\frac{\rho N_A}{\mu}\right)^{2/3}.}\]
+
+也可写成
+
+\[\boxed{\sigma=(1-\zeta)L_m
+\left(\frac\rho\mu\right)^{2/3}N_A^{-1/3}.}\]
+
+两式完全等价。这里 \(\mu\) 是摩尔质量，应在SI制中使用
+\(\mathrm{kg/mol}\)，不能直接把 \(\mathrm{g/mol}\) 的数值代入而不换算。
+
+\subsubsection{11　量纲、极限和模型依赖}\label{ux91cfux7eb2ux6781ux9650ux548cux6a21ux578bux4f9dux8d56}
+
+\(L_m/N_A\) 是每粒子能量，量纲为焦耳；\(1/D^2\) 量纲为面积倒数，因此
+\(\sigma\) 为 \(\mathrm{J/m^2}= \mathrm{N/m}\)。\(\zeta\to1\)
+时表面与内部没有邻接差别，模型预言 \(\sigma\to0\)；\(\zeta\)
+减小、粒子间距减小或结合能增大时，表面能代价提高。
+
+在 \(L_m,\mu,\zeta\)
+固定时，\(\sigma\propto\rho^{2/3}\)。若考虑微小参数变化，取对数微分有
+
+\[\frac{d\sigma}{\sigma}
+=-\frac{d\zeta}{1-\zeta}
++\frac{dL_m}{L_m}
++\frac23\frac{d\rho}{\rho}
+-\frac23\frac{d\mu}{\mu}.\]
+
+这并不表示真实液体随温度升高的全部变化只由密度控制，因为
+\(L_m\)、表面结构和自由能贡献也会改变。公式提供的是题设模型内的参数关系。
+
+\clearpage
+
+\section{第 4
+题　质子层析与量子散射尺度（45分）}\label{ux7b2c-4-ux9898-ux8d28ux5b50ux5c42ux6790ux4e0eux91cfux5b50ux6563ux5c04ux5c3aux5ea645ux5206}
+
+（1）质子半径约为
+\(0.850\,\mathrm{fm}\)，其内部包含带电荷和不带电荷的粒子。希望用电子对质子内部电荷分布进行200层断层扫描，估算被加速电子所需的动能，用
+\(\mathrm{GeV}\)
+表示。计算狭义相对论与极端相对论结果的差别是否小于狭义相对论结果的
+\(1\%\)。本问不计电磁相互作用的影响。
+
+（2）静止质量为 \(m\)、电荷为 \(Z_1e\) 的粒子向电荷为 \(Z_2e\)
+的固定靶散射。当两者中心间距为 \(r\)、入射粒子动量大小为 \(p\)
+时，求系统总能量。若入射粒子和靶均为质子，且两粒子中心间距的测量不确定度等于它们的中心间距，估算入射质子的速度
+\(v\)。假设中心间距测量的不确定度与入射粒子位置测量的不确定度近似相等。本问按非相对论处理。
+
+已知
+
+\[e=1.60\times10^{-19}\,\mathrm C,
+\qquad m_e=9.11\times10^{-31}\,\mathrm{kg},\]
+
+\[h=6.63\times10^{-34}\,\mathrm{kg\,m^2/s},
+\qquad c=3.00\times10^8\,\mathrm{m/s},\]
+
+\[\varepsilon_0=8.85\times10^{-12}\,\mathrm{C^2/(N\,m^2)}.\]
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-3}
+
+不确定关系给出局域化所需的动量尺度，再由相对论能量关系换算电子动能。第二问结合库仑势能与局域化动量，用等能量曲线的局部变化估算量子效应显著的速度尺度。
+
+这是题设下的尺度估算。位置标准差限制动量标准差，不能在没有波包或实验模型时严格确定平均入射动量；第二问也不能仅凭能量守恒就让能量测量的标准差等于零。下文按题设采用相应的尺度估算，并注明假设。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-3}
+
+\(1\,\mathrm{fm}=10^{-15}\,\mathrm m\)；\(\hbar=h/(2\pi)\)；\(\Delta x\Delta p_x\ge\hbar/2\)；相对论关系
+\(E^2=p^2c^2+m^2c^4\)；动能扣除静止能量；大参数展开；非相对论库仑势能；固定靶与两体相对运动的区别。
+
+电子伏特的换算为 \(1\,\mathrm{eV}=e\,\mathrm J\)，因此本题使用的
+\(1\,\mathrm{GeV}=1.60\times10^{-10}\,\mathrm J\)。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-3}
+
+200层是把整个质子直径分成200个厚度单元，层厚约为半径的百分之一。要分辨如此细的结构，电子波包必须包含很大的空间频率，动量尺度远大于
+\(m_ec\)，所以动能几乎等于 \(pc\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[thick](0,0)circle(1.55);\draw[dashed](-1.55,0)--(1.55,0);
+\draw[<->](-1.55,-1.95)--(1.55,-1.95)node[midway,below]{$2r_p$};
+\foreach \x in {-1.2,-.9,-.6,-.3,0,.3,.6,.9,1.2}{\draw[gray](\x,-.8)--(\x,.8);}
+\draw[<->](.3,1.15)--(.6,1.15)node[midway,above]{$\Delta x$};
+\node[right]at(2,.4){$\Delta x=2r_p/200$};
+\node[right]at(2,-.3){图中分层间距示意放大};
+\draw[->,blue,thick](-3.2,.3)--(-1.7,.3)node[midway,above]{电子};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 质子直径分层与局域化长度\par}
+\endgroup\end{minipage}
+\end{center}
+
+对于第二问，距离的量子涨落会带来势能尺度变化。将它与动量涨落引起的动能尺度变化作局部比较，可以得到一个由基本电荷、普朗克常量和真空介电常量组成的速度尺度。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](0,0)--(5.8,0)node[right]{$r$};
+\draw[->](0,0)--(0,3.4)node[above]{$p$};
+\draw[blue,thick]plot[domain=.6:5.2,samples=70](\x,{3*sqrt(1-.5/\x)});
+\fill(1.8,2.55)circle(2pt);
+\draw[->,red](1.8,2.55)--(2.9,2.8);
+\draw[dashed](1.8,2.55)--(2.9,2.55)--(2.9,2.8);
+\node[below]at(2.4,2.5){$dr$};\node[right=6pt]at(2.9,2.65){$dp$};
+\node at(3.2,1.1){$p^2/(2m)+k_C/r=E$};
+\node at(3.1,.5){$v\,dp=k_Cdr/r^2$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 库仑散射等能量曲线上的局部变化\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-3}
+
+用 \(\Delta x=2r_p/200\) 表示层厚，按题目估算取
+\(p_*\sim\Delta p_x\sim\hbar/(2\Delta x)\)。分别计算 \(K_{\rm rel}\) 与
+\(K_{\rm ur}=p_*c\)，比较它们的相对差。
+
+第二问先写 \(E=p^2/(2m)+k_C/r\)，其中
+\(k_C=Z_1Z_2e^2/(4\pi\varepsilon_0)\)。沿一条经典等能量曲线取微分，得到
+\(v\,dp=k_Cdr/r^2\)；再以变化量级对应不确定尺度，给出题目意图下的估算。这个步骤不是把两个标准差带符号相消。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-3}
+
+\subsubsection{1　层厚的几何因子}\label{ux5c42ux539aux7684ux51e0ux4f55ux56e0ux5b50}
+
+质子半径记为 \(r_p\)，以免与第二问的两粒子间距 \(r\) 混淆。已知
+
+\[r_p=0.850\times10^{-15}\,\mathrm m.\]
+
+200层横跨直径 \(2r_p\)，所以分辨长度为
+
+\[\boxed{\Delta x=\frac{2r_p}{200}
+=8.50\times10^{-18}\,\mathrm m.}\]
+
+若误把半径分成200层，长度会少一半，所估动量与极端相对论能量会多一倍。这里的因子二来自扫描范围，是独立于不确定关系中因子二的另一个几何因素。
+
+\subsubsection{2　局域化对应的动量尺度}\label{ux5c40ux57dfux5316ux5bf9ux5e94ux7684ux52a8ux91cfux5c3aux5ea6}
+
+不确定关系给出
+
+\[\Delta p_x\ge\frac\hbar{2\Delta x}.\]
+
+在题目采用的分辨率估算中，取饱和尺度并把入射动量尺度估作同量级：
+
+\[\boxed{p_*\simeq\frac\hbar{2\Delta x}.}\]
+
+利用题给 \(h\)，
+
+\[\hbar=\frac{6.63\times10^{-34}}{2\pi}
+\simeq1.05520\times10^{-34}\,\mathrm{J\,s},\]
+
+\[p_*\simeq6.20704\times10^{-18}\,\mathrm{kg\,m/s}.\]
+
+相应的能量尺度为
+
+\[\boxed{p_*c\simeq1.86211\times10^{-9}\,\mathrm J.}\]
+
+这一步没有假设电子是非相对论粒子。它只使用位置与动量的关系，之后须根据
+\(p_*/(m_ec)\) 决定适用的能量公式。
+
+\subsubsection{3　狭义相对论的电子动能}\label{ux72edux4e49ux76f8ux5bf9ux8bbaux7684ux7535ux5b50ux52a8ux80fd}
+
+相对论总能量为
+
+\[E_{\rm rel}=\sqrt{p_*^2c^2+m_e^2c^4}.\]
+
+动能必须扣除静止能量：
+
+\[\boxed{K_{\rm rel}
+=\sqrt{(p_*c)^2+(m_ec^2)^2}-m_ec^2.}\]
+
+题给静止能量为
+
+\[m_ec^2=9.11\times10^{-31}(3.00\times10^8)^2
+=8.199\times10^{-14}\,\mathrm J,\]
+
+约为 \(0.5124\,\mathrm{MeV}\)。代入计算，
+
+\[K_{\rm rel}\simeq1.86203\times10^{-9}\,\mathrm J.\]
+
+换成 \(\mathrm{GeV}\)：
+
+\[\boxed{K_{\rm rel}\simeq11.6377\,\mathrm{GeV}
+\simeq11.6\,\mathrm{GeV}.}\]
+
+这就是题目估算约定下电子需要的动能量级。并非
+\(11.6\,\mathrm{MeV}\)；GeV和MeV差三个数量级。
+
+\subsubsection{4　极端相对论近似及误差}\label{ux6781ux7aefux76f8ux5bf9ux8bbaux8fd1ux4f3cux53caux8befux5dee}
+
+定义无量纲小量
+
+\[\epsilon=\frac{m_ec^2}{p_*c}
+\simeq4.403\times10^{-5}.\]
+
+电子满足 \(\epsilon\ll1\)，极端相对论近似为
+
+\[\boxed{K_{\rm ur}\simeq p_*c
+=1.86211\times10^{-9}\,\mathrm J
+\simeq11.6382\,\mathrm{GeV}.}\]
+
+以狭义相对论动能为分母，误差比为
+
+\[\delta=\frac{K_{\rm ur}-K_{\rm rel}}{K_{\rm rel}}
+\simeq4.4032\times10^{-5},\]
+
+\[\boxed{\delta\simeq0.00440\%<1\%.}\]
+
+因此极端相对论近似足够准确。注意 \(0.00440\%\)
+已经是百分数，不能再把它误当 \(0.00440\) 的比例。
+
+直接对根式作展开也能检查：
+
+\[K_{\rm rel}
+=p_*c\sqrt{1+\epsilon^2}-m_ec^2,\]
+
+\[K_{\rm rel}
+=p_*c\left(1-\epsilon+\frac12\epsilon^2+O(\epsilon^4)\right).\]
+
+虽然根号内静止能量的平方贡献是 \(\epsilon^2\) 阶，但动能还扣掉了
+\(m_ec^2\)，所以主误差是 \(\epsilon\)
+阶。若只比较根号内两项，就会低估动能近似误差。
+
+\subsubsection{5　为什么不能用非相对论动能}\label{ux4e3aux4ec0ux4e48ux4e0dux80fdux7528ux975eux76f8ux5bf9ux8bbaux52a8ux80fd}
+
+若误用 \(K=p^2/(2m_e)\)，与 \(p_*c\) 的比为
+
+\[\frac{p_*^2/(2m_e)}{p_*c}
+=\frac{p_*}{2m_ec}=\frac1{2\epsilon}
+\simeq1.14\times10^4.\]
+
+这会高估四个数量级，且对应 \(p_*/m_e\gg c\)
+的非法经典速度。非相对论条件应检查
+\(p\ll mc\)，不是只看入射粒子的静止质量是否很小。
+
+\subsubsection{6　一般层数的结果}\label{ux4e00ux822cux5c42ux6570ux7684ux7ed3ux679c}
+
+若把质子直径分成 \(L\) 层，同样的估算给出
+
+\[\Delta x=\frac{2r_p}{L},
+\qquad p_*c=\frac{\hbar cL}{4r_p},\]
+
+\[\boxed{K_{\rm rel}(L)
+=\sqrt{\left(\frac{\hbar cL}{4r_p}\right)^2+m_e^2c^4}
+-m_ec^2.}\]
+
+在极端相对论区间内，能量与层数成正比；在非相对论区间内，能量与层数平方成正比。不同区间有不同标度，不能把线性比例延伸到任意小分辨需求。
+
+\subsubsection{7　固定靶的非相对论能量}\label{ux56faux5b9aux9776ux7684ux975eux76f8ux5bf9ux8bbaux80fdux91cf}
+
+第二问入射粒子质量为
+\(m\)，靶固定，不给靶分配动能。选择两粒子无限分离处为势能零点，库仑势能为
+
+\[U(r)=\frac{Z_1Z_2e^2}{4\pi\varepsilon_0r}.\]
+
+因而不含不变的静止能量部分的机械能为
+
+\[\boxed{E=\frac{p^2}{2m}
++\frac{Z_1Z_2e^2}{4\pi\varepsilon_0r}.}\]
+
+同号电荷时势能为正，是排斥相互作用；异号电荷时势能为负。若靶可以自由运动，应使用两体总动能或约化质量，不能照搬固定靶公式。
+
+\subsubsection{8　题意下的速度尺度估算}\label{ux9898ux610fux4e0bux7684ux901fux5ea6ux5c3aux5ea6ux4f30ux7b97}
+
+设 \(k_C=Z_1Z_2e^2/(4\pi\varepsilon_0)>0\)。沿一条定能量的经典运动曲线，
+
+\[dE=\frac pm\,dp-\frac{k_C}{r^2}dr=0.\]
+
+用 \(p/m=v\)，在变化尺度上写为
+
+\[v\,\Delta p\sim\frac{k_C}{r^2}\Delta r.\]
+
+再取局域化饱和尺度 \(\Delta p\sim\hbar/(2\Delta r)\)，得到
+
+\[\frac{v\hbar}{2\Delta r}
+\sim\frac{k_C\Delta r}{r^2},\]
+
+\[\boxed{\left(\frac{\Delta r}{r}\right)^2
+\sim\frac{v\hbar}{2k_C}
+=\frac{\varepsilon_0hv}{Z_1Z_2e^2}.}\]
+
+因此在同号电荷条件下，
+
+\[\boxed{\frac{\Delta r}{r}
+\sim\sqrt{\frac{\varepsilon_0hv}{Z_1Z_2e^2}}.}\]
+
+原题两粒子均为质子，\(Z_1=Z_2=1\)。令相对位置不确定尺度为一，得到
+
+\[\boxed{v_*\sim\frac{e^2}{\varepsilon_0h}.}\]
+
+这个速度与质子质量、所取距离都无关，是局部动能变化、库仑势能变化和不确定关系合成的特征尺度。
+
+\subsubsection{9　数值与非相对论自洽性}\label{ux6570ux503cux4e0eux975eux76f8ux5bf9ux8bbaux81eaux6d3dux6027}
+
+代入题给常量，
+
+\[v_*\sim\frac{(1.60\times10^{-19})^2}
+{(8.85\times10^{-12})(6.63\times10^{-34})}
+\simeq4.363\times10^6\,\mathrm{m/s},\]
+
+\[\boxed{v_*\simeq0.0145c\simeq0.015c.}\]
+
+此速率远小于 \(c\)，故第二问使用非相对论动能是自洽的。相对论动能展开为
+
+\[K=\frac12mv^2\left(1+\frac34\frac{v^2}{c^2}+\cdots\right),\]
+
+这里首项修正的相对大小约 \(1.6\times10^{-4}\)，不到 \(0.02\%\)。
+
+如果定义无量纲电磁耦合常量
+
+\[\alpha_C=\frac{e^2}{4\pi\varepsilon_0\hbar c},\]
+
+因 \(h=2\pi\hbar\)，上述速度还可写成
+
+\[\boxed{v_*=2\alpha_Cc.}\]
+
+用题给数据
+\(\alpha_C\simeq0.00727\)，仍给出同一速度。这个形式有助于检查因子
+\(2\pi\) 是否使用正确。
+
+\subsubsection{10　尺度推导的适用边界}\label{ux5c3aux5ea6ux63a8ux5bfcux7684ux9002ux7528ux8fb9ux754c}
+
+第8节使用的是局部微分式。当 \(\Delta r/r\ll1\)
+时，势能变化可用一阶近似描述；题目却把这一比例推到一，所以所得 \(v_*\)
+只表示量子位置涨落和经典距离相当的数量级，不能称为严格唯一的速度或普遍的最小入射速度。
+
+例如若距离由 \(r\) 增加到 \(r+\Delta r\)，精确势能差为
+
+\[U(r+\Delta r)-U(r)
+=-\frac{k_C\Delta r}{r(r+\Delta r)}.\]
+
+当 \(\Delta r=r\) 时，精确差的大小为 \(k_C/(2r)\)，而局部微分式给
+\(k_C/r\)，两者差一个因子二。这正是``数量级估算''与``精确有限变化''的区别。
+
+不确定关系中的 \(\Delta r,\Delta p\)
+是波包的标准差或相应宽度。能量守恒表示某个封闭体系沿运动的能量不变，不等于测量标准差
+\(\Delta E\)
+自动为零。第8节从等能量曲线转为涨落尺度是一项额外估算约定，其结论应与这个约定一起报告。
+
+\subsubsection{11　用波包说明平均动量与分辨率的区别}\label{ux7528ux6ce2ux5305ux8bf4ux660eux5e73ux5747ux52a8ux91cfux4e0eux5206ux8fa8ux7387ux7684ux533aux522b}
+
+在一维最小不确定高斯波包中，可写
+
+\[\psi(x)=C\exp\left[-\frac{(x-x_0)^2}{4s^2}
++\frac{i p_0x}{\hbar}\right].\]
+
+它满足 \(\Delta x=s\)、\(\Delta p=\hbar/(2s)\)，但平均动量 \(p_0\)
+可以改变而不改变这两个宽度。故 \(\Delta x\) 单独并不强制
+\(\langle p\rangle=p_*\)。
+
+第一問按照竞赛题意把探针入射动量尺度估为局域化动量宽度，因此得到11.6GeV。若要精确设计实验，还需给出散射动量转移、可用角度、波包形状和分辨判据；本题未提供这些条件。明确这一点可以保持结果可用，同时避免把估算式误读为一般定理。
+
+\subsubsection{12　数量级与量纲检查}\label{ux6570ux91cfux7ea7ux4e0eux91cfux7eb2ux68c0ux67e5}
+
+\(\hbar/\Delta x\) 的量纲为动量，乘 \(c\)
+后为能量。\(e^2/(\varepsilon_0r)\) 量纲为能量，故
+\(e^2/(\varepsilon_0h)\) 的量纲为速度。电子问题所需能量约
+\(10^{-9}\,\mathrm J\)，静止能量约
+\(10^{-13}\,\mathrm J\)，符合极端相对论；质子速度约
+\(10^6\,\mathrm{m/s}\)，小于光速约两数量级，符合非相对论。
+
+最终可报告：在题目的局域化估算约定下，电子动能约11.6GeV，两种相对论结果差约0.0044\%；第二问的库仑散射特征速度约
+\(0.015c\)。
+
+\clearpage
+
+\section{第 5
+题　四导线磁阱与蒸发冷却（45分）}\label{ux7b2c-5-ux9898-ux56dbux5bfcux7ebfux78c1ux9631ux4e0eux84b8ux53d1ux51b7ux537445ux5206}
+
+实现稀薄原子气体的玻色---爱因斯坦凝聚，需要磁阱囚禁和降温等技术。本题研究一种四导线磁阱的近轴磁场和势能。
+
+（1）四根相互平行的无限长直导线，横截面可忽略，垂直穿过边长为 \(a,b\)
+的长方形四个顶点。电流大小均为 \(I\)，方向如下图：左上、右下电流沿
+\(+z\)，右上、左下沿 \(-z\)。以长方形中心为原点，取 \(x\) 轴垂直于长为
+\(b\) 的边，\(y\) 轴垂直于长为 \(a\) 的边，建立右手直角坐标系。点
+\(P=(x,y,0)\) 在原点附近，\(|x|\ll a\)、\(|y|\ll b\)，\(a,b\)
+为同阶量。求 \(O,P\) 两点磁感应强度，并将可作近似的结果保留到领头阶。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[dashed](-2,-1.5)rectangle(2,1.5);
+\draw[->](-2.7,0)--(3.1,0)node[right]{$x$};\draw[->](0,-2)--(0,2.3)node[above]{$y$};
+\node[below left]at(0,0){$O$};\fill(.55,.55)circle(2pt)node[right]{$P(x,y)$};
+\foreach \x/\y/\sign in {-2/1.5/+,-2/-1.5/-,2/1.5/-,2/-1.5/+}{
+\draw[fill=white,thick](\x,\y)circle(.13);
+\if\sign+\fill(\x,\y)circle(1.5pt);\else\draw(\x-.08,\y-.08)--(\x+.08,\y+.08);\draw(\x-.08,\y+.08)--(\x+.08,\y-.08);\fi}
+\draw[<->](-2,-2.4)--(2,-2.4)node[midway,below]{$a$};
+\draw[<->](2.5,-1.5)--(2.5,1.5);\node[right]at(2.5,.55){$b$};
+\node[above left]at(-2,1.5){$+I$};\node[below left]at(-2,-1.5){$-I$};
+\node[above right]at(2,1.5){$-I$};\node[below right]at(2,-1.5){$+I$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 四导线位置与电流方向；圆点出纸面，叉号入纸面\par}
+\endgroup\end{minipage}
+\end{center}
+
+（2）原子固有磁矩为
+\(\boldsymbol S\)。将磁矩视为形状、电流不随旋转改变的微小电流圈，证明它在磁场
+\(\boldsymbol B\) 中的势能为
+
+\[W_m=-\boldsymbol S\cdot\boldsymbol B.\]
+
+（3）把原子限制在 \(x-y\)
+平面原点附近，并通过实验手段使磁矩方向始终与当地磁场相反。求其受力，保留到领头阶。
+
+（4）一团原子被囚禁在柱形区域内，横截面平行于 \(x-y\) 平面、半径为
+\(R_1\)，\(R_1\ll a,b\)；柱高远小于
+\(R_1\)，原子密度近似均匀，磁矩均与当地磁场相反。以 \(O\)
+为势能零点，求平均势能。缓慢蒸发一部分原子，使余下原子团向中心收缩为半径
+\(R_1/5\)、高度不变的圆柱，密度保持不变。求冷却后的总原子数、总势能和平均势能。已知真空磁导率为
+\(\mu_0\)。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-4}
+
+磁场向量叠加、近轴泰勒展开、磁偶极势能与径向分布积分。导线场的方向不能直接用场强大小相加代替；势能由反平行磁矩给出
+\(+SB\)，而受力需要对磁场大小求梯度。
+
+本题近轴势能与半径成正比，形成锥形阱。它不是通常势能与半径平方成正比的谐振子阱。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-4}
+
+无限长直导线的磁场；右手定则；多导线叠加；多变量的一阶展开；磁矩受力矩
+\(\boldsymbol S\times\boldsymbol B\)；势能与力；二维环形微元
+\(2\pi r\,dr\)；均匀面密度与总体积密度；尺度变化下的粒子数和能量标度。
+
+题中的 \(\boldsymbol S\)
+表示磁矩，不是这里要另行求解的角动量。记其大小为
+\(S>0\)。外部调控使方向保持反平行是给定模型条件，磁矩大小不变。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-4}
+
+中心四导线磁场相消。小范围内，磁场在 \(x\) 方向表现为朝向中心的分量，在
+\(y\)
+方向表现为离开中心的分量；然而磁场大小只依赖到中心的距离。反平行磁矩倾向于低磁场区域，因而受到向中心的力。
+
+原子团越靠近中心，势能越小。蒸发高能量原子后，在题设密度和高度固定的情况下，半径下降同时减少粒子数与每粒子平均势能，总势能下降得更快。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](-1.8,0)--(1.9,0)node[right]{$x$};\draw[->](0,-1.4)--(0,1.7)node[above]{$y$};
+\foreach \x/\y in {1/1,1/-1,-1/1,-1/-1}{\draw[->,blue,thick](\x,\y)--({.6*\x},{1.4*\y});}
+\draw[dashed](0,0)circle(1.3);\node[below]at(0,-1.9){$\boldsymbol B=K_B(-x,y)$};
+\begin{scope}[xshift=5.2cm]
+\draw[->](-1.8,0)--(1.9,0)node[right]{$x$};\draw[->](0,0)--(0,2.4)node[above]{$W$};
+\draw[red,thick](-1.5,1.8)--(0,0)--(1.5,1.8);
+\draw[->,red](-1.2,.3)--(-.5,.3);\draw[->,red](1.2,.3)--(.5,.3);
+\node[below]at(0,-.55){$W=F_0r,\quad\boldsymbol F=-F_0\boldsymbol e_r$};
+\end{scope}
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 近轴磁场方向与径向势能；势能为圆锥形\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-4}
+
+把四个导线坐标写为 \((s a/2,t b/2)\)，\(s,t=\pm1\)，电流有符号值
+\(I_{st}=-stI\)。对每根导线使用向量形式的Biot---Savart结果，求和后在原点展开。
+
+用符号 \(K_B\) 表示磁场梯度系数，避免四问反复携带长常数。得出 \(B=K_Br\)
+后，直接写 \(W=SK_Br\)，再用圆环微元求平均值。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-4}
+
+\subsubsection{1　单根导线的向量磁场}\label{ux5355ux6839ux5bfcux7ebfux7684ux5411ux91cfux78c1ux573a}
+
+一根位于 \((x_j,y_j)\)、电流沿 \(+z\) 的无限长导线，在 \(P=(x,y)\)
+处产生
+
+\[\boldsymbol B_j
+=\frac{\mu_0I}{2\pi}
+\frac{\boldsymbol e_z\times[(x-x_j)\boldsymbol e_x+(y-y_j)\boldsymbol e_y]}
+{(x-x_j)^2+(y-y_j)^2}.\]
+
+即
+
+\[B_{jx}=-\frac{\mu_0I}{2\pi}
+\frac{y-y_j}{(x-x_j)^2+(y-y_j)^2},\]
+
+\[B_{jy}=\frac{\mu_0I}{2\pi}
+\frac{x-x_j}{(x-x_j)^2+(y-y_j)^2},
+\qquad B_{jz}=0.\]
+
+沿 \(-z\) 的导线把上述结果整体反号。在导线右侧，沿 \(+z\)
+的电流产生向上的场，这可以作为右手定则的快速检查。
+
+\subsubsection{2　四导线的精确叠加形式}\label{ux56dbux5bfcux7ebfux7684ux7cbeux786eux53e0ux52a0ux5f62ux5f0f}
+
+定义 \(C_B=\mu_0I/(2\pi)\)，\(x_{st}=sa/2\)、\(y_{st}=tb/2\)，电流符号
+\(q_{st}=-st\)。于是
+
+\[\boxed{B_x=-C_B\sum_{s,t=\pm1}
+q_{st}\frac{y-tb/2}{(x-sa/2)^2+(y-tb/2)^2},}\]
+
+\[\boxed{B_y=C_B\sum_{s,t=\pm1}
+q_{st}\frac{x-sa/2}{(x-sa/2)^2+(y-tb/2)^2},
+\qquad B_z=0.}\]
+
+这给出原点附近和远离原点时都可使用的精确场，只需避开导线本身。原点距四根导线相同，相关分子的带符号和为零，因此
+
+\[\boxed{\boldsymbol B(O)=\boldsymbol0.}\]
+
+例如中心的 \(x\) 场分量正比于 \(\sum q_{st}t\)，\(y\) 分量正比于
+\(\sum q_{st}s\)，均为零。只有在矢量分量中处理方向，才能看清相消。
+
+\subsubsection{3　一阶泰勒展开}\label{ux4e00ux9636ux6cf0ux52d2ux5c55ux5f00}
+
+记原点到每根导线的距离平方为
+
+\[d_0^2=\frac{a^2+b^2}{4}.\]
+
+每根导线的分母写为
+
+\[d_{st}^2=d_0^2-sa,x-tb,y+x^2+y^2.\]
+
+在小量条件下取
+
+\[\frac1{d_{st}^2}
+=\frac1{d_0^2}+
+\frac{sa,x+tb,y}{d_0^4}+O(r^2/d_0^4),\]
+
+其中 \(r=\sqrt{x^2+y^2}\)，\(a,b\)
+同阶保证同一个小范围适用。将它代入分量式，先看 \(B_x\) 的常数项：
+
+\[B_x(0)=\frac{C_B}{d_0^2}\sum q_{st}\frac{tb}{2}=0.\]
+
+线性项中，直接来自 \(-y\) 的项因 \(\sum q_{st}=0\) 相消。来自分母展开的
+\(x\) 项为
+
+\[\frac{C_B}{d_0^4}
+\sum q_{st}\frac{tb}{2}(sa,x)
+=-\frac{2C_Bab}{d_0^4}x.\]
+
+\(y\) 项因 \(\sum q_{st}=0\) 或相应奇数和为零而消失。因此
+
+\[B_x=-\frac{2C_Bab}{d_0^4}x+\text{高阶项}.\]
+
+同理可得
+
+\[B_y=\frac{2C_Bab}{d_0^4}y+\text{高阶项}.\]
+
+定义正的梯度系数
+
+\[\boxed{K_B=\frac{16\mu_0abI}{\pi(a^2+b^2)^2}.}\]
+
+最终近轴场为
+
+\[\boxed{\boldsymbol B(P)
+\simeq K_B(-x\boldsymbol e_x+y\boldsymbol e_y),
+\qquad B_z=0.}\]
+
+磁场大小于是为
+
+\[\boxed{B(P)\simeq K_B\sqrt{x^2+y^2}=K_Br.}\]
+
+中心反演对称使场为奇函数，故二阶项也相消，首个一般修正从三阶场分量开始。实际近似范围仍应由
+\(r\ll a,b\) 保证。
+
+\subsubsection{4　场的局部一致性检查}\label{ux573aux7684ux5c40ux90e8ux4e00ux81f4ux6027ux68c0ux67e5}
+
+在不含导线的中心区域，近似场满足
+
+\[\nabla\cdot\boldsymbol B
+=-K_B+K_B=0,\]
+
+\[\nabla\times\boldsymbol B=\boldsymbol0.\]
+
+这符合无磁单极以及区域内无电流的条件。沿 \(x\) 轴，场指向 \(-x\)；沿
+\(y\) 轴，场指向
+\(+y\)。场方向不是在各个方向都径向向内，但它的大小具有径向对称性，计算势能时应使用场的大小，不能直接照搬场矢量的方向。
+
+\subsubsection{5　磁偶极势能的推导}\label{ux78c1ux5076ux6781ux52bfux80fdux7684ux63a8ux5bfc}
+
+对形状和电流固定的微小电流圈，力矩为
+
+\[\boldsymbol\tau=\boldsymbol S\times\boldsymbol B.\]
+
+设磁矩与磁场夹角为 \(\vartheta\)。磁力矩趋于减小
+\(\vartheta\)，其沿增大角度方向的广义力矩为
+
+\[\tau_\vartheta=-SB\sin\vartheta.\]
+
+势能的角度导数为广义力矩的负值，故
+
+\[\frac{dW}{d\vartheta}=SB\sin\vartheta.\]
+
+取 \(\vartheta=\pi/2\) 时 \(W=0\)，积分得
+
+\[W(\vartheta)=\int_{\pi/2}^{\vartheta}SB\sin\vartheta'\,d\vartheta'
+=-SB\cos\vartheta,\]
+
+\[\boxed{W_m=-\boldsymbol S\cdot\boldsymbol B.}\]
+
+平行时 \(W=-SB\) 为最低，反平行时 \(W=+SB\)
+为最高角向能量。题目通过外部调控维持反平行，因此使用的是这个指定的磁矩支，而不是让磁矩自由转到平行支。
+
+\subsubsection{6　反平行磁矩的平移力}\label{ux53cdux5e73ux884cux78c1ux77e9ux7684ux5e73ux79fbux529b}
+
+磁矩反平行给出
+
+\[W(r)=+SB(r)\simeq SK_Br.\]
+
+定义 \(F_0=SK_B\)，则
+
+\[\boldsymbol F=-\nabla W.\]
+
+对 \(r>0\)，有
+\(\partial r/\partial x=x/r\)、\(\partial r/\partial y=y/r\)，所以
+
+\[\boxed{F_x=-SK_B\frac x{\sqrt{x^2+y^2}},
+\qquad F_y=-SK_B\frac y{\sqrt{x^2+y^2}}.}\]
+
+即
+
+\[\boxed{\boldsymbol F=-F_0\boldsymbol e_r,
+\qquad |\boldsymbol F|=F_0.}\]
+
+近轴领头阶力的大小为常量，方向朝中心。若把它写成
+\(-K_BS(x\boldsymbol e_x+y\boldsymbol e_y)\)，会漏掉 \(1/r\)
+并错成胡克力，量纲也不正确。
+
+原点 \(r=0\) 的锥形势能有尖点，梯度方向没有唯一值，而且当地
+\(\boldsymbol B=0\)，磁矩反平行的方向也未定义。故上式明确用于原点附近的非零
+\(r\)；不能把 \(x/r,y/r\)
+在原点直接代入。题设的外部调控把真实零场区的磁矩演化简化了。
+
+\subsubsection{7　平均势能的环形积分}\label{ux5e73ux5747ux52bfux80fdux7684ux73afux5f62ux79efux5206}
+
+设柱高为 \(H_z\)、体积粒子数密度为 \(n_v\)，取面密度
+
+\[n_s=n_vH_z.\]
+
+因柱高和密度均匀，半径 \(r\) 到 \(r+dr\) 的圆环内粒子数为
+
+\[dN=n_s2\pi r\,dr.\]
+
+全团粒子数为
+
+\[\boxed{N_1=\int_0^{R_1}n_s2\pi r\,dr
+=n_s\pi R_1^2.}\]
+
+势能总量为
+
+\[U_1=\int_0^{R_1}F_0r\,dN
+=2\pi n_sF_0\int_0^{R_1}r^2dr,\]
+
+\[\boxed{U_1=\frac23\pi n_sF_0R_1^3.}\]
+
+平均势能为
+
+\[\boxed{\overline W_1=\frac{U_1}{N_1}
+=\frac23F_0R_1
+=\frac{32\mu_0abIS}{3\pi(a^2+b^2)^2}R_1.}\]
+
+如果先把柱体的高度积分出来，再对面内圆环积分，结果完全相同。平均值中柱高与密度均相消。
+
+\subsubsection{\texorpdfstring{8　为什么平均半径是
+\(2R/3\)}{8　为什么平均半径是 2R/3}}\label{ux4e3aux4ec0ux4e48ux5e73ux5747ux534aux5f84ux662f-2r3}
+
+均匀面积分布不等于半径均匀分布。在半径为 \(R\)
+的圆盘中，粒子半径的概率密度是
+
+\[p_r(r)=\frac{2r}{R^2},\qquad0\le r\le R.\]
+
+其归一化与平均半径为
+
+\[\int_0^Rp_r(r)dr=1,
+\qquad\langle r\rangle=\int_0^Rr\,p_r(r)dr=\frac{2R}{3}.\]
+
+故平均势能正是 \(F_0\langle r\rangle\)。若错取平均半径
+\(R/2\)，就是把面积均匀分布偷换成了半径均匀分布。
+
+还可求二阶矩：
+
+\[\langle r^2\rangle=\frac{R^2}{2},\]
+
+\[\operatorname{Var}(r)=\frac{R^2}{2}-\frac{4R^2}{9}
+=\frac{R^2}{18}.\]
+
+于是势能标准差为
+\(F_0R/\sqrt{18}\)。这为均匀原子团的能量分布提供另一项检查，而不是只检查平均值。
+
+\subsubsection{9　半径缩小五倍后的三个尺度}\label{ux534aux5f84ux7f29ux5c0fux4e94ux500dux540eux7684ux4e09ux4e2aux5c3aux5ea6}
+
+题设保持密度和高度不变，故面密度 \(n_s\) 不变，\(R_2=R_1/5\)。因此
+
+\[\boxed{N_2=n_s\pi(R_1/5)^2=\frac{N_1}{25}.}\]
+
+总势能含 \(R^3\)，有
+
+\[\boxed{U_2=\frac{U_1}{125}
+=\frac{2\pi n_sF_0R_1^3}{375}.}\]
+
+平均势能含 \(R\)，有
+
+\[\boxed{\overline W_2=\frac{\overline W_1}{5}
+=\frac{2F_0R_1}{15}.}\]
+
+三者的关系可再次检查：
+
+\[\frac{U_2}{N_2}
+=\frac{U_1/125}{N_1/25}
+=\frac15\frac{U_1}{N_1}.\]
+
+由于题面未给柱高或密度的具体数值，总粒子数和总势能应使用
+\(n_s\)，或者使用初态的 \(N_1,U_1\) 表示，不能凭空给出数值。
+
+\subsubsection{10　蒸发冷却的条件和结果含义}\label{ux84b8ux53d1ux51b7ux5374ux7684ux6761ux4ef6ux548cux7ed3ux679cux542bux4e49}
+
+若用截断圆盘来理解几何分布，余下中央半径为 \(R_1/5\) 的区域只占原面积
+\(1/25\)，所以有 \(24/25\) 的粒子被去除。它们带走的初态势能是
+\(124U_1/125\)，平均每个被去除粒子的势能为
+
+\[\overline W_{\rm removed}
+=\frac{U_1-U_2}{N_1-N_2}
+=\frac{31}{30}\overline W_1.\]
+
+它大于初始平均值，所以选择高能量原子移除可以降低平均能量。真实蒸发冷却还包括动能和粒子碰撞再热化；本题只要求在给定最终几何与均匀密度条件下的外场势能。
+
+不能把 \(U_2/U_1=1/125\)
+说成温度下降125倍，也不能因``收缩''就假定粒子数守恒。题目明确是部分原子被蒸发且密度保持不变，粒子数必须随面积改变。
+
+\subsubsection{11　量纲与磁阱尺度检查}\label{ux91cfux7eb2ux4e0eux78c1ux9631ux5c3aux5ea6ux68c0ux67e5}
+
+\(\mu_0I\) 的量纲是磁场乘长度，\(ab/(a^2+b^2)^2\)
+的量纲为长度的负二次方，因此 \(K_B\) 的量纲为磁场每长度。\(SB\)
+是能量，故 \(F_0=SK_B\) 是力，平均势能 \(F_0R\) 的量纲正确。
+
+导线矩形在 \(a\leftrightarrow b\) 交换时，\(K_B\)
+不变；电流反向使磁场向量反向，但在重新维持反平行支后磁场大小和势能不变。近轴近似须在初态
+\(R_1\ll a,b\) 成立，半径收缩后条件更好。
+
+\clearpage
+
+\section{第 6
+题　引力散射与星光偏折（45分）}\label{ux7b2c-6-ux9898-ux5f15ux529bux6563ux5c04ux4e0eux661fux5149ux504fux629845ux5206}
+
+广义相对论预言星光经过太阳附近会发生偏折，1919年的日全食观测曾检验这一效应。本题先在牛顿理论下计算，再用弱场有效折射率模型计算。
+
+（1）在牛顿动力学和万有引力框架下，质量为 \(m\) 的质点在原点处质量
+\(M\gg m\) 的引力场中运动。平面极坐标轨道为
+
+\[r(\theta)=\frac p{1+e\cos\theta},\qquad-\pi<\theta\le\pi,\]
+
+其中半通径 \(p>0\)、偏心率 \(e\ge0\)。若 \(e>1\)，存在 \(\theta_{\max}\)
+使 \(-\theta_{\max}<\theta<\theta_{\max}\)。求 \(\theta_{\max}\)
+及其取值范围。
+
+（2）由质点的机械能 \(E\) 和相对于原点的轨道角动量大小 \(L\)，导出
+\(p(E,L)\)、\(e(E,L)\)。
+
+（3）一个物体以速度 \(v_0\) 从外太空飞入太阳系，瞄准距离为
+\(b\)，即初始速度所在直线到太阳中心的距离。设
+\(v_0^2b/(GM_\odot)\gg1\)。求飞出方向相对原入射方向的偏折角
+\(\Delta\varphi\)：
+
+（i）入射物是陨石；
+
+（ii）入射物是一束星光，恰好掠过太阳表面进入观测站，此时可近似取
+\(b=R_\odot\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[dashed](-3,0)--(4,0);\fill(0,0)circle(3pt)node[below]{太阳};
+\draw[dashed](-3,1.3)--(1.7,1.3);
+\draw[->,blue,thick](-3,1.3)--(-1.9,1.3)node[midway,above]{$v_0$};
+\draw[thick](-1.9,1.3)..controls(-.7,1.3)and(.6,1.2)..(1.45,.94)--(3.8,.10);
+\draw[->,thick](2.4,.6)--(3.1,.35);
+\draw[<->](-1.1,0)--(-1.1,1.3)node[midway,left]{$b$};
+\draw[dashed](1.45,.94)--(3.8,.94);
+\draw(2.5,.94)arc(0:-20:1.05);\node[right]at(2.65,.74){$\Delta\varphi$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 远处入射方向、瞄准距离和出射偏折角\par}
+\endgroup\end{minipage}
+\end{center}
+
+（4）弱场广义相对论效应可用等效相对折射率
+
+\[n_{\rm eff}(r)=1-\frac{2\varphi(r)}{c^2}\]
+
+表示，其中 \(\varphi(r)\) 是牛顿引力势。光线满足费马原理
+\(\delta\int_A^B n_{\rm eff}(r)dl=0\)。若 \(n_{\rm eff}\) 与 \(\theta\)
+无关，以 \(\theta=\theta(r)\) 写轨迹，有
+
+\[\frac d{dr}\left(
+\frac{r^2\theta'}{\sqrt{1+r^2\theta'^2}}n_{\rm eff}(r)
+\right)=0,\qquad\theta'=\frac{d\theta}{dr}.\]
+
+用这一关系重新计算掠过太阳表面的星光偏折角。已知太阳质量
+\(M_\odot\)、太阳半径 \(R_\odot\)、引力常量 \(G\) 和光速 \(c\)。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-5}
+
+中心力圆锥轨道、双曲散射的角度几何与分层近似。先由守恒量决定轨道，再由渐近方向得到散射角；光学部分由旋转对称产生的第一积分得到另一条轨道。
+
+牛顿框架把光束形式上按高速粒子计算，只给出完整弱场光偏折的一半。题中有效折射率包含弱场广义相对论效应，最终恢复系数四。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-5}
+
+中心引力势能
+\(-GMm/r\)；能量和角动量守恒；有效势能；半通径与偏心率；无穷远条件；渐近径向位置与实际运动速度方向的区别；弱散射展开；费马原理；循环坐标与守恒光学角动量；倒数半径变量。
+
+在双曲轨道中，\(E>0\)、\(e>1\)。瞄准距离 \(b\)
+是无穷远处入射直线的几何量，最近距离一般比 \(b\)
+小；弱场极限下二者才可在领头阶近似等同。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-5}
+
+吸引引力使入射轨迹弯向太阳。在无穷远，入射速度方向与指向入射位置的径向方向相反，出射速度方向与出射径向方向相同，所以散射角不是简单的
+\(2\theta_{\max}\)，而是 \(2\theta_{\max}-\pi\)。
+
+有效折射率靠近太阳时增大，光线向折射率更大的区域弯曲。旋转对称性使
+\(nr\sin\alpha\) 保持不变，远处此常数就是瞄准距离。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\fill(0,0)circle(2pt)node[below left]{$O$};
+\draw[->](0,0)--(3,0)node[right]{最近点轴};
+\draw[blue,thick]plot[domain=-110:110,samples=100]({1.2*cos(\x)/(1+2*cos(\x))},{1.2*sin(\x)/(1+2*cos(\x))});
+\draw[dashed](0,0)--(-1.5,2.60);\draw[dashed](0,0)--(-1.5,-2.60);
+\draw[->,red](-1.1,-2.2)--(-.6,-1.4)node[right]{入射速度};
+\draw[->,red](-.6,1.4)--(-1.1,2.2)node[left]{出射速度};
+\draw(.7,0)arc(0:120:.7);\node[above]at(.13,.8){$\theta_{\max}$};
+\node[right]at(1.1,-1.6){$\Delta\varphi=2\theta_{\max}-\pi$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 圆锥轨道的两支渐近方向与最近点\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-5}
+
+从 \(r>0\) 推出 \(1+e\cos\theta>0\)。用 \(L=mr^2\dot\theta\) 消去
+\(\dot\theta\)，再把 \(u=1/r=(1+e\cos\theta)/p\) 代入能量，比较常数项和
+\(u\) 项。
+
+对光线，把给定微分式积分一次，确定常数为
+\(b\)。倒数半径将含根式的一阶关系化为多项式形式，便于同圆锥轨道或线性轨道微分方程比较。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-5}
+
+\subsubsection{1　双曲线允许的角度范围}\label{ux53ccux66f2ux7ebfux5141ux8bb8ux7684ux89d2ux5ea6ux8303ux56f4}
+
+因 \(p>0\) 且物理半径 \(r>0\)，分母必须为正：
+
+\[1+e\cos\theta>0.\]
+
+当 \(e>1\)，这给出
+
+\[\cos\theta>-\frac1e,\]
+
+\[\boxed{\theta_{\max}=\arccos\left(-\frac1e\right).}\]
+
+因为 \(-1<-1/e<0\)，有
+
+\[\boxed{\frac\pi2<\theta_{\max}<\pi.}\]
+
+当
+\(\theta\to\pm\theta_{\max}\)，分母趋零、\(r\to\infty\)，两端就是双曲轨道的渐近方向。边界角不包含在有限位置的轨道中。
+
+\(e\to1^+\) 时
+\(\theta_{\max}\to\pi\)，双曲轨道趋近抛物线；\(e\to\infty\) 时
+\(\theta_{\max}\to\pi/2\)，散射越来越弱。
+
+\subsubsection{2　机械能与角动量}\label{ux673aux68b0ux80fdux4e0eux89d2ux52a8ux91cf}
+
+记中心引力参数 \(\Gamma=GM\)。质点机械能为
+
+\[E=\frac m2(\dot r^2+r^2\dot\theta^2)-\frac{\Gamma m}{r},\]
+
+角动量大小为
+
+\[L=mr^2\dot\theta,\]
+
+这里按 \(\dot\theta>0\)
+选轨道方向；若原方向相反，可用角动量大小并交换角度正向。消去角速度，得
+
+\[\boxed{E=\frac m2\dot r^2
++\frac{L^2}{2mr^2}-\frac{\Gamma m}{r}.}\]
+
+后两项组成径向有效势能
+
+\[U_{\rm eff}(r)=\frac{L^2}{2mr^2}-\frac{\Gamma m}{r}.\]
+
+第一项为角动量屏障，第二项为吸引势能。对
+\(L>0\)，很小的半径处角动量屏障会占优势；纯径向 \(L=0\)
+为退化情形，不能直接使用非零半通径的表达式。
+
+\subsubsection{3　由给定轨道比较守恒量}\label{ux7531ux7ed9ux5b9aux8f68ux9053ux6bd4ux8f83ux5b88ux6052ux91cf}
+
+令 \(u=1/r\)。因
+
+\[\dot r=\frac{dr}{d\theta}\dot\theta
+=-\frac1{u^2}\frac{du}{d\theta}\frac Lm u^2
+=-\frac Lm u',\]
+
+能量化为
+
+\[E=\frac{L^2}{2m}(u'^2+u^2)-\Gamma m u.\]
+
+题给轨道和导数为
+
+\[u=\frac{1+e\cos\theta}{p},
+\qquad u'=-\frac e p\sin\theta.\]
+
+于是
+
+\[u'^2+u^2
+=\frac{1+e^2+2e\cos\theta}{p^2}
+=\frac{e^2-1}{p^2}+\frac{2u}{p}.\]
+
+代入能量，
+
+\[E=\frac{L^2(e^2-1)}{2mp^2}
++\left(\frac{L^2}{mp}-\Gamma m\right)u.\]
+
+能量与沿轨道改变的 \(u\) 无关，所以一次项系数必须为零：
+
+\[\frac{L^2}{mp}=\Gamma m,\]
+
+\[\boxed{p=\frac{L^2}{GMm^2}.}\]
+
+常数项则给
+
+\[E=\frac{G^2M^2m^3}{2L^2}(e^2-1),\]
+
+\[\boxed{e=\sqrt{1+\frac{2EL^2}{G^2M^2m^3}}.}\]
+
+该路线没有除以 \(dr/d\theta\)，因此在最近点
+\(\theta=0\)、\(dr/d\theta=0\) 处也无中间奇点。
+
+\subsubsection{4　用轨道方程作第二次检查}\label{ux7528ux8f68ux9053ux65b9ux7a0bux4f5cux7b2cux4e8cux6b21ux68c0ux67e5}
+
+牛顿径向方程为
+
+\[\ddot r-r\dot\theta^2=-\frac\Gamma{r^2}.\]
+
+结合角动量守恒并换成 \(u\)，可导出Binet方程
+
+\[u''+u=\frac{\Gamma m^2}{L^2}.\]
+
+给定圆锥轨道满足 \(u''+u=1/p\)，与上节的 \(p\)
+完全一致。能量符号亦给出圆锥类别：\(E<0\) 对应 \(e<1\) 的椭圆，\(E=0\)
+对应 \(e=1\) 的抛物线，\(E>0\) 对应双曲线。
+
+\subsubsection{5　无穷远入射条件}\label{ux65e0ux7a77ux8fdcux5165ux5c04ux6761ux4ef6}
+
+现在换成太阳引力参数 \(\Gamma_\odot=GM_\odot\)。无穷远处势能为零，故
+
+\[\boxed{E=\frac12mv_0^2.}\]
+
+速度直线到太阳中心的距离为 \(b\)，角动量大小为
+
+\[\boxed{L=mv_0b.}\]
+
+代入轨道参数，
+
+\[\boxed{p=\frac{v_0^2b^2}{\Gamma_\odot},
+\qquad e=\sqrt{1+\frac{v_0^4b^2}{\Gamma_\odot^2}}.}\]
+
+粒子质量消去，反映经典引力散射的轨道与试探粒子质量无关。定义小参数
+
+\[\lambda_N=\frac{\Gamma_\odot}{bv_0^2}\ll1,\]
+
+则 \(e=\sqrt{1+\lambda_N^{-2}}\)。
+
+\subsubsection{6　渐近角和牛顿偏折角}\label{ux6e10ux8fd1ux89d2ux548cux725bux987fux504fux6298ux89d2}
+
+轨道关于最近点轴对称。入射位置的渐近方向是
+\(-\theta_{\max}\)，但入射速度指向太阳，须反转 \(\pi\)；出射速度沿
+\(+\theta_{\max}\)。因此偏折角的大小为
+
+\[\boxed{\Delta\varphi_N=2\theta_{\max}-\pi.}\]
+
+用 \(\theta_{\max}=\pi/2+\arcsin(1/e)\)，可写成
+
+\[\Delta\varphi_N=2\arcsin\frac1e.\]
+
+因
+\(1/e=\lambda_N/\sqrt{1+\lambda_N^2}\)，使用直角三角关系得精确散射结果
+
+\[\boxed{\Delta\varphi_N=2\arctan\lambda_N
+=2\arctan\frac{GM_\odot}{bv_0^2}.}\]
+
+弱散射条件下展开：
+
+\[\boxed{\Delta\varphi_N
+\simeq\frac{2GM_\odot}{bv_0^2}.}\]
+
+误差的首项为 \(-2\lambda_N^3/3\)，所以领头阶相对误差约
+\(\lambda_N^2/3\)。角度必须按弧度使用这个展开。
+
+\subsubsection{7　沿近似直线积分的核验}\label{ux6cbfux8fd1ux4f3cux76f4ux7ebfux79efux5206ux7684ux6838ux9a8c}
+
+弱偏折时，可将原入射轨迹近似为 \(x=v_0t\)、横向距离为
+\(b\)。指向太阳的横向加速度大小为
+
+\[a_\perp(t)=\frac{\Gamma_\odot b}{(b^2+v_0^2t^2)^{3/2}}.\]
+
+积分全程，令 \(\xi=v_0t/b\)：
+
+\[\Delta v_\perp
+=\frac{\Gamma_\odot}{bv_0}
+\int_{-\infty}^{\infty}\frac{d\xi}{(1+\xi^2)^{3/2}}.\]
+
+由原函数 \(\xi/\sqrt{1+\xi^2}\)，定积分等于2，故
+
+\[\Delta\varphi\simeq\frac{\Delta v_\perp}{v_0}
+=\frac{2\Gamma_\odot}{bv_0^2}.\]
+
+这条路线与双曲轨道的领头阶一致，但它已使用小偏折近似，不能替代任意 \(b\)
+条件下的精确双曲散射。
+
+\subsubsection{8　牛顿框架中的星光结果}\label{ux725bux987fux6846ux67b6ux4e2dux7684ux661fux5149ux7ed3ux679c}
+
+按第（3）（ii）问的形式计算，令 \(v_0=c\)、\(b\simeq R_\odot\)，有
+
+\[\boxed{\Delta\varphi_{\rm light,N}
+\simeq\frac{2GM_\odot}{c^2R_\odot}.}\]
+
+此处沿用牛顿粒子轨道模型，不能解释为光具有普通非相对论质量和动能。它提供的是牛顿框架的对照值，随后由题给弱场光学模型修正。
+
+\subsubsection{9　光学第一积分及常数的几何意义}\label{ux5149ux5b66ux7b2cux4e00ux79efux5206ux53caux5e38ux6570ux7684ux51e0ux4f55ux610fux4e49}
+
+对太阳外部，引力势为
+
+\[\varphi(r)=-\frac{GM_\odot}{r}.\]
+
+题给有效折射率于是为
+
+\[\boxed{n(r)=1+\frac qr,
+\qquad q=\frac{2GM_\odot}{c^2}.}\]
+
+对给定微分式积分一次：
+
+\[\frac{n(r)r^2\theta'}{\sqrt{1+r^2\theta'^2}}=C.\]
+
+设轨道切线与径向方向夹角为 \(\alpha\)，则在一个 \(r\) 单调的分支上有
+
+\[\sin\alpha=\frac{r\theta'}{\sqrt{1+r^2\theta'^2}},\]
+
+所以光学角动量不变量为
+
+\[\boxed{C=nr\sin\alpha.}\]
+
+无穷远处 \(n\to1\)，入射直线离太阳中心的距离为
+\(b=r\sin\alpha\)，故守恒量的大小是
+
+\[\boxed{|C|=b.}\]
+
+入射和出射分支的 \(d\theta/dr\)
+符号可能不同。推导中使用正的大小，再利用轨道对称性合并两支，不能假定半径全程单调。
+
+\subsubsection{10　从第一积分导出轨道}\label{ux4eceux7b2cux4e00ux79efux5206ux5bfcux51faux8f68ux9053}
+
+将第一积分平方并解出 \(\theta'^2\)：
+
+\[\theta'^2=\frac{b^2}{r^2[n(r)^2r^2-b^2]}.\]
+
+令 \(u=1/r\)，使用 \(dr/d\theta=-u'/u^2\)，得到
+
+\[\boxed{u'^2=\frac{(1+qu)^2}{b^2}-u^2.}\]
+
+取弱场小参数 \(q/b\ll1\)。保留领头阶，
+
+\[u'^2=\frac1{b^2}+\frac{2q}{b^2}u-u^2
++\text{二阶修正}.\]
+
+微分或直接代入解形式，可得到领头阶轨道方程
+
+\[u''+u=\frac q{b^2}.\]
+
+其圆锥形式为
+
+\[u=\frac{1+e_g\cos\theta}{p_g},\]
+
+\[\boxed{p_g=\frac{b^2}{q},
+\qquad e_g=\sqrt{1+\frac{b^2}{q^2}}.}\]
+
+上述参数用于领头阶弱场计算。式中出现的 \(q^2\)
+只用于方便表达圆锥关系，不意味着我们已经控制了真实广义相对论的全部二阶项。
+
+\subsubsection{11　完整弱场星光偏折}\label{ux5b8cux6574ux5f31ux573aux661fux5149ux504fux6298}
+
+同样用两渐近角关系，
+
+\[\Delta\varphi_g=2\arcsin\frac1{e_g}
+\simeq\frac{2q}{b}.\]
+
+代入 \(q=2GM_\odot/c^2\)，
+
+\[\boxed{\Delta\varphi_g
+\simeq\frac{4GM_\odot}{c^2b}.}\]
+
+对掠日光线 \(b\simeq R_\odot\)，有
+
+\[\boxed{\Delta\varphi_{\rm grazing}
+\simeq\frac{4GM_\odot}{c^2R_\odot}.}\]
+
+它是第（3）（ii）问牛顿对照结果的两倍。该因子二来自题给有效折射率模型的引力效应，不是把同一条光线路径重复计算两次。
+
+\subsubsection{12　用横向折射率梯度独立检查}\label{ux7528ux6a2aux5411ux6298ux5c04ux7387ux68afux5ea6ux72ecux7acbux68c0ux67e5}
+
+弱偏折、\(n\simeq1\) 时，光线横向方向变化率领头阶为
+\(\partial n/\partial y\)。以未偏折的直线 \(y=b\) 计算，
+
+\[\left|\frac{\partial n}{\partial y}\right|
+=\frac{qb}{(x^2+b^2)^{3/2}}.\]
+
+因此
+
+\[\Delta\varphi_g\simeq
+\int_{-\infty}^{\infty}\frac{qb\,dx}{(x^2+b^2)^{3/2}}
+=\frac{2q}{b}.\]
+
+这与轨道第一积分路线一致。此检查使用的是折射率梯度而不是牛顿质量粒子的加速度，故也能看清两个模型系数不同的来源。
+
+\subsubsection{13　最近距离和瞄准距离}\label{ux6700ux8fd1ux8dddux79bbux548cux7784ux51c6ux8dddux79bb}
+
+在光线最近点，切线垂直径向方向，故 \(\sin\alpha=1\)。第一积分给
+
+\[b=n(r_{\min})r_{\min}=r_{\min}+q.\]
+
+在这个一阶有效折射率模型内，
+
+\[r_{\min}=b-q.\]
+
+若光线真正擦过太阳表面，则更准确应取 \(b=R_\odot+q\)。由于
+\(q/R_\odot\ll1\)，把它换成 \(b=R_\odot\)
+只会改变偏折角的二阶小量，不影响本题领头阶答案。
+
+牛顿陨石轨道的最近距离为
+
+\[r_{\min,N}=\frac{p}{1+e}
+=b\big(\sqrt{1+\lambda_N^2}-\lambda_N\big),\]
+
+也不严格等于 \(b\)。近似从一开始就应写明在哪个阶数上用 \(b\)
+代替最近距离。
+
+\subsubsection{14　量纲、极限与答案整理}\label{ux91cfux7eb2ux6781ux9650ux4e0eux7b54ux6848ux6574ux7406}
+
+\(GM\) 的量纲是长度的三次方每时间平方，故 \(GM/(bv^2)\) 和 \(GM/(c^2R)\)
+无量纲，适合表示弧度角。\(b\to\infty\)、\(M\to0\)
+时偏折趋零；更小的瞄准距离或更慢的陨石速度使牛顿偏折增大，但进入强散射后必须回到精确反正切式。
+
+本题结果依次为
+\(\theta_{\max}=\arccos(-1/e)\)、轨道守恒量关系、陨石弱偏折
+\(2GM_\odot/(bv_0^2)\)、牛顿光束对照
+\(2GM_\odot/(c^2R_\odot)\)，以及弱场光学结果
+\(4GM_\odot/(c^2R_\odot)\)。
+
+\clearpage
+
+\section{第 7
+题　圆环电子、磁通周期与配对模型（45分）}\label{ux7b2c-7-ux9898-ux5706ux73afux7535ux5b50ux78c1ux901aux5468ux671fux4e0eux914dux5bf9ux6a21ux578b45ux5206}
+
+超导环中磁通量的量子化单位为
+\(h/(2e)\)。为理解这一现象，考虑一维圆环上非相对论、无相互作用电子的稳定运动。电子质量为
+\(m\)，圆环半径为 \(R\)，环上状态的波函数为
+
+\[\psi(x)=\exp\left(\frac i\hbar px\right),\]
+
+其中 \(x=R\theta\) 标记环上的位置，\(p\)
+为电子动量，\(h=2\pi\hbar\)，电子电荷为 \(-e\)，\(e>0\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[thick](0,0)ellipse(2 and .8);\fill(-1.2,-.64)circle(3pt)node[below]{电子};
+\draw[dashed](0,0)--(1.5,.53)node[midway,above]{$R$};
+\draw[->,very thick](0,-1.2)--(0,1.8)node[above]{$\Phi$};
+\draw[->](1.45,-.55)arc(-30:45:1.65 and .65);
+\node[right]at(2,.3){正向绕环};
+\node[below]at(.7,-1.5){$x=R\theta$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 一维圆环的角坐标与正向磁通\par}
+\endgroup\end{minipage}
+\end{center}
+
+（1）由波函数的单值性，给出电子动量 \(p\) 所有可能取值。
+
+（2）环内通入轴对称、垂直环面的磁通量
+\(\Phi\)，箭头方向为磁通正向。本题把 \(\Phi\) 视为连续变量。电子动量变为
+\(p'=p+eA\)，\(A\) 是沿环切向的磁矢势大小，能量为
+\(E=p'^2/(2m)\)。给出单电子能量 \(E\) 与磁通量的关系。
+
+（3）环上有 \(N\)
+个无相互作用电子，在接近绝对零度时满足：任意两个电子具有不同动量，系统总能量最小。证明系统最低总能量
+\(E_{\rm tot}\) 随 \(\Phi\) 周期变化，并给出周期。
+
+（4）在 \(-h/(2e)\le\Phi\le h/(2e)\) 内，求平均能量
+\(\overline E=E_{\rm tot}/N\) 的变化关系。指出：\(N\) 为奇数时
+\(\Phi=0\) 的平均能量小于 \(|\Phi|=h/(2e)\) 时；\(N\) 为偶数时相反。
+
+（5）在一个配对模型中，动量为 \(p'\) 和 \(-p'\)
+的电子必须同时存在或同时不存在。考虑半径同为 \(R\)、电子总数为 \(2N\)
+的两个圆环，电子可以在两环任意分配。
+
+（5.1）证明两环各带奇数电子时，电子数相差最小且 \(\Phi=0\)
+时平均能量最低；两环各带偶数电子时，电子数相差最小且 \(\Phi=h/(2e)\)
+时平均能量最低。分别记这两个极小情形为a、b，并证明其动量占据满足上述配对条件。
+
+（5.2）比较a、b两种情形：a为两环各有 \(N=2M+1\)
+个电子，\(\Phi=0\)；b为两环有 \(N_1=2(M+1)\)、\(N_2=2M\)
+个电子，\(\Phi=h/(2e)\)。其中 \(M\)
+为正整数。证明电子平均能量之比在电子数趋于无穷时趋于一。
+
+\subsection{一、题型定位}\label{ux4e00ux9898ux578bux5b9aux4f4d-6}
+
+一维环的周期边界条件、单电子能级与费米占据的组合最优化。磁通平移使整数态标号整体移动；固定粒子数的最低能量是多条抛物线分支的下包络，具有奇偶数差别。
+
+题面``任意两个电子具有不同动量''相当于采用每个动量态只占一个电子的模型。这里按该规则计算，不另加实际电子自旋带来的二重占据。最后的双环配对讨论是一个简化模型，用于展示半磁通位置的竞争，不能单凭它宣称已完整推导真实超导体理论。
+
+\subsection{二、知识点}\label{ux4e8cux77e5ux8bc6ux70b9-6}
+
+单值波函数与整数绕数；正则动量和机械动量；磁矢势环路积分；电子负电荷的耦合符号；离散能级填充；整数和平方式求和；奇偶分支；简并与基态切换；双环总能量的凸性。
+
+定义单电子能量尺度和无量纲磁通
+
+\[E_R=\frac{\hbar^2}{2mR^2},
+\qquad f=\frac{e\Phi}{h}.\]
+
+这样全部单电子能级写为 \(E_R(n+f)^2\)，所有复杂性集中在应选哪些整数
+\(n\)。
+
+\subsection{三、物理图像}\label{ux4e09ux7269ux7406ux56feux50cf-6}
+
+每个整数态是一条以 \(f=-n\)
+为最低点的抛物线。磁通增加一个单位时，整个能级族只是重新编号。多个电子必须占据不同整数态，基态选择最靠近
+\(-f\) 的连续一串整数。
+
+奇数个电子可在 \(f=0\) 以零动量态为中心成对占据；偶数个电子在 \(f=0\)
+两边填充不完全对称，而在 \(f=1/2\)
+可围绕半整数机械动量对称填充。两种最有利磁通相差半个单电子周期。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](-2.5,0)--(2.6,0)node[right]{$f$};\draw[->](0,0)--(0,2.4)node[above]{磁通相关项};
+\draw[blue,thick]plot[domain=-.5:.5,samples=80]({4*\x},{6*\x*\x});
+\draw[red,thick]plot[domain=-.5:0,samples=40]({4*\x},{6*(\x+.5)^2});
+\draw[red,thick]plot[domain=0:.5,samples=40]({4*\x},{6*(\x-.5)^2});
+\node[below]at(-2,0){$-1/2$};\node[below]at(2,0){$1/2$};\node[below left]at(0,0){$0$};
+\node[blue,right]at(2.2,2){奇数：$f^2$};\node[red,right]at(2.2,1.4){偶数：$(|f|-1/2)^2$};
+\node[below]at(0,-.6){仅绘磁通相关项，纵轴单位为 $E_R$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 奇数与偶数粒子基态的不同磁通分支\par}
+\endgroup\end{minipage}
+\end{center}
+
+\subsection{四、解题入口}\label{ux56dbux89e3ux9898ux5165ux53e3-6}
+
+先求边界条件 \(\psi(x+2\pi R)=\psi(x)\)，再用
+\(2\pi RA=\Phi\)。证明周期时将 \(f\to f+1\) 和 \(n\to n-1\)
+同时替换，避免先求完所有求和才看见周期。
+
+在中心区间 \(-1/2\le f\le1/2\) 内，分别对 \(N=2M+1\) 与 \(N=2M\)
+写出占据整数集合。求和时保留 \(\sum n\) 和
+\(\sum n^2\)；偶数集合的一次和不为零，正是分支偏移的来源。
+
+\subsection{五、解析}\label{ux4e94ux89e3ux6790-6}
+
+\subsubsection{1　环上的单值性}\label{ux73afux4e0aux7684ux5355ux503cux6027}
+
+绕环一周后物理位置相同，所以
+
+\[\psi(x+2\pi R)=\psi(x).\]
+
+代入题给波函数，约去共同因子：
+
+\[\exp\left(\frac{i}{\hbar}p,2\pi R\right)=1.\]
+
+复指数等于一要求相位为 \(2\pi\) 的整数倍，因此
+
+\[\frac{p,2\pi R}{\hbar}=2\pi n,
+\qquad n\in\mathbb Z,\]
+
+\[\boxed{p_n=\frac{n\hbar}{R},
+\quad n=0,\pm1,\pm2,\ldots.}\]
+
+这里 \(n\)
+的正负对应沿环两个方向。不能只取正整数，否则会破坏双向运动和后续配对结构。
+
+\subsubsection{2　磁矢势与机械动量}\label{ux78c1ux77e2ux52bfux4e0eux673aux68b0ux52a8ux91cf}
+
+磁通量由磁矢势环路积分给出：
+
+\[\Phi=\oint\boldsymbol A\cdot d\boldsymbol l.\]
+
+在题给轴对称规范中，环上切向 \(A\) 的大小恒定，故
+
+\[\boxed{A=\frac{\Phi}{2\pi R}.}\]
+
+电子电荷为 \(q_e=-e\)。正则动量 \(p\) 与机械动量的关系是
+\(p_{\rm mech}=p-q_eA=p+eA\)，与题面一致：
+
+\[\boxed{p_n'=\frac{n\hbar}{R}
++\frac{e\Phi}{2\pi R}
+=\frac\hbar R(n+f).}\]
+
+因此单电子能量为
+
+\[\boxed{E_n(\Phi)=E_R(n+f)^2
+=\frac{\hbar^2}{2mR^2}
+\left(n+\frac{e\Phi}{h}\right)^2.}\]
+
+量子化的是整数态标号或相应正则动量；题目仍允许磁通连续变化，所以机械动量随
+\(\Phi\) 连续变化。不能在第（2）问预先强迫 \(\Phi\) 为 \(h/(2e)\)
+的整数倍。
+
+\subsubsection{3　最低能量为什么填连续整数}\label{ux6700ux4f4eux80fdux91cfux4e3aux4ec0ux4e48ux586bux8fdeux7eedux6574ux6570}
+
+给定 \(f\)，能量随 \(|n+f|\) 增大。如果已占据两个整数
+\(n_1<n_2\)，中间某个更靠近 \(-f\)
+的整数空着，却占据一个更远的整数，则用近的空态替换远态会降低总能量。
+
+因此最低能量集合一定是围绕 \(-f\) 的 \(N\)
+个最近整数，可取为连续的整数区间。在边界简并时，两个区间可以同时给出同一最低值；最低能量是唯一数值，最低态未必唯一。
+
+记占据集合为 \(\mathcal O\)，其总能量为
+
+\[E_{\rm tot}(f)=E_R\sum_{n\in\mathcal O}(n+f)^2,\]
+
+其中 \(\mathcal O\) 必须随 \(f\)
+改变，以保持基态。若只固定一串态标号后让磁通变化，得到的是单一抛物线支，不能得到完整周期函数。
+
+\subsubsection{4　周期的重编号证明}\label{ux5468ux671fux7684ux91cdux7f16ux53f7ux8bc1ux660e}
+
+将 \(f\) 增加一，并把每个旧整数 \(n\) 对应为新整数
+\(n-1\)。机械动量因子保持不变：
+
+\[ (n-1)+(f+1)=n+f.\]
+
+这建立了旧、新全部允许占据集合的一一对应，且每套能量都相等。因此它们的最小值相等：
+
+\[\boxed{E_{\rm tot}(f+1)=E_{\rm tot}(f).}\]
+
+对应磁通周期为
+
+\[\boxed{\Phi_e=\frac he.}\]
+
+对固定的非零粒子数，这个基态函数在一个单位区间内并非恒定，且具有一次基态分支切换；它的基本周期就是
+\(h/e\)。半个周期一般会改变固定奇偶数环的能量，不能把 \(h/(2e)\)
+直接作为第（3）问的答案。
+
+\subsubsection{5　奇数个电子的占据集合}\label{ux5947ux6570ux4e2aux7535ux5b50ux7684ux5360ux636eux96c6ux5408}
+
+对 \(N=2M+1\)，\(M\ge0\)，在 \(-1/2\le f\le1/2\) 内可取
+
+\[\mathcal O_{\rm odd}=\{-M,-M+1,\ldots,M\}.\]
+
+求和有
+
+\[\sum_{n=-M}^Mn=0,\]
+
+\[\sum_{n=-M}^Mn^2=2\sum_{n=1}^Mn^2
+=\frac{M(M+1)(2M+1)}3.\]
+
+因此总能量为
+
+\[E_{\rm tot,odd}
+=E_R\left[\frac{M(M+1)(2M+1)}3+(2M+1)f^2\right].\]
+
+除以 \(N\)，
+
+\[\boxed{\overline E_{\rm odd}(f)
+=E_R\left[\frac{M(M+1)}3+f^2\right].}\]
+
+用 \(N\) 表示则更紧凑：
+
+\[\boxed{\overline E_{\rm odd}(f)
+=E_R\left[\frac{N^2-1}{12}+f^2\right].}\]
+
+最低值位于 \(f=0\)。在 \(f=\pm1/2\)，平均能量比零磁通增加 \(E_R/4\)。
+
+\subsubsection{6　偶数个电子的正磁通支}\label{ux5076ux6570ux4e2aux7535ux5b50ux7684ux6b63ux78c1ux901aux652f}
+
+对 \(N=2M\)，\(M\ge1\)，在 \(0<f\le1/2\) 内，最靠近 \(-f\) 的集合为
+
+\[\mathcal O_+=\{-M,-M+1,\ldots,M-1\}.\]
+
+它的一次和不为零：
+
+\[\sum_{n=-M}^{M-1}n=-M.\]
+
+平方和为
+
+\[\sum_{n=-M}^{M-1}n^2
+=M^2+2\sum_{n=1}^{M-1}n^2
+=\frac{M(2M^2+1)}3.\]
+
+总能量展开：
+
+\[\frac{E_{\rm tot,+}}{E_R}
+=\frac{M(2M^2+1)}3-2Mf+2Mf^2.\]
+
+除以 \(2M\) 并配方：
+
+\[\boxed{\overline E_+(f)
+=E_R\left[\frac{M^2}{3}-\frac1{12}
++\left(f-\frac12\right)^2\right].}\]
+
+当 \(f=1/2\) 时机械动量是 \(\hbar/R\) 乘以
+\(\pm1/2,\pm3/2,\ldots,\pm(M-1/2)\)，恰好成对。
+
+\subsubsection{7　偶数个电子的负磁通支}\label{ux5076ux6570ux4e2aux7535ux5b50ux7684ux8d1fux78c1ux901aux652f}
+
+在 \(-1/2\le f<0\) 内，最靠近 \(-f\) 的集合为
+
+\[\mathcal O_-= \{-M+1,-M+2,\ldots,M\}.\]
+
+其一次和为 \(+M\)，平方和同前，所以
+
+\[\boxed{\overline E_-(f)
+=E_R\left[\frac{M^2}{3}-\frac1{12}
++\left(f+\frac12\right)^2\right].}\]
+
+合并正、负支，
+
+\[\boxed{\overline E_{\rm even}(f)
+=E_R\left[\frac{N^2-1}{12}
++\left(|f|-\frac12\right)^2\right],
+\quad |f|\le\frac12.}\]
+
+在 \(f=0\)
+两个集合能量相同，基态简并；函数连续，但斜率左右不同，形成尖点。它在
+\(|f|=1/2\) 取极小值，零磁通的平均能量高出 \(E_R/4\)。
+
+\subsubsection{8　把奇偶分支写回磁通}\label{ux628aux5947ux5076ux5206ux652fux5199ux56deux78c1ux901a}
+
+因 \(f=e\Phi/h\)，在题给区间内
+
+\[\overline E(\Phi)=
+\begin{cases}
+E_R\left[\dfrac{N^2-1}{12}+\left(\dfrac{e\Phi}{h}\right)^2\right],&N\text{为奇数},\\[5pt]
+E_R\left[\dfrac{N^2-1}{12}+\left(\dfrac{e|\Phi|}{h}-\dfrac12\right)^2\right],&N\text{为偶数}.
+\end{cases}\]
+
+两边端点通过 \(h/e\) 的周期性相连。奇数环的最小能量在整数磁通
+\(f\in\mathbb Z\)；偶数环的最小能量在半整数磁通 \(f\in\mathbb Z+1/2\)。
+
+由此直接得到第（4）问的比较：
+
+\[\overline E_{\rm odd}(1/2)-\overline E_{\rm odd}(0)=\frac{E_R}{4},\]
+
+\[\overline E_{\rm even}(0)-\overline E_{\rm even}(1/2)=\frac{E_R}{4}.\]
+
+这个绝对差与 \(N\) 无关，但平均能量的主要部分随 \(N^2\)
+增长，因此相对差在大粒子数时变小。
+
+\subsubsection{9　小粒子数的直接填充检查}\label{ux5c0fux7c92ux5b50ux6570ux7684ux76f4ux63a5ux586bux5145ux68c0ux67e5}
+
+取 \(N=3\)，\(f=0\) 时占据 \(n=-1,0,1\)，总能量为 \(2E_R\)，平均为
+\(2E_R/3\)。\(f=1/2\) 时可用同一集合，机械动量因子为
+\(-1/2,1/2,3/2\)，总能量为 \(11E_R/4\)，平均为 \(11E_R/12\)，确实增加
+\(E_R/4\)。
+
+取 \(N=4\)，\(f=0\) 时可占据 \(-2,-1,0,1\)，平方和为6，平均为
+\(3E_R/2\)。\(f=1/2\) 时机械动量因子为
+\(-3/2,-1/2,1/2,3/2\)，平方和为5，平均为 \(5E_R/4\)，零磁通高出
+\(E_R/4\)。
+
+这些小数目检查能暴露漏掉一次求和、占据端点多一个或少一个、以及把平均能量与总能量混淆的问题。
+
+\subsubsection{10　双环模型：必须最小化总能量}\label{ux53ccux73afux6a21ux578bux5fc5ux987bux6700ux5c0fux5316ux603bux80fdux91cf}
+
+总电子数为 \(2N\)，分别令两环电子数为 \(N_1,N_2\)，满足
+
+\[N_1+N_2=2N.\]
+
+总平均能量必须按电子数加权：
+
+\[\boxed{\overline E_{12}
+=\frac{N_1\overline E_1+N_2\overline E_2}{2N}.}\]
+
+若 \(N_1\ne N_2\)，不能用
+\((\overline E_1+\overline E_2)/2\)。两个环上的相同整数态代表不同空间环的状态；不把它们误当成同一个单环轨道态。
+
+对于指定相同奇偶性的两环，各自在最有利磁通处的总能量都可统一写为
+
+\[U_{\rm min}(n)=\frac{E_R}{12}(n^3-n),\]
+
+奇数 \(n\) 对应 \(f=0\)，偶数 \(n\) 对应
+\(f=1/2\)。空环可约定总能量为零，虽然空环没有单粒子平均能量。
+
+\subsubsection{11　为何两环粒子数必须尽量接近}\label{ux4e3aux4f55ux4e24ux73afux7c92ux5b50ux6570ux5fc5ux987bux5c3dux91cfux63a5ux8fd1}
+
+写
+
+\[N_1=N+d,\qquad N_2=N-d,\]
+
+其中 \(d\) 为与允许奇偶性相容的整数。展开三次式，
+
+\[N_1^3+N_2^3=2N^3+6Nd^2,\]
+
+\[N_1+N_2=2N.\]
+
+因此在相应有利磁通处，
+
+\[U_{12}=\frac{E_R}{12}(2N^3+6Nd^2-2N),\]
+
+\[\boxed{\overline E_{12}
+=E_R\left[\frac{N^2-1}{12}+\frac{d^2}{4}\right].}\]
+
+这个式子随 \(d^2\) 增大，所以电子数差 \(|N_1-N_2|=2|d|\)
+必须在奇偶限制下尽可能小。若 \(N\) 与要求的各环奇偶性相同，可取
+\(d=0\)；若不同，最小 \(|d|=1\)，即两环相差2个电子。
+
+对各环均为奇数的情况，平均能量随 \(f\) 还有正的 \(E_Rf^2\)
+项，故全体最低在 \(f=0\)。对各环均为偶数的情况，有正的 \(E_R(f-1/2)^2\)
+项，故最低在 \(f=1/2\)。这完成第（5.1）问的能量最小化。
+
+\subsubsection{12　配对占据的逐项证明}\label{ux914dux5bf9ux5360ux636eux7684ux9010ux9879ux8bc1ux660e}
+
+情形a中，奇数环在零磁通占据整数集合 \(-M,\ldots,M\)。对于每一个
+\(n\ne0\)，同时有 \(-n\)，机械动量为
+\(\pm n\hbar/R\)。零动量态自身不产生相反非零动量的缺口。
+
+情形b中，偶数环在 \(f=1/2\) 占据 \(n=-M,\ldots,M-1\)。机械动量因子为
+\(n+1/2\)，若态 \(n\) 被占据，相反动量的标号为
+
+\[n'=-n-1.\]
+
+它仍在同一个集合内。因此机械动量 \(p'\) 与 \(-p'\)
+同时存在或同时不存在。这里的配对对象是机械动量，不是单独的正则整数标号；在半磁通处，应配
+\(n\) 与 \(-n-1\)，而不是配 \(n\) 与 \(-n\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup
+\sbox{\diagrambox}{\small
+
+\begin{tikzpicture}
+\draw[->](-2.8,1.6)--(3.2,1.6)node[right]{$p'R/\hbar$};
+\foreach \x in {-2,-1,0,1,2}{\fill[blue](\x,1.6)circle(3pt);\node[above]at(\x,1.6){$\x$};}
+\draw[<->,blue](-2,1.1)--(2,1.1);\draw[<->,blue](-1,.8)--(1,.8);
+\node[left]at(-2.8,1.6){$f=0$};
+\draw[->](-2.8,-.5)--(3.2,-.5)node[right]{$p'R/\hbar$};
+\foreach \x/\lab in {-1.5/{-\frac32},-.5/{-\frac12},.5/{\frac12},1.5/{\frac32}}{\fill[red](\x,-.5)circle(3pt);\node[above]at(\x,-.5){$\lab$};}
+\draw[<->,red](-1.5,-1)--(1.5,-1);\draw[<->,red](-.5,-1.3)--(.5,-1.3);
+\node[left]at(-2.8,-.5){$f=1/2$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}
+\fi
+\ifdim\ht\diagrambox>.40\textheight
+\resizebox{!}{.40\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 零磁通整数配对与半磁通半整数配对\par}
+\endgroup\end{minipage}
+\end{center}
+
+两环电子总数为偶数，即使各环为奇数，两个零动量态也分属于两个环。这个双环构造是在题设单动量占据规则下展示对称占据的方式。
+
+\subsubsection{13　比较题指定的a、b情形}\label{ux6bd4ux8f83ux9898ux6307ux5b9aux7684abux60c5ux5f62}
+
+令总电子数为 \(2N=2(2M+1)\)。情形a，两环各 \(2M+1\) 个电子且
+\(f=0\)，平均能量为
+
+\[\boxed{\overline E_a=E_R\frac{M(M+1)}3.}\]
+
+情形b，一环有 \(2(M+1)\) 个电子，另一环有 \(2M\)
+个，\(f=1/2\)。各环平均能量分别为
+
+\[\overline E_{b1}=E_R\left[\frac{(M+1)^2}{3}-\frac1{12}\right],\]
+
+\[\overline E_{b2}=E_R\left[\frac{M^2}{3}-\frac1{12}\right].\]
+
+按电子数加权：
+
+\[\overline E_b=
+\frac{2(M+1)\overline E_{b1}+2M\overline E_{b2}}{2(2M+1)}.\]
+
+展开后得到
+
+\[\boxed{\overline E_b=E_R\left[\frac{M(M+1)}3+\frac14\right].}\]
+
+也可直接用 \(N=2M+1\)、\(d=1\)
+代入第11节公式，得到同一结果。两条路线提供了独立的加权平均检查。
+
+\subsubsection{14　大粒子数极限}\label{ux5927ux7c92ux5b50ux6570ux6781ux9650}
+
+两种平均能量比为
+
+\[\boxed{\frac{\overline E_a}{\overline E_b}
+=\frac{M(M+1)}{M(M+1)+3/4}
+=\frac{4M(M+1)}{4M(M+1)+3}.}\]
+
+因此
+
+\[\boxed{\lim_{M\to\infty}
+\frac{\overline E_a}{\overline E_b}=1.}\]
+
+相对差为
+
+\[1-\frac{\overline E_a}{\overline E_b}
+=\frac3{4M(M+1)+3},\]
+
+按 \(M^{-2}\) 的量级下降。有限 \(M\) 时a的平均能量仍比b小
+\(E_R/4\)，不能说两种情形严格等能。若 \(M=1\)，比值为 \(8/11\)；若
+\(M=10\)，为 \(440/443\simeq0.99323\)。
+
+\subsubsection{15　周期与半磁通位置的关系}\label{ux5468ux671fux4e0eux534aux78c1ux901aux4f4dux7f6eux7684ux5173ux7cfb}
+
+单个固定奇偶数环的能量周期是
+\(h/e\)。奇数环的有利磁通在整数位置，偶数环的有利磁通在半整数位置。题设双环允许重新分配粒子，两类有利占据在大粒子数下相对能量接近，展示了
+\(h/(2e)\) 间隔的特殊意义。
+
+这不把单电子的基本周期改成
+\(h/(2e)\)，也没有在本题连续磁通模型里严格强制实际磁通只能取离散值。真实超导配对和磁通量子化还涉及相干配对态、环路相位与电磁自洽条件。本题结论应按其简化模型范围表述。
+
+\subsubsection{16　量纲和边界核对}\label{ux91cfux7eb2ux548cux8fb9ux754cux6838ux5bf9}
+
+\(\hbar/R\) 具有动量量纲，\(e\Phi/h\) 无量纲，\(E_R\)
+为能量。\(\Phi\to\Phi+h/e\)
+时通过整数重标号恢复原机械动量集合。中心区间两端能量相同，奇数基态在端点切换，偶数基态在中心切换。
+
+由于 \(R\) 变大时
+\(E_R\propto R^{-2}\)，所有能量差随半径平方倒数下降；电子数增长时主体平均能量随
+\(N^2\)
+增长。这两种极限是不同的操作，不能把粒子数趋大与固定密度下半径改变混为一谈。
+
+\end{document}

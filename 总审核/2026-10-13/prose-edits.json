@@ -1,0 +1,1096 @@
+[
+  {
+    "exam": 35,
+    "question": 1,
+    "file": "第35届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "本题把中心力轨道的三个层次放在一起：",
+        "after": "中心力轨道中，"
+      },
+      {
+        "before": "判断它是哪一个转折点，是避免把两个轨道分支混在一起的关键。",
+        "after": "求轨道前应先确定发射点是远地点还是近地点，以免混用两个分支的条件。"
+      },
+      {
+        "before": "时间部分采用“两条路线、三个极限”组织。",
+        "after": "时间部分可比较两种求法，再检查擦地、径向释放等极限。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 2,
+    "file": "第35届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "这是“分段动力学加停止判据”的题，而不是振幅按指数衰减的阻尼振动。",
+        "after": "本题应按摩擦方向分段求解，并在每个转折点判断小球能否继续运动；振幅不按指数规律衰减。"
+      },
+      {
+        "before": "本题展示了两种计数：",
+        "after": "解答中需要分别计数："
+      },
+      {
+        "before": "写一个端点表，比凭图像“振了几次”可靠得多。",
+        "after": "逐次列出端点位置，便可分别统计滑动段数和过零次数。"
+      },
+      {
+        "before": "总路程最省力的路线是整体能量耗散。",
+        "after": "求总路程可直接计算整个过程的能量耗散。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 3,
+    "file": "第35届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "本题连续经历三种动力学制度：极短时间的非弹性碰撞，围绕固定轴的受力转动，以及撤轴后的自由刚体运动。每次制度改变，都需要重新判断系统、约束、守恒量。",
+        "after": "运动分为非弹性碰撞、绕固定轴转动和撤轴后的自由运动三个阶段。进入下一阶段时，应重新选定研究系统，检查约束和守恒条件。"
+      },
+      {
+        "before": "撤轴不是简单地“删去一个力”后沿用原转动方程，而是取消固定点约束。自然分解随之变成质心平动加绕质心转动。",
+        "after": "撤轴后，原来的固定点约束解除，定轴转动方程不再适用。此时应将运动分解为质心平动和绕质心转动。"
+      },
+      {
+        "before": "正好提醒我们检查该隐含条件。",
+        "after": "因此也要求检查这一隐含条件。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 4,
+    "file": "第35届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "本题从毕奥–萨伐尔叠加走到势能稳定性。",
+        "after": "先用毕奥–萨伐尔定律叠加磁场，再分析势能与稳定性。"
+      },
+      {
+        "before": "本题的对称性帮助找到候选通道，复数模的角度依赖则补足证明。",
+        "after": "对称性给出候选逃逸方向，再由复数模随角度的变化证明这些方向的势垒最低。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 5,
+    "file": "第35届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "本题的核心是用旋转参考系消除速度耦合，",
+        "after": "选取旋转参考系消除速度耦合，"
+      },
+      {
+        "before": "两条路线的相同结果，能帮助学生检查旋转方向和二阶项。",
+        "after": "比较两种方法的结果，可检查旋转方向和二阶项的符号。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 6,
+    "file": "第35届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "本题是稳态传热链：",
+        "after": "装置处于稳态："
+      },
+      {
+        "before": "两种方法得到同一阻因子，是本题修正的主要证据。",
+        "after": "两种方法得到同一阻因子，支持对参考解答漏项的修正。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 7,
+    "file": "第35届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "本题最容易失真的不是最后乘除，而是读数对象。原照片、真实尺寸、缺失阶次和读数方向共同构成实验数据，任何一个被替换成装饰图都无法完整作答。",
+        "after": "读数前须确认照片尺寸、缺失阶次和测量方向。这些信息都属于实验数据，示意条纹不能代替原照片中的测量细节。"
+      },
+      {
+        "before": "关键是读数对象一致：",
+        "after": "读数时应保持定义一致："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 35,
+    "question": 8,
+    "file": "第35届/整理版/drafts/question-08.md",
+    "edits": [
+      {
+        "before": "测量的核心是找到吸收峰对应的速度，而不是直接测一个极高光频的微小差值。",
+        "after": "测量时扫描速度并寻找吸收峰，再由峰位换算频移，便可避开直接测量光频微小差值的困难。"
+      },
+      {
+        "before": "“反冲相对跃迁能很小”与“反冲对共振可忽略”不是同一句话。后者应比较反冲能与线宽，而不是与跃迁总能量比较。",
+        "after": "判断反冲能否忽略，应将它与线宽比较。反冲能即使远小于跃迁能量，也可能使发射和吸收窗口完全分离。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 1,
+    "file": "第36届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "比把一阶矩公式当成机械记忆更有迁移价值。",
+        "after": "可直接判断增加一层水会使整体质心上升还是下降。"
+      },
+      {
+        "before": "使“解方程”与“检查接触”形成完整链条。",
+        "after": "检查各脚是否仍与地面接触。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 2,
+    "file": "第36届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "这是由定轴下落、短时碰撞以及两阶段摩擦运动串联的刚体问题。",
+        "after": "运动依次经历定轴下落、短时碰撞和碰后的两个摩擦阶段。"
+      },
+      {
+        "before": "这正是超出该公式分支的信号。",
+        "after": "说明参数已超出持续滑动分支的适用范围。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 3,
+    "file": "第36届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "电流恒定使机械运动与电阻脱钩，但电源代价仍受电阻影响。这是恒流驱动与恒压驱动之间的根本区别。",
+        "after": "恒流条件下，电阻不改变磁力和机械运动，却会改变电源所做的功。换成恒压驱动后，情况不同。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 4,
+    "file": "第36届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "这是把气体热力学转成弹簧、再把空气柱转成振子质量的建模题。",
+        "after": "可将孔内空气柱视为振子的质量，将腔内气体压缩产生的回复力等效为弹簧力。"
+      },
+      {
+        "before": "腔体体积$V_0$控制压缩的软硬，",
+        "after": "腔体体积$V_0$影响压缩刚度，"
+      },
+      {
+        "before": "孔内空气柱提供惯性，腔体空气的压缩提供回复力。",
+        "after": ""
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 5,
+    "file": "第36届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "偏心、离焦或球差会重新激活位置筛选。",
+        "after": "出现偏心、离焦或球差时，还须检查光斑是否落在内芯内。"
+      },
+      {
+        "before": "而不是单凭图上画一条三角形。",
+        "after": "需计入两曲面的折射，不能只用未经验证的三角形关系。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 6,
+    "file": "第36届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "衰变规律最自然的时间变量是固有时间。",
+        "after": "衰变规律宜用粒子经历的固有时间表示。"
+      },
+      {
+        "before": "不能先只挑两根共线光线就认定它们是所有方向中的极值。",
+        "after": "不能只计算两个共线发射情形，就认定已找到所有方向中的极值。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 36,
+    "question": 7,
+    "file": "第36届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "这道题包含五个相互衔接的模型：",
+        "after": "各问依次涉及"
+      },
+      {
+        "before": "避免把参考答案的方向约定误认为物理矛盾。",
+        "after": "据此核对参考答案中的方向和符号。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 1,
+    "file": "第37届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "热交换又带来另一层时间尺度。",
+        "after": "还须另行比较热交换所需的时间。"
+      },
+      {
+        "before": "而不是给容积本身贴上阻尼标签。",
+        "after": "只有计入耗散机制，才能讨论阻尼。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 2,
+    "file": "第37届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "球心向前并不意味着接触点向前滑，本题高位击打使球转得偏快，球底反而向后滑。",
+        "after": "本题的击打点较高，产生的自转使球底向后滑动，尽管球心向前运动。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 3,
+    "file": "第37届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "却可以用完整能量账目核对。",
+        "after": "仍可通过电源供能、回路储能和焦耳热的收支核对。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 4,
+    "file": "第37届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "这个检查说明近似$p\\simeq E/c$在第一问可用，而不是凭“高速”二字猜测。",
+        "after": "该误差估计说明近似$p\\simeq E/c$在第一问的精度要求内可用。"
+      },
+      {
+        "before": "但本质上仍在同时执行能量与动量守恒。",
+        "after": "其依据仍是能量和动量同时守恒。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 5,
+    "file": "第37届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "两者共同提供很好的独立核对。",
+        "after": "可用这两点独立核对时间和速度的变换。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 6,
+    "file": "第37届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "下文明确列出这一路线，同时给出共旋介质闭合腔相位自洽的结果，说明两者的差异。",
+        "after": "下文保留参考解答的求法，并与共旋介质闭合腔的相位条件比较，说明两种处理为何不同。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 7,
+    "file": "第37届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "这是时间，不是题目最终所求度数，但可用于代入角位移，也可作为独立中间检查。",
+        "after": "求得这段时间后，还需积分角速度并换算为度；时间结果也可用于核对中间计算。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 37,
+    "question": 8,
+    "file": "第37届/整理版/drafts/question-08.md",
+    "edits": [
+      {
+        "before": "真正的线性关系是弱信号的一阶近似。",
+        "after": "电压与光强变化的线性关系只在弱信号的一阶近似下成立。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 1,
+    "file": "第38届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "这说明使用最大角而不是任意角取口径比有充分几何依据。",
+        "after": "因此，口径比应由边缘光线对应的最大角求出。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 2,
+    "file": "第38届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "会破坏理想气体状态链。",
+        "after": "会使所列气体状态方程与封闭系统的条件不符。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 3,
+    "file": "第38届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "不能仅用积分比证明充分。",
+        "after": "仅有总冲量之比，还不足以证明接触全程不滑动。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 4,
+    "file": "第38届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "参考解答的力矩方向文字适合做一致性检查练习：要求学生从$U$导数、叉乘和最低能量指向三条路线判断方向，不能凭一句文字取代三者。",
+        "after": "可让学生核对参考解答中的力矩方向：分别由$U$的导数、叉乘和最低能量取向判断，再比较结果。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 5,
+    "file": "第38届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "方向和符号是主线：",
+        "after": "先约定方向："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 6,
+    "file": "第38届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "粒子部分只保留$l(r)$和$K(r)$两条主线，",
+        "after": "粒子部分先求$l(r)$和$K(r)$，"
+      },
+      {
+        "before": "这能区分只是抄到正确终式与真正理解场和机械系统之间的能量、角动量交换。",
+        "after": "要求学生说明每一项对应场还是物体，并据此核对能量与角动量的转移。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 7,
+    "file": "第38届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "对驱动反作用力矩的处理是模型选择，不是四舍五入。",
+        "after": "两种结果的差异来自是否计入驱动反作用力矩，不能归因于数值舍入。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 38,
+    "question": 8,
+    "file": "第38届/整理版/drafts/question-08.md",
+    "edits": [
+      {
+        "before": "体现机电能量转换的一致性：",
+        "after": "满足机电转换的功率关系："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 1,
+    "file": "第39届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "题中最有用的不是两臂各有多长，而是三个整数信息：",
+        "after": "计算可从三个条纹计数入手："
+      },
+      {
+        "before": "这三步之后，反射相位只是亮纹条件中的一个余数。",
+        "after": "求出这些量后，可将亮纹条件按整周期取余，确定反射相位。"
+      },
+      {
+        "before": "第三问的空槽转动不是无用信息。",
+        "after": "第三问先测空槽，是为了校准槽壁引起的光程变化。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 2,
+    "file": "第39届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "关键不是背诵磁能公式，而是判断电流是否随长度改变，以及外部电源是否做功。",
+        "after": "列能量关系前，应判断电流是否随线圈长度改变，并计入外部电源的功。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 3,
+    "file": "第39届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "这样区分有助于理解题目为何直接给出充分粗糙的理想化条件。",
+        "after": "因此，解原题时还需使用题目直接给定的充分粗糙条件。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 4,
+    "file": "第39届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "全题的主线是：几何质量积分、有效势能、平衡条件、图解计数、受力检验、势能曲率。前一环节的符号一旦错误，会传递到后面全部象限判断，因此应从质元位置出发，而不是把整根杆当作质点。",
+        "after": "先从质元位置积分求出有效势能，再求平衡角并讨论根的数量，最后用受力和势能曲率检查稳定性。杆上的离心力分布随位置变化，不能把整根杆当作质点。"
+      },
+      {
+        "before": "图解法的价值不是避开所有计算，而是把根的出现、合并与消失直接显示出来。",
+        "after": "图解法可以显示参数变化时根的出现、合并与消失。"
+      },
+      {
+        "before": "是平衡数量与稳定性之间的桥梁。",
+        "after": "因而可以同时判断平衡数量和稳定性如何改变。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 5,
+    "file": "第39届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "有显然的特解",
+        "after": "可取特解"
+      },
+      {
+        "before": "第三問只看",
+        "after": "第三问只看"
+      },
+      {
+        "before": "首次到达问题的关键是单调性。",
+        "after": "先证明伸长量的单调性，便可比较首次断裂时刻。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 6,
+    "file": "第39届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "需要把三个不同关系串起来：",
+        "after": "需要联立三类关系："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 39,
+    "question": 7,
+    "file": "第39届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "最大陷阱是直接使用普通单原子气体的",
+        "after": "此处不能直接使用普通单原子气体的"
+      },
+      {
+        "before": "而不是仅让学生接受两个并列结果。",
+        "after": "也给出了比较不同气体模型的方法。"
+      },
+      {
+        "before": "避免学生在归一化常数中迷失主线。",
+        "after": "这样归一化常数在分子、分母中相消。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 1,
+    "file": "第40届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "关键不在于多写一次薄透镜公式，而在于分清距离起点。",
+        "after": "使用透镜公式前，先确定各段距离从哪里量起。"
+      },
+      {
+        "before": "矩阵分解能清楚展示这种“保持外部物像关系”的含义。",
+        "after": "可用矩阵分解验证等效系统与原系统具有相同的外部物像关系。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 2,
+    "file": "第40届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "二者的平方根规律及频率的 $\\sqrt2$ 比例可以互相校验。",
+        "after": "可用二者随温差的平方根变化及频率的 $\\sqrt2$ 比例互相校验。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 3,
+    "file": "第40届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "比较两种闭合方式。",
+        "after": "比较两组条件如何确定运动。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 4,
+    "file": "第40届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "短杆的力矩平衡是本题最关键的约束。",
+        "after": "求解时需列出短杆的力矩平衡方程。"
+      },
+      {
+        "before": "把两个未知摩擦压缩为一个；几何关系决定力矩杠杆，再决定内力。",
+        "after": "将两个未知摩擦力联系起来；几何关系给出力臂，进而确定内力。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 5,
+    "file": "第40届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "再推导真正的组合不变量。",
+        "after": "再推导可用于积分的组合不变量。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 6,
+    "file": "第40届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "每行标记输入和输出。",
+        "after": "每行注明已知条件和待求量。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 7,
+    "file": "第40届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "两个问题必须组合才能判断远距离传播。",
+        "after": "判断能否远距离传播时，需要同时满足这两个条件。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 40,
+    "question": 8,
+    "file": "第40届/整理版/drafts/question-08.md",
+    "edits": [
+      {
+        "before": "最后把理想静止电子、移动电子和重原子三种散射体比较。",
+        "after": "最后比较静止电子、运动电子和重原子作为散射体时的差异。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 1,
+    "file": "第41届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "能直接看清附加质量的惯性反馈。",
+        "after": "可看出附加质量如何改变大楼的运动。"
+      },
+      {
+        "before": "把几何、动力学与能量联系起来。",
+        "after": "检查所列运动方程是否符合能量收支。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 2,
+    "file": "第41届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "求解关键在于找到滑动速度本身满足的简单方程，而不是直接猜测球心轨迹。",
+        "after": "可先求接触点滑动速度的变化，再由摩擦方向积分求球心轨迹。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 3,
+    "file": "第41届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "圈出真正参加末态热平衡的两份体积。",
+        "after": "标出参与末态热平衡的两份体积。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 4,
+    "file": "第41届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "解答会明确采用的估算约定。",
+        "after": "下文按题设采用相应的尺度估算，并注明假设。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 5,
+    "file": "第41届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "这两件事必须区分。",
+        "after": "计算势能时应使用场的大小，不能直接照搬场矢量的方向。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 6,
+    "file": "第41届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "角度关系的核心是入射速度与入射位置径向方向相反。",
+        "after": "确定散射角时，须注意入射速度与入射位置的径向方向相反。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 41,
+    "question": 7,
+    "file": "第41届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "比直接堆叠三次求和更直观。",
+        "after": "可直接比较不同粒子分配对应的总能量。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 1,
+    "file": "第42届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "本题把六维平衡分布、无碰撞运动和到达信号的峰值联系起来。",
+        "after": "原子从初始平衡分布出发，经无碰撞飞行后形成到达信号。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 2,
+    "file": "第42届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "需要分别控制三个环节：轨迹几何、探测比例、静电能量。",
+        "after": "计算时分别求轨迹、接收比例和静电能量变化。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 3,
+    "file": "第42届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "看清这一结构，比记住复杂分式更有助于判断修改接线后的结果。",
+        "after": "分析接线变化时，可先检查哪些接触电阻之差变为零，再判断相应误差项是否消失。"
+      },
+      {
+        "before": "真正起作用的是端口连接与受控源共同生成的补偿电流。",
+        "after": "这里的补偿电流由端口连接方式和受控源共同决定。"
+      },
+      {
+        "before": "链条可以逐步读出：",
+        "after": "各式的关系依次为："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 4,
+    "file": "第42届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "关键是先找到横向动量的相位关系和守恒量",
+        "after": "可先求横向动量的相位关系和守恒量"
+      },
+      {
+        "before": "真正决定能量增益的分母为",
+        "after": "能量增益表达式的分母为"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 5,
+    "file": "第42届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "有归一化类比和物理能量两种口径。",
+        "after": "可写成归一化类比势，也可写成物理能量。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 6,
+    "file": "第42届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "是理解完整角动量矢量的重要例子。",
+        "after": "说明只检查合力不足以确定轴承的全部作用。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 42,
+    "question": 7,
+    "file": "第42届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "折射率连续变化时，光线不是在某个固定边界上突然改变方向，而是在传播中持续弯曲。",
+        "after": "折射率连续变化，光线方向也沿传播路径连续改变。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 1,
+    "file": "第43届/整理版/drafts/question-01.md",
+    "edits": [
+      {
+        "before": "解题的第一层任务是求内部节点",
+        "after": "先求内部节点"
+      },
+      {
+        "before": "的电势。第二层任务是把由端口",
+        "after": "的电势，再把由端口"
+      },
+      {
+        "before": "而不是靠对应项相等的猜测。",
+        "after": "不必假定未经证明的对应项相等。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 2,
+    "file": "第43届/整理版/drafts/question-02.md",
+    "edits": [
+      {
+        "before": "问题的关键不是普通竖直弹簧振子，而是离心项对有效振动频率的贡献。另一个关键是从周期运动中选出第一次恢复自然长度的时刻；这个时刻对应弹簧推力刚降为零。",
+        "after": "离心项会改变有效振动频率，不能直接套用竖直弹簧振子的结果。求出周期解后，还须选出第一次恢复自然长度的时刻，此时弹簧推力刚降为零。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 3,
+    "file": "第43届/整理版/drafts/question-03.md",
+    "edits": [
+      {
+        "before": "真正决定镜像方向的是界面的场边界条件：",
+        "after": "镜像方向由界面边界条件确定："
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 4,
+    "file": "第43届/整理版/drafts/question-04.md",
+    "edits": [
+      {
+        "before": "这道题把动生电动势、轨道机械能和重力梯度姿态运动连在一起。",
+        "after": "本题需要同时分析动生电动势、轨道能量变化和重力梯度引起的姿态运动。"
+      },
+      {
+        "before": "这个一致性可以帮助识别参考系使用上的文字混淆。",
+        "after": "可用这一结果核对参考解答中混用的参考系表述。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 5,
+    "file": "第43届/整理版/drafts/question-05.md",
+    "edits": [
+      {
+        "before": "并不是真正固定的转轴。",
+        "after": "不能作为固定转轴。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 6,
+    "file": "第43届/整理版/drafts/question-06.md",
+    "edits": [
+      {
+        "before": "体现了自由电子惯性受迫运动的性质。",
+        "after": "与自由电子受迫运动方程的符号一致。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  },
+  {
+    "exam": 43,
+    "question": 7,
+    "file": "第43届/整理版/drafts/question-07.md",
+    "edits": [
+      {
+        "before": "反射的频谱由“单周期的一对界面”与“多个周期的排列”共同决定。",
+        "after": "反射频谱包含单周期内两界面的干涉，以及多个周期之间的干涉。"
+      }
+    ],
+    "math_unchanged": true,
+    "problem_unchanged": true,
+    "figures_unchanged": true
+  }
+]

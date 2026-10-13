@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=1,yscale=2.4]
+\draw[arr] (0,0)--(6.8,0) node[right] {$\omega t$};
+\draw[arr] (0,0)--(0,1.25) node[above] {$V_D$};
+\draw[dashed] (0,1)--(6.3,1) node[right] {$V_{\max}$};
+\draw[dashed] (0,.5)--(6.3,.5) node[right] {中点};
+\node[left] at (0,0) {$V_{\min}$};
+\draw[thick,blue,domain=0:6.283,samples=100] plot(\x,{.5+.5*sin(\x r)});
+\draw[thick,red,domain=0:6.283,samples=100] plot(\x,{.75+.25*sin(\x r)});
+\node[blue] at (2,-.3) {中点：最大幅度};
+\node[red] at (5,-.6) {偏置偏移：幅度减少};
+\end{tikzpicture}
+
+\end{document}

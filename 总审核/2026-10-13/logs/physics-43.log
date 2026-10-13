@@ -1,0 +1,19 @@
+18 independent checks passed
+Q1 full KCL Newton + branch power
+Q2 unexpanded ODE vs first-order stance
+Q2 angular quadrature
+Q3 boundary fields, ideal and finite permeability
+Q3 direct torque vs induced energy derivative
+Q4 numerical data + line-force torque + exact gravitational gradient
+Q5 submerged-area centroid quadrature
+Q5 stability and frequency ratio
+Q6 screened charge integral and radial differential equation
+Q6 cutoff and high-frequency response
+Q7 exact transfer matrix vs weak single-path reflection
+Q7 missing-order absolute detuning
+Q7 exact slab alternative calculation
+Variants Q1: open topology and fifth-power network
+Variants Q3: fixed-image gradient gives vertical force
+Variants Q5: critical restoring torque from centroid integration
+Variants Q6: two mobile species charge susceptibility
+Variants Q7: nearest interference zeros

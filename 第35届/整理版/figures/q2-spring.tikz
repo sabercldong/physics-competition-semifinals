@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=.9]
+\draw[thick](-4,-.3)--(4,-.3); \draw[thick](-4,-.3)--(-4,1.1);
+\draw[decorate,decoration={coil,aspect=.4,segment length=4pt,amplitude=4pt}](-4,.3)--(-1.8,.3);
+\draw[thick,fill=gray!15](-1.8,0)rectangle(-1.2,.6); \node at(-1.5,.3){$m$};
+\draw[arr](-4,-.8)--(4.5,-.8)node[right]{$x$};
+\draw[dashed](0,-1)--(0,1)node[above]{$O$};\node[below]at(-1.5,-.8){$-A_0$};
+\draw[arr,red](-1.2,.6)--(.2,.6)node[above]{$kx$的回复方向};
+\draw[arr,blue](-1.8,0)--(-3,0)node[below]{$f=\mu mg$};
+\end{tikzpicture}

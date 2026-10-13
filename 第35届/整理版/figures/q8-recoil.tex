@@ -1,0 +1,16 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.9]
+\node[left]at(0,2.55){发射};\fill[blue](1,1.8)circle(4pt);
+\draw[arr,red](1.4,1.8)--(4.2,1.8)node[midway,above]{$E_\gamma/c$};
+\draw[arr,blue](.7,1.8)--(-1.2,1.8)node[midway,below]{$p_{\rm recoil}$};
+\node[left]at(0,.55){吸收};\draw[arr,red](-2,-.2)--(.6,-.2)node[midway,above]{$E_\gamma/c$};
+\fill[blue](1,-.2)circle(4pt);\draw[arr,blue](1.4,-.2)--(3.7,-.2)node[midway,below]{$p_{\rm recoil}$};
+\node at(2,-1.1){发射少$E_R$；吸收多$E_R$};
+\end{tikzpicture}
+\end{document}

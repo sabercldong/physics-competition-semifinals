@@ -1,0 +1,23 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1.1]
+\draw[thick] (-2,0) circle(.5); \draw[thick] (2,0) circle(.5);
+\node at(-2,0) {$\odot I$};\node at(2,0) {$\otimes I$};
+\draw[very thick,blue] (-1.5,0)--(1.5,0);
+\draw[arr,blue] (-.7,0)--(.5,0) node[midway,above] {$I$};
+\draw[arr,blue] (.4,.25)--(.4,.9) node[right] {$B$};
+\node[red] at(0,1.35) {$\odot F_B$沿轨道};
+\node[below] at(0,-.45) {两端点磁场同向};
+\draw[<->] (-2,-1.15)--(0,-1.15) node[midway,below] {$q$};
+\draw[<->] (0,-1.15)--(2,-1.15) node[midway,below] {$s-q$};
+\draw[<->] (-1.5,-2)--(1.5,-2) node[midway,below] {$d$};
+\draw[<->] (-2,.8)--(-1.5,.8) node[midway,above] {$b$};
+\node at(0,2.1) {$b\le q\le b+d,\quad s=2b+d$};
+\end{tikzpicture}
+
+\end{document}

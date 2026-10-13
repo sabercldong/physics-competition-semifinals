@@ -1,0 +1,26 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[xscale=1.05,yscale=1]
+\draw[arr] (0,0)--(7.4,0) node[right] {$\lambda$};
+\draw[arr] (0,0)--(0,3.4) node[above] {相对谱强度};
+\draw[thick,domain=.2:7,samples=140]
+plot(\x,{.2+2.25*exp(-(\x-2)*(\x-2)/.06)+2.7*exp(-(\x-5)*(\x-5)/.45)});
+\draw[dashed] (2,0)--(2,2.5); \draw[dashed] (5,0)--(5,3);
+\node[below] at (2,0) {$\lambda_0$}; \node[below] at (5,0) {$\lambda_1$};
+\node at (2,3.0) {近弹性峰}; \node at (5,3.5) {康普顿峰};
+\node at (3.5,-.9) {峰位与峰宽的定性示意，不作定量读数};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

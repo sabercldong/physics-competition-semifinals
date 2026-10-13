@@ -1,0 +1,24 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\begin{document}
+\small
+
+\begin{tikzpicture}
+\fill[blue!7] (-3.3,-2) rectangle (3.3,.25);
+\fill[gray!15] (-2,-1.5) rectangle (2,1.5);
+\fill[blue!12] (-2,-1.5) rectangle (2,.25);
+\draw[thick] (-2,-1.5) rectangle (2,1.5);
+\draw[blue!65!black] (-3.3,.25)--(3.3,.25) node[right] {液面};
+\fill (0,0) circle(2pt) node[right] {$G$};
+\fill (0,-.625) circle(2pt) node[right] {$B$};
+\draw[<->] (-2,1.85)--(2,1.85) node[midway,above] {$2a$};
+\draw[<->] (-2.4,-1.5)--(-2.4,1.5) node[midway,left] {$2b$};
+\draw[<->] (2.45,-1.5)--(2.45,.25) node[midway,right] {$h$};
+\draw[arr] (0,-.6)--(0,1) node[left] {$F_b$};
+\draw[arr] (.35,0)--(.35,-1.1) node[right] {$mg$};
+\end{tikzpicture}
+\end{document}

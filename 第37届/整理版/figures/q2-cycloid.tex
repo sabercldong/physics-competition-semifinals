@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=.9,yscale=.9]
+\draw[arr] (-.4,0)--(7,0) node[right] {$x/R$};
+\draw[arr] (0,0)--(0,2.7) node[above] {$y/R$};
+\draw[dashed] (0,1)--(6.283,1);
+\draw[thick,blue,domain=0:6.283,samples=140] plot({\x-sin(\x r)},{1-cos(\x r)});
+\foreach \a in {0,3.1416,6.2832}{
+\draw[gray] (\a,1) circle(1);
+\fill[blue] ({\a-sin(\a r)},{1-cos(\a r)}) circle(2pt);}
+\node[above] at (3.1416,2.1) {球顶：$v_B=2v_c$};
+\node at (3.1,-.9) {$x_B/R=\theta-\sin\theta,\quad y_B/R=1-\cos\theta$};
+\end{tikzpicture}
+
+\end{document}

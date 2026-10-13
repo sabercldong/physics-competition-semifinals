@@ -1,0 +1,21 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=3.5,yscale=3.5]
+\draw[arr] (-1.3,0)--(.3,0) node[right] {$y/(cT)$};
+\draw[arr] (0,0)--(0,1.6) node[above] {$t/T$};
+\draw[dashed,thick] (0,0)--(-.98,1.47);
+\draw[dashed,thick] (-.74536,0)--(-1.23536,1.47);
+\draw[arr,blue,thick] (0,0)--(-1.118034,1.118034);
+\draw[arr,blue,thick] (-1.118034,1.118034)--(-.894427,1.341641);
+\node[below right] at (0,0) {$A$};
+\node[left] at (-1.118034,1.118034) {$B$反射};
+\node[above right] at (-.894427,1.341641) {$C$返回};
+\node at (-.65,-.25) {实线光信号，虚线甲与乙};
+\end{tikzpicture}
+
+\end{document}

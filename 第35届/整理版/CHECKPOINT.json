@@ -1,0 +1,197 @@
+{
+  "exam": 35,
+  "status": "已完成",
+  "completed_at": "2026-10-13T11:24:27+08:00",
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 25,
+  "editable_schematics": 23,
+  "measurement_photos": 2,
+  "physics_checks": 64,
+  "pdfs": [
+    {
+      "name": "第35届_学生详解版.pdf",
+      "pages": 57,
+      "body_pages": 56,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "162fb9cc7cf3277d2179522a58f984b748263a6308bd301591c4006aaf54f765",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "name": "第35届_教师备课版.pdf",
+      "pages": 74,
+      "body_pages": 73,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "0276badb71c5a10c9f517e27a805b0a363873d976bb74ffcaa94514831de5219",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        30,
+        39,
+        48,
+        57,
+        66
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        57,
+        58
+      ]
+    },
+    {
+      "name": "第35届_试题版.pdf",
+      "pages": 10,
+      "body_pages": 9,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "e655d3d9f2b9d9bdd39617cb2af0377d9fa1c8e7447b5ff4f2f212bce90334d3",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "short_body_pdf_pages": [],
+      "measurement_photo_pdf_pages": [
+        8,
+        9
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛试题及参考答案.pdf",
+      "pages": 38,
+      "sha256": "08bbc87980b46aa2c96a43828b68f096a769b4dc87caff5afc913b16d873db78"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/第35届复赛参考解答.pdf",
+      "pages": 28,
+      "sha256": "6d622000fafa9c736e136ffd96a0f984a92c551381bac8b29ca48038c2b896cf"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": null,
+  "next_status": "已收集第35—43届整理工程齐备；第41—43届为既有工程，本次不重新认证。",
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "f9deb0297f7cd1478238e66359e46559809c54732e01668b6b4ed9e43144ff1f"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "129d8cbd5b01d7848c8ff5951d6e02747d18b972c5997fdc8fe5871021ec584a"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "441677e591c15cb2cd208e3d9b3da3024b3ab20677b35d57e817cefd4baf9310"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "178170ce91a1493d1431216cfa792c1a9e37645c8d58c4fc6f8dd65ae8b46782"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "596505611ea1232ead2bab40a854bd692681ed2a8589fb60721e50bbac710c89"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "111357254178d679c9203955ce46b732a23dac1f53e90e3b58f802edb92334ee"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "53383fa2bd8c74d24b9f783d3255bdccf6871c837a00fe9e8aea68a15f33326a"
+    },
+    {
+      "question": 8,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "f55752f46b8b8be3bedf08acb44c55b662b5f7c7cc4ad2440e8f0285e6739892"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true,
+    "originals_unchanged": true,
+    "editorial_invariants": true
+  },
+  "stage": "第35届完成总审核及文字润色",
+  "collection_audit": {
+    "completed_at": "2026-10-13T11:55:03+08:00",
+    "report": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/总审核/2026-10-13/审核报告.md",
+    "prose_edits": 20,
+    "physics_checks": 64,
+    "changed_pages_reviewed": 28,
+    "pixel_identical_pages": 113,
+    "skill": "/Users/dongxingxi/.codex/skills/humanizer-zh/SKILL.md"
+  }
+}

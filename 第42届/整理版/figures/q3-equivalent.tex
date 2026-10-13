@@ -1,0 +1,26 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[scale=.85]
+\foreach \i/\a in {1/180,2/135,3/90,4/45,5/0,6/-45,7/-90,8/-135}{
+ \coordinate (p\i) at(\a:2.6);
+ \coordinate (t\i) at(\a:4.3);
+ \draw (p\i)--(t\i);
+ \node[draw,fill=white,inner sep=2pt]at(\a:3.12){$r$};
+ \node[draw,fill=white,inner sep=2pt]at(\a:3.72){$R_{c\number\i}$};
+ \node at(\a:4.68){$\number\i$};
+ \fill(p\i)circle(1.5pt);
+}
+\foreach \i/\j in {1/2,2/3,3/4,4/5,5/6,6/7,7/8,8/1}{
+ \draw[->] (p\i)--node[fill=white,inner sep=1pt]{$E_{\number\i,\number\j}$}(p\j);
+}
+\node[font=\small] at(0,.45){受控电源环};
+\node[font=\scriptsize] at(0,-.05){$E_{ij}=r(I_i+I_j)$};
+\node[font=\scriptsize] at(0,-.55){$C_{i+1}-C_i=E_{i,i+1}$};
+\end{tikzpicture}
+
+\end{document}

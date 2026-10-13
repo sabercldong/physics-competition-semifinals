@@ -1,0 +1,25 @@
+{
+  "exam": 43,
+  "steps": [
+    {
+      "name": "build",
+      "exit": 0,
+      "seconds": 25.4
+    },
+    {
+      "name": "physics",
+      "exit": 0,
+      "seconds": 0.6
+    },
+    {
+      "name": "enrichment",
+      "exit": 0,
+      "seconds": 0.2
+    },
+    {
+      "name": "quality",
+      "exit": 0,
+      "seconds": 5.5
+    }
+  ]
+}

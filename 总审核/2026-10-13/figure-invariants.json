@@ -1,0 +1,1343 @@
+{
+  "all_passed": true,
+  "schematic_count": 182,
+  "photo_wrapper_count": 2,
+  "figures": [
+    {
+      "exam": 35,
+      "name": "q1-anomaly.tikz",
+      "sha256": "b6adcc5c94a2a73c850d925941990a590d5966c04557a918a1c17d700575fdc8",
+      "vector_pdf_sha256": "a740a3ba51f5d58220c1d73c38d99fe99629bc3bfab8b2c742ccc6aa390f42f4",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q1-effective.tikz",
+      "sha256": "4e06ac823cf5b24c69c160768f06caa7f8a902ae99a4162450a25f7d18558629",
+      "vector_pdf_sha256": "163cac6918c0dc257e2a3d1d6e8642e98a6a613518d49ae5a6d700fbce96cac5",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q1-orbit.tikz",
+      "sha256": "ef794a4f7c1c954f38d5350809bf34827b8779da61911510e8e4ca022d4aba80",
+      "vector_pdf_sha256": "5645791a8dec4bf2a9577b58650a9b36e8e0d6392dbe4f13011cc051dea151f6",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q2-band.tikz",
+      "sha256": "54f30093173a7e3581b13674730404c9f411df18f2fe5fb5279e190df5d7f57d",
+      "vector_pdf_sha256": "aeb03f5e821db728a2c0a57d0c0138327d45e658ed7858124b5feb92b7a3d243",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q2-map.tikz",
+      "sha256": "ffb7da778a67848accd06a742a6f6649823d93d13666ecac70a9cfaff31c770e",
+      "vector_pdf_sha256": "98f078b4dbed5bcd2680a4687408607762f661a7e7056df1ffebd75455adcdf0",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q2-spring.tikz",
+      "sha256": "fa1ed58c266f72d81bcac8cdbc55daf75b83b7a7b99a7b8232649914a4d0d43f",
+      "vector_pdf_sha256": "28525e787ac5b63958ad65031efbdd52504e708d608522d02bff5e7f4d41474c",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q3-flight.tikz",
+      "sha256": "095e09f859f9fc59d47a56dac6d6423389016c048ffd1ffb89ccb5733a7da639",
+      "vector_pdf_sha256": "3506c20e8e84bf6e6c9e2825e8285e27cb132ad36265bfb83d9f3e3ccd5a1e8f",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q3-force.tikz",
+      "sha256": "2d397fc59850f35b53432f0e8cebaf0ae12843a50f6f81f4dda210ab16b60ad7",
+      "vector_pdf_sha256": "5d482480d755b3ce77b654eba978d346c5f0b350934436e55b52a50fc5115199",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q3-impact.tikz",
+      "sha256": "9956c99a259fc1190ffa6c1dd98accb3b776fcfa1733173a28da0ad9f59c39f9",
+      "vector_pdf_sha256": "d6b0f3ec74b54ae54c8ee12659e0ea6168f0b61367ff743a0fa0f0f0a5948ace",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q4-barrier.tikz",
+      "sha256": "a3dfcbbaa6961b91358aea14f25eb60c54060695bb7bc0454c6b9c68df276134",
+      "vector_pdf_sha256": "4c0d304299cd3e705fee4edaf4c49c3c2cf872ba690605d0407f25bf764bbf5a",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q4-local.tikz",
+      "sha256": "8b0466f3206af79da2b77eb81cc44e9b8233650a27357952fc82a657a1e6c7c9",
+      "vector_pdf_sha256": "5fc15d69b96b098c60110305f225dd26cea38bf19a6320bf2dda679d7c234cb0",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q4-wires.tikz",
+      "sha256": "5fae0d040b552e8d7e8ad41ef0d6d703289e810443ea5c8ece54e585ced92814",
+      "vector_pdf_sha256": "1bbaafb2e272bab0b9efa9889a04b7470001a5dee1438a9fda058e4676a73487",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q5-frames.tikz",
+      "sha256": "554f7759c6a8372d110c5cc7a139a99e9dfa1548779aae24f25a6e31a4f9abe6",
+      "vector_pdf_sha256": "f02180ae1fa06a1bb1a13482e3d36a27b5b1cadafb3b3fe2b61fb653e6cf1a45",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q5-modes.tikz",
+      "sha256": "f2f52108b2c61b4a482b9d7e90050dcb9be4d2f6bb6679fd42293bd06eeb758e",
+      "vector_pdf_sha256": "8006b258b551f9c91b4591e7b22c0d786e2e135af9bf4cdef73f2b174e929ffb",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q5-spectrum.tikz",
+      "sha256": "9e3845f1a2a73405c1849510900a9d75e8aaaad39808ad440560f9dc41db10fb",
+      "vector_pdf_sha256": "84012546d87288cb13cd0074c0b805baad176d16c4815e8426dbed8f0b1dd04c",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q6-network.tikz",
+      "sha256": "c3557d7b92aae33745de4c11aca1c5a4b50357e45adc40513a608503e3f3f2e9",
+      "vector_pdf_sha256": "a4888d7ba31d64b2b9584a40ef0823dc2fb30876f202828f4f67c1a51eac26f9",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q6-shell.tikz",
+      "sha256": "828946668193519f50ca3af0c164ab84dd65c2303c94507b5153094c4d4c2b99",
+      "vector_pdf_sha256": "d9751029a2881b767e62dbf81cc230be1f7e127fe81f94402d5cdf164f55aea4",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q6-temperature.tikz",
+      "sha256": "2991f442f5d18b3aadaba47de4bea90296b6974922517e3c090940b4c9efeff8",
+      "vector_pdf_sha256": "073e33097941256ba8559fd5ee22c0efa3ef9f859c8949f7983094ab8805ba3f",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q7-fringes.tikz",
+      "sha256": "76769fad540a46d1d3217e58d30da90897172e5576466ffcb39a3c88bb504191",
+      "vector_pdf_sha256": "e526744aa7599b70977939090d6bf8cf7766604a8c4448a65cf2b8dbefeab2a6",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q7-photo-a.tikz",
+      "sha256": "c4819b06b7790c627c2bd6371116384c9cfcebbd2bc4f3ba367d306e5d03223f",
+      "vector_pdf_sha256": "4780eaad1d008f74ca0d40af3ed7161f95344c6c88fb996945209536d8ed0dcf",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q7-photo-b.tikz",
+      "sha256": "cfb4e615efafcf7cda044950811733a79f19eabc6d1ce8e4d80af6bba0ed3fc3",
+      "vector_pdf_sha256": "8aadc92efbdbcb4991c6d2602e0bd8cc81b015c3a093ea99dc38ca3bb156dee0",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q7-unroll.tikz",
+      "sha256": "35c83ab8703df0cfbd4b90b849eeaed69efb2bd84e8bba9370204c41eba47c5f",
+      "vector_pdf_sha256": "d0f15df8b9cee1b18abee5601f5c24a7559df61ee103b6f2e8321ad37caa86e5",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q8-recoil.tikz",
+      "sha256": "564a68b7cdfab3444ce7dfb4ad8d4657f979964957607a2e8e7570494fa1c53b",
+      "vector_pdf_sha256": "293b30bc0a1779ed7bda07cec51917a5cf263cb47a6aa15a6b0633186b0e2e19",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q8-scan.tikz",
+      "sha256": "709a9f7c6a0208352041c2951fd3b01e7c788d6414e9ee5450f8eca6e757f362",
+      "vector_pdf_sha256": "e412b286f229b3da5c1be0953d54594758226e61940dc8ba990775721b16bdeb",
+      "unchanged": true
+    },
+    {
+      "exam": 35,
+      "name": "q8-windows.tikz",
+      "sha256": "10bffd7161b09a04ead838f051aadf19ec0a081963d234d6d70919dcea4cf694",
+      "vector_pdf_sha256": "eb0f2d929a54a905204469e14d395748556c17a4763a8b04ee8d9e341b2c5145",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q1-cup.tikz",
+      "sha256": "b49b9ccee87f0e7c1c2b581805a69148a7ba8e5896c027c6e78ab906e26178fc",
+      "vector_pdf_sha256": "526316a590859dc2c716e42cf40d97297a847b4caf9743d7dde644e05a005521",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q1-stool.tikz",
+      "sha256": "8a3488fe5d3dcceecdffbd08b080fc1def06840922c1ec196aada5b4643a1936",
+      "vector_pdf_sha256": "10844701c8294722a3ef5f6f106d333ac9245713438fd9ac31e369d43abc9bad",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q1-support.tikz",
+      "sha256": "cca4a491b17214d085142e49e06d3190e23b7a217f99c79a0126700a107ba45e",
+      "vector_pdf_sha256": "bdd2fb2b116a22aa77455994b8a995dc0e4090ec38943a0c513ef35e29d48fb2",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q2-cart.tikz",
+      "sha256": "bf509f0fbfa192bc6436839c82d9f020cd64661242f679095121202acf8a4d37",
+      "vector_pdf_sha256": "a4d5d87897ca5f3c56801cff1fcf47ff71a33fbf122ee74202611925697b502d",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q2-forces.tikz",
+      "sha256": "96c670a11a0dcef8db3dd296d95b50c62b90bf3586332559d707316922e5d4bb",
+      "vector_pdf_sha256": "835b780c8ea8c784ef38f0ba446e4c9de5ef02202f3278a23eb7cde8d8c39171",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q2-stages.tikz",
+      "sha256": "c110832b4ca1133aa1fb13be9305f7f9f6bf9dd19464de7c3e212c0f3c65b70d",
+      "vector_pdf_sha256": "d36b9d93e2ba5d371c571207b9f4ad252b6f0c5861ecec2b8712a0f0aec9e2bb",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q3-energy.tikz",
+      "sha256": "5962fe41a8578d415f5623b7f880d322532b0e788d34a0faf3459663e033c68c",
+      "vector_pdf_sha256": "bed0b62cbd953c500022503bfbc88dd9355b536b25e07149e6f7bbc899229525",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q3-field.tikz",
+      "sha256": "0ae66a262878985b299bbde55b7095422124f8810875dcf3f2459973705afa11",
+      "vector_pdf_sha256": "6149d4c335f080d4cd9189b24f910d1ce9595c1e3e43bd885eef389d9934c6d6",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q3-rails.tikz",
+      "sha256": "a7cf73aa061c46010efb0b007ca3c9ff455428e341fdb97a544200f4377f5e8f",
+      "vector_pdf_sha256": "b2f5a950c7b0dd78feb271bb693265b8321900842db211a1196d4f81fd9f983f",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q4-oscillator.tikz",
+      "sha256": "b6b5e52c0b6d9d6b5890f4cb0fd544265a9f3d05bea793dc243a1717ed08604d",
+      "vector_pdf_sha256": "6463129f13c1e57236df527f99dda5086be94e8dea13a9f3473437cdbf4df024",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q4-resonator.tikz",
+      "sha256": "27612396b661831805bd11920845084495147fd71897efc295ffdcdad04a5c7d",
+      "vector_pdf_sha256": "83458dfced487176f8a3add4c70ee0735919f82ae1c5b6319c4d7429311c2fb7",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q4-response.tikz",
+      "sha256": "dce0e56faa9e0ba87fee49caa8a866f6587965fa471830c62e3fe01441c950c5",
+      "vector_pdf_sha256": "e64f916e61ce724e322d3094c5574a1c9857953ce9d7817fef59e8583abc8925",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q5-acceptance.tikz",
+      "sha256": "c2fdbcd0a477ee6ec9832e14921de247314fbeba97b736755a726bc1289f6923",
+      "vector_pdf_sha256": "de005f9c390bd3a1d8d8cf0a0a450b488f7db439cc5f8762c221666d4feb3614",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q5-coupling.tikz",
+      "sha256": "31eaca263a7e01c692ef17b166460869176b124b81cc709c3af7e71eecbb1ca6",
+      "vector_pdf_sha256": "95d49e939fed99fb7e7d861ac93bacdb7cbfd2d9374f808975a43fce9659e0b2",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q5-focus.tikz",
+      "sha256": "7d4d9208212d6df582f31463f1884fa9932fb00cb86eb36e49a8669246bc6e2e",
+      "vector_pdf_sha256": "0148594c6f4570ccb78525e8f390a11a1bcc12d8a978e2ec622ec81182e1cb14",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q6-decay.tikz",
+      "sha256": "45665699dd8fb19e043fc4413d256868d987d70ffa98e3473fb5b900d1e00e24",
+      "vector_pdf_sha256": "04b6ac6d2c7b993ed3da82fb36bf84650aef5aaaa093ef61f368dd43333f93f3",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q6-range.tikz",
+      "sha256": "10ff718d1e9c85c88682abbe815a5360071038dd3b8fcb5bacfd74c18ea7b986",
+      "vector_pdf_sha256": "377a26d532a7e7c26434722860af9bfc41480c5bb929a424c6dee53d0230be3c",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q6-survival.tikz",
+      "sha256": "f7a2e1ae8cc1f0141b65fc4f3e19fb2c5fc5ae06ba2f2db24f77d89e16ed622b",
+      "vector_pdf_sha256": "4ba27edf9b9fa6b855bb083ed78e7be9ac7a818295fff379636d61c883a842c6",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q7-balloon.tikz",
+      "sha256": "785389b40089b1eb94f9daa7c3c7c91df26759975da8e0f783524a873ac7aca8",
+      "vector_pdf_sha256": "e4909e836ca2fbdeaa3fcc52276e489ba191708e2f97b9ae389cfeac04f52a3b",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q7-channel.tikz",
+      "sha256": "671357767c13089c323f7e1366423a98a705d32d8d3730945eab7ed04084edd6",
+      "vector_pdf_sha256": "91bf9784586f42734b0a5a0a7a0ab1bd60cb860cbdadfb292c30a651507892ef",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q7-cloud.tikz",
+      "sha256": "9dd2e1aef93b532feea0c0489d8efc7fb7215d8296aa1453ac60073aa83f660c",
+      "vector_pdf_sha256": "e1e8d3477c48c92fd4845763483258be7bae4e23a86a1cae05ae1110b12887f2",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q7-images.tikz",
+      "sha256": "5cb4a147b6294a66d92e9cf492619ffa6597f8f39d39b56b754e429e85c53020",
+      "vector_pdf_sha256": "d90516bd6a573845b714d573968124ee18527c804fb13bce32b8dfb6a5497afc",
+      "unchanged": true
+    },
+    {
+      "exam": 36,
+      "name": "q7-ring.tikz",
+      "sha256": "1aee84d611eeeab4ea62b273f59783c030870141c1a76d8aa9cd585215d196bc",
+      "vector_pdf_sha256": "5d0e75ab61341b84df5dd3907b7125137c52acb7f3283f282c9832fde2b6c353",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q1-chambers.tikz",
+      "sha256": "cade08cba4b86b3f9ee6c9f1d96311459c42fa1f18574fe44b4cfcbea29fd499",
+      "vector_pdf_sha256": "06620909e7bad5474fd5ac58531f6ca3af975dd283e193fbba9a48547cf99da3",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q1-force.tikz",
+      "sha256": "ee061890cf3c8fc5156755477501dd7a8560dec238ebc071cda71a5504d35775",
+      "vector_pdf_sha256": "788ec85bb8f3e5a059c35d98991ef025b82057388e14906aba2e10a96e4550ef",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q2-cycloid.tikz",
+      "sha256": "b9a02802cc7ef0d35244fac9f1c543211fc6369be857f783121b1cf033121ec6",
+      "vector_pdf_sha256": "dbbb8695584549bf9ac26b2f9e87e4b68e2d40e78b0537e75b94490e166524c5",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q2-friction.tikz",
+      "sha256": "0463ce14ed3ec0dcf712a08463a17a67493c6ba9fe94029f5adad90da21bae2a",
+      "vector_pdf_sha256": "0c1b9ce80020f5237e53b2a1e2c495f5d2c2002f5498fcb5a6f266fcd1e21cab",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q2-impact.tikz",
+      "sha256": "44d06a231b37d3b99502d895dcc844b4ef6de93de66da2b27cb21df5344fb5d2",
+      "vector_pdf_sha256": "cd804cb7050b91a37e3a7bd975fd657731889e69d6d0d638b83df0d94270b6b1",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q3-bias.tikz",
+      "sha256": "bff86e0b6966dc57dbb194cf36b90c643f5c2e5a5f8fb6c8f292033f70aa9689",
+      "vector_pdf_sha256": "5fcb13893df39c320939b7f12b3121e12bb164436b538a44cb60948d766797c6",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q3-circuit.tikz",
+      "sha256": "36dc9236a50949e527d10bad7f202f19d58f75bb908aa9e9629f9288eef95329",
+      "vector_pdf_sha256": "aa32d442f7978e8668b24bebdeeb448d04cb969e44f600028a943b4c720002bf",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q3-responses.tikz",
+      "sha256": "1788c101d52b1040db1ce91771b9865b53aaf6dc6e33078955de630659f23949",
+      "vector_pdf_sha256": "6481cebd86275d9036dd86fdd5b2280c21f887b4522e581511f33d501ffba8ae",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q3-roots.tikz",
+      "sha256": "300d21197717e93bd5fd9d2e3c2ad523b5985c035575d6c470b2b444a64fefde",
+      "vector_pdf_sha256": "39fc82f2863eb05e43ba28a4a84e109f09ffd18d2cdcb600567e9c4ca0b54a61",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q4-orbit.tikz",
+      "sha256": "c3619d45ad904a0c94a631cca59597cd3e4000a3988f64b662451104454b7443",
+      "vector_pdf_sha256": "576316db35b6c2c0e1f3020e6770dcf94a1309fe6a84a8481d4a441571b59c47",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q4-threshold.tikz",
+      "sha256": "89d6cc52d2ee9028648a6e17aad6982087012c169c624ddad53410b54237216f",
+      "vector_pdf_sha256": "39bc4f4d78ee99f3fbfa37d0386753206d32871827f6ae7d1e1e0ecb7be1b7a4",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q5-light.tikz",
+      "sha256": "45c88e48f88ccb81414147283102c630d20143145b7933161265ad5868e32c87",
+      "vector_pdf_sha256": "8106688c552e98a27c823e89e9d48e98e396df52c3b61e57dd315d154e962eae",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q5-parcel.tikz",
+      "sha256": "0217a6f6c91e9b31106cf655ead956ef10e72cce68a997a6e5b46da693deb968",
+      "vector_pdf_sha256": "2a5dec73b1e64e9ce77782827644e587c388d4b3435ef6b0b6fc3dcd034a6ff6",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q5-ships.tikz",
+      "sha256": "91479d6cb18a84f2777aef0d105031be8a9171f282ebeaccbfb999068cbfcc64",
+      "vector_pdf_sha256": "fe72ea574cb5b774b98b7d452914fdd081883c46518c09e637cd897495f74394",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q6-cone.tikz",
+      "sha256": "3dd454ad10fc4e5d4d7c5ba92064730e134182175227facd76c098d4358b9e44",
+      "vector_pdf_sha256": "f0de067dd563c956b4dc34b148a9dcae6157d61b668bdc807990fcd04977846f",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q6-guide.tikz",
+      "sha256": "1d4199b0b9a24844092d3099b2ff2272de5b2a6d1b12a784ea1e1dde62c1a21c",
+      "vector_pdf_sha256": "a115987a06aa0a26392423a67a1d1e602ab719538dc23b8167e73f15b55f2585",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q6-resonance.tikz",
+      "sha256": "45b39ef022c6847684cdfbf681fb6cc6e965f638b358cb267cfcde607af20b8f",
+      "vector_pdf_sha256": "ce4bf1981aca5acca1b696679069901ab85c50059609ff7c00e36fba2a4236aa",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q6-ring.tikz",
+      "sha256": "d027ed3afd1b2885c3423796a1a7ba84c3434462ff93ca9857678e0179a8a6fe",
+      "vector_pdf_sha256": "4652c4fc7e8d7c95039ac838704b873ce19bf7b8c6559f51fe8f507fb9a016f6",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q7-binary.tikz",
+      "sha256": "92652d3345188e3fe1323ad83acb46cf9123d6b9d0a8b65bed8694776f10c83f",
+      "vector_pdf_sha256": "f716c39cda2955d17cae833c7f7a3b0160ebf9d0e5b9eadcd48f066657db7d21",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q7-evolution.tikz",
+      "sha256": "7036106742457a33a48d6cccf2175fbd950933d786498ec28a48380cddde51e6",
+      "vector_pdf_sha256": "91bea25f566e9bf6dcdc4ed75476ad6a8b0afebc162f745920a7412b0e5ca013",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q8-circuit.tikz",
+      "sha256": "a1d297dd5ccf3cdc81811b9d986c21ec7f97437cae7b2a4f2a2070d3de9c587d",
+      "vector_pdf_sha256": "1978e52fa8a93eeb01141a08ed6c16349819296d78f8944f8a907ad0bf072941",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q8-optics.tikz",
+      "sha256": "2bd577a3e0051fd051e30b7c54156f3a5a2bad7e8f7f2cdfc94699c6773e47bb",
+      "vector_pdf_sha256": "4aff1516e6bd4ebb0d010b48951cd0d24f08b4cbc369921c5c79cbfdae5153d3",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q8-response.tikz",
+      "sha256": "31f2adf195f8afc4ae1f8b91cce4af69ec59a74e0a4ff4a06a0685333fc6546c",
+      "vector_pdf_sha256": "429415647cabc68869bbe94d2680d9f733d588ceb7f13e4381868a3312d3672e",
+      "unchanged": true
+    },
+    {
+      "exam": 37,
+      "name": "q8-transfer.tikz",
+      "sha256": "0a3209aa02ebf13008ad5751e4a303ad1a3fbc60a914298e33caf53d018b3309",
+      "vector_pdf_sha256": "ebae1a4512b2299077b65f53ab797784c333f6a13e8ac33482c1748ecb676d43",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q1-branch.tikz",
+      "sha256": "3b3a2bcf10675a3d3666b1c093927fc31ece384d5e12eed0bc802d4b8074e03d",
+      "vector_pdf_sha256": "f3168f94ac25a0074d88db1bc1c96450b970d904b255d8eaeba3fd596599b8dc",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q1-lens.tikz",
+      "sha256": "fb09e68b40dbe7dfce48bcfdfb0d47a459d1c848b40a57d448b4d4b73fdfb963",
+      "vector_pdf_sha256": "efb90d812ba004e4018044880bb5ce41419849448c76b1b0b9e3d99c1b3d80c0",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q1-pair.tikz",
+      "sha256": "0144f0d44ff28d86fe0d177b0392e28c1c9a99a00267f22ea5936844704116c5",
+      "vector_pdf_sha256": "ee58f82df73499f74b3edb1777c44ce830f9620dfbbec4b0b04ad39b338b8724",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q2-pv.tikz",
+      "sha256": "6363f0f7e9934f802c1c0f2172796532793067a27af821dba46a002959f28dcd",
+      "vector_pdf_sha256": "9b77f1fe6ffa66557400f2c4dc90c39ceecc2563472aba3e054aefc5388da89d",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q2-temperature.tikz",
+      "sha256": "50ad934b197321d49e408427f3c40ad0781876ef760e35c64725a6e105357e1e",
+      "vector_pdf_sha256": "a6b02134572549b7f891d1767f950e601adb91692d5b19c97e36031153964283",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q2-tube.tikz",
+      "sha256": "bd70b38c6c1af3383a461283ebb2305a5243c35012ed63b054e6954be5777fe0",
+      "vector_pdf_sha256": "74a5bfc1558e713ecc3c24396e5eeb3ebbc2d8c9cd43b883272f5a27177558b3",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q3-bounces.tikz",
+      "sha256": "ad63510270673ceef9dad3a74b4f1259b03cffa2dc589b3b323c1744af829c4f",
+      "vector_pdf_sha256": "e332b81476b27abc0ba074a92086fa43e45dd577fc5c8dfa341e74006ad5ffb8",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q3-contact.tikz",
+      "sha256": "5254181c4097b47d3e20fab8e4baf4b429f9155955eb8580f6445e1d84f28b93",
+      "vector_pdf_sha256": "d4d0979af2080e1a70b42f2ca6ad3267db71d27bf931e495191faba3dea9a682",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q4-angle.tikz",
+      "sha256": "2cde146922d2c44b230561327129f2913943f3de4670fdc104f7045d797d46d0",
+      "vector_pdf_sha256": "a9c10f8a837ca02f37afdf1d8552f4a157d98887fe84528d112ffda3cd78a283",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q4-dipoles.tikz",
+      "sha256": "9ab15c7409a33595da25e55f2f2fb16890d6d0ff38798420b5ddf9c27f101744",
+      "vector_pdf_sha256": "e1e7e232b4a04459e976ac959b34cd2d1fa940a7e602a6f50406b7fd77a7bf43",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q4-height.tikz",
+      "sha256": "b72be8bc3d456475fce3db8bdd1e54498a751577643e99ca1a3901504ab1f678",
+      "vector_pdf_sha256": "27e77a4d91d113a4487272e2bb486a209c51339efe8c22502e8f965dd548a050",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q5-profiles.tikz",
+      "sha256": "5fdc035f121fef39a5b00976df79be70fe9e6eb3100bd1e6291ea409cd974e7a",
+      "vector_pdf_sha256": "d8379bf84c913814b851e5b812bf7b754e251b2a3f85606680b10b91d446ee40",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q5-slower.tikz",
+      "sha256": "8e0fb5c73a25e45107ea29615d7d1500653cb55dc0352b6f14413b72c0d5ad51",
+      "vector_pdf_sha256": "53d7a2139681734624730057754501c7dc786729db56d93a2cd4233633b79248",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q6-cylinders.tikz",
+      "sha256": "674ef50e39f777db085b27097ed8eb866b5557aad30fa1bc09cce637d506b12b",
+      "vector_pdf_sha256": "ec1dc4a89948263a3db01b483f2b05cbfe2a20f9a166f1cbcc2b86331d51994b",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q6-fields.tikz",
+      "sha256": "ec58f6097b6c41816fd98c62c85c1e2ca835971ac2b0f28d85a3450a29f6d70c",
+      "vector_pdf_sha256": "2a4ade78a54472f859cfb3177f923ca918f42d28bb4b4d9c019e18a88b8a6b1f",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q6-induction.tikz",
+      "sha256": "870defc78cfab2717d7a61d323d0a0b6ca35f5e13149811ab44afd1ed67a28b8",
+      "vector_pdf_sha256": "199f71593b92cae20a8e314d7be213ec663bd2a127c6ad567ff89efe48e91ef9",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q6-radial.tikz",
+      "sha256": "875adbb7026fc873ce4c803ff07afa367679469a521e62d85c443148de20ca45",
+      "vector_pdf_sha256": "5a8a67f3df068a700c2d136e8424da74c52258778344c8c597c2e70ee110c823",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q7-car.tikz",
+      "sha256": "4c4627b276a6f0e74dc41b26bb39fcc43a6b3506f00e068cfdf938ed4296f770",
+      "vector_pdf_sha256": "2777b14c740621c73ad5b3bd50caa901e375c7014686cf23e9ab2a4a0e82ae63",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q7-forces.tikz",
+      "sha256": "b0e1afbea28868009190285288d0e344331c678d9801ebe7403d53d647f00189",
+      "vector_pdf_sha256": "c012ee6d4f6bfa17d42dcb6c5cd65947f92e44303225fee10cb564719146b6e5",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q8-curves.tikz",
+      "sha256": "f8d8246f4c757141077b03756ac3ed3f19280f7565bc4128745e32bc4300fd6f",
+      "vector_pdf_sha256": "7aeb2bb3415cbfeeffdb35b2be8f3a7ad1e84b210ce4525f31bf1115914e362d",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q8-motor.tikz",
+      "sha256": "858a706b965c815fd0b8ab736195912df307e6e10a63d7e479d8ae6e5a606284",
+      "vector_pdf_sha256": "7faa2dc644ba40607d66bbee1be995535d8402e06b6dd250085667e4aff5b305",
+      "unchanged": true
+    },
+    {
+      "exam": 38,
+      "name": "q8-speed.tikz",
+      "sha256": "0cd02c08ced5377613d999664eee089872b1553937ec0069caa88bf8c3d062a4",
+      "vector_pdf_sha256": "b3c852162a0b8a79793048a076b52efeba6583ea1663b217fcaa3e3bd5d044ba",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q1-michelson.tikz",
+      "sha256": "523da48c76309057cf272a54823bb5ebd927f1e866a2d89d196644ac40e89faa",
+      "vector_pdf_sha256": "cc63a72a2e07b46c8e7dec357195bdb0aff41d8a44e5671f6f130bcc7a00a379",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q1-rings.tikz",
+      "sha256": "30ece228f8a4162066777501a38d1fb90f3f7790c72239667998a48a9e655d77",
+      "vector_pdf_sha256": "0ada2a3c1844df32a28afcb372b65459d3d465a46658ade55d922caa17742a9b",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q1-slab.tikz",
+      "sha256": "cbb24d5e30c9c4ab08f3c41624de25cef4301142b925b0edc324fee2f133d974",
+      "vector_pdf_sha256": "c5cd7597680761bc1f334131aec75d186fb00b52fd7cb0b1826d2cd8a626eee0",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q2-branches.tikz",
+      "sha256": "871c9a764ace7747b12619449d21e262690bea8b7febc2ea74d8724087095365",
+      "vector_pdf_sha256": "f584966b6eb5da8eb5d35ddc2c2fab635d70466c6e194d613a25304a7405eaaa",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q2-solenoid.tikz",
+      "sha256": "c324eeb83a419878f6ce012bd678fd315965acf19955fbd2e4f956ae72a7f8af",
+      "vector_pdf_sha256": "8faf6a394fcc699f39e91704eb21b16e759fb4b381cc7cf250484d3bcf5806d0",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q3-flight.tikz",
+      "sha256": "190da3cae82d6f1769c22dab49a137822e6b5298dbcfe655d84bd374f1877e52",
+      "vector_pdf_sha256": "ede9d48a0376782849072ab03023a547303b1dbae86ba9bace0d5bfa5e0c5033",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q3-impact.tikz",
+      "sha256": "7c82d2591b1f91e0157cdf9e7e021331775762f8955ae3025c3ff8a63c31dac2",
+      "vector_pdf_sha256": "4d1a071c651515ae1fbfbd9c63bed0b4178bc044d0f9152ea432d04b47e9a6bb",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q4-boundary.tikz",
+      "sha256": "6fdad871056a038993456df1e1bfcd3d886fd9f4050a8ddb1fa20604181a6555",
+      "vector_pdf_sha256": "8471a783e1902b950c5e041c16ec39ee4b59e35955e8968cfa151b16c02de982",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q4-forces.tikz",
+      "sha256": "901459c9b465c62a15945e87372c6540b7f2d8b85d0b08f246b355775ccac8f5",
+      "vector_pdf_sha256": "c2f72be9a9434584d793b7ad32576457a95f2bf89c3e236e5855044ebdb3428d",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q4-intersections.tikz",
+      "sha256": "0360b574d7a91990d45513094c8f5c782a1881b73dd4fa753a588951740a3aa3",
+      "vector_pdf_sha256": "624c742a982ad51e782c08d8e2854919d794db0e984b8ca46f821ae9fc2e4495",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q4-rod.tikz",
+      "sha256": "c589b350d322f4de0b3e0578c56c76b26b39b3801db354d6a98508a3ded360a1",
+      "vector_pdf_sha256": "7194b2db48b1f9e0fa697dea650f7d15a6f04ef71fc1e20d8a34bbb2d4dc36d0",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q5-lengths.tikz",
+      "sha256": "f410ae609b3a0bf59e4072a16e77a66cad9bffe8009ed64ba9a1ede0a7eb6b38",
+      "vector_pdf_sha256": "c8f4a4e770f2d753d38308f8bf792c69ff726336d05e339dcfa1e8c6f583b6b5",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q5-sinc.tikz",
+      "sha256": "608f1b7753be0f70dbf517dc5815708eea58d6dae8749b3a85624a546e3f5296",
+      "vector_pdf_sha256": "a158643c127810c2a6b28a57ee1108d9cd76cebd701621c3f05bbd5b6903232a",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q5-springs.tikz",
+      "sha256": "0872abafc04a2affe51e3d582645c6383ca666edc729a42c422e5fb9a179a9de",
+      "vector_pdf_sha256": "cb486c6a207af811d9a8ec87a4b289f763dab3b77ccbad4c39a1070e2ef236ea",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q6-modes.tikz",
+      "sha256": "b8312fc078c2ff42d03fd58a30b356a4bfa068d3c9f7af444b6b28d156db8cc2",
+      "vector_pdf_sha256": "60c0c671891b6f21545238db53d116551b3dfb317f0d6c211673a47f20be8482",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q6-slab.tikz",
+      "sha256": "48bccfb3cf52eebd37225def6d4d58ef924d16365cacd0245b48321d3390a840",
+      "vector_pdf_sha256": "0ef837ecfbe9c34ac70340a26561387cb1d5c9044308af83d89a3350745df4b5",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q7-cooling.tikz",
+      "sha256": "4813ccbc3e7842d5b371cac76bb1f2385339bb5b4b85b086133b26068c787fe8",
+      "vector_pdf_sha256": "c85af9296680f54d91510e58a1bd49c1084524a229651fc9ebd81965db3e4688",
+      "unchanged": true
+    },
+    {
+      "exam": 39,
+      "name": "q7-wall.tikz",
+      "sha256": "5aa2eada6d9bbf78148b640c03886f1d51cc42c56167ec78a5d04d071996a1f6",
+      "vector_pdf_sha256": "e44463d218cc10c7c839c2802b29ab7ae680ae9d3ecb9bc0d99d7056cd6940bd",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q1-principal.tikz",
+      "sha256": "3b2b8aa10ccd630c3e42b645934c2214a6f3efad66354f93b5fa7f3a6f1290f3",
+      "vector_pdf_sha256": "60490510dead7bbe500bcd18e9f7ce34a96d613643fa07efee5d506267bdf094",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q1-two-lenses.tikz",
+      "sha256": "464bf039257656bede0a435db4eacb23149656d91a9f20c7a4798a22e54231e1",
+      "vector_pdf_sha256": "b40399c87a443e75d91b6657bc16fbb1716c47b74ec2d8eddb999bf59969d8e4",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q2-piston.tikz",
+      "sha256": "7c5e7b3370c3cc08db8b6395f4097922e64ea23468c4f356b40be073055fc5af",
+      "vector_pdf_sha256": "71dc7e915f0d160b708c4e9b5a0797207ab412a10a264e1c8ff3d5845c349df9",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q2-potential.tikz",
+      "sha256": "376bf2a8deb4933e9ff7813380d3f032a790f33bc5f1aee255dd6ea0c410ef30",
+      "vector_pdf_sha256": "bae6eab71af3b58c6b87e085cf0ab413218e878ca72df0102c111fac683ca8b9",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q3-forces.tikz",
+      "sha256": "b6a8ddc27bcdf46c83db02912bea87ae8d883fd116864c8e170d0d5571c8c9b8",
+      "vector_pdf_sha256": "aae59055b91e8bb956f663949b9eca496183e90124f9341e12477c05734acfdb",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q3-wedge.tikz",
+      "sha256": "be2e8c845e4456f09e534afa483f97cab993658e0262883cf4dc9aea31e565bb",
+      "vector_pdf_sha256": "d72c93471b75542735a7c5d30127786079104c9c35ee0f6c47b626e43bc5b3df",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q4-bridge.tikz",
+      "sha256": "5bc8992acfa7919be5e953f4ca1a1d64a7edfad3c003c6a3b9874a35ee38ee48",
+      "vector_pdf_sha256": "52b9c419ee4a0fd80cf2724ae3bb0fbaaea2ff4365a98954f90b76cb733b02f5",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q4-forces.tikz",
+      "sha256": "ac33c2b9bcc218df52761b434107c121c2c87b5d14d7987eadee23c20c21eca8",
+      "vector_pdf_sha256": "ef0b4ca53689d29fabf6378259def5db7786f64f689ee097d9e29f474d6bc452",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q5-boundary.tikz",
+      "sha256": "c93d04ada63e78bb1b72e4c3f705703fea37dce6015883e2e7ac899565dba7da",
+      "vector_pdf_sha256": "512262e89b4313424de91ed3017e41040413d2f203805b3663d6e6085d5e0aa1",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q5-dipole.tikz",
+      "sha256": "b610b900d54d730776e7dcc5f4956863c3790996f2410a5394387b67cef25967",
+      "vector_pdf_sha256": "f9b2abf233979e0b68aa24de9de7de28f487eac963e78fd5600954838e448601",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q6-current.tikz",
+      "sha256": "0a429a960b08a365a4f1d73f940693cb4126ec413fc249fd0a022c16425fc54d",
+      "vector_pdf_sha256": "fa6f6e6b6957cf85c57d21ba63099820b7bd553bb015b6df167aef16910b716d",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q6-levitation.tikz",
+      "sha256": "ddbfa151f8e091edf3bf9075515e546d7dcaec57196c00776f09bf230a26d422",
+      "vector_pdf_sha256": "57902133524ffc1d123bcf01358e04b4cf805031cce3bf11136185b6de797d38",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q7-atmosphere.tikz",
+      "sha256": "a8612f5de26e05d1cdf553d2194a9e9f470566e1ca316152b71ab5a7beb47798",
+      "vector_pdf_sha256": "954c6a7b9b2e6d35d0494718a73a0ef08102df2f55c03d10a9885f7f60dc495e",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q7-earth-rays.tikz",
+      "sha256": "6c604135a61c2a9ef3e6a15bae17995e6ef64dd6f3732f720152a481540381dd",
+      "vector_pdf_sha256": "c702704672966aca1c91d29a3b454f9db14395554afc723bd6cc27896e842e6d",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q7-refraction.tikz",
+      "sha256": "0bae22e85625d0336d138f56d9c7b195716c23355695117938c71654e10c6d01",
+      "vector_pdf_sha256": "88155fda5075b11811e9e756876c091b657e80d8ef644555ff077db93f3eacfc",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q8-apparatus.tikz",
+      "sha256": "4f37b4e8fc5f774cdf3d9890534acccbdcc2bf23519995c62f6e2a18eb1d17b0",
+      "vector_pdf_sha256": "a45957b77908bd382aa7bdd4650aa79c6f65baf06b1c4dddd8e4c41cc1d9b25e",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q8-momentum.tikz",
+      "sha256": "f1a6cec56097a75dd890b21a1d11996423427bab2fd183f27ef867e81dcbb79c",
+      "vector_pdf_sha256": "e6d121f1b2f3fa87f3607454f924a9d0a9e9a7a2c525c9736319cc691003ad68",
+      "unchanged": true
+    },
+    {
+      "exam": 40,
+      "name": "q8-spectrum.tikz",
+      "sha256": "fbf1f778bac1e7796048174382c14f3bb225353074901a31411a420ce0d66bb0",
+      "vector_pdf_sha256": "fc341a94b540c3562981ff706a4d41be9467116a800f5f56f89a50e82fc309bd",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q1-building.tikz",
+      "sha256": "1e08b578f7f4f53687bdfb188b55a36e06818883e8423b912f0816ddac802d9d",
+      "vector_pdf_sha256": "a1701dfd24bdf4827f01df3029cf99d70f8ece394f52c89a5eb2f653528c9786",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q1-response.tikz",
+      "sha256": "7db7f7cf0347ffce77003dcd3165083c9f97936143ac792465c19fb945b7d7d0",
+      "vector_pdf_sha256": "0bb7a00f80e4625ef582530cdd0c853b096ded66ba2f13fe87dbb916890cb451",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q2-collision.tikz",
+      "sha256": "a04ceea3ebe21d22d0dca15dfcceaef6e703c51c5acf393ad5eeb513664a1a7b",
+      "vector_pdf_sha256": "232a380c18deb65403e808076938834ca0c76a5ac0e7dd8edb1cffe1555eb1d6",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q2-impact.tikz",
+      "sha256": "33301a57e56ad3deffc46c1e5c089ec5b115a4360b80efe97db82b8f592fc60c",
+      "vector_pdf_sha256": "6902efcadb47172368241476872e7383b741da480b11f63557b2dd817f0d7338",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q2-spin.tikz",
+      "sha256": "3d98cbfbe77172c812045ee9ba46a9c9c0fc2074066ee214d6f918b38ae05282",
+      "vector_pdf_sha256": "79729b4a3dcca2c3a6786f2a9a2f4984a83d93e04f37d89f7a8084cd150460a6",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q2-trajectory.tikz",
+      "sha256": "33c458b20c67cdd2849e07267588ac4898c941b3417185b5e3b15bcc932def67",
+      "vector_pdf_sha256": "d938656b6ad0e84a54b890a5318147ef61a751349937654e2f22dcb8f0dbc759",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q3-bonds.tikz",
+      "sha256": "4a263d1c9a0de9965369ab8ad26f93d81b92aa27e272f09b7faf129d24a37390",
+      "vector_pdf_sha256": "69d20066de4456e491b563748190c88d7ce48b0890b116a9070cf84f657cf52f",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q3-mixing.tikz",
+      "sha256": "f2b5100634da1d1c780e0b3be99191414873c8e638472b6cdba9d8b44cf88f99",
+      "vector_pdf_sha256": "e78c8eb838f57be8ec0a394de9ca7b7acd77408c33b925db3e5d2dbc6f4d0ab3",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q4-resolution.tikz",
+      "sha256": "354bab2e5c37d93418489b712c2ea0ca65251a379831dfc16d1e530cfd0a6015",
+      "vector_pdf_sha256": "7bf2dfe0ae7b259ee3c7e4b5e7ff17f8d9f9f95dd9037df53b7ac1868cc3fd05",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q4-scattering.tikz",
+      "sha256": "06c70727e3c66c5853c7a69124e087d0faaaf45cd3f4f720a95d47b7f7d398f5",
+      "vector_pdf_sha256": "b159b32d270799770ccb5e5191ed2fa15270c9d04e91356658282a26725be6a1",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q5-trap.tikz",
+      "sha256": "02889e317769048d9daec5ddce2226641d9e95f0a844d9cdb5359c53b2d0b44b",
+      "vector_pdf_sha256": "c1e6f8f62194271bcaf6291ea9a89c414f2b6d85000856d5873ca008c76ba730",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q5-wires.tikz",
+      "sha256": "f58ac9f1493b69a460dbf7e03e54fd9f8613f67a600b37c62f0ade496b980c6a",
+      "vector_pdf_sha256": "f2e4be99650b01dd4bea7712b2a796e997429896b98c7ade39b2e3cc74d07a83",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q6-orbit.tikz",
+      "sha256": "71a8582e8eb2e62ca7692af065d92c24add6ad3ac112754869f11d4caba2e45f",
+      "vector_pdf_sha256": "2c63d954508da42bbdc40b02a9b817c8a1605f8664122d186a0d987d3238798d",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q6-scatter.tikz",
+      "sha256": "dd02b1c4c712d308334117eba4ee80390e294d57a8fb610e229a4271f74d6a71",
+      "vector_pdf_sha256": "e56e427dec881ac14fbb8e3f6b27f10639eb8c4ccc9712d5962d8ffb2aefd4b8",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q7-branches.tikz",
+      "sha256": "4ea338edaa9af6587ad6ea48b9b0d1cd28c350be8f36101584172a8286315246",
+      "vector_pdf_sha256": "e5671f210f93accc07dcef20d82b9f14ed2e5c6d9eb04e53dc1724109695b4ca",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q7-pairing.tikz",
+      "sha256": "f8ac363ba2c842df03eae755d34d890252fd6a8d90e79748af1078253a83b94d",
+      "vector_pdf_sha256": "6f56f1295ad9f951f08be707ec3baa79e6a351da2ef89bcd50112dc52be429f8",
+      "unchanged": true
+    },
+    {
+      "exam": 41,
+      "name": "q7-ring.tikz",
+      "sha256": "76cc2c198698838086477e94eff87d7b2552f644b484289fe138123daf899efd",
+      "vector_pdf_sha256": "df450064b4c3377e120a324baa68615e35a1b87a948175458fb461ef7cb208a2",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q1-peaks.tikz",
+      "sha256": "6ac894429188441308fee58475ee54f365067e9a61f9e7cb8e1bf55a7989d7d8",
+      "vector_pdf_sha256": "c351631e6d451737275f3881232ee6978b1c6f5ae6e4d990078997aa37a5bd12",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q1-phase.tikz",
+      "sha256": "9270ac96792d6d1552895b0e17fdad1597b0f4d5b384e0c89f0720e0e6cb7161",
+      "vector_pdf_sha256": "cc2bfc5c7daed83a4f5b293b7c0f3eb530939956e5e8e3680411fb886401767c",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q1-trap.tikz",
+      "sha256": "e4af5c8a1959a3cb5aba2511eeb374985f3a7bc0cdfa71590cd64e3821cced2e",
+      "vector_pdf_sha256": "e0a12911066427033cdc9b1a2e41b39941eddd94e1b332e44ad43da26ca4458b",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q2-analyzer.tikz",
+      "sha256": "da16a496bba4a2b4ac4695581e159c8f29f8bdceddfc05bed7f0d0865611fa04",
+      "vector_pdf_sha256": "6490ae64c127ccfe781feb3830d402c8d78b7bff86343d6266d448c0317d85a4",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q2-focus.tikz",
+      "sha256": "2020b3fd865ef634f918bc5f2aadd1c4287bfe4805cc96a9c9aee0637e0def92",
+      "vector_pdf_sha256": "7cd10009926acdd784382548926907db25ecd1dfd1fae51d1d68a70585a439a4",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q2-probe.tikz",
+      "sha256": "6c33c6f1ed951449a5251ab211748f853f2537f5c87cf22de0a364493f47180c",
+      "vector_pdf_sha256": "ac206e2cab68026f470b53cd752887cf7c9748457a010fd8cafa8283898f9802",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q3-device.tikz",
+      "sha256": "004704c7f891e11f3de608a36f9e2c51389fec79a89085ca01bd2695cc73992d",
+      "vector_pdf_sha256": "cc3da2d090811f79760bc4b9b5d1da0ba4045371c286b21ef3974bb196825c31",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q3-equivalent.tikz",
+      "sha256": "dcbfbb70fec4d2ae3f41b59152bdd826ed7851498a4c41ce50a2b9ef4416fde7",
+      "vector_pdf_sha256": "aa73f682a7ffbee0c201b9fd743c2899b48bfae6bdb2ec64b15495163365991f",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q3-orders.tikz",
+      "sha256": "e7f3af9e11c869c91f015fbaec9b008f92d1783b327e521cc58e4845502c4e21",
+      "vector_pdf_sha256": "cd25446d48da557609c257a9af336001bb3d1a5450e373f77e330448c30e3685",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q3-parallel.tikz",
+      "sha256": "eb4b9c9e4d221afa7a845a540b8afde61a5d8621fd0bb981e86151bc7d913320",
+      "vector_pdf_sha256": "b4e9115534b6e8feb8ba9c0063df73e0b9ad65672e25bd9a6886f3e772eca1d1",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q3-series.tikz",
+      "sha256": "c3acb367efd2f91585c5334f675fced2983fb7259b4f35c7dc20faab3e907a71",
+      "vector_pdf_sha256": "66a2dc47159481f7b206e0d0a65613356f1f206535fef792283b62cce7f589d4",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q4-orbit.tikz",
+      "sha256": "17c425046cb412df9041e8664aff7163d77347d1850c8d57cc163f627205b99c",
+      "vector_pdf_sha256": "fdcd6475e5a4e22a8376cb72209f72c8fe8c42910d1900389046547a22b9729d",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q4-wave.tikz",
+      "sha256": "6f96204a3fa19b1886c92221b0279bbdaba6b1b85db3f22e150cbd43f2901ee0",
+      "vector_pdf_sha256": "8a150fdc5010ca018ebd6c999f9164766d22e571300ffceb5e3a44de5b0a45bc",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q5-fringe.tikz",
+      "sha256": "2511640c186e68ca7533059ad3725fd102b862495d8a21bacb28cf8d690752cf",
+      "vector_pdf_sha256": "cda1be448731303c03334887d3141ff0b229d42e7123a8eb5232adba0896768e",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q5-junction.tikz",
+      "sha256": "6491a0c54b046ac00d8f0f4eed6e95cbe9cd28bf2f6c2bdf20c1603c5510f79c",
+      "vector_pdf_sha256": "64975fb299fe559fa90c7932634adf069f63c60de4bf2c80df574986f86acf44",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q5-potential.tikz",
+      "sha256": "a6c98a2727fe664956ccd30660fbaaec90960e2fc888e626fe4d4504d56df3e2",
+      "vector_pdf_sha256": "22ab0ee52aab7a23c68904fbc5a4adf1fee8328f4e8541b61577cada0aa0004b",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q5-rcsj.tikz",
+      "sha256": "8ea43b5b689f37ae284e62ea5b005d1cd6b19d8893d9b6d8c8247364732b43ea",
+      "vector_pdf_sha256": "bd81af49f3075e8ce287f8ddf8226753ee40a4a1613bcafab8c45b93079de956",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q6-energy.tikz",
+      "sha256": "ab0033f04dd90ebdc8fd2cb6150e19e8315f043c29682e9f22e405079eb39a54",
+      "vector_pdf_sha256": "a8eb8d61b70fc4c07c5766771b81481179b30b3f7fa5ce1d7560156410d095ba",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q6-rotor.tikz",
+      "sha256": "d5b09aaf9c81e3db39420f36cc49e41d97d4a595403782009f970c375ae88e24",
+      "vector_pdf_sha256": "435902c7271c206c6c38f2793bfc7a4ebf32de8569fd25f956bcfa132f071bd9",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q7-ellipse.tikz",
+      "sha256": "6e9359c2edbc86c1e3cc8b7c2f5261c432f02731c49382de4101ff57f4f557ad",
+      "vector_pdf_sha256": "324983ba3fc4f6e16efe5f0d1b9e133b1af203dd6d07a1611086d035e7b306fa",
+      "unchanged": true
+    },
+    {
+      "exam": 42,
+      "name": "q7-fiber.tikz",
+      "sha256": "092891cd0b56720f8c00b00891cb4594e6be8ead424364c096d3f8cd8b8043ce",
+      "vector_pdf_sha256": "91ba67217147408c5335a452a9072f3d93d85893db216292ec7fc6fb7a344d85",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q1-network.tikz",
+      "sha256": "7b5d54d19ca3224594a5ae7aaa0d65948ec9ed5e25eeb8f61e1a1f15a658482c",
+      "vector_pdf_sha256": "17621d9d468496f5b0f5306ab94cdc8cdeed1ef7f0a2a57ab9a8491d03cf196d",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q1-potentials.tikz",
+      "sha256": "4e97282fc95edff2e03d6812d6c41d67c5cb06236b722df7815574d4f14e92b7",
+      "vector_pdf_sha256": "2f09f44b97f5c3d791066d45d3f736ea09c8b83b128c1573aa1b4832eaeec731",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q2-compression.tikz",
+      "sha256": "d584489942a500e47dc9a614454f03a2437d6d033d300348a9377a69fc596a5c",
+      "vector_pdf_sha256": "10ed7d6aa0df1f8048fc49a187b02b460210b25a6f179fdaf1bc97fca96ce54c",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q2-model.tikz",
+      "sha256": "0d445ff35b5513ffb09e0f53c179227f3348aded4be3e87de4d0b7e4692af443",
+      "vector_pdf_sha256": "6899d0547f9ae58ae54563f30bf7f65073001c47b6f3fe8ffccac693744e0d0d",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q3-images.tikz",
+      "sha256": "7e5eaa5accbfee34bf58989b890c4110acba487816062a9b38b3403184d4dc72",
+      "vector_pdf_sha256": "ef2261007edbaa112e62fa7a2fca349d017411fff6376931c9b864f6c9323513",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q3-model.tikz",
+      "sha256": "c5664ff075cdf77334a30d3e5a13e72941d0e79d759b62d86c43fadd7288842f",
+      "vector_pdf_sha256": "85345504910d00282dda21c5a5b12fad1dec29788e3b4d1d19806218733c9440",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q4-orbit.tikz",
+      "sha256": "db69582f5a9db11704ba8ba5a19d039c4bd2a7953ff6edfbfe7381ee40e0272e",
+      "vector_pdf_sha256": "c57308adfe4ccbad5115d8a3f52e2f2e02c9fd4051d13f2475cfb21b77358dc1",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q4-torques.tikz",
+      "sha256": "132303d3c28b43d5b2a79b2c02f7af2b9fd799ce0ba4bdb9c7df72e975b12a7c",
+      "vector_pdf_sha256": "c7ae013dc2ba0e4f78c298320d09e817dc15030b514963e225e09856b2a48525",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q5-centroid.tikz",
+      "sha256": "a9d6945116d07e4cdfe0d2a7809add805f4e9f97ea2d16df6bd624bc5caefdbe",
+      "vector_pdf_sha256": "cf9a032651f98f9e5166de4e840e6a36adbdbe3b848e26a7156e52f37371696a",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q5-equilibrium.tikz",
+      "sha256": "f5c239c73ebd504c8dd734739fdf1aa2cd9e65557b30ab320ffa337c9ff0ca79",
+      "vector_pdf_sha256": "1855c28f8f073120f83a8aaa7bab57259ac9fb8cedd4db6fdc4d83c43a3d601c",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q6-dispersion.tikz",
+      "sha256": "ee0b9e88a8973fca7fb58daa20dc89e12a58f2c205a848b1bdf8ed994ad7b2a6",
+      "vector_pdf_sha256": "9207fdca5a545486ea5f6ace5993792ec23ebd99b5abb05594ff851457870432",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q6-screening.tikz",
+      "sha256": "7226a1adc524b5612bb2c21d2d4aed0c57a56917b59b48e4abd96c72c1810ae5",
+      "vector_pdf_sha256": "ea8cc1704c81b96b13f0caa71b83c8a85dcf5c8edb4e3b5162f8b2f1d73f9692",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q6-slab.tikz",
+      "sha256": "37cec1eb70dbf7928bd4e8e5e73a1a9062b28dcac2a9932fc683a045b9ce0b13",
+      "vector_pdf_sha256": "e614265618e7816c96bae22d0f76542a3a6cff59a9bea11cd8aaad14b8a6a029",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q7-interference.tikz",
+      "sha256": "6008a409ee4c4886c78ba4dc0075b30fadf2746b87a145218f8a6965c4b93a97",
+      "vector_pdf_sha256": "36042c13bd6c77f28403f3e7a45517c1d448cee3dd341f80f762e82eb8f0dd3f",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q7-layers.tikz",
+      "sha256": "71d6632f69945730d81045e9b03e7d3db7ac24ec6ea25fb5488fe271d8a233f4",
+      "vector_pdf_sha256": "607c70e0e9405e8666511740844f0fd0dd50e3778348a16b85edbec39b81e231",
+      "unchanged": true
+    },
+    {
+      "exam": 43,
+      "name": "q7-paths.tikz",
+      "sha256": "7542181ba1d74b796018d2bab677e3873ab072caf1a930265689859b5cd35a12",
+      "vector_pdf_sha256": "ca53ebcb32c51570426fed9c734148f974ed5ead780ffc549d8fc7d69b18b7d3",
+      "unchanged": true
+    }
+  ],
+  "measurement_photos": [
+    {
+      "source": "q7-original-23-0.jpg",
+      "sha256": "359b603363907f1c87b6b7fd0406b4bc0edacf1580b67afed8e010492f6741fa",
+      "original_reference_pdf_page": 23,
+      "original_bytes_preserved": true,
+      "editions": [
+        {
+          "name": "第35届_学生详解版.pdf",
+          "pdf_page": 44,
+          "original_JPEG_bytes_embedded": true
+        },
+        {
+          "name": "第35届_教师备课版.pdf",
+          "pdf_page": 57,
+          "original_JPEG_bytes_embedded": true
+        },
+        {
+          "name": "第35届_试题版.pdf",
+          "pdf_page": 8,
+          "original_JPEG_bytes_embedded": true
+        }
+      ]
+    },
+    {
+      "source": "q7-original-24-0.jpg",
+      "sha256": "8ac7281d084b9269a283cbd4b75ea3791d4d3e1953ebc6f0c9ae121eb2b693ee",
+      "original_reference_pdf_page": 24,
+      "original_bytes_preserved": true,
+      "editions": [
+        {
+          "name": "第35届_学生详解版.pdf",
+          "pdf_page": 45,
+          "original_JPEG_bytes_embedded": true
+        },
+        {
+          "name": "第35届_教师备课版.pdf",
+          "pdf_page": 58,
+          "original_JPEG_bytes_embedded": true
+        },
+        {
+          "name": "第35届_试题版.pdf",
+          "pdf_page": 9,
+          "original_JPEG_bytes_embedded": true
+        }
+      ]
+    }
+  ]
+}

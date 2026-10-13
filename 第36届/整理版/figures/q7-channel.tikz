@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=1.1]
+\fill[blue!5] (0,0) circle(1.7);
+\draw[thick] (0,0) circle(1.7);
+\draw[dashed] (0,0) circle(1.1);
+\fill[gray] (0,0) circle(.12);
+\foreach \a in {0,60,120,180,240,300}{
+\draw[arr,red] ({1.5*cos(\a)},{1.5*sin(\a)})--({.75*cos(\a)},{.75*sin(\a)});}
+\draw[<->] (0,-2.15)--(1.7,-2.15) node[midway,below] {$a_{\rm ch}$};
+\node at(0,2.3) {$E_r=-E_b$};
+\node at(0,-3) {核心$a_0$以外取同轴高斯柱面};
+\begin{scope}[shift={(4.5,-1)},xscale=2,yscale=1.4]
+\draw[arr] (0,0)--(1.3,0) node[right] {$r/a_{\rm ch}$};
+\draw[arr] (0,0)--(0,2) node[above] {$|\rho_q|$};
+\draw[thick,blue,domain=.22:1,samples=100] plot(\x,{.4/\x});
+\draw[dashed] (.22,0)--(.22,1.82);
+\node at(.85,1.65) {$\propto1/r$};
+\node at(.6,-.65) {有符号密度为负};
+\end{scope}
+\end{tikzpicture}

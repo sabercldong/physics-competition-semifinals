@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-10-13T11:55:03+08:00",
+  "scope": "总审核顶层报告、数据与PDF合集；修改前文件由baseline.json记录。",
+  "files": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 603,
+      "sha256": "fd756cc66d608223072f59e9abcd4e7c060974809d3486aac030be3190c80d2c"
+    },
+    {
+      "path": "baseline.json",
+      "bytes": 47646,
+      "sha256": "4ba66e331f65f56a11066840b115c62e73fef20dba767f8af6694e72851147a8"
+    },
+    {
+      "path": "checks-35.json",
+      "bytes": 261,
+      "sha256": "97cf9ef09335cd22ef2e3ff34b942b36941901b49e868c77f55b09ef3e52e1fb"
+    },
+    {
+      "path": "checks-36.json",
+      "bytes": 261,
+      "sha256": "bca7a9a6cb3b9c0f152ae5e1fb69a3f62cc3158d64f38d0b1656a2311dc5d171"
+    },
+    {
+      "path": "checks-37.json",
+      "bytes": 260,
+      "sha256": "4b7c940676d3d088eb7d29e71c9e8533da6ab59fb66853637a70b7f03f08ed73"
+    },
+    {
+      "path": "checks-38.json",
+      "bytes": 260,
+      "sha256": "ea41e61931025adbf89067047d600173ba9920687b5377e786c94e47fea390dd"
+    },
+    {
+      "path": "checks-39.json",
+      "bytes": 260,
+      "sha256": "1641db8c3275f885d4e8edb19b7a1123dcdd174e9cc0b689d37cd757767b2895"
+    },
+    {
+      "path": "checks-40.json",
+      "bytes": 260,
+      "sha256": "f4ec28f7fc6188362408607141e60606d381423c2b03bb57f281c294c4499323"
+    },
+    {
+      "path": "checks-41.json",
+      "bytes": 260,
+      "sha256": "768136ba5b28497975735873724660c327e2d1e3407596579673ffc4302802b9"
+    },
+    {
+      "path": "checks-42.json",
+      "bytes": 260,
+      "sha256": "ff882db37de82b7069c1f8a9dedd61a3e8dcc0b03bec664eaf0cebfc92eae76f"
+    },
+    {
+      "path": "checks-43.json",
+      "bytes": 339,
+      "sha256": "52c54291114a457b094104e69a1b480871d2344e91adcd2ecdba3c2f36469c01"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 2811,
+      "sha256": "57b73cc8c0b1b4dc184aa9d924cf8cf4b05dce5d99bac6206a557e5421c90819"
+    },
+    {
+      "path": "collection-results.json",
+      "bytes": 18738,
+      "sha256": "6709f8a3c1e1816b6c2275d14e6e233d38704276f433c32e56e081ba92fe86b1"
+    },
+    {
+      "path": "content-invariants.json",
+      "bytes": 22789,
+      "sha256": "a28ed07429d5fbca93580fb109c94f87bf50a7b05352e30324c47b2c5502ed93"
+    },
+    {
+      "path": "figure-invariants.json",
+      "bytes": 50514,
+      "sha256": "7bab00370c90859152727053665dbffbaf9cfb314e30e2ec3bdb83d9c0df9249"
+    },
+    {
+      "path": "flags-35.txt",
+      "bytes": 13566,
+      "sha256": "904097812f61a4894076763b13f58b785032eaf04bb2e608d0eadce9d89e7fab"
+    },
+    {
+      "path": "flags-36.txt",
+      "bytes": 8839,
+      "sha256": "2731082a89a98dcd75575ebea92147b1dc826b5a01b17991ac0bc4141218ba09"
+    },
+    {
+      "path": "flags-37.txt",
+      "bytes": 7046,
+      "sha256": "4cc377a177643cd882d9542c93efe897f5efb5b57b657fb49e08723f48890a80"
+    },
+    {
+      "path": "flags-38.txt",
+      "bytes": 7821,
+      "sha256": "93bc63fac4b2c7bd69882e909be5f356095c0838d63f356dc62ac5eb4eb47260"
+    },
+    {
+      "path": "flags-39.txt",
+      "bytes": 11451,
+      "sha256": "47ee61507967e0588ca8c2da08b47f8514a94442ab3d1209a29e89936729e8f2"
+    },
+    {
+      "path": "flags-40.txt",
+      "bytes": 2016,
+      "sha256": "1330ef77ca3e6a986444146b1aa0a49166e71b3787a3db2bca057a7b391d932e"
+    },
+    {
+      "path": "flags-41.txt",
+      "bytes": 2249,
+      "sha256": "f75b3dc19e1c234767f395443b6542590024df8de80f2e0bc9894edb9218c130"
+    },
+    {
+      "path": "flags-42.txt",
+      "bytes": 6742,
+      "sha256": "f6787caa4b66cf0cc1b3d742b0bdea63e6ceefb6a2ac44ad11ff57cd558dbd65"
+    },
+    {
+      "path": "flags-43.txt",
+      "bytes": 7027,
+      "sha256": "87320330394466432dc7cac457eeec927e1c1b434db5f8484376226b9319ef1d"
+    },
+    {
+      "path": "native-compile.json",
+      "bytes": 8939,
+      "sha256": "e3637d1feadfb623f9e58803169bdbd49412af67a7f6be15796abbd956ec20e4"
+    },
+    {
+      "path": "page-comparison.json",
+      "bytes": 125047,
+      "sha256": "8e615a4a45a2c9ea05968dbd02bfac143763b22d769b35050ea1d7329083c9ea"
+    },
+    {
+      "path": "physics-run.json",
+      "bytes": 1683,
+      "sha256": "41ddf6cdfd81fc9a3d4028ff79c7e388585f558fc203b67fcdc7a53664df35d8"
+    },
+    {
+      "path": "prose-35.txt",
+      "bytes": 100261,
+      "sha256": "bd3c482562e95226c586296808174b50df238d0f4f8e9a123bd4e1e5afefdcb9"
+    },
+    {
+      "path": "prose-36.txt",
+      "bytes": 103784,
+      "sha256": "fe4e812be9d18aff1f87a3d199db48560a1d330a126ba50189b35dc66fcb4cae"
+    },
+    {
+      "path": "prose-37.txt",
+      "bytes": 103678,
+      "sha256": "688144e45fc9e7ba4d15aadc7db73497be612149bfbc8429acded00cdb2e66dd"
+    },
+    {
+      "path": "prose-38.txt",
+      "bytes": 104451,
+      "sha256": "535486b27aed60c4a464401297fa8ef0b1a04b6390fce95a895cf49fba127384"
+    },
+    {
+      "path": "prose-39.txt",
+      "bytes": 103199,
+      "sha256": "4c9abbe217b721689573b138e847c67daed19609d6c24fe4df0af48edfe34414"
+    },
+    {
+      "path": "prose-40.txt",
+      "bytes": 57012,
+      "sha256": "0555aaa9e555451071705a6a33271bf9520c10e52e025a3311a8f0b8f44e12ed"
+    },
+    {
+      "path": "prose-41.txt",
+      "bytes": 44343,
+      "sha256": "ff0ad9c9663764f8d4f493c55cb620fca731b21caf2a759a2eeccd2b031b5819"
+    },
+    {
+      "path": "prose-42.txt",
+      "bytes": 107349,
+      "sha256": "b0622c08c46fe1bba2dd3ffa699ceb9f5393999bbffd280c3be242c387963e05"
+    },
+    {
+      "path": "prose-43.txt",
+      "bytes": 109804,
+      "sha256": "67b926a2df5d9ace3cb3ca8c1e67d2808794e80ec4e6723dcb3e18d51f83bce7"
+    },
+    {
+      "path": "prose-edits.json",
+      "bytes": 35042,
+      "sha256": "fb15d1586fea13f9310287c3a6762bd07ceedc282d5666528d62c3e465317c9b"
+    },
+    {
+      "path": "rebuild-35.json",
+      "bytes": 41,
+      "sha256": "e068ea07b72c11ed929d906f009c309e96250e743db9ecd9fb3ef73d4d9c9dd5"
+    },
+    {
+      "path": "rebuild-36.json",
+      "bytes": 41,
+      "sha256": "149bd3f108567783c43c4111f646527b65ddbe1bc1bc7680f9f4a4c639d808dd"
+    },
+    {
+      "path": "rebuild-37.json",
+      "bytes": 40,
+      "sha256": "0e530c384c2fa93f702d58741928c909c79e56b5a9907506eba5fc8a9cc657a4"
+    },
+    {
+      "path": "rebuild-38.json",
+      "bytes": 40,
+      "sha256": "69f421fc86479bfef51bb62a795ab249377ab877a8293b3360c267c31a5c2c61"
+    },
+    {
+      "path": "rebuild-39.json",
+      "bytes": 40,
+      "sha256": "f485ce2dd4f42690abceb69d84f107f5ba595ee7313a0ed59f70582a87f7b593"
+    },
+    {
+      "path": "rebuild-40.json",
+      "bytes": 40,
+      "sha256": "7fdfbc870762c2101c2652fbbc86c0b762f1b2cd04ae42482cc681ff4226a9ed"
+    },
+    {
+      "path": "rebuild-41.json",
+      "bytes": 40,
+      "sha256": "40c00096ba3d399c95572644b212cf583967f8368fc5f1cf5a84bffd9b01bc55"
+    },
+    {
+      "path": "rebuild-42.json",
+      "bytes": 40,
+      "sha256": "5ddd19114d04258a0bd9847cc45e09df81d660d9235ecb46daabddf1ab159865"
+    },
+    {
+      "path": "rebuild-43.json",
+      "bytes": 40,
+      "sha256": "7ed7cff737cc89782d53d60d0f1dc6a4e1ebf15800174e8523d1195f5e0e8147"
+    },
+    {
+      "path": "rebuild-run.json",
+      "bytes": 544,
+      "sha256": "33dad9092699706d2e30f054a01565450a6ef9b9c549e35d43a7674c4e410e95"
+    },
+    {
+      "path": "visual-review.json",
+      "bytes": 47324,
+      "sha256": "1dd13f53e0e90e595539a6633d350857c44def3542753bea8c15e43d7b789226"
+    },
+    {
+      "path": "审核报告.md",
+      "bytes": 9722,
+      "sha256": "8c3aae95578c52ce9cd1f9145be13b12d89ba506ac1a7b1d043458a21394d3da"
+    },
+    {
+      "path": "文字修改.diff",
+      "bytes": 73951,
+      "sha256": "1160d90b1cedd60deebca915d9f7e7cf7aa02ed068da85b1cb5ea0f87bea8146"
+    },
+    {
+      "path": "第35—43届_审核后PDF.zip",
+      "bytes": 14848443,
+      "sha256": "a6479c7bf3812732322bf1440244dc06e9d0418f7459901e583ccab1286dd8fe"
+    }
+  ]
+}

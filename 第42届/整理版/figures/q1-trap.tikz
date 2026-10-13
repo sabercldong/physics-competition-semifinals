@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=.85]
+\draw[->](-2,0)--(2.2,0)node[right]{$x$};
+\draw[->](0,1.6)--(0,-2.7)node[below]{$z$};
+\draw[blue,thick] plot[domain=-1.5:1.5,samples=60](\x,{.65*\x*\x+.3});
+\foreach \x/\y in {-.7/.15,-.2/.4,.3/.1,.65/.32,.12/-.15,-.4/-.12}
+ \fill[blue](\x,\y)circle(2pt);
+\node[left] at(-.9,.65){原子云};
+\draw[dashed](-1.8,-2)--(1.8,-2)node[right]{$z=h$};
+\draw[fill=gray!20](-1.5,-2.2)rectangle(1.5,-2);
+\node[below] at(0,-2.2){探测平面};
+\draw[->,thick](1,-.4)--(1,-1.4)node[midway,right]{$g$};
+\node[above right] at(0,0){$O$};
+\end{tikzpicture}

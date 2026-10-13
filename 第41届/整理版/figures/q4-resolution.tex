@@ -1,0 +1,17 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[thick](0,0)circle(1.55);\draw[dashed](-1.55,0)--(1.55,0);
+\draw[<->](-1.55,-1.95)--(1.55,-1.95)node[midway,below]{$2r_p$};
+\foreach \x in {-1.2,-.9,-.6,-.3,0,.3,.6,.9,1.2}{\draw[gray](\x,-.8)--(\x,.8);}
+\draw[<->](.3,1.15)--(.6,1.15)node[midway,above]{$\Delta x$};
+\node[right]at(2,.4){$\Delta x=2r_p/200$};
+\node[right]at(2,-.3){图中分层间距示意放大};
+\draw[->,blue,thick](-3.2,.3)--(-1.7,.3)node[midway,above]{电子};
+\end{tikzpicture}
+
+\end{document}

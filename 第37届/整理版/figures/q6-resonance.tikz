@@ -1,0 +1,10 @@
+\begin{tikzpicture}[xscale=1.6,yscale=3]
+\draw[arr] (-2,0)--(2.3,0) node[right] {$f-f_0$};
+\draw[arr] (-2,0)--(-2,1.2) node[above] {共振响应};
+\draw[thick,blue,domain=-1.9:1.9,samples=160] plot(\x,{1/(1+16*(\x+.5)^2)});
+\draw[thick,red,domain=-1.9:1.9,samples=160] plot(\x,{1/(1+16*(\x-.5)^2)});
+\node[blue] at (-.65,1.15) {CCW};
+\node[red] at (.65,1.15) {CW};
+\draw[<->] (-.5,1.42)--(.5,1.42) node[midway,above] {$\Delta f$};
+\node at (0,-.4) {同级次相位闭合使两共振反向移动};
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+{
+  "all_passed": true,
+  "isolated_directory": "/var/folders/1v/t1yfjxmd0mjd4q8wrjxhfkhw0000gn/T/codex-39-rebuild-xyeqjxk5",
+  "results": [
+    {
+      "pdf": "第39届_学生详解版.pdf",
+      "pages": 58,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第39届_教师备课版.pdf",
+      "pages": 73,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    },
+    {
+      "pdf": "第39届_试题版.pdf",
+      "pages": 8,
+      "TeX_identical": true,
+      "page_text_identical": true,
+      "every_page_render_identical": true
+    }
+  ]
+}

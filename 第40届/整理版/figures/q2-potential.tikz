@@ -1,0 +1,14 @@
+\begin{tikzpicture}[xscale=4.2,yscale=8]
+\draw[arr] (-.85,0)--(.9,0) node[right] {$\theta$};
+\draw[arr] (0,-.05)--(0,.28) node[above] {$U/(mgr)$};
+\draw[thick,blue,domain=-.8:.8,samples=81] plot(\x,{.08*\x*\x+.143*\x*\x*\x*\x});
+\draw[thick,black,domain=-.8:.8,samples=81] plot(\x,{.143*\x*\x*\x*\x});
+\draw[thick,red,domain=-.8:.8,samples=81] plot(\x,{-.07*\x*\x+.143*\x*\x*\x*\x});
+\draw[blue,thick] (1.02,.24)--(1.15,.24);
+\draw[black,thick] (1.02,.15)--(1.15,.15);
+\draw[red,thick] (1.02,.06)--(1.15,.06);
+\node[blue,right] at (1.17,.24) {高温};
+\node[right] at (1.17,.15) {临界};
+\node[red,right] at (1.17,.06) {低温};
+\node at (.1,-.12) {中央附近的四次势能模型};
+\end{tikzpicture}

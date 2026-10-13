@@ -1,0 +1,9 @@
+\begin{tikzpicture}[xscale=5,yscale=3]
+\draw[arr] (0,0)--(1.25,0) node[right] {$h=3R/(4a)$};
+\draw[arr] (0,0)--(0,1.25) node[above] {$q=3g/(4a\omega^2)$};
+\draw[thick,domain=0:1,samples=90] plot(\x,{(1-\x^(2/3))^(3/2)});
+\node at (.26,.25) {III两解}; \node at (.78,.85) {III无解};
+\draw[arr] (.75,.45)--(.48,.22);
+\node at (.84,.52) {曲线上重根};
+\node[below] at (1,0) {$1$}; \node[left] at (0,1) {$1$};
+\end{tikzpicture}

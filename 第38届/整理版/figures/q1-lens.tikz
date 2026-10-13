@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=.9]
+\draw[arr] (-2,0)--(5,0) node[right] {主轴};
+\draw[fill=blue!6] (-1.2,-1.5)--(-1.2,1.5)--(-.489,1.5)
+--plot[domain=1.5:-1.5,samples=81] ({4-(2.4+sqrt(2.56+\x*\x/1.25))},\x)--cycle;
+\foreach \h in {-1.3,0,1.3}{
+\pgfmathsetmacro{\sx}{4-(2.4+sqrt(2.56+\h*\h/1.25))}
+\draw[arr,blue] (-2,\h)--(\sx,\h);
+\draw[arr,blue] (\sx,\h)--(4,0);}
+\fill (4,0) circle(1.5pt) node[below] {$F$};
+\fill (0,0) circle(1.5pt) node[below] {$O$};
+\draw[<->] (0,-2)--(4,-2) node[midway,below] {$r_0$};
+\node at (-.85,.55) {$n$};
+\node at (1.8,2.2) {平行光到同一焦点的等光程};
+\end{tikzpicture}

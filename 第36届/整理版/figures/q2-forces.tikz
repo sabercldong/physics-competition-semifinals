@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=.95]
+\foreach \xx/\lab/\sgn in {0/阶段I：滑动/-1,7/阶段II：滚动/1}{
+\begin{scope}[shift={(\xx,0)}]
+\node at(0,2.75) {\lab};
+\draw[thick] (0,1) circle(1); \draw[thick] (-1.5,0)--(1.8,0);
+\draw[arr] (0,0)--(0,.35); \node at(-.6,-.35) {$N_w$};
+\draw[gray] (-.45,-.2)--(0,.18);
+\draw[arr] (-.2,1)--(-.2,.5); \node[left] at(-1.3,.62) {$2mg$};
+\draw[gray] (-1.25,.62)--(-.25,.72);
+\draw[arr,blue] (.25,1)--(.25,.25); \node[right] at(1.25,.5) {$-Y$};
+\draw[gray] (1.15,.5)--(.3,.62);
+\draw[arr,blue] (0,1)--({-\sgn*1.25},1);
+\ifnum\sgn<0 \node[blue,right] at(1.25,1) {$-X$};
+\else \node[blue,left] at(-1.25,1) {$-X$};\fi
+\draw[arr,red] (0,0)--(\sgn*1.2,0);
+\ifnum\sgn<0 \node[red,left] at(-1.25,0) {$-\mu N_w$};
+\else \node[red,right] at(1.25,0) {$f_2$};\fi
+\end{scope}}
+\begin{scope}[shift={(3.4,-3.2)}]
+\draw[very thick] (-3,0)--(1,1.33);
+\fill (0,1) circle(2pt) node[above] {$O$};
+\fill (-.5,.833) circle(2pt) node[above left] {$C$};
+\draw[arr] (-3,0)--(-3,1) node[above] {$N$};
+\draw[arr,red] (-3,0)--(-4.1,0) node[left] {$\mu N$};
+\draw[arr] (-.5,.833)--(-.5,-.15) node[below] {$4mg$};
+\draw[arr,blue] (0,1)--(0,2) node[above] {$Y$};
+\draw[arr,blue] (0,1)--(1.2,1) node[right] {$X$};
+\node at (0,-1) {车架无角加速度，绕$C$取矩};
+\end{scope}
+\end{tikzpicture}

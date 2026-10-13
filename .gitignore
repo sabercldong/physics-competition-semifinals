@@ -1,0 +1,18 @@
+# Local system files
+.DS_Store
+**/.DS_Store
+
+# Reproducible document build intermediates and page previews
+**/build/
+**/preview/
+
+# Python environments and bytecode
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials
+.env
+.env.*
+!.env.example

@@ -1,0 +1,21 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[fill=blue!12](-2,-1.5)rectangle(-.3,1.5);
+\draw[fill=gray!40](-.3,-1.5)rectangle(.3,1.5);
+\draw[fill=blue!12](.3,-1.5)rectangle(2,1.5);
+\node at(-1.25,1){超导体1};\node at(1.25,1){超导体2};
+\draw[dashed](-.7,-1.5)--(-.7,1.5);\draw[dashed](.7,-1.5)--(.7,1.5);
+\draw[<->](-.7,-1.9)--(.7,-1.9)node[midway,below]{$d+2\lambda$};
+\draw[->](-2.8,0)--(2.8,0)node[right]{$x$};
+\draw[->](0,-1.5)--(0,2.2)node[above]{$y$};
+\node[fill=white,inner sep=2pt] at(0,.15){$\odot B_z$};
+\node at(-1.2,-.8){$\varphi_1$};\node at(1.2,-.8){$\varphi_2$};
+\end{tikzpicture}
+
+\end{document}

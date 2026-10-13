@@ -1,0 +1,17 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}
+\node[draw,circle] (P) at(0,0) {$\pi$静止};
+\draw[arr,blue,very thick] (.9,0)--(3,0) node[right] {$\mu:\ E_\mu^*,\,p^*$};
+\draw[arr,red,very thick] (-.9,0)--(-3,0) node[left] {$\bar\nu_\mu:\ p^*c,\, -p^*$};
+\node at(0,1.5) {$S_*:\quad E_\mu^*+p^*c=m_\pi c^2$};
+\draw[arr] (-2,-1.5)--(2,-1.5) node[right] {$S_*$相对$S$以$v$运动};
+\node at(0,-2.25) {实验室能量由发射角决定};
+\end{tikzpicture}
+
+\end{document}

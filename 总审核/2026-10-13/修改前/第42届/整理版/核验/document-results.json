@@ -1,0 +1,222 @@
+{
+  "structure": [
+    {
+      "question": "question-01",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "e6d0076fcd2a6d292c602010a90492ba2ac59b5eb6675ab0fc8fef40fdd4104d"
+    },
+    {
+      "question": "question-02",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "e9b8115f4f970df494a576d2767dcbeca45ada04af483f14e0d90c0cca1d35d1"
+    },
+    {
+      "question": "question-03",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "b6f441a573c589a3cfbddfa27745daddc569d14712ca6a9b628dcb0458684c2c"
+    },
+    {
+      "question": "question-04",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "79eb48d59b1879fd5c52d92ab10ab280a019c8813ffda9144691aa45ff5db3a3"
+    },
+    {
+      "question": "question-05",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "2793ffba00200556fac52a95cf102ae6b261fd67cc58026d9b6dfea9e3d49c68"
+    },
+    {
+      "question": "question-06",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "63964d8dfd6f298921dfc233b5e47f79259445a12b428b1e0d3009827d9343f7"
+    },
+    {
+      "question": "question-07",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "2dca4bdc7f3486749fd6e08aeeedad7a8e0e88da96f38f80364eaabcc077978d"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第42届_学生详解版.pdf",
+      "pages": 59,
+      "body_pages": 58,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "b285e7a93df429e8d9e5f0c5416a3ba932da280b125bf4575e0a41aa84abacca",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        28,
+        36,
+        44,
+        52
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_教师备课版.pdf",
+      "pages": 73,
+      "body_pages": 72,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "1941dcf6ea48fa21ed2d5c85b90150175ccdf13cb00619d9106f3e0f22bb7eab",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        13,
+        24,
+        34,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第42届_试题版.pdf",
+      "pages": 10,
+      "body_pages": 9,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "77f5baf6d7a18ac5e8ab3b9736294da7bd7889fe426d07902883aee3731b7161",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "figures": [
+    {
+      "name": "q1-peaks.tikz",
+      "sha256": "6ac894429188441308fee58475ee54f365067e9a61f9e7cb8e1bf55a7989d7d8",
+      "vector_pdf_sha256": "c351631e6d451737275f3881232ee6978b1c6f5ae6e4d990078997aa37a5bd12"
+    },
+    {
+      "name": "q1-phase.tikz",
+      "sha256": "9270ac96792d6d1552895b0e17fdad1597b0f4d5b384e0c89f0720e0e6cb7161",
+      "vector_pdf_sha256": "cc2bfc5c7daed83a4f5b293b7c0f3eb530939956e5e8e3680411fb886401767c"
+    },
+    {
+      "name": "q1-trap.tikz",
+      "sha256": "e4af5c8a1959a3cb5aba2511eeb374985f3a7bc0cdfa71590cd64e3821cced2e",
+      "vector_pdf_sha256": "e0a12911066427033cdc9b1a2e41b39941eddd94e1b332e44ad43da26ca4458b"
+    },
+    {
+      "name": "q2-analyzer.tikz",
+      "sha256": "da16a496bba4a2b4ac4695581e159c8f29f8bdceddfc05bed7f0d0865611fa04",
+      "vector_pdf_sha256": "6490ae64c127ccfe781feb3830d402c8d78b7bff86343d6266d448c0317d85a4"
+    },
+    {
+      "name": "q2-focus.tikz",
+      "sha256": "2020b3fd865ef634f918bc5f2aadd1c4287bfe4805cc96a9c9aee0637e0def92",
+      "vector_pdf_sha256": "7cd10009926acdd784382548926907db25ecd1dfd1fae51d1d68a70585a439a4"
+    },
+    {
+      "name": "q2-probe.tikz",
+      "sha256": "6c33c6f1ed951449a5251ab211748f853f2537f5c87cf22de0a364493f47180c",
+      "vector_pdf_sha256": "ac206e2cab68026f470b53cd752887cf7c9748457a010fd8cafa8283898f9802"
+    },
+    {
+      "name": "q3-device.tikz",
+      "sha256": "004704c7f891e11f3de608a36f9e2c51389fec79a89085ca01bd2695cc73992d",
+      "vector_pdf_sha256": "cc3da2d090811f79760bc4b9b5d1da0ba4045371c286b21ef3974bb196825c31"
+    },
+    {
+      "name": "q3-equivalent.tikz",
+      "sha256": "dcbfbb70fec4d2ae3f41b59152bdd826ed7851498a4c41ce50a2b9ef4416fde7",
+      "vector_pdf_sha256": "aa73f682a7ffbee0c201b9fd743c2899b48bfae6bdb2ec64b15495163365991f"
+    },
+    {
+      "name": "q3-orders.tikz",
+      "sha256": "e7f3af9e11c869c91f015fbaec9b008f92d1783b327e521cc58e4845502c4e21",
+      "vector_pdf_sha256": "cd25446d48da557609c257a9af336001bb3d1a5450e373f77e330448c30e3685"
+    },
+    {
+      "name": "q3-parallel.tikz",
+      "sha256": "eb4b9c9e4d221afa7a845a540b8afde61a5d8621fd0bb981e86151bc7d913320",
+      "vector_pdf_sha256": "b4e9115534b6e8feb8ba9c0063df73e0b9ad65672e25bd9a6886f3e772eca1d1"
+    },
+    {
+      "name": "q3-series.tikz",
+      "sha256": "c3acb367efd2f91585c5334f675fced2983fb7259b4f35c7dc20faab3e907a71",
+      "vector_pdf_sha256": "66a2dc47159481f7b206e0d0a65613356f1f206535fef792283b62cce7f589d4"
+    },
+    {
+      "name": "q4-orbit.tikz",
+      "sha256": "17c425046cb412df9041e8664aff7163d77347d1850c8d57cc163f627205b99c",
+      "vector_pdf_sha256": "fdcd6475e5a4e22a8376cb72209f72c8fe8c42910d1900389046547a22b9729d"
+    },
+    {
+      "name": "q4-wave.tikz",
+      "sha256": "6f96204a3fa19b1886c92221b0279bbdaba6b1b85db3f22e150cbd43f2901ee0",
+      "vector_pdf_sha256": "8a150fdc5010ca018ebd6c999f9164766d22e571300ffceb5e3a44de5b0a45bc"
+    },
+    {
+      "name": "q5-fringe.tikz",
+      "sha256": "2511640c186e68ca7533059ad3725fd102b862495d8a21bacb28cf8d690752cf",
+      "vector_pdf_sha256": "cda1be448731303c03334887d3141ff0b229d42e7123a8eb5232adba0896768e"
+    },
+    {
+      "name": "q5-junction.tikz",
+      "sha256": "6491a0c54b046ac00d8f0f4eed6e95cbe9cd28bf2f6c2bdf20c1603c5510f79c",
+      "vector_pdf_sha256": "64975fb299fe559fa90c7932634adf069f63c60de4bf2c80df574986f86acf44"
+    },
+    {
+      "name": "q5-potential.tikz",
+      "sha256": "a6c98a2727fe664956ccd30660fbaaec90960e2fc888e626fe4d4504d56df3e2",
+      "vector_pdf_sha256": "22ab0ee52aab7a23c68904fbc5a4adf1fee8328f4e8541b61577cada0aa0004b"
+    },
+    {
+      "name": "q5-rcsj.tikz",
+      "sha256": "8ea43b5b689f37ae284e62ea5b005d1cd6b19d8893d9b6d8c8247364732b43ea",
+      "vector_pdf_sha256": "bd81af49f3075e8ce287f8ddf8226753ee40a4a1613bcafab8c45b93079de956"
+    },
+    {
+      "name": "q6-energy.tikz",
+      "sha256": "ab0033f04dd90ebdc8fd2cb6150e19e8315f043c29682e9f22e405079eb39a54",
+      "vector_pdf_sha256": "a8eb8d61b70fc4c07c5766771b81481179b30b3f7fa5ce1d7560156410d095ba"
+    },
+    {
+      "name": "q6-rotor.tikz",
+      "sha256": "d5b09aaf9c81e3db39420f36cc49e41d97d4a595403782009f970c375ae88e24",
+      "vector_pdf_sha256": "435902c7271c206c6c38f2793bfc7a4ebf32de8569fd25f956bcfa132f071bd9"
+    },
+    {
+      "name": "q7-ellipse.tikz",
+      "sha256": "6e9359c2edbc86c1e3cc8b7c2f5261c432f02731c49382de4101ff57f4f557ad",
+      "vector_pdf_sha256": "324983ba3fc4f6e16efe5f0d1b9e133b1af203dd6d07a1611086d035e7b306fa"
+    },
+    {
+      "name": "q7-fiber.tikz",
+      "sha256": "092891cd0b56720f8c00b00891cb4594e6be8ead424364c096d3f8cd8b8043ce",
+      "vector_pdf_sha256": "91ba67217147408c5335a452a9072f3d93d85893db216292ec7fc6fb7a344d85"
+    }
+  ],
+  "core_identical": true
+}

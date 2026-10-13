@@ -1,0 +1,16 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=2.8,yscale=.021]
+\draw[arr](.15,70)--(1.15,70)node[right]{$R$};
+\draw[arr](.15,70)--(.15,260)node[above]{$T/{\rm K}$};
+\fill(.2,216.906)circle(.9pt)node[right]{$T_0$};
+\draw[thick,blue,domain=.9:1,samples=30]plot(\x,{88.64+350.14*(1/\x-1)});
+\fill(.9,127.55)circle(.9pt)node[above left]{$T_1$};\fill(1,88.64)circle(.9pt)node[above right]{$T_2$};
+\node at(.55,175){真空中没有物质温度曲线};
+\end{tikzpicture}
+\end{document}

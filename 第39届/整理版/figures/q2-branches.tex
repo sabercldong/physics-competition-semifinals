@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=6,yscale=3]
+\draw[arr] (0,0)--(1.13,0) node[right] {$x=l/l_0$};
+\draw[arr] (0,0)--(0,1.18) node[above] {$I_0^2/I_c^2$};
+\draw[thick,red,domain=.02:.66667,samples=70] plot(\x,{6.75*(1-\x)*\x*\x});
+\draw[thick,blue,domain=.66667:1,samples=50] plot(\x,{6.75*(1-\x)*\x*\x});
+\draw[dashed] (.66667,0)--(.66667,1)--(0,1);
+\node[below] at (.66667,0) {$2/3$}; \node[left] at (0,1) {$1$};
+\node[red] at (.3,.75) {不稳定}; \node[blue] at (.93,.95) {稳定};
+\node at (.6,-.45) {峰顶是合并点，不是非线性稳定平衡};
+\end{tikzpicture}
+
+\end{document}

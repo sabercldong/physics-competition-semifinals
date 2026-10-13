@@ -1,0 +1,25 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.9]
+\foreach \xx/\up/\lab in {0/0/下板,5/1/上板}{
+\begin{scope}[shift={(\xx,0)}]
+\draw[thick] (0,0) circle(.8);
+\ifnum\up=0
+\draw[thick] (-1.7,-.8)--(1.7,-.8);
+\draw[arr] (0,-.8)--(-1.4,-.8);\node at (0,-1.5) {$u_-=v-r\omega$};
+\else
+\draw[thick] (-1.7,.8)--(1.7,.8);
+\draw[arr] (0,.8)--(-1.4,.8);\node at (0,-1.5) {$u_+=v+r\omega$};
+\fi
+\draw[arr] (.2,0)--(1.4,0) node[right] {$v$};
+\node at (0,1.7) {\lab};
+\end{scope}}
+\node at (2.5,-2.2) {同样的切向冲量，上、下接触的角冲量符号相反};
+\end{tikzpicture}
+
+\end{document}

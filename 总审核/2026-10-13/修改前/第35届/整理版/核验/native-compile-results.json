@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_试题版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "source_sha256": "8e748642a4ea722c615b74a8c85d7554936a08206b24f202409680181d37b34d",
+    "raw_tool_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_试题版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_学生详解版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "source_sha256": "13e97818ebae702cbbd9056155cfa40964f3bf278101cd00228c3614882fd51d",
+    "raw_tool_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_学生详解版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_教师备课版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "source_sha256": "1a53d3724ea9c5e66199808e616aec02069bcba7a4f96a93e9418cf197d40378",
+    "raw_tool_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第35届/整理版/latex/第35届_教师备课版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "exam": 37,
+  "status": "已完成",
+  "stage": "三版交付验收完成",
+  "completed_at": "2026-10-13T08:59:27+08:00",
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 24,
+  "physics_checks": 48,
+  "pdfs": [
+    {
+      "name": "第37届_学生详解版.pdf",
+      "pages": 68,
+      "body_pages": 67,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "3562f79f0fe2a75d2b021362560c9871af317c5dc87b84f85b18d38adc3fad51",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        17,
+        26,
+        32,
+        41,
+        50,
+        59
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第37届_教师备课版.pdf",
+      "pages": 84,
+      "body_pages": 83,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "9057cdacf6c8fe7ff4209073fc71475d80b2383ab6cac9e3cfb8459d65221420",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        21,
+        32,
+        40,
+        51,
+        62,
+        73
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第37届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "68d7b1991db51d886dcadfdf5d5485bb213a2aaf7467162107d35788143bed10",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "55704d6d5d40d0fcb1c565252d6be520d10cbd9f6496cfc7815786cb6c8a367e"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "666f5f0a335f6b5cb1ed6f22078666b260225531793a278ff801abc5c1cde3ac"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "8a9763feb497f8d3b7f29fd117b3201d9e2329bc58db2f6e55391dabf26ede74"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "a70fd3959e207f9528ae7b7726bfe60e3facfa9e98220768504186dc6a5df580"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "64cbd5e381d7ce72fbfa171fbffeb8248af91b849d733646a21b63836048b510"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "350ecfcc1cad82a4d83c41da44e7b20ed08b288829d47b546c15c0fd4c3943c4"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "56e70c96eeb39978e7a76c8b4d538476dedb62ae48b691200950e397bcef7bf8"
+    },
+    {
+      "question": 8,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "78139bbc8d0bec2834083f3dab7522b64d2ce846594353e6dc3b45917baecfd3"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第37届/第37届复赛试题及参考答案.pdf",
+      "pages": 21,
+      "sha256": "6854aead0d0fec608a0d3e96c9f05a9f03e4697c92c47eddfe85264fa2504520"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": 36
+}

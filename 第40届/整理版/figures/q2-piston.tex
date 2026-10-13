@@ -1,0 +1,31 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=1]
+\draw[thick] (-3.4,0)--(3.4,0);
+\draw[very thick] (3,0) arc(0:180:3);
+\draw[dashed] (0,0)--(0,3);
+\draw[dashed] (0,0)--(70:3);
+\draw[thick] (70:2.82)--(70:3.18);
+\draw[<->] (0,0)--(145:3) node[midway,above,fill=white,inner sep=1pt] {$r$};
+\draw[arr] (0,1.0) arc(90:70:1);
+\node at (.3,1.25) {$\theta$};
+\node at (-1.45,2.1) {$n,\ T$};
+\node at (1.8,1.25) {$n,\ T$};
+\node[above right] at (70:3.2) {活塞 $m$};
+\node at (-2.2,2.9) {$r(\pi/2+\theta)$};
+\node at (3.3,2.3) {$r(\pi/2-\theta)$};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

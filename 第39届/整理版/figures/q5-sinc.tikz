@@ -1,0 +1,7 @@
+\begin{tikzpicture}[xscale=.6,yscale=2.7]
+\draw[arr] (0,0)--(13,0) node[right] {$z=kL\omega/\alpha$};
+\draw[arr] (0,-.28)--(0,1.15) node[above] {$\sin z/z$};
+\draw[thick,blue,domain=.02:12.6,samples=200] plot(\x,{sin(\x r)/\x});
+\draw[dashed,red] (0,.13)--(12.6,.13) node[right] {$1/\ell$};
+\node at (6,-.7) {曲线高于水平线的区间对应下弹簧先断};
+\end{tikzpicture}

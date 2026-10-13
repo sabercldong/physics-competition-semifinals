@@ -1,0 +1,363 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=22mm,right=22mm,top=22mm,bottom=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx,xcolor,booktabs,longtable,array,calc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\usepackage{setspace,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setstretch{1.24}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.35em}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+\setcounter{secnumdepth}{-1}
+\ctexset{section={format=\Large\bfseries,beforeskip=1em,afterskip=.7em},
+subsection={format=\large\bfseries,beforeskip=.8em,afterskip=.4em},
+subsubsection={format=\normalsize\bfseries,beforeskip=.7em,afterskip=.3em}}
+\allowdisplaybreaks[2]
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick},
+dot/.style={circle,fill,inner sep=1.5pt}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\newsavebox{\diagrambox}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage}
+\setlength{\headheight}{16pt}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{27mm}
+\begin{center}
+{\LARGE\bfseries 第36届全国中学生物理竞赛\par}
+\vspace{8mm}
+{\LARGE\bfseries 复赛理论试题\par}
+\vspace{17mm}
+{\Large 试题版\par}
+\end{center}
+\vfill
+\end{titlepage}
+\setcounter{page}{1}
+本卷共7题，总分320分。
+
+\section{第 1 题　盛水杯的最佳高度与三脚凳载荷转移（40
+分）}\label{ux7b2c-1-ux9898-ux76dbux6c34ux676fux7684ux6700ux4f73ux9ad8ux5ea6ux4e0eux4e09ux811aux51f3ux8f7dux8377ux8f6cux79fb40-ux5206}
+
+旅行车上有一个半径为\(R\)的三脚圆凳，可视为刚性结构。三个相同凳脚的端点连线均水平，构成边长为\(a\)的等边三角形；凳子质心位于其轴上的\(G\)点。半径为\(r\)的圆筒形薄壁茶杯放在凳面上，杯底中心位于凳面中心\(O\)。茶杯质量为\(m\)，远小于凳子质量；杯底质量为\(m/5\)，杯壁和杯底各自质量均匀。杯高为\(H\)，杯底厚度相对于杯高可忽略。茶水密度为\(\rho\)，重力加速度为\(g\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.8]
+\draw[thick,fill=gray!8] (0,3) ellipse(2 and .55);
+\draw[very thick] (0,2.9)--(0,1.6)--(-1.9,.5);
+\draw[very thick] (0,1.6)--(1.6,.65); \draw[very thick] (0,1.6)--(.6,-.25);
+\draw[dashed] (-1.9,.5)--(1.6,.65)--(.6,-.25)--cycle;
+\node[left] at (-1.9,.5) {$A$};\node[right] at (1.6,.65) {$B$};
+\node[below] at (.6,-.25) {$C$};\node[below] at (-.7,.08) {$a$};
+\fill (0,2.2) circle(2pt) node[right] {$G$};
+\fill (0,3) circle(2pt) node[above right] {$O$};
+\draw[thick,fill=blue!8] (-2,3.05)--(-2,3.8) arc(180:0:.45 and .12)--(-1.1,3.05);
+\draw[thick] (-1.55,3.05) ellipse(.45 and .12);
+\draw[arr,red] (0,3)--(-1.95,3) node[midway,below] {$OD$};
+\node[left] at (-2,3) {$D$};\node at (-.8,4.25) {杯心移动$R-r$};
+\begin{scope}[shift={(6,1.7)}]
+\draw[thick] (-1.6,-.92)--(1.6,-.92)--(0,1.85)--cycle;
+\node[left] at (-1.6,-.92) {$A$};\node[right] at (1.6,-.92) {$C$};\node[above] at (0,1.85) {$B$};
+\draw[dashed] (0,1.85)--(0,-1.2); \fill (0,0) circle(2pt) node[right] {$O'$};
+\draw[arr,red] (0,0)--(0,-.65);
+\node[right] at (.15,-.55) {移向$AC$};
+\node at (0,-1.65) {水平投影：$OD\perp AC$};
+\end{scope}
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图1a　三脚圆凳、杯心移动方向与支撑三角形\par}\endgroup\end{minipage}\end{center}
+
+（1）为了使茶杯所盛茶水尽可能多并保持足够稳定，杯中茶水的最佳高度是多少？
+
+（2）茶杯底面边缘缓慢滑移到与圆凳边缘内切于\(D\)点时静止，凳面边有小凸缘，防止杯子滑出；凳面和凸缘各自质量均匀。已知\(OD\perp AC\)，求此时车内底板对各凳脚的支持力相对于滑移前的改变。
+
+\clearpage
+
+\section{第 2 题　平板车碰撞、轮地滑动与滚动停止（50
+分）}\label{ux7b2c-2-ux9898-ux5e73ux677fux8f66ux78b0ux649eux8f6eux5730ux6ed1ux52a8ux4e0eux6edaux52a8ux505cux6b6250-ux5206}
+
+农用平板车的简化模型如图2a。两车轮半径均为\(r\)，忽略内外半径差，质量均为\(m\)，辐条质量可忽略；两轮可绕过轮心的光滑细车轴转动，轴质量忽略。车平板长\(l\)、质量\(2m\)，质心恰在车轴上。两车把手各可视为细直杆，长均为\(2l\)、质量均为\(m\)，前端与平板对齐。平板、把手和车轴固连，各自质量均匀。重力加速度为\(g\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.8]
+\draw[thick] (-4,-.2)--(2.2,-.2);
+\draw[thick] (0,.8) circle(1);
+\draw[thick,gray] (.55,1.1) circle(1);
+\draw[very thick] (-3.3,-.05)--(1.1,1.12);
+\draw[very thick] (-2.75,.25)--(1.65,1.42);
+\draw[thick,fill=gray!15] (-1.1,.535)--(1.1,1.12)--(1.65,1.42)--(-.55,.835)--cycle;
+\draw[very thick] (0,.8)--(.55,1.1);
+\fill (0,.8) circle(2pt) node[above left] {$O$};
+\node[left] at(-3.3,-.05) {把手末端};
+\node[right] at(1.65,1.42) {前端};
+\node at (-1.55,1.1) {$m$};\node[right] at(2.2,2.15) {平板$2m$};
+\draw[arr,gray] (2.2,2.15)--(.8,1.18);
+\draw[<->] (-3.35,2.0)--(1.05,3.17) node[midway,above] {$2l$};
+\draw[<->] (-1.1,2.2)--(1.1,2.785) node[midway,below] {$l$};
+\draw[<->] (0,.8)--(.8,.2) node[midway,right] {$r$};
+\node at (-.1,-.75) {两轮各$m$，细轮缘；轴质量忽略};
+\begin{scope}[shift={(6.7,.8)}]
+\draw[thick] (-3,-1)--(1.6,-1);
+\draw[thick] (0,0) circle(1);
+\draw[very thick] (-3,-1)--(1,.333);
+\draw[dashed] (-3,0)--(1.3,0);
+\fill (-.5,-.167) circle(2pt) node[below right] {$C$};
+\fill (0,0) circle(2pt) node[above] {$O$};
+\node[below] at(-3,-1) {$A$};
+\draw[<->] (-3.4,-1)--(-3.4,0) node[midway,left] {$r$};
+\draw[<->] (-2.8,-1.5)--(.2,-.5) node[midway,below] {$3l/2$};
+\node at (.85,.02) {$\theta$};
+\node at (-1,-2.15) {$CO=l/4$，$CA=5l/4$};
+\end{scope}
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图2a　平板车的空间示意与侧视几何\par}\endgroup\end{minipage}\end{center}
+
+（1）车轮被装置卡住，不能前后移动，但仍可绕车轴转动。把手提至水平位置由静止释放，求把手与水平地面碰撞前瞬间的转动角速度。
+
+（2）在碰撞前瞬间立即撤去卡轮装置，同时将车轮和轴锁死，碰后瞬间立即解锁。碰撞时间较短但不为零，碰后把手末端在竖直方向不反弹。把手与地面、车轮与地面的滑动摩擦系数均为\(\mu\)，最大静摩擦力等于滑动摩擦力。求车轮从开始运动到静止的过程中车轴移动的距离。
+
+\clearpage
+
+\section{第 3 题　恒流电磁轨道炮的磁力、电压与能量（40
+分）}\label{ux7b2c-3-ux9898-ux6052ux6d41ux7535ux78c1ux8f68ux9053ux70aeux7684ux78c1ux529bux7535ux538bux4e0eux80fdux91cf40-ux5206}
+
+电磁轨道炮的两圆柱形固定导轨平行，轴线所在平面与水平面夹角为\(\theta\)。两轨长均为\(L\)、半径均为\(b\)，每单位长度电阻均为\(\lambda\)，两轨最近距离为\(d\)，且\(d\)很小。质量为\(m\)的金属弹丸可视为薄片，直径为\(d\)、电阻为\(R\)，置于两轨之间并保持良好接触。两轨下端横截面共面，通过与导轨同轴且较长的硬导线接电流为\(I\)的理想恒流源，忽略源内部能量损耗。忽略空气阻力和摩擦，真空磁导率为\(\mu_0\)，重力加速度为\(g\)。弹丸从导轨下端静止出发，被磁场加速直至射出。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.95]
+\begin{scope}[rotate=18]
+\draw[thick,fill=gray!12] (0,0) rectangle(6,.22);
+\draw[thick,fill=gray!12] (0,1.15) rectangle(6,1.37);
+\draw[thick,fill=blue!15] (3.2,.22) rectangle(3.42,1.15);
+\node[above] at(3.7,2.9) {弹丸$m,R$};
+\draw[arr,gray] (3.7,2.65)--(3.31,1.1);
+\draw[arr,red] (.2,.1)--(1.8,.1) node[midway,below] {$I$};
+\draw[arr,red] (1.8,1.26)--(.2,1.26);
+\draw[arr,red] (3.31,.35)--(3.31,1.05);
+\draw[thick] (0,.1)--(-.7,.1)--(-.7,1.26)--(0,1.26);
+\node[left] at(-.7,.7) {恒流源};
+\draw[arr,blue] (3.6,.65)--(4.8,.65) node[right] {$v$};
+\draw[<->] (0,1.95)--(6,1.95) node[midway,above] {$L$};
+\draw[<->] (2.7,.22)--(2.7,1.15) node[midway,left] {$d$};
+\draw[<->] (6.4,0)--(6.4,.22) node[midway,right] {$2b$};
+\end{scope}
+\draw[dashed] (0,0)--(5,0); \node at(1.3,.18) {$\theta$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图3a　斜置双导轨、电流闭合路径及弹丸位置\par}\endgroup\end{minipage}\end{center}
+
+（1）求弹丸加速过程中受到的磁场作用力。
+
+（2）求弹丸的出射速度。
+
+（3）求加速过程中任意时刻以及出射时刻恒流源两端的电压。
+
+（4）求整个加速过程中恒流源做的功。
+
+（5）当\(\theta=0^\circ\)且导轨和弹丸电阻均可忽略时，求出射动能与恒流源做功之比。
+
+\clearpage
+
+\section{第 4 题　微孔竹板与亥姆霍兹共振器（40
+分）}\label{ux7b2c-4-ux9898-ux5faeux5b54ux7af9ux677fux4e0eux4ea5ux59c6ux970dux5179ux5171ux632fux566840-ux5206}
+
+2016年9月杭州G20峰会会议厅的装饰展示了节能环保理念与浙江竹文化。部分墙面使用微孔竹板，既作装饰，也实现声波共振吸收。竹板上有面积不同、周期排列的长方形微孔；声波进入微孔后使孔内空气柱振动。单个微孔与板后空气层可简化为图4a中的亥姆霍兹共振器。孔深均为\(l\)，单孔对应的空气腔体体积均为\(V_0\)，孔横截面积为\(S\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.9]
+\fill[brown!18] (-3,0) rectangle(0,3);
+\foreach \x in {-2.6,-2,-1.4,-.8,-.2}{
+\foreach \y in {.4,.9,1.4,1.9,2.4}{
+\fill[brown!75!black] (\x-.04,\y-.16) rectangle(\x+.04,\y+.16);}}
+\node at(-1.5,-.45) {长方形微孔阵列};
+\draw[thick,fill=gray!10] (1,0) rectangle(4.6,.35);
+\draw[thick] (1,.35)--(1,3)--(4.6,3)--(4.6,.35);
+\foreach \x in {1.2,1.8,2.4,3,3.6,4.2}{\draw[thick,fill=gray!30] (\x,2.5) rectangle(\x+.35,3);}
+\node at(2.8,1.25) {板后空气层};
+\draw[arr] (4.7,2.75)--(5.7,2.75);
+\draw[thick] (6.1,3.3)--(6.1,2.2)--(5.7,2.2)--(5.7,0)--(7.1,0)--(7.1,2.2)--(6.7,2.2)--(6.7,3.3);
+\draw[dashed] (6.1,3.3)--(6.7,3.3);
+\node at(6.4,1) {$V_0$};
+\draw[<->] (7.3,2.2)--(7.3,3.3) node[midway,right] {$l$};
+\draw[<->] (6.1,3.8)--(6.7,3.8) node[midway,above] {$S$};
+\node at(6.4,-.45) {单孔等效模型};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图4a　微孔排列、板后空气腔与单孔等效共振器\par}\endgroup\end{minipage}\end{center}
+
+声波在空气中传播可视为绝热过程，声速\(v_s\)、空气密度\(\rho\)及体积弹性模量\(\kappa\)满足
+
+\[
+v_s=\sqrt{\frac{\kappa}{\rho}},
+\qquad
+\kappa=-\frac{\Delta p}{\Delta V/V}
+=-V\frac{\Delta p}{\Delta V}.
+\]
+
+标准状态为\(T=273\,\mathrm K\)、\(p=1.01\times10^5\,\mathrm{Pa}\)。空气可视为理想气体，摩尔质量\(M_{\rm mol}=29.0\,\mathrm{g/mol}\)、热容比\(\gamma=7/5\)，气体常量\(R_g=8.31\,\mathrm{J/(K\cdot mol)}\)。
+
+（1）求标准状态下空气密度和声速\(v_s\)。
+
+（2）求共振器吸收声波的频率，用\(v_s,S,l,V_0\)表示。
+
+（3）吸收\(120\,\mathrm{Hz}\)和\(200\,\mathrm{Hz}\)声波的两种微孔，横截面积之比应是多少？
+
+\clearpage
+
+\section{第 5 题　微球透镜的聚焦与阶跃光纤耦合（40
+分）}\label{ux7b2c-5-ux9898-ux5faeux7403ux900fux955cux7684ux805aux7126ux4e0eux9636ux8dc3ux5149ux7ea4ux8026ux540840-ux5206}
+
+图5a为基于全内反射的折射率阶跃光纤及耦合光路。内芯直径为\(50\,\mu\mathrm m\)，折射率\(n_1=1.46\)；玻璃包层外径为\(125\,\mu\mathrm m\)，折射率\(n_2=1.45\)。氦氖激光器输出圆柱形平行光束，光纤前端放置微球透镜进行聚焦。球镜直径\(D=3.00\,\mathrm{mm}\)、折射率\(n=1.50\)。激光束轴通过球心，与光纤轴重合。空气折射率\(n_0=1.00\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=1.25]
+\draw[dashed] (-3.3,0)--(4.8,0);
+\draw[thick,fill=blue!4] (0,0) circle(1.5);
+\foreach \h in {.33,-.33}{
+\draw[arr,blue] (-3.2,\h)--(-1.464,\h);
+\draw[thick,blue] (-1.464,\h)--(1.496,{.33333*\h})--(2.25,0);
+}
+\draw[thick] (2.25,-.6) rectangle(4.6,.6);
+\draw[thick] (2.25,-.24)--(4.6,-.24); \draw[thick] (2.25,.24)--(4.6,.24);
+\node[fill=white,inner sep=1pt] at(3.7,0) {$n_1=1.46$};
+\node at(3.7,.43) {$n_2=1.45$};
+\node at(0,.65) {$n=1.50$};
+\fill (0,0) circle(1.5pt) node[below] {$C$};
+\node[below] at(1.5,0) {$O$};\node[below] at(2.25,-.65) {光纤端面};
+\draw[<->] (-1.5,1.95)--(1.5,1.95) node[midway,above] {$D$};
+\draw[<->] (-2.8,-.33)--(-2.8,.33) node[midway,left] {$d_b$};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图5a　平行光束经球镜后聚焦于光纤端面\par}\endgroup\end{minipage}\end{center}
+
+（1）为了使光线在光纤内长距离传输，光纤端面处最大入射角是多少？
+
+（2）透镜聚焦满足近轴条件，平行光束刚好聚焦于垂直光轴的光纤端面。球镜后表面中心顶点\(O\)与光纤端面的距离是多少？
+
+（3）为了使进入光纤的全部光束均能长距离传输，平行入射激光束的直径最大不能超过多少？
+
+\clearpage
+
+\section{\texorpdfstring{第 6
+题　\(\pi\)介子两体衰变与\(\mu\)子的地面存活概率（40
+分）}{第 6 题　\textbackslash pi介子两体衰变与\textbackslash mu子的地面存活概率（40 分）}}\label{ux7b2c-6-ux9898-piux4ecbux5b50ux4e24ux4f53ux8870ux53d8ux4e0emuux5b50ux7684ux5730ux9762ux5b58ux6d3bux6982ux738740-ux5206}
+
+宇宙射线中高速飞行的\(\pi\)介子会衰变为\(\mu\)子和\(\mu\)型反中微子：
+
+\[
+\pi\longrightarrow\mu+\bar\nu_\mu.
+\]
+
+已知静止质量\(m_\pi=139.57061\,\mathrm{MeV}/c^2\)、\(m_\mu=105.65837\,\mathrm{MeV}/c^2\)，反中微子静止质量近似为零。实验室测得\(\pi\)介子速率为\(v=0.965c\)，取\(c=3.00\times10^8\,\mathrm{m/s}\)。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}
+\node[draw,circle] (P) at(0,0) {$\pi$静止};
+\draw[arr,blue,very thick] (.9,0)--(3,0) node[right] {$\mu:\ E_\mu^*,\,p^*$};
+\draw[arr,red,very thick] (-.9,0)--(-3,0) node[left] {$\bar\nu_\mu:\ p^*c,\, -p^*$};
+\node at(0,1.5) {$S_*:\quad E_\mu^*+p^*c=m_\pi c^2$};
+\draw[arr] (-2,-1.5)--(2,-1.5) node[right] {$S_*$相对$S$以$v$运动};
+\node at(0,-2.25) {实验室能量由发射角决定};
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图6a　母粒子静止系的两体反向动量及实验室系变换\par}\endgroup\end{minipage}\end{center}
+
+（1）求衰变产生的\(\mu\)子的最大速率和最小速率。
+
+（2）这些\(\mu\)子从距地面\(10000\,\mathrm m\)的高空竖直向下飞行。静止\(\mu\)子的半衰期为\(T_{1/2}^{(0)}=1.523\,\mu\mathrm s\)，求地面观察者能够观测到\(\mu\)子的最大概率。
+
+\clearpage
+
+\section{第 7 题　雷电云、电离层光环与高空氦气球（70
+分）}\label{ux7b2c-7-ux9898-ux96f7ux7535ux4e91ux7535ux79bbux5c42ux5149ux73afux4e0eux9ad8ux7a7aux6c26ux6c14ux740370-ux5206}
+
+闪电是壮丽的自然现象，近年来还观测到闪电导致的瞬间发光和伽玛射线暴等现象。雷电云通常离地\(6\)---\(12\,\mathrm{km}\)，多数闪电发生在云内，少数到达地面。云内冰状颗粒碰撞后，小冰晶带正电，随气流上浮到云上端；较大颗粒带负电，下坠到云底。云内闪电中和正负电荷，云地闪电把负电荷释放到地面。
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\begingroup\sbox{\diagrambox}{\small
+\begin{tikzpicture}[scale=.85]
+\draw[thick,fill=gray!8] (-2,3.5) ellipse(2 and .45);
+\draw[thick] (-4,3.5)--(-4,2.1) arc(180:360:2 and .45)--(0,3.5);
+\draw[dashed] (-4,2.1) arc(180:0:2 and .45);
+\foreach \x in {-3.4,-2.7,-2,-1.3,-.6}{\node[red] at(\x,3.5) {$+$};\node[blue] at(\x,2.1) {$-$};}
+\draw[arr] (-2,3.15)--(-2,2.45) node[right] {$E$};
+\draw[<->] (.7,2.1)--(.7,3.5) node[midway,right] {$d_c=1\ \mathrm{km}$};
+\draw[<->] (-2,4.25)--(0,4.25) node[midway,above] {$R_c=2.5\ \mathrm{km}$};
+\draw[thick] (-5,0)--(1.8,0) node[right] {导体地面};
+\draw[dashed] (-2,2.1)--(-2,0);
+\draw[<->] (-4.7,0)--(-4.7,2.1) node[midway,left] {$h_c=6\ \mathrm{km}$};
+\draw[blue,thick] (-2,1.8)--(-2.2,1.5)--(-1.85,1.15)--(-2.15,.8)--(-2,0);
+\end{tikzpicture}
+}
+\ifdim\wd\diagrambox>.88\linewidth
+\sbox{\diagrambox}{\resizebox{.88\linewidth}{!}{\usebox{\diagrambox}}}\fi
+\ifdim\ht\diagrambox>.20\textheight
+\resizebox{!}{.20\textheight}{\usebox{\diagrambox}}
+\else\usebox{\diagrambox}\fi
+\par\smallskip{\small 图7a　雷电云电荷层及各模型的高度与半径\par}\endgroup\end{minipage}\end{center}
+
+（1）高空气球电场仪测得某圆柱形云内空域的电场均匀，大小为\(0.15\,\mathrm{MV/m}\)。该区域轴线垂直地面，半径\(2.5\,\mathrm{km}\)、高度\(1.0\,\mathrm{km}\)。求上下端电势差、正电荷总量及携带的总电能。取\(\varepsilon_0=8.85\times10^{-12}\,\mathrm{F/m}\)。
+
+（2）起电过程中云上下端电荷随时间指数增加。当地表电场大于\(1.0\,\mathrm{kV/m}\)时会发生云地闪电，地表场很少超过\(10\,\mathrm{kV/m}\)。假设（1）中的雷电云从高空缓慢整体下移，直到负电荷层离地\(6.0\,\mathrm{km}\)时稳定。地面是良导体，估算云正下方地表电场。
+
+（3）云底带负电冰晶尖端放电，先形成厘米量级直径的向下细路径，并使周围空气电离，形成以细路径为轴的粗圆柱形带电体，最终接近地面成为云地闪电通道。通道竖直、负电荷总量为\(2.5\,\mathrm C\)，核心细路径电量相对很小；核心以外内部电场大小相等。通道长度远大于直径，通道直径远大于核心直径，连通云地前的极短时间内电荷分布近似稳定。大气击穿场为\(3.0\,\mathrm{MV/m}\)。估算通道直径并导出核心以外电荷密度的径向分布。
+
+（4）连通后云底及通道负电荷迅速流向地面，温度升至数万摄氏度，空气电离形成等离子体、强光及雷声。电流约\(10\,\mu\mathrm s\)内达到数万安培，通道底部向四周发出约\(30\,\mathrm{kHz}\)强无线电波。低于\(20\,\mathrm{MHz}\)电离层截止频率的电磁波不能进入电离层内部，它会加热离地约\(80\,\mathrm{km}\)的电离层底部；电流超过阈值后，底部瞬间发光，形成以波源正上方位置为中心的光环，最大直径可达数百公里。画出光环产生及扩展的物理过程图，求半径\(100\,\mathrm{km}\)时的径向扩张速度。
+
+（5）球形闪电的微波空泡模型把球闪视为球形等离子体微波空腔。较弱微波不能形成空泡时可向太空辐射并穿透电离层，被卫星观测到；电离层色散会干扰信号，携带探测器的高空气球可在雷电云上方观测。要在离地\(12\,\mathrm{km}\)悬浮载荷为\(50\,\mathrm{kg}\)的氦气球，载荷包含气球材料及探测器，求体积。12
+km以下空气温度每升高1 km下降5.0
+K；地面\(T_0=290\,\mathrm K\)、\(p_0=1.01\times10^5\,\mathrm{Pa}\)，空气摩尔质量\(M_a=29\,\mathrm{g/mol}\)。12
+km处气球内氦气密度为\(\rho_{\rm He}=0.18\,\mathrm{kg/m^3}\)，\(g=9.8\,\mathrm{m/s^2}\)、\(R_g=8.31\,\mathrm{J/(K\cdot mol)}\)。
+
+\end{document}

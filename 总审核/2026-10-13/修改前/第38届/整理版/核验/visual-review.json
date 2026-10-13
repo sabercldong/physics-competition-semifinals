@@ -1,0 +1,332 @@
+{
+  "all_passed": true,
+  "reviewed_at": "2026-10-13T07:59:18+08:00",
+  "total_pdf_pages_reviewed": 146,
+  "figure_count_reviewed": 22,
+  "method": "实际查看三版全部页面的六页总览；光学标准式、圆筒场图和径向动能图、车辆载荷长公式、电机能量与百分号变式另作单页放大。全部22图已查看，修正挤叠标注后复读；最后光学O点标注另查看最终单图。",
+  "pdfs": [
+    {
+      "name": "第38届_学生详解版.pdf",
+      "sha256": "e7b8d59748885e0548a75114beb238d85a9bb8b60e0997f4ccba1583ef3cf2b7",
+      "pages": 62,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "contact_sheet_starts": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61
+      ]
+    },
+    {
+      "name": "第38届_教师备课版.pdf",
+      "sha256": "fe238c0900f6c9587c376ac4ddf5be901f66a8aad0a248ae44d66ed4a22e31b3",
+      "pages": 75,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "contact_sheet_starts": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73
+      ]
+    },
+    {
+      "name": "第38届_试题版.pdf",
+      "sha256": "15831128112029f3944e0c45a0c277fbe9b0df14e8d38634411705ef9ffeb94c",
+      "pages": 9,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "contact_sheet_starts": [
+        1,
+        7
+      ]
+    }
+  ],
+  "single_page_reviews": {
+    "试题版": [
+      2
+    ],
+    "学生详解版": [
+      5,
+      39,
+      49,
+      61
+    ],
+    "教师备课版": [
+      55,
+      74
+    ]
+  },
+  "figure_contact_sheet_starts": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21
+  ],
+  "final_figure_single_reviews": [
+    "q1-pair"
+  ],
+  "figures": [
+    {
+      "name": "q1-branch.png",
+      "sha256": "7ad0200d0e69d7fd9e358ac1cb6daab9316ae83b6770deeaf79af59f570a8180"
+    },
+    {
+      "name": "q1-lens.png",
+      "sha256": "3cb3d851b24095312d747897338418b56ccfcbb4098b279c34aff077f8f17f2c"
+    },
+    {
+      "name": "q1-pair.png",
+      "sha256": "a81de12c7c85ca51798ee4e52a1b928f208f61d8b03f887280dac38ffeaae035"
+    },
+    {
+      "name": "q2-pv.png",
+      "sha256": "531a51e5ea178ac6568eb4dd5539d30a812c43eae15e63c688d1b378ca9ede71"
+    },
+    {
+      "name": "q2-temperature.png",
+      "sha256": "25abe79abcf54ee18496d47291b9f5928d1be10e52c895ae9d54203aec95009a"
+    },
+    {
+      "name": "q2-tube.png",
+      "sha256": "bb9ef4262b30cce932653362ca6a548c961d103a9f2c2d3f0f66fd64c80844be"
+    },
+    {
+      "name": "q3-bounces.png",
+      "sha256": "7528cd736d2428a7680420cf6223a04d5ba5bff67f6c6ed240618e5d67ca2b0b"
+    },
+    {
+      "name": "q3-contact.png",
+      "sha256": "830bcae1c1d055ccdaac63ddd49e25a0ddf490ccd108d581bb38b0d3aea6fc37"
+    },
+    {
+      "name": "q4-angle.png",
+      "sha256": "b6f59adcb58bd440b5bd5c7e62c39ae10c497013a4c5b64aacc7dd8a1b6ca738"
+    },
+    {
+      "name": "q4-dipoles.png",
+      "sha256": "dc0caabd5fd6db94d808d90c73049eb482283a10fa76083cb8f6cec5940bb623"
+    },
+    {
+      "name": "q4-height.png",
+      "sha256": "5756807ed169dffd077ccbd1a900ade1abd26004333ade08c4b39b90d94145ff"
+    },
+    {
+      "name": "q5-profiles.png",
+      "sha256": "eba3e4008054341131c3709d86dbf8ad3c20946bcaecdd5831675df17fc36835"
+    },
+    {
+      "name": "q5-slower.png",
+      "sha256": "b867eb00cb0edcff829e7814c52b0708fdd71993941c740c97662705b4918601"
+    },
+    {
+      "name": "q6-cylinders.png",
+      "sha256": "0eccb1371eaa63898402063528b68eb222c8881da966d5b07f4319aaf38256d4"
+    },
+    {
+      "name": "q6-fields.png",
+      "sha256": "da3a1a83af24405cac433124812f014b166ea64f704fe5e5e2cdc3259bc8be78"
+    },
+    {
+      "name": "q6-induction.png",
+      "sha256": "ac37d18348789a8535c5f39b1931bdb284f73282b65d2f30b3cef4cf8e31dbf0"
+    },
+    {
+      "name": "q6-radial.png",
+      "sha256": "3191e6601364d433b3b11ac4055ba4eb9531f118b7f92e2681e9c090611381c9"
+    },
+    {
+      "name": "q7-car.png",
+      "sha256": "652805bf511e30d92277459cf7f8109bdd55c5e919f870bf358f1fe659f313ac"
+    },
+    {
+      "name": "q7-forces.png",
+      "sha256": "5f61dbc2680fd0a234e2e1af2788987827fd8bf01ad1a8587f80546f7933dee2"
+    },
+    {
+      "name": "q8-curves.png",
+      "sha256": "b013f45d2c7d1368fef392687a5c4f6946bfdfc1e403f3783a7bc62b6fd29c24"
+    },
+    {
+      "name": "q8-motor.png",
+      "sha256": "69882ea0d1b966d8103d94ba33f53c569da090e057111700b88b50cf49f2e7b0"
+    },
+    {
+      "name": "q8-speed.png",
+      "sha256": "c1867a72f183cf6fe2dc7758fb3862aba8c6cf313337605da4a05550f5f9ab8a"
+    }
+  ],
+  "findings": [
+    "未见缺字、公式裁切、页眉或图文遮挡。",
+    "第5题末尾时间、散射次数与动量核对已保持完整段落，题末自然留白保留。",
+    "第7题完整载荷与参考简化约定均有清楚标记，长公式正常换行。",
+    "第8题两处百分号已转义，教师版第74页放大确认显示25%和34.7%。",
+    "字号、行距和页边距固定，无空段补页。"
+  ],
+  "unresolved_visual_issues": []
+}

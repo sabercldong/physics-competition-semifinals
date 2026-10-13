@@ -1,0 +1,166 @@
+{
+  "exam": 38,
+  "status": "已完成",
+  "stage": "三版交付验收完成",
+  "completed_at": "2026-10-13T07:59:18+08:00",
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 22,
+  "physics_checks": 48,
+  "pdfs": [
+    {
+      "name": "第38届_学生详解版.pdf",
+      "pages": 62,
+      "body_pages": 61,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "e7b8d59748885e0548a75114beb238d85a9bb8b60e0997f4ccba1583ef3cf2b7",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        46,
+        54
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_教师备课版.pdf",
+      "pages": 75,
+      "body_pages": 74,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "fe238c0900f6c9587c376ac4ddf5be901f66a8aad0a248ae44d66ed4a22e31b3",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        10,
+        19,
+        28,
+        37,
+        45,
+        56,
+        65
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第38届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "15831128112029f3944e0c45a0c277fbe9b0df14e8d38634411705ef9ffeb94c",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "a6f82932b5192259be8f2b6b35043a2ccb7c1ba513a8877b844008aefb77cb61"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "700661fa2d181af86bbe28220cd4ba192dea77b720b0877c074be5ad063d29d0"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "84afb8423c3ad6267551cda2db3c7d5c9cf7eea1422331a0ca49bf262c6a8fcb"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "81c4136924c1a94b33c9fdd0d29793cf066b404751d8fa5959bd9840b6ce4c2c"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "93d2a2168776f73919f27c8298468fefe50cdb13296f3acaaef7e5c2805539a6"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "6ec46e230309551fbdd4c4163442a6ad9ab5b6d8d292569ffd5ece7e66bb59b2"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "13aa6b84d5e3023a60289370abc9d7ff3efc4c34069ad7cfbbecbf4da93791f0"
+    },
+    {
+      "question": 8,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "10830c0c353d9736efbff18fde7dcf3ce66f14827a811df3b41237bd36b54919"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/第38届复赛试题及参考答案.pdf",
+      "pages": 20,
+      "sha256": "172bc253deaa2ac91b4be83c0b6e8bd82fb40c916df80593c0b78425441aeb0a"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": 37
+}

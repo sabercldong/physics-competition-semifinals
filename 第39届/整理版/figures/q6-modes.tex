@@ -1,0 +1,18 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=2.5,yscale=.9]
+\draw[arr] (-1.5,0)--(1.6,0) node[right] {$x/\lambda$};
+\draw[arr] (0,-1.8)--(0,2.8);
+\draw[thick,blue,domain=-1.2:1.2,samples=70] plot(\x,{(exp(\x)+exp(-\x))/2});
+\draw[thick,red,domain=-1.2:1.2,samples=70] plot(\x,{(exp(\x)-exp(-\x))/2});
+\node[blue] at (-1.1,2.8) {偶模$\cosh$};
+\node[red] at (1.1,-1.7) {奇模$\sinh$};
+\node at (.1,-2.6) {表面电荷之和决定偶模，之差决定奇模};
+\end{tikzpicture}
+
+\end{document}

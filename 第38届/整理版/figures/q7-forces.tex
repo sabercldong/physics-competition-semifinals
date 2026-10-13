@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.85]
+\draw[thick] (0,1.4) rectangle(6,2.1);
+\fill (3,1.75) circle(1.5pt); \node[above] at (3,2.2) {车身质心};
+\draw[arr] (3,1.75)--(3,.1) node[below] {$Mg$};
+\draw[arr] (.7,.3)--(.7,1.4) node[above] {$F_{y,\text{后}}$};
+\draw[arr] (5.3,.3)--(5.3,1.4) node[above] {$F_{y,\text{前}}$};
+\draw[arr] (.7,1.4)--(2,1.4); \node[below] at (1.4,1.2) {$F_x$};
+\draw[arr,red] (5.5,2.75) arc(45:145:.65);
+\node[red] at (4.7,3.5) {驱动反作用$+\tau_{\text{轮}}$};
+\node at (3,-.7) {参考约定省略红色力矩；完整车身受力保留它};
+\end{tikzpicture}
+
+\end{document}

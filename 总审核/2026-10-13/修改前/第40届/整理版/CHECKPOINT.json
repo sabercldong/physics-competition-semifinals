@@ -1,0 +1,106 @@
+{
+  "status": "已完成",
+  "stage": "第40届交付验收完成",
+  "completed_at": "2026-10-12T13:21:59+08:00",
+  "exam": 40,
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 18,
+  "pdfs": [
+    {
+      "name": "第40届_学生详解版.pdf",
+      "pages": 57,
+      "body_pages": 56,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "3d6720c8348a6453fd6ae666578faae4b5427f6f7a2f139ac0561da42fd8148f",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        8,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_教师备课版.pdf",
+      "pages": 72,
+      "body_pages": 71,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "fb30724567430595d5de049a54b0e31be80e9bce7680b5dac057a88c4ebeb428",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        21,
+        30,
+        39,
+        48,
+        56,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "9bcedd5200597f39b215c3fd80eecdb6c25a0715041c737318ceee5282602985",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/第40届复赛试题及参考答案.pdf",
+      "pages": 23,
+      "sha256": "72a7e8ef8261539dd66b577d9eb6d4ae869ce910a7b8de3664d5eec7af2a70e2"
+    }
+  ],
+  "pending_items": []
+}

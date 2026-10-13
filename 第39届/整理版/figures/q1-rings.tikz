@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=.75]
+\foreach \rad in {.5,.85,1.13,1.4,1.67,1.9}{\draw (0,0) circle(\rad);}
+\fill (0,0) circle(2pt); \node at (0,-2.45) {初态：20条亮纹};
+\foreach \rad in {.6,1.02,1.4,1.74,1.9}{\draw (6,0) circle(\rad);}
+\fill (6,0) circle(2pt); \node at (6,-2.45) {末态：17条亮纹};
+\draw[arr] (2.25,0)--(3.75,0);
+\node[align=center] at (3,1.35) {$d$减小\\视场固定};
+\node at (3,-3.1) {示意只画部分环；计数使用中心到边缘的级次跨度};
+\end{tikzpicture}

@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "verified_at": "2026-10-13T11:55:03+08:00",
+  "results": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/latex/第39届_学生详解版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "cb52d73f6246cfc782fc7eefd84b4db7807341b7c779e18196c7f113b4a7acc7"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/latex/第39届_教师备课版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "0325ab83b2ae632958708ff68237cda37c86b88f21e07f7e9be822311b2ec9b3"
+    },
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/整理版/latex/第39届_试题版.tex",
+      "kind": "success",
+      "message": "The current source compiled successfully with the desktop editor's compiler.",
+      "source_sha256": "f7297860efb9aa8b2573b0d43b1552cf007a855fc7d0c423173661e551910fe4"
+    }
+  ]
+}

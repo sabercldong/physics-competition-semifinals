@@ -1,0 +1,9 @@
+\begin{tikzpicture}[xscale=3,yscale=3]
+\draw[arr] (-1,1)--(1,1) node[right] {$y/y_*$};
+\draw[arr] (0,.82)--(0,1.22) node[above] {$F/F_0$};
+\draw[thick,blue,domain=-.85:.85,samples=80] plot(\x,{(3/(1-.06*\x)-1)*(1+.03*\x)/2});
+\draw[thick,red,domain=-.85:.85,samples=80] plot(\x,{(3/(1-.06*\x)^1.4-1)*(1+.03*\x)/2});
+\node[blue] at (-.65,1.08) {等温};
+\node[red] at (.6,1.2) {绝热更陡};
+\node at (0,.62) {$dF/dy=A_e\,dp/dy+\beta(p-p_0)>0$};
+\end{tikzpicture}

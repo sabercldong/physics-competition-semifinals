@@ -1,0 +1,17 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](-2.5,0)--(2.6,0)node[right]{$f$};\draw[->](0,0)--(0,2.4)node[above]{磁通相关项};
+\draw[blue,thick]plot[domain=-.5:.5,samples=80]({4*\x},{6*\x*\x});
+\draw[red,thick]plot[domain=-.5:0,samples=40]({4*\x},{6*(\x+.5)^2});
+\draw[red,thick]plot[domain=0:.5,samples=40]({4*\x},{6*(\x-.5)^2});
+\node[below]at(-2,0){$-1/2$};\node[below]at(2,0){$1/2$};\node[below left]at(0,0){$0$};
+\node[blue,right]at(2.2,2){奇数：$f^2$};\node[red,right]at(2.2,1.4){偶数：$(|f|-1/2)^2$};
+\node[below]at(0,-.6){仅绘磁通相关项，纵轴单位为 $E_R$};
+\end{tikzpicture}
+
+\end{document}

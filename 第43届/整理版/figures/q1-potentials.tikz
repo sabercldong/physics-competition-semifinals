@@ -1,0 +1,13 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[dot,label=above:{$A:\ V_0$}] (A) at (0,3) {};
+\node[dot,label=left:{$C:\ 2V_0/3$}] (C) at (-2,2) {};
+\node[dot,label=right:{$D:\ V_0/3$}] (D) at (2,1) {};
+\node[dot,label=below:{$B:\ 0$}] (B) at (0,0) {};
+\draw[arr] (A)--node[fill=white,above left] {$16/27$}(C);
+\draw[arr] (A)--node[fill=white,above right] {$8/27$}(D);
+\draw[arr] (C)--node[fill=white,below left] {$8/27$}(B);
+\draw[arr] (D)--node[fill=white,below right] {$16/27$}(B);
+\draw[arr] (C)--node[fill=white,above] {$8/27$}(D);
+\draw[arr,dashed] (A)--node[fill=white,right,pos=.28] {$1/9$}(B);
+\node at (0,-.9) {电流标签的单位：$\kappa V_0^3$};
+\end{tikzpicture}

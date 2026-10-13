@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=.85]
+\fill[blue!10] (0,0) circle(1.5); \draw[thick] (0,0) circle(1.5);
+\draw[thick,blue] (.8,0) ellipse(2.3 and 2.156);
+\fill (0,0) circle(2pt) node[below] {$O$};
+\fill (3.1,0) circle(2pt) node[right] {$P:r_0=R+h$};
+\draw[arr,red] (3.1,0)--(3.1,1.4) node[right] {$v_0$};
+\draw[dashed] (0,0)--(3.1,0); \draw[arr] (0,0)--(-1.5,0) node[midway,above] {$R$};
+\node[left] at(-1.7,0) {$r_{\rm p}$};
+\node at(.8,-2.65) {临界椭圆与地表相切；焦点在地心};
+\end{tikzpicture}

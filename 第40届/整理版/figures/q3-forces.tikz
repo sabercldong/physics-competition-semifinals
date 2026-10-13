@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=1.15]
+\draw[thick] (-2,-1)--(2,1);
+\draw[thick] (-.2907,.5814) circle(.65);
+\coordinate (C) at (-.2907,.5814);
+\draw[arr] (C)--++(0,-1.6) node[right] {$mg$};
+\draw[arr] (C)--++(-1.7,0) node[left] {$ma_0$};
+\draw[arr] (C)--++(-.65,1.3) node[above] {$N_1$};
+\draw[arr] (0,0)--++(1.1,.55) node[above right] {$f$};
+\node at (.4,2.6) {楔块系的球受力};
+\node at (.3,-1.6) {惯性力水平向左；摩擦沿斜面向上};
+\end{tikzpicture}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_学生详解版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_学生详解版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "bec42bf5e686cb3d1bbec187a9a9ccaff727ed02e488166ed61b0808682d29b2",
+    "recorded_at": "2026-10-11T21:46:36+08:00"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_教师备课版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_教师备课版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "485bc0653e3f05f58274fec8562fa46e9dae5ef51650c5e8c831fda0df4f3d0e",
+    "recorded_at": "2026-10-11T21:46:36+08:00"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_试题版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第43届/整理版/latex/第43届_试题版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "3aedb0d271bbc3339956002e0dd7b34b2079c24e555ffc2cfcdb259b0b579ef8",
+    "recorded_at": "2026-10-11T21:46:36+08:00"
+  }
+]

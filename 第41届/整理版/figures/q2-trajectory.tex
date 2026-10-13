@@ -1,0 +1,20 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](0,0)--(3.8,0)node[right]{$x$};
+\draw[->](0,0)--(0,4)node[above]{$y$};
+\draw[blue,thick]plot[domain=0:.247436,samples=50]({15*(.433013*\x-.25*\x*\x)},{15*(.25*\x+.433013*\x*\x)});
+\draw[red,thick](1.3776,1.3255)--(2.72,3.34);
+\fill(1.3776,1.3255)circle(2pt)node[right=8pt]{纯滚起点};
+\draw[->,blue](0,0)--(.9,.52)node[right]{$\boldsymbol v_{Q0}$};
+\draw[->,red](1.3776,1.3255)--(1.99,2.245)node[right]{$\boldsymbol v_f$};
+\node[blue]at(2.5,.7){滑动段};
+\node[red]at(1.4,3.5){纯滚直线};
+\node[below]at(1.8,-.55){示例：纯滚入射，$\phi=30^\circ$};
+\end{tikzpicture}
+
+\end{document}

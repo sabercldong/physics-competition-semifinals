@@ -1,0 +1,104 @@
+{
+  "exam": 39,
+  "status": "已完成",
+  "stage": "三版交付验收完成",
+  "completed_at": "2026-10-12T15:53:54+08:00",
+  "questions": 7,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "total_points": 320,
+  "variants": 28,
+  "figures": 18,
+  "physics_checks": 36,
+  "pdfs": [
+    {
+      "name": "第39届_学生详解版.pdf",
+      "pages": 58,
+      "body_pages": 57,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "ba3e8639c33d17156fef308180ba286cab675a3e38463c6a79b6b57ae3da08c4",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        16,
+        24,
+        34,
+        42,
+        51
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第39届_教师备课版.pdf",
+      "pages": 73,
+      "body_pages": 72,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "35f939ff5428ce3bad5fe896172826388682150a10c56f59c4997145013664cd",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        20,
+        30,
+        42,
+        52,
+        63
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第39届_试题版.pdf",
+      "pages": 8,
+      "body_pages": 7,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "e648eca02f88e23f8376dd678fc4d81d5351dc353385f6fcd5b1a17d7a1e4372",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第39届/第39届复赛试题及参考答案.pdf",
+      "pages": 29,
+      "sha256": "4cc94a015a89062a5ccfd505b16ef6ab5ae045e886a2745a57c762a043524178"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": 38
+}

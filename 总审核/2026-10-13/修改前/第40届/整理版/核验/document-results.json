@@ -1,0 +1,216 @@
+{
+  "structure": [
+    {
+      "question": "question-01",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "ee2aca33d6d85beb6a36b46f835554031d7a4285aa9eae92003b875073671d59"
+    },
+    {
+      "question": "question-02",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "8e36d58433a8a302fe56b223ef3bc66a59f01804a39a159b5e425871bcf68d1a"
+    },
+    {
+      "question": "question-03",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "e07a7f6647d75daad9856588c57c2dd1653457d0e6374586ffff15065594de93"
+    },
+    {
+      "question": "question-04",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "1a7892a7fbcd5bb412c4564e4ad549e3b0d032542078e10a31cd4d3a7b89a7ea"
+    },
+    {
+      "question": "question-05",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "a91f0e258ac4cea60a11c4480be3dca2296ed3bfec8e816b0d0c5595c5c31835"
+    },
+    {
+      "question": "question-06",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "48a81cf7145592623b01b4693df525aff623a94db618c4504eabeb0189c3b97d"
+    },
+    {
+      "question": "question-07",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "328fcb2fa4978931571742c87cf7e8e065ec3bedbfee9af5211ea582dc3555e7"
+    },
+    {
+      "question": "question-08",
+      "modules": 9,
+      "variants": 4,
+      "sha256": "fa1ceff4e22c3ae7646be1b3dc55048263a24d77770eb2d30ac0c305327ddb38"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第40届_学生详解版.pdf",
+      "pages": 57,
+      "body_pages": 56,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "3d6720c8348a6453fd6ae666578faae4b5427f6f7a2f139ac0561da42fd8148f",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        8,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_教师备课版.pdf",
+      "pages": 72,
+      "body_pages": 71,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "fb30724567430595d5de049a54b0e31be80e9bce7680b5dac057a88c4ebeb428",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        21,
+        30,
+        39,
+        48,
+        56,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "9bcedd5200597f39b215c3fd80eecdb6c25a0715041c737318ceee5282602985",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "figures": [
+    {
+      "name": "q1-principal.tikz",
+      "sha256": "3b2b8aa10ccd630c3e42b645934c2214a6f3efad66354f93b5fa7f3a6f1290f3",
+      "vector_pdf_sha256": "60490510dead7bbe500bcd18e9f7ce34a96d613643fa07efee5d506267bdf094"
+    },
+    {
+      "name": "q1-two-lenses.tikz",
+      "sha256": "464bf039257656bede0a435db4eacb23149656d91a9f20c7a4798a22e54231e1",
+      "vector_pdf_sha256": "b40399c87a443e75d91b6657bc16fbb1716c47b74ec2d8eddb999bf59969d8e4"
+    },
+    {
+      "name": "q2-piston.tikz",
+      "sha256": "7c5e7b3370c3cc08db8b6395f4097922e64ea23468c4f356b40be073055fc5af",
+      "vector_pdf_sha256": "71dc7e915f0d160b708c4e9b5a0797207ab412a10a264e1c8ff3d5845c349df9"
+    },
+    {
+      "name": "q2-potential.tikz",
+      "sha256": "376bf2a8deb4933e9ff7813380d3f032a790f33bc5f1aee255dd6ea0c410ef30",
+      "vector_pdf_sha256": "bae6eab71af3b58c6b87e085cf0ab413218e878ca72df0102c111fac683ca8b9"
+    },
+    {
+      "name": "q3-forces.tikz",
+      "sha256": "b6a8ddc27bcdf46c83db02912bea87ae8d883fd116864c8e170d0d5571c8c9b8",
+      "vector_pdf_sha256": "aae59055b91e8bb956f663949b9eca496183e90124f9341e12477c05734acfdb"
+    },
+    {
+      "name": "q3-wedge.tikz",
+      "sha256": "be2e8c845e4456f09e534afa483f97cab993658e0262883cf4dc9aea31e565bb",
+      "vector_pdf_sha256": "d72c93471b75542735a7c5d30127786079104c9c35ee0f6c47b626e43bc5b3df"
+    },
+    {
+      "name": "q4-bridge.tikz",
+      "sha256": "5bc8992acfa7919be5e953f4ca1a1d64a7edfad3c003c6a3b9874a35ee38ee48",
+      "vector_pdf_sha256": "52b9c419ee4a0fd80cf2724ae3bb0fbaaea2ff4365a98954f90b76cb733b02f5"
+    },
+    {
+      "name": "q4-forces.tikz",
+      "sha256": "ac33c2b9bcc218df52761b434107c121c2c87b5d14d7987eadee23c20c21eca8",
+      "vector_pdf_sha256": "ef0b4ca53689d29fabf6378259def5db7786f64f689ee097d9e29f474d6bc452"
+    },
+    {
+      "name": "q5-boundary.tikz",
+      "sha256": "c93d04ada63e78bb1b72e4c3f705703fea37dce6015883e2e7ac899565dba7da",
+      "vector_pdf_sha256": "512262e89b4313424de91ed3017e41040413d2f203805b3663d6e6085d5e0aa1"
+    },
+    {
+      "name": "q5-dipole.tikz",
+      "sha256": "b610b900d54d730776e7dcc5f4956863c3790996f2410a5394387b67cef25967",
+      "vector_pdf_sha256": "f9b2abf233979e0b68aa24de9de7de28f487eac963e78fd5600954838e448601"
+    },
+    {
+      "name": "q6-current.tikz",
+      "sha256": "0a429a960b08a365a4f1d73f940693cb4126ec413fc249fd0a022c16425fc54d",
+      "vector_pdf_sha256": "fa6f6e6b6957cf85c57d21ba63099820b7bd553bb015b6df167aef16910b716d"
+    },
+    {
+      "name": "q6-levitation.tikz",
+      "sha256": "ddbfa151f8e091edf3bf9075515e546d7dcaec57196c00776f09bf230a26d422",
+      "vector_pdf_sha256": "57902133524ffc1d123bcf01358e04b4cf805031cce3bf11136185b6de797d38"
+    },
+    {
+      "name": "q7-atmosphere.tikz",
+      "sha256": "a8612f5de26e05d1cdf553d2194a9e9f470566e1ca316152b71ab5a7beb47798",
+      "vector_pdf_sha256": "954c6a7b9b2e6d35d0494718a73a0ef08102df2f55c03d10a9885f7f60dc495e"
+    },
+    {
+      "name": "q7-earth-rays.tikz",
+      "sha256": "6c604135a61c2a9ef3e6a15bae17995e6ef64dd6f3732f720152a481540381dd",
+      "vector_pdf_sha256": "c702704672966aca1c91d29a3b454f9db14395554afc723bd6cc27896e842e6d"
+    },
+    {
+      "name": "q7-refraction.tikz",
+      "sha256": "0bae22e85625d0336d138f56d9c7b195716c23355695117938c71654e10c6d01",
+      "vector_pdf_sha256": "88155fda5075b11811e9e756876c091b657e80d8ef644555ff077db93f3eacfc"
+    },
+    {
+      "name": "q8-apparatus.tikz",
+      "sha256": "4f37b4e8fc5f774cdf3d9890534acccbdcc2bf23519995c62f6e2a18eb1d17b0",
+      "vector_pdf_sha256": "a45957b77908bd382aa7bdd4650aa79c6f65baf06b1c4dddd8e4c41cc1d9b25e"
+    },
+    {
+      "name": "q8-momentum.tikz",
+      "sha256": "f1a6cec56097a75dd890b21a1d11996423427bab2fd183f27ef867e81dcbb79c",
+      "vector_pdf_sha256": "e6d121f1b2f3fa87f3607454f924a9d0a9e9a7a2c525c9736319cc691003ad68"
+    },
+    {
+      "name": "q8-spectrum.tikz",
+      "sha256": "fbf1f778bac1e7796048174382c14f3bb225353074901a31411a420ce0d66bb0",
+      "vector_pdf_sha256": "fc341a94b540c3562981ff706a4d41be9467116a800f5f56f89a50e82fc309bd"
+    }
+  ],
+  "core_identical": true
+}

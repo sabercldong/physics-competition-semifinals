@@ -1,0 +1,14 @@
+\begin{tikzpicture}[xscale=1.55,yscale=.45]
+\draw[arr] (0,0)--(6.6,0) node[right] {$\theta$};
+\draw[arr] (0,-4)--(0,4.7) node[above] {$y$};
+\begin{scope}\clip (0,-4) rectangle(6.3,4.2);
+\draw[thick,blue,domain=0:6.283,samples=140] plot(\x,{3*sin(\x r)+.6});
+\foreach \lo/\hi in {0/1.52,1.62/4.66,4.76/6.28}{
+\draw[thick,red,domain=\lo:\hi,samples=150] plot(\x,{-tan(\x r)});}
+\end{scope}
+\foreach \x/\lab in {1.5708/{\pi/2},3.1416/{\pi},4.7124/{3\pi/2},6.2832/{2\pi}}{
+\draw[dashed] (\x,-4)--(\x,4.2); \node[below] at (\x,-4.1) {$\lab$};}
+\node[blue] at (1.4,5.45) {$A\sin\theta+B$};
+\node[red] at (4.65,5.45) {$-\tan\theta$};
+\node at (3.1,-6.25) {示例：$A=3,\ B=0.6$，III象限有两交点};
+\end{tikzpicture}

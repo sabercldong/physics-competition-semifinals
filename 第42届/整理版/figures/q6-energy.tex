@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](0,0)--(5.5,0)node[right]{$\theta$};
+\draw[->](0,0)--(0,3.5)node[above]{$V_{\rm eff}$};
+\draw[blue,thick]plot[domain=.35:2.8,samples=90]({1.7*\x},{.22/(sin(\x*180/pi)^2)+.28*\x*\x});
+\draw[dashed](.5,1.25)--(5,1.25)node[right]{$E$};
+\node at(2,2.9){$P_z^2/(2J\sin^2\theta)+k\theta^2/2$};
+\node[below]at(1.6,0){$\theta_0$};
+\end{tikzpicture}
+
+\end{document}

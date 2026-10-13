@@ -1,0 +1,10 @@
+\begin{tikzpicture}[xscale=2,yscale=.8]
+\draw[arr] (.6,0)--(3.5,0) node[right] {$V/(Sh)$};
+\draw[arr] (.7,0)--(.7,5) node[above] {$p/(\rho gh)$};
+\draw[very thick,blue,arr] (1,4)--(2,4);
+\draw[very thick,red,arr] (2,4)--(3,3);
+\foreach \x/\y/\lab in {1/4/初态,2/4/A末,3/3/B末}{
+\fill (\x,\y) circle(1.7pt);\node[above] at (\x,\y) {\lab};
+\draw[dashed] (\x,0)--(\x,\y);\node[below] at (\x,0) {$\x$};}
+\node at (2.1,-.9) {曲线下的面积是气体边界功};
+\end{tikzpicture}

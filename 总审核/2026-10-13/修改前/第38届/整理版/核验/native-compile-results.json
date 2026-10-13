@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_试题版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "raw_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_试题版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "a9a42147f41763356adb92975a40ac80b8fed08b4d80dea6fd86109c5c5b6d0c",
+    "recorded_at": "2026-10-13T07:58:25+08:00"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_学生详解版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "raw_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_学生详解版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "57f7deff52637ae5e48724f38936cd6d2e1740595ae8aaff61d82556d7dc6283",
+    "recorded_at": "2026-10-13T07:58:25+08:00"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_教师备课版.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler.",
+    "raw_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第38届/整理版/latex/第38届_教师备课版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "source_sha256": "c5a0f083fe8e040297d0a95f6b9941aef92f46d158f663c6df5e3e8f26cf9dbc",
+    "recorded_at": "2026-10-13T07:58:25+08:00"
+  }
+]

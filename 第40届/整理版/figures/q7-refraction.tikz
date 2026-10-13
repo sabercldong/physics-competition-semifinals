@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=1]
+\draw[thick] (-.5,0)--(9,0); \draw[thick] (-.5,2)--(9,2);
+\node[left] at (-.5,1) {冷层 $v_i$};
+\node[left] at (-.5,2.7) {暖层 $v_o$};
+\node[left] at (-.5,-.7) {暖层 $v_o$};
+\draw[dashed] (2,1.2)--(2,3.5);
+\draw[arr] (1.1,1)--(2,2);
+\draw[arr] (2,2)--(3.299,3.2);
+\draw[arr,dashed] (2,2)--(2.9,1);
+\node at (1.45,2.5) {$\alpha_i<\alpha_c$};
+\draw[arr,blue] (3.6,1)--(6,2);
+\draw[arr,blue] (6,2)--(8.4,1);
+\draw[dashed] (6,1.2)--(6,3.2);
+\node at (6.8,2.65) {$\alpha_i>\alpha_c$};
+\node at (2.0,-.75) {允许折射};
+\node at (6.4,-.75) {全反射，反射角等于入射角};
+\end{tikzpicture}

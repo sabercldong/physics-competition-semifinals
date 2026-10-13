@@ -1,0 +1,19 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\begin{document}
+
+\begin{tikzpicture}
+\draw[->](0,0)--(6,0)node[right]{$\omega/\Omega$};
+\draw[->](0,0)--(0,2.8)node[above]{$A$};
+\draw[blue,thick](.2,.6)..controls(1.0,.7)and(1.5,1.4)..(1.75,2.6);
+\draw[blue,thick](1.95,2.6)..controls(2.15,.4)and(2.55,.15)..(3,0);
+\draw[blue,thick](3,0)..controls(3.4,.1)and(3.7,.5)..(4.05,2.6);
+\draw[blue,thick](4.25,2.6)..controls(4.6,.6)and(5,.4)..(5.7,.2);
+\foreach \x/\lab in {1.85/{\omega_-/\Omega},3/{1},4.15/{\omega_+/\Omega}}{\draw[dashed](\x,0)--(\x,2.8);\node[below]at(\x,0){$\lab$};}
+\node at(3,3.2){无阻尼响应示意，峰处发散};
+\node[below]at(3,-.65){$\omega_0=\Omega$ 为调谐反共振点};
+\end{tikzpicture}
+
+\end{document}

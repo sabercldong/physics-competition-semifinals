@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\draw[arr,blue] (-3,0)--(-.15,0); \node[above] at (-2.3,0) {发散激光};
+\draw[very thick] (-.55,-.55)--(.55,.55); \node[below right] at (.6,-.5) {分光片};
+\draw[arr,blue] (0,.1)--(0,2.4); \draw[arr,blue] (.12,2.4)--(.12,.2);
+\draw[very thick] (-.7,2.5)--(.7,2.5); \node[above] at (0,2.6) {$M_1$};
+\draw[arr,red] (.15,0)--(3,0); \draw[arr,red] (3,-.12)--(.2,-.12);
+\draw[very thick] (3.1,-.7)--(3.1,.7); \node[right] at (3.2,.5) {$M_2$};
+\draw[arr] (0,-.2)--(0,-2); \node[below] at (0,-2) {观察方向};
+\draw[<->] (3.8,-.45)--(4.6,-.45); \node at (4.2,-.9) {平移};
+\end{tikzpicture}
+
+\end{document}

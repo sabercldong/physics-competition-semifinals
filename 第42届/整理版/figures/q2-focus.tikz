@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+\draw[->](0,0)--(5.5,0)node[right]{$\Delta\theta_I$};
+\draw[->](2.7,-1.2)--(2.7,1.5)node[above]{$\Delta X_D$};
+\draw[blue,thick]plot[domain=-1:1,samples=60]({2.7+2*\x},{-\x*\x*\x});
+\draw[dashed](1.1,0)--(4.3,0);
+\node[below]at(2.7,-1.25){二级聚焦：一、二阶均消失，首项为三阶};
+\end{tikzpicture}

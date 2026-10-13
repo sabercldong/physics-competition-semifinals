@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=1.15,yscale=.9]
+\draw[arr](0,0)--(7.5,0)node[right]{$\omega$};
+\draw[very thick,blue](2,0)--(2,2.2);\draw[very thick,red](4,0)--(4,2.7);
+\draw[very thick,blue](6,0)--(6,2.2);
+\node[below]at(2,0){$\Omega_\perp-\omega_L$};\node[below]at(4,-.5){$\omega_0$};\node[below]at(6,0){$\Omega_\perp+\omega_L$};
+\draw[<->](2,1.1)--(4,1.1)node[midway,above]{$\simeq\omega_L$};
+\draw[<->](4,1.1)--(6,1.1)node[midway,above]{$\simeq\omega_L$};
+\end{tikzpicture}

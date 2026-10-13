@@ -1,0 +1,11 @@
+\begin{tikzpicture}[xscale=6,yscale=1]
+\draw[arr] (0,0)--(1.12,0) node[right] {$t/t_c$};
+\draw[arr] (0,0)--(0,4.6);
+\draw[thick,blue,domain=0:.98,samples=150] plot(\x,{(1-\x)^.25});
+\draw[thick,red,domain=0:.98,samples=150] plot(\x,{(1-\x)^(-.375)});
+\draw[dashed] (.9375,0)--(.9375,2.828);
+\node[below] at (.9375,0) {$15/16$};
+\node[blue] at (.35,.45) {$L/L_0$};
+\node[red] at (.62,2.6) {$\omega/\omega_0$};
+\node at (.5,-.9) {近端点时近圆牛顿模型失效};
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+{
+  "previous_reviewed_build": "/var/folders/1v/t1yfjxmd0mjd4q8wrjxhfkhw0000gn/T/codex-35-rebuild-lpzh1yl1/output",
+  "results": [
+    {
+      "name": "第35届_学生详解版.pdf",
+      "pages": 57,
+      "changed_pdf_pages": [
+        7,
+        8
+      ],
+      "unchanged_pages_render_identical": true
+    },
+    {
+      "name": "第35届_教师备课版.pdf",
+      "pages": 74,
+      "changed_pdf_pages": [
+        7,
+        8,
+        9
+      ],
+      "unchanged_pages_render_identical": true
+    },
+    {
+      "name": "第35届_试题版.pdf",
+      "pages": 10,
+      "changed_pdf_pages": [],
+      "unchanged_pages_render_identical": true
+    }
+  ]
+}

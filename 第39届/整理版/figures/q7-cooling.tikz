@@ -1,0 +1,9 @@
+\begin{tikzpicture}[xscale=.9,yscale=4]
+\draw[arr] (0,0)--(7.6,0) node[right] {$r/r_i$};
+\draw[arr] (0,0)--(0,1.2) node[above] {$T/T_i$};
+\draw[thick,blue,domain=1:7,samples=90] plot(\x,{1/\x});
+\draw[dashed] (1,0)--(1,1)--(0,1);
+\draw[dashed] (2.6667,0)--(2.6667,.375)--(0,.375);
+\node[below] at (2.6667,0) {$8/3$}; \node[left] at (0,.375) {$3/8$};
+\node at (5,.7) {$Tr=\text{常量}$};
+\end{tikzpicture}

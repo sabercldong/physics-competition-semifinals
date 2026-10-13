@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\draw[arr] (0,0)--(0,3.4) node[above] {$\hat{\boldsymbol r}$};
+\draw[arr] (0,0)--(3.3,0) node[right] {$\hat{\boldsymbol\phi}$};
+\coordinate (S) at (.8,1.8); \coordinate (C) at (-1.6,-3.6);
+\draw[thick] (C)--(S);
+\fill (S) circle(3pt) node[right] {$m_1$};
+\fill (C) circle(3pt) node[left] {$m_2$};
+\fill (0,0) circle(2pt) node[above left] {质心};
+\draw[arr] (S)--(-.4,2.33);
+\draw[arr] (-.4,-.9)--(-1.6,-.37);
+\draw[arr] (-.8,-1.8)--(-2,-1.27) node[left] {$d\boldsymbol F_L$};
+\draw[arr] (-1.2,-2.7)--(-2.4,-2.17);
+\node[fill=white,right] at (.35,.75) {$l_1$};
+\node[fill=white,right] at (-.85,-2.25) {$l_2$};
+\draw[arr] (0,1) arc(90:66:1) node[midway,above] {$\theta$};
+\draw[arr] (1.5,-2.7)--(1.5,-1.9) node[right] {$F_r>0$};
+\draw[arr] (1.5,-2.7)--(.7,-2.7) node[below] {$F_\phi<0$};
+\node at (1.8,-4.1) {$\tau_{g,z}<0,\ \tau_{L,z}>0$};
+\end{tikzpicture}

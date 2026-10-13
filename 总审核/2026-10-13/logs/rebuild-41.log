@@ -1,0 +1,23 @@
+[
+  {
+    "pdf": "第41届_学生详解版.pdf",
+    "pages": 62,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第41届_教师备课版.pdf",
+    "pages": 74,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第41届_试题版.pdf",
+    "pages": 9,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  }
+]

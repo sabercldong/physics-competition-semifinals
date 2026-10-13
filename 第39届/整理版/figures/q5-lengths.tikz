@@ -1,0 +1,9 @@
+\begin{tikzpicture}[xscale=.85,yscale=.55]
+\draw[arr] (0,0)--(8,0) node[right] {$\omega t$};
+\draw[arr] (0,0)--(0,9.7) node[above] {$kx/(mg)$};
+\draw[thick,red,domain=0:7.4,samples=120] plot(\x,{1+\x-sin(\x r)});
+\draw[thick,blue,domain=0:7.4,samples=30] plot(\x,{\x});
+\draw[dashed] (0,4)--(7.4,4) node[right] {$kL/(mg)$};
+\node[red] at (5,7.4) {$x_1$}; \node[blue] at (6,5.5) {$x_2$};
+\node at (4,-1.2) {示例$\alpha=mg\omega$；断裂之后曲线仅为数学延拓};
+\end{tikzpicture}

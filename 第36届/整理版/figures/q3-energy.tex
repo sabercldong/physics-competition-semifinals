@@ -1,0 +1,21 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}
+\node[draw,rounded corners,minimum width=2.5cm,minimum height=.9cm] (S) at(0,0) {源功$W_s$};
+\node[draw] (J) at(5,1.7) {焦耳热$Q_J$};
+\node[draw] (K) at(5,0) {机械能$\Delta K+\Delta U_g$};
+\node[draw] (B) at(5,-1.7) {磁场能$\Delta U_B$};
+\draw[arr] (S.east)--(2,0)--(2,1.7)--(J.west);
+\draw[arr,blue] (S.east)--(K.west);
+\draw[arr,red] (S.east)--(2,0)--(2,-1.7)--(B.west);
+\node[blue,right] at(7,0) {$\frac12\kappa_LI^2L$};
+\node[red,right] at(7,-1.7) {$\frac12\kappa_LI^2L$};
+\node at(4,-2.7) {恒流时：非焦耳源功在两者之间平分};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.85]
+\draw[gray,dashed] (0,0) circle(2.5); \draw[blue,thick] (0,0) ellipse(2.5 and 1.6);
+\fill (0,0) circle(2pt) node[below] {$C$};\fill(1.92,0) circle(2pt) node[below] {$O$};
+\coordinate(P) at(-1.25,1.386); \fill(P) circle(2pt) node[above] {$P$};
+\draw (0,0)--(-1.25,2.165); \draw[dashed] (-1.25,2.165)--(-1.25,0);
+\draw[arr] (.6,0) arc(0:120:.6) node[midway,above] {$E$};
+\node at(0,-2.8) {$r=a_{\rm K}(1-e\cos E),\quad n_{\rm K}t=E-e\sin E$};
+\end{tikzpicture}
+\end{document}

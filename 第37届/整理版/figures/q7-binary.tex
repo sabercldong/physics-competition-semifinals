@@ -1,0 +1,18 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\draw[dashed] (0,0) circle(1); \draw[dashed] (0,0) circle(2);
+\fill[blue] (-1,0) circle(5pt) node[left] {$M$};
+\fill[red] (2,0) circle(3pt) node[right] {$m$};
+\fill (0,0) circle(1.5pt) node[above] {$O$};
+\draw[arr] (-1,-.1)--(-1,-.8); \draw[arr] (2,.1)--(2,.9);
+\draw[<->] (-1,2.5)--(2,2.5) node[midway,above] {$L=r_M+r_m$};
+\node at (0,-2.7) {$Mr_M=mr_m,\quad I=\mu L^2$};
+\end{tikzpicture}
+
+\end{document}

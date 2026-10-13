@@ -1,0 +1,176 @@
+{
+  "status": "已完成",
+  "stage": "第40届完成总审核及文字润色",
+  "completed_at": "2026-10-12T13:21:59+08:00",
+  "exam": 40,
+  "questions": 8,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_points": 320,
+  "variants": 32,
+  "figures": 18,
+  "pdfs": [
+    {
+      "name": "第40届_学生详解版.pdf",
+      "pages": 57,
+      "body_pages": 56,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "35258cf9af814458fd781fc4db462eb259d263fd08adb3a06d06e937f33d56ce",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        8,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_教师备课版.pdf",
+      "pages": 72,
+      "body_pages": 71,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "54ca77b864638b2787ebe031458fb22a99c02385d6ff54ef61d0fd0af0ff1170",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        11,
+        21,
+        30,
+        39,
+        48,
+        56,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第40届_试题版.pdf",
+      "pages": 9,
+      "body_pages": 8,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "09c0527a48800e2a0558641e33e12917757878775c168f6f58c0992ed28babe0",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true,
+    "originals_unchanged": true,
+    "editorial_invariants": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/第40届复赛试题及参考答案.pdf",
+      "pages": 23,
+      "sha256": "72a7e8ef8261539dd66b577d9eb6d4ae869ce910a7b8de3664d5eec7af2a70e2"
+    }
+  ],
+  "pending_items": [],
+  "physics_checks": 32,
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "39e520693525e96e490528df9b019621600ee80dd71e91dacae59027f21d5f03"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "20fff14cbe97451ff28ea433702368a68e01c106ee1a5ef8e0c89e413151757d"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "e6d51d3460a3a53189df63ccc68b5427c46c76cdb2eb4f4d7ce7e739bbf41f1e"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "673e66ac4d1480fb2e54bf8529f91fb1c34f4685740809c8da1dfdc40514dca3"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "a03441d8f05e59558eafcabf85aeed1d24179167cabfe8202d09a29e22d4d460"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "4caff5f34617e0ff15b22f09a61e17139dc445215e371521a611e8d39fbac63b"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "36dd5acb4a686ce44d499ebcf2fccf842b7d386a31caf2aff7c46af72792263a"
+    },
+    {
+      "question": 8,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "47252d777aaafe2e37751237c0371015186e969cb9f1cd1a675c563fc7867f44"
+    }
+  ],
+  "collection_audit": {
+    "completed_at": "2026-10-13T11:55:03+08:00",
+    "report": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/总审核/2026-10-13/审核报告.md",
+    "prose_edits": 10,
+    "physics_checks": 32,
+    "changed_pages_reviewed": 12,
+    "pixel_identical_pages": 126,
+    "skill": "/Users/dongxingxi/.codex/skills/humanizer-zh/SKILL.md"
+  }
+}

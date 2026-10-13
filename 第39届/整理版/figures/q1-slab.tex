@@ -1,0 +1,20 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\draw[fill=blue!6] (0,0) rectangle(5,-1.7);
+\coordinate (O) at (1,0); \coordinate (B) at (2.15,-1.7);
+\draw[arr] (-.4,1.4)--(O); \draw[arr] (O)--(B); \draw[arr] (B)--(3.55,-3.1);
+\draw[dashed] (1,1.35)--(1,-2.4); \draw[dashed] (2.15,-1.2)--(2.15,-2.8);
+\draw (1,.7) arc(90:135:.7); \node at (.65,.85) {$\theta$};
+\node at (1.28,-.65) {$i$}; \node at (4,-.8) {$n$};
+\draw[<->] (5.35,0)--(5.35,-1.7) node[midway,right] {$t$};
+\node at (2.4,1.85) {平行液层：$\sin\theta=n\sin i$};
+\node at (2.4,-3.55) {须比较同一出射波前，不能只比较斜程};
+\end{tikzpicture}
+
+\end{document}

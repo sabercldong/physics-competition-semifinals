@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=.68]
+\foreach \xx/\yy/\ang/\dir/\lab in {0/0/40/1/I,5/0/130/1/II,0/-6.4/215/1/III短杆,5/-6.4/240/-1/III长杆,10/-6.4/320/1/IV}{
+\begin{scope}[shift={(\xx,\yy)}]
+\draw[dashed] (-1.4,-2.2)--(-1.4,2.1); \draw[thin] (-1.4,0)--(0,0);
+\fill (0,0) circle(2pt); \node[above right] at (0,.1) {$P$};
+\coordinate (C) at ({1.35*sin(\ang)},{1.35*cos(\ang)});
+\draw[very thick] (0,0)--({2.7*sin(\ang)},{2.7*cos(\ang)});
+\draw[arr,blue] (C)--++({1.1*\dir},0) node[above] {$F_\tau$};
+\draw[arr,red] (C)--++(0,-1.3) node[right] {$mg$};
+\node at (.2,3) {\lab};
+\end{scope}}
+\node[align=center] at (10,1.3) {$F_\tau$仅等效力矩\\作用点取质心\\非离心力真实合力};
+\end{tikzpicture}

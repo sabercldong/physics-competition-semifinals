@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=.9]
+\draw[thick,fill=gray!8] (-.3,3) rectangle(2.7,3.6);
+\node at (1.2,3.3) {簧上负载};
+\draw[thick] (0,2.7)--(0,.5)--(2.4,.5)--(2.4,2.7);
+\draw[very thick] (-.1,2.7)--(2.5,2.7);
+\node at (1.2,1.5) {主室$p_1,V_1$};
+\draw[thick] (-4,.5) rectangle(-2.2,2.2);
+\node at (-3.1,1.4) {附加室$V_2$};
+\draw[thick] (-2.2,1)--(-1.5,1)--(-1.5,2.1)--(0,2.1);
+\draw[thick] (-1.2,1.9)--(-.8,2.3); \draw[thick] (-1.2,2.3)--(-.8,1.9);
+\node[above] at (-1,2.5) {阀门};
+\draw[arr] (3,2.7)--(3,1.9) node[below] {$y>0$};
+\draw[arr,red] (1.2,3.6)--(1.2,4.5) node[above] {$F=(p_1-p_0)A_e$};
+\node at (-.7,-.25) {主室随位移改变；附加室容积固定};
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=1]
+\draw[arr] (0,3.5)--(0,-1);
+\node[right] at (.2,-1) {$z$向下};
+\draw[arr] (0,3)--(2.2,3) node[right] {$x$};
+\draw[arr,very thick,blue] (0,3)--(1.45,3) node[above] {$\boldsymbol\mu_A$};
+\fill (0,.3) circle(2pt);
+\draw[arr,very thick,red] (0,.3)--(-1.45,.3) node[left] {$\boldsymbol\mu_B$};
+\draw[arr] (.6,.3)--(.6,1.5) node[right] {$F_{\rm mag}$};
+\draw[arr] (.1,.3)--(.1,-.7) node[right] {$mg$};
+\node at (3.3,.3) {$\theta=\pi$};
+\node at (1.2,-1.8) {稳定指向与$\boldsymbol\mu_A$反平行};
+\end{tikzpicture}

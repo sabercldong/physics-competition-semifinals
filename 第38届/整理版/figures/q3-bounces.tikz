@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=1.2]
+\draw[very thick] (-.8,-.15)--(4,-.15);\draw[very thick] (-.8,2.15)--(4,2.15);
+\draw[arr,blue] (0,1.6)--(1.5,0);
+\draw[arr,blue] (1.5,0)--(2.509,2);
+\draw[arr,blue] (2.509,2)--(1.5,0);
+\draw[arr,red,dashed] (1.5,0)--(0,1.6);
+\draw[thick] (0,1.6) circle(.15);
+\node[above] at (2.65,2.1) {碰撞2};
+\node[below] at (1.5,-.1) {碰撞1、3};
+\draw[arr] (4.5,1.6)--(5.4,1.6) node[right] {$x$};
+\draw[arr] (4.5,1.6)--(4.5,.65) node[below] {$y$};
+\node at (1.7,2.8) {示意取$r\omega_0/v_0=5/26$，三碰后反向};
+\end{tikzpicture}

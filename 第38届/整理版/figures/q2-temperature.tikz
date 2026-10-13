@@ -1,0 +1,9 @@
+\begin{tikzpicture}[xscale=3.2,yscale=3.5]
+\draw[arr] (1.9,1.95)--(3.15,1.95) node[right] {$y/h$};
+\draw[arr] (1.9,1.95)--(1.9,2.36) node[above] {$T/T_0$};
+\draw[thick,blue,domain=2:3,samples=70] plot(\x,{(6-\x)*\x/4});
+\draw[dashed] (2,1.95)--(2,2); \draw[dashed] (3,1.95)--(3,2.25)--(1.9,2.25);
+\node[below] at (2,1.95) {$2$};\node[below] at (3,1.95) {$3$};
+\node[left] at (1.9,2.25) {$9/4$};
+\node at (2.5,1.73) {$y=l-x$；管口排尽处温度斜率趋零};
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=.92]
+\fill[gray!20] (0,0) circle(1.6);
+\draw (0,0) circle(1.6);
+\draw (0,0) circle(2.1);
+\draw (0,0) circle(2.6);
+\draw (0,0) circle(3.1);
+\node at (0,0) {地球};
+\node[rotate=-45,font=\small] at (45:1.86) {对流层};
+\node[rotate=-45,font=\small] at (45:2.36) {同温层};
+\node[rotate=-45,font=\small] at (45:2.87) {逆温层};
+\node at (0,-3.65) {层厚为示意，不按地球比例绘制};
+\end{tikzpicture}

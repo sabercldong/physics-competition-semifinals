@@ -1,0 +1,330 @@
+{
+  "recorded_at": "2026-10-13T10:08:45+08:00",
+  "method": "所有成品逐页渲染，六页总览覆盖每页；关键长公式、题面和变式另作单页放大。23幅图全部审读，修正后的受力图、轨道图、速率图另作单图放大。",
+  "all_passed": true,
+  "total_pdf_pages_reviewed": 147,
+  "figure_count_reviewed": 23,
+  "figures": [
+    {
+      "name": "q1-cup.png",
+      "sha256": "2204f148f492a099acb9463677730553e2efd2f0caa514b735c3ed5eb14cbe00"
+    },
+    {
+      "name": "q1-stool.png",
+      "sha256": "184a3292cabb44f2f42dcef1f0b9b7221e446d41d37f180ec9aa144003561e30"
+    },
+    {
+      "name": "q1-support.png",
+      "sha256": "0015b18f493b2ab88f871054fd91fcf6c8cd415c9b56ff17c8f62ac55e6fd111"
+    },
+    {
+      "name": "q2-cart.png",
+      "sha256": "767b1270f47ba1d3e05729904268033ed7f74a63226918bcacd286421c21ae41"
+    },
+    {
+      "name": "q2-forces.png",
+      "sha256": "7ff6229ccc575ccdbbb8a08cb7b96338e559afacbf06325f51b09ef7de150962"
+    },
+    {
+      "name": "q2-stages.png",
+      "sha256": "7c2dc4f1868d44c880be6ab5e1f6c11ee63140e1b38910cef52d04e31c3f5d34"
+    },
+    {
+      "name": "q3-energy.png",
+      "sha256": "9b41ed9ac7030aadb17d58a140f3559375079513c20f8966b6f83b6eeb5c4551"
+    },
+    {
+      "name": "q3-field.png",
+      "sha256": "1b8b412eedfe82f5da038b71c8d6d472ad94a49d8cf66ea7fa3cceba905edbb2"
+    },
+    {
+      "name": "q3-rails.png",
+      "sha256": "31230d9cf3c7754387787fbb87646516d0ce2c91c049df7fa4bf9e370731b666"
+    },
+    {
+      "name": "q4-oscillator.png",
+      "sha256": "0e86da97ae64a54ac9bd26a7ee46b6deceeda8d683a1b08194fd0fc71ec3e3af"
+    },
+    {
+      "name": "q4-resonator.png",
+      "sha256": "79a5c443e9658a9e05da62b70fff3a5e18be1866d167510ccbd3cfa1d7ed6aed"
+    },
+    {
+      "name": "q4-response.png",
+      "sha256": "de88653b48a46af3364ed9d97a003fd69aa23b1a18e8a78f7ee88d3e35e8fcfa"
+    },
+    {
+      "name": "q5-acceptance.png",
+      "sha256": "ebdf1452209e59b923ff507fe933fdab9e17fa0c8b4e753e0a00309b4ff1c5b9"
+    },
+    {
+      "name": "q5-coupling.png",
+      "sha256": "0d07a569ac1066a0b782ab62779082ad363c0bf5a898c48e732c45c9a379adad"
+    },
+    {
+      "name": "q5-focus.png",
+      "sha256": "aaebbf3a066004cde11598adc457301353e445ff8a126f5bf72f4c1eb46f7cce"
+    },
+    {
+      "name": "q6-decay.png",
+      "sha256": "13096e1afe1441b7f7ed84a5a1c1db8d1baf393bda50317fc41620e30f2be882"
+    },
+    {
+      "name": "q6-range.png",
+      "sha256": "1102290b8fd352c6d0954f222aa892f3aa010d9eaf81470b266bd315c7181f14"
+    },
+    {
+      "name": "q6-survival.png",
+      "sha256": "a6d01c54427450c27df6efc294120ca18311bc3dd6947d7ff33a427ff43d256f"
+    },
+    {
+      "name": "q7-balloon.png",
+      "sha256": "7ff3699a27eff5666e5a2041e413418f51f641bb152e20b59fc76d8cbe6ec90f"
+    },
+    {
+      "name": "q7-channel.png",
+      "sha256": "4df1eab74d62621f729ba4b67e66aa58cb164ef5dbbe0e5400495acfa794a3ad"
+    },
+    {
+      "name": "q7-cloud.png",
+      "sha256": "87efaed2c207ec93c3983a3d774a76a1fb0d972a13bc81c07c740073ce63c9ab"
+    },
+    {
+      "name": "q7-images.png",
+      "sha256": "93c8aa27823811c1b27a160b0b1459bbc19f9ca194bdd4c36c2a121777e5e059"
+    },
+    {
+      "name": "q7-ring.png",
+      "sha256": "95c485ae7c4cc7f135834553794aab211551b3f9cba2fbc594db398a12afe91b"
+    }
+  ],
+  "pdfs": [
+    {
+      "name": "第36届_学生详解版.pdf",
+      "sha256": "152cc12c2e3941a6adfed687802ff03c6368f0d8612c3b29e85afbce7dcfd1a1",
+      "pages": 61,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      "overview_contact_sheets": [
+        "preview/第36届_学生详解版/contact-001.jpg",
+        "preview/第36届_学生详解版/contact-007.jpg",
+        "preview/第36届_学生详解版/contact-013.jpg",
+        "preview/第36届_学生详解版/contact-019.jpg",
+        "preview/第36届_学生详解版/contact-025.jpg",
+        "preview/第36届_学生详解版/contact-031.jpg",
+        "preview/第36届_学生详解版/contact-037.jpg",
+        "preview/第36届_学生详解版/contact-043.jpg",
+        "preview/第36届_学生详解版/contact-049.jpg",
+        "preview/第36届_学生详解版/contact-055.jpg",
+        "preview/第36届_学生详解版/contact-061.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        14,
+        18,
+        47,
+        54,
+        60
+      ],
+      "result": "题面、长公式、图稿、标题和页码无裁切或挤叠；逻辑完整的题尾自然留白。"
+    },
+    {
+      "name": "第36届_教师备课版.pdf",
+      "sha256": "bdefa916f2f1d697d28da70dfbb6a32a6bc48e4b5b60b2c156ec461f8ede0d54",
+      "pages": 78,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "overview_contact_sheets": [
+        "preview/第36届_教师备课版/contact-001.jpg",
+        "preview/第36届_教师备课版/contact-007.jpg",
+        "preview/第36届_教师备课版/contact-013.jpg",
+        "preview/第36届_教师备课版/contact-019.jpg",
+        "preview/第36届_教师备课版/contact-025.jpg",
+        "preview/第36届_教师备课版/contact-031.jpg",
+        "preview/第36届_教师备课版/contact-037.jpg",
+        "preview/第36届_教师备课版/contact-043.jpg",
+        "preview/第36届_教师备课版/contact-049.jpg",
+        "preview/第36届_教师备课版/contact-055.jpg",
+        "preview/第36届_教师备课版/contact-061.jpg",
+        "preview/第36届_教师备课版/contact-067.jpg",
+        "preview/第36届_教师备课版/contact-073.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        33,
+        52,
+        63,
+        78
+      ],
+      "result": "题面、长公式、图稿、标题和页码无裁切或挤叠；逻辑完整的题尾自然留白。"
+    },
+    {
+      "name": "第36届_试题版.pdf",
+      "sha256": "8df6df971aef044d4eeb7cceeff613d60ea4fbfe2450776463ab7e9cf21e44e1",
+      "pages": 8,
+      "overview_coverage_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "overview_contact_sheets": [
+        "preview/第36届_试题版/contact-001.jpg",
+        "preview/第36届_试题版/contact-007.jpg"
+      ],
+      "full_size_pdf_pages_reviewed": [
+        8
+      ],
+      "result": "题面、长公式、图稿、标题和页码无裁切或挤叠；逻辑完整的题尾自然留白。"
+    }
+  ],
+  "resolved_visual_issues": [
+    "三脚凳杯心及内切位置已对齐；B与坐标轴标注分开。",
+    "平板车受力图补齐轮轴水平竖直作用力，标注移到图外；阶段编号改用ASCII以避免缺字。",
+    "磁力图按横截面显示沿轨道出纸面方向，弹丸与长度、速度标签分开。",
+    "光纤折射率标签避开虚线，μ子最小速率标签避开响应直线。",
+    "希腊字母与毫欧单位缺字修正；学生接地限制与等温极限保留整段，教师最后变式保留整段，消除孤立尾行。"
+  ],
+  "unresolved_visual_issues": []
+}

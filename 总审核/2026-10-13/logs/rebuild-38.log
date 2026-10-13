@@ -1,0 +1,23 @@
+[
+  {
+    "pdf": "第38届_学生详解版.pdf",
+    "pages": 62,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第38届_教师备课版.pdf",
+    "pages": 75,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  },
+  {
+    "pdf": "第38届_试题版.pdf",
+    "pages": 9,
+    "TeX_identical": true,
+    "page_text_identical": true,
+    "every_page_render_identical": true
+  }
+]

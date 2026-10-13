@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=2.4,yscale=1.4]
+\draw[arr] (.55,-2.2)--(2.7,-2.2) node[right] {$z/z_e$};
+\draw[arr] (.55,-2.2)--(.55,-1) node[above] {$U/(mgz_e)$};
+\draw[thick,blue,domain=.65:2.2,samples=90] plot(\x,{-1/(3*\x*\x*\x)-\x});
+\draw[dashed] (1,-2.2)--(1,-1.333);
+\node[above] at (1,-1.3) {极大值};\node[below] at (1,-2.2) {$1$};
+\node at (1.5,-2.75) {向上偏离会被吸上，向下偏离会下落};
+\end{tikzpicture}

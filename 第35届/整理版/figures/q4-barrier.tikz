@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=1.1,yscale=2]
+\draw[arr](0,0)--(6.6,0)node[right]{$\rho/a$};
+\draw[arr](0,0)--(0,1.5)node[above]{$|\mathbf B_\perp|/(\mu_0I/\pi a)$};
+\draw[blue,thick,domain=0:6,samples=120]plot(\x,{4*\x/(\x^4+4)});
+\draw[dashed](1.07457,0)--(1.07457,.806);
+\fill[red](1.07457,.806)circle(1.4pt)node[above right]{轴上鞍点};
+\node at(3.8,1.15){固定半径时，轴向场最弱};
+\end{tikzpicture}

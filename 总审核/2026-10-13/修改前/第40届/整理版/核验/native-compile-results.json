@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_学生详解版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_学生详解版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "kind": "success",
+    "source_sha256": "b3fe0a15fdc15bdc373692d86ae122c266b3d0805d1e5dff870294e7cf6cc03d"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_教师备课版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_教师备课版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "kind": "success",
+    "source_sha256": "c7f4f6965ae272da5ad5d4627e3fbbbc3fca2526812ed4d8163ce9aa06aaa8c0"
+  },
+  {
+    "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_试题版.tex",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"path\":\"/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第40届/整理版/latex/第40届_试题版.tex\",\"kind\":\"success\",\"message\":\"The current source compiled successfully with the desktop editor's compiler.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "kind": "success",
+    "source_sha256": "b93ed54ff40bd6a36196126e55b7415515211c86d5d8582dbe677827452995b1"
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "Added Q1: nonlinear network perturbation and variational stationary point",
+      "passed": true,
+      "values": {
+        "internal_derivative": [
+          0.666666666665483,
+          0.3333333333327415
+        ],
+        "port_derivative": 3.000000000108471,
+        "functional_gradient": [
+          -1.9984014443252815e-10,
+          1.9984014443252815e-10
+        ],
+        "Hessian_eigenvalues": [
+          6.666666666666667,
+          11.999999999999998
+        ]
+      }
+    },
+    {
+      "check": "Added Q2: energy-orbit quadrature for return time and mean compression",
+      "passed": true,
+      "values": {
+        "quadrature_time": 0.06005560189985003,
+        "time_formula": 0.060055601899979764,
+        "mean_compression": 0.0044506179970091675,
+        "maximum_compression": 0.006849533789400824
+      }
+    },
+    {
+      "check": "Added Q3: complete surface component formulas vs full dipole fields",
+      "passed": true,
+      "values": {
+        "maximum_component_error": 6.661338147750939e-16
+      }
+    },
+    {
+      "check": "Added Q4: exact gravitational potential derivative and circular energy-angular momentum relation",
+      "passed": true,
+      "values": {
+        "exact_potential_torque": -0.9697955101728439,
+        "first_order_tidal_torque": -0.9684307227143558,
+        "dE_dH_numerical": 1.0000000087507068,
+        "orbital_Omega": 1.0
+      }
+    },
+    {
+      "check": "Added Q5: polygon centroid lever arm vs hydrostatic potential derivative",
+      "passed": true,
+      "values": {
+        "maximum_lever_arm_error": 8.759047306905465e-12,
+        "GM": 0.1439393939393938
+      }
+    },
+    {
+      "check": "Added Q6: finite-ball screening charge integral vs potential-derived flux",
+      "passed": true,
+      "values": {
+        "maximum_charge_flux_error": 2.501439611002354e-09
+      }
+    },
+    {
+      "check": "Added Q7: global interface equations vs full layer matrix, energy and exact missing order",
+      "passed": true,
+      "values": {
+        "maximum_complex_amplitude_error": 1.0235750533041806e-15,
+        "maximum_energy_error": 1.7763568394002505e-15,
+        "missing_order_abs_r": 1.743978496141283e-16
+      }
+    },
+    {
+      "check": "Added Q7: finite-N peak optimization vs derived center shift",
+      "passed": true,
+      "values": {
+        "cases": [
+          {
+            "N": 40,
+            "numerical_peak_shift": 0.00039515466901618446,
+            "local_formula": 0.0003951599787662342
+          },
+          {
+            "N": 80,
+            "numerical_peak_shift": 9.876301835665124e-05,
+            "local_formula": 9.876320101823402e-05
+          },
+          {
+            "N": 120,
+            "numerical_peak_shift": 4.3892565755099255e-05,
+            "local_formula": 4.389255147632723e-05
+          }
+        ]
+      }
+    }
+  ],
+  "script_sha256": "7287cad6afb482e2b067046f974d177a0cfd716a977d78f89c77f61d7efe0488"
+}

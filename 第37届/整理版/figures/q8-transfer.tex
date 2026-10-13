@@ -1,0 +1,19 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=5,yscale=3]
+\draw[arr] (-.72,0)--(.82,0) node[right] {$V/V_\pi$};
+\draw[arr] (0,0)--(0,1.2) node[above] {$\mathcal T$};
+\draw[thick,blue,domain=-.7:.7,samples=120] plot(\x,{sin(90*\x)^2});
+\draw[thick,red,domain=-.7:.7,samples=120] plot(\x,{(1+sin(180*\x))/2});
+\draw[dashed,domain=-.25:.25] plot(\x,{.5+pi*\x/2});
+\node[blue] at (-.42,1.3) {无波片};
+\node[red] at (.42,1.3) {加$1/4$波片};
+\node at (0,-.42) {固定$\pi/2$偏置使零电压处斜率非零};
+\end{tikzpicture}
+
+\end{document}

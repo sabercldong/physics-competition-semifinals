@@ -1,0 +1,29 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) ellipse(3 and .8);
+\draw[arr] (0,-.3)--(0,4.7) node[above] {$z$};
+\draw[thick] (0,3.45) circle(.5);
+\draw[dashed] (-.5,3.45) arc(180:360:.5 and .16);
+\draw (-.5,3.45) arc(180:0:.5 and .16);
+\node[right] at (.6,3.45) {$a,\ \sigma,\ G$};
+\draw[<->] (-1.05,0)--(-1.05,3.45) node[midway,left] {$h$};
+\draw[<->] (0,0)--(3,0) node[midway,below] {$b$};
+\node at (2.4,1.2) {$I_0\cos\omega t$};
+\draw[arr] (0,3.45)--(0,4.35) node[left] {$\langle F_z\rangle$};
+\draw[arr] (.12,3.2)--(.12,2.2) node[right] {$G$};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

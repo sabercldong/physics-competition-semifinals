@@ -1,0 +1,36 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=.7]
+\begin{scope}
+\fill[gray!18] (0,0) circle(2.3); \draw (0,0) circle(2.3);
+\draw (0,0) circle(2.7); \draw (0,0) circle(3.2);
+\draw[arr,thick] (-1.4,2.3)--(1.4,2.3);
+\fill (-1.4,2.3) circle(2pt); \fill (1.4,2.3) circle(2pt);
+\node at (0,-3.8) {短程：受地球遮挡};
+\node at (0,0) {地球};
+\end{scope}
+\begin{scope}[shift={(8,0)}]
+\fill[gray!18] (0,0) circle(2.3); \draw (0,0) circle(2.3);
+\draw (0,0) circle(2.7); \draw (0,0) circle(3.2);
+\foreach \a in {0,40,...,320}{
+\draw[arr,blue,thick] (\a:3.2)--({\a+40}:3.2);
+}
+\node at (0,0) {地球};
+\node at (0,-3.8) {远程：冷层内反复全反射};
+\end{scope}
+\node at (4,-4.7) {层厚夸大；蓝色弦段给出上界面反射的一类路径};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

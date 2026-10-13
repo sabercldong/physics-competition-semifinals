@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) circle(2);
+\draw[arr] (2,0) arc(0:65:2);
+\draw[arr] (0,2)--(-1.4,2) node[left] {$\mathbf p$};
+\draw[arr,red] (0,2)--(0,.7) node[left] {$e\mathbf v\times\mathbf B$};
+\draw[arr] (0,0)--(2,0) node[midway,below] {$R$};
+\foreach \x/\y in {-1/-1,1/1,1/-1}{\node at (\x,\y) {$\otimes$};}
+\node at (0,-2.8) {$p=eBR,\quad 2\pi R\leq L_{\max}$};
+\node at (3.1,.7) {$\mathbf B$入纸面};
+\end{tikzpicture}

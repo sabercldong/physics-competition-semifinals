@@ -1,0 +1,21 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[scale=.8]
+\draw[thick] (-3,0)--(3,0) node[right] {$z=0$};
+\draw[arr] (-2.8,-3.8)--(-2.8,4.5) node[above] {$z$};
+\foreach \y/\q/\lab in {3.8/{+Q_c}/{h_c+d_c},2.5/{-Q_c}/{h_c},-2.5/{+Q_c}/{-h_c},-3.8/{-Q_c}/{-(h_c+d_c)}}{
+\draw[fill=gray!10] (0,\y) circle(.22);
+\node[right] at(.5,\y) {$\q,\ z=\lab$};
+\draw[dashed] (-2.8,\y)--(-.23,\y);
+}
+\fill (0,0) circle(2pt);
+\draw[arr,blue,very thick] (0,.1)--(0,1.3) node[right] {净场向上};
+\node at(0,-4.6) {下半空间：等效镜像，上半空间场相同};
+\end{tikzpicture}
+
+\end{document}

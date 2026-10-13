@@ -1,0 +1,25 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=.42,yscale=3]
+\draw[arr] (0,0)--(13,0) node[right] {$z/\mathrm{km}$};
+\draw[arr] (0,0)--(0,1.22) node[above] {归一化量};
+\draw[thick,red,domain=0:12] plot(\x,{1-5*\x/290});
+\draw[thick,blue,domain=0:12,samples=100] plot(\x,{(1-5*\x/290)^5.8399519});
+\draw[dashed] (12,0)--(12,1.1); \node[below] at(12,0) {$12$};
+\node[red] at(7,1.1) {$T/T_0$}; \node[blue] at(8,.42) {$\rho/\rho_0$};
+\begin{scope}[shift={(21,.2)},xscale=2.38,yscale=.3333]
+\draw[thick,fill=blue!8] (0,1.25) ellipse(.9 and 1.1);
+\node at(0,1.5) {氦气};
+\draw (0,.15)--(0,-.4); \draw[fill=gray!15] (-.35,-.8) rectangle(.35,-.4);
+\draw[arr,blue] (0,2.4)--(0,3.5) node[above] {$\rho_bgV_b$};
+\draw[arr,red] (.9,1.3)--(.9,.2) node[right] {$\rho_{\rm He}gV_b$};
+\draw[arr,red] (0,-.8)--(0,-1.7) node[below] {$m_Lg$};
+\end{scope}
+\end{tikzpicture}
+
+\end{document}

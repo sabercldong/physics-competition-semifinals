@@ -1,0 +1,26 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}
+\foreach \x/\s in {0/a,5/b}{
+ \draw[fill=blue!8](\x-1,-.7)rectangle(\x+1,.7);
+ \node at(\x,0){器件 $\s$};
+ \foreach \dx/\dy/\n in {-1/0/1,1/0/5,0/.7/3,0/-.7/7}{
+  \coordinate(\s\n)at(\x+\dx,\dy);
+  \node at(\x+\dx*1.25,\dy*1.4){$\n\s$};
+ }
+}
+\draw[->](-2.3,0)--(a1)node[midway,above]{$I$};
+\draw(a5)--(b1);\node[above]at(1.8,.08){主连接};
+\draw[->](b5)--(7.3,0)node[midway,above]{$I$};
+\draw(a7)--(0,-1.6)--(2.7,-1.6)--(2.7,-.18) to[out=0,in=0](2.7,.18)--(2.7,1.6)--(5,1.6)--(b3);
+\node[below]at(1.5,-1.6){可断开的补偿连接};
+\draw(a3)--(0,1.6)node[above]{$U_{3a}$};
+\draw(b7)--(5,-1.6)node[below]{$U_{7b}$};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage[margin=5mm]{geometry}
+\usepackage{tikz,amsmath,amssymb,graphicx}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usetikzlibrary{arrows.meta,calc}
+\pagestyle{empty}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}[scale=1.1]
+\coordinate (O) at (0,0); \coordinate (A) at (4,0); \coordinate (B) at (2.6,1.5);
+\draw[arr,thick] (O)--(A) node[midway,below] {$\boldsymbol p_0$};
+\draw[arr,thick] (O)--(B) node[midway,above left] {$\boldsymbol p_1$};
+\draw[arr,thick] (B)--(A) node[midway,right] {$\boldsymbol p_e$};
+\draw (1,0) arc(0:29.98:1); \node at (1.22,.35) {$\theta$};
+\node at (2,-.8) {$\boldsymbol p_0=\boldsymbol p_1+\boldsymbol p_e$};
+\end{tikzpicture}
+
+\end{center}
+\end{document}

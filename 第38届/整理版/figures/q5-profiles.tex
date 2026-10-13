@@ -1,0 +1,17 @@
+\documentclass[border=9pt]{standalone}
+\usepackage[fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\tikzset{arr/.style={-{Stealth[length=2mm]},semithick}}
+\begin{document}
+
+\begin{tikzpicture}[xscale=5,yscale=3]
+\draw[arr] (0,0)--(1.15,0) node[right] {$z/s$};
+\draw[arr] (0,0)--(0,1.2);
+\draw[thick,blue,domain=0:1,samples=100] plot(\x,{sqrt(1-\x)});
+\draw[thick,red,domain=0:1,samples=100] plot(\x,{1-sqrt(1-\x)});
+\node[blue] at (.36,1.02) {$v/v_0$};\node[red] at (.65,.82) {$B/B_f$};
+\node at (.5,-.42) {理想末端场梯度趋大，实际截断于非零小速度};
+\end{tikzpicture}
+
+\end{document}

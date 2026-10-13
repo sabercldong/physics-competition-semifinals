@@ -1,0 +1,1254 @@
+[
+  {
+    "path": "第35届/整理版/drafts/question-08.md",
+    "sha256": "0d1bea6c972ee4752c15eab5f4e62df2dcf16d3641bf07a98fc42b30c7431430"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-03.md",
+    "sha256": "8bc4383cdc912a62f4a87254a8257b7fe9dca57220a55fefc5edd47a22a6153d"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-07.md",
+    "sha256": "6c5ee2141665d5c9a295fb0a972ce8feefd32228fb4350b7259e92e2f3024c81"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-06.md",
+    "sha256": "c1aac4cdb5333d57800716fff0ae6e95524b006e934e8838e1b62ad280f063b7"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-02.md",
+    "sha256": "1d591b1e9d93f4e2df7a7bd88777e6c19a331ea0c115f35f25c138767d5a170d"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-05.md",
+    "sha256": "eefe9d16433ff7c63a5a6c145ff5466cff427b4e3a6259caa9e42b1b71ef5f1c"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-01.md",
+    "sha256": "ffcb6ccb0f8f9447ec9003469738ffc2bff1136d56175a59dc3f2dbb1d0a70ab"
+  },
+  {
+    "path": "第35届/整理版/drafts/question-04.md",
+    "sha256": "af0eeddba3a227c45c35006f14076254c0ade34a66622b7a21d0e1c71b25a3bf"
+  },
+  {
+    "path": "第35届/整理版/scripts/finalize_delivery.py",
+    "sha256": "f98e2c67611b118ec70b740ebdb9feb23a479a7d534479783c843e7ada41ba38"
+  },
+  {
+    "path": "第35届/整理版/scripts/make_figures.py",
+    "sha256": "d17663e0eb5cab76f11785ecdf3b31a904b4a43089c80843d75bcfe153d9d59f"
+  },
+  {
+    "path": "第35届/整理版/scripts/quality_check.py",
+    "sha256": "146fcb9aafb25be98593405a50d36b36ad76891203745119d19e4f2ffb08536e"
+  },
+  {
+    "path": "第35届/整理版/scripts/check_rebuild.py",
+    "sha256": "317a5017f14e6b7699f4e817a73b328bc96bae6212a28721344fa68001dfc8fb"
+  },
+  {
+    "path": "第35届/整理版/scripts/build_all.py",
+    "sha256": "c5bfab58edae192dc4a79099b3bb1bea79efa35cd9fcaffb7db127185f9c15ed"
+  },
+  {
+    "path": "第35届/整理版/scripts/verify_physics.py",
+    "sha256": "750014893281325a1883be0609f991fbd82814510eb613506649a105aee30c9b"
+  },
+  {
+    "path": "第35届/整理版/latex/第35届_学生详解版.tex",
+    "sha256": "13e97818ebae702cbbd9056155cfa40964f3bf278101cd00228c3614882fd51d"
+  },
+  {
+    "path": "第35届/整理版/latex/template.tex",
+    "sha256": "67c89ba67bedab558e70630f1c3371652881513d3e0bcbab6b799bb680fbb84b"
+  },
+  {
+    "path": "第35届/整理版/latex/第35届_试题版.tex",
+    "sha256": "8e748642a4ea722c615b74a8c85d7554936a08206b24f202409680181d37b34d"
+  },
+  {
+    "path": "第35届/整理版/latex/第35届_教师备课版.tex",
+    "sha256": "1a53d3724ea9c5e66199808e616aec02069bcba7a4f96a93e9418cf197d40378"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_试题版.md",
+    "sha256": "b5542329739f6feb71fcff9e1d96fcd8dd01f05c12d5dff3b71529058b353bf8"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_学生详解版.md",
+    "sha256": "a7a5a80e7b8ac2a76a851fdfbc0ccb2a835e8e146470e85baaf516c3b7e5311b"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_学生详解版.pdf",
+    "sha256": "70e6599aada0a923afad70939b9e7304267112f105fe892c463ca354e880ecc1"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_教师备课版.pdf",
+    "sha256": "e277313de9231a279dd0485450b0d672f485fc2bfdec866c17d59e72288d6d7f"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_试题版.pdf",
+    "sha256": "995689026f5a9bb908673ba5a16fb82a991b6707806cb26dc6d656b4dba9d246"
+  },
+  {
+    "path": "第35届/整理版/output/第35届_教师备课版.md",
+    "sha256": "1527f5fac6476aacced8d8ec860b95ceab772504f289d4da38d0222e9de53dc0"
+  },
+  {
+    "path": "第35届/整理版/核验/验收报告.md",
+    "sha256": "0c8a600226d2c05988bf9e8cbdcf9249838c30a13db4c808510eaa8277822145"
+  },
+  {
+    "path": "第35届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第35届/整理版/核验/visual-review.json",
+    "sha256": "89b14a4c968a3cafbd8df78d447e98932aed0f11dba861df023dc795e42de0a9"
+  },
+  {
+    "path": "第35届/整理版/核验/native-compile-results.json",
+    "sha256": "a4c055b3318259b7ba7abd1f8cf07ce27a930134d3d0772b062d4bdaffcf05b8"
+  },
+  {
+    "path": "第35届/整理版/核验/原卷与答案核对.md",
+    "sha256": "1bc1a97bf888f465f98294284e115ddefbd5b2e4f10e9866e6b3cd9d99112eed"
+  },
+  {
+    "path": "第35届/整理版/核验/rebuild-results.json",
+    "sha256": "5ac4ffe765522cf98026e20eeae36939447876c8dbd593d60d9684fcbea1b77f"
+  },
+  {
+    "path": "第35届/整理版/核验/document-results.json",
+    "sha256": "c9cadbc1d853d38051391898a8d13fb1c3aa55ffb599fd44cf9e52006526c61e"
+  },
+  {
+    "path": "第35届/整理版/核验/final-layout-change-results.json",
+    "sha256": "2fec4514ea59f01565387bf414037028f40df4fe06cc6184670615926994f71c"
+  },
+  {
+    "path": "第35届/整理版/核验/physics-results.json",
+    "sha256": "b0949b52f5d7127b15dd47f5a494e62980abaa62fb28326b32ee3f66afe3218f"
+  },
+  {
+    "path": "第35届/整理版/sources/原始资料清单.json",
+    "sha256": "12b5fc5fe2f743a93a4f51918f4baa85f26883dc0ff0e0653353e9b84aee0d95"
+  },
+  {
+    "path": "第35届/整理版/sources/originals.json",
+    "sha256": "12b5fc5fe2f743a93a4f51918f4baa85f26883dc0ff0e0653353e9b84aee0d95"
+  },
+  {
+    "path": "第35届/整理版/sources/第35届复赛参考解答.txt",
+    "sha256": "ba94194768362ebb6b20ec096b88f49399bb28a4f07e0038cce555f0ea75a588"
+  },
+  {
+    "path": "第35届/整理版/sources/第35届复赛试题及参考答案.txt",
+    "sha256": "90c25d101827794e359391ff663c0f0a14df10cc673ec9f1cb7adfe7e722321f"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-03.md",
+    "sha256": "f59e6714c2e8ab887d4843e5fed5040802453afd8278fa1190562aa27b031f50"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-07.md",
+    "sha256": "f21c3197d0a3ffe00f8da61cd8fbbe45ad23194050d4b31569c3f87954d5cb10"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-06.md",
+    "sha256": "6156ebeecfb4df6d145f8ae6f374f2e0177f3fc4559463c33ad8c60dfcf186c8"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-02.md",
+    "sha256": "b49d2a6e67031507e9580e2e7ea7322eceb2ce213936a169c136b5e1af13577f"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-05.md",
+    "sha256": "75c222bec2a93c222ad90e433311f4990b0081b43f6b23694fbe6c98e8667fc6"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-01.md",
+    "sha256": "b9e706c4881bcc4ed28472b93d8f00ee9df6080344a75e9b8e0cdaf93471abd9"
+  },
+  {
+    "path": "第36届/整理版/drafts/question-04.md",
+    "sha256": "50897ab645bf1e5d1a9229fa231a4f126dd32c0f86b4daebac734ad1feede5fe"
+  },
+  {
+    "path": "第36届/整理版/scripts/finalize_delivery.py",
+    "sha256": "ad564bc5baf065667d0402644200dc2b036fd87b8d413b314c172df968f60da1"
+  },
+  {
+    "path": "第36届/整理版/scripts/make_figures.py",
+    "sha256": "1bb126f079417890ce47828ee676acd5ede020dcc107e34f3eac7e715860a73c"
+  },
+  {
+    "path": "第36届/整理版/scripts/quality_check.py",
+    "sha256": "3cc2b3ab26b9b5fd00ab8928bbdc0f46fdd1a0aa0109b8967bff3dd16c2ce844"
+  },
+  {
+    "path": "第36届/整理版/scripts/check_rebuild.py",
+    "sha256": "fa452a7cff79022a35fe08aa4b4257cf4b5284fa132bb4655c1e2e96820d35c1"
+  },
+  {
+    "path": "第36届/整理版/scripts/build_all.py",
+    "sha256": "d39bb7325a4eb7d98b46d90b955e94d5bfbf2caf3ab6fe003207d69585c6f64e"
+  },
+  {
+    "path": "第36届/整理版/scripts/verify_physics.py",
+    "sha256": "e1b620a28b62b04f69ac365b12cc1347fe978101e61ae3aba70e4787af63a4c2"
+  },
+  {
+    "path": "第36届/整理版/latex/第36届_教师备课版.tex",
+    "sha256": "4019ca8cb7dcdae198e9902f4f58d06231b8786a3d4ed72922558afd729dcf27"
+  },
+  {
+    "path": "第36届/整理版/latex/第36届_试题版.tex",
+    "sha256": "50bf25829544327c580ee20da34d631c8f257a9671feea97f47ef14226944d2a"
+  },
+  {
+    "path": "第36届/整理版/latex/template.tex",
+    "sha256": "d88850e900ed0585bd4daa64ce09ca8ea688c205f7b232ff683b28a804717c0d"
+  },
+  {
+    "path": "第36届/整理版/latex/第36届_学生详解版.tex",
+    "sha256": "ca985fd46bb9ecce3f96a4c63cbc343ac43edda7bc551ec51087a161b40b3d27"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_试题版.pdf",
+    "sha256": "8df6df971aef044d4eeb7cceeff613d60ea4fbfe2450776463ab7e9cf21e44e1"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_教师备课版.md",
+    "sha256": "0f517ddc13fa18d6189743da695f44d9cf79cf4ad0d0d7cbaa96ee888ad616cb"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_试题版.md",
+    "sha256": "c07c80e5412c0b82acf4b99e749683661c7a1720a8f6939459124bbe06dd0a4c"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_教师备课版.pdf",
+    "sha256": "bdefa916f2f1d697d28da70dfbb6a32a6bc48e4b5b60b2c156ec461f8ede0d54"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_学生详解版.pdf",
+    "sha256": "152cc12c2e3941a6adfed687802ff03c6368f0d8612c3b29e85afbce7dcfd1a1"
+  },
+  {
+    "path": "第36届/整理版/output/第36届_学生详解版.md",
+    "sha256": "7238643c9ffc55301a6e1b0becb26e31659064e95b97a7c95e343cb5c522c25f"
+  },
+  {
+    "path": "第36届/整理版/核验/验收报告.md",
+    "sha256": "bcdc8f2ec5968d35e09340b946c01b91342ff86dcc70f1508fb4928b199fd796"
+  },
+  {
+    "path": "第36届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第36届/整理版/核验/visual-review.json",
+    "sha256": "4f693b9135fc8de6f0d7dc8318506d6c804713d696b285d5e9a2cf74e7c5468a"
+  },
+  {
+    "path": "第36届/整理版/核验/native-compile-results.json",
+    "sha256": "4bd6056d27e5b51ba9e389402ac2e19265b293573a7bbef45e197e603cc1640f"
+  },
+  {
+    "path": "第36届/整理版/核验/原卷与答案核对.md",
+    "sha256": "12845a1f0d46218a0242911db02e5eaf7ae6f94cf1b400fe2ef221d62832ae45"
+  },
+  {
+    "path": "第36届/整理版/核验/rebuild-results.json",
+    "sha256": "5a27219fb96f0794ed58e9dbc24ddab65d5f29cc7cd212607f838a1d4921627a"
+  },
+  {
+    "path": "第36届/整理版/核验/document-results.json",
+    "sha256": "c8ac3c08de8ac8aeedb947187a0dc93f94852d0d0eb64d8230eb1be17dec0459"
+  },
+  {
+    "path": "第36届/整理版/核验/physics-results.json",
+    "sha256": "8a7d5334a4072207fc2512386140397a1b3357454941664922e4100996f2be98"
+  },
+  {
+    "path": "第36届/整理版/sources/原卷解答文本.txt",
+    "sha256": "f5ad405f011ed113cea2eb6b1d440c88e281721229c5194ec830adc83059eddd"
+  },
+  {
+    "path": "第36届/整理版/sources/原始资料清单.json",
+    "sha256": "2419cbdae8f6fecb0761e556b61d798a09e41f5f29053d7f2222061080d60f52"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-08.md",
+    "sha256": "78139bbc8d0bec2834083f3dab7522b64d2ce846594353e6dc3b45917baecfd3"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-03.md",
+    "sha256": "8a9763feb497f8d3b7f29fd117b3201d9e2329bc58db2f6e55391dabf26ede74"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-07.md",
+    "sha256": "56e70c96eeb39978e7a76c8b4d538476dedb62ae48b691200950e397bcef7bf8"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-06.md",
+    "sha256": "350ecfcc1cad82a4d83c41da44e7b20ed08b288829d47b546c15c0fd4c3943c4"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-02.md",
+    "sha256": "666f5f0a335f6b5cb1ed6f22078666b260225531793a278ff801abc5c1cde3ac"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-05.md",
+    "sha256": "64cbd5e381d7ce72fbfa171fbffeb8248af91b849d733646a21b63836048b510"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-01.md",
+    "sha256": "55704d6d5d40d0fcb1c565252d6be520d10cbd9f6496cfc7815786cb6c8a367e"
+  },
+  {
+    "path": "第37届/整理版/drafts/question-04.md",
+    "sha256": "a70fd3959e207f9528ae7b7726bfe60e3facfa9e98220768504186dc6a5df580"
+  },
+  {
+    "path": "第37届/整理版/scripts/finalize_delivery.py",
+    "sha256": "145499dca883235a4bad3bc8276688731a6df2886743af9b654d873be26361af"
+  },
+  {
+    "path": "第37届/整理版/scripts/make_figures.py",
+    "sha256": "054a82a3adf390e0cb7080f3a879b8c3be4c78dd80570c8303fbab702a8107a6"
+  },
+  {
+    "path": "第37届/整理版/scripts/quality_check.py",
+    "sha256": "f380550f68f395d7a3c8027f17c001aad99801995fd21d797810c61106b3a6fb"
+  },
+  {
+    "path": "第37届/整理版/scripts/check_rebuild.py",
+    "sha256": "d52982ea2654639e77b36d0b1720b9c6a6ac072b0b64281d9fe12c382ddcb025"
+  },
+  {
+    "path": "第37届/整理版/scripts/build_all.py",
+    "sha256": "4855f2cedf37675c67a1bcb9a992939103a04307e3d714bb73f0566fa0695b49"
+  },
+  {
+    "path": "第37届/整理版/scripts/verify_physics.py",
+    "sha256": "c183c0c5f3fb930855a3c8fcb4e91d3e476ff5b98dd4960192bed219c361a028"
+  },
+  {
+    "path": "第37届/整理版/latex/第37届_学生详解版.tex",
+    "sha256": "74d0ca4c384cd2c769595de101bbd9769a1c851287c2fe30b036d3d8c0b7d077"
+  },
+  {
+    "path": "第37届/整理版/latex/第37届_试题版.tex",
+    "sha256": "bbb2f0947909ea174fddfa9f0a30d77f38fbcca57f2243e417c23bd236a91eaf"
+  },
+  {
+    "path": "第37届/整理版/latex/template.tex",
+    "sha256": "bcf048facf80fffcbfbe0f84a3b43da75f7ed040b0d169528d0d7db73cc46060"
+  },
+  {
+    "path": "第37届/整理版/latex/第37届_教师备课版.tex",
+    "sha256": "56aeb3656066083fcac21e75d2a267b83c04ca39a7b526eae828a33ef47e2747"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_试题版.pdf",
+    "sha256": "68d7b1991db51d886dcadfdf5d5485bb213a2aaf7467162107d35788143bed10"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_学生详解版.pdf",
+    "sha256": "3562f79f0fe2a75d2b021362560c9871af317c5dc87b84f85b18d38adc3fad51"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_教师备课版.md",
+    "sha256": "66fd801e3092215347b493a723717aa0517664eb748831ce928b12e388191194"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_试题版.md",
+    "sha256": "70c4ccfc636e7807ef2c5ea6d9bac91b59de46b8b833d0aa22d09191076ff166"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_教师备课版.pdf",
+    "sha256": "9057cdacf6c8fe7ff4209073fc71475d80b2383ab6cac9e3cfb8459d65221420"
+  },
+  {
+    "path": "第37届/整理版/output/第37届_学生详解版.md",
+    "sha256": "1c1ed66b15f35996599508a67ec1d197ae6e4d128364e8c380a47dd14e9ea3aa"
+  },
+  {
+    "path": "第37届/整理版/核验/验收报告.md",
+    "sha256": "b2f81e448a9853f13e7e3e952cb9545d39dae8563bc86dead74ee13d769d3558"
+  },
+  {
+    "path": "第37届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第37届/整理版/核验/visual-review.json",
+    "sha256": "c947f44ae728aaac6dfdb37110296a3931058639635ea621cf5be4a01118ff87"
+  },
+  {
+    "path": "第37届/整理版/核验/native-compile-results.json",
+    "sha256": "3dd90b307b5d2eda9161266cb0f5afde45867b55bb2110d8faa87c8fb6c25135"
+  },
+  {
+    "path": "第37届/整理版/核验/原卷与答案核对.md",
+    "sha256": "3cbe7155ca466fb6ea01ba3d1d91b1154705d2ce44112eafaded8a25d24215a7"
+  },
+  {
+    "path": "第37届/整理版/核验/rebuild-results.json",
+    "sha256": "1d86880633e596a1dccb5063f71f0bcbad6121f771465b6039a92db3ddf45ab1"
+  },
+  {
+    "path": "第37届/整理版/核验/document-results.json",
+    "sha256": "c322a0d07e982d2e9f36800410f6b82d127c7b95d4d1aee631efcf2947aadb15"
+  },
+  {
+    "path": "第37届/整理版/核验/physics-results.json",
+    "sha256": "2ba608719b4a809866b2995203dd43516ecd10dcee2f14eea32d191a720e9cf8"
+  },
+  {
+    "path": "第37届/整理版/sources/原卷解答文本.txt",
+    "sha256": "57ad1b398c35847423ad60198753ad7037c429795f40417287a48cac71c468c9"
+  },
+  {
+    "path": "第37届/整理版/sources/原始资料清单.json",
+    "sha256": "511a98347549a9c2aa414c4ce2cd85d81ff033fc1d4b429d7fd7cdee442f128c"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-08.md",
+    "sha256": "10830c0c353d9736efbff18fde7dcf3ce66f14827a811df3b41237bd36b54919"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-03.md",
+    "sha256": "84afb8423c3ad6267551cda2db3c7d5c9cf7eea1422331a0ca49bf262c6a8fcb"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-07.md",
+    "sha256": "13aa6b84d5e3023a60289370abc9d7ff3efc4c34069ad7cfbbecbf4da93791f0"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-06.md",
+    "sha256": "6ec46e230309551fbdd4c4163442a6ad9ab5b6d8d292569ffd5ece7e66bb59b2"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-02.md",
+    "sha256": "700661fa2d181af86bbe28220cd4ba192dea77b720b0877c074be5ad063d29d0"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-05.md",
+    "sha256": "93d2a2168776f73919f27c8298468fefe50cdb13296f3acaaef7e5c2805539a6"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-01.md",
+    "sha256": "a6f82932b5192259be8f2b6b35043a2ccb7c1ba513a8877b844008aefb77cb61"
+  },
+  {
+    "path": "第38届/整理版/drafts/question-04.md",
+    "sha256": "81c4136924c1a94b33c9fdd0d29793cf066b404751d8fa5959bd9840b6ce4c2c"
+  },
+  {
+    "path": "第38届/整理版/scripts/finalize_delivery.py",
+    "sha256": "c6ec684b2f337a2bb843011d3a5959704e5b8b0a0c5d285ead4795c0f96f6725"
+  },
+  {
+    "path": "第38届/整理版/scripts/make_figures.py",
+    "sha256": "e052c9487e33cc8f26557ecc9051f56f443a104c2afaadaffe96247f85269ff3"
+  },
+  {
+    "path": "第38届/整理版/scripts/quality_check.py",
+    "sha256": "32b51eac53aba0fba772ab2138c7c1d02e5cefb58d662d2baf25a511406d6566"
+  },
+  {
+    "path": "第38届/整理版/scripts/check_rebuild.py",
+    "sha256": "1112bd0056d41429e1525562d375b8410f85874763ec16c4e223f6ea890be920"
+  },
+  {
+    "path": "第38届/整理版/scripts/build_all.py",
+    "sha256": "2132d5832b14d124cfbd5462c1b6e7566a2ba325c2f31be5e71097fecdff2742"
+  },
+  {
+    "path": "第38届/整理版/scripts/verify_physics.py",
+    "sha256": "85296efdcf932a61e6e3d9e17d587526d5723e8f2b0ed74e92e3f4f4780e0297"
+  },
+  {
+    "path": "第38届/整理版/latex/第38届_学生详解版.tex",
+    "sha256": "57f7deff52637ae5e48724f38936cd6d2e1740595ae8aaff61d82556d7dc6283"
+  },
+  {
+    "path": "第38届/整理版/latex/template.tex",
+    "sha256": "9df95a289fb4e347d0162e8e56c68502faedc17d941f80092197dea9c6757491"
+  },
+  {
+    "path": "第38届/整理版/latex/第38届_试题版.tex",
+    "sha256": "a9a42147f41763356adb92975a40ac80b8fed08b4d80dea6fd86109c5c5b6d0c"
+  },
+  {
+    "path": "第38届/整理版/latex/第38届_教师备课版.tex",
+    "sha256": "c5a0f083fe8e040297d0a95f6b9941aef92f46d158f663c6df5e3e8f26cf9dbc"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_学生详解版.md",
+    "sha256": "995f7b289a9ae1a7ae18c8b043af3b7c8fcbdc9bd3f54012883d2682f49aa18b"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_学生详解版.pdf",
+    "sha256": "e7b8d59748885e0548a75114beb238d85a9bb8b60e0997f4ccba1583ef3cf2b7"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_教师备课版.pdf",
+    "sha256": "fe238c0900f6c9587c376ac4ddf5be901f66a8aad0a248ae44d66ed4a22e31b3"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_试题版.pdf",
+    "sha256": "15831128112029f3944e0c45a0c277fbe9b0df14e8d38634411705ef9ffeb94c"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_试题版.md",
+    "sha256": "7e2af2177f05aa1328acebc817d86b8d60be80b87eb4784fb21193db91850d31"
+  },
+  {
+    "path": "第38届/整理版/output/第38届_教师备课版.md",
+    "sha256": "6fb30be658b8225670b256d343a9c8d7af8f11fc7acc29820975ebea58ef8781"
+  },
+  {
+    "path": "第38届/整理版/核验/验收报告.md",
+    "sha256": "a6bc319695d49fff31fca24e7a27d2212b8a88ed67e7ced3c2cba1eea5ac29b6"
+  },
+  {
+    "path": "第38届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第38届/整理版/核验/visual-review.json",
+    "sha256": "69c2faee640a86356b766df2b9f30ff83d299f860c1b0391bdded9f4a187fec8"
+  },
+  {
+    "path": "第38届/整理版/核验/native-compile-results.json",
+    "sha256": "67ec4f79208a2cb33b6f9d5825984f6731307891db82dfed5221c1c7322297d6"
+  },
+  {
+    "path": "第38届/整理版/核验/原卷与答案核对.md",
+    "sha256": "de07da0c2e3976a093675724cebd1120aad6baf4a1cd0fddafd2fad1dccab971"
+  },
+  {
+    "path": "第38届/整理版/核验/rebuild-results.json",
+    "sha256": "9473e6a7449cf80fa5661560593b9dc0a90bd8731171e1b0f1e4c0229265fa16"
+  },
+  {
+    "path": "第38届/整理版/核验/document-results.json",
+    "sha256": "57b4b48f490240032640cc7ef60885db6ca4ba17fd885013e3ccc29df1543afc"
+  },
+  {
+    "path": "第38届/整理版/核验/physics-results.json",
+    "sha256": "f7fe0270b157f75cf003ea3fe830a2a830de4e4324f01eab7e11ee3d04f07bd3"
+  },
+  {
+    "path": "第38届/整理版/sources/原卷解答文本.txt",
+    "sha256": "16f93e1c5cba7560126f0aeb92a632ac96c8e761dce2b30733d0a0a4c3eacff1"
+  },
+  {
+    "path": "第38届/整理版/sources/原始资料清单.json",
+    "sha256": "065b54a3f252cd55a0b2fc5fd29029d0ed0ae5b72ee14f93095ded6f3458638f"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-03.md",
+    "sha256": "258d24842031dbdb0dcd673ce1209a81077e88e595ddfbb05c92df540a9b7d85"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-07.md",
+    "sha256": "4a23962a55657c56f96ab4dc5100d1be44b29ea630ad6ebc3351c09a5d4e2a25"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-06.md",
+    "sha256": "a089ca30e16fca06b2626845da65d460f2ca7f72cfe4588f40d4b305a08afc0c"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-02.md",
+    "sha256": "d1adece451b9d3abda5f15d818044c8cf3c5e5237f1ffbdd3d0531a35863ded5"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-05.md",
+    "sha256": "a4de802674632c2a02447260352c1bf6d4a55c606a4e25bdc5969e922352a857"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-01.md",
+    "sha256": "c888ecf2d88f5a8ec8addd0fb323aa6e4a0fc57438ce50ac2ed9212a99343251"
+  },
+  {
+    "path": "第39届/整理版/drafts/question-04.md",
+    "sha256": "0df248e94b00160a68b45366a51999d06c05fe1f28b5d3a6a1ee7333207974d1"
+  },
+  {
+    "path": "第39届/整理版/scripts/finalize_delivery.py",
+    "sha256": "5f1422f35dd49cf965cfba5965da24c4fe85ce42bb8fbe67ae225f1a7145135c"
+  },
+  {
+    "path": "第39届/整理版/scripts/make_figures.py",
+    "sha256": "5be93ebcf48dfa5f8166e197d5e693174ed7bc290dc0d7a4badeb41ed7dcb7e7"
+  },
+  {
+    "path": "第39届/整理版/scripts/quality_check.py",
+    "sha256": "447a1b12f3f4b44ad74bd93c5939d331cb7f8e0c0eb2a794b48a4c6534045fa4"
+  },
+  {
+    "path": "第39届/整理版/scripts/check_rebuild.py",
+    "sha256": "bc0e7d9f773e4fb2970ceb77fc120d09884170b2269a2df238aeb35878c1c044"
+  },
+  {
+    "path": "第39届/整理版/scripts/build_all.py",
+    "sha256": "b4801aed1db64619100286e27fd2f544af9892f020e13db3b6240309a4d43c2a"
+  },
+  {
+    "path": "第39届/整理版/scripts/verify_physics.py",
+    "sha256": "6010e6e42cd1b60222d8ab54b4a0ea7b3992059a5bfbc108841f0f04b8077a37"
+  },
+  {
+    "path": "第39届/整理版/latex/第39届_教师备课版.tex",
+    "sha256": "a53c4365e2e717fdf39cab696d13ed8ad6908f5f30244ce665a313f27409126c"
+  },
+  {
+    "path": "第39届/整理版/latex/template.tex",
+    "sha256": "d5d6ec94703603b5513d79d4f1de3efeea9c991e4b217d59d9d4493bdc85b9bf"
+  },
+  {
+    "path": "第39届/整理版/latex/第39届_试题版.tex",
+    "sha256": "f7297860efb9aa8b2573b0d43b1552cf007a855fc7d0c423173661e551910fe4"
+  },
+  {
+    "path": "第39届/整理版/latex/第39届_学生详解版.tex",
+    "sha256": "39b277f1c469f2148b41be7672da44b48396ea3726865fae62e362cedfdf0a96"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_学生详解版.md",
+    "sha256": "a0767ac941ba2f5bbe231b16a9f8f697c7685c47276186f8213abbdaed4f8ac4"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_教师备课版.pdf",
+    "sha256": "35f939ff5428ce3bad5fe896172826388682150a10c56f59c4997145013664cd"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_教师备课版.md",
+    "sha256": "49209670ee7d67e6f03da9f1ae414302361d3052364d6c1011101d58d43e18b6"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_试题版.pdf",
+    "sha256": "e648eca02f88e23f8376dd678fc4d81d5351dc353385f6fcd5b1a17d7a1e4372"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_学生详解版.pdf",
+    "sha256": "ba3e8639c33d17156fef308180ba286cab675a3e38463c6a79b6b57ae3da08c4"
+  },
+  {
+    "path": "第39届/整理版/output/第39届_试题版.md",
+    "sha256": "df87246cf3cb505a617e07bdf22b42c8b80e57acfc04446a91570b2799e82351"
+  },
+  {
+    "path": "第39届/整理版/核验/验收报告.md",
+    "sha256": "efca13a328b4e7d2a60fce912409db3f1060e95ffc0aeab47774a7c85a8b1fb8"
+  },
+  {
+    "path": "第39届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第39届/整理版/核验/visual-review.json",
+    "sha256": "4da28ae2e10a41a99d8b6e4dbbbf4677c65d0da2d9f15378b80c1ad376d079f8"
+  },
+  {
+    "path": "第39届/整理版/核验/native-compile-results.json",
+    "sha256": "daae28892c50d0a33960446c9995fdae6b24e3e8d592b6c85361eda2a307dde4"
+  },
+  {
+    "path": "第39届/整理版/核验/原卷与答案核对.md",
+    "sha256": "983fa0a8f87aebb6207cbe6e78de3e3bd0d0a71468071a689b5cdd91352834e9"
+  },
+  {
+    "path": "第39届/整理版/核验/rebuild-results.json",
+    "sha256": "def96c4dd643dd6bd34ee12963a51a3c572fca09f76898c0030c39db9c2b4cda"
+  },
+  {
+    "path": "第39届/整理版/核验/document-results.json",
+    "sha256": "d9f72a5b71216ecbbde53f466ef15813af1010a0fac3ef51b6c9e20a426b86e6"
+  },
+  {
+    "path": "第39届/整理版/核验/physics-results.json",
+    "sha256": "1f146160b39f247f7d59fef5c5c48c60b10af3f7a6075a0e02e18520a40a9620"
+  },
+  {
+    "path": "第39届/整理版/sources/原卷解答文本.txt",
+    "sha256": "b550c3d0ca69d1889ccc8cbe6c5d9f3a5c9854f51eab6d3919018bf5a78bbcd7"
+  },
+  {
+    "path": "第39届/整理版/sources/原始资料清单.json",
+    "sha256": "0d4a49de76dfdd3aff61908ce4d03120d12581cc3f09f869c2431327c43ae99b"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-08.md",
+    "sha256": "fa1ceff4e22c3ae7646be1b3dc55048263a24d77770eb2d30ac0c305327ddb38"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-03.md",
+    "sha256": "e07a7f6647d75daad9856588c57c2dd1653457d0e6374586ffff15065594de93"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-07.md",
+    "sha256": "328fcb2fa4978931571742c87cf7e8e065ec3bedbfee9af5211ea582dc3555e7"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-06.md",
+    "sha256": "48a81cf7145592623b01b4693df525aff623a94db618c4504eabeb0189c3b97d"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-02.md",
+    "sha256": "8e36d58433a8a302fe56b223ef3bc66a59f01804a39a159b5e425871bcf68d1a"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-05.md",
+    "sha256": "a91f0e258ac4cea60a11c4480be3dca2296ed3bfec8e816b0d0c5595c5c31835"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-01.md",
+    "sha256": "ee2aca33d6d85beb6a36b46f835554031d7a4285aa9eae92003b875073671d59"
+  },
+  {
+    "path": "第40届/整理版/drafts/question-04.md",
+    "sha256": "1a7892a7fbcd5bb412c4564e4ad549e3b0d032542078e10a31cd4d3a7b89a7ea"
+  },
+  {
+    "path": "第40届/整理版/scripts/finalize_delivery.py",
+    "sha256": "f517a547c76c27b06d469d0693daa0cd2bcdd7d20c0a09c74a61e51610890b00"
+  },
+  {
+    "path": "第40届/整理版/scripts/make_figures.py",
+    "sha256": "fff58a6b9ca3c8090e2e640eedf72f9b4cc894052958da7bb4593fd443776b8a"
+  },
+  {
+    "path": "第40届/整理版/scripts/quality_check.py",
+    "sha256": "f78509cf2b319ff13cb25877275064914c685591dcff8296ef31a98b95ca4cae"
+  },
+  {
+    "path": "第40届/整理版/scripts/check_rebuild.py",
+    "sha256": "9c93413d7011314727b990509fb7a1ee017b77249dbb73236ab8501cd5a3b68f"
+  },
+  {
+    "path": "第40届/整理版/scripts/enrich_drafts.py",
+    "sha256": "b8cb3cccb551ad820f1566f59c77450580d18732be2873f3a7824e183e49ad15"
+  },
+  {
+    "path": "第40届/整理版/scripts/build_all.py",
+    "sha256": "bea2518703732ab7a819edd73bcb9d71caa3402d87037355429d6c1e3e2d24c8"
+  },
+  {
+    "path": "第40届/整理版/scripts/verify_physics.py",
+    "sha256": "e2b77032a88899deef99aa60477c437f98b3f4850f5bd05f963ee47e9b159d85"
+  },
+  {
+    "path": "第40届/整理版/latex/第40届_教师备课版.tex",
+    "sha256": "c7f4f6965ae272da5ad5d4627e3fbbbc3fca2526812ed4d8163ce9aa06aaa8c0"
+  },
+  {
+    "path": "第40届/整理版/latex/第40届_试题版.tex",
+    "sha256": "b93ed54ff40bd6a36196126e55b7415515211c86d5d8582dbe677827452995b1"
+  },
+  {
+    "path": "第40届/整理版/latex/template.tex",
+    "sha256": "d9157982310c09513785c626f2e60422e49a2bf3f9698e619867dc49cc8f7c64"
+  },
+  {
+    "path": "第40届/整理版/latex/第40届_学生详解版.tex",
+    "sha256": "b3fe0a15fdc15bdc373692d86ae122c266b3d0805d1e5dff870294e7cf6cc03d"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_试题版.pdf",
+    "sha256": "9bcedd5200597f39b215c3fd80eecdb6c25a0715041c737318ceee5282602985"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_教师备课版.pdf",
+    "sha256": "fb30724567430595d5de049a54b0e31be80e9bce7680b5dac057a88c4ebeb428"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_教师备课版.md",
+    "sha256": "d9ac62aa9fbc274d46ac70afc016128d76e6477e00b455e6d46b38ce29a32f72"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_试题版.md",
+    "sha256": "9e1f4f294f6dc0bac992b5d039da799a8b612c864e574df7c0d2a77cf7987ae3"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_学生详解版.pdf",
+    "sha256": "3d6720c8348a6453fd6ae666578faae4b5427f6f7a2f139ac0561da42fd8148f"
+  },
+  {
+    "path": "第40届/整理版/output/第40届_学生详解版.md",
+    "sha256": "893e08064a3691278bdf55615db8f16e6e9e5e746c753e733ac787c0d7908038"
+  },
+  {
+    "path": "第40届/整理版/核验/验收报告.md",
+    "sha256": "78a2d73e3a760a0e02cc0a03d6b42e35f972b812a894888a853dff9337182e92"
+  },
+  {
+    "path": "第40届/整理版/核验/rebuild-command.log",
+    "sha256": "ef51c46aecd2718bee3738bfe86ef50fd5c70560b53ce43f88a100d346c8aa43"
+  },
+  {
+    "path": "第40届/整理版/核验/visual-pagination-comparison.json",
+    "sha256": "24b3b51a9517ce4ac984df3d3c2afc7abc901c7c6ac155124d9eef5e1641f00c"
+  },
+  {
+    "path": "第40届/整理版/核验/visual-review.json",
+    "sha256": "325154c8eb928b6197540e608403de8a2f06a9c5d0e62f580434c1697f3b8a17"
+  },
+  {
+    "path": "第40届/整理版/核验/native-compile-results.json",
+    "sha256": "7797e9a6c4a1c94e2fd0536d92b735a13b93c92bdb8f71fff7c196d078151ec2"
+  },
+  {
+    "path": "第40届/整理版/核验/原卷与答案核对.md",
+    "sha256": "e3f9e16457b77650dac0c026d0dee9ec1a90c286f42fcf68e4f13c65f89bb6c6"
+  },
+  {
+    "path": "第40届/整理版/核验/rebuild-results.json",
+    "sha256": "4e40ebc10132595e495bb0f9f32d087932bd3f3b682d72ecf09a3d4d50c86d56"
+  },
+  {
+    "path": "第40届/整理版/核验/document-results.json",
+    "sha256": "31409dbb95122994a5f1fd0be6fd942449404ea56c03d96fda05bb52848b8668"
+  },
+  {
+    "path": "第40届/整理版/核验/physics-results.json",
+    "sha256": "18becda18b753da571795ffdbb231091578fc43bfef6470d7b08c800905e701b"
+  },
+  {
+    "path": "第40届/整理版/sources/原卷解答文本.txt",
+    "sha256": "e39a20ae57543ae579e4fe98caacbdb1531755dc6441d984fd77b2f5acbfe57e"
+  },
+  {
+    "path": "第40届/整理版/sources/原始资料清单.json",
+    "sha256": "a911523a04156df31145b5073300321f2f4dad7f2d9060994407885548db440e"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-03.md",
+    "sha256": "f67fa8a38deaf688b8d2ebca688ff5cf96575fae101c7740768b26cc78fbee45"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-07.md",
+    "sha256": "3da6f83f9d4c81948fbf1243ce813ec4242341862eaa3e55ba1bb3dc30311ec5"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-06.md",
+    "sha256": "a97c3c9eda8467042dde97d03ba58b44d34f8a3548678ddd3a88d7153c821cac"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-02.md",
+    "sha256": "14d85366f3b22750eb3439c2722bcfab4afd9b85f60061e341d8d5687f4cc407"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-05.md",
+    "sha256": "3fab78107f44d45f13dc997004b68d6381183268cedaa3f58ff23d575ed99291"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-01.md",
+    "sha256": "2cb95816e4176f09a20d501e15a3dfaee2d77100d7220d6f3daca8c912eb5788"
+  },
+  {
+    "path": "第41届/整理版/drafts/question-04.md",
+    "sha256": "c17d01cfd6d5bfadf2ba67200426c08d55aa7b2987d43d14f59d20dbafb116f9"
+  },
+  {
+    "path": "第41届/整理版/scripts/make_figures.py",
+    "sha256": "a738ab1ba6f27945e623f28ec78f4b3f0ec96edcd2c3d2c875f6aae706fab392"
+  },
+  {
+    "path": "第41届/整理版/scripts/quality_check.py",
+    "sha256": "4a51021394b5b18ce2811ac6af5ca869a2c0b74f35bce69b75e62c6038bec1e1"
+  },
+  {
+    "path": "第41届/整理版/scripts/check_rebuild.py",
+    "sha256": "c14eec17800ee63b69686a01e6bde1312498bf77d42acd88975dca240da78e03"
+  },
+  {
+    "path": "第41届/整理版/scripts/build_all.py",
+    "sha256": "d2c637202aec42b008e4e6a48da7bc5d4d43d9c9d959a4429f11f87ac06916fa"
+  },
+  {
+    "path": "第41届/整理版/scripts/verify_physics.py",
+    "sha256": "1f3ac380be033dd63d7e402b1d33be7c59b5b480ee3e9128b084e06507a3061f"
+  },
+  {
+    "path": "第41届/整理版/latex/第41届_学生详解版.tex",
+    "sha256": "791a7ff9a3cc0f948e9ea3258ee84fb9a6080d0d525af5518b9b9c11afc16e16"
+  },
+  {
+    "path": "第41届/整理版/latex/第41届_试题版.tex",
+    "sha256": "971e1141105fdba7e6bbadeeb44d5bd8fcdcccac651d208059de8b19ca2b60e1"
+  },
+  {
+    "path": "第41届/整理版/latex/第41届_教师备课版.tex",
+    "sha256": "43b7ca48e7aa773a0a8b71f63eb45c8c304262fe393423ec9ba9b074d114db2d"
+  },
+  {
+    "path": "第41届/整理版/latex/template.tex",
+    "sha256": "eb120c8e848cca8acd77af832d72cb7926e4af903461570e3e5501e5f0540084"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_试题版.pdf",
+    "sha256": "df7e4815a3d8b1b10a92a48a36fc7afde877e0825c0c9d35a873e43e94a7ab6b"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_学生详解版.pdf",
+    "sha256": "b163c996f50520335958b2765b6aa32c4c7e108bcab97ad5fc75996d7b0746ce"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_教师备课版.md",
+    "sha256": "6f4c6cdb0e5f0efa6d7104f7aa36157655a6a2cb032c99aa10196dccd693f3b5"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_试题版.md",
+    "sha256": "29934673033ee76ad10e26b045387ccfecd11418bed3aaec8f85680b96761c56"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_学生详解版.md",
+    "sha256": "6626b82c29377c3c30c127a1775c281c50d109d80cf82e42626275d09651d85b"
+  },
+  {
+    "path": "第41届/整理版/output/第41届_教师备课版.pdf",
+    "sha256": "601f3a4a8abadfdb7b35b9bb7a5f98b272e2943e9ee9ad91efb504405456206c"
+  },
+  {
+    "path": "第41届/整理版/核验/验收报告.md",
+    "sha256": "a429122acce0ef757818759a2a225c6424fa5d6428c8339c67a1b898b3a7de2a"
+  },
+  {
+    "path": "第41届/整理版/核验/页数与版式说明.md",
+    "sha256": "83e21af78bc8196bcdcc5674e266574848252171e950fae20d3781d32d1f4604"
+  },
+  {
+    "path": "第41届/整理版/核验/rebuild-command.log",
+    "sha256": "4861cc1f5f38521374726a43cd7d3cd0be448e28e9f2c76c37cfd2df3e728ce4"
+  },
+  {
+    "path": "第41届/整理版/核验/visual-review.json",
+    "sha256": "ebb4488c42ba3bd681569a1ec76163176dc3d98b6a43683663de25f178e79209"
+  },
+  {
+    "path": "第41届/整理版/核验/native-compile-results.json",
+    "sha256": "32ee3144744dfbbe2b26b12f7312eb44dee5f585d60bc9a666d0de1d8c5412a3"
+  },
+  {
+    "path": "第41届/整理版/核验/原卷与答案核对.md",
+    "sha256": "731eeebc817fb3a91fd648d2ea2e9652bc71f02230eaf47cc1f3e4c70fa5cb79"
+  },
+  {
+    "path": "第41届/整理版/核验/rebuild-results.json",
+    "sha256": "0cd21c7ee48423eccc686679478667a2ef617167eeee0af041ae42f10d249bba"
+  },
+  {
+    "path": "第41届/整理版/核验/document-results.json",
+    "sha256": "7916057189d18beb04142314be0ab9220fc60664b0dce065dd4318f2ddf93024"
+  },
+  {
+    "path": "第41届/整理版/核验/physics-results.json",
+    "sha256": "4ea4e227e67d56fd75bdfd28da7969ecfae5a7de9ce1b88e0e6ab110224c1839"
+  },
+  {
+    "path": "第41届/整理版/sources/理论试题.txt",
+    "sha256": "f6121efa77a20d08328a4e9b598d6fbc916813d8cf6d0600b65aaed11180a808"
+  },
+  {
+    "path": "第41届/整理版/sources/原始资料清单.json",
+    "sha256": "47c80c1f7a23f54bd577cd52db8a8a4774017b4ca5f960f430552aa165bb38e9"
+  },
+  {
+    "path": "第41届/整理版/sources/参考解答.txt",
+    "sha256": "2ef47e014c4f0f2d413efa81656541bc90bbf4d113f403d88e7fbd19ca0ddc51"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-03.md",
+    "sha256": "b6f441a573c589a3cfbddfa27745daddc569d14712ca6a9b628dcb0458684c2c"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-07.md",
+    "sha256": "2dca4bdc7f3486749fd6e08aeeedad7a8e0e88da96f38f80364eaabcc077978d"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-06.md",
+    "sha256": "63964d8dfd6f298921dfc233b5e47f79259445a12b428b1e0d3009827d9343f7"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-02.md",
+    "sha256": "e9b8115f4f970df494a576d2767dcbeca45ada04af483f14e0d90c0cca1d35d1"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-05.md",
+    "sha256": "2793ffba00200556fac52a95cf102ae6b261fd67cc58026d9b6dfea9e3d49c68"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-01.md",
+    "sha256": "e6d0076fcd2a6d292c602010a90492ba2ac59b5eb6675ab0fc8fef40fdd4104d"
+  },
+  {
+    "path": "第42届/整理版/drafts/question-04.md",
+    "sha256": "79eb48d59b1879fd5c52d92ab10ab280a019c8813ffda9144691aa45ff5db3a3"
+  },
+  {
+    "path": "第42届/整理版/scripts/make_figures.py",
+    "sha256": "ca682041850f0982514c5266d308434ed3c866b1e53cdcecbc8744df9091187c"
+  },
+  {
+    "path": "第42届/整理版/scripts/quality_check.py",
+    "sha256": "09948a232bf1824a9fd90d310e95aaffe613fd8b176f3813222c4f7204edbb67"
+  },
+  {
+    "path": "第42届/整理版/scripts/check_rebuild.py",
+    "sha256": "dc665527058dc53a1ad46d704b2c9d87371e673895a6cb165b409d33ff809d8a"
+  },
+  {
+    "path": "第42届/整理版/scripts/build_all.py",
+    "sha256": "07639001c72d356c7a35c134c7745b4d4dd2e208cfc912bd0b79b99e9d98a21f"
+  },
+  {
+    "path": "第42届/整理版/scripts/verify_physics.py",
+    "sha256": "f0774c3ece570c7591ce93eb30d3d82c3cbb8a06069d7a7ec6e5d7791786aba6"
+  },
+  {
+    "path": "第42届/整理版/latex/第42届_教师备课版.tex",
+    "sha256": "ba89c8522138220d14449fb15873ecf3f0a96670d83737693959578092caafc5"
+  },
+  {
+    "path": "第42届/整理版/latex/第42届_学生详解版.tex",
+    "sha256": "8ed7407630cb40626d15dc7d0924a01cf11c3dab8d219cce6dabf3cb790c43ac"
+  },
+  {
+    "path": "第42届/整理版/latex/template.tex",
+    "sha256": "6fab0e1d92a91710a9c5743503173d15ed6f775532b26c34a3ed2609f2072aed"
+  },
+  {
+    "path": "第42届/整理版/latex/第42届_试题版.tex",
+    "sha256": "18adc9d782ab95870748f382f49c8790741d39091aee1b76e3179b2461caeab4"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_教师备课版.pdf",
+    "sha256": "1941dcf6ea48fa21ed2d5c85b90150175ccdf13cb00619d9106f3e0f22bb7eab"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_学生详解版.md",
+    "sha256": "f6cb1f413b81fbe38df1ba53ba6fc730f9991c223a46b1544e125d412f77b692"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_试题版.pdf",
+    "sha256": "77f5baf6d7a18ac5e8ab3b9736294da7bd7889fe426d07902883aee3731b7161"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_教师备课版.md",
+    "sha256": "794484cec57fb0468a5327b49b2cb3b3392855d08d838e078bd7697609b43f93"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_试题版.md",
+    "sha256": "4bc7ec424e62f38ba23040f16ebc05a2afe2feb59538e24ee14fe34760ada309"
+  },
+  {
+    "path": "第42届/整理版/output/第42届_学生详解版.pdf",
+    "sha256": "b285e7a93df429e8d9e5f0c5416a3ba932da280b125bf4575e0a41aa84abacca"
+  },
+  {
+    "path": "第42届/整理版/核验/验收报告.md",
+    "sha256": "9774aac1fa7041d2a04d0d06f0c5568cf23547ff9c30b33bef219c32a0f7850a"
+  },
+  {
+    "path": "第42届/整理版/核验/页数与版式说明.md",
+    "sha256": "ad2288f9e2da3e5475b8caf7339d45ff41669fcddc832cbc646b0532601477fa"
+  },
+  {
+    "path": "第42届/整理版/核验/rebuild-command.log",
+    "sha256": "4861cc1f5f38521374726a43cd7d3cd0be448e28e9f2c76c37cfd2df3e728ce4"
+  },
+  {
+    "path": "第42届/整理版/核验/visual-review.json",
+    "sha256": "ba5cd5eb079494ec7f15dde91149d3e527989976c9911919e03fb5d038406422"
+  },
+  {
+    "path": "第42届/整理版/核验/native-compile-results.json",
+    "sha256": "46b4a2dbd78c49e6f754d80b4dec2831d71974162bdc81f007c6ad55cb236189"
+  },
+  {
+    "path": "第42届/整理版/核验/pagination-render-comparison.json",
+    "sha256": "af300ec81916d6908ab84e3c3bdff7309bad5b8fe0564a9e7f17df93cda89fbe"
+  },
+  {
+    "path": "第42届/整理版/核验/visual-before-pagination.json",
+    "sha256": "88c6d8b0ad24a015d07f62cf75785fc35751992c426d5bd7fc75819cc95933c8"
+  },
+  {
+    "path": "第42届/整理版/核验/原卷与答案核对.md",
+    "sha256": "634f288069fa1d8ee380583dacbb39670526f44c014f08b47518ae8fcb566b9d"
+  },
+  {
+    "path": "第42届/整理版/核验/rebuild-results.json",
+    "sha256": "48cb50b8152c268e3ec1cb8f068919ffc90862d86a36f694105e545861f3d163"
+  },
+  {
+    "path": "第42届/整理版/核验/document-results.json",
+    "sha256": "6e194cc297cdeb5823057b5b423bd3ad35fc38cad7887872a96dbcfd39a34dc9"
+  },
+  {
+    "path": "第42届/整理版/核验/physics-results.json",
+    "sha256": "8e132b0d6217e204c88ad15c200c9228ccb5cc753d8a9a4718fe1496db025546"
+  },
+  {
+    "path": "第42届/整理版/sources/第42届复赛理论试题_提取文本.txt",
+    "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62"
+  },
+  {
+    "path": "第42届/整理版/sources/原始资料清单.json",
+    "sha256": "144c573d98f2194d884a53d8e9d016679a09ad4499efc06ed3c9838acf5c17bd"
+  },
+  {
+    "path": "第42届/整理版/sources/第42届复赛参考解答_提取文本.txt",
+    "sha256": "c3610b3b545ce54778d25d46fa902c86f2d50258691afeb0e6902559dcdef415"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-03.md",
+    "sha256": "6f3444fdc25cb81a75db5bccf16c89e2a8f8024197b39414677b7134a69e4629"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-07.md",
+    "sha256": "4c8103b334783f4a52438600af6c8bf5d32052a830114cce6636b0af26c7aed2"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-06.md",
+    "sha256": "f838af09656ae4c1251f855e2ae3ed384b57ba0c9bb70f6ca968f64d46605f6f"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-02.md",
+    "sha256": "1660f433a17c48858afbc8bc925d379662410d2856fa423cffd4b8b0cf7aeb8a"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-05.md",
+    "sha256": "236aa173d5e757da439f9c3411ca40a7e996a3c22fa26a68892e4599009f3fa6"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-01.md",
+    "sha256": "a39ce5728e408c38c3a8b9784bb97a9bb55742cc77b0d64b751a949b072fdff1"
+  },
+  {
+    "path": "第43届/整理版/drafts/question-04.md",
+    "sha256": "3cfc07205dd02483ee5382fe87e248bda1b054adbdf11273b2c111d2c5340fe2"
+  },
+  {
+    "path": "第43届/整理版/scripts/make_figures.py",
+    "sha256": "ab0aeefa6e40027ac2f82fa6ab6398220d353ffdacf249f7669fd32cd7df6683"
+  },
+  {
+    "path": "第43届/整理版/scripts/quality_check.py",
+    "sha256": "0b7e4d5e58334703729b9bc1d22af7454c53dada6fd8b3ee1b1daaa2ce0df35d"
+  },
+  {
+    "path": "第43届/整理版/scripts/check_rebuild.py",
+    "sha256": "5f493ed8c9883a93eb225efaeb92ded5db73b818e8b786e01f8ed64081864d10"
+  },
+  {
+    "path": "第43届/整理版/scripts/build_all.py",
+    "sha256": "cd9ac9451f78ca625ce6b8bfad7412789eb867215eaca6c18b41ba3d21dd8e0f"
+  },
+  {
+    "path": "第43届/整理版/scripts/verify_physics.py",
+    "sha256": "e557f52341e0ed579de30fe23af2cabb76400f1b865252de794e06c375e640c9"
+  },
+  {
+    "path": "第43届/整理版/scripts/verify_enrichment.py",
+    "sha256": "7287cad6afb482e2b067046f974d177a0cfd716a977d78f89c77f61d7efe0488"
+  },
+  {
+    "path": "第43届/整理版/latex/第43届_学生详解版.tex",
+    "sha256": "bec42bf5e686cb3d1bbec187a9a9ccaff727ed02e488166ed61b0808682d29b2"
+  },
+  {
+    "path": "第43届/整理版/latex/template.tex",
+    "sha256": "0d5174d707e78958b1d3a71d6278f555e1c555d39479d8369986bc40076e41ba"
+  },
+  {
+    "path": "第43届/整理版/latex/第43届_试题版.tex",
+    "sha256": "3aedb0d271bbc3339956002e0dd7b34b2079c24e555ffc2cfcdb259b0b579ef8"
+  },
+  {
+    "path": "第43届/整理版/latex/第43届_教师备课版.tex",
+    "sha256": "485bc0653e3f05f58274fec8562fa46e9dae5ef51650c5e8c831fda0df4f3d0e"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_学生详解版.md",
+    "sha256": "ee6d0f339bf4ca0987bf5916a473b57785ad2e22f147c1d7d071ac4f983de449"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_学生详解版.pdf",
+    "sha256": "ea031050cc34356936946e2841bffb824b8fa2a1a5e41ca74995fdef9d499c05"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_教师备课版.pdf",
+    "sha256": "1f864b8fd3a1eb6e0a996f515f5b878c73a37a8d7f437987bdb5688b80a7730f"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_教师备课版.md",
+    "sha256": "cb8a8b47d324fcbbfa26c6f2b16c31766b31c05cbac65c847a628ae01de46e06"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_试题版.pdf",
+    "sha256": "da5724bacc3e3df93e60df30446c8accb6970ab33fe3bbf822020ea8be3392e8"
+  },
+  {
+    "path": "第43届/整理版/output/第43届_试题版.md",
+    "sha256": "589f8383c2e56e0aac0dddebd2eff4d73aebcff29e032fa03fbd569e70b017fc"
+  },
+  {
+    "path": "第43届/整理版/核验/验收报告.md",
+    "sha256": "92539245a899b58a38813b3797610374fe46f49ab1ed6a3959d435a156fc6e77"
+  },
+  {
+    "path": "第43届/整理版/核验/rebuild-command.log",
+    "sha256": "4861cc1f5f38521374726a43cd7d3cd0be448e28e9f2c76c37cfd2df3e728ce4"
+  },
+  {
+    "path": "第43届/整理版/核验/visual-review.json",
+    "sha256": "79e2bc81de8495502abeb3294e2f26457f26e78fa0f5f94d7260023932536f40"
+  },
+  {
+    "path": "第43届/整理版/核验/页数与版式修订说明.md",
+    "sha256": "8325556ca5df0b101064c559a53e6d23aa6ffaff47537f172c2379bdb3f900a5"
+  },
+  {
+    "path": "第43届/整理版/核验/native-compile-results.json",
+    "sha256": "712578fc29404fc27a73c82c8b77ce7d7c4273e9524e3f3674474336aced86c2"
+  },
+  {
+    "path": "第43届/整理版/核验/原卷与答案核对.md",
+    "sha256": "c306a39fd7220b1b7af3f480e0b5245a6c01375ad0e8bd2e512df50f8878f885"
+  },
+  {
+    "path": "第43届/整理版/核验/rebuild-results.json",
+    "sha256": "5435180da8167cc61c0449f3275f8be9030440fd2ac94ff81768877478a18dc8"
+  },
+  {
+    "path": "第43届/整理版/核验/document-results.json",
+    "sha256": "57e2153ea77b7f943c7054714d0baed68171538c23fb22dc28dc2c812b693914"
+  },
+  {
+    "path": "第43届/整理版/核验/enrichment-results.json",
+    "sha256": "51a3ac7060fcc30b00706b9c7970235c220c2f3dc383fe2e58e4203d481604df"
+  },
+  {
+    "path": "第43届/整理版/核验/physics-results.json",
+    "sha256": "f2b723b6b76f2e316e8d04f333a479b3749c5fa5867ad711a78deb605bb2a2c1"
+  },
+  {
+    "path": "第43届/整理版/sources/第43届复赛理论试题_提取文本.txt",
+    "sha256": "0e6b366331b7815ffcdee835c00eb8fa0a1f9a7ccab5773127f1d43ee45aa148"
+  },
+  {
+    "path": "第43届/整理版/sources/原始资料清单.json",
+    "sha256": "a542518eab8fa0ad81f5c8e9f19988622f24fb89533bc7a4d1e051d09678e8f4"
+  },
+  {
+    "path": "第43届/整理版/sources/第43届复赛试题解答与评分标准_提取文本.txt",
+    "sha256": "e0e539146dbf362e9e1e28ae0ab9eb6cb9ebce49fb87c20bc51bc7ebbdd9aa80"
+  }
+]

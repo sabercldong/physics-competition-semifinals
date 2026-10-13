@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=1]
+\draw[arr] (-.3,0)--(3.1,0) node[right] {$x$};
+\draw[arr] (0,0)--(0,4.8) node[above] {$y$};
+\draw[dashed] (2,0)--(2,4.6);
+\draw[arr,blue,thick] (0,0)--(2,3.88057);
+\fill (2,3.88057) circle(2pt) node[right] {丙接收};
+\node[below left] at (0,0) {甲发射};
+\draw[arr,red] (0,0)--(.6872,0) node[above] {$u_x$};
+\draw[arr,red] (.6872,0)--(.6872,1.3333) node[right] {$u_y$};
+\draw[<->] (0,-.7)--(2,-.7) node[midway,below] {$d$};
+\node at (1.2,5.4) {$u_y=2c/3,\quad u_x=\sqrt{17}\,c/12$};
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=1]
+\draw[thick] (0,0) circle(2);
+\fill (0,2) circle(2pt) node[above] {$A$};
+\draw[arr,blue,thick] (0,2) arc(90:155:2); \node[blue] at (-2.8,1.2) {CCW};
+\draw[arr,red,thick] (0,2) arc(90:25:2); \node[red] at (2.8,1.2) {CW};
+\draw[arr] (1,0) arc(0:90:1); \node at (.8,.8) {$\Omega$};
+\draw[arr] (0,0)--(2,0) node[midway,below] {$R$};
+\node at (0,-2.7) {光传播与移动分束器相遇};
+\end{tikzpicture}

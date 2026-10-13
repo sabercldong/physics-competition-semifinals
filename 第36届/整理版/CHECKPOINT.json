@@ -1,0 +1,167 @@
+{
+  "exam": 36,
+  "status": "已完成",
+  "stage": "第36届完成总审核及文字润色",
+  "completed_at": "2026-10-13T10:09:25+08:00",
+  "questions": 7,
+  "completed_questions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "total_points": 320,
+  "variants": 28,
+  "figures": 23,
+  "physics_checks": 56,
+  "pdfs": [
+    {
+      "name": "第36届_学生详解版.pdf",
+      "pages": 61,
+      "body_pages": 60,
+      "required_body_pages": 56,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "b2c7753ff57b2170976d3cca1ee190c608d86ced0eccf63dd10cfe3ddeac33da",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        9,
+        19,
+        27,
+        34,
+        41,
+        49
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_教师备课版.pdf",
+      "pages": 78,
+      "body_pages": 77,
+      "required_body_pages": 71,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "fa0a4159136093fa2fea6c81deb010ba4c51a1955151115a4c8118bd12050aed",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        12,
+        24,
+        35,
+        44,
+        54,
+        64
+      ],
+      "short_body_pdf_pages": []
+    },
+    {
+      "name": "第36届_试题版.pdf",
+      "pages": 8,
+      "body_pages": 7,
+      "required_body_pages": null,
+      "simple_cover": true,
+      "page_headers": false,
+      "sha256": "8a8faea838f0d67bfee370ea599bd868384e61c3a7b94ebd833f7cbab3c84f10",
+      "qpdf": "passed",
+      "missing_glyphs": 0,
+      "overfull_boxes": 0,
+      "question_start_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "short_body_pdf_pages": []
+    }
+  ],
+  "per_question": [
+    {
+      "question": 1,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "52870b8d040dfe5bc872c1145994fd34597da2b7075bcc426d69cc000285aeb0"
+    },
+    {
+      "question": 2,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "54f83fe94ab1f0c70d84f682f2f47cdd9551d0a07d8222d44e73d2f6e4d4da72"
+    },
+    {
+      "question": 3,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "f8ddd9eb6826f2ceecad2b88b317a85f4560d756595e4136d530419ef836f900"
+    },
+    {
+      "question": 4,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "b5c1793612fc5086fc5cc56ab78449eb35573699c33ea8dcbfa85d3988f9a79e"
+    },
+    {
+      "question": 5,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "fe300d9028a0b22b25fda3d297a128dbaca8acb2b1a7e93314faec1a4d273298"
+    },
+    {
+      "question": 6,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "b34409210a2cd745abbd981f64e65a8d696913f2078d73396f3f158d34db560b"
+    },
+    {
+      "question": 7,
+      "status": "已完成",
+      "modules": 9,
+      "variants": 4,
+      "master_sha256": "efedaf9955ca8c66f596f032e064aa3132d107459677c8c1db5b5f476dcb00ac"
+    }
+  ],
+  "checks": {
+    "physics": true,
+    "structure": true,
+    "native_compile": true,
+    "visual_review": true,
+    "isolated_rebuild": true,
+    "originals_unchanged": true,
+    "editorial_invariants": true
+  },
+  "source_files": [
+    {
+      "path": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第36届/第36届复赛试题及参考答案.pdf",
+      "pages": 40,
+      "bytes": 941094,
+      "sha256": "1324e16f60bdd527b3d34d4790759617dc122c28de85b424cd017dfa15b78230"
+    }
+  ],
+  "pending_items": [],
+  "next_exam": 35,
+  "collection_audit": {
+    "completed_at": "2026-10-13T11:55:03+08:00",
+    "report": "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/总审核/2026-10-13/审核报告.md",
+    "prose_edits": 14,
+    "physics_checks": 56,
+    "changed_pages_reviewed": 14,
+    "pixel_identical_pages": 133,
+    "skill": "/Users/dongxingxi/.codex/skills/humanizer-zh/SKILL.md"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "all_passed": true,
+  "reviewed_on": "2026-10-12",
+  "full_document_review": true,
+  "total_pdf_pages_reviewed": 145,
+  "figure_count_reviewed": 17,
+  "method": "所有页面总览逐页审读，长公式、奇偶分支、变式尾页与试题续页另查完整尺寸页面。题末自然留白保留；没有近空白页、公式溢出、缺字或图文遮挡。",
+  "pdfs": [
+    {
+      "name": "第41届_学生详解版.pdf",
+      "sha256": "b163c996f50520335958b2765b6aa32c4c7e108bcab97ad5fc75996d7b0746ce",
+      "pages": 62,
+      "contact_sheet_starts": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61
+      ],
+      "coverage_pdf_pages": [
+        1,
+        62
+      ]
+    },
+    {
+      "name": "第41届_教师备课版.pdf",
+      "sha256": "601f3a4a8abadfdb7b35b9bb7a5f98b272e2943e9ee9ad91efb504405456206c",
+      "pages": 74,
+      "contact_sheet_starts": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "coverage_pdf_pages": [
+        1,
+        74
+      ]
+    },
+    {
+      "name": "第41届_试题版.pdf",
+      "sha256": "df7e4815a3d8b1b10a92a48a36fc7afde877e0825c0c9d35a873e43e94a7ab6b",
+      "pages": 9,
+      "contact_sheet_starts": [
+        1,
+        7
+      ],
+      "coverage_pdf_pages": [
+        1,
+        9
+      ]
+    }
+  ],
+  "representative_full_size_pages": {
+    "学生详解版": [
+      14,
+      32,
+      50,
+      58
+    ],
+    "教师备课版": [
+      11,
+      33,
+      74
+    ],
+    "试题版": [
+      4
+    ]
+  },
+  "figure_contact_sheets": [
+    "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/preview/figures-01.jpg",
+    "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/preview/figures-05.jpg",
+    "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/preview/figures-09.jpg",
+    "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/preview/figures-13.jpg",
+    "/Users/dongxingxi/Documents/ChatGPT/复赛试卷/第41届/整理版/preview/figures-17.jpg"
+  ],
+  "unresolved_visual_issues": []
+}

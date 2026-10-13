@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\fill[gray!12] (-3,-1) rectangle (3,0);
+\draw[thick] (-3,0)--(3,0);
+\draw[arr] (0,-1.3)--(0,3.4) node[above] {$z$};
+\draw[arr] (-3.3,0)--(3.4,0) node[right] {$x$};
+\coordinate (P) at (0,2);
+\fill (P) circle (2pt);
+\draw[arr,thick] (P)--(1.1,3.1) node[right] {$\boldsymbol m$};
+\draw[dashed] (P)--(0,3.1);
+\draw[arr] (0,2.65) arc(90:45:.65) node[midway,above] {$\theta$};
+\draw[<->] (-.6,0)--(-.6,2) node[midway,left] {$h$};
+\node at (2,1) {真空 $\mu_0$};
+\node at (0,-.6) {超导体或软磁体};
+\end{tikzpicture}
